@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on blog.tyage.net</title><link>https://blog.tyage.dev/tags/javascript/</link><description>Recent content in JavaScript on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 26 Sep 2011 15:23:35 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>ゴルフゲームをコードゴルフ</title><link>https://blog.tyage.dev/p417/</link><pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate><guid>https://blog.tyage.dev/p417/</guid><description>一部でコードゴルフが流行っていたので、便乗してみた。
+ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。
+まずこれ。
+できるだけゴルフっぽくしたやつ
+(217文字)
+次に、いろいろと制限を加えてコードをスリムにしたやつ
+(141文字)
+最後に、consoleで動かすようにして、140文字以下にしたもの
+(134文字)
+もっと短くならないかなぁ。</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.dev/p140/</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.dev/p140/</guid><description>boku2Dを開発中。
+サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。
+box2Dには足元にも及ばない、俺得ライブラリ。
+以前にも同じようなエンジンを作って、スーパー正男っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。
+HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。
+基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。
+一から作り直したので仕様も、前よりはすっきりしたはず。
+ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。
+Thanks to その１　誰もがやりたいパーティクルの衝突
+ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。
+（ここでも確認可能）
+これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。
+傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。
+今後 とりあえず衝突判定をもっと正確にできるようにしようと考え中。
+本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。
+JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。
+もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。
+あくまでこれは俺得ライブラリ。</description></item><item><title>今日の教訓</title><link>https://blog.tyage.dev/p138/</link><pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate><guid>https://blog.tyage.dev/p138/</guid><description>オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意</description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.dev/p64/</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.dev/p64/</guid><description>暇なのでひなったーにな～れ &amp;#8211; Hatena::Letを作った。
+サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。
+ひなったーにな～れ
+　*&amp;#8220;･*。
+｜　`*｡
+｡∩　*
++ (･ω･`)*+ﾟ
+*｡ ヽ　つ*ﾟ*
+ﾞ･+｡*･ﾟ⊃ +ﾟ
+☆　∪~ ｡*ﾟ
+ﾞ･+｡*･ﾟ
+例 Face Detector &amp;#8211; lab.gkbr.me
+before
+after
+補足 顔認識が注目されてるらしくて、今年の二月に既に顔認識をJSで実装してるぜってことでひなったーが人気を博してるらい。
+JavaScript+canvasで顔認識 &amp;#8211; 開発な日々の被ブクマ数はついに100を超えた。
+ここはひなったーLOVEな俺の出番だ！ってことで需要もないのに作って遊んだ。
+ひなったーのコードをコピペしたらめちゃ簡単。
+コードはすぐに書けたので、あとはひなったーの顔写真をいじいじしてました。
+横顔よりも正面の顔が欲しいなぁ。
+彼は今オーストラリアにいるから堂々とやってるんだけど、また勝手に顔写真使ったから怒られるかなあ。怒られたい。
+こちらもよろしく
+Love HINATA♥ &amp;#8211; Hatena::Let</description></item></channel></rss>

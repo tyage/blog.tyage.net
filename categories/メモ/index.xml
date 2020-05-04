@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>メモ on blog.tyage.net</title><link>https://blog.tyage.dev/categories/%E3%83%A1%E3%83%A2/</link><description>Recent content in メモ on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 05 Dec 2016 12:24:31 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/categories/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title><link>https://blog.tyage.dev/p944/</link><pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate><guid>https://blog.tyage.dev/p944/</guid><description>こんにちは.
+KMC5回生のtyageです.
+この記事は, KMCアドベントカレンダー 5日目の記事です.
+昨日はnonyleneさんの Android Studio をビルドする でした.
+唐突ですが, 今日はPHPの話をします.
+TL;DR PHPのZipArchiveライブラリには, globパターンでファイルを追加する addGlob メソッドがある.
+これにはいくつかoptionが指定できるのだが, 挙動がおかしい.
+送った修正PRに反応をもらえたため, 12/1にリリースされた PHP 7.1 に含まれないかなと期待していたが, 特に進展はなかった.
+みんな困ってないんか&amp;#8230;?
+ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイルを作りたい瞬間があるのではないかと思います.
+私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
+また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
+$dir = '/tmp/workdir/'; &amp;nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir&amp;#40;$jsonDir&amp;#41;; file_put_contents&amp;#40;$jsonDir. 'api.json', json_encode&amp;#40;$request&amp;#41;&amp;#41;; &amp;nbsp; // create archive.zip $zip = new ZipArchive&amp;#40;&amp;#41;; $zip-&amp;gt;open&amp;#40;$dir . 'archive.zip', ZipArchive::CREATE&amp;#41;; $zip-&amp;gt;addGlob&amp;#40;$dir . '**/**', 0, &amp;#91;'remove_path' =&amp;gt; $dir&amp;#93;&amp;#41;; $zip-&amp;gt;close&amp;#40;&amp;#41;; ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</description></item><item><title>:visitedセレクタのプライバシー問題とSNSでの利用</title><link>https://blog.tyage.dev/p848/</link><pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate><guid>https://blog.tyage.dev/p848/</guid><description>追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
+2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。
+参考: CVE-2015-1765, Internet Explorer 用の累積的なセキュリティ更新プログラム (3058515)
+:visitedセレクタについて 半年以上前に少し調べたことについてまとめてみたいと思います。
+まずCSSの擬似セレクタに:visitedがあり、:visitedセレクタではプライバシーの問題上、使用可能なプロパティが制限されていることはご存知の方も多いと思います。
+訪問済みリンクの要素にbackground-imageを設定することで、訪問済みリンクの情報が漏れるという問題等の対策です。
+(Calm brilliance &amp;#8211; CSS Fingerprint: preliminary data)
+詳細は Privacy and the :visited selector にある通りですが、そこでは
+You will still be able to visually style visited links, but there are now limits on what styles you can use. Only the following properties can be applied to visited links:
+&amp;#8211; color
+&amp;#8211; background-color
+&amp;#8211; border-color (and its sub-properties)
+&amp;#8211; outline-color</description></item><item><title>録画環境を構築した</title><link>https://blog.tyage.dev/p762/</link><pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate><guid>https://blog.tyage.dev/p762/</guid><description>環境 ハードはこれ
+OSは未だにUbuntu 12.04
+録画するまで ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。
+深夜アニメを見る生活も捨てがたいし録画することにした。
+PCで見たいので録画カードとしてPT3を買った。
+届いてから設置して、Ubuntuにドライバを入れたりした。
+PT3のドライバがgithubにあったので、すごい時代だなあと思いながらインストール。
+recpt1が必要とのことだったのでこことかを参考にぐぐりながら入れて、再起動。
+B-CASカードに関してはここでは述べないこととする。
+録画管理にはepgdumpではなく、chinachuを使うことにした。
+たまたま冬コミでマニュアルを手に入れていたこともあるけど、モダンな感じなのとnode.jsで書かれているのがいい感じ。
+（epgdumpも入れてみたけどapacheやmysql依存してると開発環境とぶつかってよくない感じに・・・）
+chinachuのWUIは結構充実してて、その場で番組視聴したり録画視聴できるのが嬉しい。
+node.jsは既に入っていたし、wikiに書いてあるとおりにやったらすんなりいけた。
+コマンド1回でだいたい終わるのはとても気持ちいい。
+設定に関して、チャンネルは下のように総当たりでスキャンするか地域で調べるかすればよさげ。
+for var in `seq 13 80` ; do recpt1 --b25 --strip $var 10 ./$var.ts;done ど素人だけど半日あれば十分だった。
+エンコード問題 録画環境が構築できたので試しに録画してみた。
+ある程度覚悟はしていたものの、30分のアニメでm2ts形式のファイルだと3GB前後といった感じだった。
+うう〜ん。。。でかい。。。
+とりあえずmp4に変換しようと思い、HandBrakeを使ってみる。
+Linux環境でもQSVが使えるらしく、ffmpegよりエンコード速度が速いかもとのこと。
+[追記: 2014/10/25]まだLinux環境でもサポートされていないようでした。
+インストール時に注意なのが、「ppa:stebbins/handbrake-releases」には「handbrake」はなくて「handbrake-cli」と「handbrake-gtk」があるということ。
+試しに比較してみると、30分のアニメで、HandBrakeだと20分、ffmpegだと60分以上かかった。
+この時の圧縮後の容量はHandBrakeは400MB、ffmpegは600MBという感じだった。
+HandBrakeのほうが画質が落ちているように見えるが、比較しなければ気にならない程度。
+当然、エンコード方式等々で変わってくるだろうからコマンドを貼っておく。
+ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</description></item><item><title>スペインでFirefox OS端末は買えるのか？</title><link>https://blog.tyage.dev/p739/</link><pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate><guid>https://blog.tyage.dev/p739/</guid><description>この記事はKMCアドベントカレンダーの4日目の記事です。
+1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。
+僕は10月末〜11月初めまで、Facebook CTF決勝のためにチームEpsilonDeltaの4人でスペインにいました。
+その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。
+もし今後スペインに行くことがあり、携帯端末を購入するという方の参考になればと思います。
+※Facebook CTFに関する詳しい内容はC85で頒布する部誌に記事を載せているのでそちらをよろしくお願いします。
+3日目 西地区 &amp;#8221;し&amp;#8221; ブロック 42bです。
+よろしくお願いします。
+3日目 西地区 &amp;#8221;し&amp;#8221; ブロック 42bです。
+事の始まり Firefox OS搭載の端末は、先ほど出てきたZTE Openの他にもPeak・Peak+・Keonなどありますが、これらは既に品切れ状態が続いており（Peakは再生産するらしい？）ほとんど手に入らないようです。
+ZTE Openが初めて販売されたのはスペインからということで少し話題になりました。(http://gigazine.net/news/20130710-firefox-os-smartphone-zte-open/)
+ZTE Openはebayで輸入することができるため日本にいても手に入るのですが、輸入にかかる費用を含めて1万円弱($94.99 USD)かかります。
+一方、スペインで買うと7000円弱(49 EUR)で手に入るとわかりました（運が良ければ中古で安く手に入らないかとも期待していた）。
+せっかくスペインに行くのだしこれを自分へのおみやげにしようと決めて出発したのでした。
+11/3 朝 スペイン・バルセロナ自体には10/30昼〜11/4昼までいたのですが、CTFがあったりその他に行く場所があったりして、ZTE Openを探す時間ができたのは11/3と11/4になってしまいました。
+11/3も観光地に寄る予定を組んでいたために、朝に1時間ほどしか動けませんでした。
+しかもこの日は日曜日。
+スペインでは日曜日になるとほぼ全ての店が閉まってしまいます。（日本だと異常事態ですね。）
+ということでこの日はどこに行っても閉店・・・（流石に一部のコンビニや観光地のショップは開いていましたが）
+ホテル付近の店は全滅という状態で諦めざるを得ませんでした。
+スペインに行く際は日曜日(domingo)に気をつけて下さい。
+11/4 9:30 この日は最終日なので9:30-12:00までの間に急いで探さないと行けませんでした。
+前日に調べた結果、とりあえずホテルのすぐ近くにあるmovistar直営店に寄ることにしました。
+movistarというのはスペイン語圏の国々で主に活動している会社で、スペインで最大の携帯事業会社となっています。
+世界第5位の通信事業会社Telefónicaの子会社でもあります。
+スペイン最大ということもあって、バルセロナの町の至る所にmovistarの直営店がありました。
+（その他にはvodafoneやorangeやyoigoといった会社が多く見られました。）
+どこにmovistarがあるのかはこのページで確認することができるのですが、本当にバルセロナを埋め尽くしているという感じです。
+スペインではこのmovistarがZTE Openを取り扱っているらしく、実際に店頭に並べられていたり広告が貼られているのは事前に確認済みです。
+このような特設ページも作られています。
+http://www.movistar.es/firefoxos
+スペイン語がわからない人間のために英語で書かれたZTE Open購入マニュアルも見つけました。
+How to Buy ZTE Open – Step by Step Guide
+これで準備も万全だ！と満を持してmovistarに入ると、スペイン人のお姉ちゃんが1人で店番をしているだけでした。
+僕「Hola!」</description></item><item><title>何か吐き出さないとなあ</title><link>https://blog.tyage.dev/p605/</link><pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate><guid>https://blog.tyage.dev/p605/</guid><description>ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。
+いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。
+とりあえず、以下のことについて書くつもりでいる。
+・ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）
+・会社でまた働き始めたこと
+・情報セキュリティワークショップin越後湯沢
+・アイデアソン
+・SECCON CTF
+・きょーくりっのワークショップ
+・学校や、普段の生活のこと
+・今まで一人でやっていたプロジェクトやプログラミングについて
+こぼしたいことはあるはずなのに、なぜか手が進まないのでこうやって自分にプレッシャーをかけてみる。
+自然とインプットもアウトプットもしなくなってから、自分が何をしているのかわからなくなったので振り返ればと思う。
+ただ、NF（京大11月祭）も近いので、またどうなることやら・・・</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.dev/p243/</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.dev/p243/</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
+こんな感じに
+この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
+実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
+どうしても使いたい。
+代わりになるものがあればそれでいいけど。。
+あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item></channel></rss>

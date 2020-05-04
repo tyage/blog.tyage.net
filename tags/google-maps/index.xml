@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google Maps on blog.tyage.net</title><link>https://blog.tyage.dev/tags/google-maps/</link><description>Recent content in Google Maps on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Jan 2011 15:10:49 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/google-maps/index.xml" rel="self" type="application/rss+xml"/><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.dev/p243/</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.dev/p243/</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
+こんな感じに
+この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
+実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
+どうしても使いたい。
+代わりになるものがあればそれでいいけど。。
+あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item></channel></rss>

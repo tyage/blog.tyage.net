@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WebSocket on blog.tyage.net</title><link>https://blog.tyage.dev/tags/websocket/</link><description>Recent content in WebSocket on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/websocket/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.dev/p552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.dev/p552/</guid><description>コンディション：良好
+朝食：寝てた
+昼食：記憶になし
+夕食：記憶になし
+珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。
+主目的はゲーム製作。
+以前に作成したゲームをnode.jsに移植する目的で進める。
+とりあえずOSをubuntu12.04に変えようと努力。
+まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
+途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
+その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.dev/p328/</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.dev/p328/</guid><description>&lt;p>&lt;a href="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a>に参加してきました。&lt;/p>
+&lt;p>去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p>
+&lt;p>それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br />
+ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br />
+ごめんなさい。&lt;/p>
+&lt;p>発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br />
+それでもなんとか端折りながら5分に収めましたがｗ&lt;/p>
+&lt;p>後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br />
+初・OSC懇親会は楽しかった！&lt;/p>
+&lt;p>&lt;a href="http://photozou.jp/photo/show/265673/75877087">&lt;img src="http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg" alt="OSC神戸" width="450" height="253" style="border:0" />&lt;/a>&lt;br />&lt;a href="http://photozou.jp/photo/show/265673/75877087">OSC神戸&lt;/a> posted by &lt;a href="http://photozou.jp/user/top/265673">(C)チャゲ&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://photozou.jp/photo/show/265673/75877429">&lt;img src="http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg" alt="OSC神戸でもらった" width="450" height="253" style="border:0" />&lt;/a>&lt;br />&lt;a href="http://photozou.jp/photo/show/265673/75877429">OSC神戸でもらった&lt;/a> posted by &lt;a href="http://photozou.jp/user/top/265673">(C)チャゲ&lt;/a>&lt;/p>
+&lt;p></description></item></channel></rss>
