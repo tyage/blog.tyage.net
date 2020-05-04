@@ -2,9 +2,19 @@ baseURL = "https://blog.tyage.dev/"
 languageCode = "en-us"
 title = "blog.tyage.net"
 theme = "beautifulhugo"
+googleAnalytics = "UA-3879973-3"
+paginate = 3
+
+[Author]
+  name = "tyage"
+  github = "tyage"
+  twitter = "tyage"
+  website = "https://tyage.net"
 
 [Params]
   rss = true
+  logo = "icon/icon.jpg"
+  socialShare = true
 
 [markup.goldmark.renderer]
   unsafe = true
