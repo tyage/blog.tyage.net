@@ -1,0 +1,86 @@
+---
+title: UFO CTF 2013 writeup – Web200
+author: tyage
+type: post
+date: 2013-10-05T14:55:08+00:00
+url: /?p=719
+wp-syntax-cache-content:
+  - |
+    a:2:{i:1;s:6293:"
+    <div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;?xml</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span> <span style="color: #000066;">encoding</span>=<span style="color: #ff0000;">&quot;utf-8&quot;</span><span style="color: #000000; font-weight: bold;">?&gt;</span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;django-objects</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+    	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;object</span> <span style="color: #000066;">pk</span>=<span style="color: #ff0000;">&quot;12349813568&quot;</span> <span style="color: #000066;">model</span>=<span style="color: #ff0000;">&quot;hosting.pagesettings&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;owner_name&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>username<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;owner_email&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>test@localhost<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_title&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>My homepage<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;TextField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_content&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>Hello everyone! This is my new homepage.<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_footer&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>Made with love and care<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;BooleanField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_is_public&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>False<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_public_id&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/object<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/django-objects<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></td></tr></table><p class="theCode" style="display:none;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+    &lt;django-objects version=&quot;1.0&quot;&gt;
+    	&lt;object pk=&quot;12349813568&quot; model=&quot;hosting.pagesettings&quot;&gt;
+    		&lt;field type=&quot;CharField&quot; name=&quot;owner_name&quot;&gt;username&lt;/field&gt;
+    		&lt;field type=&quot;CharField&quot; name=&quot;owner_email&quot;&gt;test@localhost&lt;/field&gt;
+    		&lt;field type=&quot;CharField&quot; name=&quot;page_title&quot;&gt;My homepage&lt;/field&gt;
+    		&lt;field type=&quot;TextField&quot; name=&quot;page_content&quot;&gt;Hello everyone! This is my new homepage.&lt;/field&gt;
+    		&lt;field type=&quot;CharField&quot; name=&quot;page_footer&quot;&gt;Made with love and care&lt;/field&gt;
+    		&lt;field type=&quot;BooleanField&quot; name=&quot;page_is_public&quot;&gt;False&lt;/field&gt;
+    		&lt;field type=&quot;CharField&quot; name=&quot;page_public_id&quot;&gt;&lt;/field&gt;
+    	&lt;/object&gt;
+    &lt;/django-objects&gt;</p></div>
+    ";i:2;s:2398:"
+    <div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;?xml</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span> <span style="color: #000066;">encoding</span>=<span style="color: #ff0000;">&quot;utf-8&quot;</span><span style="color: #000000; font-weight: bold;">?&gt;</span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;django-objects</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+    	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;object</span> <span style="color: #000066;">pk</span>=<span style="color: #ff0000;">&quot;1&quot;</span> <span style="color: #000066;">model</span>=<span style="color: #ff0000;">&quot;hosting.pagesettings&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+    		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;owner_name&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>username<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/object<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+    <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/django-objects<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></td></tr></table><p class="theCode" style="display:none;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+    &lt;django-objects version=&quot;1.0&quot;&gt;
+    	&lt;object pk=&quot;1&quot; model=&quot;hosting.pagesettings&quot;&gt;
+    		&lt;field type=&quot;CharField&quot; name=&quot;owner_name&quot;&gt;username&lt;/field&gt;
+    	&lt;/object&gt;
+    &lt;/django-objects&gt;</p></div>
+    ";}
+categories:
+  - CTF
+
+---
+<pre>
+Those aliens consider themselves as the most smart creatures in
+the world. Pff. They shouldn't even have tried to defeat mankind
+having such stupid stuff in their heads! As for you, why wouldn't
+you hack them? They'll most likely surrender then. By the way, it
+is known that they update some data every 10-20 seconds, but
+unfortunately our equipment can't intercept the data itself.
+ 
+http://superhosting.tasks.ufoctf.ru:8000/
+</pre>
+<p>自分のウェブページが作れ、バックアップと復元ができるシステムになっている。</p>
+<p>バックアップしてみると、[username]_[md5(username)][md5(zipfile)].zipという名前でzipファイルがダウンロードでき、それをアップロードすることで復元ができるようになっている。<br />
+zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。</p>
+
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;?xml</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span> <span style="color: #000066;">encoding</span>=<span style="color: #ff0000;">&quot;utf-8&quot;</span><span style="color: #000000; font-weight: bold;">?&gt;</span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;django-objects</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;object</span> <span style="color: #000066;">pk</span>=<span style="color: #ff0000;">&quot;12349813568&quot;</span> <span style="color: #000066;">model</span>=<span style="color: #ff0000;">&quot;hosting.pagesettings&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;owner_name&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>username<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;owner_email&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>test@localhost<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_title&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>My homepage<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;TextField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_content&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>Hello everyone! This is my new homepage.<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_footer&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>Made with love and care<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;BooleanField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_is_public&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>False<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;page_public_id&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/object<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/django-objects<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></td></tr></table></div>
+
+<p>いろいろと試した結果、復元時にpk(primary key)を変えた場合にそのpkを持つフィールドのデータを上書きすることができるとわかった。</p>
+<p>以下のようなxmlファイルを含めて復元し、再びバックアップをダウンロードすると、pk=1のデータの入ったバックアップファイルが手に入り、pk=1のデータにflagが書かれていた。</p>
+
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="xml" style="font-family:monospace;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;?xml</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span> <span style="color: #000066;">encoding</span>=<span style="color: #ff0000;">&quot;utf-8&quot;</span><span style="color: #000000; font-weight: bold;">?&gt;</span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;django-objects</span> <span style="color: #000066;">version</span>=<span style="color: #ff0000;">&quot;1.0&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;object</span> <span style="color: #000066;">pk</span>=<span style="color: #ff0000;">&quot;1&quot;</span> <span style="color: #000066;">model</span>=<span style="color: #ff0000;">&quot;hosting.pagesettings&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>
+		<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;field</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">&quot;CharField&quot;</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">&quot;owner_name&quot;</span><span style="color: #000000; font-weight: bold;">&gt;</span></span>username<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/field<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+	<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/object<span style="color: #000000; font-weight: bold;">&gt;</span></span></span>
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/django-objects<span style="color: #000000; font-weight: bold;">&gt;</span></span></span></pre></td></tr></table></div>
+

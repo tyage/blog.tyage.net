@@ -2,5 +2,9 @@ baseURL = "https://blog.tyage.dev/"
 languageCode = "en-us"
 title = "blog.tyage.net"
 theme = "beautifulhugo"
+
+[Params]
+  rss = true
+
 [markup.goldmark.renderer]
   unsafe = true
