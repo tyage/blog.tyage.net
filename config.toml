@@ -1,4 +1,6 @@
 baseURL = "https://blog.tyage.dev/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "blog.tyage.net"
 theme = "beautifulhugo"
+[markup.goldmark.renderer]
+  unsafe = true
