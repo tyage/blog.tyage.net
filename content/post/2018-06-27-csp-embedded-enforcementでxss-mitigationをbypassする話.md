@@ -37,6 +37,8 @@ CTFでは便利かもしれない。</p>
 </ul>
 <p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。</p>
 
+<!--more-->
+
 <div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;iframe src=&quot;VULNERABLE_PAGE?xss=&lt;script nonce=12345&gt;alert(document.cookie)&lt;/script&gt;&quot; csp=&quot;script-src 'nonce-12345';&quot;&gt;</pre></td></tr></table></div>
 
 <h2>h4x0rs.date</h2>
