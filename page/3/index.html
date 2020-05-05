@@ -8,7 +8,18 @@ location.reload()}else{if(history.state!==null&&history.state.previousUrl){histo
 <button class="pswp__button pswp__button--share" title=Share></button>
 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=page-heading><h1>blog.tyage.net</h1><hr class=small></div></div></div></div></div></header><div role=main class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=posts-list><article class=post-preview><a href=https://blog.tyage.net/p990/><h2 class=post-title>Google CTF 2017 – The X Sanitizer writeup</h2></a><p class=post-meta><span class=post-meta><i class="fas fa-calendar"></i>&nbsp;Posted on June 25, 2017
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=page-heading><h1>blog.tyage.net</h1><hr class=small></div></div></div></div></div></header><div role=main class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=posts-list><article class=post-preview><a href=https://blog.tyage.net/p1020/><h2 class=post-title>Google CTF 2017 – Geokitties v2 writeup</h2></a><p class=post-meta><span class=post-meta><i class="fas fa-calendar"></i>&nbsp;Posted on June 25, 2017
+&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;tyage</span></p><div class=post-entry>Overview Problem page:
+https://geokittiesv2.web.ctfcompetition.com/
+Copy of source code:
+https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127
+It receives comment, then admin checks it and clicks a link.
+The comment is validated by using htmlparser2.
+Allowed tags are: p, a, b, img, br, i
+Invalid attributes: on(.*)= and href=javascript:...
+Solution What we should do is find the differences in parsing between Google Chrome and htmlparser2.
+After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.
+<a href=https://blog.tyage.net/p1020/ class=post-read-more>[Read More]</a></div></article><article class=post-preview><a href=https://blog.tyage.net/p990/><h2 class=post-title>Google CTF 2017 – The X Sanitizer writeup</h2></a><p class=post-meta><span class=post-meta><i class="fas fa-calendar"></i>&nbsp;Posted on June 25, 2017
 &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;tyage</span></p><div class=post-entry>Overview Problem page:
 https://sanitizer.web.ctfcompetition.com
 Copy of source code:
@@ -33,34 +44,8 @@ ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイル�
 私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
 また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
 $dir = '/tmp/workdir/'; &nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir($jsonDir); file_put_contents($jsonDir. 'api.json', json_encode($request)); &nbsp; // create archive.zip $zip = new ZipArchive(); $zip->open($dir . 'archive.zip', ZipArchive::CREATE); $zip->addGlob($dir . '**/**', 0, ['remove_path' => $dir]); $zip->close(); ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.
-<a href=https://blog.tyage.net/p944/ class=post-read-more>[Read More]</a></div></article><article class=post-preview><a href=https://blog.tyage.net/p918/><h2 class=post-title>プリパラで効率よく承認欲求を満たす</h2></a><p class=post-meta><span class=post-meta><i class="fas fa-calendar"></i>&nbsp;Posted on December 2, 2015
-&nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;tyage</span></p><div class=post-entry>この記事は KMC Advent Calendar 2015 3日目(12/3)の記事です。
-2日目の記事は、id: utgwさんの 古明地こいしのアドベントカレンダー&雑記と来年の抱負 でした。
-今日はアドベントカレンダー用におもちゃを作ったので紹介します。
-プリパラで承認欲求を満たす 最近、Twitterの「お気に入り」が「いいね」に変わりましたね。
-そんな中Twitterやfacebookで「いいね」を集めている方もいらっしゃるかと思いますが、世の中にはもっと効率的に「いいね」を集める方法があります&#8230;
-そうです、プリパラに行くのです!
-女児向けゲームなのでこれまで縁のなかった方も多いかと思いますが、SNSでは通常味わえないほどの「いいね」をこのプリパラでは低価格で集めることができます。
-1プレイ100円でリズムゲーム（ライブ）をプレイしたあとに「プリチケ」と呼ばれるカードが手に入るのですが、このライブを通じて通常2万前後の「いいね」を集めることができるのです。
-1いいねが100円　といった「いいね」代行業者がある中、プリパラは　1円で200いいね　を集めることができるのですから、コスパは最強と言えるでしょう。
-【ゲーム中には「いいね」が勢い良く流れる】
-リズムゲームでタイミングよく押せると「いいね」がもらえるのですが、もし合わなかったとしても「おしかったね」と励ましの言葉がもらえるので、ゲームが苦手な方も心が満たされるはず。
-（決してpoor、bad、failのような冷め切った言葉ではない！！！）
-プリパラシミュレータ ただ、今すぐ「いいね」をあつめにプリパラに行くのも難しいと思うので、簡単なプリパラシミュレータを作ってみました。
-Pripara Simulator
-ハートが中心に来たタイミングで画面を押せば「いいね」を集めることができます。
-さらに、ただただ「いいね」を集めたい人のために、「全自動承認モード」をご用意いたしました。
-タイミングを合わせなくても「いいね」が得られるという超便利アイテムです。
-これで皆さんの承認欲求がじゃぶじゃぶ満たされていけばと思います。
-スマートフォンでも遊べます。
-余談 2日前に思いたってかなり雑に作ってみました。
-ちょうど作ってる途中で @hakatashi の Travis-CIで最強のデプロイ環境を構築する という記事が流れてきたので使ってみました。
-Travis-CI is 便利。
-あと、シミュレータでは「ラッキー!サプライズ☆バースデイ」の序盤を真似して作ってみたのですが、譜面の部分をES2015のgeneratorを使って実装してみたら思ったよりいい感じになったような気がしています。
-scenario.js
-let luckySurpriseBirthday = function * () { // ほんとにスペシャルなパーティーのはじまりは yield createCircle(1 / 8); yield * wait(baseStep); yield createCircle(0 / 8); yield * wait(baseStep); yield createCircle(7 / 8); yield * wait(baseStep); また一部の筐体ではゲームのプレイ内容を録画できるようになっているのですが、作るにあたってそこで録画した内容がかなり参考になりました。ありがたい。
-<a href=https://blog.tyage.net/p918/ class=post-read-more>[Read More]</a></div></article></div><ul class="pager main-pager"><li class=previous><a href=https://blog.tyage.net/page/2/>&larr; Newer Posts</a></li><li class=next><a href=https://blog.tyage.net/page/4/>Older Posts &rarr;</a></li></ul></div></div></div><div class=page-meta></div><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a href=https://github.com/tyage title=GitHub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://twitter.com/tyage title=Twitter><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li><li><a href=/index.xml title=RSS><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="credits copyright text-muted"><a href=https://tyage.net>tyage</a>
+<a href=https://blog.tyage.net/p944/ class=post-read-more>[Read More]</a></div></article></div><ul class="pager main-pager"><li class=previous><a href=https://blog.tyage.net/page/2/>&larr; Newer Posts</a></li><li class=next><a href=https://blog.tyage.net/page/4/>Older Posts &rarr;</a></li></ul></div></div></div><div class=page-meta></div><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a href=https://github.com/tyage title=GitHub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://twitter.com/tyage title=Twitter><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li><li><a href=/index.xml title=RSS><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="credits copyright text-muted"><a href=https://tyage.net>tyage</a>
 &nbsp;&bull;&nbsp;&copy;
-2018
+2020
 &nbsp;&bull;&nbsp;
 <a href=https://blog.tyage.net/>blog.tyage.net</a></p><p class="credits theme-by text-muted"><a href=https://gohugo.io>Hugo v0.69.0</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a></p></div></div></div></footer><script src=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js integrity=sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js integrity=sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe crossorigin=anonymous></script><script src=https://code.jquery.com/jquery-1.12.4.min.js integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=anonymous></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script><script src=https://blog.tyage.net/js/main.js></script><script>renderMathInElement(document.body);</script><script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js integrity=sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js integrity=sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q crossorigin=anonymous></script><script src=https://blog.tyage.net/js/load-photoswipe.js></script></body></html>
