@@ -1,8 +1,14 @@
 <script>
-// redirect previous permalink style to the current one. /?p=123 -> /p123/
 const match = location.search.match(/^\?p=(\d+)$/)
 if (location.pathname === '/' && match !== null) {
-    const postId = match[1]
-    location.href = `/p${postId}/`
+  // redirect to new url if the user accesses with previous url. /?p=123 -> /p123/
+  const postId = match[1]
+  history.replaceState({ previousUrl: location.href }, '', `/p${postId}/`)
+  location.reload()
+} else {
+  // if the user is redirected, revert the url to the original one (without redirect)
+  if (history.state !== null && history.state.previousUrl) {
+      history.replaceState({}, '', history.state.previousUrl)
+  }
 }
 </script>
