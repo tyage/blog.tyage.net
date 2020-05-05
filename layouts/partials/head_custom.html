@@ -1,0 +1,8 @@
+<script>
+// redirect previous permalink style to the current one. /?p=123 -> /p123/
+const match = location.search.match(/^\?p=(\d+)$/)
+if (location.pathname === '/' && match !== null) {
+    const postId = match[1]
+    location.href = `/p${postId}/`
+}
+</script>
