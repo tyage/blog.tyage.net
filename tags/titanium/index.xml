@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Titanium on blog.tyage.net</title><link>https://blog.tyage.dev/tags/titanium/</link><description>Recent content in Titanium on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/titanium/index.xml" rel="self" type="application/rss+xml"/><item><title>最近のこと</title><link>https://blog.tyage.dev/p380/</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.dev/p380/</guid><description>お久しぶりです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Titanium on blog.tyage.net</title><link>https://blog.tyage.net/tags/titanium/</link><description>Recent content in Titanium on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/titanium/index.xml" rel="self" type="application/rss+xml"/><item><title>最近のこと</title><link>https://blog.tyage.net/p380/</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.net/p380/</guid><description>お久しぶりです。
 とりあえず近況報告です。
 ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。
 お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。
@@ -25,7 +25,7 @@
 それよりも、駿台の模試が全体的にかなり悪かったのはどうにかしないといけない。
 特に英語。こんなに悪いとは思ってもみなかった。
 判定で安心していたら、校内順位は駿台のほうが大きく下であった。
-来週の期末試験はがんばろう・・・</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.dev/p368/</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.dev/p368/</guid><description>思い出せるものから書き上げていく
+来週の期末試験はがんばろう・・・</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/p368/</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/p368/</guid><description>思い出せるものから書き上げていく
 tableのheader, footerを使っているwindowは閉じるとエラー
 touchendイベントがちゃんと取得できない
 getAllPeopleおかしい
@@ -52,7 +52,7 @@ leftView, rightViewが非対応だった。
 annotationのタイトルだけでイベントが発生する。
 テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
 バグ多い
-APIリファレンスはうそつき</description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.dev/p335/</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.dev/p335/</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
+APIリファレンスはうそつき</description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/p335/</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/p335/</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
 &lt;p>Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br />
 普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p>
 &lt;h2>初めに&lt;/h2>

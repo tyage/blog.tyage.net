@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on blog.tyage.net</title><link>https://blog.tyage.dev/tags/javascript/</link><description>Recent content in JavaScript on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 26 Sep 2011 15:23:35 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>ゴルフゲームをコードゴルフ</title><link>https://blog.tyage.dev/p417/</link><pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate><guid>https://blog.tyage.dev/p417/</guid><description>一部でコードゴルフが流行っていたので、便乗してみた。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on blog.tyage.net</title><link>https://blog.tyage.net/tags/javascript/</link><description>Recent content in JavaScript on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 26 Sep 2011 15:23:35 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>ゴルフゲームをコードゴルフ</title><link>https://blog.tyage.net/p417/</link><pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate><guid>https://blog.tyage.net/p417/</guid><description>一部でコードゴルフが流行っていたので、便乗してみた。
 ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。
 まずこれ。
 できるだけゴルフっぽくしたやつ
@@ -7,7 +7,7 @@
 (141文字)
 最後に、consoleで動かすようにして、140文字以下にしたもの
 (134文字)
-もっと短くならないかなぁ。</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.dev/p140/</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.dev/p140/</guid><description>boku2Dを開発中。
+もっと短くならないかなぁ。</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.net/p140/</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.net/p140/</guid><description>boku2Dを開発中。
 サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。
 box2Dには足元にも及ばない、俺得ライブラリ。
 以前にも同じようなエンジンを作って、スーパー正男っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。
@@ -24,7 +24,7 @@ Thanks to その１　誰もがやりたいパーティクルの衝突
 本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。
 JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。
 もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。
-あくまでこれは俺得ライブラリ。</description></item><item><title>今日の教訓</title><link>https://blog.tyage.dev/p138/</link><pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate><guid>https://blog.tyage.dev/p138/</guid><description>オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意</description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.dev/p64/</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.dev/p64/</guid><description>暇なのでひなったーにな～れ &amp;#8211; Hatena::Letを作った。
+あくまでこれは俺得ライブラリ。</description></item><item><title>今日の教訓</title><link>https://blog.tyage.net/p138/</link><pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate><guid>https://blog.tyage.net/p138/</guid><description>オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意</description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.net/p64/</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.net/p64/</guid><description>暇なのでひなったーにな～れ &amp;#8211; Hatena::Letを作った。
 サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。
 ひなったーにな～れ
 　*&amp;#8220;･*。

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MA6 on blog.tyage.net</title><link>https://blog.tyage.dev/tags/ma6/</link><description>Recent content in MA6 on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 09 Nov 2010 14:44:16 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/ma6/index.xml" rel="self" type="application/rss+xml"/><item><title>Bottom Coder.next</title><link>https://blog.tyage.dev/p110/</link><pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate><guid>https://blog.tyage.dev/p110/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MA6 on blog.tyage.net</title><link>https://blog.tyage.net/tags/ma6/</link><description>Recent content in MA6 on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 09 Nov 2010 14:44:16 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/ma6/index.xml" rel="self" type="application/rss+xml"/><item><title>Bottom Coder.next</title><link>https://blog.tyage.net/p110/</link><pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate><guid>https://blog.tyage.net/p110/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
 &lt;p>MA6に応募したよ！いえーい！&lt;/p>
 &lt;p>&lt;a href="http://ma6works.mashupaward.jp/bottomcoder/">#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a>&lt;/p>
 &lt;p>小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&amp;#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。&lt;/p>
@@ -7,7 +7,7 @@
 &lt;p>とりあえずBottom Coderをまともに使えるものにしようとしました。&lt;br />
 自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！&lt;/p>
 &lt;p>まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。&lt;/p>
-&lt;p></description></item><item><title>Bottom Coder++</title><link>https://blog.tyage.dev/p95/</link><pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate><guid>https://blog.tyage.dev/p95/</guid><description>&lt;p>今日はBottomCoderのアップデートも行いました。&lt;/p>
+&lt;p></description></item><item><title>Bottom Coder++</title><link>https://blog.tyage.net/p95/</link><pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate><guid>https://blog.tyage.net/p95/</guid><description>&lt;p>今日はBottomCoderのアップデートも行いました。&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
 &lt;p>MA6に何か提出しようと思い、APIを探していたところ、子飼弾さんのLLEvalがBottom Coderに使えそうだったので早速オンラインテスト機能として採用してみました。&lt;br />
 &lt;a href="http://ma6api.mashupaward.jp/entry/71601/">小飼弾（LLEval） | 提供API一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a>&lt;/p>
@@ -19,7 +19,7 @@
 この処理に、先ほど言ったLLEvalを採用しています。&lt;br />
 クロスオリジンXHRを使っているので、少しブラウザが制限されますが、プログラマならきっと最新のブラウザを使っているでしょうし、そこは問題なしとします。&lt;/p>
 &lt;p>また、システムテストもLLEvalを使って実行してもらい、答えと一致しているか判別しています。&lt;/p>
-&lt;p></description></item><item><title>開発中 – Google Maps王に、俺はなる！</title><link>https://blog.tyage.dev/p78/</link><pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate><guid>https://blog.tyage.dev/p78/</guid><description>&lt;p>名前は特に意味なし。&lt;br />
+&lt;p></description></item><item><title>開発中 – Google Maps王に、俺はなる！</title><link>https://blog.tyage.net/p78/</link><pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate><guid>https://blog.tyage.net/p78/</guid><description>&lt;p>名前は特に意味なし。&lt;br />
 TOWNをまた新しく作り直してます。&lt;/p>
 &lt;p>Google MapsのV3が使いやすくなってたのでGoogle Mapsを使うことにしました。&lt;br />
 内容は以前のものをたいして変わらないと思います。&lt;br />

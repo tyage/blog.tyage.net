@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Heroku on blog.tyage.net</title><link>https://blog.tyage.dev/tags/heroku/</link><description>Recent content in Heroku on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/heroku/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.dev/p552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.dev/p552/</guid><description>コンディション：良好
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Heroku on blog.tyage.net</title><link>https://blog.tyage.net/tags/heroku/</link><description>Recent content in Heroku on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/heroku/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.net/p552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/p552/</guid><description>コンディション：良好
 朝食：寝てた
 昼食：記憶になし
 夕食：記憶になし
@@ -8,7 +8,7 @@
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.dev/p296/</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.dev/p296/</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
+その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/p296/</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/p296/</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
 まず事前に必要なものをインストールする。
 sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
 しようとするが、herokuコマンドが見つからない状態にあったので、
@@ -18,7 +18,7 @@ gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろ
 extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
 [雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
 この二つを参考に、
-sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.dev/p290/</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.dev/p290/</guid><description>HerokuいいですよねHeroku！
+sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/p290/</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/p290/</guid><description>HerokuいいですよねHeroku！
 今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
 （結局失敗したため、おとなしくUbuntuから使うことにしました。）
 普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>セキュリティ on blog.tyage.net</title><link>https://blog.tyage.dev/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link><description>Recent content in セキュリティ on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Mar 2011 08:00:10 +0000</lastBuildDate><atom:link href="https://blog.tyage.dev/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/index.xml" rel="self" type="application/rss+xml"/><item><title>脆弱性の報告をしてみた</title><link>https://blog.tyage.dev/p278/</link><pubDate>Sun, 06 Mar 2011 08:00:10 +0000</pubDate><guid>https://blog.tyage.dev/p278/</guid><description>セプキャンキャラバンのUSTを見ながらとあるWebサービスを使っていたら、うっかり脆弱性を発見してしまったため、とりあえずお問い合わせフォームから報告してみた。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>セキュリティ on blog.tyage.net</title><link>https://blog.tyage.net/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link><description>Recent content in セキュリティ on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 06 Mar 2011 08:00:10 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/index.xml" rel="self" type="application/rss+xml"/><item><title>脆弱性の報告をしてみた</title><link>https://blog.tyage.net/p278/</link><pubDate>Sun, 06 Mar 2011 08:00:10 +0000</pubDate><guid>https://blog.tyage.net/p278/</guid><description>セプキャンキャラバンのUSTを見ながらとあるWebサービスを使っていたら、うっかり脆弱性を発見してしまったため、とりあえずお問い合わせフォームから報告してみた。
 試験中にも関わらず・・・
 特定に繋がりそうなところは隠してあります。
 ****を楽しく使わせていただいております。
@@ -47,7 +47,7 @@ http://****/***
 申し訳ありません。
 追追追記：
 修正されてました！
-ありがとうございます！</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.dev/p6/</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.dev/p6/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5">一度消えた&lt;/a>XSSの記事を復活させました。&lt;/p>
+ありがとうございます！</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/p6/</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/p6/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5">一度消えた&lt;/a>XSSの記事を復活させました。&lt;/p>
 &lt;h1>注意書き&lt;/h1>
 &lt;p>はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p>
 &lt;p>記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p>
