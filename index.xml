@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog.tyage.net</title><link>https://blog.tyage.net/</link><description>Recent content on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 May 2020 20:14:28 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml"/><item><title>ブログをHugo + GitHub Pagesに変えた</title><link>https://blog.tyage.net/post/2020-05-05-new-blog/</link><pubDate>Tue, 05 May 2020 20:14:28 +0900</pubDate><guid>https://blog.tyage.net/post/2020-05-05-new-blog/</guid><description>ブログをHugo + GitHub Pagesで運用することにしました。 10年以上WordPressでブログを運用していたのだけど、わざわざ専用のサーバを用意したりWordPressの更新を時々見たりするメリットもあまりないなと。
-GitHub Actionsも無料で使えるようになったので、自動でデプロイできるようになって便利ですね。 https://github.com/tyage/blog.tyage.net/blob/master/.github/workflows/gh-pages.yml
-WordPress to Hugo Exporterでexportしてみたところ、予想はしていたけど一発ではうまくいかないですね。 HTMLで記事を書いたりWP-Syntaxを使っていた影響で、少し手を加える必要がありました。いろいろ試した結果、記事をMarkdownに変換せずに、HTMLのままexportしています。 https://gist.github.com/tyage/936acb04748d40f9fc3f0c82586d3279
-昔はMarkdownでブログを書いていたのだけど、あんまり変な方言使うのもよくないと思ってHTMLに戻してしまったのは先見の明がなかったなぁ。 まぁその頃はMarkdown流行ってなかったので。。。
-古いブログ記事のURLはそのままで見れるようになっています。 昔の記事のURLは /?p=123 みたいな形式のpermalinkだったので、記事ページの新しいURLにリダイレクトしたあとにJavaScriptでhistory変更しています。
-いつまでGitHubやGitHub Pagesを無料で提供してくれるかは少し気になるところではあるけど、gitで全てのデータが管理されて分散して保管できているしバックアップコストや移行コストは下がっていそう。安心</description></item><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/p1187/</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/p1187/</guid><description>なに CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。
-以下のような条件が必要なので現実に使える場面は普通はなさそう。
-CTFでは便利かもしれない。
-Webページで同一オリジンのページをiframeで読み込める WebページのヘッダにCSPが設定されていない Webページに指定したHTMLを埋め込める(XSSができる) ただし、WebページにJavaScriptによるXSS防御機構がある このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。
-&amp;lt;iframe src=&amp;quot;VULNERABLE_PAGE?xss=&amp;lt;script nonce=12345&amp;gt;alert(document.cookie)&amp;lt;/script&amp;gt;&amp;quot; csp=&amp;quot;script-src 'nonce-12345';&amp;quot;&amp;gt; h4x0rs.date と、言うのが0CTF 2018 finalsで出題されたh4x0rs.dateという問題で使えたテクニックでした。
-問題の解説はここにあるけど、XSSの可能なページが以下のJavaScript(csp.js)によって保護されているというものです。
-meta = document.createElement&amp;#40;'meta'&amp;#41;; meta.httpEquiv='Content-Security-Policy'; meta.content=&amp;quot;script-src 'nonce-77aae8705604c721a0c4bb7b9e3088976c2b44a1bb74c7624b37ed853cdf5b4f_profilephp_7f666d4acbd2c9163a5c4aad1747c7fc'&amp;quot;; document.head.appendChild&amp;#40;meta&amp;#41;; このcsp.jsがhead内で読み込まれCSPが設定されることにより、攻撃コードの実行が阻止される。(nonceは読み込むたびに変化する)
-想定解としては、csp.jsに Cache-Control: max-age=20 がついているので、うまくnonceを漏洩させてキャッシュの有効なうちにXSSするというもの。
-こういう問題設定だとCSP Embedded Enforcementを使って簡単に解けるということに気づきました。
-profile.phpに以下のようなiframeを埋め込めば、csp.jsの読み込みが阻止され、攻撃コードを実行できます。
-便利ですね。
-&amp;lt;iframe src=&amp;quot;/profile.php?id=id_to_xssed_page&amp;quot; csp=&amp;quot;script-src 'unsafe-inline';&amp;quot;&amp;gt; CSP Embedded Enforcement この解き方を見つけた時はCSP Embedded Enforcementを知らなかったんですけど、iframeで埋め込む側がCSPを提案するという仕様らしいですね。へー。
-cross originだとリクエスト時のSec-Required-CSPヘッダで提案するだけなんですが、same originだと勝手にCSPがつくみたいです。
-同じページでもstyleのない状態にするとかできます。
-document.body.innerHTML = removeXSS(document.body.innerHTML) みたいなのがbodyの先頭で呼ばれているとかだと回避できるかも。
-もうちょい面白い使い方があればいいんですが、パッと思いつかないですね。
-覚えておけばそのうち使えるかもしれない？</description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/p1138/</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/p1138/</guid><description>SECCON 2017国際決勝に参加した。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog.tyage.net</title><link>https://blog.tyage.net/</link><description>Recent content on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 May 2020 20:14:28 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml"/><item><title>ブログをHugo + GitHub Pagesに変えた</title><link>https://blog.tyage.net/post/2020-05-05-new-blog/</link><pubDate>Tue, 05 May 2020 20:14:28 +0900</pubDate><guid>https://blog.tyage.net/post/2020-05-05-new-blog/</guid><description>&lt;p>ブログをHugo + GitHub Pagesで運用することにしました。
+10年以上WordPressでブログを運用していたのだけど、わざわざ専用のサーバを用意したりWordPressの更新を時々見たりするメリットもあまりないなと。&lt;/p></description></item><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/p1187/</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/p1187/</guid><description>&lt;h2>なに&lt;/h2>
+&lt;p>CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。&lt;br />
+以下のような条件が必要なので現実に使える場面は普通はなさそう。&lt;br />
+CTFでは便利かもしれない。&lt;/p>
+&lt;ul>
+&lt;li>Webページで同一オリジンのページをiframeで読み込める&lt;/li>
+&lt;li>WebページのヘッダにCSPが設定されていない&lt;/li>
+&lt;li>Webページに指定したHTMLを埋め込める(XSSができる)&lt;/li>
+&lt;li>ただし、WebページにJavaScriptによるXSS防御機構がある&lt;/li>
+&lt;/ul>
+&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/p1138/</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/p1138/</guid><description>SECCON 2017国際決勝に参加した。
 5種類のKoH形式の問題と、いくつかのJeopardy形式の問題が出題された。
 問題参(KoH)の問題文:
 The Raspberry Pi distributed to each team contains the Bingo-Service program
