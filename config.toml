@@ -1,4 +1,4 @@
-baseURL = "https://blog.tyage.dev/"
+baseURL = "https://blog.tyage.net/"
 languageCode = "en-us"
 title = "blog.tyage.net"
 theme = "beautifulhugo"
