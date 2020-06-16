@@ -1,5 +1,5 @@
 ---
-title: "Spring matrix parameter based bypasses"
+title: "Security filter bypass using Spring's \"matrix variables\""
 date: 2020-05-09T15:49:25+09:00
 ---
 
@@ -91,6 +91,8 @@ Following table shows how Shiro and Spring Framework treat this request URI.
 - 2020/03/23: Patched and announcement released
 
 ## CVE-2020-1757
+
+TBD
 
 ### Timeline
 
