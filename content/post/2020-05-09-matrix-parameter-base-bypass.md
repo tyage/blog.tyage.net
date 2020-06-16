@@ -21,7 +21,7 @@ public void findPet(
 ```
 *[source](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-matrix-variables)*
 
-When I worked in my previous company, I and co-workers found some library and web servlet couldn't handle the paths which contains matrix variables.
+When I worked in my previous company, I and co-workers found some library and web servlet couldn't handle the paths which contains matrix variables correctly.
 I could exploit those bugs to bypass authentication under some conditions.
 
 I'll introduce the vulnerabilities I reported: CVE-2020-1957 (authentication bypass in Apache Shiro) and CVE-2020-1757 (security bypass in Undertow).
@@ -33,8 +33,8 @@ Apache Shiro is a security framework provides authentications, authorization and
 
 With Shiro, we can easily implement the authentication filter so that we can restrict the access to some endpoints from normal users.
 
-Here is the sample application: https://github.com/apache/shiro/tree/master/samples/spring-hibernate .
-In this app, `applicationContext.xml` defines that only authenticated users can access the URL like `/s/**`. So, users can't access `http://localhost:9080/s/home` without login.
+Here is the sample application: <https://github.com/apache/shiro/tree/master/samples/spring-hibernate> .
+In this app, [applicationContext.xml](https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml) defines that only authenticated users can access the URL like `/s/**`. So, users can't access `http://localhost:9080/s/home` without login.
 ```xml
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         ...
@@ -60,7 +60,7 @@ When I looked into the Shiro, I found the following method which removes the cha
 ```
 *[source](https://github.com/apache/shiro/blob/fa1686d0a9fc5914e8dfc6eb92d82c6e4f12be41/web/src/main/java/org/apache/shiro/web/util/WebUtils.java#L234)*
 
-And the URI string which contains `../` is normalized **after** it is cleaned.
+And the URI string which contains `../` is normalized **after** it is cleaned. I'd also note that `HttpServletRequest.getRequestURI()` returns the requested URI as it is.
 ```java
     public static String getRequestUri(HttpServletRequest request) {
         String uri = (String) request.getAttribute(INCLUDE_REQUEST_URI_ATTRIBUTE);
@@ -72,11 +72,11 @@ And the URI string which contains `../` is normalized **after** it is cleaned.
 ```
 *[source](https://github.com/apache/shiro/blob/fa1686d0a9fc5914e8dfc6eb92d82c6e4f12be41/web/src/main/java/org/apache/shiro/web/util/WebUtils.java#L141)*
 
-So, if the request URI is `http://localhost:8090/FOO/../BAR`, Shiro thinks it should be `http://localhost:8090/BAR`. But if the URI is `http://localhost:8090/FOO;/../BAR`, Shiro thinks it as `http://localhost:8090/FOO` and applies the filter for `/FOO`.
+So, if the request URI is `http://localhost:8090/FOO/../BAR`, Shiro thinks it should be `http://localhost:8090/BAR`. But if the URI is `http://localhost:8090/FOO;/../BAR`, Shiro thinks it is `http://localhost:8090/FOO` and applies the filter for `/FOO`.
 
-Then I could bypass the authentication filter in the sample application with this command: `curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is`. It shows the home page without login cookie.
+I could bypass the authentication filter in the sample application with this command: `curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is`. It shows the home page without login because Shiro does not restrict the access to `/unauthorized` but Spring returns the result of `/s/home`!
 
-Following table shows how Shiro and Spring Framework treat this request URI.
+To make it more clear, following table shows how Shiro and Spring Framework treat this request URI.
 
 ||URI|
 | ------------- | ------------- |
