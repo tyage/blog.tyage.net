@@ -28,9 +28,8 @@ I'll introduce the vulnerabilities I reported: CVE-2020-1957 (authentication byp
 
 ## CVE-2020-1957
 
-CVE-2020-1957 is the bug found in Apache Shiro.
-Apache Shiro is a security framework provides authentications, authorization and so on.
-
+CVE-2020-1957 is the bug found in Apache Shiro when used with the Spring Framework.
+Apache Shiro is a security framework that provides authentications, authorization, and so on.
 With Shiro, we can easily implement the authentication filter so that we can restrict the access to some endpoints from normal users.
 
 Here is the sample application: <https://github.com/apache/shiro/tree/master/samples/spring-hibernate> .
@@ -74,7 +73,7 @@ And the URI string which contains `../` is normalized **after** it is cleaned. I
 
 So, if the request URI is `http://localhost:8090/FOO/../BAR`, Shiro thinks it should be `http://localhost:8090/BAR`. But if the URI is `http://localhost:8090/FOO;/../BAR`, Shiro thinks it is `http://localhost:8090/FOO` and applies the filter for `/FOO`.
 
-I could bypass the authentication filter in the sample application with this command: `curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is`. It shows the home page without login because Shiro does not restrict the access to `/unauthorized` but Spring returns the result of `/s/home`!
+I could bypass the authentication filter in the sample application with this command: `curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is`. It shows the home page without login because Shiro does not restrict the access to `/unauthorized` and Spring returns the result of `/s/home`!
 
 To make it more clear, following table shows how Shiro and Spring Framework treat this request URI.
 
@@ -102,5 +101,7 @@ TBD
 
 ## To prevent this kind of attack
 
-Actually, [Spring Security](https://spring.io/projects/spring-security) has a firewall that blocks the request contains `../` or `;`.
+Those issues have been fixed in Shiro 1.5.3 and Undertow 2.1.0 . Your application will be safe if you update them.
+
+Also, [Spring Security](https://spring.io/projects/spring-security) has a firewall that blocks the request contains `../` or `;`.
 So, it should be fine if your application installs Spring Security.
