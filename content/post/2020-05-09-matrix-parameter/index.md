@@ -1,5 +1,5 @@
 ---
-title: "Security filter bypass using Spring's \"matrix variables\""
+title: "Security filter bypasses with Spring's \"matrix variables\""
 date: 2020-05-09T15:49:25+09:00
 ---
 
@@ -22,9 +22,9 @@ public void findPet(
 *[source](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-matrix-variables)*
 
 Some of you may have seen the URIs that contain session ID in the URI like `http://example.com/login;jsessionid=XXXXXXX` .
-The important point is that matrix variables can appear not only in the last part of the URI (e.g. `http://example.com/foo;p=1/bar;q=22`).
-And if you want to extract the path info from raw request path in order to filter the access, you have to remove matrix variables exactly.
-Therefore, if you removes all characters appears after semicolon, your filter can't handle URI which contains matrix variables in the middle part of URI correctly.
+The important point is that matrix variables can appear not only in the last part of the URI but also in the middle part of the URI (e.g. `http://example.com/foo;p=1/bar;q=22`).
+If you want to extract the path info from raw request path in order to filter the access, you have to remove matrix variables exactly.
+Therefore, if you truncate all characters appears after the semicolon, your filter can't handle URI which contains matrix variables in the middle part of URI correctly.
 
 When I worked in my previous company, I and co-workers found some library and web servlet couldn't handle the paths which contains matrix variables correctly.
 I could exploit those bugs to bypass authentication under some conditions.
@@ -37,7 +37,7 @@ CVE-2020-1957 is the bug found in Apache Shiro when used with the Spring Framewo
 Apache Shiro is a security framework that provides authentications, authorization, and so on.
 With Shiro, we can easily implement the authentication filter so that we can restrict the access to some endpoints from normal users.
 
-Here is the sample application officially provided: <https://github.com/apache/shiro/tree/master/samples/spring-hibernate> .
+Let's see the sample application officially provided: <https://github.com/apache/shiro/tree/master/samples/spring-hibernate> .
 In this app, [applicationContext.xml](https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml) defines that only authenticated users can visit the URI like `/s/**`. Users can't access `http://localhost:9080/s/home` without login.
 ```xml
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
@@ -53,7 +53,7 @@ In this app, [applicationContext.xml](https://github.com/apache/shiro/blob/2e297
 ```
 *[source](https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml#L123)*
 
-When I looked into the Shiro, I found the following method which removes the characters appears after `;`.
+When I looked into the Shiro, I found the following method which truncates the characters appears after semicolon.
 
 ```java
     private static String decodeAndCleanUriString(HttpServletRequest request, String uri) {
@@ -78,7 +78,7 @@ Also, URI string which contains `../` is normalized **after** it is cleaned. I'd
 
 So, if the request URI is `http://localhost:8090/FOO/../BAR`, Shiro cleans it and thinks it should be `http://localhost:8090/BAR`. But if the URI is `http://localhost:8090/FOO;/../BAR`, Shiro thinks it is `http://localhost:8090/FOO` and applies the filter for `/FOO`.
 
-I could bypass the authentication filter in the sample application with this command: `curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is`. It shows the home page without login because Shiro does not restrict the access to `/unauthorized` and Spring returns the result of `/s/home`!
+As a result, I could bypass the authentication filter in the sample application with this command: `curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is`. It shows the home page without login because Shiro does not restrict the access to `/unauthorized` and Spring returns the result of `/s/home`!
 
 To make it more clear, I will show how Shiro and Spring Framework treat this request URI.
 
@@ -86,7 +86,7 @@ To make it more clear, I will show how Shiro and Spring Framework treat this req
 | ------------- | ------------- |
 |Original request|`http://localhost:8090/unauthorized;/../s/home`|
 |Shiro|`http://localhost:8090/unauthorized`|
-|Spring|`http://localhost:8090/s/home`|
+|Spring Framework|`http://localhost:8090/s/home`|
 
 ### Timeline
 
@@ -98,10 +98,10 @@ To make it more clear, I will show how Shiro and Spring Framework treat this req
 
 Undertow is a Java based web server and CVE-2020-1757 is the flaw found in Undertow when used with the Spring Framework.
 With [spring-boot-starter-undertow](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-undertow), you can use Spring Framework with this framework.
+If your request filter uses `request.getReuqestURI()` or `request.getServletPath()`, it may be bypassed.
 
-If you are filtering requests using `request.getReuqestURI()` or `request.getServletPath()`, your security filter may be bypassed.
-I prepared a simple proof of concept [here](https://github.com/tyage/spring-undertow-sample-app).
-In this app, DemoInterceptor blocks all requests whose request paths don't start with `/api/public`.
+I prepared a [simple application here](https://github.com/tyage/spring-undertow-sample-app).
+In this app, DemoInterceptor allows the requests only if their paths start with `/api/public`.
 Therefore, nobody can't access `http://localhost:9000/secret`.
 
 ```java
@@ -119,8 +119,51 @@ public class DemoInterceptor extends HandlerInterceptorAdapter {
 ```
 *[source](https://github.com/tyage/spring-undertow-sample-app/blob/f95747cbdd6b1ab9cd87e8449e1f373c668e33d5/src/main/java/com/example/demo/DemoInterceptor.java)*
 
-But if the app is using Undertow as a servlet, this interceptor can be bypassed with this URI `http://localhost:9000/api/public/aa;/secret` and you can see the content in the secret page.
-Let's looking into the details.
+But this interceptor will be bypassed with this URI `http://localhost:9000/api/public/aa;/secret` and you can see the secret content.
+Let's look into the details.
+
+First, let's see the result of `request.getRequestURI()` in DemoInterceptor.
+It returns `/api/public/aa` (note that it isn't `/api/public/aa/secret`)!.
+This is because Undertow thinks that the path segment has ended when it finds a semicolon.
+
+```java
+final void handlePath(ByteBuffer buffer, ParseState state, HttpServerExchange exchange) throws BadRequestException {
+    ...
+    } else if (next == ';' && (parseState == START || parseState == HOST_DONE || parseState == IN_PATH)) {
+        beginPathParameters(state, exchange, stringBuilder, parseState, canonicalPathStart, urlDecodeRequired);
+        handlePathParameters(buffer, state, exchange);
+        return;
+```
+*[source](https://github.com/undertow-io/undertow/blob/ff4c9cf37872cb96070ba6a2fcbbaa6df291e390/core/src/main/java/io/undertow/server/protocol/http/HttpRequestParser.java#L412)*
+
+But isn't it weird that Spring Framework calls the method mapped to `/secret` even though the path in the Undertow is `/api/public/aa`?
+This is because Spring Framework normalizes the path if servlet path and requested path are different.
+The comment in `getPathWithinServletMapping` method says if servlet mapping is `/test/*` and request URI is `/test/a`, path in this app will be `/a`.
+
+```java
+	/**
+	 * Return the path within the servlet mapping for the given request,
+	 * i.e. the part of the request's URL beyond the part that called the servlet,
+    ...
+	 * <p>E.g.: servlet mapping = "/test/*"; request URI = "/test/a" -> "/a".
+    ...
+	 */
+	public String getPathWithinServletMapping(HttpServletRequest request) {
+```
+*[source](https://github.com/spring-projects/spring-framework/blob/4a5063f4c0300d183c8be976dd0c58ce5138032f/spring-web/src/main/java/org/springframework/web/util/UrlPathHelper.java#L207)*
+
+As a result, this method returns `/secret` when a request URL is `http://localhost:9000/api/public/aa;/secret`. 
+Following image shows the value of `pathWithinApp` is `"/api/public/aa/secret"` and `servletPath` is `"/api/public/aa"` and returned path is `/secret`.
+
+![](spring-path-normalize.png)
+
+Here is the table again.
+
+||URI|
+| ------------- | ------------- |
+|Original request|`http://localhost:9000/api/public/aa;/secret`|
+|Undertow|`http://localhost:9000/api/public/aa`|
+|Spring Framework|`http://localhost:9000/secret`|
 
 ### Timeline
 
@@ -130,7 +173,7 @@ Let's looking into the details.
 
 ## To prevent this kind of attack
 
-Those issues have been fixed in Shiro 1.5.3 and Undertow 2.1.0 . Your application will be safe if you update them.
+Those issues have been fixed in Shiro 1.5.3 and Undertow 2.1.0 . Your application will be safe if you updated them.
 
 Also, [Spring Security](https://spring.io/projects/spring-security) has a firewall that blocks the request contains `../` or `;`.
-So, it should be fine if your application installs Spring Security.
+It may be fine if your application installs Spring Security.
