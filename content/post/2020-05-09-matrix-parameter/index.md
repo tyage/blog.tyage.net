@@ -171,6 +171,8 @@ Here is the table again.
 - 2019/11/28: Team tracked the issue
 - 2020/04/??: [CVE issued and announced](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1757)
 
+It is interesting that [the issue with matrix variables in Undertow have been reported since 2018](https://issues.redhat.com/browse/UNDERTOW-1464), but the issue with Spring Framework has not been reported.
+
 ## To prevent this kind of attack
 
 Those issues have been fixed in Shiro 1.5.3 and Undertow 2.1.0 . Your application will be safe if you updated them.
