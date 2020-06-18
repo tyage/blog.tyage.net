@@ -40,39 +40,39 @@ With Shiro, we can easily implement the authentication filter so that we can res
 Let's see the sample application officially provided: <https://github.com/apache/shiro/tree/master/samples/spring-hibernate> .
 In this app, [applicationContext.xml](https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml) defines that only authenticated users can visit the URI like `/s/**`. Users can't access `http://localhost:9080/s/home` without login.
 ```xml
-    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
-        ...
-        <property name="filterChainDefinitions">
-            <value>
-                /s/signup = anon
-                /s/manageUsers = perms[user:manage]
-                /s/** = authc
-            </value>
-        </property>
-    </bean>
+<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+    ...
+    <property name="filterChainDefinitions">
+        <value>
+            /s/signup = anon
+            /s/manageUsers = perms[user:manage]
+            /s/** = authc
+        </value>
+    </property>
+</bean>
 ```
 *[source](https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml#L123)*
 
 When I looked into the Shiro, I found the following method which truncates the characters appears after semicolon.
 
 ```java
-    private static String decodeAndCleanUriString(HttpServletRequest request, String uri) {
-        uri = decodeRequestString(request, uri);
-        int semicolonIndex = uri.indexOf(';');
-        return (semicolonIndex != -1 ? uri.substring(0, semicolonIndex) : uri);
-    }
+private static String decodeAndCleanUriString(HttpServletRequest request, String uri) {
+    uri = decodeRequestString(request, uri);
+    int semicolonIndex = uri.indexOf(';');
+    return (semicolonIndex != -1 ? uri.substring(0, semicolonIndex) : uri);
+}
 ```
 *[source](https://github.com/apache/shiro/blob/fa1686d0a9fc5914e8dfc6eb92d82c6e4f12be41/web/src/main/java/org/apache/shiro/web/util/WebUtils.java#L234)*
 
 Also, URI string which contains `../` is normalized **after** it is cleaned. I'd also note that `HttpServletRequest.getRequestURI()` returns the requested URI as it is.
 ```java
-    public static String getRequestUri(HttpServletRequest request) {
-        String uri = (String) request.getAttribute(INCLUDE_REQUEST_URI_ATTRIBUTE);
-        if (uri == null) {
-            uri = request.getRequestURI();
-        }
-        return normalize(decodeAndCleanUriString(request, uri));
+public static String getRequestUri(HttpServletRequest request) {
+    String uri = (String) request.getAttribute(INCLUDE_REQUEST_URI_ATTRIBUTE);
+    if (uri == null) {
+        uri = request.getRequestURI();
     }
+    return normalize(decodeAndCleanUriString(request, uri));
+}
 ```
 *[source](https://github.com/apache/shiro/blob/fa1686d0a9fc5914e8dfc6eb92d82c6e4f12be41/web/src/main/java/org/apache/shiro/web/util/WebUtils.java#L141)*
 
@@ -141,14 +141,14 @@ This is because Spring Framework normalizes the path if servlet path and request
 The comment in `getPathWithinServletMapping` method says if servlet mapping is `/test/*` and request URI is `/test/a`, path in this app will be `/a`.
 
 ```java
-	/**
-	 * Return the path within the servlet mapping for the given request,
-	 * i.e. the part of the request's URL beyond the part that called the servlet,
-    ...
-	 * <p>E.g.: servlet mapping = "/test/*"; request URI = "/test/a" -> "/a".
-    ...
-	 */
-	public String getPathWithinServletMapping(HttpServletRequest request) {
+/**
+ * Return the path within the servlet mapping for the given request,
+ * i.e. the part of the request's URL beyond the part that called the servlet,
+   ...
+ * <p>E.g.: servlet mapping = "/test/*"; request URI = "/test/a" -> "/a".
+   ...
+ */
+public String getPathWithinServletMapping(HttpServletRequest request) {
 ```
 *[source](https://github.com/spring-projects/spring-framework/blob/4a5063f4c0300d183c8be976dd0c58ce5138032f/spring-web/src/main/java/org/springframework/web/util/UrlPathHelper.java#L207)*
 
@@ -175,7 +175,7 @@ It is interesting that [the issue with matrix variables in Undertow have been re
 
 ## To prevent this kind of attack
 
-Those issues have been fixed in Shiro 1.5.3 and Undertow 2.1.0 . Your application will be safe if you updated them.
+Those issues have been fixed in Shiro 1.5.3 and Undertow 2.1.0 . Your application is safe if you updated them.
 
 Also, [Spring Security](https://spring.io/projects/spring-security) has a firewall that blocks the request contains `../` or `;`.
 It may be fine if your application installs Spring Security.
