@@ -1,20 +1,19 @@
 baseURL = "https://blog.tyage.net/"
 languageCode = "en-us"
 title = "blog.tyage.net"
-theme = "beautifulhugo"
+theme = "github-style"
 googleAnalytics = "UA-3879973-3"
 paginate = 3
 
-[Author]
-  name = "tyage"
+[params]
+  author = "tyage"
+  description = "blog.tyage.net"
   github = "tyage"
   twitter = "tyage"
-  website = "https://tyage.net"
-
-[Params]
-  rss = true
-  logo = "icon/icon.jpg"
-  socialShare = true
+  email = "namatyage@gmail.com"
+  avatar = "/icon/icon.jpg"
+  url = "https://blog.tyage.net"
+  disableDarkMode = true
 
 [markup.goldmark.renderer]
   unsafe = true
