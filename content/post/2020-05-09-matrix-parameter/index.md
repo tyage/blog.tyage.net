@@ -1,5 +1,5 @@
 ---
-title: "Security filter bypasses with Spring's \"matrix variables\""
+title: "Security filter bypasses with \"matrix variables\""
 date: 2020-05-09T15:49:25+09:00
 ---
 
