@@ -21,10 +21,10 @@ public void findPet(
 ```
 *[source](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-matrix-variables)*
 
-Some of you may have seen the URIs that contain session ID in the URI like `http://example.com/login;jsessionid=XXXXXXX` .
+Some of you may have seen the URIs that contain session ID such as `http://example.com/login;jsessionid=XXXXXXX` .
 The important point is that matrix variables can appear not only in the last part of the URI but also in the middle part of the URI (e.g. `http://example.com/foo;p=1/bar;q=22`).
-If you want to extract the path info from raw request path in order to filter the access, you have to remove matrix variables exactly.
-Therefore, if you truncate all characters appears after the semicolon, your filter can't handle URI which contains matrix variables in the middle part of URI correctly.
+If you want to extract the path info from raw URI in order to filter the access, you have to remove matrix variables exactly.
+Therefore, if you truncate all characters appears after the semicolon by mistake, your filter can't handle the request correctly which contains matrix variables in the middle part of URI.
 
 When I worked in my previous company, I and co-workers found some library and web servlet couldn't handle the paths which contains matrix variables correctly.
 I could exploit those bugs to bypass authentication under some conditions.
