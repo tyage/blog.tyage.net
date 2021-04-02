@@ -8,7 +8,8 @@ date: 2021-04-02T22:28:00+09:00
 GitHub Actions is a useful feature for the jobs, for example, building, publishing.
 
 I found a bug which allows unauthorized users to edit the main branch of the repositories in GitHub.
-(Repositories which enables GitHub Actions are affected and fortunately, the bug exists between 2021/02/04 18:42 UTC and 2021/02/05 13:35 UTC.)
+Repositories which enables GitHub Actions are affected but fortunately, the bug exists in a brief window from 2021/02/04 18:42 UTC to 2021/02/05 13:35 UTC.
+Also, protected branch is safe :)
 
 ---
 
