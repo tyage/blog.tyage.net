@@ -81,7 +81,7 @@ Though this is a independent bug, the bug also exists in GitHub Actions and is t
 ## Timeline
 
 - **2021/02/04 18:42 UTC** The bug was born
-- **2021/02/05 12:09 UTC** I reported this issue to GitHub Bug Bounty Program
+- **2021/02/05 12:09 UTC** I reported this issue to [GitHub Bug Bounty Program](https://hackerone.com/github)
 - **2021/02/05 13:35 UTC** The bug was dead
 - **2021/02/05 17:58 UTC** I received a message that the issues was fixed
 - **2021/03/31 13:14 UTC** GitHub awarded a $25,000 bounty
