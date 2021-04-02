@@ -10,10 +10,13 @@ I found a bug which allows unauthorized users to edit the main branch of the rep
 
 ---
 
-Recently, I saw the case that some users abused the GitHub Actions for the DDoS. [GitHub Actionsを使ったDDoSに巻き込まれた](https://blog.utgw.net/entry/2021/02/05/133642)
+Recently, I saw the case that some users abused the GitHub Actions for the DDoS.
+
+[GitHub Actionsを使ったDDoSに巻き込まれた - 私が歌川です](https://blog.utgw.net/entry/2021/02/05/133642)
+
 They forked many repositories, added a workflow file which runs some malicious program on pull request event, and created pull requests, so that their programs run in target repositories.
 I'm not sure if that is correct but I guess they sent those pull requests to bypass [the resource limits on GitHub Actions](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration).
-Next, I thought if the resource is shared for the pull request jobs, how about the `GITHUB_TOKEN`?
+If the resource is shared for the pull request jobs, how about the `GITHUB_TOKEN`?
 
 The `GITHUB_TOKEN` allows the workflow to commit a code, create packages, and so on.
 Therefore, if the `GITHUB_TOKEN` for the target repository is shared for the jobs triggered by pull request, we gain write permission of the respository without authorization!
@@ -49,7 +52,8 @@ jobs:
 
 3. Attacker sends a pull request to the parent repository and waits for a while.
 
-The test was succeeded and after the workflow finishes, victim repository has been modified!
+Surprisingly, the test was succeeded.
+After the workflow finishes, victim repository has been modified!
 
 (Send pull request to `tyage-test/repo-with-workflow`)
 ![](screenshot1.png)
@@ -64,7 +68,9 @@ I reported the bug to GitHub, and they fixed the bug quickly :)
 Another short story:
 
 Interestingly, a one day before I found the bug, another people had found a similar bug.
-[Stealing arbitrary GitHub Actions secrets](https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html)
+
+[Stealing arbitrary GitHub Actions secrets | Teddy Katz’s Blog](https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html)
+
 Though this is a independent bug, the bug also exists in GitHub Actions and is triggered by crafted pull request.
 
 ---
