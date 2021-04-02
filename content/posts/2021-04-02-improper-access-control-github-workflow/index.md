@@ -3,6 +3,8 @@ title: "Gain write permission of repositories with a bug in GitHub Actions"
 date: 2021-04-02T22:28:00+09:00
 ---
 
+# Gain write permission of repositories with a bug in GitHub Actions
+
 GitHub Actions is a useful feature for the jobs, for example, building, publishing.
 
 I found a bug which allows unauthorized users to edit the main branch of the repositories in GitHub.
