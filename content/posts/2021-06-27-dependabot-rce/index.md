@@ -158,6 +158,8 @@ Summarizing the above, npm calls `child_process.spawn` so that they can execute 
 I reported this bug to the teams and [it was resolved in npm 7.10.0](https://github.com/npm/git/pull/29).
 I asked if they issue CVE but they answered they will not.
 
+But as you know, the action "installing a malicious npm package" itself is already dangerous, so this bug only affects to limited situations such as a dependency checker.
+
 # Timeline
 
 I reported SSRF to Dependabot and RCE to npm, and received bounties $617 and $7,500 respectively.
