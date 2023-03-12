@@ -139,6 +139,6 @@ It causes race condition when the app process `WriteNote` at the same time and i
 To make a challenge solvable, origin HTTP server must support byte-range request and must *not* return E-Tag header.
 Fortunately, Go net/http server meets these requirements therefore I chose the Go server.
 
-Not only nginx but also some other HTTP cache servers and CDNs have this kind of implementation, so I think this concept has a change to be exploited in some real environment.
+Not only nginx but also some other HTTP cache servers and CDNs have this kind of implementation, so I think this concept has a chance to be exploited in a real environment.
 
 I think this is the first PoC of byte-range cache poisoning XSS and I wish the participants have enjoyed the challenge!
