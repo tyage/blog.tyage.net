@@ -4,7 +4,8 @@ date: 2023-03-12T00:00:00+09:00
 ---
 
 I made a Gotion Challenge in [ACSC](https://acsc.asia/) (Asian Cyber Security Challenge) 2023.
-Here is the author's writeup.
+
+This is a byte-range cache poisoning XSS challenge.
 
 Challenge Description:
 
