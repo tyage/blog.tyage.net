@@ -57,7 +57,7 @@ server {
 
 This directive caches an mp4 file, but it is not a normal cache, it is a [byte-range cache](https://www.nginx.com/blog/smart-efficient-byte-range-caching-nginx/) which allows us to cache part of the content.
 When a client requests `Range: bytes=0-1000`, nginx requests the content with a `Range: bytes=0-4095` header to the origin server and caches the response.
-If a client requests `Range: bytes=0-1000` again, nginx can quickly make a response with the previous cache containing the first 4096 bytes.
+If a client requests `Range: bytes=0-1000` again, nginx can respond quickly because there is a cache of the first 4096 bytes.
 
 This config file also has an error in the location directive.
 The `.` in `location ~ .mp4$` does not mean `.` but any character, because this is RegExp.
@@ -68,13 +68,12 @@ This directive was made for the video file `howto.mp4` but the file such as `FOO
 The solution is byte range cache poisoning, which causes nginx to return HTML containing XSS payload.
 
 This is possible because nginx concatenates segmented caches.
-Consider a situation where nginx has the content cache, but only the first 4096 bytes, and the content is updated after that.
+Consider a situation where nginx has the content cache, but only the first 4096 bytes, and the content was updated later.
 When a client makes a request without a range header, nginx will retrieve the rest of the updated content and concatenate it with the first cache.
 
 In other words, we can concatenate the sliced parts of two different HTMLs!
 
-The steps to exploit this are below.
-
+The steps to exploit this into XSS are below.
 
 1. Create a note page whose URL ends with `AAAAAAAAAAAAAAAAAmp4` so that it will be cached.
 
@@ -138,8 +137,8 @@ It causes race condition when the app process `WriteNote` at the same time and i
 # Comment
 
 To make a challenge solvable, origin HTTP server must support byte-range request and must *not* return E-Tag header.
-Fortunatelly, Go net/http server meets these requirements therefore I chose the Go server.
+Fortunately, Go net/http server meets these requirements therefore I chose the Go server.
 
-Not only nginx but also some other HTTP cache servers and CDNs have this kind of implementation, so I think this concept could be exploitable in some real environment.
+Not only nginx but also some other HTTP cache servers and CDNs have this kind of implementation, so I think this concept has a chance to be exploited in a real environment.
 
-I think this is the first PoC of byte-range cache poisoning XSS and wish the participants enjoyed the challenge!
+I think this is the first PoC of byte-range cache poisoning XSS and I wish the participants have enjoyed the challenge!
