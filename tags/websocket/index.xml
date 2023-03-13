@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WebSocket on blog.tyage.net</title><link>https://blog.tyage.net/tags/websocket/</link><description>Recent content in WebSocket on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/websocket/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.net/p552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/p552/</guid><description>コンディション：良好
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WebSocket on blog.tyage.net</title><link>https://blog.tyage.net/tags/websocket/</link><description>Recent content in WebSocket on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/websocket/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.net/?p=552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/?p=552/</guid><description>コンディション：良好
 朝食：寝てた
 昼食：記憶になし
 夕食：記憶になし
@@ -8,7 +8,7 @@
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.net/p328/</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.net/p328/</guid><description>&lt;p>&lt;a href="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a>に参加してきました。&lt;/p>
+その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.net/?p=328/</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.net/?p=328/</guid><description>&lt;p>&lt;a href="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a>に参加してきました。&lt;/p>
 &lt;p>去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p>
 &lt;p>それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br />
 ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br />

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on blog.tyage.net</title><link>https://blog.tyage.net/tags/windows/</link><description>Recent content in Windows on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 12:08:01 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/p290/</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/p290/</guid><description>HerokuいいですよねHeroku！
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on blog.tyage.net</title><link>https://blog.tyage.net/tags/windows/</link><description>Recent content in Windows on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 12:08:01 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/?p=290/</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/?p=290/</guid><description>HerokuいいですよねHeroku！
 今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
 （結局失敗したため、おとなしくUbuntuから使うことにしました。）
 普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。
@@ -8,7 +8,7 @@ rubyをRubyInstaller for Windowsを使ってインストール。
 gem update gem install rails gem install heroku keys:add が、ここでメールアドレスとパスワードを入れたところでエラー
 C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17 2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he roku/credentials (Errno::ENOENT) Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに
 41 home_directory = home_directory.split&amp;#40;&amp;quot;&amp;quot;).join(&amp;quot;/&amp;quot;) if !home_directory.nil? と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。
-うぬー。。</description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/p122/</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/p122/</guid><description>&lt;h3>経緯&lt;/h3>
+うぬー。。</description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/?p=122/</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/?p=122/</guid><description>&lt;h3>経緯&lt;/h3>
 &lt;p>以前に、&lt;a href="http://tsukulog.info/">あらゆる物作りレシピ共有サイト「つくログ」&lt;/a>を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p>
 &lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html">PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a>&lt;/p>
 &lt;p>↑これ。でかい。2002年もの&lt;/p>

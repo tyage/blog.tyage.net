@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>givemac on blog.tyage.net</title><link>https://blog.tyage.net/tags/givemac/</link><description>Recent content in givemac on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 Apr 2011 16:00:42 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/givemac/index.xml" rel="self" type="application/rss+xml"/><item><title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title><link>https://blog.tyage.net/p315/</link><pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate><guid>https://blog.tyage.net/p315/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=313">前の記事&lt;/a>の内容を修正して、スライドにまとめてみた。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>givemac on blog.tyage.net</title><link>https://blog.tyage.net/tags/givemac/</link><description>Recent content in givemac on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 05 Apr 2011 16:00:42 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/givemac/index.xml" rel="self" type="application/rss+xml"/><item><title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title><link>https://blog.tyage.net/?p=315/</link><pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate><guid>https://blog.tyage.net/?p=315/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=313">前の記事&lt;/a>の内容を修正して、スライドにまとめてみた。&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/givemac2">スライド&lt;/a>&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/js/boku2d-base.js">boku2d(仮)&lt;/a>という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br />
 このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p>
 &lt;p>メインのコードは以下のような感じ。&lt;/p>
 &lt;p>コピペっぽいところがあるのはご愛嬌。&lt;br />
 （時間的に少し焦ってた）&lt;/p>
-&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/p313/</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/p313/</guid><description>提出したスライドはこちら
+&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/?p=313/</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/?p=313/</guid><description>提出したスライドはこちら
 一応givemac2用の記事。
 少し設問とずれた話になりそうなので、提出するかどうかは迷い中。
 とりあえず思いついたことをだらだらと書いてみた。

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>情報オリンピック on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/</link><description>Recent content in 情報オリンピック on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Feb 2011 11:25:47 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>最近あったことども</title><link>https://blog.tyage.net/p267/</link><pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate><guid>https://blog.tyage.net/p267/</guid><description>&lt;p>最近は比較的忙しかった。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>情報オリンピック on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/</link><description>Recent content in 情報オリンピック on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 Feb 2011 11:25:47 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>最近あったことども</title><link>https://blog.tyage.net/?p=267/</link><pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate><guid>https://blog.tyage.net/?p=267/</guid><description>&lt;p>最近は比較的忙しかった。&lt;/p>
 &lt;p>つらつらとまとめてみる。&lt;/p>
 &lt;p>受験まで後一年らしい。&lt;br />
 しらね&lt;/p>
-&lt;p></description></item><item><title>JOI予選通過しました</title><link>https://blog.tyage.net/p234/</link><pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate><guid>https://blog.tyage.net/p234/</guid><description>情報オリンピック予選
+&lt;p></description></item><item><title>JOI予選通過しました</title><link>https://blog.tyage.net/?p=234/</link><pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate><guid>https://blog.tyage.net/?p=234/</guid><description>情報オリンピック予選
 何故か通過しました。
 点数は７２点でギリギリ。（ボーダーも７２点）
 20+20+20+8+4 = 72　てな感じでした。
@@ -14,7 +14,7 @@ KYの二年は、自分も含め少なくとも３人通過した見たい。
 たぶん、あの二人は余裕で本戦も通過しそうだなあ。
 罪悪感はあるけど、マイナーな言語で受けると逆に受かりやすい場合もあるんだなあと実感。
 （ヒント：提出したプログラム）
-また、ただで東京に行って参ります。</description></item><item><title>node.jsでJOI受けた。</title><link>https://blog.tyage.net/p188/</link><pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate><guid>https://blog.tyage.net/p188/</guid><description>情報オリンピック日本委員会
+また、ただで東京に行って参ります。</description></item><item><title>node.jsでJOI受けた。</title><link>https://blog.tyage.net/?p=188/</link><pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate><guid>https://blog.tyage.net/?p=188/</guid><description>情報オリンピック日本委員会
 PHPを使うか、ブラウザのコンソール画面でJavaScript実行させるか、node.jsを使うかで悩んだ末、勉強もかねてnode.jsを使いました。
 結果はかなり微妙でしたが、node.jsの勉強になったと思うので、よしとします。
 予選通過するかしないかギリギリのラインですが、どっかでミスってる可能性大なので、たぶん通過しません。
@@ -28,9 +28,9 @@ Q2を解き始めたところから、「split(&amp;#8216;n&amp;#8217;)」で一
 rnでsplitしても、また別の問題が浮上してくるのですごく戸惑いました。
 最終的にはダウンロードした入力データを、エディタで改行を除くなどして応急処置をほどこしました。
 向こうの想定するC,C++ではなくて、node.jsで解いた罰かもしれんねー
-まあこれで、アリ本を買うことなんかは今後もないでしょう</description></item><item><title>JOIの解答がGoogle Chromeで提出できないという話</title><link>https://blog.tyage.net/p164/</link><pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate><guid>https://blog.tyage.net/p164/</guid><description>情報オリンピック日本委員会
+まあこれで、アリ本を買うことなんかは今後もないでしょう</description></item><item><title>JOIの解答がGoogle Chromeで提出できないという話</title><link>https://blog.tyage.net/?p=164/</link><pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate><guid>https://blog.tyage.net/?p=164/</guid><description>情報オリンピック日本委員会
 現象 なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。
-.bbpBox12301709980209152 {background:url(http://s.twimg.com/a/1291163542/images/themes/theme19/bg.gif) #FFF04D;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block} 「予選練習」において， Google Chrome (7.0 以降)など一部のブラウザからソースコードのアップロードが正常に行えない場合があることが確認されています．
+「予選練習」において， Google Chrome (7.0 以降)など一部のブラウザからソースコードのアップロードが正常に行えない場合があることが確認されています．
 競技当日までに競技に使用するPCから予選練習にてソースコードのアップロードが
 正常に行えるか確認してください．less than a minute ago via HootSuiteJOI / IOI-JP 科学委員会
 ioi_jp
@@ -48,4 +48,9 @@ Chromeのバージョンは8.0.552.215 beta
 （他のブラウザだと、どのファイルでも「Content-Typeフィールド」が付与されるようだ。）
 （比較）
 「Content-Typeフィールド」を適当に付け加えるとアップロードできるようになった。
-あとがき 今までChromeを使ってても、dropboxも使えたし、なんら問題がなかったので、ちょっと驚き。</description></item></channel></rss>
+あとがき 今までChromeを使ってても、dropboxも使えたし、なんら問題がなかったので、ちょっと驚き。
+ちなみにdropboxでアップロードするときも、「一般に登録されてない拡張子」だと「Content-Typeフィールド」が付与されなかった。
+JOIの鯖側で「Content-Typeフィールド」のチェックでもしてるのかしら。
+それにしてもJOIさん、font要素とかまじで使わないでください。
+追伸 どうやらChromeのバグだったようです。
+Issue 6800 &amp;#8211; chromium &amp;#8211; Chrome doesn&amp;apos;t set Content-Type for file upload when the file extension is not recognized. &amp;#8211; Project Hosting on Google Code</description></item></channel></rss>

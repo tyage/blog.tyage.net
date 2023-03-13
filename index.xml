@@ -8,8 +8,8 @@ It is enabled by default and can make a commit on dependabot/* branch of many re
 I found a bug which allows unauthorized users to edit the main branch of the repositories in GitHub. Repositories which enables GitHub Actions are affected but fortunately, the bug exists in a brief window from 2021/02/04 18:42 UTC to 2021/02/05 13:35 UTC. Also, protected branch is safe :)</description></item><item><title>Security filter bypasses with "matrix variables"</title><link>https://blog.tyage.net/posts/2020-06-19-matrix-parameter/</link><pubDate>Fri, 19 Jun 2020 09:28:25 +0900</pubDate><guid>https://blog.tyage.net/posts/2020-06-19-matrix-parameter/</guid><description>Spring framework, which is a popular web application framework for Java, supports &amp;ldquo;matrix variables&amp;rdquo;.
 With matrix variables, we can set the values of parameters in the path segment.
 // GET /owners/42;q=11/pets/21;q=22 @GetMapping(&amp;#34;/owners/{ownerId}/pets/{petId}&amp;#34;) public void findPet( @MatrixVariable(name=&amp;#34;q&amp;#34;, pathVar=&amp;#34;ownerId&amp;#34;) int q1, @MatrixVariable(name=&amp;#34;q&amp;#34;, pathVar=&amp;#34;petId&amp;#34;) int q2) { // q1 == 11 // q2 == 22 } source
-Some of you may have seen the URIs that contain session ID such as http://example.</description></item><item><title>ブログをHugo + GitHub Pagesに変えた</title><link>https://blog.tyage.net/posts/2020-05-05-new-blog/</link><pubDate>Tue, 05 May 2020 20:14:28 +0900</pubDate><guid>https://blog.tyage.net/posts/2020-05-05-new-blog/</guid><description>&lt;p>ブログをHugo + GitHub Pagesで運用することにしました。
-10年以上WordPressでブログを運用していたのだけど、わざわざ専用のサーバを用意したりWordPressの更新を時々見たりするメリットもあまりないなと。&lt;/p></description></item><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/p1187/</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/p1187/</guid><description>&lt;h2>なに&lt;/h2>
+Some of you may have seen the URIs that contain session ID such as http://example.com/login;jsessionid=XXXXXXX . The important point is that matrix variables can appear not only in the last part of the URI but also in the middle part of the URI (e.</description></item><item><title>ブログをHugo + GitHub Pagesに変えた</title><link>https://blog.tyage.net/posts/2020-05-05-new-blog/</link><pubDate>Tue, 05 May 2020 20:14:28 +0900</pubDate><guid>https://blog.tyage.net/posts/2020-05-05-new-blog/</guid><description>&lt;p>ブログをHugo + GitHub Pagesで運用することにしました。
+10年以上WordPressでブログを運用していたのだけど、わざわざ専用のサーバを用意したりWordPressの更新を時々見たりするメリットもあまりないなと。&lt;/p></description></item><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/?p=1187/</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/?p=1187/</guid><description>&lt;h2>なに&lt;/h2>
 &lt;p>CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。&lt;br />
 以下のような条件が必要なので現実に使える場面は普通はなさそう。&lt;br />
 CTFでは便利かもしれない。&lt;/p>
@@ -19,20 +19,20 @@ CTFでは便利かもしれない。&lt;/p>
 &lt;li>Webページに指定したHTMLを埋め込める(XSSができる)&lt;/li>
 &lt;li>ただし、WebページにJavaScriptによるXSS防御機構がある&lt;/li>
 &lt;/ul>
-&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/p1138/</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/p1138/</guid><description>SECCON 2017国際決勝に参加した。
+&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/?p=1138/</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/?p=1138/</guid><description>SECCON 2017国際決勝に参加した。
 5種類のKoH形式の問題と、いくつかのJeopardy形式の問題が出題された。
 問題参(KoH)の問題文:
 The Raspberry Pi distributed to each team contains the Bingo-Service program
 Please log-in your Raspberry Pi ( ssh: 192.168.4.254, user/pass = pi/kenjiinwonderland )
 Please set up Bingo-Service on 192.168.4.254 : 80
 If you click &amp;#8220;Measure&amp;#8221; button above, the system will accesses your Bingo-Service in a few minutes later
-&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>ANAプラチナメンバーになりました</title><link>https://blog.tyage.net/p1113/</link><pubDate>Wed, 14 Feb 2018 10:36:25 +0000</pubDate><guid>https://blog.tyage.net/p1113/</guid><description>2017年はいい感じに飛行機に乗る機会があって、年末修行したら 50022PP (ANA分: 34444PP) になりました。
+&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>ANAプラチナメンバーになりました</title><link>https://blog.tyage.net/?p=1113/</link><pubDate>Wed, 14 Feb 2018 10:36:25 +0000</pubDate><guid>https://blog.tyage.net/?p=1113/</guid><description>2017年はいい感じに飛行機に乗る機会があって、年末修行したら 50022PP (ANA分: 34444PP) になりました。
 今年度までは学生なのでSFCに申し込めないですが、来年度からSFC会員に申し込もうと思います。(できるのか？)
 消えないうちにフライトを記録。
 日付 フライト ルート マイル PP 値段
-2017/03/25 NH 0026 大阪（伊丹）－東京（羽田） 280 560 125,940円　(25.76円/PP) 2017/03/25 UA 0882 TOKYO/NARITA &amp;#8211; OHARE 1,884 1,884 2017/03/31 NH 0039 東京（羽田）－大阪（伊丹） 280 560 2017/03/31 UA 0881 OHARE &amp;#8211; TOKYO/NARITA 1,884 1,884 2017/05/05 NH 0024 大阪（伊丹）－東京（羽田） 210 820 28,580円　(17.42円/PP) 2017/05/07 NH 0037 東京（羽田）－大阪（伊丹） 210 820 2017/05/12 NH 0030 大阪（伊丹）－東京（羽田） 210 820 24,980円　(15.</description></item><item><title>tyage.sakura.ne.jp を終了します</title><link>https://blog.tyage.net/p1076/</link><pubDate>Fri, 29 Sep 2017 14:32:27 +0000</pubDate><guid>https://blog.tyage.net/p1076/</guid><description>2009/03/21から8年半、ダラダラと運用していた tyage.sakura.ne.jp を、2017/09/30に終了します。
+2017/03/25 NH 0026 大阪（伊丹）－東京（羽田） 280 560 125,940円　(25.76円/PP) 2017/03/25 UA 0882 TOKYO/NARITA &amp;#8211; OHARE 1,884 1,884 2017/03/31 NH 0039 東京（羽田）－大阪（伊丹） 280 560 2017/03/31 UA 0881 OHARE &amp;#8211; TOKYO/NARITA 1,884 1,884 2017/05/05 NH 0024 大阪（伊丹）－東京（羽田） 210 820 28,580円　(17.42円/PP) 2017/05/07 NH 0037 東京（羽田）－大阪（伊丹） 210 820 2017/05/12 NH 0030 大阪（伊丹）－東京（羽田） 210 820 24,980円　(15.23円/PP) 2017/05/13 NH 0031 東京（羽田）－大阪（伊丹） 210 820 2017/05/21 NH 0022 大阪（伊丹）－東京（羽田） 210 820 23,180円　(14.</description></item><item><title>tyage.sakura.ne.jp を終了します</title><link>https://blog.tyage.net/?p=1076/</link><pubDate>Fri, 29 Sep 2017 14:32:27 +0000</pubDate><guid>https://blog.tyage.net/?p=1076/</guid><description>2009/03/21から8年半、ダラダラと運用していた tyage.sakura.ne.jp を、2017/09/30に終了します。
 またサイトのソースコードを以下に公開します。
-tyage.sakura.ne.jp 全体のリポジトリ 専用リポジトリがあるコンテンツ一覧 以下はKMCのLT大会で発表した際のスライドです。</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/p1043/</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/p1043/</guid><description>Overview Problem page:
+tyage.sakura.ne.jp 全体のリポジトリ 専用リポジトリがあるコンテンツ一覧 以下はKMCのLT大会で発表した際のスライドです。</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/?p=1043/</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/?p=1043/</guid><description>Overview Problem page:
 http://css.chal.ctf.westerns.tokyo/
 Provided source code:
 proxy.py
@@ -41,7 +41,7 @@ There are 4 pages: /, /refresh, /chrowler, /flag.
 When we access /flag, it responses only local IP is allowed. (your IP: 110.3.193.114).
 So, we should use /chrowler (crawler using Chrome) to get the content in /flag.
 Find XSS Next, we search XSS and found /refresh has it. (We found the vulnerability when browsing with w3m)
-In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/p1020/</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/p1020/</guid><description>Overview Problem page:
+In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/?p=1020/</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/?p=1020/</guid><description>Overview Problem page:
 https://geokittiesv2.web.ctfcompetition.com/
 Copy of source code:
 https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127
@@ -50,7 +50,7 @@ The comment is validated by using htmlparser2.
 Allowed tags are: p, a, b, img, br, i
 Invalid attributes: on(.*)= and href=javascript:...
 Solution What we should do is find the differences in parsing between Google Chrome and htmlparser2.
-After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/p990/</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/p990/</guid><description>Overview Problem page:
+After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/?p=990/</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/?p=990/</guid><description>Overview Problem page:
 https://sanitizer.web.ctfcompetition.com
 Copy of source code:
 https://gist.github.com/tyage/6eabacf6001bd068287842b1052132e4
@@ -59,7 +59,7 @@ Sanitizing method The method of sanitizing is follow:
 1. Remove the words that match with /meta|srcdoc|utf-16be/i from input.
 2. Register a ServiceWorker then, render input in iframe
 3. In iframe, it load &amp;lt;script src=sanitize&amp;gt; which executes the following code:
-onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title><link>https://blog.tyage.net/p944/</link><pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate><guid>https://blog.tyage.net/p944/</guid><description>こんにちは.
+onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title><link>https://blog.tyage.net/?p=944/</link><pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate><guid>https://blog.tyage.net/?p=944/</guid><description>こんにちは.
 KMC5回生のtyageです.
 この記事は, KMCアドベントカレンダー 5日目の記事です.
 昨日はnonyleneさんの Android Studio をビルドする でした.
@@ -71,7 +71,7 @@ TL;DR PHPのZipArchiveライブラリには, globパターンでファイルを�
 ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイルを作りたい瞬間があるのではないかと思います.
 私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
 また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
-$dir = '/tmp/workdir/'; &amp;nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir&amp;#40;$jsonDir&amp;#41;; file_put_contents&amp;#40;$jsonDir. 'api.json', json_encode&amp;#40;$request&amp;#41;&amp;#41;; &amp;nbsp; // create archive.zip $zip = new ZipArchive&amp;#40;&amp;#41;; $zip-&amp;gt;open&amp;#40;$dir . 'archive.zip', ZipArchive::CREATE&amp;#41;; $zip-&amp;gt;addGlob&amp;#40;$dir . '**/**', 0, &amp;#91;'remove_path' =&amp;gt; $dir&amp;#93;&amp;#41;; $zip-&amp;gt;close&amp;#40;&amp;#41;; ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</description></item><item><title>プリパラで効率よく承認欲求を満たす</title><link>https://blog.tyage.net/p918/</link><pubDate>Wed, 02 Dec 2015 15:46:00 +0000</pubDate><guid>https://blog.tyage.net/p918/</guid><description>この記事は KMC Advent Calendar 2015 3日目(12/3)の記事です。
+$dir = '/tmp/workdir/'; &amp;nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir&amp;#40;$jsonDir&amp;#41;; file_put_contents&amp;#40;$jsonDir. 'api.json', json_encode&amp;#40;$request&amp;#41;&amp;#41;; &amp;nbsp; // create archive.zip $zip = new ZipArchive&amp;#40;&amp;#41;; $zip-&amp;gt;open&amp;#40;$dir . 'archive.zip', ZipArchive::CREATE&amp;#41;; $zip-&amp;gt;addGlob&amp;#40;$dir . '**/**', 0, &amp;#91;'remove_path' =&amp;gt; $dir&amp;#93;&amp;#41;; $zip-&amp;gt;close&amp;#40;&amp;#41;; ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</description></item><item><title>プリパラで効率よく承認欲求を満たす</title><link>https://blog.tyage.net/?p=918/</link><pubDate>Wed, 02 Dec 2015 15:46:00 +0000</pubDate><guid>https://blog.tyage.net/?p=918/</guid><description>この記事は KMC Advent Calendar 2015 3日目(12/3)の記事です。
 2日目の記事は、id: utgwさんの 古明地こいしのアドベントカレンダー&amp;#038;雑記と来年の抱負 でした。
 今日はアドベントカレンダー用におもちゃを作ったので紹介します。
 プリパラで承認欲求を満たす 最近、Twitterの「お気に入り」が「いいね」に変わりましたね。
@@ -95,13 +95,13 @@ Pripara Simulator
 Travis-CI is 便利。
 あと、シミュレータでは「ラッキー!サプライズ☆バースデイ」の序盤を真似して作ってみたのですが、譜面の部分をES2015のgeneratorを使って実装してみたら思ったよりいい感じになったような気がしています。
 scenario.js
-let luckySurpriseBirthday = function * &amp;#40;&amp;#41; &amp;#123; // ほんとにスペシャルなパーティーのはじまりは yield createCircle&amp;#40;1 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; yield createCircle&amp;#40;0 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; yield createCircle&amp;#40;7 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; また一部の筐体ではゲームのプレイ内容を録画できるようになっているのですが、作るにあたってそこで録画した内容がかなり参考になりました。ありがたい。</description></item><item><title>セキュリティミニキャンプ新潟でチューターをしていました</title><link>https://blog.tyage.net/p888/</link><pubDate>Mon, 18 May 2015 08:46:04 +0000</pubDate><guid>https://blog.tyage.net/p888/</guid><description>セキュリティミニキャンプ新潟が5/16, 5/17にありました。
+let luckySurpriseBirthday = function * &amp;#40;&amp;#41; &amp;#123; // ほんとにスペシャルなパーティーのはじまりは yield createCircle&amp;#40;1 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; yield createCircle&amp;#40;0 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; yield createCircle&amp;#40;7 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; また一部の筐体ではゲームのプレイ内容を録画できるようになっているのですが、作るにあたってそこで録画した内容がかなり参考になりました。ありがたい。</description></item><item><title>セキュリティミニキャンプ新潟でチューターをしていました</title><link>https://blog.tyage.net/?p=888/</link><pubDate>Mon, 18 May 2015 08:46:04 +0000</pubDate><guid>https://blog.tyage.net/?p=888/</guid><description>セキュリティミニキャンプ新潟が5/16, 5/17にありました。
 ちなみにDEFCON Qualsが5/16~18にありました。
 @tyage DEFCON
 &amp;mdash; 軟こんにゃく (@potetisensei) May 15, 2015
 チューターとしてはあまり仕事をしていなかったかと思いますが、軽い発表をさせてもらいました。
 ライブラリが廃れるっていう話で質問されたのだけど、標準仕様に取り込まれて廃れる場合もあってそれはそれで幸せかもということはお風呂で思った
-&amp;mdash; もうダニ (@tyage) May 16, 2015</description></item><item><title>:visitedセレクタのプライバシー問題とSNSでの利用</title><link>https://blog.tyage.net/p848/</link><pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate><guid>https://blog.tyage.net/p848/</guid><description>追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
+&amp;mdash; もうダニ (@tyage) May 16, 2015</description></item><item><title>:visitedセレクタのプライバシー問題とSNSでの利用</title><link>https://blog.tyage.net/?p=848/</link><pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate><guid>https://blog.tyage.net/?p=848/</guid><description>追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
 2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。
 参考: CVE-2015-1765, Internet Explorer 用の累積的なセキュリティ更新プログラム (3058515)
 :visitedセレクタについて 半年以上前に少し調べたことについてまとめてみたいと思います。
@@ -113,11 +113,11 @@ You will still be able to visually style visited links, but there are now limits
 &amp;#8211; color
 &amp;#8211; background-color
 &amp;#8211; border-color (and its sub-properties)
-&amp;#8211; outline-color</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/p829/</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/p829/</guid><description>This challenge needs only XSS but it is interesting to me 🙂
-These guys have ripped off our designs and using them in their web pages builder! We’d Haxx them, don’t worry we’ll give you decent points for it. http://188.40.18.76/
-By using the form, we could generate a page.(such as http://188.40.18.76/output/19c94d778563b117e18e3442e887989aea14277d/filename)
+&amp;#8211; outline-color
+&amp;#8211; The color parts of the fill and stroke properties</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/?p=829/</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/?p=829/</guid><description>This challenge needs only XSS but it is interesting to me 🙂
+These guys have ripped off our designs and using them in their web pages builder! We’d Haxx them, don’t worry we’ll give you decent points for it. http://188.40.18.76/ By using the form, we could generate a page.(such as http://188.40.18.76/output/19c94d778563b117e18e3442e887989aea14277d/filename)
 It htmlspecialchars the &amp;#8220;title&amp;#8221; and &amp;#8220;file content&amp;#8221; but not &amp;#8220;style&amp;#8221; or &amp;#8220;filename&amp;#8221;.
-The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>ウィッシュリストテロでミナミヌマエビが450匹やってきた</title><link>https://blog.tyage.net/p814/</link><pubDate>Tue, 18 Nov 2014 15:52:56 +0000</pubDate><guid>https://blog.tyage.net/p814/</guid><description>amazonの欲しい物リストにミナミヌマエビを入れていたら450匹届きました&amp;#8230;（15匹で1セットの商品が30セット届きました。）
+The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>ウィッシュリストテロでミナミヌマエビが450匹やってきた</title><link>https://blog.tyage.net/?p=814/</link><pubDate>Tue, 18 Nov 2014 15:52:56 +0000</pubDate><guid>https://blog.tyage.net/?p=814/</guid><description>amazonの欲しい物リストにミナミヌマエビを入れていたら450匹届きました&amp;#8230;（15匹で1セットの商品が30セット届きました。）
 いわゆるウィッシュリストテロってやつです！
 @mage_1868 さん許すまじ！！（ありがとうございます！！！）
 @tyage 遅くなりましたが誕生日プレゼントを送付しました☆（ゝω・）v&amp;#10;今日の午前中に届く予定です＞＜生ものなのでお早めに
@@ -134,7 +134,7 @@ after: 綺麗になりました
 餌は何でも食べると聞いたので、友達にもらった炭酸せんべいをあげています。
 かわいいし掃除してくれるしとてもいい子たちなのですが、数が多いとストレスが溜まりそうなので、親戚に少しゆずる予定です。
 養殖て大儲けしたらエビ御殿とか建てれないかなぁ・・・
-ウィッシュリストはいつでも受け付けておりますので、お気軽にポチって下さい。</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/p802/</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/p802/</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>Atomエディタ用にVideo player pluginを作りました</title><link>https://blog.tyage.net/p790/</link><pubDate>Sat, 26 Jul 2014 03:48:14 +0000</pubDate><guid>https://blog.tyage.net/p790/</guid><description>コーディング中でも動画が見たい人種に向けたプラグインです。
+ウィッシュリストはいつでも受け付けておりますので、お気軽にポチって下さい。</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/?p=802/</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/?p=802/</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>Atomエディタ用にVideo player pluginを作りました</title><link>https://blog.tyage.net/?p=790/</link><pubDate>Sat, 26 Jul 2014 03:48:14 +0000</pubDate><guid>https://blog.tyage.net/?p=790/</guid><description>コーディング中でも動画が見たい人種に向けたプラグインです。
 BGA（background animation）を流しながらコードを書いたりすることが多いのですが、せっかくならエディタの背景で流したいですよね。
 ということで作ってみました。
 pluginページ: video-player
@@ -146,7 +146,7 @@ chromiumで対応していない形式に関しては、vlcを呼び出してogg
 バグ報告等はgithubのissueに投げてください。
 pull requestも受け付けています。
 その他 他に同じようなエディタプラグインあったら参考にしたいので教えてください。
-正直、背景で動画流れてると集中できない気もする。</description></item><item><title>ハンドルネーム</title><link>https://blog.tyage.net/p781/</link><pubDate>Mon, 19 May 2014 12:19:38 +0000</pubDate><guid>https://blog.tyage.net/p781/</guid><description>世間が某音楽デュオの話で盛り上がっているのでそれに便乗して&amp;#8230;
+正直、背景で動画流れてると集中できない気もする。</description></item><item><title>ハンドルネーム</title><link>https://blog.tyage.net/?p=781/</link><pubDate>Mon, 19 May 2014 12:19:38 +0000</pubDate><guid>https://blog.tyage.net/?p=781/</guid><description>世間が某音楽デュオの話で盛り上がっているのでそれに便乗して&amp;#8230;
 よく聞かれるのですが、私のハンドルネームがチャゲになったのは、小学校3年生くらいの時からアダ名がそうだったからです。
 中学・高校・大学もずっとそのアダ名で呼ばれているのですが、なぜそう呼ばれ始めたのかよく覚えていません。
 （音楽ユニットに関係あったかもしれないしなかったかもしれない）
@@ -159,7 +159,7 @@ Google+のプロフィールには、学校名とか所属している会社と�
 逆に、芸能人になりすましてプロフィールを作ると、タグ付けされて情報が手に入ったりするのかもしれないと思いました。
 （やりたくないし。やらないですが）
 そもそも情報の公開範囲制限をかけてない投稿って多いですし、人間の操作ミスも含まれるので情報が漏れてしまうのを防ぐのはなかなか難しそうです。
-話が大きくそれましたが、私のハンドルネームの由来を知っている方はご一報ください。</description></item><item><title>録画環境を構築した</title><link>https://blog.tyage.net/p762/</link><pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate><guid>https://blog.tyage.net/p762/</guid><description>環境 ハードはこれ
+話が大きくそれましたが、私のハンドルネームの由来を知っている方はご一報ください。</description></item><item><title>録画環境を構築した</title><link>https://blog.tyage.net/?p=762/</link><pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate><guid>https://blog.tyage.net/?p=762/</guid><description>環境 ハードはこれ
 OSは未だにUbuntu 12.04
 録画するまで ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。
 深夜アニメを見る生活も捨てがたいし録画することにした。
@@ -187,7 +187,7 @@ Linux環境でもQSVが使えるらしく、ffmpegよりエンコード速度が
 この時の圧縮後の容量はHandBrakeは400MB、ffmpegは600MBという感じだった。
 HandBrakeのほうが画質が落ちているように見えるが、比較しなければ気にならない程度。
 当然、エンコード方式等々で変わってくるだろうからコマンドを貼っておく。
-ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</description></item><item><title>スペインでFirefox OS端末は買えるのか？</title><link>https://blog.tyage.net/p739/</link><pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate><guid>https://blog.tyage.net/p739/</guid><description>この記事はKMCアドベントカレンダーの4日目の記事です。
+ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</description></item><item><title>スペインでFirefox OS端末は買えるのか？</title><link>https://blog.tyage.net/?p=739/</link><pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate><guid>https://blog.tyage.net/?p=739/</guid><description>この記事はKMCアドベントカレンダーの4日目の記事です。
 1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。
 僕は10月末〜11月初めまで、Facebook CTF決勝のためにチームEpsilonDeltaの4人でスペインにいました。
 その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。
@@ -221,7 +221,7 @@ http://www.movistar.es/firefoxos
 スペイン語がわからない人間のために英語で書かれたZTE Open購入マニュアルも見つけました。
 How to Buy ZTE Open – Step by Step Guide
 これで準備も万全だ！と満を持してmovistarに入ると、スペイン人のお姉ちゃんが1人で店番をしているだけでした。
-僕「Hola!」</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/p730/</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/p730/</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
+僕「Hola!」</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/?p=730/</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/?p=730/</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
 一応、webを何問かとprogramming2問ほどを解きました。
 うちを含め多くのチームがweb問題を全完しており、今回のweb問題は易しかったように感じます。
 開始直後は、8-puzzleのprogrammingを解いて7位くらいだったけど、最終的には79位となった。
@@ -232,9 +232,10 @@ How to Buy ZTE Open – Step by Step Guide
 &amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
 HEYYEYAAEYAAAEYAEYAAが意識遠くなっても頭の中から聞こえるようになってきた
 &amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
-DEFCONが僕達に残したもの</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/p719/</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/p719/</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
+DEFCONが僕達に残したもの</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/?p=719/</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/?p=719/</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
 バックアップしてみると、[username]_[md5(username)][md5(zipfile)].zipという名前でzipファイルがダウンロードでき、それをアップロードすることで復元ができるようになっている。
-zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/p697/</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/p697/</guid><description>DIMVA CTFに参加していた。
+zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。
+&amp;lt;?xml version=&amp;quot;1.</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/?p=697/</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/?p=697/</guid><description>DIMVA CTFに参加していた。
 私のチーム（Epsilon Delta）は850ポイントで17位だった。
 Web 100 画像アップローダーが用意されており、どうにかこうにかする問題。
 はじめにいくつか画像が用意されており、パスワードを入力しないと閲覧できない画像があったため、そのパスワードを求める問題と推察される。
@@ -251,7 +252,7 @@ Web 200 普通にアクセスすると
 xml parameterってのが素直にxmlって名前のリクエストパラメータだったのに、そこに気づくまでに一日かかって英語の壁を感じる。
 これがわかればあとは解くだけ。
 とりあえず色々試していると、以下のレスポンスが返って来たため、XPathへのインジェクションだとわかった。
-Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/p689/</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/p689/</guid><description>&lt;h3>CTF&lt;/h3>
+Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/?p=689/</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/?p=689/</guid><description>&lt;h3>CTF&lt;/h3>
 &lt;p>えと、ブログを更新停止している間に、Epsilon DeltaとしていくつかCTFに参加していました。&lt;/p>
 &lt;ul>
 &lt;li>Codegate YUT Preliminary 2013&lt;/li>
@@ -264,7 +265,7 @@ Error during login: Query: //User[UserName/text()='' and Password/text()='' '...
 &lt;/ul>
 &lt;p>はじめは海外のCTFの感覚がつかめず、ちゃんと解いたような記憶もなかったのですが、BKPあたりからは少し慣れてきたような気がします。&lt;/p>
 &lt;p>今まで解いてた問題のwrite upを書こうとも思ったのですが、すっかり忘れてしまっているため、一番最近やったSIGINT CTFのwrite upを書くことにします。&lt;/p>
-&lt;p></description></item><item><title>サイト移転中です</title><link>https://blog.tyage.net/p683/</link><pubDate>Fri, 12 Jul 2013 11:21:52 +0000</pubDate><guid>https://blog.tyage.net/p683/</guid><description>なかなか時間が取れず、サイトの移転を先延ばしにしていたのですが、移転することになりました。
+&lt;p></description></item><item><title>サイト移転中です</title><link>https://blog.tyage.net/?p=683/</link><pubDate>Fri, 12 Jul 2013 11:21:52 +0000</pubDate><guid>https://blog.tyage.net/?p=683/</guid><description>なかなか時間が取れず、サイトの移転を先延ばしにしていたのですが、移転することになりました。
 移転元: http://tyage.sakura.ne.jp/
 移転先: http://tyage.net/
 さくらのクラウド二万円クーポンを頂いたため、サーバはそこにおいてあります。
@@ -277,8 +278,8 @@ Error during login: Query: //User[UserName/text()='' and Password/text()='' '...
 ここのところ、ブログも書けていないのでちゃんと書いていきますね。
 移転に際して、以下のページを参考にさせていただきました。
 nginxベースの高速なWordPress環境をお名前.comのVPSで構築
-Debian Squeeze に nginx + php-fpm な Web サーバーを構築する</description></item><item><title>退職しました</title><link>https://blog.tyage.net/p681/</link><pubDate>Tue, 18 Jun 2013 02:22:43 +0000</pubDate><guid>https://blog.tyage.net/p681/</guid><description>気がつくと、いつの間にか退職していました。
-今は別の所で働いています。</description></item><item><title>また働き始めたこと</title><link>https://blog.tyage.net/p658/</link><pubDate>Tue, 01 Jan 2013 19:47:01 +0000</pubDate><guid>https://blog.tyage.net/p658/</guid><description>ネットではあんまり公にはしてなかったのだけど、10月ごろからまたReventive, Incにて働き始めました。
+Debian Squeeze に nginx + php-fpm な Web サーバーを構築する</description></item><item><title>退職しました</title><link>https://blog.tyage.net/?p=681/</link><pubDate>Tue, 18 Jun 2013 02:22:43 +0000</pubDate><guid>https://blog.tyage.net/?p=681/</guid><description>気がつくと、いつの間にか退職していました。
+今は別の所で働いています。</description></item><item><title>また働き始めたこと</title><link>https://blog.tyage.net/?p=658/</link><pubDate>Tue, 01 Jan 2013 19:47:01 +0000</pubDate><guid>https://blog.tyage.net/?p=658/</guid><description>ネットではあんまり公にはしてなかったのだけど、10月ごろからまたReventive, Incにて働き始めました。
 「また」ってのは、2011年の初頭にも働いていたことがあって、そのころはTitanium Mobileでチャットアプリを作っていました。
 Titanium Mobileに毎日いらついていた覚えがあります。
 Titanium Mobileの存在自体がトラウマ化した・・・。
@@ -300,7 +301,7 @@ Androidアプリの開発をしていて色々と知見を得たことが多か�
 ただ、Close for AndroidはこのようにAndroidアプリ開発初心者も開発に携わっているため、何かと問題を抱えていることもあります。
 そのため、あまり期待せずこれからの成長を暖かく見守っていただきながら、インストールしてもらえると嬉しく感じます（ステマじゃないよ宣伝だよ！）
 Close for Android
-Close for iOS</description></item><item><title>セキュリティ系イベント参加ログ</title><link>https://blog.tyage.net/p649/</link><pubDate>Tue, 01 Jan 2013 18:54:42 +0000</pubDate><guid>https://blog.tyage.net/p649/</guid><description>&lt;p>新年明けましておめでとうございます。&lt;/p>
+Close for iOS</description></item><item><title>セキュリティ系イベント参加ログ</title><link>https://blog.tyage.net/?p=649/</link><pubDate>Tue, 01 Jan 2013 18:54:42 +0000</pubDate><guid>https://blog.tyage.net/?p=649/</guid><description>&lt;p>新年明けましておめでとうございます。&lt;/p>
 &lt;p>少し時間ができたので適当にブログを書いていくことにしました。&lt;/p>
 &lt;p>今回は、二ヶ月の間に参加していたセキュリティ系イベントをまとめて書いていこうとおもいますです。&lt;/p>
 &lt;ul>
@@ -309,7 +310,7 @@ Close for iOS</description></item><item><title>セキュリティ系イベント
 &lt;li>第3回SECCON 奈良大会
 &lt;li>ゲヒルンウェブセキュリティ勉強会　第２回　in京都
 &lt;/ul>
-&lt;p></description></item><item><title>12/16（日）</title><link>https://blog.tyage.net/p642/</link><pubDate>Sun, 16 Dec 2012 03:35:44 +0000</pubDate><guid>https://blog.tyage.net/p642/</guid><description>CoD BO2を友達としたあと、5時に解散して少し寝る。
+&lt;p></description></item><item><title>12/16（日）</title><link>https://blog.tyage.net/?p=642/</link><pubDate>Sun, 16 Dec 2012 03:35:44 +0000</pubDate><guid>https://blog.tyage.net/?p=642/</guid><description>CoD BO2を友達としたあと、5時に解散して少し寝る。
 ほとんど寝ずに、起きてニチアサを聞きながら、朝食のパンケーキを作る。
 卵と砂糖と小麦粉のシンプルなパンケーキを作ったのだけど、ほんとうに卵と砂糖と小麦粉だけでできたので、一食30円くらいで済んでしまう。
 前日に作ってあったスープを飲みながら一息。
@@ -322,14 +323,14 @@ Close for iOS</description></item><item><title>セキュリティ系イベント
 お米もまだあるし、麺類も以前に業務スーパーで買ったものがあるし・・・
 ただ、外食（牛丼280円）とredbullが食べられなくなるのはとても残念でしかたないです。
 悔しいのでエネルギー節約のために寝ます・・・
-錬金術でも考えとかないとなあ</description></item><item><title>d=(^o^)=b.js – Aizu Advent Calendar</title><link>https://blog.tyage.net/p609/</link><pubDate>Fri, 14 Dec 2012 06:55:12 +0000</pubDate><guid>https://blog.tyage.net/p609/</guid><description>&lt;p>&lt;strong>※追記：mac以外で閲覧するとコードが壊れているみたいです。&lt;/strong>&lt;/p>
+錬金術でも考えとかないとなあ</description></item><item><title>d=(^o^)=b.js – Aizu Advent Calendar</title><link>https://blog.tyage.net/?p=609/</link><pubDate>Fri, 14 Dec 2012 06:55:12 +0000</pubDate><guid>https://blog.tyage.net/?p=609/</guid><description>&lt;p>&lt;strong>※追記：mac以外で閲覧するとコードが壊れているみたいです。&lt;/strong>&lt;/p>
 &lt;p>やっほー！d=(^o^)=b&lt;/p>
 &lt;p>今日は&lt;a href="http://atnd.org/events/33782">Aizu Advent Calendar&lt;/a>14日目として記事を書くよd=(^o^)=b&lt;/p>
 &lt;p>ってことで、何を書こうか迷ったんだけど、d=(^o^)=bをネタに書きますd=(^o^)=b&lt;/p>
 &lt;p>ところで、d=(^o^)=b　←この顔文字、ヅ大生（主に@yutopp氏？）がよく使っている気がするけど、気のせいかしらd=(^o^)=b&lt;/p>
 &lt;p>↓例&lt;br />
 &lt;a href="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png">&lt;img data-attachment-id="611" data-permalink="https://blog.tyage.net/?attachment_id=611" data-orig-file="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" data-orig-size="253,659" data-comments-opened="1" data-image-meta="{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}" data-image-title="スクリーンショット 2012-12-09 19.30.22" data-image-description="" data-medium-file="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" data-large-file="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" src="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" alt="" title="スクリーンショット 2012-12-09 19.30.22" width="253" height="659" class="alignnone size-full wp-image-611" style="border:1px solid #999;" />&lt;/a>&lt;/p>
-&lt;p>d=(^o^)=bがなにを意味するのかはよくわかんないんだけど、まあ本題へd=(^o^)=b&lt;br /></description></item><item><title>何か吐き出さないとなあ</title><link>https://blog.tyage.net/p605/</link><pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate><guid>https://blog.tyage.net/p605/</guid><description>ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。
+&lt;p>d=(^o^)=bがなにを意味するのかはよくわかんないんだけど、まあ本題へd=(^o^)=b&lt;br /></description></item><item><title>何か吐き出さないとなあ</title><link>https://blog.tyage.net/?p=605/</link><pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate><guid>https://blog.tyage.net/?p=605/</guid><description>ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。
 いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。
 とりあえず、以下のことについて書くつもりでいる。
 ・ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）
@@ -342,7 +343,7 @@ Close for iOS</description></item><item><title>セキュリティ系イベント
 ・今まで一人でやっていたプロジェクトやプログラミングについて
 こぼしたいことはあるはずなのに、なぜか手が進まないのでこうやって自分にプレッシャーをかけてみる。
 自然とインプットもアウトプットもしなくなってから、自分が何をしているのかわからなくなったので振り返ればと思う。
-ただ、NF（京大11月祭）も近いので、またどうなることやら・・・</description></item><item><title>本日の出費</title><link>https://blog.tyage.net/p598/</link><pubDate>Sat, 20 Oct 2012 23:03:03 +0000</pubDate><guid>https://blog.tyage.net/p598/</guid><description>・丸亀製麺 ￥460円
+ただ、NF（京大11月祭）も近いので、またどうなることやら・・・</description></item><item><title>本日の出費</title><link>https://blog.tyage.net/?p=598/</link><pubDate>Sat, 20 Oct 2012 23:03:03 +0000</pubDate><guid>https://blog.tyage.net/?p=598/</guid><description>・丸亀製麺 ￥460円
 ・HP mini 210-1000 ￥17800円
 ・CoD MW3ソフト ￥6680円
 ・バス運賃 ￥660円　(寝過ごして220円無駄に)
@@ -353,7 +354,7 @@ Close for iOS</description></item><item><title>セキュリティ系イベント
 ・財布との思い出 プライスレス
 おそらく、自転車のカゴに財布を入れていたら盗られた。
 死にたい
-そういえばこの日、バス内にケータイを忘れたのもフラグだったのかなあ</description></item><item><title>関東に行ってきた</title><link>https://blog.tyage.net/p581/</link><pubDate>Thu, 06 Sep 2012 16:56:57 +0000</pubDate><guid>https://blog.tyage.net/p581/</guid><description>&lt;p>東京の友人に土下座しないといけない用事ができたため東京に行ってきた。&lt;br />
+そういえばこの日、バス内にケータイを忘れたのもフラグだったのかなあ</description></item><item><title>関東に行ってきた</title><link>https://blog.tyage.net/?p=581/</link><pubDate>Thu, 06 Sep 2012 16:56:57 +0000</pubDate><guid>https://blog.tyage.net/?p=581/</guid><description>&lt;p>東京の友人に土下座しないといけない用事ができたため東京に行ってきた。&lt;br />
 そのついでに一週間程関東を旅行することにした。&lt;br />
 8/28夜に神戸を出発して翌朝に東京に着き、&lt;br />
 8/31夜に東京を出て翌朝新潟に到着、&lt;br />
@@ -517,8 +518,8 @@ Close for iOS</description></item><item><title>セキュリティ系イベント
 &lt;td>2784&lt;/td>
 &lt;/tr>
 &lt;/table>
-&lt;p></description></item><item><title>08/24</title><link>https://blog.tyage.net/p578/</link><pubDate>Fri, 24 Aug 2012 08:21:54 +0000</pubDate><guid>https://blog.tyage.net/p578/</guid><description>今日は昨日作ったたこ飯だけを食べた。
-有意義だった。</description></item><item><title>08/12</title><link>https://blog.tyage.net/p571/</link><pubDate>Mon, 13 Aug 2012 23:46:32 +0000</pubDate><guid>https://blog.tyage.net/p571/</guid><description>コンディション：昇天直前
+&lt;p></description></item><item><title>08/24</title><link>https://blog.tyage.net/?p=578/</link><pubDate>Fri, 24 Aug 2012 08:21:54 +0000</pubDate><guid>https://blog.tyage.net/?p=578/</guid><description>今日は昨日作ったたこ飯だけを食べた。
+有意義だった。</description></item><item><title>08/12</title><link>https://blog.tyage.net/?p=571/</link><pubDate>Mon, 13 Aug 2012 23:46:32 +0000</pubDate><guid>https://blog.tyage.net/?p=571/</guid><description>コンディション：昇天直前
 朝食：サラダ巻一本+redbull
 昼食：サンドイッチ一個+redubll
 夕食：寝てた
@@ -540,7 +541,7 @@ feru絵アイコン生成ツールも途中でタイムリミットが来てし�
 feru絵生成ツールをちょっと整形してたら17時ごろに力尽きた。
 発表したスライド
 feru絵変換ツールもどき
-LT自動生成ツールもどきにすらならなかった何か</description></item><item><title>08/11</title><link>https://blog.tyage.net/p565/</link><pubDate>Mon, 13 Aug 2012 23:32:27 +0000</pubDate><guid>https://blog.tyage.net/p565/</guid><description>コンディション：やばい
+LT自動生成ツールもどきにすらならなかった何か</description></item><item><title>08/11</title><link>https://blog.tyage.net/?p=565/</link><pubDate>Mon, 13 Aug 2012 23:32:27 +0000</pubDate><guid>https://blog.tyage.net/?p=565/</guid><description>コンディション：やばい
 朝食：スープ
 昼食：おにぎり一個+redbull
 夕食：中華料理+redubll
@@ -558,7 +559,7 @@ NUMBERというアプリです。
 なんか東京ではLTとかしてるらしいけど、通信環境が悪すぎて全く分からなかった。
 京都でも適当にゆるゆると自己紹介LTとかしてた。
 提供していただいたredbullを飲んでいたらいつまでも起き続けられた。
-京都大会では寝れます</description></item><item><title>08/10</title><link>https://blog.tyage.net/p562/</link><pubDate>Mon, 13 Aug 2012 23:22:16 +0000</pubDate><guid>https://blog.tyage.net/p562/</guid><description>コンディション：まぁまぁ
+京都大会では寝れます</description></item><item><title>08/10</title><link>https://blog.tyage.net/?p=562/</link><pubDate>Mon, 13 Aug 2012 23:22:16 +0000</pubDate><guid>https://blog.tyage.net/?p=562/</guid><description>コンディション：まぁまぁ
 朝食：なし
 昼食：とり天
 夕食：豚焼いた
@@ -574,7 +575,7 @@ Twitterのオフ会がそこら中で行われていて異様だった。
 ラジオ体操同好会の会長と、「とり天」を食堂で食べるために粘り続ける。
 部室に行ったり学校うろちょろしてたら15時になってやっと「とり天」にありつくことができる。
 うまい。うますぎる。
-その後はちょっと寝てぼーっとしてたら無意味に時間が過ぎてしまった。</description></item><item><title>08/09</title><link>https://blog.tyage.net/p560/</link><pubDate>Mon, 13 Aug 2012 23:13:36 +0000</pubDate><guid>https://blog.tyage.net/p560/</guid><description>コンディション：寝不足
+その後はちょっと寝てぼーっとしてたら無意味に時間が過ぎてしまった。</description></item><item><title>08/09</title><link>https://blog.tyage.net/?p=560/</link><pubDate>Mon, 13 Aug 2012 23:13:36 +0000</pubDate><guid>https://blog.tyage.net/?p=560/</guid><description>コンディション：寝不足
 朝食：記憶になし
 昼食：なし
 夕飯：中華料理
@@ -588,7 +589,7 @@ Twitterのオフ会がそこら中で行われていて異様だった。
 眠くなりながらミーティングをしていたら大量にタスクが投げつけられていた。
 ミーティング後は中華食って解散。
 私立プログラミングキャンプでなんかやらないといけなくなった。
-あと、18切符で旅するハッカソンとか面白そうなイベント案が出た。</description></item><item><title>08/08</title><link>https://blog.tyage.net/p557/</link><pubDate>Mon, 13 Aug 2012 23:03:10 +0000</pubDate><guid>https://blog.tyage.net/p557/</guid><description>コンディション：普通
+あと、18切符で旅するハッカソンとか面白そうなイベント案が出た。</description></item><item><title>08/08</title><link>https://blog.tyage.net/?p=557/</link><pubDate>Mon, 13 Aug 2012 23:03:10 +0000</pubDate><guid>https://blog.tyage.net/?p=557/</guid><description>コンディション：普通
 朝飯：寝てた
 昼飯：残飯とマクドポテト
 夕飯：記憶にない
@@ -597,14 +598,14 @@ Twitterのオフ会がそこら中で行われていて異様だった。
 しかし主催者のふぇるが体調を崩して参加できないという事態。
 とにかく京都駅でオフ会参加者を探して、二人ほど違う人に声かけをする。
 すごく恥ずかしい。
-まあ主催者はいなかったけど、ぺちゃくちゃ話してたら22時になって解散する。</description></item><item><title>08/07</title><link>https://blog.tyage.net/p555/</link><pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate><guid>https://blog.tyage.net/p555/</guid><description>コンディション：普通
+まあ主催者はいなかったけど、ぺちゃくちゃ話してたら22時になって解散する。</description></item><item><title>08/07</title><link>https://blog.tyage.net/?p=555/</link><pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate><guid>https://blog.tyage.net/?p=555/</guid><description>コンディション：普通
 朝食：寝てた
 昼食：記憶になし
 夕食：ささみとチーズを焼いた何か
 昨日の続きでnode.jsで遊ぶ。
 box2dをwebsocket通じて動かしたりしてた。
 heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）
-そんなことしていたら無駄に日を過ごした。</description></item><item><title>08/06</title><link>https://blog.tyage.net/p552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/p552/</guid><description>コンディション：良好
+そんなことしていたら無駄に日を過ごした。</description></item><item><title>08/06</title><link>https://blog.tyage.net/?p=552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/?p=552/</guid><description>コンディション：良好
 朝食：寝てた
 昼食：記憶になし
 夕食：記憶になし
@@ -614,7 +615,7 @@ heroku場で動かすとカックカクだけどオフラインならヌルヌ�
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>08/05</title><link>https://blog.tyage.net/p530/</link><pubDate>Mon, 13 Aug 2012 22:27:44 +0000</pubDate><guid>https://blog.tyage.net/p530/</guid><description>コンディション：寝不足
+その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>08/05</title><link>https://blog.tyage.net/?p=530/</link><pubDate>Mon, 13 Aug 2012 22:27:44 +0000</pubDate><guid>https://blog.tyage.net/?p=530/</guid><description>コンディション：寝不足
 朝飯：記憶になし
 昼飯：残飯＋桃
 夕飯：お好み焼き
@@ -627,7 +628,7 @@ heroku場で動かすとカックカクだけどオフラインならヌルヌ�
 材料を買ってきたり、カメラで撮り合いをしたり、いろんなお好み焼きを作ってたら22時になったのでバイバイ。
 その後はtwitterしたりgdgdして3時ごろに就寝。
 そういえば、この日と前日は短期集中講義があったんだけど一度も行かなかったなあ。
-チャゲごはん</description></item><item><title>08/04</title><link>https://blog.tyage.net/p525/</link><pubDate>Mon, 13 Aug 2012 22:16:04 +0000</pubDate><guid>https://blog.tyage.net/p525/</guid><description>コンディション：寝不足
+チャゲごはん</description></item><item><title>08/04</title><link>https://blog.tyage.net/?p=525/</link><pubDate>Mon, 13 Aug 2012 22:16:04 +0000</pubDate><guid>https://blog.tyage.net/?p=525/</guid><description>コンディション：寝不足
 朝飯：サンドイッチ
 昼飯：餃子の王将
 夕飯：残飯
@@ -643,13 +644,14 @@ heroku場で動かすとカックカクだけどオフラインならヌルヌ�
 その後の懇親会では、加古川の人とかその周辺と悪ふざけしていたら試験疲れもあって少し眠くなる。
 LT後とか懇親会とかでいろんな人に声をかけてもらって頭がパンクしそうに。
 オフ会とかブース・セミナー回りとかできなかったのが残念だけどまあ楽しかった。
-Twitter / pastak: LTスタンバイ中の @tyage さんです！！ #osckansai pic.twitter.com/Z1hm9q8L</description></item><item><title>さくらのvps契約+node.js</title><link>https://blog.tyage.net/p497/</link><pubDate>Thu, 09 Aug 2012 15:42:45 +0000</pubDate><guid>https://blog.tyage.net/p497/</guid><description>ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
+Twitter / pastak: LTスタンバイ中の @tyage さんです！！ #osckansai pic.twitter.com/Z1hm9q8L</description></item><item><title>さくらのvps契約+node.js</title><link>https://blog.tyage.net/?p=497/</link><pubDate>Thu, 09 Aug 2012 15:42:45 +0000</pubDate><guid>https://blog.tyage.net/?p=497/</guid><description>ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
 自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・
-　環境 VPS の OS CentOS 6.2 x86_64 クライアント の OS Ubuntu 12.04 LTS 64 bit node.js v0.6.18 　設定 さくらVPSで使うコマンドリストとサーバーの初期設定を主に参考にしています。
+環境 VPS の OS CentOS 6.2 x86_64 クライアント の OS Ubuntu 12.04 LTS 64 bit node.js v0.6.18 設定 さくらVPSで使うコマンドリストとサーバーの初期設定を主に参考にしています。
 公開鍵認証にしてあるならport番号の変更とかは必要ないような気もするのですが一応。
 作業用ユーザーの追加 useradd &amp;#91;user&amp;#93; passwd &amp;#91;user&amp;#93; usermod -G wheel &amp;#91;user&amp;#93; SSHポート番号変更 vim /etc/ssh/sshd_config #Port 22 Port [new port] 公開認証鍵に 鍵を作成し転送
 ssh-keygen -t rsa -C &amp;quot;[email]&amp;quot; scp ~/.ssh/id_rsa.pub &amp;#91;user&amp;#93;@&amp;#91;host&amp;#93;:/home/&amp;#91;user&amp;#93;/authorized_keys 公開鍵の設定
-cd $HOME mkdir .ssh chmod 700 .ssh chmod 600 authorized_keys mv authorized_keys .ssh/authorized_keys 設定を変更し反映</description></item><item><title>06/25</title><link>https://blog.tyage.net/p487/</link><pubDate>Mon, 25 Jun 2012 20:18:44 +0000</pubDate><guid>https://blog.tyage.net/p487/</guid><description>&amp;nbsp;
+cd $HOME mkdir .ssh chmod 700 .ssh chmod 600 authorized_keys mv authorized_keys .ssh/authorized_keys 設定を変更し反映
+vim /etc/ssh/sshd_config PermitRootLogin no PasswordAuthentication no /etc/init.</description></item><item><title>06/25</title><link>https://blog.tyage.net/?p=487/</link><pubDate>Mon, 25 Jun 2012 20:18:44 +0000</pubDate><guid>https://blog.tyage.net/?p=487/</guid><description>&amp;nbsp;
 昨日は作業とかあって徹夜してしまった。
 眠い。とにかく眠い。
 朝の一限目は、横で友達がぺちゃくちゃと話してる中、爆睡してしまって何の授業かわからずじまい。
@@ -657,7 +659,7 @@ cd $HOME mkdir .ssh chmod 700 .ssh chmod 600 authorized_keys mv authorized_keys 
 昼飯は目覚ましにカレーを食ったが、辛くないし眠くなった。喋りながら食ってたら眠くなってきた。
 三限目はプリントを受け取ったら、メガネを外して上着を敷いて寝た。授業中に寝言を言って笑われる夢を見た。夢だったのか現実だったのかわからない。
 4,5限目は眠すぎて自主休講した。寝た。
-6時半からの例会も起きれないくらいに寝続けた。12時間寝て今に至る。</description></item><item><title>06/11</title><link>https://blog.tyage.net/p483/</link><pubDate>Mon, 11 Jun 2012 17:02:07 +0000</pubDate><guid>https://blog.tyage.net/p483/</guid><description>気力と時間を取り戻して早くプロジェクトに取り組まなければならない。。
+6時半からの例会も起きれないくらいに寝続けた。12時間寝て今に至る。</description></item><item><title>06/11</title><link>https://blog.tyage.net/?p=483/</link><pubDate>Mon, 11 Jun 2012 17:02:07 +0000</pubDate><guid>https://blog.tyage.net/?p=483/</guid><description>気力と時間を取り戻して早くプロジェクトに取り組まなければならない。。
 昨晩は4時までskypeしながらアニメ見て課題をしていたので、起きたのは10時だった。
 2時限目に出て、昼飯はボッチ飯回避しつつ、三時限目に課題して、4時限目が30分で終了した。
 今日は大黒屋が10%オフセールだったので竹輪と蒲鉾とソーセージを購入。
@@ -672,7 +674,7 @@ cd $HOME mkdir .ssh chmod 700 .ssh chmod 600 authorized_keys mv authorized_keys 
 うまい。
 今日も糞みたいな時間の使い方をしてしまったがいいだろう。
 全てが許される。
-今日は有意義だった。</description></item><item><title>06/08</title><link>https://blog.tyage.net/p479/</link><pubDate>Fri, 08 Jun 2012 14:45:34 +0000</pubDate><guid>https://blog.tyage.net/p479/</guid><description>朝起きたら8時だったがとても眠い。
+今日は有意義だった。</description></item><item><title>06/08</title><link>https://blog.tyage.net/?p=479/</link><pubDate>Fri, 08 Jun 2012 14:45:34 +0000</pubDate><guid>https://blog.tyage.net/?p=479/</guid><description>朝起きたら8時だったがとても眠い。
 4時まで課題するふりをしてダラダラしてたから。
 しかたなく二度寝して、8時半に起きてから、味噌汁と納豆と生卵で優雅な朝食をとる。
 9時に家を出て授業に遅刻。
@@ -710,12 +712,12 @@ E君のjubeatプレイを眺めてたら、10時半になって次の授業が�
 ついでに家にあった三月のライオンを読むことにした。
 イマココ
 今日の僕もやはり意識が高く優秀だった。
-明日はもっと意識が高く優秀な男になれるよね。</description></item><item><title>超交流会2012</title><link>https://blog.tyage.net/p471/</link><pubDate>Sun, 27 May 2012 16:11:48 +0000</pubDate><guid>https://blog.tyage.net/p471/</guid><description>超交流会2012に「きょーくりっ」ブースとして出展していました。
+明日はもっと意識が高く優秀な男になれるよね。</description></item><item><title>超交流会2012</title><link>https://blog.tyage.net/?p=471/</link><pubDate>Sun, 27 May 2012 16:11:48 +0000</pubDate><guid>https://blog.tyage.net/?p=471/</guid><description>超交流会2012に「きょーくりっ」ブースとして出展していました。
 ブースはこんな感じ。（QRコードだけのブースです）
 QRコードはサイトのURLとかでした。（http://pwsk.cosmio.net/）
 他、ダンボール着用状態で一分間スピーチをしてましたよ～
 （スピーチを申し込んでいたんだけども、名前が載っていないのはなんでだったんだろう・・・？）
-超交流会とだけあって、色々と交流があったのはよかったです。</description></item><item><title>第2回　SECCON ておくれ大会に行ってきた</title><link>https://blog.tyage.net/p466/</link><pubDate>Sun, 27 May 2012 14:04:17 +0000</pubDate><guid>https://blog.tyage.net/p466/</guid><description>第2回　SECCON つくば大会（関東地区）がておくれ大学（通称：筑波大学）で開催されていたので参加しました。
+超交流会とだけあって、色々と交流があったのはよかったです。</description></item><item><title>第2回　SECCON ておくれ大会に行ってきた</title><link>https://blog.tyage.net/?p=466/</link><pubDate>Sun, 27 May 2012 14:04:17 +0000</pubDate><guid>https://blog.tyage.net/?p=466/</guid><description>第2回　SECCON つくば大会（関東地区）がておくれ大学（通称：筑波大学）で開催されていたので参加しました。
 チームIMOCANとして、@sora_h, @grapswiz, @yasulibさん達四人でエントリーしました。（自分以外は社会人なんですねー）
 チームとしては、ゆる～く楽しくやりましょう！という感じだったのですが、4位獲得し、表彰されました！
 一日目 一日目は、ケータイを家に忘れて遅刻、開始一時間後に椅子に躓いて@sora_hのMBAを割る、問題が一問も解けない（OSコマンドインジェクション問題を手伝う程度）といったておくれ様でした。
@@ -729,12 +731,12 @@ QRコードはサイトのURLとかでした。（http://pwsk.cosmio.net/）
 終了後は、秋葉原でラーメンを食べたり、@grapswizから電子レンジを貰うため家に泊まらせてもらったりしてました。（ぐらころさんありがとう！）
 最後に SECCON実行委員会の皆様、チームメンバーの社会人の方々、ありがとうございました！楽しかったです～
 次の大会を楽しみにしてます
-以下に、公開している写真があります。</description></item><item><title>PC変えた</title><link>https://blog.tyage.net/p455/</link><pubDate>Sun, 27 May 2012 09:39:22 +0000</pubDate><guid>https://blog.tyage.net/p455/</guid><description>今年の3/5に購入→構築しました。
+以下に、公開している写真があります。</description></item><item><title>PC変えた</title><link>https://blog.tyage.net/?p=455/</link><pubDate>Sun, 27 May 2012 09:39:22 +0000</pubDate><guid>https://blog.tyage.net/?p=455/</guid><description>今年の3/5に購入→構築しました。
 古いPCをアップグレードしようとして失敗したため、高い出費に！
 （痛恨のマザーボード選択ミス）
 HDDが未だに高いのも痛い。
-CPU：Intel Core i5-2500k(17980円) マザボ：ASUS P8Z68 PRO+保険+キャンペーン割引(10479円) メモリ：DP-U13338GEL-AT1 4GB*2（ドスパラメモリー）(3980円) グラボ：SAPPHIRE 11192-14-20G（HD6670）(7980円) 電源：KRPW-PT600W/92+(10470円) ケース：ZALMAN ATX ミドルタワーケース Z9 PLUS(4680円) SSD：Crucial 2.5インチ 内蔵型 SATA3.0対応 M4 SSDシリーズ 64GB(9180円) HDD：Seagate 3.5inch 内蔵ハードディスク 1.0TB 7200rpm 64MBキャッシュ(8380円) ドライブ：TOSHIBA Sumsung DVD-RAM/±R(1層/2層)/±RW対応(2000円) 計：75129円</description></item><item><title>KMC</title><link>https://blog.tyage.net/p460/</link><pubDate>Mon, 02 Apr 2012 17:01:04 +0000</pubDate><guid>https://blog.tyage.net/p460/</guid><description>入隊しました。
-目標：乗っ取り</description></item><item><title>フォト蔵 to Flickr</title><link>https://blog.tyage.net/p445/</link><pubDate>Wed, 07 Mar 2012 14:15:58 +0000</pubDate><guid>https://blog.tyage.net/p445/</guid><description>リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。
+CPU：Intel Core i5-2500k(17980円) マザボ：ASUS P8Z68 PRO+保険+キャンペーン割引(10479円) メモリ：DP-U13338GEL-AT1 4GB*2（ドスパラメモリー）(3980円) グラボ：SAPPHIRE 11192-14-20G（HD6670）(7980円) 電源：KRPW-PT600W/92+(10470円) ケース：ZALMAN ATX ミドルタワーケース Z9 PLUS(4680円) SSD：Crucial 2.5インチ 内蔵型 SATA3.0対応 M4 SSDシリーズ 64GB(9180円) HDD：Seagate 3.5inch 内蔵ハードディスク 1.0TB 7200rpm 64MBキャッシュ(8380円) ドライブ：TOSHIBA Sumsung DVD-RAM/±R(1層/2層)/±RW対応(2000円) 計：75129円</description></item><item><title>KMC</title><link>https://blog.tyage.net/?p=460/</link><pubDate>Mon, 02 Apr 2012 17:01:04 +0000</pubDate><guid>https://blog.tyage.net/?p=460/</guid><description>入隊しました。
+目標：乗っ取り</description></item><item><title>フォト蔵 to Flickr</title><link>https://blog.tyage.net/?p=445/</link><pubDate>Wed, 07 Mar 2012 14:15:58 +0000</pubDate><guid>https://blog.tyage.net/?p=445/</guid><description>リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。
 flickrの有料アカウントを取得したので、もうフォト蔵を使うこともなさそうです。
 （アルバム別ではなく）写真別に公開/非公開設定ができるflickrさんに惚れちゃいました(ﾟ∀ﾟ)ﾉ
 gistにコードを置いておくのでよければお使いください～
@@ -743,18 +745,17 @@ gistにコードを置いておくのでよければお使いください～
 Create an Appからアプリを作成して、API KeyとSecret Keyを取得 フォト蔵 to Flickrを設置 コードに自分のフォト蔵ID,Passを書く コードにFlickrのAPI Key,Secret Keyを書く Flickrアプリの管理ページからCallback URLを指定する。 コードを実行（アクセス）してFlickrアプリの認証をし、移行開始 FlickrのAPI扱うのが面倒だった・・・（そのほうがセキュリティ上好ましいが）
 ライブラリはあるので、一から自分で作るのは訓練目的以外では止めたほうがいいですねえ。
 フォト蔵も、非公開アルバムの写真情報の取得ができないため、一旦アルバムを公開設定にした後に、再度非公開にするという作業が必要でした。
-（非公開アルバムは一時的に公開設定となるためご注意ください。）</description></item><item><title>PC改造しようとした</title><link>https://blog.tyage.net/p438/</link><pubDate>Tue, 06 Mar 2012 15:02:35 +0000</pubDate><guid>https://blog.tyage.net/p438/</guid><description>&lt;p>お久しぶりです。&lt;/p>
+（非公開アルバムは一時的に公開設定となるためご注意ください。）</description></item><item><title>PC改造しようとした</title><link>https://blog.tyage.net/?p=438/</link><pubDate>Tue, 06 Mar 2012 15:02:35 +0000</pubDate><guid>https://blog.tyage.net/?p=438/</guid><description>&lt;p>お久しぶりです。&lt;/p>
 &lt;p>大学入試も終わりまして、今は合格発表まで悠々自適な生活を送っております。&lt;br />
 （minecraftとACⅴが楽しい！）&lt;/p>
 &lt;p>その一貫として、現在使用しているPC（いただきもの）を改造しようと企んでおりました。&lt;/p>
 &lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/product/pcv/pcv-rz50.html">PCV-RZ50&lt;/a>という10年前のSony製のデスクトップです。&lt;br />
 いただいた時点で、少しメモリ増設（750MB）されており、グラボも8年前のものに変わっていましたが、流石に古いｗ&lt;br />
-ネットサーフィンする分には十分なのですが、ゲームをするとなると辛いですね。&lt;br /></description></item><item><title>そつぎょうし</title><link>https://blog.tyage.net/p434/</link><pubDate>Sat, 11 Feb 2012 08:04:49 +0000</pubDate><guid>https://blog.tyage.net/p434/</guid><description>ました</description></item><item><title>模試</title><link>https://blog.tyage.net/p422/</link><pubDate>Tue, 04 Oct 2011 12:00:44 +0000</pubDate><guid>https://blog.tyage.net/p422/</guid><description>第一回京大即応オープンと第一回京大実践模試が帰ってきたので自戒もこめて晒し。
-京大即応オープン（河合/Z会）
-科目 得点/配点 偏差値 英語 67/150 57.0 数学 144/200 74.2 国語 48/100 57.4 物理 44/100 56.0 化学 62/100 66.9 工学部配点 450/800 68.9 工学部情報学科では6位/179でA判定でした。
+ネットサーフィンする分には十分なのですが、ゲームをするとなると辛いですね。&lt;br /></description></item><item><title>そつぎょうし</title><link>https://blog.tyage.net/?p=434/</link><pubDate>Sat, 11 Feb 2012 08:04:49 +0000</pubDate><guid>https://blog.tyage.net/?p=434/</guid><description>ました</description></item><item><title>模試</title><link>https://blog.tyage.net/?p=422/</link><pubDate>Tue, 04 Oct 2011 12:00:44 +0000</pubDate><guid>https://blog.tyage.net/?p=422/</guid><description>第一回京大即応オープンと第一回京大実践模試が帰ってきたので自戒もこめて晒し。
+京大即応オープン（河合/Z会） 科目 得点/配点 偏差値 英語 67/150 57.0 数学 144/200 74.2 国語 48/100 57.4 物理 44/100 56.0 化学 62/100 66.9 工学部配点 450/800 68.9 工学部情報学科では6位/179でA判定でした。
 数学に救われたものの、本来得意なはずなのに、英語と物理ができてない。。。
-京大実践模試（駿台）
-科目 得点/配点 偏差値 英語 59/150 52.5 数学 103/200 58.5 国語 38/100 54.8 物理 38/100 53.1 化学 57/100 62.</description></item><item><title>ゴルフゲームをコードゴルフ</title><link>https://blog.tyage.net/p417/</link><pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate><guid>https://blog.tyage.net/p417/</guid><description>一部でコードゴルフが流行っていたので、便乗してみた。
+京大実践模試（駿台） 科目 得点/配点 偏差値 英語 59/150 52.5 数学 103/200 58.5 国語 38/100 54.8 物理 38/100 53.1 化学 57/100 62.3 工学部配点 365/800 57.7 こちらはセンターも受けているので、センターも晒すとこんな感じです
+科目 得点/配点 偏差値 英語 174/150 67.9 英語リス 44/50 69.9 数学ⅠA 96/100 63.1 数学ⅡB 98/100 63.9 国語 117/200 55.0 現代文 32/100 38.9 物理 84/100 59.</description></item><item><title>ゴルフゲームをコードゴルフ</title><link>https://blog.tyage.net/?p=417/</link><pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate><guid>https://blog.tyage.net/?p=417/</guid><description>一部でコードゴルフが流行っていたので、便乗してみた。
 ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。
 まずこれ。
 できるだけゴルフっぽくしたやつ
@@ -763,7 +764,7 @@ Create an Appからアプリを作成して、API KeyとSecret Keyを取得 フ�
 (141文字)
 最後に、consoleで動かすようにして、140文字以下にしたもの
 (134文字)
-もっと短くならないかなぁ。</description></item><item><title>吐き溜め場</title><link>https://blog.tyage.net/p411/</link><pubDate>Sat, 17 Sep 2011 16:55:21 +0000</pubDate><guid>https://blog.tyage.net/p411/</guid><description>見るな</description></item><item><title>ICT Challenge+Rに行って来ました</title><link>https://blog.tyage.net/p405/</link><pubDate>Thu, 08 Sep 2011 13:54:41 +0000</pubDate><guid>https://blog.tyage.net/p405/</guid><description>（詳細は@pastakのブログにあります。）
+もっと短くならないかなぁ。</description></item><item><title>吐き溜め場</title><link>https://blog.tyage.net/?p=411/</link><pubDate>Sat, 17 Sep 2011 16:55:21 +0000</pubDate><guid>https://blog.tyage.net/?p=411/</guid><description>見るな</description></item><item><title>ICT Challenge+Rに行って来ました</title><link>https://blog.tyage.net/?p=405/</link><pubDate>Thu, 08 Sep 2011 13:54:41 +0000</pubDate><guid>https://blog.tyage.net/?p=405/</guid><description>（詳細は@pastakのブログにあります。）
 @pastakとペアでICT Challenge+Rに行って発表して来ました。
 ネタは、赤シート2.0です。
 結果、「上月スポーツ・教育財団賞」をいただきました！
@@ -775,7 +776,7 @@ Ict challenge+r2011 final View more presentations from Shoot Morii ※絶対にy
 見つけても触れずにそっとしておいてあげてください。
 ところで、個人的にはbrainf*ck/jsの人の発表がサイコーでした！
 懇親会に行けてれば、質問とかできたのになあ。
-発表者の方は、以前に何度か目にしたことのあるサイトの管理人さんだったので、またいつかお会いしたいですね。</description></item><item><title>SuperCon2011</title><link>https://blog.tyage.net/p397/</link><pubDate>Sun, 28 Aug 2011 15:18:33 +0000</pubDate><guid>https://blog.tyage.net/p397/</guid><description>※注：参加者以外にはずいぶんと分かりにくい内容です
+発表者の方は、以前に何度か目にしたことのあるサイトの管理人さんだったので、またいつかお会いしたいですね。</description></item><item><title>SuperCon2011</title><link>https://blog.tyage.net/?p=397/</link><pubDate>Sun, 28 Aug 2011 15:18:33 +0000</pubDate><guid>https://blog.tyage.net/?p=397/</guid><description>※注：参加者以外にはずいぶんと分かりにくい内容です
 今年の夏の思い出：SuperCon2011
 Supercomputing Contest 2011
 今年のテーマは「なくろん」でした。
@@ -820,7 +821,7 @@ kyuriの人がDQNに絡まれてた。
 KYの学食とは格が違った。
 「バイオレンス・ノベル・ポーカー」が流行っていた。
 是非買いたい。
-阪大「坂」は坂とは認められない。</description></item><item><title>OSC京都2011と祇園祭</title><link>https://blog.tyage.net/p386/</link><pubDate>Sat, 06 Aug 2011 04:27:32 +0000</pubDate><guid>https://blog.tyage.net/p386/</guid><description>OSC京都2011から三週間が経ってしまいましたが書きます。
+阪大「坂」は坂とは認められない。</description></item><item><title>OSC京都2011と祇園祭</title><link>https://blog.tyage.net/?p=386/</link><pubDate>Sat, 06 Aug 2011 04:27:32 +0000</pubDate><guid>https://blog.tyage.net/?p=386/</guid><description>OSC京都2011から三週間が経ってしまいましたが書きます。
 一日目(8/15) OSC 学校から、祇園祭に参加する@keirfulと一緒に京都へ。
 @keirfulのお陰でOSC会場の場所を間違えずになんとか到着。
 @mactkg, @masawadaの東京勢、@pastak, @umisama, @waturaのきょーくりメンバーと合流
@@ -860,7 +861,7 @@ OSC懇親会
 OSCバッグは今も活用しています！！
 祇園。
 夜だからぼやけてる
-唯一動く山である、蟷螂山</description></item><item><title>最近のこと</title><link>https://blog.tyage.net/p380/</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.net/p380/</guid><description>お久しぶりです。
+唯一動く山である、蟷螂山</description></item><item><title>最近のこと</title><link>https://blog.tyage.net/?p=380/</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.net/?p=380/</guid><description>お久しぶりです。
 とりあえず近況報告です。
 ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。
 お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。
@@ -887,7 +888,7 @@ OSCバッグは今も活用しています！！
 それよりも、駿台の模試が全体的にかなり悪かったのはどうにかしないといけない。
 特に英語。こんなに悪いとは思ってもみなかった。
 判定で安心していたら、校内順位は駿台のほうが大きく下であった。
-来週の期末試験はがんばろう・・・</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/p368/</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/p368/</guid><description>思い出せるものから書き上げていく
+来週の期末試験はがんばろう・・・</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/?p=368/</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/?p=368/</guid><description>思い出せるものから書き上げていく
 tableのheader, footerを使っているwindowは閉じるとエラー
 touchendイベントがちゃんと取得できない
 getAllPeopleおかしい
@@ -914,7 +915,7 @@ leftView, rightViewが非対応だった。
 annotationのタイトルだけでイベントが発生する。
 テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
 バグ多い
-APIリファレンスはうそつき</description></item><item><title>なんで、私がプログラミングを！？</title><link>https://blog.tyage.net/p357/</link><pubDate>Sat, 21 May 2011 08:02:40 +0000</pubDate><guid>https://blog.tyage.net/p357/</guid><description>&lt;p>@Sn0wNightによるエクストリーム過去晒しが流行ってたので、時代に乗り遅れつつ僕も書くことにした。&lt;br />
+APIリファレンスはうそつき</description></item><item><title>なんで、私がプログラミングを！？</title><link>https://blog.tyage.net/?p=357/</link><pubDate>Sat, 21 May 2011 08:02:40 +0000</pubDate><guid>https://blog.tyage.net/?p=357/</guid><description>&lt;p>@Sn0wNightによるエクストリーム過去晒しが流行ってたので、時代に乗り遅れつつ僕も書くことにした。&lt;br />
 参照：&lt;a href="http://b.zero-signal.net/?p=1704">僕がプログラミングをはじめたきっかけ &amp;#8211; ごみ箱&lt;/a>&lt;/p>
 &lt;h2>言語&lt;/h2>
 &lt;p>HTML　親友だと思ってます&lt;br />
@@ -924,7 +925,7 @@ PHP　複雑な関係&lt;br />
 Perl　昔の友達&lt;br />
 SQL　友達の友達は知り合い&lt;br />
 Ruby/Python　顔見知り&lt;br />
-Java/C/C++　プログラミングコンテストでお会いしましたね&lt;br /></description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/p335/</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/p335/</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
+Java/C/C++　プログラミングコンテストでお会いしましたね&lt;br /></description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/?p=335/</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/?p=335/</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
 &lt;p>Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br />
 普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p>
 &lt;h2>初めに&lt;/h2>
@@ -971,7 +972,7 @@ KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからL
 &lt;li>長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li>
 &lt;li>お疲れさまでした。&lt;/li>
 &lt;/ul>
-&lt;p></description></item><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.net/p328/</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.net/p328/</guid><description>&lt;p>&lt;a href="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a>に参加してきました。&lt;/p>
+&lt;p></description></item><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.net/?p=328/</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.net/?p=328/</guid><description>&lt;p>&lt;a href="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a>に参加してきました。&lt;/p>
 &lt;p>去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p>
 &lt;p>それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br />
 ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br />
@@ -982,21 +983,21 @@ KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからL
 初・OSC懇親会は楽しかった！&lt;/p>
 &lt;p>&lt;a href="http://photozou.jp/photo/show/265673/75877087">&lt;img src="http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg" alt="OSC神戸" width="450" height="253" style="border:0" />&lt;/a>&lt;br />&lt;a href="http://photozou.jp/photo/show/265673/75877087">OSC神戸&lt;/a> posted by &lt;a href="http://photozou.jp/user/top/265673">(C)チャゲ&lt;/a>&lt;/p>
 &lt;p>&lt;a href="http://photozou.jp/photo/show/265673/75877429">&lt;img src="http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg" alt="OSC神戸でもらった" width="450" height="253" style="border:0" />&lt;/a>&lt;br />&lt;a href="http://photozou.jp/photo/show/265673/75877429">OSC神戸でもらった&lt;/a> posted by &lt;a href="http://photozou.jp/user/top/265673">(C)チャゲ&lt;/a>&lt;/p>
-&lt;p></description></item><item><title>関西青少年オフ – 04</title><link>https://blog.tyage.net/p321/</link><pubDate>Wed, 06 Apr 2011 05:55:10 +0000</pubDate><guid>https://blog.tyage.net/p321/</guid><description>Tweetvite :: 関西青少年オフ-04
+&lt;p></description></item><item><title>関西青少年オフ – 04</title><link>https://blog.tyage.net/?p=321/</link><pubDate>Wed, 06 Apr 2011 05:55:10 +0000</pubDate><guid>https://blog.tyage.net/?p=321/</guid><description>Tweetvite :: 関西青少年オフ-04
 舞洲緑地にて楽しく缶蹴りしてました。
 無線使ったり、一眼レフで監視したりと少し変な缶蹴りだったような。
-走りまわったので翌日に筋肉痛になるかと思いきや、花粉症で微熱がでました。</description></item><item><title>Go言語勉強会＠はてな</title><link>https://blog.tyage.net/p319/</link><pubDate>Wed, 06 Apr 2011 05:45:55 +0000</pubDate><guid>https://blog.tyage.net/p319/</guid><description>&lt;p>&lt;a href="http://onsg.techtalk.jp/13">第13回 テーマ「Go言語」 &amp;#8211; Online.sg&lt;/a>&lt;/p>
+走りまわったので翌日に筋肉痛になるかと思いきや、花粉症で微熱がでました。</description></item><item><title>Go言語勉強会＠はてな</title><link>https://blog.tyage.net/?p=319/</link><pubDate>Wed, 06 Apr 2011 05:45:55 +0000</pubDate><guid>https://blog.tyage.net/?p=319/</guid><description>&lt;p>&lt;a href="http://onsg.techtalk.jp/13">第13回 テーマ「Go言語」 &amp;#8211; Online.sg&lt;/a>&lt;/p>
 &lt;p>Go本を書いた @umisama 氏を講師に、半年ぶりのOnline.sgでした。&lt;/p>
 &lt;p>会場は ㈱はてな でした。&lt;br />
 会場提供ありがとうございますた。&lt;/p>
-&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title><link>https://blog.tyage.net/p315/</link><pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate><guid>https://blog.tyage.net/p315/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=313">前の記事&lt;/a>の内容を修正して、スライドにまとめてみた。&lt;/p>
+&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title><link>https://blog.tyage.net/?p=315/</link><pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate><guid>https://blog.tyage.net/?p=315/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=313">前の記事&lt;/a>の内容を修正して、スライドにまとめてみた。&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/givemac2">スライド&lt;/a>&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/js/boku2d-base.js">boku2d(仮)&lt;/a>という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br />
 このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p>
 &lt;p>メインのコードは以下のような感じ。&lt;/p>
 &lt;p>コピペっぽいところがあるのはご愛嬌。&lt;br />
 （時間的に少し焦ってた）&lt;/p>
-&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/p313/</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/p313/</guid><description>提出したスライドはこちら
+&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/?p=313/</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/?p=313/</guid><description>提出したスライドはこちら
 一応givemac2用の記事。
 少し設問とずれた話になりそうなので、提出するかどうかは迷い中。
 とりあえず思いついたことをだらだらと書いてみた。
@@ -1032,7 +1033,7 @@ KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからL
 まとめ ソーシャルゲームが人に大きく影響することはまだ稀であるかもしれませんが、インターネットが当たり前の時代になって、ソーシャルゲームで遊ぶ子供が確実に増えている（と自分は思っている）ため、今後このように影響される若者は増えていくと考えています。
 今回は述べませんでしたが、SNSについて言えばこの影響はさらに大きいでしょう。
 最後に、この影響が社会問題ではなく、社会貢献という形になることを望んでいます。
-字数制限超え余裕でした！</description></item><item><title>Skype×Skype</title><link>https://blog.tyage.net/p308/</link><pubDate>Sun, 27 Mar 2011 11:59:46 +0000</pubDate><guid>https://blog.tyage.net/p308/</guid><description>スカイプ友達募集掲示板「Skype × Skype」（スカイプスカイプ）って言うのを丸一日かけて作りました。
+字数制限超え余裕でした！</description></item><item><title>Skype×Skype</title><link>https://blog.tyage.net/?p=308/</link><pubDate>Sun, 27 Mar 2011 11:59:46 +0000</pubDate><guid>https://blog.tyage.net/?p=308/</guid><description>スカイプ友達募集掲示板「Skype × Skype」（スカイプスカイプ）って言うのを丸一日かけて作りました。
 見ての通り、出会い系の掲示板です。
 スカイプちゃんねるがメンテ中となり、Skype用の掲示板がなくなったので、似たのを作ればアクセスが稼げる！　と聞いたので。
 僕はいつも通りコーディング全般をし、デザインは提案者にしてもらいました。
@@ -1042,7 +1043,7 @@ KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからL
 ちなみにスカイプちゃんねるは、絶賛売却中です。
 たぶんあと4日で復活するので、それまでしかアクセス稼げないでしょうね。
 広告をクリックしてもらうと僕の買い食い代に変わります。
-僕を太らせたい方は是非。</description></item><item><title>3月25日</title><link>https://blog.tyage.net/p305/</link><pubDate>Sun, 27 Mar 2011 11:49:05 +0000</pubDate><guid>https://blog.tyage.net/p305/</guid><description>ねーもオフ @ok_namo が彼の高校の甲子園の応援のため、関西に来ていたので神戸案内をしてました。
+僕を太らせたい方は是非。</description></item><item><title>3月25日</title><link>https://blog.tyage.net/?p=305/</link><pubDate>Sun, 27 Mar 2011 11:49:05 +0000</pubDate><guid>https://blog.tyage.net/?p=305/</guid><description>ねーもオフ @ok_namo が彼の高校の甲子園の応援のため、関西に来ていたので神戸案内をしてました。
 他に 「 @yushipon と @mgmgkzm 」 が参加していました。
 案内と言っても、どこに行くかも決まらないので、@mgmgkzm を観光しながら南京町とかぶらぶらした。
 @mgmgkzm が医者を呼ばないといけないぐらい @ok_namo に興奮して大変だったけれど、いろんな意味で打ち解けたしよかったと思う。
@@ -1055,7 +1056,7 @@ KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからL
 空手最終日 ほんとは先週が最終日で、先週は後輩に半泣きされつつ別れたんですが、今週も来てしまい、なんとも言えない空気でした。
 長居できそうにもなかったので、スポーツ保健の代金と、この日はプレゼントがもらえる日だったので、それをもらって帰りました。
 今年はロゴ入りタオルとお菓子でした。
-なかなか豪盛です。</description></item><item><title>第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka</title><link>https://blog.tyage.net/p301/</link><pubDate>Thu, 24 Mar 2011 04:34:50 +0000</pubDate><guid>https://blog.tyage.net/p301/</guid><description>まっちゃ１３９ Hiki &amp;#8211; 第22回まっちゃ１３９勉強会＋セキュリティキャンプ・キャラバン in Osaka
+なかなか豪盛です。</description></item><item><title>第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka</title><link>https://blog.tyage.net/?p=301/</link><pubDate>Thu, 24 Mar 2011 04:34:50 +0000</pubDate><guid>https://blog.tyage.net/?p=301/</guid><description>まっちゃ１３９ Hiki &amp;#8211; 第22回まっちゃ１３９勉強会＋セキュリティキャンプ・キャラバン in Osaka
 Togetter &amp;#8211; 「第22回まっちゃ１３９勉強会＋セキュリティキャンプキャラバン in Osakaの参加者によるTweetまとめ」
 もう10日以上前の話にはなるんですが行ってきた報告をちょろりと。
 地震が原因で講師の方々がこれなくなり、開催されるかどうか不安でしたが、無事開催されました。
@@ -1072,7 +1073,7 @@ LTはセプキャン生（pastak）のその後とか、もりよしさんのPHP
 いやー楽しかった。
 今回はセプキャン生が数多く出席してました。
 これぞセプキャン生の結束力？
-最後に、関西学院さんありがとうございました。</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/p296/</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/p296/</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
+最後に、関西学院さんありがとうございました。</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/?p=296/</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/?p=296/</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
 まず事前に必要なものをインストールする。
 sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
 しようとするが、herokuコマンドが見つからない状態にあったので、
@@ -1082,7 +1083,7 @@ gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろ
 extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
 [雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
 この二つを参考に、
-sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/p290/</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/p290/</guid><description>HerokuいいですよねHeroku！
+sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/?p=290/</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/?p=290/</guid><description>HerokuいいですよねHeroku！
 今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
 （結局失敗したため、おとなしくUbuntuから使うことにしました。）
 普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。
@@ -1092,7 +1093,7 @@ rubyをRubyInstaller for Windowsを使ってインストール。
 gem update gem install rails gem install heroku keys:add が、ここでメールアドレスとパスワードを入れたところでエラー
 C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17 2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he roku/credentials (Errno::ENOENT) Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに
 41 home_directory = home_directory.split&amp;#40;&amp;quot;&amp;quot;).join(&amp;quot;/&amp;quot;) if !home_directory.nil? と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。
-うぬー。。</description></item><item><title>脆弱性の報告をしてみた</title><link>https://blog.tyage.net/p278/</link><pubDate>Sun, 06 Mar 2011 08:00:10 +0000</pubDate><guid>https://blog.tyage.net/p278/</guid><description>セプキャンキャラバンのUSTを見ながらとあるWebサービスを使っていたら、うっかり脆弱性を発見してしまったため、とりあえずお問い合わせフォームから報告してみた。
+うぬー。。</description></item><item><title>脆弱性の報告をしてみた</title><link>https://blog.tyage.net/?p=278/</link><pubDate>Sun, 06 Mar 2011 08:00:10 +0000</pubDate><guid>https://blog.tyage.net/?p=278/</guid><description>セプキャンキャラバンのUSTを見ながらとあるWebサービスを使っていたら、うっかり脆弱性を発見してしまったため、とりあえずお問い合わせフォームから報告してみた。
 試験中にも関わらず・・・
 特定に繋がりそうなところは隠してあります。
 ****を楽しく使わせていただいております。
@@ -1141,51 +1142,39 @@ http://****/***
 申し訳ありません。
 追追追記：
 修正されてました！
-ありがとうございます！</description></item><item><title>Pear</title><link>https://blog.tyage.net/p276/</link><pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate><guid>https://blog.tyage.net/p276/</guid><description>Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。
+ありがとうございます！</description></item><item><title>Pear</title><link>https://blog.tyage.net/?p=276/</link><pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate><guid>https://blog.tyage.net/?p=276/</guid><description>Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。
 少なくともLhaplusだと解凍できなかった。
-問題になるのはWindowsだけかな。</description></item><item><title>最近あったことども</title><link>https://blog.tyage.net/p267/</link><pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate><guid>https://blog.tyage.net/p267/</guid><description>&lt;p>最近は比較的忙しかった。&lt;/p>
+問題になるのはWindowsだけかな。</description></item><item><title>最近あったことども</title><link>https://blog.tyage.net/?p=267/</link><pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate><guid>https://blog.tyage.net/?p=267/</guid><description>&lt;p>最近は比較的忙しかった。&lt;/p>
 &lt;p>つらつらとまとめてみる。&lt;/p>
 &lt;p>受験まで後一年らしい。&lt;br />
 しらね&lt;/p>
-&lt;p></description></item><item><title>cakePHPでURLパラメータを保持する</title><link>https://blog.tyage.net/p260/</link><pubDate>Sun, 06 Feb 2011 14:46:29 +0000</pubDate><guid>https://blog.tyage.net/p260/</guid><description>&lt;p>久しぶりにcakeの記事を書きます。&lt;/p>
+&lt;p></description></item><item><title>cakePHPでURLパラメータを保持する</title><link>https://blog.tyage.net/?p=260/</link><pubDate>Sun, 06 Feb 2011 14:46:29 +0000</pubDate><guid>https://blog.tyage.net/?p=260/</guid><description>&lt;p>久しぶりにcakeの記事を書きます。&lt;/p>
 &lt;p>最近、cakePHP以外のフレームワークにも浮気しようとしているのですが勇気がでません。&lt;/p>
 &lt;p>要件は&lt;a href="http://tyage.sakura.ne.jp/blog/?p=61">悩み | チャゲってる日々 &amp;#8211; @tyage&lt;/a>にて書いてあります。&lt;br />
-一応解決したのですが、先ほどの記事を今読むと、かなり意味不明な内容になっているため、簡単にまとめてみます。&lt;br /></description></item><item><title>jQuery1.5ｷﾀｰ</title><link>https://blog.tyage.net/p252/</link><pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate><guid>https://blog.tyage.net/p252/</guid><description>jQuery1.5 jQuery: » jQuery 1.5 Beta 1 Released
+一応解決したのですが、先ほどの記事を今読むと、かなり意味不明な内容になっているため、簡単にまとめてみます。&lt;br /></description></item><item><title>jQuery1.5ｷﾀｰ</title><link>https://blog.tyage.net/?p=252/</link><pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate><guid>https://blog.tyage.net/?p=252/</guid><description>jQuery1.5 jQuery: » jQuery 1.5 Beta 1 Released
 今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。
 バグフィックスと速度向上はもちろん行われています。
 特に、バクフィックスでは未だにIE対策が行われ、またv8での速度が大幅に向上したそうです！Chrome厨喚起！
 その他として、細かいことだけど、node.jsとの連携の強化？的なことや、Google Closure CompilerからUglifyJSなるものに圧縮ツールを変更したようですよ。
 Ajaxモジュールの書き換え 「これは今回の最も重要な変更点であり、パフォーマンスや機能の改善、安定性の向上をもたらす」そうです。（訳は適当）
 Julian Aubourgさんによるこの書き換えによって、以下の書き方ができるようになりました。
-// Assign handlers immediately after making the request, // and remember the jxhr object for this request var jxhr = $.ajax&amp;#40;&amp;#123; url: &amp;quot;example.php&amp;quot; &amp;#125;&amp;#41; .success&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;success&amp;quot;&amp;#41;; &amp;#125;&amp;#41; .error&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;error&amp;quot;&amp;#41;; &amp;#125;&amp;#41; .complete&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;complete&amp;quot;&amp;#41;; &amp;#125;&amp;#41;; &amp;nbsp; // perform other work here ... &amp;nbsp; // Set another completion function for the request above jxhr.</description></item><item><title>サッカーアジア杯</title><link>https://blog.tyage.net/p250/</link><pubDate>Sat, 29 Jan 2011 18:46:10 +0000</pubDate><guid>https://blog.tyage.net/p250/</guid><description>オーストラリアを制して日本が優勝しましたね！
+// Assign handlers immediately after making the request, // and remember the jxhr object for this request var jxhr = $.ajax&amp;#40;&amp;#123; url: &amp;quot;example.php&amp;quot; &amp;#125;&amp;#41; .success&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;success&amp;quot;&amp;#41;; &amp;#125;&amp;#41; .error&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;error&amp;quot;&amp;#41;; &amp;#125;&amp;#41; .complete&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;complete&amp;quot;&amp;#41;; &amp;#125;&amp;#41;; &amp;nbsp; // perform other work here ... &amp;nbsp; // Set another completion function for the request above jxhr.</description></item><item><title>サッカーアジア杯</title><link>https://blog.tyage.net/?p=250/</link><pubDate>Sat, 29 Jan 2011 18:46:10 +0000</pubDate><guid>https://blog.tyage.net/?p=250/</guid><description>オーストラリアを制して日本が優勝しましたね！
 あまりの興奮に寝られないでいる学生さんも多いのではないでしょうか！？
 そんな起きていても何もすることがない・・・そんな学生さんのために、本日公開されたツールを紹介したいと思います！
 その名も赤シート++！
-このブログを見てる方ならどこかで聞いた名前だと思いますがどうでしょうか？
-そう、以前ブログでもを紹介した、赤シート2.0の改良版なのです！
-改良された点はあまりにも多いためこのテンションでしゃべりきることができませんが、開発時間で言うと赤シート2.0が3時間なのに対し、赤シート++は20時間ほどかかっております！
-もうこれだけでもすごいですね！
-20時間というと、時給800円のアルバイトで1万6000円分の価値があります！
-これがタダで使えるっていうんだから、使わない理由なんてあるわけないですね！
-「今夜は眠れないぜ！」という学生さんは是非ともこれを使って、暗記しまくってもらえるといいと思います！
-例えば日本史の勉強がしたい学生さんは、
-タグ検索 &amp;#8211; 日本史 &amp;#8211; 赤シート++
-ここにあるような、「日本史タグ」ついたシートを使って勉強するといいと思います！いえ！勉強しましょう！
-僕はあいにく化学の課題が残っており、暗記なんてやってる状態ではないので、先におやすみさせていただきます。
-今日はぐっすり眠れそうですね。
-※そのうち赤シート++の解説をします</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/p243/</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/p243/</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
+このブログを見てる方ならどこかで聞いた名前だと思いますがどうでしょうか？</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/?p=243/</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/?p=243/</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
 こんな感じに
 この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
 実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
 どうしても使いたい。
 代わりになるものがあればそれでいいけど。。
-あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item><item><title>「ソーシャル・ネットワーク」観に行った</title><link>https://blog.tyage.net/p237/</link><pubDate>Sat, 15 Jan 2011 08:39:44 +0000</pubDate><guid>https://blog.tyage.net/p237/</guid><description>久々に映画見たよー
+あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item><item><title>「ソーシャル・ネットワーク」観に行った</title><link>https://blog.tyage.net/?p=237/</link><pubDate>Sat, 15 Jan 2011 08:39:44 +0000</pubDate><guid>https://blog.tyage.net/?p=237/</guid><description>久々に映画見たよー
 タイトルにあるけど、日本では今日上映開始の「ソーシャル・ネットワーク」
 現在SNSサイト等等で一儲けしようって話に関わってることもあって（まあ個人的にも開発してるけど）、話を聞いたときから見たくてうずうずしてた。
 テンポがよくて、気がついた時には「もう終わったの！？」という状況でした。
 普段なら終了時には食べきっているはずのポップコーンが残ってしまったのが悔しい。
 どこまでが本当なのか分かんないけど、天才って社会で生きていくのは案外大変かもしんないなーと思った。
-天才じゃなくてよかった。</description></item><item><title>JOI予選通過しました</title><link>https://blog.tyage.net/p234/</link><pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate><guid>https://blog.tyage.net/p234/</guid><description>情報オリンピック予選
+天才じゃなくてよかった。</description></item><item><title>JOI予選通過しました</title><link>https://blog.tyage.net/?p=234/</link><pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate><guid>https://blog.tyage.net/?p=234/</guid><description>情報オリンピック予選
 何故か通過しました。
 点数は７２点でギリギリ。（ボーダーも７２点）
 20+20+20+8+4 = 72　てな感じでした。
@@ -1197,7 +1186,7 @@ KYの二年は、自分も含め少なくとも３人通過した見たい。
 たぶん、あの二人は余裕で本戦も通過しそうだなあ。
 罪悪感はあるけど、マイナーな言語で受けると逆に受かりやすい場合もあるんだなあと実感。
 （ヒント：提出したプログラム）
-また、ただで東京に行って参ります。</description></item><item><title>セキュリティ＆プログラミングキャンプ2010実施報告会に行ってきた</title><link>https://blog.tyage.net/p200/</link><pubDate>Wed, 22 Dec 2010 17:24:48 +0000</pubDate><guid>https://blog.tyage.net/p200/</guid><description>情報処理推進機構：IT人材育成：セキュリティ＆プログラミングキャンプ2010
+また、ただで東京に行って参ります。</description></item><item><title>セキュリティ＆プログラミングキャンプ2010実施報告会に行ってきた</title><link>https://blog.tyage.net/?p=200/</link><pubDate>Wed, 22 Dec 2010 17:24:48 +0000</pubDate><guid>https://blog.tyage.net/?p=200/</guid><description>情報処理推進機構：IT人材育成：セキュリティ＆プログラミングキャンプ2010
 これを目的に格安で東京に行ってまいりました。
 セプキャンが廃止されるみたいな噂があって冷や冷やしていたんですが、報告会では積極的な意見が数々出ており（僕は意見を言えませんでしたが）、やはりこのキャンプは多くの影響を与えてきたんだなあと再認識しました。
 僕自身も、このキャンプに行った事で能力の高い人たちがいることを再認識し、その人々を間近で話すことができるという貴重な体験をすることができました。
@@ -1222,7 +1211,7 @@ http://spcamp.com/
 終わった後は懇親会がありました。
 少し疲れていたのもあって、あまり話しかけることができず、@grapswizさんと、@ajalaboxさんと三人でずっと固まっていましたｗ
 ただ、未来のキャンプ生から話しかけてもらうことができ、僕らが最後のキャンプ生になってはいけないなと感じながら帰りました。
-せっかく東京に行ったので、ついでにキーボードを1000円で購入し、翌日のJOIはそれで受験しました。</description></item><item><title>往復5000円で東京まで行ってきました</title><link>https://blog.tyage.net/p195/</link><pubDate>Mon, 20 Dec 2010 11:48:25 +0000</pubDate><guid>https://blog.tyage.net/p195/</guid><description>&lt;p>大阪東京間を格安で移動しようと思ったとき、あなたはどうしますか？&lt;/p>
+せっかく東京に行ったので、ついでにキーボードを1000円で購入し、翌日のJOIはそれで受験しました。</description></item><item><title>往復5000円で東京まで行ってきました</title><link>https://blog.tyage.net/?p=195/</link><pubDate>Mon, 20 Dec 2010 11:48:25 +0000</pubDate><guid>https://blog.tyage.net/?p=195/</guid><description>&lt;p>大阪東京間を格安で移動しようと思ったとき、あなたはどうしますか？&lt;/p>
 &lt;p>夜行バスですか？格安航空でしょうか？それともヒッチハイク？？&lt;/p>
 &lt;p>いいえ！青春18切符ですね！&lt;/p>
 &lt;p>今年は発売されないという噂もあったようですが、無事に今年の冬も発売されました。&lt;br />
@@ -1230,7 +1219,7 @@ http://spcamp.com/
 がんばれば一日で往復できますｗ&lt;/p>
 &lt;p>僕は12/17のお昼に家（兵庫）を出発し、夜に東京に到着、翌日の12/18深夜に東京を出発して、12/19の朝に帰宅しました。&lt;br />
 行きは普通列車でのんびりと行き、帰りは「ムーンライトながら（以下ながら）」を使用して帰りました。&lt;br />
-かかった費用は &lt;strong>2300*2（18切符二日分） + 510（ながらの指定席券代） = 5110円&lt;/strong>　でした&lt;br /></description></item><item><title>node.jsでJOI受けた。</title><link>https://blog.tyage.net/p188/</link><pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate><guid>https://blog.tyage.net/p188/</guid><description>情報オリンピック日本委員会
+かかった費用は &lt;strong>2300*2（18切符二日分） + 510（ながらの指定席券代） = 5110円&lt;/strong>　でした&lt;br /></description></item><item><title>node.jsでJOI受けた。</title><link>https://blog.tyage.net/?p=188/</link><pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate><guid>https://blog.tyage.net/?p=188/</guid><description>情報オリンピック日本委員会
 PHPを使うか、ブラウザのコンソール画面でJavaScript実行させるか、node.jsを使うかで悩んだ末、勉強もかねてnode.jsを使いました。
 結果はかなり微妙でしたが、node.jsの勉強になったと思うので、よしとします。
 予選通過するかしないかギリギリのラインですが、どっかでミスってる可能性大なので、たぶん通過しません。
@@ -1244,11 +1233,11 @@ Q2を解き始めたところから、「split(&amp;#8216;n&amp;#8217;)」で一
 rnでsplitしても、また別の問題が浮上してくるのですごく戸惑いました。
 最終的にはダウンロードした入力データを、エディタで改行を除くなどして応急処置をほどこしました。
 向こうの想定するC,C++ではなくて、node.jsで解いた罰かもしれんねー
-まあこれで、アリ本を買うことなんかは今後もないでしょう</description></item><item><title>「node.js」はじめました</title><link>https://blog.tyage.net/p185/</link><pubDate>Thu, 16 Dec 2010 15:55:22 +0000</pubDate><guid>https://blog.tyage.net/p185/</guid><description>&lt;p>ubuntu環境が手に入ったので前々から気になってたnode.jsはじめた。&lt;/p>
+まあこれで、アリ本を買うことなんかは今後もないでしょう</description></item><item><title>「node.js」はじめました</title><link>https://blog.tyage.net/?p=185/</link><pubDate>Thu, 16 Dec 2010 15:55:22 +0000</pubDate><guid>https://blog.tyage.net/?p=185/</guid><description>&lt;p>ubuntu環境が手に入ったので前々から気になってたnode.jsはじめた。&lt;/p>
 &lt;p>JavaScriptでサーバーサイドが書けるなんて、JavaScript最強伝説()始まってんじゃね！？&lt;/p>
 &lt;p>恋するnoderの@KOBA789先輩に手ほどきしてもらいながら、なんとかHello Worldまでできたー。&lt;/p>
 &lt;p>ほとんど経験のないコマンド処理に迷ったりもしたけどまあそれはともかく。。。&lt;/p>
-&lt;p></description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/p182/</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/p182/</guid><description>できない。
+&lt;p></description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/?p=182/</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/?p=182/</guid><description>できない。
 ぐぐったら下の三つがそれらしいので試してみたがだめだった。
 バージョンは最新の1.7.3.3でやってる。
 2010-02-19 &amp;#8211; Dive into the Tech World!
@@ -1258,9 +1247,9 @@ rnでsplitしても、また別の問題が浮上してくるのですごく戸�
 未だにLinuxとかそのコマンドに関しては初心者から脱却できないでいる。
 進展があるとすれば、最近ubuntuを使い始めたくらい。
 ちまちま雑誌とか読んでれば分かるようになるかな。
-さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>JOIの解答がGoogle Chromeで提出できないという話</title><link>https://blog.tyage.net/p164/</link><pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate><guid>https://blog.tyage.net/p164/</guid><description>情報オリンピック日本委員会
+さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>JOIの解答がGoogle Chromeで提出できないという話</title><link>https://blog.tyage.net/?p=164/</link><pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate><guid>https://blog.tyage.net/?p=164/</guid><description>情報オリンピック日本委員会
 現象 なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。
-.bbpBox12301709980209152 {background:url(http://s.twimg.com/a/1291163542/images/themes/theme19/bg.gif) #FFF04D;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block} 「予選練習」において， Google Chrome (7.0 以降)など一部のブラウザからソースコードのアップロードが正常に行えない場合があることが確認されています．
+「予選練習」において， Google Chrome (7.0 以降)など一部のブラウザからソースコードのアップロードが正常に行えない場合があることが確認されています．
 競技当日までに競技に使用するPCから予選練習にてソースコードのアップロードが
 正常に行えるか確認してください．less than a minute ago via HootSuiteJOI / IOI-JP 科学委員会
 ioi_jp
@@ -1278,7 +1267,12 @@ Chromeのバージョンは8.0.552.215 beta
 （他のブラウザだと、どのファイルでも「Content-Typeフィールド」が付与されるようだ。）
 （比較）
 「Content-Typeフィールド」を適当に付け加えるとアップロードできるようになった。
-あとがき 今までChromeを使ってても、dropboxも使えたし、なんら問題がなかったので、ちょっと驚き。</description></item><item><title>試験対策 – 日本史</title><link>https://blog.tyage.net/p155/</link><pubDate>Wed, 08 Dec 2010 12:43:37 +0000</pubDate><guid>https://blog.tyage.net/p155/</guid><description>前回の地理まとめがちょっと好評だったため、日本史まとめもしちゃう。
+あとがき 今までChromeを使ってても、dropboxも使えたし、なんら問題がなかったので、ちょっと驚き。
+ちなみにdropboxでアップロードするときも、「一般に登録されてない拡張子」だと「Content-Typeフィールド」が付与されなかった。
+JOIの鯖側で「Content-Typeフィールド」のチェックでもしてるのかしら。
+それにしてもJOIさん、font要素とかまじで使わないでください。
+追伸 どうやらChromeのバグだったようです。
+Issue 6800 &amp;#8211; chromium &amp;#8211; Chrome doesn&amp;apos;t set Content-Type for file upload when the file extension is not recognized. &amp;#8211; Project Hosting on Google Code</description></item><item><title>試験対策 – 日本史</title><link>https://blog.tyage.net/?p=155/</link><pubDate>Wed, 08 Dec 2010 12:43:37 +0000</pubDate><guid>https://blog.tyage.net/?p=155/</guid><description>前回の地理まとめがちょっと好評だったため、日本史まとめもしちゃう。
 テストの点数が上がる保障はありません。
 これを使った僕自身、地理のテストに関しては、いつもの数倍勉強した割に、いつも通り空白が・・・。
 内容の暗記はできてたけど、問われ方を変えられるとぜんぜん思い出せないのよねん。。。
@@ -1292,7 +1286,7 @@ Chromeのバージョンは8.0.552.215 beta
 第一次世界大戦後の世界
 日本資本主義の成長
 米騒動と社会運動
-普通選挙法と治安維持法</description></item><item><title>期末試験対策 – 地理</title><link>https://blog.tyage.net/p145/</link><pubDate>Tue, 07 Dec 2010 06:04:39 +0000</pubDate><guid>https://blog.tyage.net/p145/</guid><description>前回作った赤シートツールを使って地理のまとめを作り上げることにします。
+普通選挙法と治安維持法</description></item><item><title>期末試験対策 – 地理</title><link>https://blog.tyage.net/?p=145/</link><pubDate>Tue, 07 Dec 2010 06:04:39 +0000</pubDate><guid>https://blog.tyage.net/?p=145/</guid><description>前回作った赤シートツールを使って地理のまとめを作り上げることにします。
 いつも試験のたびに勉強資料を提供してくださるN様も地理の写真をupするようですが、自分の勉強のためにもやっておこうと。
 ちなみに歴史もやる予定。
 足らないとことかミスとかあるし、誰か改良してくれるとありがたいけど、誰もしないよねー
@@ -1304,7 +1298,7 @@ Chromeのバージョンは8.0.552.215 beta
 冷帯まとめ
 寒帯まとめ
 高山帯まとめ
-土壌と植生まとめ</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/p143/</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/p143/</guid><description>赤シート2.0
+土壌と植生まとめ</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/?p=143/</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/?p=143/</guid><description>赤シート2.0
 試験前だが、ふと思い立って作った。
 自分はPCがあると勉強ができない。
 どうしても電源を入れる癖がある。
@@ -1324,7 +1318,7 @@ PDOにも初挑戦してみた。
 サンプルとして、地理のプリントの写しを挙げておく。
 ほかにも、英文の穴埋めなどにも使うなど、いろいろな使い方があると思う。
 土壌まとめ[地理]
-熱帯まとめ[地理]</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.net/p140/</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.net/p140/</guid><description>boku2Dを開発中。
+熱帯まとめ[地理]</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.net/?p=140/</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.net/?p=140/</guid><description>boku2Dを開発中。
 サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。
 box2Dには足元にも及ばない、俺得ライブラリ。
 以前にも同じようなエンジンを作って、スーパー正男っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。
@@ -1341,14 +1335,14 @@ Thanks to その１　誰もがやりたいパーティクルの衝突
 本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。
 JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。
 もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。
-あくまでこれは俺得ライブラリ。</description></item><item><title>今日の教訓</title><link>https://blog.tyage.net/p138/</link><pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate><guid>https://blog.tyage.net/p138/</guid><description>オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意</description></item><item><title>青少年オフと京大学院祭</title><link>https://blog.tyage.net/p134/</link><pubDate>Wed, 24 Nov 2010 13:39:21 +0000</pubDate><guid>https://blog.tyage.net/p134/</guid><description>&lt;p>日曜日に、&lt;a href="http://tweetvite.com/event/u20_04">2010関西青少年？オフ&lt;/a>に行きました。&lt;br />
+あくまでこれは俺得ライブラリ。</description></item><item><title>今日の教訓</title><link>https://blog.tyage.net/?p=138/</link><pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate><guid>https://blog.tyage.net/?p=138/</guid><description>オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意</description></item><item><title>青少年オフと京大学院祭</title><link>https://blog.tyage.net/?p=134/</link><pubDate>Wed, 24 Nov 2010 13:39:21 +0000</pubDate><guid>https://blog.tyage.net/?p=134/</guid><description>&lt;p>日曜日に、&lt;a href="http://tweetvite.com/event/u20_04">2010関西青少年？オフ&lt;/a>に行きました。&lt;br />
 その後、&lt;a href="http://www.nf.la/">トップページ &amp;#8211; 第52回京都大学11月祭&lt;/a>にて同級生達と合流してきました。&lt;/p>
 &lt;h3>青少年オフ&lt;/h3>
 &lt;p>関西青少年オフでは、嵐電に乗って集合場所に到着した後、&lt;a href="http://r.tabelog.com/kyoto/A2605/A260501/26000617/">ジャンボ&lt;/a>というお店に行きました。でかいことで有名だそうです。&lt;br />
 （20分ほど遅刻しました。ごめんなさい。）&lt;br />
 焼きそばとお好み焼きを腹いっぱい食べました。でかくてうまかった。&lt;/p>
 &lt;p>その後は、また嵐電に乗って嵐山に行った後、@moccaxと合流して紅葉狩り。&lt;br />
-とにかく人、人、人。（たまにおっちゃん暴走族）&lt;br /></description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/p122/</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/p122/</guid><description>&lt;h3>経緯&lt;/h3>
+とにかく人、人、人。（たまにおっちゃん暴走族）&lt;br /></description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/?p=122/</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/?p=122/</guid><description>&lt;h3>経緯&lt;/h3>
 &lt;p>以前に、&lt;a href="http://tsukulog.info/">あらゆる物作りレシピ共有サイト「つくログ」&lt;/a>を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p>
 &lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html">PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a>&lt;/p>
 &lt;p>↑これ。でかい。2002年もの&lt;/p>
@@ -1365,11 +1359,11 @@ amazonで送料無料が完全サービス化されたので、amazonさんで�
 &lt;/del>&lt;br />
 後日試したところ、きちんと音がでました。へ(_ _)へ&lt;/p>
 &lt;p>今、我が家にはテレビがないため、モニターから音が出るとテレビ代わりになってとても助かる。&lt;br />
-KeyHoleTVバンザイ！&lt;br /></description></item><item><title>もっとTwilに力を！！</title><link>https://blog.tyage.net/p117/</link><pubDate>Sat, 13 Nov 2010 09:08:51 +0000</pubDate><guid>https://blog.tyage.net/p117/</guid><description>&lt;p>ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。&lt;/p>
+KeyHoleTVバンザイ！&lt;br /></description></item><item><title>もっとTwilに力を！！</title><link>https://blog.tyage.net/?p=117/</link><pubDate>Sat, 13 Nov 2010 09:08:51 +0000</pubDate><guid>https://blog.tyage.net/?p=117/</guid><description>&lt;p>ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/twil.php">もっとTwilに力を！！ &amp;#8211; ケータイ only&lt;/a>&lt;br />
 ※auのsh001でのみ確認&lt;/p>
 &lt;p>以前に記事を書いていたのだけども、それは消えてしまったので、再postしてみます。&lt;br />
-（googleのキャッシュも消えてる）&lt;br /></description></item><item><title>Bottom Coder.next</title><link>https://blog.tyage.net/p110/</link><pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate><guid>https://blog.tyage.net/p110/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
+（googleのキャッシュも消えてる）&lt;br /></description></item><item><title>Bottom Coder.next</title><link>https://blog.tyage.net/?p=110/</link><pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate><guid>https://blog.tyage.net/?p=110/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
 &lt;p>MA6に応募したよ！いえーい！&lt;/p>
 &lt;p>&lt;a href="http://ma6works.mashupaward.jp/bottomcoder/">#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a>&lt;/p>
 &lt;p>小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&amp;#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。&lt;/p>
@@ -1378,7 +1372,7 @@ KeyHoleTVバンザイ！&lt;br /></description></item><item><title>もっとTwil
 &lt;p>とりあえずBottom Coderをまともに使えるものにしようとしました。&lt;br />
 自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！&lt;/p>
 &lt;p>まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。&lt;/p>
-&lt;p></description></item><item><title>KOF2010 – 二日目</title><link>https://blog.tyage.net/p76/</link><pubDate>Mon, 08 Nov 2010 10:21:12 +0000</pubDate><guid>https://blog.tyage.net/p76/</guid><description>KOF2010 – 一日目 | チャゲってる日々 &amp;#8211; @tyage
+&lt;p></description></item><item><title>KOF2010 – 二日目</title><link>https://blog.tyage.net/?p=76/</link><pubDate>Mon, 08 Nov 2010 10:21:12 +0000</pubDate><guid>https://blog.tyage.net/?p=76/</guid><description>KOF2010 – 一日目 | チャゲってる日々 &amp;#8211; @tyage
 この日は同級生の@asi1024を誘って行った。
 彼は情オリとかSuperConとか出てるし、知り合いもいて楽しそうだった。よかったよかった。
 僕は@hiromu1996と@mine_studioのセミナーを見た時に、@yuya_prestoさんと合流。
@@ -1390,7 +1384,7 @@ Web AppsとかWeb Storeとかわくわくするー！
 終了後に灘の人らが打ち上げに行くとかで誘われたけど、おうちの事情で仕方なく帰りました。残念。
 この日の戦利品はOperaシールと、Google日本語入力のマンガを冊子にしたやつと、飴ちゃんくらいですかね。
 ＼爽快セキュリティ！／バッヂは人気だったようです。
-KOFでは講師の方も含め、セプキャン関連の人にも結構会ったなー。</description></item><item><title>Bottom Coder++</title><link>https://blog.tyage.net/p95/</link><pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate><guid>https://blog.tyage.net/p95/</guid><description>&lt;p>今日はBottomCoderのアップデートも行いました。&lt;/p>
+KOFでは講師の方も含め、セプキャン関連の人にも結構会ったなー。</description></item><item><title>Bottom Coder++</title><link>https://blog.tyage.net/?p=95/</link><pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate><guid>https://blog.tyage.net/?p=95/</guid><description>&lt;p>今日はBottomCoderのアップデートも行いました。&lt;/p>
 &lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
 &lt;p>MA6に何か提出しようと思い、APIを探していたところ、子飼弾さんのLLEvalがBottom Coderに使えそうだったので早速オンラインテスト機能として採用してみました。&lt;br />
 &lt;a href="http://ma6api.mashupaward.jp/entry/71601/">小飼弾（LLEval） | 提供API一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a>&lt;/p>
@@ -1402,7 +1396,7 @@ KOFでは講師の方も含め、セプキャン関連の人にも結構会っ�
 この処理に、先ほど言ったLLEvalを採用しています。&lt;br />
 クロスオリジンXHRを使っているので、少しブラウザが制限されますが、プログラマならきっと最新のブラウザを使っているでしょうし、そこは問題なしとします。&lt;/p>
 &lt;p>また、システムテストもLLEvalを使って実行してもらい、答えと一致しているか判別しています。&lt;/p>
-&lt;p></description></item><item><title>開発中 – Google Maps王に、俺はなる！</title><link>https://blog.tyage.net/p78/</link><pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate><guid>https://blog.tyage.net/p78/</guid><description>&lt;p>名前は特に意味なし。&lt;br />
+&lt;p></description></item><item><title>開発中 – Google Maps王に、俺はなる！</title><link>https://blog.tyage.net/?p=78/</link><pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate><guid>https://blog.tyage.net/?p=78/</guid><description>&lt;p>名前は特に意味なし。&lt;br />
 TOWNをまた新しく作り直してます。&lt;/p>
 &lt;p>Google MapsのV3が使いやすくなってたのでGoogle Mapsを使うことにしました。&lt;br />
 内容は以前のものをたいして変わらないと思います。&lt;br />
@@ -1412,7 +1406,7 @@ TOWNをまた新しく作り直してます。&lt;/p>
 三番目：&lt;a href="http://tyage.sakura.ne.jp/town/users/login">退化地方&lt;/a>&lt;/p>
 &lt;p>住民さんは「またかよっ！」って思うかもしれないですけど、これがたぶん最後なので。。。&lt;br />
 まあ、またRoRで作り直そうかなとか考えちゃってますけど。&lt;/p>
-&lt;p></description></item><item><title>KOF2010 – 一日目</title><link>https://blog.tyage.net/p71/</link><pubDate>Fri, 05 Nov 2010 15:14:33 +0000</pubDate><guid>https://blog.tyage.net/p71/</guid><description>金曜だけど保護者会ってことでお昼に学校が終わったので行って来ました。
+&lt;p></description></item><item><title>KOF2010 – 一日目</title><link>https://blog.tyage.net/?p=71/</link><pubDate>Fri, 05 Nov 2010 15:14:33 +0000</pubDate><guid>https://blog.tyage.net/?p=71/</guid><description>金曜だけど保護者会ってことでお昼に学校が終わったので行って来ました。
 KOF2010：関西オープンソース2010
 思ったほど迷子にならず順調に到着。
 往復1000円、所要時間は2時間ほど。
@@ -1430,10 +1424,10 @@ Mozillaさんのセミナーとか聞きたかったなぁと。
 戦利品
 この日は友達何人か誘ったけど断られた＞＜
 でも明日はきっとasi1024先生と一緒に行けるはず！
-明日はきょーくりがブース出してます！よろしく！</description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.net/p64/</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.net/p64/</guid><description>暇なのでひなったーにな～れ &amp;#8211; Hatena::Letを作った。
+明日はきょーくりがブース出してます！よろしく！</description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.net/?p=64/</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.net/?p=64/</guid><description>暇なのでひなったーにな～れ &amp;#8211; Hatena::Letを作った。
 サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。
 ひなったーにな～れ
-　*&amp;#8220;･*。
+*&amp;#8220;･*。
 ｜　`*｡
 ｡∩　*
 + (･ω･`)*+ﾟ
@@ -1452,7 +1446,7 @@ JavaScript+canvasで顔認識 &amp;#8211; 開発な日々の被ブクマ数は�
 横顔よりも正面の顔が欲しいなぁ。
 彼は今オーストラリアにいるから堂々とやってるんだけど、また勝手に顔写真使ったから怒られるかなあ。怒られたい。
 こちらもよろしく
-Love HINATA♥ &amp;#8211; Hatena::Let</description></item><item><title>悩み</title><link>https://blog.tyage.net/p61/</link><pubDate>Sat, 23 Oct 2010 14:58:43 +0000</pubDate><guid>https://blog.tyage.net/p61/</guid><description>いろいろと悩み事の多いお年頃なんですが、あまり人には聞くことがありません。
+Love HINATA♥ &amp;#8211; Hatena::Let</description></item><item><title>悩み</title><link>https://blog.tyage.net/?p=61/</link><pubDate>Sat, 23 Oct 2010 14:58:43 +0000</pubDate><guid>https://blog.tyage.net/?p=61/</guid><description>いろいろと悩み事の多いお年頃なんですが、あまり人には聞くことがありません。
 でもこれはどんだけ考えてもいい方法が思い浮かばないので、もし教えてくれる方がいれば教えてほしいという切実な願いです。
 要件 view部分ををいじらずに、リンク等URLにパラメータを保持したい。
 prefixを指定したときのように。
@@ -1467,12 +1461,12 @@ iframeで見るページは、iframe以外でも見れ、そのときはiframe�
 上に書いたように、呼び出すaction名を変更するprefix機能をそのまま使うこともできません。
 またbeforeRenderなどaction名が決まった時点で、prefixを設定しようかとも考えましたがそれも上手くいきませんでした。
 どうかこの私の至らない頭に解決法をお与えください。
-要件が上手くまとまったら質問サイトにでも投げかけようかな。</description></item><item><title>jQuery1.4.3ｳｯﾋｮｰ</title><link>https://blog.tyage.net/p43/</link><pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate><guid>https://blog.tyage.net/p43/</guid><description>&lt;p>試験期間中の夜はテンション高いぜｲｴｰ&lt;/p>
+要件が上手くまとまったら質問サイトにでも投げかけようかな。</description></item><item><title>jQuery1.4.3ｳｯﾋｮｰ</title><link>https://blog.tyage.net/?p=43/</link><pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate><guid>https://blog.tyage.net/?p=43/</guid><description>&lt;p>試験期間中の夜はテンション高いぜｲｴｰ&lt;/p>
 &lt;p>Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p>
 &lt;p>&lt;a href="http://blog.jquery.com/2010/10/16/jquery-143-released/">jQuery: » jQuery 1.4.3 Released&lt;/a>&lt;/p>
 &lt;p>jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=17">予想通り&lt;/a>&lt;/strike>かなりの変更が加えられてます！&lt;/p>
 &lt;p>内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br />
-発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /></description></item><item><title>jQuery 1.4.3RC2</title><link>https://blog.tyage.net/p17/</link><pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate><guid>https://blog.tyage.net/p17/</guid><description>追記：
+発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /></description></item><item><title>jQuery 1.4.3RC2</title><link>https://blog.tyage.net/?p=17/</link><pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate><guid>https://blog.tyage.net/?p=17/</guid><description>追記：
 jQuery1.4.3が正式発表されました。
 jQuery1.4.3rc1、rc2と立て続けにリリースされたようです。
 試験中にも関わらず、差分取ってちまちまと見ています。
@@ -1485,10 +1479,10 @@ InfoQ: Data Link &amp;#8211; jQueryのためのデータバインディング
 jQuery 1.4.2 の xhr.abort() が IE7 でエラーになる問題の回避方法 &amp;#8211; Scalaとlift　のはずだった　・・・
 もちろんバグ取りはいっぱい行われています。
 Blackberry対策をしてあるのには少し笑えましたｗ
-それよりも1.5が楽しみです。</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/p6/</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/p6/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5">一度消えた&lt;/a>XSSの記事を復活させました。&lt;/p>
+それよりも1.5が楽しみです。</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/?p=6/</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/?p=6/</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5">一度消えた&lt;/a>XSSの記事を復活させました。&lt;/p>
 &lt;h1>注意書き&lt;/h1>
 &lt;p>はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p>
 &lt;p>記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p>
 &lt;p>以下ネタバレ注意です！&lt;/p>
-&lt;p>別の解き方があれば教えてください。&lt;br /></description></item><item><title>ブログ記事が消滅しました</title><link>https://blog.tyage.net/p7/</link><pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate><guid>https://blog.tyage.net/p7/</guid><description>&lt;p>ブログどころか、サイトで使っているDB内のテーブルが&lt;strong>全部&lt;/strong>空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p>
+&lt;p>別の解き方があれば教えてください。&lt;br /></description></item><item><title>ブログ記事が消滅しました</title><link>https://blog.tyage.net/?p=7/</link><pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate><guid>https://blog.tyage.net/?p=7/</guid><description>&lt;p>ブログどころか、サイトで使っているDB内のテーブルが&lt;strong>全部&lt;/strong>空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p>
 &lt;p>事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /></description></item><item><title/><link>https://blog.tyage.net/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.tyage.net/about/</guid><description>https://tyage.net</description></item></channel></rss>
