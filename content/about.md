@@ -1,1 +1,1 @@
-About me <https://tyage.net>
+https://tyage.net
