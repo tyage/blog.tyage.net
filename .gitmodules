@@ -4,3 +4,6 @@
 [submodule "themes/github-style"]
 	path = themes/github-style
 	url = https://github.com/MeiK2333/github-style.git
+[submodule "themes/gokarna"]
+	path = themes/gokarna
+	url = https://github.com/526avijitgupta/gokarna.git

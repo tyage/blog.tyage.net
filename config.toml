@@ -1,9 +1,34 @@
-baseURL = "https://blog.tyage.net/"
 languageCode = "en-us"
 title = "blog.tyage.net"
-theme = "github-style"
+theme = "gokarna"
 googleAnalytics = "UA-3879973-3"
 paginate = 3
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false
+
+[menu]
+  [[menu.main]]
+    # Unique identifier for a menu item
+    identifier = "posts"
+
+    url = "/post/"
+    
+    # You can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+
+    # You can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+
+    # Display name
+    name = "Posts"
+
+    # Weights are used to determine the ordering
+    weight = 1
+
 
 [params]
   author = "tyage"
