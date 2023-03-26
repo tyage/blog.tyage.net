@@ -3,7 +3,7 @@ title: Google CTF 2017 – Geokitties v2 writeup
 author: tyage
 type: post
 date: 2017-06-25T17:04:34+00:00
-url: /?p=1020
+url: /archive/p1020.html
 wp-syntax-cache-content:
   - |
     a:3:{i:1;s:306:"

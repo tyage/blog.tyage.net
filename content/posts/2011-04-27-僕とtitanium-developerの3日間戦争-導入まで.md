@@ -3,7 +3,7 @@ title: 僕とTitanium Developerの3日間戦争 – 導入まで
 author: tyage
 type: post
 date: 2011-04-27T11:24:51+00:00
-url: /?p=335
+url: /archive/p335.html
 has_been_twittered:
   - yes
 categories:

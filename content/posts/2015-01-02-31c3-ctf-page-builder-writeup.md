@@ -3,7 +3,7 @@ title: 31C3 CTF – Page Builder writeup
 author: tyage
 type: post
 date: 2015-01-02T00:32:50+00:00
-url: /?p=829
+url: /archive/p829.html
 categories:
   - CTF
 

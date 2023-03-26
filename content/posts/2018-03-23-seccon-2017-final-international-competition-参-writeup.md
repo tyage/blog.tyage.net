@@ -3,7 +3,7 @@ title: SECCON 2017 Final International competition – 参 writeup
 author: tyage
 type: post
 date: 2018-03-22T15:20:40+00:00
-url: /?p=1138
+url: /archive/p1138.html
 hestia_layout_select:
   - default
 categories:

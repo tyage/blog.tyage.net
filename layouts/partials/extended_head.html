@@ -3,7 +3,7 @@ const match = location.search.match(/^\?p=(\d+)\/?$/)
 if (location.pathname === '/' && match !== null) {
   // redirect to new url if the user accesses with previous url. /?p=123 -> /p123/
   const postId = match[1]
-  history.replaceState({ previousUrl: location.href }, '', `/%3fp=${postId}/`)
+  history.replaceState({ previousUrl: location.href }, '', `/archive/${postId}.html`)
   location.reload()
 } else {
   // if the user is redirected, revert the url to the original one (without redirect)

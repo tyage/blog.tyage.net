@@ -3,7 +3,7 @@ title: Google CTF 2017 – The X Sanitizer writeup
 author: tyage
 type: post
 date: 2017-06-25T15:57:35+00:00
-url: /?p=990
+url: /archive/p990.html
 wp-syntax-cache-content:
   - |
     a:4:{i:1;s:2958:"

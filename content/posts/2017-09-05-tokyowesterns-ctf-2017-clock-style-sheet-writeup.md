@@ -3,7 +3,7 @@ title: Tokyo Westerns CTF 2017 – Clock Style Sheet writeup
 author: tyage
 type: post
 date: 2017-09-05T01:34:28+00:00
-url: /?p=1043
+url: /archive/p1043.html
 wp-syntax-cache-content:
   - |
     a:4:{i:1;s:474:"

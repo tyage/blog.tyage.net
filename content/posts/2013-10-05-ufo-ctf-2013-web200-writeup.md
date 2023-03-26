@@ -3,7 +3,7 @@ title: UFO CTF 2013 writeup – Web200
 author: tyage
 type: post
 date: 2013-10-05T14:55:08+00:00
-url: /?p=719
+url: /archive/p719.html
 wp-syntax-cache-content:
   - |
     a:2:{i:1;s:6293:"

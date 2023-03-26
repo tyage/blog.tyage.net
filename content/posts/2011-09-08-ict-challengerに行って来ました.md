@@ -3,7 +3,7 @@ title: ICT Challenge+Rに行って来ました
 author: tyage
 type: post
 date: 2011-09-08T13:54:41+00:00
-url: /?p=405
+url: /archive/p405.html
 has_been_twittered:
   - yes
 categories:

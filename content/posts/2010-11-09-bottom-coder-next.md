@@ -3,7 +3,7 @@ title: Bottom Coder.next
 author: tyage
 type: post
 date: 2010-11-09T14:44:16+00:00
-url: /?p=110
+url: /archive/p110.html
 has_been_twittered:
   - yes
 categories:

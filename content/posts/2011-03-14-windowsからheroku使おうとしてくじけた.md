@@ -3,7 +3,7 @@ title: WindowsからHeroku使おうとしてくじけた
 author: tyage
 type: post
 date: 2011-03-14T12:08:01+00:00
-url: /?p=290
+url: /archive/p290.html
 has_been_twittered:
   - yes
 wp-syntax-cache-content:

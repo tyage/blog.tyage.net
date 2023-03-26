@@ -3,7 +3,7 @@ title: tyage.sakura.ne.jp を終了します
 author: tyage
 type: post
 date: 2017-09-29T14:32:27+00:00
-url: /?p=1076
+url: /archive/p1076.html
 categories:
   - 開発
 

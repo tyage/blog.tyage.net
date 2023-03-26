@@ -3,7 +3,7 @@ title: node.jsでJOI受けた。
 author: tyage
 type: post
 date: 2010-12-19T08:22:24+00:00
-url: /?p=188
+url: /archive/p188.html
 has_been_twittered:
   - yes
 categories:

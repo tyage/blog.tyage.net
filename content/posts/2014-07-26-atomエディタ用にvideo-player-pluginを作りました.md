@@ -3,7 +3,7 @@ title: Atomエディタ用にVideo player pluginを作りました
 author: tyage
 type: post
 date: 2014-07-26T03:48:14+00:00
-url: /?p=790
+url: /archive/p790.html
 categories:
   - 開発
 

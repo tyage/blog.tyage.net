@@ -3,7 +3,7 @@ title: JOIの解答がGoogle Chromeで提出できないという話
 author: tyage
 type: post
 date: 2010-12-11T07:57:07+00:00
-url: /?p=164
+url: /archive/p164.html
 has_been_twittered:
   - yes
 categories:

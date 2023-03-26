@@ -3,7 +3,7 @@ title: 嘘つきPHP ZipArchive::addGlobと壊れたファイルパス
 author: tyage
 type: post
 date: 2016-12-05T12:24:31+00:00
-url: /?p=944
+url: /archive/p944.html
 wp-syntax-cache-content:
   - |
     a:5:{i:1;s:3618:"

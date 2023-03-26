@@ -3,7 +3,7 @@ title: DIMVA CTF 2013 writeup
 author: tyage
 type: post
 date: 2013-07-19T16:29:48+00:00
-url: /?p=697
+url: /archive/p697.html
 wp-syntax-cache-content:
   - |
     a:2:{i:1;s:959:"

@@ -3,7 +3,7 @@ title: cakePHPでURLパラメータを保持する
 author: tyage
 type: post
 date: 2011-02-06T14:46:29+00:00
-url: /?p=260
+url: /archive/p260.html
 has_been_twittered:
   - yes
 wp-syntax-cache-content:

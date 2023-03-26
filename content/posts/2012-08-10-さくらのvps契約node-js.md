@@ -3,7 +3,7 @@ title: さくらのvps契約+node.js
 author: tyage
 type: post
 date: 2012-08-09T15:42:45+00:00
-url: /?p=497
+url: /archive/p497.html
 wp-syntax-cache-content:
   - |
     a:8:{i:1;s:761:"

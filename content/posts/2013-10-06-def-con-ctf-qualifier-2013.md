@@ -3,7 +3,7 @@ title: DEF CON CTF Qualifier 2013
 author: tyage
 type: post
 date: 2013-10-05T16:02:42+00:00
-url: /?p=730
+url: /archive/p730.html
 categories:
   - CTF
 

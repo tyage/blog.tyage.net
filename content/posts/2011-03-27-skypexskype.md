@@ -3,7 +3,7 @@ title: Skype×Skype
 author: tyage
 type: post
 date: 2011-03-27T11:59:46+00:00
-url: /?p=308
+url: /archive/p308.html
 has_been_twittered:
   - yes
 categories:

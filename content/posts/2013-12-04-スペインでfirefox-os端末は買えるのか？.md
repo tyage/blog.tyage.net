@@ -3,7 +3,7 @@ title: スペインでFirefox OS端末は買えるのか？
 author: tyage
 type: post
 date: 2013-12-04T06:07:34+00:00
-url: /?p=739
+url: /archive/p739.html
 categories:
   - メモ
 tags:

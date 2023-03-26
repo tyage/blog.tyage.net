@@ -3,7 +3,7 @@ title: SIGINT CTF 2013 writeup – bloat (cloud 200)
 author: tyage
 type: post
 date: 2013-07-16T20:23:45+00:00
-url: /?p=689
+url: /archive/p689.html
 wp-syntax-cache-content:
   - |
     a:4:{i:1;s:590:"

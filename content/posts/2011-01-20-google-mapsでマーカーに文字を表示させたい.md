@@ -3,7 +3,7 @@ title: google mapsでマーカーに文字を表示させたい
 author: tyage
 type: post
 date: 2011-01-19T15:10:49+00:00
-url: /?p=243
+url: /archive/p243.html
 has_been_twittered:
   - yes
 categories:

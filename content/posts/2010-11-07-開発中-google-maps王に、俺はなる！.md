@@ -3,7 +3,7 @@ title: 開発中 – Google Maps王に、俺はなる！
 author: tyage
 type: post
 date: 2010-11-07T09:07:50+00:00
-url: /?p=78
+url: /archive/p78.html
 has_been_twittered:
   - yes
 categories:

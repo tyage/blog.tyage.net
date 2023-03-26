@@ -3,7 +3,7 @@ title: d=(^o^)=b.js – Aizu Advent Calendar
 author: tyage
 type: post
 date: 2012-12-14T06:55:12+00:00
-url: /?p=609
+url: /archive/p609.html
 wp-syntax-cache-content:
   - |
     a:3:{i:1;s:9394:"

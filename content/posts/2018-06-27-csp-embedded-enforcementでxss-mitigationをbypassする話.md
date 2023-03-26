@@ -3,7 +3,7 @@ title: CSP Embedded EnforcementでXSS mitigationをbypassする話
 author: tyage
 type: post
 date: 2018-06-26T15:11:37+00:00
-url: /?p=1187
+url: /archive/p1187.html
 hestia_layout_select:
   - default
 wp-syntax-cache-content:
