@@ -1,6 +1,7 @@
 ---
 title: "ACSC 2023 Gotion Challenge Author Writeup"
 date: 2023-03-12T00:00:00+09:00
+url: /posts/2023-03-12-acsc-2023-gotion/
 ---
 
 I made a Gotion Challenge in [ACSC](https://acsc.asia/) (Asian Cyber Security Challenge) 2023.

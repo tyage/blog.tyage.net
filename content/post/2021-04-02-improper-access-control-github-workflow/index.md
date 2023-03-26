@@ -1,6 +1,7 @@
 ---
 title: "Gain write permission of repositories with a bug in GitHub Actions"
 date: 2021-04-02T22:28:00+09:00
+url: /posts/2021-04-02-improper-access-control-github-workflow/
 ---
 
 # Gain write permission of repositories with a bug in GitHub Actions

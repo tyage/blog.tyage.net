@@ -1,6 +1,7 @@
 ---
 title: "Security filter bypasses with \"matrix variables\""
 date: 2020-06-19T09:28:25+09:00
+url: /posts/2020-06-19-matrix-parameter/
 ---
 
 Spring framework, which is a popular web application framework for Java, supports ["matrix variables"](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-matrix-variables).

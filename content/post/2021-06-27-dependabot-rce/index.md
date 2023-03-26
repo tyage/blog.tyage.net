@@ -1,6 +1,7 @@
 ---
 title: "Diving into Dependabot along with a bug in npm"
 date: 2021-07-12T23:30:00+09:00
+url: /posts/2021-06-27-dependabot-rce/
 ---
 
 If you are developing some applications on GitHub, you might have seen pull requests from Depedabot.
