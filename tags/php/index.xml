@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHP on blog.tyage.net</title><link>https://blog.tyage.net/tags/php/</link><description>Recent content in PHP on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Mar 2011 11:30:49 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>Pear</title><link>https://blog.tyage.net/?p=276/</link><pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate><guid>https://blog.tyage.net/?p=276/</guid><description>Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHP on blog.tyage.net</title><link>https://blog.tyage.net/tags/php/</link><description>Recent content in PHP on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Mar 2011 11:30:49 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>Pear</title><link>https://blog.tyage.net/archive/p276.html</link><pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p276.html</guid><description>Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。
 少なくともLhaplusだと解凍できなかった。
-問題になるのはWindowsだけかな。</description></item><item><title>Pear</title><link>https://blog.tyage.net/?p=276/</link><pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate><guid>https://blog.tyage.net/?p=276/</guid><description>Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。
+問題になるのはWindowsだけかな。</description></item><item><title>Pear</title><link>https://blog.tyage.net/archive/p276.html</link><pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p276.html</guid><description>Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。
 少なくともLhaplusだと解凍できなかった。
-問題になるのはWindowsだけかな。</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/?p=143/</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/?p=143/</guid><description>赤シート2.0
+問題になるのはWindowsだけかな。</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/archive/p143.html</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/archive/p143.html</guid><description>赤シート2.0
 試験前だが、ふと思い立って作った。
 自分はPCがあると勉強ができない。
 どうしても電源を入れる癖がある。
@@ -22,7 +22,7 @@ PDOにも初挑戦してみた。
 サンプルとして、地理のプリントの写しを挙げておく。
 ほかにも、英文の穴埋めなどにも使うなど、いろいろな使い方があると思う。
 土壌まとめ[地理]
-熱帯まとめ[地理]</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/?p=143/</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/?p=143/</guid><description>赤シート2.0
+熱帯まとめ[地理]</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/archive/p143.html</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/archive/p143.html</guid><description>赤シート2.0
 試験前だが、ふと思い立って作った。
 自分はPCがあると勉強ができない。
 どうしても電源を入れる癖がある。

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on blog.tyage.net</title><link>https://blog.tyage.net/tags/ubuntu/</link><description>Recent content in Ubuntu on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.net/?p=552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/?p=552/</guid><description>コンディション：良好
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ubuntu on blog.tyage.net</title><link>https://blog.tyage.net/tags/ubuntu/</link><description>Recent content in Ubuntu on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>コンディション：良好
 朝食：寝てた
 昼食：記憶になし
 夕食：記憶になし
@@ -8,7 +8,7 @@
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>08/06</title><link>https://blog.tyage.net/?p=552/</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/?p=552/</guid><description>コンディション：良好
+その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>コンディション：良好
 朝食：寝てた
 昼食：記憶になし
 夕食：記憶になし
@@ -18,7 +18,7 @@
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/?p=182/</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/?p=182/</guid><description>できない。
+その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/archive/p182.html</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/archive/p182.html</guid><description>できない。
 ぐぐったら下の三つがそれらしいので試してみたがだめだった。
 バージョンは最新の1.7.3.3でやってる。
 2010-02-19 &amp;#8211; Dive into the Tech World!
@@ -28,7 +28,7 @@
 未だにLinuxとかそのコマンドに関しては初心者から脱却できないでいる。
 進展があるとすれば、最近ubuntuを使い始めたくらい。
 ちまちま雑誌とか読んでれば分かるようになるかな。
-さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/?p=182/</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/?p=182/</guid><description>できない。
+さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/archive/p182.html</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/archive/p182.html</guid><description>できない。
 ぐぐったら下の三つがそれらしいので試してみたがだめだった。
 バージョンは最新の1.7.3.3でやってる。
 2010-02-19 &amp;#8211; Dive into the Tech World!
@@ -38,7 +38,7 @@
 未だにLinuxとかそのコマンドに関しては初心者から脱却できないでいる。
 進展があるとすれば、最近ubuntuを使い始めたくらい。
 ちまちま雑誌とか読んでれば分かるようになるかな。
-さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/?p=122/</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/?p=122/</guid><description>&lt;h3>経緯&lt;/h3>
+さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/archive/p122.html</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p122.html</guid><description>&lt;h3>経緯&lt;/h3>
 &lt;p>以前に、&lt;a href="http://tsukulog.info/">あらゆる物作りレシピ共有サイト「つくログ」&lt;/a>を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p>
 &lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html">PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a>&lt;/p>
 &lt;p>↑これ。でかい。2002年もの&lt;/p>
@@ -55,7 +55,7 @@ amazonで送料無料が完全サービス化されたので、amazonさんで�
 &lt;/del>&lt;br />
 後日試したところ、きちんと音がでました。へ(_ _)へ&lt;/p>
 &lt;p>今、我が家にはテレビがないため、モニターから音が出るとテレビ代わりになってとても助かる。&lt;br />
-KeyHoleTVバンザイ！&lt;br /></description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/?p=122/</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/?p=122/</guid><description>&lt;h3>経緯&lt;/h3>
+KeyHoleTVバンザイ！&lt;br /></description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/archive/p122.html</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p122.html</guid><description>&lt;h3>経緯&lt;/h3>
 &lt;p>以前に、&lt;a href="http://tsukulog.info/">あらゆる物作りレシピ共有サイト「つくログ」&lt;/a>を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p>
 &lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html">PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a>&lt;/p>
 &lt;p>↑これ。でかい。2002年もの&lt;/p>

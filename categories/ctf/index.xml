@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on blog.tyage.net</title><link>https://blog.tyage.net/categories/ctf/</link><description>Recent content in CTF on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Jun 2018 15:11:37 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/ctf/index.xml" rel="self" type="application/rss+xml"/><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/?p=1187/</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/?p=1187/</guid><description>&lt;h2>なに&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on blog.tyage.net</title><link>https://blog.tyage.net/categories/ctf/</link><description>Recent content in CTF on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Jun 2018 15:11:37 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/ctf/index.xml" rel="self" type="application/rss+xml"/><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/archive/p1187.html</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/archive/p1187.html</guid><description>&lt;h2>なに&lt;/h2>
 &lt;p>CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。&lt;br />
 以下のような条件が必要なので現実に使える場面は普通はなさそう。&lt;br />
 CTFでは便利かもしれない。&lt;/p>
@@ -8,7 +8,7 @@ CTFでは便利かもしれない。&lt;/p>
 &lt;li>Webページに指定したHTMLを埋め込める(XSSができる)&lt;/li>
 &lt;li>ただし、WebページにJavaScriptによるXSS防御機構がある&lt;/li>
 &lt;/ul>
-&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/?p=1187/</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/?p=1187/</guid><description>&lt;h2>なに&lt;/h2>
+&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/archive/p1187.html</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/archive/p1187.html</guid><description>&lt;h2>なに&lt;/h2>
 &lt;p>CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。&lt;br />
 以下のような条件が必要なので現実に使える場面は普通はなさそう。&lt;br />
 CTFでは便利かもしれない。&lt;/p>
@@ -18,21 +18,21 @@ CTFでは便利かもしれない。&lt;/p>
 &lt;li>Webページに指定したHTMLを埋め込める(XSSができる)&lt;/li>
 &lt;li>ただし、WebページにJavaScriptによるXSS防御機構がある&lt;/li>
 &lt;/ul>
-&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/?p=1138/</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/?p=1138/</guid><description>SECCON 2017国際決勝に参加した。
+&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/archive/p1138.html</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/archive/p1138.html</guid><description>SECCON 2017国際決勝に参加した。
 5種類のKoH形式の問題と、いくつかのJeopardy形式の問題が出題された。
 問題参(KoH)の問題文:
 The Raspberry Pi distributed to each team contains the Bingo-Service program
 Please log-in your Raspberry Pi ( ssh: 192.168.4.254, user/pass = pi/kenjiinwonderland )
 Please set up Bingo-Service on 192.168.4.254 : 80
 If you click &amp;#8220;Measure&amp;#8221; button above, the system will accesses your Bingo-Service in a few minutes later
-&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/?p=1138/</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/?p=1138/</guid><description>SECCON 2017国際決勝に参加した。
+&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/archive/p1138.html</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/archive/p1138.html</guid><description>SECCON 2017国際決勝に参加した。
 5種類のKoH形式の問題と、いくつかのJeopardy形式の問題が出題された。
 問題参(KoH)の問題文:
 The Raspberry Pi distributed to each team contains the Bingo-Service program
 Please log-in your Raspberry Pi ( ssh: 192.168.4.254, user/pass = pi/kenjiinwonderland )
 Please set up Bingo-Service on 192.168.4.254 : 80
 If you click &amp;#8220;Measure&amp;#8221; button above, the system will accesses your Bingo-Service in a few minutes later
-&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/?p=1043/</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/?p=1043/</guid><description>Overview Problem page:
+&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/archive/p1043.html</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/archive/p1043.html</guid><description>Overview Problem page:
 http://css.chal.ctf.westerns.tokyo/
 Provided source code:
 proxy.py
@@ -41,7 +41,7 @@ There are 4 pages: /, /refresh, /chrowler, /flag.
 When we access /flag, it responses only local IP is allowed. (your IP: 110.3.193.114).
 So, we should use /chrowler (crawler using Chrome) to get the content in /flag.
 Find XSS Next, we search XSS and found /refresh has it. (We found the vulnerability when browsing with w3m)
-In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/?p=1043/</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/?p=1043/</guid><description>Overview Problem page:
+In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/archive/p1043.html</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/archive/p1043.html</guid><description>Overview Problem page:
 http://css.chal.ctf.westerns.tokyo/
 Provided source code:
 proxy.py
@@ -50,7 +50,7 @@ There are 4 pages: /, /refresh, /chrowler, /flag.
 When we access /flag, it responses only local IP is allowed. (your IP: 110.3.193.114).
 So, we should use /chrowler (crawler using Chrome) to get the content in /flag.
 Find XSS Next, we search XSS and found /refresh has it. (We found the vulnerability when browsing with w3m)
-In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/?p=1020/</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/?p=1020/</guid><description>Overview Problem page:
+In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/archive/p1020.html</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p1020.html</guid><description>Overview Problem page:
 https://geokittiesv2.web.ctfcompetition.com/
 Copy of source code:
 https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127
@@ -59,7 +59,7 @@ The comment is validated by using htmlparser2.
 Allowed tags are: p, a, b, img, br, i
 Invalid attributes: on(.*)= and href=javascript:...
 Solution What we should do is find the differences in parsing between Google Chrome and htmlparser2.
-After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/?p=1020/</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/?p=1020/</guid><description>Overview Problem page:
+After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/archive/p1020.html</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p1020.html</guid><description>Overview Problem page:
 https://geokittiesv2.web.ctfcompetition.com/
 Copy of source code:
 https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127
@@ -68,7 +68,7 @@ The comment is validated by using htmlparser2.
 Allowed tags are: p, a, b, img, br, i
 Invalid attributes: on(.*)= and href=javascript:...
 Solution What we should do is find the differences in parsing between Google Chrome and htmlparser2.
-After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/?p=990/</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/?p=990/</guid><description>Overview Problem page:
+After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/archive/p990.html</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/archive/p990.html</guid><description>Overview Problem page:
 https://sanitizer.web.ctfcompetition.com
 Copy of source code:
 https://gist.github.com/tyage/6eabacf6001bd068287842b1052132e4
@@ -77,7 +77,7 @@ Sanitizing method The method of sanitizing is follow:
 1. Remove the words that match with /meta|srcdoc|utf-16be/i from input.
 2. Register a ServiceWorker then, render input in iframe
 3. In iframe, it load &amp;lt;script src=sanitize&amp;gt; which executes the following code:
-onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/?p=990/</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/?p=990/</guid><description>Overview Problem page:
+onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/archive/p990.html</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/archive/p990.html</guid><description>Overview Problem page:
 https://sanitizer.web.ctfcompetition.com
 Copy of source code:
 https://gist.github.com/tyage/6eabacf6001bd068287842b1052132e4
@@ -86,13 +86,13 @@ Sanitizing method The method of sanitizing is follow:
 1. Remove the words that match with /meta|srcdoc|utf-16be/i from input.
 2. Register a ServiceWorker then, render input in iframe
 3. In iframe, it load &amp;lt;script src=sanitize&amp;gt; which executes the following code:
-onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/?p=829/</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/?p=829/</guid><description>This challenge needs only XSS but it is interesting to me 🙂
+onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/archive/p829.html</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p829.html</guid><description>This challenge needs only XSS but it is interesting to me 🙂
 These guys have ripped off our designs and using them in their web pages builder! We’d Haxx them, don’t worry we’ll give you decent points for it. http://188.40.18.76/ By using the form, we could generate a page.(such as http://188.40.18.76/output/19c94d778563b117e18e3442e887989aea14277d/filename)
 It htmlspecialchars the &amp;#8220;title&amp;#8221; and &amp;#8220;file content&amp;#8221; but not &amp;#8220;style&amp;#8221; or &amp;#8220;filename&amp;#8221;.
-The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/?p=829/</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/?p=829/</guid><description>This challenge needs only XSS but it is interesting to me 🙂
+The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/archive/p829.html</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p829.html</guid><description>This challenge needs only XSS but it is interesting to me 🙂
 These guys have ripped off our designs and using them in their web pages builder! We’d Haxx them, don’t worry we’ll give you decent points for it. http://188.40.18.76/ By using the form, we could generate a page.(such as http://188.40.18.76/output/19c94d778563b117e18e3442e887989aea14277d/filename)
 It htmlspecialchars the &amp;#8220;title&amp;#8221; and &amp;#8220;file content&amp;#8221; but not &amp;#8220;style&amp;#8221; or &amp;#8220;filename&amp;#8221;.
-The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/?p=802/</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/?p=802/</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/?p=802/</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/?p=802/</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/?p=730/</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/?p=730/</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
+The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/archive/p802.html</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p802.html</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/archive/p802.html</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p802.html</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/archive/p730.html</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/archive/p730.html</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
 一応、webを何問かとprogramming2問ほどを解きました。
 うちを含め多くのチームがweb問題を全完しており、今回のweb問題は易しかったように感じます。
 開始直後は、8-puzzleのprogrammingを解いて7位くらいだったけど、最終的には79位となった。
@@ -103,7 +103,7 @@ The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220
 &amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
 HEYYEYAAEYAAAEYAEYAAが意識遠くなっても頭の中から聞こえるようになってきた
 &amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
-DEFCONが僕達に残したもの</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/?p=730/</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/?p=730/</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
+DEFCONが僕達に残したもの</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/archive/p730.html</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/archive/p730.html</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
 一応、webを何問かとprogramming2問ほどを解きました。
 うちを含め多くのチームがweb問題を全完しており、今回のweb問題は易しかったように感じます。
 開始直後は、8-puzzleのprogrammingを解いて7位くらいだったけど、最終的には79位となった。
@@ -114,13 +114,13 @@ DEFCONが僕達に残したもの</description></item><item><title>DEF CON CTF Q
 &amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
 HEYYEYAAEYAAAEYAEYAAが意識遠くなっても頭の中から聞こえるようになってきた
 &amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
-DEFCONが僕達に残したもの</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/?p=719/</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/?p=719/</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
+DEFCONが僕達に残したもの</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/archive/p719.html</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/archive/p719.html</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
 バックアップしてみると、[username]_[md5(username)][md5(zipfile)].zipという名前でzipファイルがダウンロードでき、それをアップロードすることで復元ができるようになっている。
 zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。
-&amp;lt;?xml version=&amp;quot;1.</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/?p=719/</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/?p=719/</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
+&amp;lt;?xml version=&amp;quot;1.</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/archive/p719.html</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/archive/p719.html</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
 バックアップしてみると、[username]_[md5(username)][md5(zipfile)].zipという名前でzipファイルがダウンロードでき、それをアップロードすることで復元ができるようになっている。
 zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。
-&amp;lt;?xml version=&amp;quot;1.</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/?p=697/</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/?p=697/</guid><description>DIMVA CTFに参加していた。
+&amp;lt;?xml version=&amp;quot;1.</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/archive/p697.html</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/archive/p697.html</guid><description>DIMVA CTFに参加していた。
 私のチーム（Epsilon Delta）は850ポイントで17位だった。
 Web 100 画像アップローダーが用意されており、どうにかこうにかする問題。
 はじめにいくつか画像が用意されており、パスワードを入力しないと閲覧できない画像があったため、そのパスワードを求める問題と推察される。
@@ -137,7 +137,7 @@ Web 200 普通にアクセスすると
 xml parameterってのが素直にxmlって名前のリクエストパラメータだったのに、そこに気づくまでに一日かかって英語の壁を感じる。
 これがわかればあとは解くだけ。
 とりあえず色々試していると、以下のレスポンスが返って来たため、XPathへのインジェクションだとわかった。
-Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/?p=697/</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/?p=697/</guid><description>DIMVA CTFに参加していた。
+Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/archive/p697.html</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/archive/p697.html</guid><description>DIMVA CTFに参加していた。
 私のチーム（Epsilon Delta）は850ポイントで17位だった。
 Web 100 画像アップローダーが用意されており、どうにかこうにかする問題。
 はじめにいくつか画像が用意されており、パスワードを入力しないと閲覧できない画像があったため、そのパスワードを求める問題と推察される。
@@ -154,7 +154,7 @@ Web 200 普通にアクセスすると
 xml parameterってのが素直にxmlって名前のリクエストパラメータだったのに、そこに気づくまでに一日かかって英語の壁を感じる。
 これがわかればあとは解くだけ。
 とりあえず色々試していると、以下のレスポンスが返って来たため、XPathへのインジェクションだとわかった。
-Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/?p=689/</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/?p=689/</guid><description>&lt;h3>CTF&lt;/h3>
+Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/archive/p689.html</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/archive/p689.html</guid><description>&lt;h3>CTF&lt;/h3>
 &lt;p>えと、ブログを更新停止している間に、Epsilon DeltaとしていくつかCTFに参加していました。&lt;/p>
 &lt;ul>
 &lt;li>Codegate YUT Preliminary 2013&lt;/li>
@@ -167,7 +167,7 @@ Error during login: Query: //User[UserName/text()='' and Password/text()='' '...
 &lt;/ul>
 &lt;p>はじめは海外のCTFの感覚がつかめず、ちゃんと解いたような記憶もなかったのですが、BKPあたりからは少し慣れてきたような気がします。&lt;/p>
 &lt;p>今まで解いてた問題のwrite upを書こうとも思ったのですが、すっかり忘れてしまっているため、一番最近やったSIGINT CTFのwrite upを書くことにします。&lt;/p>
-&lt;p></description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/?p=689/</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/?p=689/</guid><description>&lt;h3>CTF&lt;/h3>
+&lt;p></description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/archive/p689.html</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/archive/p689.html</guid><description>&lt;h3>CTF&lt;/h3>
 &lt;p>えと、ブログを更新停止している間に、Epsilon DeltaとしていくつかCTFに参加していました。&lt;/p>
 &lt;ul>
 &lt;li>Codegate YUT Preliminary 2013&lt;/li>
