@@ -79,19 +79,6 @@ ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイル�
 私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
 また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
 $dir = '/tmp/workdir/'; &nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir($jsonDir); file_put_contents($jsonDir. 'api.json', json_encode($request)); &nbsp; // create archive.zip $zip = new ZipArchive(); $zip->open($dir . 'archive.zip', ZipArchive::CREATE); $zip->addGlob($dir . '**/**', 0, ['remove_path' => $dir]); $zip->close(); ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</div></div><div class="f6 text-gray mt-2">Created
-<relative-time datetime=" Mon, 05 Dec 2016 12:24:31 +0000" class=no-wrap title=" Mon, 05 Dec 2016 12:24:31 +0000">Mon, 05 Dec 2016 12:24:31 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p944.html>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">こんにちは.
-KMC5回生のtyageです.
-この記事は, KMCアドベントカレンダー 5日目の記事です.
-昨日はnonyleneさんの Android Studio をビルドする でした.
-唐突ですが, 今日はPHPの話をします.
-TL;DR PHPのZipArchiveライブラリには, globパターンでファイルを追加する addGlob メソッドがある.
-これにはいくつかoptionが指定できるのだが, 挙動がおかしい.
-送った修正PRに反応をもらえたため, 12/1にリリースされた PHP 7.1 に含まれないかなと期待していたが, 特に進展はなかった.
-みんな困ってないんか&#8230;?
-ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイルを作りたい瞬間があるのではないかと思います.
-私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
-また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
-$dir = '/tmp/workdir/'; &nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir($jsonDir); file_put_contents($jsonDir. 'api.json', json_encode($request)); &nbsp; // create archive.zip $zip = new ZipArchive(); $zip->open($dir . 'archive.zip', ZipArchive::CREATE); $zip->addGlob($dir . '**/**', 0, ['remove_path' => $dir]); $zip->close(); ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</div></div><div class="f6 text-gray mt-2">Created
 <relative-time datetime=" Mon, 05 Dec 2016 12:24:31 +0000" class=no-wrap title=" Mon, 05 Dec 2016 12:24:31 +0000">Mon, 05 Dec 2016 12:24:31 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p848.html>:visitedセレクタのプライバシー問題とSNSでの利用</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
 2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。
 参考: CVE-2015-1765, Internet Explorer 用の累積的なセキュリティ更新プログラム (3058515)
@@ -106,5 +93,34 @@ You will still be able to visually style visited links, but there are now limits
 &#8211; border-color (and its sub-properties)
 &#8211; outline-color
 &#8211; The color parts of the fill and stroke properties</div></div><div class="f6 text-gray mt-2">Created
-<relative-time datetime=" Sun, 04 Jan 2015 07:22:14 +0000" class=no-wrap title=" Sun, 04 Jan 2015 07:22:14 +0000">Sun, 04 Jan 2015 07:22:14 +0000</relative-time></div></div></li></ul><div class=paginate-container><div class=BtnGroup><button class="btn btn-outline BtnGroup-item" disabled>Previous</button>
+<relative-time datetime=" Sun, 04 Jan 2015 07:22:14 +0000" class=no-wrap title=" Sun, 04 Jan 2015 07:22:14 +0000">Sun, 04 Jan 2015 07:22:14 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p762.html>録画環境を構築した</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">環境 ハードはこれ
+OSは未だにUbuntu 12.04
+録画するまで ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。
+深夜アニメを見る生活も捨てがたいし録画することにした。
+PCで見たいので録画カードとしてPT3を買った。
+届いてから設置して、Ubuntuにドライバを入れたりした。
+PT3のドライバがgithubにあったので、すごい時代だなあと思いながらインストール。
+recpt1が必要とのことだったのでこことかを参考にぐぐりながら入れて、再起動。
+B-CASカードに関してはここでは述べないこととする。
+録画管理にはepgdumpではなく、chinachuを使うことにした。
+たまたま冬コミでマニュアルを手に入れていたこともあるけど、モダンな感じなのとnode.jsで書かれているのがいい感じ。
+（epgdumpも入れてみたけどapacheやmysql依存してると開発環境とぶつかってよくない感じに・・・）
+chinachuのWUIは結構充実してて、その場で番組視聴したり録画視聴できるのが嬉しい。
+node.jsは既に入っていたし、wikiに書いてあるとおりにやったらすんなりいけた。
+コマンド1回でだいたい終わるのはとても気持ちいい。
+設定に関して、チャンネルは下のように総当たりでスキャンするか地域で調べるかすればよさげ。
+for var in `seq 13 80` ; do recpt1 --b25 --strip $var 10 ./$var.ts;done ど素人だけど半日あれば十分だった。
+エンコード問題 録画環境が構築できたので試しに録画してみた。
+ある程度覚悟はしていたものの、30分のアニメでm2ts形式のファイルだと3GB前後といった感じだった。
+うう〜ん。。。でかい。。。
+とりあえずmp4に変換しようと思い、HandBrakeを使ってみる。
+Linux環境でもQSVが使えるらしく、ffmpegよりエンコード速度が速いかもとのこと。
+[追記: 2014/10/25]まだLinux環境でもサポートされていないようでした。
+インストール時に注意なのが、「ppa:stebbins/handbrake-releases」には「handbrake」はなくて「handbrake-cli」と「handbrake-gtk」があるということ。
+試しに比較してみると、30分のアニメで、HandBrakeだと20分、ffmpegだと60分以上かかった。
+この時の圧縮後の容量はHandBrakeは400MB、ffmpegは600MBという感じだった。
+HandBrakeのほうが画質が落ちているように見えるが、比較しなければ気にならない程度。
+当然、エンコード方式等々で変わってくるだろうからコマンドを貼っておく。
+ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</div></div><div class="f6 text-gray mt-2">Created
+<relative-time datetime=" Mon, 17 Feb 2014 16:43:22 +0000" class=no-wrap title=" Mon, 17 Feb 2014 16:43:22 +0000">Mon, 17 Feb 2014 16:43:22 +0000</relative-time></div></div></li></ul><div class=paginate-container><div class=BtnGroup><button class="btn btn-outline BtnGroup-item" disabled>Previous</button>
 <a rel=nofollow class="btn btn-outline BtnGroup-item" href=/categories/%E3%83%A1%E3%83%A2/page/2/>Next</a></div></div></div></div></div></div></div></div><script>window.onscroll=function(){const t=document.querySelector("#headerImg");t.getBoundingClientRect().bottom<=0?document.querySelector("#headerStuck").classList.add("is-stuck"):document.querySelector("#headerStuck").classList.remove("is-stuck")};var style=localStorage.getItem("data-color-mode");iconElement=document.getElementById("github-icon"),style=="light"?iconElement.setAttribute("fill","#24292e"):(iconElement.removeAttribute("fill"),iconElement.setAttribute("class","octicon"),iconElement.setAttribute("color","#f0f6fc"))</script></div><div class="footer container-xl width-full p-responsive"><div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light"><a aria-label=Homepage title=GitHub class="footer-octicon d-none d-lg-block mr-lg-4" href=https://blog.tyage.net/><svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58.0.0 3.58.0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38.0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95.0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12.0.0.67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15.0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48.0 1.07-.01 1.93-.01 2.2.0.21.15.46.55.38A8.013 8.013.0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0"><li class="mr-3 mr-lg-0">Theme by <a href=https://github.com/MeiK2333/github-style>github-style</a></li></ul></div><div class="d-flex flex-justify-center pb-6"><span class="f6 text-gray-light"></span></div></div></body><script type=application/javascript src=https://blog.tyage.net/js/github-style.js></script></html>

@@ -25,33 +25,6 @@
 それよりも、駿台の模試が全体的にかなり悪かったのはどうにかしないといけない。
 特に英語。こんなに悪いとは思ってもみなかった。
 判定で安心していたら、校内順位は駿台のほうが大きく下であった。
-来週の期末試験はがんばろう・・・</description></item><item><title>最近のこと</title><link>https://blog.tyage.net/archive/p380.html</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.net/archive/p380.html</guid><description>お久しぶりです。
-とりあえず近況報告です。
-ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。
-お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。
-愛を込めて言います。Titanium死ね
-他には、SuperConという大会の予選を通過しました。
-というか、チームリーダに頼ってたら通過していました。
-金魚の糞をしていたらSuperCon一級なるものが頂けました。おいしい。
-去年は自分は参加していなかったのですが、我が高校は全国4位だったようで。
-まあ本選がんばります。
-それと、ごく最近の話ですが、模試がいくつか帰ってきました。
-もう受験期なんだなーと実感しましたね。（※もう残り半年です）
-とりあえずいろいろ考えて、京都大学工学部情報学科を目指すことにしました。
-で、帰ってきた模試の結果はこんな感じでした。
-駿台全国模試 京工情報：A （18 / 326）
-阪大基礎工情報後：A (5 / 235)
-神戸大工情報知能：A (3 / 180)
-以下略
-進研マーク模試 京工情報：C （43 / 235）
-阪大基礎工情報前：A (2 / 148)
-筑波大情報前：A (1 / 475)
-神戸大工前：A (1 / 1678)
-以下略
-マークはこの時期にCを取れたらまあまあと言われたのですが、安心してられないなあと。
-それよりも、駿台の模試が全体的にかなり悪かったのはどうにかしないといけない。
-特に英語。こんなに悪いとは思ってもみなかった。
-判定で安心していたら、校内順位は駿台のほうが大きく下であった。
 来週の期末試験はがんばろう・・・</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/archive/p368.html</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/archive/p368.html</guid><description>思い出せるものから書き上げていく
 tableのheader, footerを使っているwindowは閉じるとエラー
 touchendイベントがちゃんと取得できない
@@ -79,81 +52,7 @@ leftView, rightViewが非対応だった。
 annotationのタイトルだけでイベントが発生する。
 テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
 バグ多い
-APIリファレンスはうそつき</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/archive/p368.html</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/archive/p368.html</guid><description>思い出せるものから書き上げていく
-tableのheader, footerを使っているwindowは閉じるとエラー
-touchendイベントがちゃんと取得できない
-getAllPeopleおかしい
-show, hideおかしい
-CommonJS対応のくせにrequire使えない
-一旦変数に代入せずに一気に、(new Ti.UI.createWindow()).show()　とするとエラー
-選択した写真のデータを送るときに一旦viewに設定しないといけない
-tableのrowはtable.dataから取得できない
-windowに追加後、heightを変更できない
-メアド用にキーボードを切り替えできない
-エミュ重い
-環境構築面倒
-tabがあるときの新規windowの扱いが不明。
-挙動が定まらない
-いろいろ非対応
-スクロールテーブルとか自作しないといけない
-jssのz-indexはzIndexと書かないと動かない。
-jssはセレクタに単一クラスかIDしか指定できない。
-その他のセレクタを指定すると落ちる。
-jssがなぜか更新されない。
-viewをmapの上に表示することができない。
-leftView, rightViewが非対応だった。
-マップのクリックイベントも、annotationのクリックイベントもおかしい。
-annotationのタイトルだけでイベントが発生する。
-テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
-バグ多い
 APIリファレンスはうそつき</description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/archive/p335.html</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p335.html</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
-&lt;p>Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br />
-普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p>
-&lt;h2>初めに&lt;/h2>
-&lt;p>環境はWindows XP SP3です。&lt;br />
-Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p>
-&lt;p>最終的に必要だったことは以下の通りです。&lt;/p>
-&lt;ul>
-&lt;li>
-ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br />
-※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。
-&lt;/li>
-&lt;li>&lt;a href="http://java.sun.com/javase/ja/6/download.html">JDK6&lt;/a>のインストール&lt;/li>
-&lt;li>
-環境変数PATHにJDKを設定する。&lt;br />
-例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br />
-※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください
-&lt;/li>
-&lt;li>&lt;a href="http://developer.android.com/sdk/index.html">Android SDK&lt;/a>のインストール&lt;/li>
-&lt;li>
-環境変数PATHにAndroid SDKを設定する。&lt;br />
-例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加
-&lt;/li>
-&lt;li>&lt;a href="http://www.appcelerator.com/">Titanium Developer1.2.2&lt;/a>をインストール&lt;/li>
-&lt;li>一息ついて再起動する（必要ないかも？）&lt;/li>
-&lt;li>Titanium Developerを実行し、アカウント登録をする&lt;/li>
-&lt;li>Titanium Mobileをダウンロード&lt;/li>
-&lt;li>Android SDK Package ManagerでAPIパッケージをインストール&lt;/l>
-&lt;li>
-android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br />
-例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br />
-※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要
-&lt;/li>
-&lt;li>Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li>
-&lt;li>
-&lt;a href="https://github.com/appcelerator/KitchenSink">KitchenSink1.6.1&lt;/a>をダウンロード&lt;br />
-※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。
-&lt;/li>
-&lt;li>Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li>
-&lt;li>
-KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br />
-※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br />
-※上手くいかない場合も何度かめげずにLaunchするといいらしい。
-&lt;/li>
-&lt;li>長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li>
-&lt;li>お疲れさまでした。&lt;/li>
-&lt;/ul>
-&lt;p></description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/archive/p335.html</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p335.html</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
 &lt;p>Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br />
 普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p>
 &lt;h2>初めに&lt;/h2>

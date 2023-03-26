@@ -8,16 +8,6 @@
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>コンディション：良好
-朝食：寝てた
-昼食：記憶になし
-夕食：記憶になし
-珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。
-主目的はゲーム製作。
-以前に作成したゲームをnode.jsに移植する目的で進める。
-とりあえずOSをubuntu12.04に変えようと努力。
-まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
-途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
 その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/archive/p182.html</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/archive/p182.html</guid><description>できない。
 ぐぐったら下の三つがそれらしいので試してみたがだめだった。
 バージョンは最新の1.7.3.3でやってる。
@@ -28,34 +18,7 @@
 未だにLinuxとかそのコマンドに関しては初心者から脱却できないでいる。
 進展があるとすれば、最近ubuntuを使い始めたくらい。
 ちまちま雑誌とか読んでれば分かるようになるかな。
-さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>さくら鯖にgitを入れたい</title><link>https://blog.tyage.net/archive/p182.html</link><pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate><guid>https://blog.tyage.net/archive/p182.html</guid><description>できない。
-ぐぐったら下の三つがそれらしいので試してみたがだめだった。
-バージョンは最新の1.7.3.3でやってる。
-2010-02-19 &amp;#8211; Dive into the Tech World!
-さくらのレンタルサーバにgitをインストールする方法 | public static void main
-サクラのレンタルサーバーでgitを使う &amp;#8211; Text::Easyhacking
-というかexportコマンドが用意されてないみたいだけどよく分かんない。
-未だにLinuxとかそのコマンドに関しては初心者から脱却できないでいる。
-進展があるとすれば、最近ubuntuを使い始めたくらい。
-ちまちま雑誌とか読んでれば分かるようになるかな。
 さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。</description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/archive/p122.html</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p122.html</guid><description>&lt;h3>経緯&lt;/h3>
-&lt;p>以前に、&lt;a href="http://tsukulog.info/">あらゆる物作りレシピ共有サイト「つくログ」&lt;/a>を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p>
-&lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html">PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a>&lt;/p>
-&lt;p>↑これ。でかい。2002年もの&lt;/p>
-&lt;p>モニターも一緒にいただいたのだが、モニター用のアダプタがなかったため、ディスプレイなしで操作するわけにもいかず、放置すること数ヶ月。&lt;/p>
-&lt;p>誕生日が来て、軍資金も増えたため、思い切って21.5インチのモニターを買って見た。&lt;br />
-amazonで送料無料が完全サービス化されたので、amazonさんで人気の高そうなのを選ぶことにする。&lt;/p>
-&lt;p>&lt;a href="http://www.amazon.co.jp/gp/product/B002MRTR26">Amazon.co.jp： BenQ 21.5型 LCDワイドモニタ E2220HD(グロッシーブラック) E2220HD: パソコン・周辺機器&lt;/a>&lt;/p>
-&lt;p>このモニターはamazonが一番安かったため、手は震えていたものの、思い切ってポチッとしてみた。&lt;/p>
-&lt;p>&lt;a href="http://photozou.jp/photo/show/265673/56906052">&lt;img src="http://art31.photozou.jp/pub/673/265673/photo/56906052.jpg" alt="SH380017" width="450" height="253" style="border:0" />&lt;/a>&lt;/p>
-&lt;p>画面はきれいだし、薄いため置き場所にも困らず、モニターにはほとんど満足している。&lt;/p>
-&lt;p>&lt;del datetime="2010-12-15T01:11:28+00:00">一つ問題点を上げるとすると、やっぱり音が出ないことかな。&lt;br />
-音声機能はついているのだが、どうも音がうまく出てこない。&lt;br />
-もちろん設置方法が間違ってるかもしれないけど・・・。&lt;br />
-&lt;/del>&lt;br />
-後日試したところ、きちんと音がでました。へ(_ _)へ&lt;/p>
-&lt;p>今、我が家にはテレビがないため、モニターから音が出るとテレビ代わりになってとても助かる。&lt;br />
-KeyHoleTVバンザイ！&lt;br /></description></item><item><title>初心者がubuntuを入れるまで</title><link>https://blog.tyage.net/archive/p122.html</link><pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p122.html</guid><description>&lt;h3>経緯&lt;/h3>
 &lt;p>以前に、&lt;a href="http://tsukulog.info/">あらゆる物作りレシピ共有サイト「つくログ」&lt;/a>を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p>
 &lt;p>&lt;a href="http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html">PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a>&lt;/p>
 &lt;p>↑これ。でかい。2002年もの&lt;/p>

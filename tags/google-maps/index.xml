@@ -4,10 +4,4 @@
 実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
 どうしても使いたい。
 代わりになるものがあればそれでいいけど。。
-あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/archive/p243.html</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p243.html</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
-こんな感じに
-この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
-実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
-どうしても使いたい。
-代わりになるものがあればそれでいいけど。。
 あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item></channel></rss>

@@ -23,29 +23,4 @@ Chromeのバージョンは8.0.552.215 beta
 JOIの鯖側で「Content-Typeフィールド」のチェックでもしてるのかしら。
 それにしてもJOIさん、font要素とかまじで使わないでください。
 追伸 どうやらChromeのバグだったようです。
-Issue 6800 &amp;#8211; chromium &amp;#8211; Chrome doesn&amp;apos;t set Content-Type for file upload when the file extension is not recognized. &amp;#8211; Project Hosting on Google Code</description></item><item><title>JOIの解答がGoogle Chromeで提出できないという話</title><link>https://blog.tyage.net/archive/p164.html</link><pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate><guid>https://blog.tyage.net/archive/p164.html</guid><description>情報オリンピック日本委員会
-現象 なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。
-「予選練習」において， Google Chrome (7.0 以降)など一部のブラウザからソースコードのアップロードが正常に行えない場合があることが確認されています．
-競技当日までに競技に使用するPCから予選練習にてソースコードのアップロードが
-正常に行えるか確認してください．less than a minute ago via HootSuiteJOI / IOI-JP 科学委員会
-ioi_jp
-どうやらChromeだけの現象らしい。
-しかも.txtファイルはアップできて、.cファイル等がアップできないという不思議な現象。
-.c等のファイルをアップロードしようとすると以下のようにエラーがでる。
-（JOIからの報告の数日後に、サイトの保守作業があったみたいだけど、まだバグは治っていなかった）
-原因らしきものをぐぐってみたら、さくっと出てきた。
-一般に登録されていない拡張子の場合、Chromeでアップロードできない &amp;#8211; Google Chrome 公式ヘルプフォーラム
-もしかしたらもう解決済みなのかな？とは思ったものの、ちょっと調べてみた。
-Chromeのバージョンは8.0.552.215 beta
-「Content-Typeフィールド」が無い プロキシツールを使って、sample.txtファイルをアップしたときと、sample.cファイルをアップしたときの違いを見てみた。
-どうやらレスポンスヘッダーの「Content-Typeフィールド」の付与の有無が関わってることが分かった。
-一般に登録されてない拡張子だと「Content-Typeフィールド」が付与されないみたい。
-（他のブラウザだと、どのファイルでも「Content-Typeフィールド」が付与されるようだ。）
-（比較）
-「Content-Typeフィールド」を適当に付け加えるとアップロードできるようになった。
-あとがき 今までChromeを使ってても、dropboxも使えたし、なんら問題がなかったので、ちょっと驚き。
-ちなみにdropboxでアップロードするときも、「一般に登録されてない拡張子」だと「Content-Typeフィールド」が付与されなかった。
-JOIの鯖側で「Content-Typeフィールド」のチェックでもしてるのかしら。
-それにしてもJOIさん、font要素とかまじで使わないでください。
-追伸 どうやらChromeのバグだったようです。
 Issue 6800 &amp;#8211; chromium &amp;#8211; Chrome doesn&amp;apos;t set Content-Type for file upload when the file extension is not recognized. &amp;#8211; Project Hosting on Google Code</description></item></channel></rss>

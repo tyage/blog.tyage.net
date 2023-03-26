@@ -66,73 +66,30 @@
 <a class="muted-link mr-3" href=/tags/%e5%8b%89%e5%bc%b7%e4%bc%9a/><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>勉強会</a>
 <a class="muted-link mr-3" href=/tags/%e6%97%85%e8%a1%8c/><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>旅行</a>
 <a class="muted-link mr-3" href=/tags/%e6%98%a0%e7%94%bb/><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>映画</a>
-<a class="muted-link mr-3" href=/tags/%e8%a9%a6%e9%a8%93/><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>試験</a></div><ul><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p445.html>フォト蔵 to Flickr</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。
-flickrの有料アカウントを取得したので、もうフォト蔵を使うこともなさそうです。
-（アルバム別ではなく）写真別に公開/非公開設定ができるflickrさんに惚れちゃいました(ﾟ∀ﾟ)ﾉ
-gistにコードを置いておくのでよければお使いください～
-（※一気に何枚もアップロードするのでパンクするかも）
-流れ：
-Create an Appからアプリを作成して、API KeyとSecret Keyを取得 フォト蔵 to Flickrを設置 コードに自分のフォト蔵ID,Passを書く コードにFlickrのAPI Key,Secret Keyを書く Flickrアプリの管理ページからCallback URLを指定する。 コードを実行（アクセス）してFlickrアプリの認証をし、移行開始 FlickrのAPI扱うのが面倒だった・・・（そのほうがセキュリティ上好ましいが）
-ライブラリはあるので、一から自分で作るのは訓練目的以外では止めたほうがいいですねえ。
-フォト蔵も、非公開アルバムの写真情報の取得ができないため、一旦アルバムを公開設定にした後に、再度非公開にするという作業が必要でした。
-（非公開アルバムは一時的に公開設定となるためご注意ください。）</div></div><div class="f6 text-gray mt-2">Created
-<relative-time datetime=" Wed, 07 Mar 2012 14:15:58 +0000" class=no-wrap title=" Wed, 07 Mar 2012 14:15:58 +0000">Wed, 07 Mar 2012 14:15:58 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p368.html>Titanium * Android = デスマ</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">思い出せるものから書き上げていく
-tableのheader, footerを使っているwindowは閉じるとエラー
-touchendイベントがちゃんと取得できない
-getAllPeopleおかしい
-show, hideおかしい
-CommonJS対応のくせにrequire使えない
-一旦変数に代入せずに一気に、(new Ti.UI.createWindow()).show()　とするとエラー
-選択した写真のデータを送るときに一旦viewに設定しないといけない
-tableのrowはtable.dataから取得できない
-windowに追加後、heightを変更できない
-メアド用にキーボードを切り替えできない
-エミュ重い
-環境構築面倒
-tabがあるときの新規windowの扱いが不明。
-挙動が定まらない
-いろいろ非対応
-スクロールテーブルとか自作しないといけない
-jssのz-indexはzIndexと書かないと動かない。
-jssはセレクタに単一クラスかIDしか指定できない。
-その他のセレクタを指定すると落ちる。
-jssがなぜか更新されない。
-viewをmapの上に表示することができない。
-leftView, rightViewが非対応だった。
-マップのクリックイベントも、annotationのクリックイベントもおかしい。
-annotationのタイトルだけでイベントが発生する。
-テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
-バグ多い
-APIリファレンスはうそつき</div></div><div class="f6 text-gray mt-2"><a class="muted-link mr-3" href=/tags/titanium><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>Titanium</a>
+<a class="muted-link mr-3" href=/tags/%e8%a9%a6%e9%a8%93/><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>試験</a></div><ul><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p140.html>開発中 – boku2D</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">boku2Dを開発中。
+サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。
+box2Dには足元にも及ばない、俺得ライブラリ。
+以前にも同じようなエンジンを作って、スーパー正男っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。
+HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。
+基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。
+一から作り直したので仕様も、前よりはすっきりしたはず。
+ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。
+Thanks to その１　誰もがやりたいパーティクルの衝突
+ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。
+（ここでも確認可能）
+これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。
+傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。
+今後 とりあえず衝突判定をもっと正確にできるようにしようと考え中。
+本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。
+JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。
+もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。
+あくまでこれは俺得ライブラリ。</div></div><div class="f6 text-gray mt-2"><a class="muted-link mr-3" href=/tags/boku2d><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>boku2D</a>
+<a class="muted-link mr-3" href=/tags/javascript><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>JavaScript</a>
 Created
-<relative-time datetime=" Mon, 23 May 2011 18:38:21 +0000" class=no-wrap title=" Mon, 23 May 2011 18:38:21 +0000">Mon, 23 May 2011 18:38:21 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p368.html>Titanium * Android = デスマ</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4">思い出せるものから書き上げていく
-tableのheader, footerを使っているwindowは閉じるとエラー
-touchendイベントがちゃんと取得できない
-getAllPeopleおかしい
-show, hideおかしい
-CommonJS対応のくせにrequire使えない
-一旦変数に代入せずに一気に、(new Ti.UI.createWindow()).show()　とするとエラー
-選択した写真のデータを送るときに一旦viewに設定しないといけない
-tableのrowはtable.dataから取得できない
-windowに追加後、heightを変更できない
-メアド用にキーボードを切り替えできない
-エミュ重い
-環境構築面倒
-tabがあるときの新規windowの扱いが不明。
-挙動が定まらない
-いろいろ非対応
-スクロールテーブルとか自作しないといけない
-jssのz-indexはzIndexと書かないと動かない。
-jssはセレクタに単一クラスかIDしか指定できない。
-その他のセレクタを指定すると落ちる。
-jssがなぜか更新されない。
-viewをmapの上に表示することができない。
-leftView, rightViewが非対応だった。
-マップのクリックイベントも、annotationのクリックイベントもおかしい。
-annotationのタイトルだけでイベントが発生する。
-テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
-バグ多い
-APIリファレンスはうそつき</div></div><div class="f6 text-gray mt-2"><a class="muted-link mr-3" href=/tags/titanium><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>Titanium</a>
+<relative-time datetime=" Wed, 01 Dec 2010 11:34:39 +0000" class=no-wrap title=" Wed, 01 Dec 2010 11:34:39 +0000">Wed, 01 Dec 2010 11:34:39 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p117.html>もっとTwilに力を！！</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4"><p>ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。</p><p><a href=http://tyage.sakura.ne.jp/twil.php>もっとTwilに力を！！ &#8211; ケータイ only</a><br>※auのsh001でのみ確認</p><p>以前に記事を書いていたのだけども、それは消えてしまったので、再postしてみます。<br>（googleのキャッシュも消えてる）<br></div></div><div class="f6 text-gray mt-2"><a class="muted-link mr-3" href=/tags/twil><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>Twil</a>
+<a class="muted-link mr-3" href=/tags/twitter><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>Twitter</a>
 Created
-<relative-time datetime=" Mon, 23 May 2011 18:38:21 +0000" class=no-wrap title=" Mon, 23 May 2011 18:38:21 +0000">Mon, 23 May 2011 18:38:21 +0000</relative-time></div></div></li></ul><div class=paginate-container><div class=BtnGroup><a rel=nofollow class="btn btn-outline BtnGroup-item" href=/categories/%E9%96%8B%E7%99%BA/page/5/>Previous</a>
+<relative-time datetime=" Sat, 13 Nov 2010 09:08:51 +0000" class=no-wrap title=" Sat, 13 Nov 2010 09:08:51 +0000">Sat, 13 Nov 2010 09:08:51 +0000</relative-time></div></div></li><li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source"><div class="col-12 d-inline-block"><div class="d-inline-block mb-1"><h3 class=wb-break-all><a href=https://blog.tyage.net/archive/p110.html>Bottom Coder.next</a></h3></div><div><div class="col-12 d-inline-block text-gray mb-2 pr-4"><p><a href=http://tyage.sakura.ne.jp/bottom/>Bottom Coder Home</a></p><p>MA6に応募したよ！いえーい！</p><p><a href=http://ma6works.mashupaward.jp/bottomcoder/>#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE</a></p><p>小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。</p><p>しくぁーし！<br>こんなことでへこたれる俺ではぬぁーい！</p><p>とりあえずBottom Coderをまともに使えるものにしようとしました。<br>自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！</p><p>まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。</p><p></div></div><div class="f6 text-gray mt-2"><a class="muted-link mr-3" href=/tags/ma6><svg class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25.0 01.25-.25h5.025a.25.25.0 01.177.073l6.25 6.25a.25.25.0 010 .354l-5.025 5.025a.25.25.0 01-.354.0l-6.25-6.25A.25.25.0 012.5 7.775zm-1.5.0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464.0.91.184 1.238.513l6.25 6.25a1.75 1.75.0 010 2.474l-5.026 5.026a1.75 1.75.0 01-2.474.0l-6.25-6.25A1.75 1.75.0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/></svg>MA6</a>
+Created
+<relative-time datetime=" Tue, 09 Nov 2010 14:44:16 +0000" class=no-wrap title=" Tue, 09 Nov 2010 14:44:16 +0000">Tue, 09 Nov 2010 14:44:16 +0000</relative-time></div></div></li></ul><div class=paginate-container><div class=BtnGroup><a rel=nofollow class="btn btn-outline BtnGroup-item" href=/categories/%E9%96%8B%E7%99%BA/page/5/>Previous</a>
 <a rel=nofollow class="btn btn-outline BtnGroup-item" href=/categories/%E9%96%8B%E7%99%BA/page/7/>Next</a></div></div></div></div></div></div></div></div><script>window.onscroll=function(){const t=document.querySelector("#headerImg");t.getBoundingClientRect().bottom<=0?document.querySelector("#headerStuck").classList.add("is-stuck"):document.querySelector("#headerStuck").classList.remove("is-stuck")};var style=localStorage.getItem("data-color-mode");iconElement=document.getElementById("github-icon"),style=="light"?iconElement.setAttribute("fill","#24292e"):(iconElement.removeAttribute("fill"),iconElement.setAttribute("class","octicon"),iconElement.setAttribute("color","#f0f6fc"))</script></div><div class="footer container-xl width-full p-responsive"><div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light"><a aria-label=Homepage title=GitHub class="footer-octicon d-none d-lg-block mr-lg-4" href=https://blog.tyage.net/><svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58.0.0 3.58.0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38.0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95.0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12.0.0.67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15.0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48.0 1.07-.01 1.93-.01 2.2.0.21.15.46.55.38A8.013 8.013.0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a><ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0"><li class="mr-3 mr-lg-0">Theme by <a href=https://github.com/MeiK2333/github-style>github-style</a></li></ul></div><div class="d-flex flex-justify-center pb-6"><span class="f6 text-gray-light"></span></div></div></body><script type=application/javascript src=https://blog.tyage.net/js/github-style.js></script></html>

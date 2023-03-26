@@ -8,16 +8,6 @@
 とりあえずOSをubuntu12.04に変えようと努力。
 まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
 途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>コンディション：良好
-朝食：寝てた
-昼食：記憶になし
-夕食：記憶になし
-珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。
-主目的はゲーム製作。
-以前に作成したゲームをnode.jsに移植する目的で進める。
-とりあえずOSをubuntu12.04に変えようと努力。
-まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
-途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
 その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
 まず事前に必要なものをインストールする。
 sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
@@ -28,27 +18,7 @@ gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろ
 extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
 [雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
 この二つを参考に、
-sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
-まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
-しようとするが、herokuコマンドが見つからない状態にあったので、
-ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow
-の通りにしてみたところうまくいった。
-gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。
-extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
-[雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
-この二つを参考に、
 sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/archive/p290.html</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p290.html</guid><description>HerokuいいですよねHeroku！
-今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
-（結局失敗したため、おとなしくUbuntuから使うことにしました。）
-普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。
-とりあえず一連の流れを
-rubyをRubyInstaller for Windowsを使ってインストール。
-ついでにgemとかもついてくるので、すぐにrailsをインストールすることから始められる。
-gem update gem install rails gem install heroku keys:add が、ここでメールアドレスとパスワードを入れたところでエラー
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17 2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he roku/credentials (Errno::ENOENT) Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに
-41 home_directory = home_directory.split&amp;#40;&amp;quot;&amp;quot;).join(&amp;quot;/&amp;quot;) if !home_directory.nil? と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。
-うぬー。。</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/archive/p290.html</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p290.html</guid><description>HerokuいいですよねHeroku！
 今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
 （結局失敗したため、おとなしくUbuntuから使うことにしました。）
 普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。
