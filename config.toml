@@ -35,7 +35,7 @@ googleAnalytics = "UA-3879973-3"
   ]
   togglePreviousAndNextButtons = "true"
   customHeadHTML = """
-<script src="redirect.js"></script>
+<script src="/redirect.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
   """
 
