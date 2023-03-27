@@ -1,8 +1,8 @@
+baseURL = "https://blog.tyage.net"
 languageCode = "en-us"
 title = "blog.tyage.net"
 theme = "gokarna"
 googleAnalytics = "UA-3879973-3"
-paginate = 3
 
 [markup]
   [markup.tableOfContents]
@@ -12,35 +12,28 @@ paginate = 3
 
 [menu]
   [[menu.main]]
-    # Unique identifier for a menu item
-    identifier = "posts"
-
-    url = "/post/"
-    
-    # You can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-
-    # You can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-
-    # Display name
+    identifier = "Posts"
+    pre = "<span data-feather='book'></span>"
+    url = "/post"
     name = "Posts"
-
-    # Weights are used to determine the ordering
     weight = 1
 
+  [[menu.main]]
+    identifier = "rss"
+    pre = "<span data-feather='rss'></span>"
+    url = "/index.xml"
+    weight = 7
 
 [params]
-  author = "tyage"
-  description = "blog.tyage.net"
-  github = "tyage"
-  twitter = "tyage"
-  email = "namatyage@gmail.com"
-  avatar = "/icon/icon.jpg"
-  url = "https://blog.tyage.net"
-  disableDarkMode = true
-  rss = true
-  location = "Japan"
+  description = "memo and history"
+  avatarURL = "/icon/icon.jpg"
+  showPostsOnHomePage = "recent"
+  socialIcons = [
+    {name = "twitter", url = "https://twitter.com/tyage"},
+    {name = "github", url = "https://github.com/tyage"},
+    {name = "email", url = "mailto:namatyage@gmail.com"},
+  ]
+  togglePreviousAndNextButtons = "true"
 
 [markup.goldmark.renderer]
   unsafe = true
