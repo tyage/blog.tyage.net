@@ -25,7 +25,7 @@ googleAnalytics = "UA-3879973-3"
     weight = 7
 
 [params]
-  description = "memo and history"
+  description = "talk about daily things"
   avatarURL = "/icon/icon.jpg"
   showPostsOnHomePage = "recent"
   socialIcons = [
