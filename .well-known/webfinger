@@ -1,0 +1,37 @@
+{
+  "aliases": [
+    "https://blog.tyage.net/"
+  ],
+  "links": [
+    {
+      "href": "https://blog.tyage.net/",
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html"
+    },
+    {
+      "href": "https://blog.tyage.net/",
+      "rel": "canonical_uri",
+      "type": "text/html"
+    },
+    {
+      "href": "https://fed.brid.gy/blog.tyage.net",
+      "rel": "self",
+      "type": "application/activity+json"
+    },
+    {
+      "href": "https://fed.brid.gy/blog.tyage.net/inbox",
+      "rel": "inbox",
+      "type": "application/activity+json"
+    },
+    {
+      "href": "https://fed.brid.gy/ap/sharedInbox",
+      "rel": "sharedInbox",
+      "type": "application/activity+json"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://fed.brid.gy/web/blog.tyage.net?url={uri}"
+    }
+  ],
+  "subject": "acct:blog.tyage.net@blog.tyage.net"
+}
