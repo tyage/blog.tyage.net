@@ -21,10 +21,18 @@ theme = "gokarna"
     identifier = "rss"
     pre = "<span data-feather='rss'></span>"
     url = "/index.xml"
+    name = "RSS"
     weight = 7
 
+  [[menu.main]]
+    identifier = "About me"
+    pre = "<span data-feather='home'></span>"
+    url = "https://tyage.net"
+    name = "About me"
+    weight = 10
+
 [params]
-  description = "talk about daily things"
+  description = "Talk daily things"
   avatarURL = "/icon/icon.jpg"
   showPostsOnHomePage = "recent"
   socialIcons = [
@@ -44,6 +52,11 @@ theme = "gokarna"
   gtag('config', 'G-C64TPJYY96');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
+  """
+  customFooterHTML = """
+  <span>
+    &copy; <a href="https://tyage.net/" class="h-card" rel="me">tyage</a>
+  </span>
   """
 
 [markup.goldmark.renderer]
