@@ -4,7 +4,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-C64TPJYY96")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin=anonymous></script></head><body><script type=text/javascript>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://blog.tyage.net><img src=https://blog.tyage.net/icon/icon.jpg alt=avatar></a></div><div class=nav-title><a class=nav-brand href=https://blog.tyage.net>blog.tyage.net</a></div><div class=nav-links><div class=nav-link><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></div><div class=nav-link><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></div><div class=nav-link><a href=https://tyage.net><span data-feather=home></span> About me</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
 <a><span id=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
 <a><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></li><li class=nav-item><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></li><li class=nav-item><a href=https://tyage.net><span data-feather=home></span> About me</a></li><li class="nav-item dark-theme-toggle"><span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
-<a><span id=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="container list-posts"><h1 class=list-title>メモ</h1><h2 class=posts-year>2016</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p944.html class="post-link u-bridgy-fed p-name">嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</a><div class=flex-break></div><span class=post-date>December 5, 2016</span><div class=e-content style=display:none>こんにちは.
+<a><span id=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="container list-posts"><h1 class=list-title>メモ</h1><h2 class=posts-year>2016</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p944.html class="post-link u-bridgy-fed p-name">嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</a><div class=flex-break></div><span class="post-date dt-published">2016-12-05</span><div class=e-content style=display:none>こんにちは.
 KMC5回生のtyageです.
 この記事は, KMCアドベントカレンダー 5日目の記事です.
 昨日はnonyleneさんの Android Studio をビルドする でした.
@@ -16,7 +16,7 @@ TL;DR PHPのZipArchiveライブラリには, globパターンでファイルを�
 ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイルを作りたい瞬間があるのではないかと思います.
 私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
 また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
-$dir = '/tmp/workdir/'; &nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir($jsonDir); file_put_contents($jsonDir. 'api.json', json_encode($request)); &nbsp; // create archive.zip $zip = new ZipArchive(); $zip->open($dir . 'archive.zip', ZipArchive::CREATE); $zip->addGlob($dir . '**/**', 0, ['remove_path' => $dir]); $zip->close(); ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</div></article><h2 class=posts-year>2015</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p848.html class="post-link u-bridgy-fed p-name">:visitedセレクタのプライバシー問題とSNSでの利用</a><div class=flex-break></div><span class=post-date>January 4, 2015</span><div class=e-content style=display:none>追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
+$dir = '/tmp/workdir/'; &nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir($jsonDir); file_put_contents($jsonDir. 'api.json', json_encode($request)); &nbsp; // create archive.zip $zip = new ZipArchive(); $zip->open($dir . 'archive.zip', ZipArchive::CREATE); $zip->addGlob($dir . '**/**', 0, ['remove_path' => $dir]); $zip->close(); ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</div></article><h2 class=posts-year>2015</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p848.html class="post-link u-bridgy-fed p-name">:visitedセレクタのプライバシー問題とSNSでの利用</a><div class=flex-break></div><span class="post-date dt-published">2015-01-04</span><div class=e-content style=display:none>追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
 2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。
 参考: CVE-2015-1765, Internet Explorer 用の累積的なセキュリティ更新プログラム (3058515)
 :visitedセレクタについて 半年以上前に少し調べたことについてまとめてみたいと思います。
@@ -29,7 +29,7 @@ You will still be able to visually style visited links, but there are now limits
 &#8211; background-color
 &#8211; border-color (and its sub-properties)
 &#8211; outline-color
-&#8211; The color parts of the fill and stroke properties</div></article><h2 class=posts-year>2014</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p762.html class="post-link u-bridgy-fed p-name">録画環境を構築した</a><div class=flex-break></div><span class=post-date>February 17, 2014</span><div class=e-content style=display:none>環境 ハードはこれ
+&#8211; The color parts of the fill and stroke properties</div></article><h2 class=posts-year>2014</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p762.html class="post-link u-bridgy-fed p-name">録画環境を構築した</a><div class=flex-break></div><span class="post-date dt-published">2014-02-17</span><div class=e-content style=display:none>環境 ハードはこれ
 OSは未だにUbuntu 12.04
 録画するまで ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。
 深夜アニメを見る生活も捨てがたいし録画することにした。
@@ -57,7 +57,7 @@ Linux環境でもQSVが使えるらしく、ffmpegよりエンコード速度が
 この時の圧縮後の容量はHandBrakeは400MB、ffmpegは600MBという感じだった。
 HandBrakeのほうが画質が落ちているように見えるが、比較しなければ気にならない程度。
 当然、エンコード方式等々で変わってくるだろうからコマンドを貼っておく。
-ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</div></article><h2 class=posts-year>2013</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p739.html class="post-link u-bridgy-fed p-name">スペインでFirefox OS端末は買えるのか？</a><div class=flex-break></div><span class=post-date>December 4, 2013</span><div class=e-content style=display:none>この記事はKMCアドベントカレンダーの4日目の記事です。
+ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</div></article><h2 class=posts-year>2013</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p739.html class="post-link u-bridgy-fed p-name">スペインでFirefox OS端末は買えるのか？</a><div class=flex-break></div><span class="post-date dt-published">2013-12-04</span><div class=e-content style=display:none>この記事はKMCアドベントカレンダーの4日目の記事です。
 1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。
 僕は10月末〜11月初めまで、Facebook CTF決勝のためにチームEpsilonDeltaの4人でスペインにいました。
 その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。
@@ -91,7 +91,7 @@ http://www.movistar.es/firefoxos
 スペイン語がわからない人間のために英語で書かれたZTE Open購入マニュアルも見つけました。
 How to Buy ZTE Open – Step by Step Guide
 これで準備も万全だ！と満を持してmovistarに入ると、スペイン人のお姉ちゃんが1人で店番をしているだけでした。
-僕「Hola!」</div></article><h2 class=posts-year>2012</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p605.html class="post-link u-bridgy-fed p-name">何か吐き出さないとなあ</a><div class=flex-break></div><span class=post-date>November 18, 2012</span><div class=e-content style=display:none>ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。
+僕「Hola!」</div></article><h2 class=posts-year>2012</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p605.html class="post-link u-bridgy-fed p-name">何か吐き出さないとなあ</a><div class=flex-break></div><span class="post-date dt-published">2012-11-18</span><div class=e-content style=display:none>ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。
 いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。
 とりあえず、以下のことについて書くつもりでいる。
 ・ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）
@@ -104,7 +104,7 @@ How to Buy ZTE Open – Step by Step Guide
 ・今まで一人でやっていたプロジェクトやプログラミングについて
 こぼしたいことはあるはずなのに、なぜか手が進まないのでこうやって自分にプレッシャーをかけてみる。
 自然とインプットもアウトプットもしなくなってから、自分が何をしているのかわからなくなったので振り返ればと思う。
-ただ、NF（京大11月祭）も近いので、またどうなることやら・・・</div></article><h2 class=posts-year>2011</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p243.html class="post-link u-bridgy-fed p-name">google mapsでマーカーに文字を表示させたい</a><div class=flex-break></div><span class=post-date>January 19, 2011</span><div class=e-content style=display:none>たとえばマーカーのアイコン画像の下に文字を表示したい。
+ただ、NF（京大11月祭）も近いので、またどうなることやら・・・</div></article><h2 class=posts-year>2011</h2><article class="post-title h-entry"><a href=https://blog.tyage.net/archive/p243.html class="post-link u-bridgy-fed p-name">google mapsでマーカーに文字を表示させたい</a><div class=flex-break></div><span class="post-date dt-published">2011-01-19</span><div class=e-content style=display:none>たとえばマーカーのアイコン画像の下に文字を表示したい。
 こんな感じに
 この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
 実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
