@@ -32,7 +32,7 @@ theme = "gokarna"
     weight = 10
 
 [params]
-  description = "Talk daily things"
+  description = "Talk about daily things"
   avatarURL = "/icon/icon.jpg"
   showPostsOnHomePage = "recent"
   socialIcons = [

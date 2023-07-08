@@ -1,1 +1,1 @@
-## [Posts](/post/)
+## [-> All Posts](/post/)

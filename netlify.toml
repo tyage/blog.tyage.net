@@ -4,3 +4,14 @@
 
 [build.environment]
   HUGO_VERSION = "0.115.1"
+
+# https://fed.brid.gy/docs#redirect+these+URL+paths
+[[redirects]]
+  from = "/.well-known/host-meta*"
+  to = "https://fed.brid.gy/.well-known/host-meta:splat"
+  status = 302
+
+[[redirects]]
+  from = "/.well-known/webfinger*"
+  to = "https://fed.brid.gy/.well-known/webfinger"
+  status = 302
