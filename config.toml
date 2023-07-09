@@ -35,10 +35,10 @@ theme = "gokarna"
   avatarURL = "/icon/icon.jpg"
   showPostsOnHomePage = "recent"
   socialIcons = [
-    {name = "twitter", url = "https://twitter.com/tyage"},
-    {name = "github", url = "https://github.com/tyage"},
-    {name = "email", url = "mailto:namatyage@gmail.com"},
-    {name = "mastodon", url = "https://fed.brid.gy/web/blog.tyage.net"},
+    {name = "twitter", rel = "me", url = "https://twitter.com/tyage"},
+    {name = "github", rel = "me", url = "https://github.com/tyage"},
+    {name = "email", rel = "me", url = "mailto:namatyage@gmail.com"},
+    {name = "mastodon", rel = "me", url = "https://fed.brid.gy/web/blog.tyage.net"},
   ]
   togglePreviousAndNextButtons = "true"
   customHeadHTML = """
