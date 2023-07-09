@@ -1,5 +1,8 @@
 <article class="post-title">
-    <a href="{{ .Permalink }}" class="post-link">{{ .Title }}</a>
+    <a href="{{ .Permalink }}" class="post-link">
+      {{ .Title }}
+      {{ if eq .Title "" }}{{ .Summary }}{{end}}
+    </a>
     <div class="flex-break"></div>
     <span class="post-date">{{ dateFormat "2006/01/02" .Date }}</span>
 </article>
