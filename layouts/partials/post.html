@@ -1,9 +1,9 @@
 <div class="post container h-entry">
     <div class="post-header-section">
-        <h1>{{ .Title }}</h1>
+        <h1 class="p-name">{{ .Title }}</h1>
         <small role="doc-subtitle">{{ .Description }}</small>
-        <p class="post-date">
-            {{ dateFormat "January 2, 2006" .Date }}{{ if lt .Date .Lastmod }} | Updated {{ dateFormat "January 2, 2006" .Lastmod }}{{ end }}
+        <p class="post-date dt-published">
+            {{ dateFormat "2006/01/02" .Date }}{{ if lt .Date .Lastmod }} | Updated {{ dateFormat "2006/01/02" .Lastmod }}{{ end }}
         </p>
 
         <ul class="post-tags">
