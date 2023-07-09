@@ -1,0 +1,36 @@
+<div class="post container h-entry">
+    <div class="post-header-section">
+        <h1>{{ .Title }}</h1>
+        <small role="doc-subtitle">{{ .Description }}</small>
+        <p class="post-date">
+            {{ dateFormat "January 2, 2006" .Date }}{{ if lt .Date .Lastmod }} | Updated {{ dateFormat "January 2, 2006" .Lastmod }}{{ end }}
+        </p>
+
+        <ul class="post-tags">
+        {{ range .Params.tags }}
+            <li class="post-tag"><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+        </ul>
+    </div>
+
+    <div class="post-content e-content">
+        <p>
+            {{ .Content }}
+        </p>
+        {{ if .Site.DisqusShortname }}
+        <div class="post-comments">
+            {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="prev-next">
+        {{ if eq .Site.Params.TogglePreviousAndNextButtons "true" }}
+            {{ if or .PrevInSection .NextInSection }}
+                {{ partial "prev-next.html" . }}
+            {{ end }}
+        {{ end }}
+    </div>
+
+    <a class="u-bridgy-fed" href="https://fed.brid.gy/"></a>
+</div>
