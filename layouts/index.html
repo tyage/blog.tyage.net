@@ -1,17 +1,19 @@
 {{ define "main" }}
-<div class="h-feed">
-<section class="home-about">
+<section class="home-about h-card">
 	<div class="avatar">
         {{ if isset .Site.Params "avatarurl" }}
-        <img class={{ .Site.Params.AvatarSize | default "size-m" }} src='{{ .Site.BaseURL }}{{ .Site.Params.AvatarURL }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}" />
+        <img class='{{ .Site.Params.AvatarSize | default "size-m" }} u-photo'
+            src='{{ .Site.BaseURL }}{{ .Site.Params.AvatarURL }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}" />
         {{ end }}
 	</div>
 
-    <h1 class="p-name">{{ .Site.Title }}</h1>
+    <h1>{{ .Site.Title }}</h1>
     {{ if isset .Site.Params "description" }}
         <h3>{{ .Site.Params.Description }}</h3>
     {{ end }}
 
+    <a href="/" rel="me" class="p-name" style="display: none;">tyage</p>
+    <a href="https://tyage.net" class="u-url" style="display: none;">Home</p>
 </section>
 
 <div class="flex-break"></div>
@@ -57,5 +59,4 @@
 
 
 {{ end }}
-</div>
 {{ end }}
