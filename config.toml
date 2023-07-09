@@ -54,9 +54,9 @@ theme = "gokarna"
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
   """
   customFooterHTML = """
+  &copy; 
   <span class="h-card">
-    &copy; 
-    <img class="u-photo" style="width: 20px" src="/icon/icon.jpg" alt="icon" />
+    <img class="u-photo" style="width: 20px" src="/icon/icon.jpg" />
     <a href="https://tyage.net/" class="u-url" rel="me">tyage</a>
   </span>
   """
