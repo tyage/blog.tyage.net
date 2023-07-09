@@ -3,7 +3,7 @@
         <h1 class="p-name">{{ .Title }}</h1>
         <small role="doc-subtitle">{{ .Description }}</small>
         <p class="post-date">
-            {{ dateFormat "2006/01/02 03:04:05" .Date }}{{ if lt .Date .Lastmod }} | Updated {{ dateFormat "2006/01/02 03:04:05" .Lastmod }}{{ end }}
+            {{ dateFormat "2006/01/02 15:04:05" .Date }}{{ if lt .Date .Lastmod }} | Updated {{ dateFormat "2006/01/02 15:04:05" .Lastmod }}{{ end }}
         </p>
 
         <ul class="post-tags">
@@ -34,6 +34,6 @@
 
     <div style="display: none;">
         <a class="u-bridgy-fed" href="https://fed.brid.gy/"></a>
-        <p class="dt-published">{{ dateFormat "2006-01-02T03:04:05-07:00" .Date }}</p>
+        <p class="dt-published">{{ dateFormat "2006-01-02T15:04:05-07:00" .Date }}</p>
     </div>
 </div>
