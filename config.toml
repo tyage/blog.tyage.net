@@ -57,7 +57,7 @@ theme = "gokarna"
   <span class="h-card">
     &copy; 
     <img class="u-photo" style="width: 20px" src="/icon/icon.jpg" alt="icon" />
-    <a href="https://tyage.net/" rel="me">tyage</a>
+    <a href="https://tyage.net/" class="u-url" rel="me">tyage</a>
   </span>
   """
 
