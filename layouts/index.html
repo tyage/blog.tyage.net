@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="h-feed">
 <section class="home-about">
 	<div class="avatar">
         {{ if isset .Site.Params "avatarurl" }}
@@ -6,7 +7,7 @@
         {{ end }}
 	</div>
 
-    <h1>{{ .Site.Title }}</h1>
+    <h1 class="p-name">{{ .Site.Title }}</h1>
     {{ if isset .Site.Params "description" }}
         <h3>{{ .Site.Params.Description }}</h3>
     {{ end }}
@@ -37,7 +38,7 @@
 
 {{ if isset .Site.Params "showpostsonhomepage" }}
 
-    <div class="home-posts list-posts h-feed">
+    <div class="home-posts list-posts">
         <h2>{{ i18n (.Site.Params.ShowPostsOnHomePage | humanize) }} Posts</h2>
 
     {{ $posts := where .Site.Pages "Params.type" "post" }}
@@ -51,9 +52,10 @@
             {{- partial "list-posts.html" . -}}
         {{ end }}
     {{ end }}
-        <h3><a href="/post/">... Next</a></h2>
+        <h3><a href="/post/" rel="next">... Next</a></h2>
     </div>
 
 
 {{ end }}
+</div>
 {{ end }}
