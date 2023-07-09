@@ -1,5 +1,5 @@
-<article class="post-title">
-    <a href="{{ .Permalink }}" class="post-link">{{ .Title }}</a>
+<article class="post-title h-entry">
+    <a href="{{ .Permalink }}" class="post-link p-name u-url">{{ .Title }}</a>
     <div class="flex-break"></div>
-    <span class="post-date">{{ dateFormat "2006/01/02" .Date }}</span>
+    <span class="post-date dt-published">{{ dateFormat "2006/01/02" .Date }}</span>
 </article>
