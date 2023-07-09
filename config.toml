@@ -38,7 +38,7 @@ theme = "gokarna"
     {name = "twitter", url = "https://twitter.com/tyage"},
     {name = "github", url = "https://github.com/tyage"},
     {name = "email", url = "mailto:namatyage@gmail.com"},
-    {name = "mastodon", rel = "me", url = "https://fed.brid.gy/r/https://blog.tyage.net/"},
+    {name = "mastodon", url = "https://fed.brid.gy/web/blog.tyage.net"},
   ]
   togglePreviousAndNextButtons = "true"
   customHeadHTML = """
