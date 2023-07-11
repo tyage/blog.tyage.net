@@ -13,8 +13,8 @@
         </ul>
     </div>
 
-    <div class="post-content e-content">
-        <p>
+    <div class="post-content">
+        <p class="e-content">
             {{ .Content }}
         </p>
         {{ if .Site.DisqusShortname }}
@@ -22,6 +22,8 @@
             {{ template "_internal/disqus.html" . }}
         </div>
         {{ end }}
+        <script src="/js/webmention.min.js" async></script>
+        <div id="webmentions"></div>
     </div>
 
     <div class="prev-next">

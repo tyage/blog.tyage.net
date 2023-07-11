@@ -42,7 +42,7 @@ theme = "gokarna"
   ]
   togglePreviousAndNextButtons = "true"
   customHeadHTML = """
-<script src="/redirect.js"></script>
+<script src="/js/redirect.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
