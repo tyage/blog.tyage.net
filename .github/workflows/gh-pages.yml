@@ -11,13 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true # Fetch Hugo themes
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.115.1'
+          hugo-version: "0.115.1"
           # extended: true
 
       - name: Build
@@ -29,3 +29,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: blog.tyage.net
+
+      - name: Send webmention
+        uses: actions/setup-node@v3
+      - run: wget https://raw.githubusercontent.com/tyage/blog.tyage.net/master/.github/workflows/notify-fed-bridgy.js
+      - run: node ./notify-fed-bridgy.js
