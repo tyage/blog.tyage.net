@@ -32,6 +32,7 @@ jobs:
 
       - name: Send webmention
         uses: actions/setup-node@v3
-      - run: wget https://raw.githubusercontent.com/tyage/blog.tyage.net/master/.github/workflows/notify-fed-bridgy.js
+      - run: git clone https://github.com/${GITHUB_REPOSITORY} --depth=2 --branch=gh-pages gh-pages
+      - run: cd gh-pages
       - run: sleep 60 # Wait until Netlify will update content
-      - run: node ./notify-fed-bridgy.js
+      - run: node ../.github/workflows/notify-fed-bridgy.js
