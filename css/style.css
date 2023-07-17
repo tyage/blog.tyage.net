@@ -1,0 +1,7 @@
+#webmentions .reacts {
+  padding: 0;
+}
+#webmentions .reaction img {
+  max-width: 50px;
+  max-height: 50px;
+}
