@@ -16,7 +16,7 @@ Twitter が日々壊れゆくなか、周りの人が Misskey や Mastodon や T
 ![mstdn上での様子](./mstdn.png)
 
 このブログは hugo で生成しており、静的ファイルのみ配信しています。
-それは変えたくなかったため、ActivityPub を喋るサーバとしては[Bridgy Fed](fed.brid.gy)という外部サービスを利用することにしました。
+それは変えたくなかったため、ActivityPub を喋るサーバとしては[Bridgy Fed](https://fed.brid.gy)という外部サービスを利用することにしました。
 また、ブログの投稿に対するリプライやお気に入りは Webmention という仕組みを通じて表示できるようにしました。
 
 静的ブログをこうやって Fediverse の世界に参加させるのは少し大変だったので、手順を残しておきます。
