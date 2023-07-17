@@ -14,9 +14,9 @@
     </div>
 
     <div class="post-content">
-        <p class="e-content">
+        <div class="e-content">
             {{ .Content }}
-        </p>
+        </div>
         {{ if .Site.DisqusShortname }}
         <div class="post-comments">
             {{ template "_internal/disqus.html" . }}
