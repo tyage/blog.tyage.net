@@ -1,0 +1,14 @@
+{
+  "name": "blog.tyage.net-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@remy/webmention": "^1.4.5"
+  }
+}

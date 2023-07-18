@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -34,5 +34,5 @@ jobs:
         uses: actions/setup-node@v3
       - run: git clone https://github.com/${GITHUB_REPOSITORY} --depth=2 --branch=gh-pages gh-pages
       - run: sleep 60 # Wait until Netlify will update content
-      - run: node ../.github/workflows/notify-fed-bridgy.js
+      - run: node ../scripts/notify-fed-bridgy.js
         working-directory: ./gh-pages
