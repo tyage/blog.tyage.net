@@ -7,12 +7,12 @@ const MY_URL = 'https://blog.tyage.net/'
 const wm = new Webmention({ limit: 10, send: true })
 wm.on('error', e => console.log(e))
 wm.on('sent', res => {
-    console.log('source   = ' + res.source);
-    console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`);
-    console.log('target   = ' + res.target);
-    console.log(`status   = ${res.status} ${res.status < 400 ? '✓' : '✗'}`); // ✖︎✓✔︎✗
-    if (res.error) console.log('error    = ' + res.error);
-    console.log('');
+    console.log('source   = ' + res.source)
+    console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`)
+    console.log('target   = ' + res.target)
+    console.log(`status   = ${res.status} ${res.status < 400 ? '✓' : '✗'}`) // ✖︎✓✔︎✗
+    if (res.error) console.log('error    = ' + res.error)
+    console.log('')
 });
   
 const main = async () => {
