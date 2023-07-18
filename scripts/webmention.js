@@ -13,7 +13,7 @@ wm.on('sent', res => {
     console.log(`status   = ${res.status} ${res.status < 400 ? '✓' : '✗'}`) // ✖︎✓✔︎✗
     if (res.error) console.log('error    = ' + res.error)
     console.log('')
-});
+})
   
 const main = async () => {
     const html = await (await fetch(BRIDGY_FED_URL)).text()
