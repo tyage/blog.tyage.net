@@ -42,7 +42,11 @@ theme = "gokarna"
   ]
   togglePreviousAndNextButtons = "true"
   customHeadHTML = """
+<link rel="webmention" href="https://webmention.io/blog.tyage.net/webmention" />
+<link rel="pingback" href="https://webmention.io/blog.tyage.net/xmlrpc" />
+
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+
 <script src="/js/redirect.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
 <script>
@@ -53,8 +57,6 @@ theme = "gokarna"
   gtag('config', 'G-C64TPJYY96');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
-<link rel="webmention" href="https://webmention.io/blog.tyage.net/webmention" />
-<link rel="pingback" href="https://webmention.io/blog.tyage.net/xmlrpc" />
   """
 
 [markup.goldmark.renderer]
