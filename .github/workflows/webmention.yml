@@ -8,10 +8,12 @@ jobs:
   send:
 
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./scripts
 
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
-      working-directory: ./scripts
     - run: node webmention.js
-      working-directory: ./scripts
