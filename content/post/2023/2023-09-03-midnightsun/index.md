@@ -16,7 +16,8 @@ Midnight Sun CTF 2023 の Finals に参加してきました。
 
 ファイルからは DynamoDB のテーブル定義の他、DynamoDB にクエリを投げることのできる API Gateway が確認できます。
 
-外部からアクセスできる API としては `/prod/movies/:moviename` でアクセスできる `MovieNameMethodGet` がありますが、DynamoDB に送信するクエリを定義した RequestTemplates には FLAG の一部である「midnight」を含むデータが出力されないようなフィルターが設定されています。
+外部からアクセスできる API としては `/prod/movies/:moviename` からアクセスできる `MovieNameMethodGet` があり、これを通じてDynamoDBないのデータを検索することができます。
+DynamoDB に送信するクエリを定義した RequestTemplates には FLAG の一部である「midnight」を含むデータが出力されないようなフィルターが設定されています。
 
 ```yaml
 MovieNameMethodGet:
@@ -68,7 +69,7 @@ API Gateway の `MovieNameMethodGet` リソースの Integration Request セク�
 
 [Integration passthrough behaviors - Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/integration-passthrough-behaviors.html)
 
-今回は `application/json` 以外の Content-Type が利用できるので、`Content-Type: text/json` を設定することで任意のクエリを DynamoDB 送りつけることが可能です。
+今回は `application/json` 以外の Content-Type が利用できるので、`Content-Type: text/json` を設定することでフィルターを無視して任意のクエリを DynamoDB へ送りつけることが可能です。
 
 ここまでくればほぼ解けたようなものなのですがもう少しだけやることがあります。
 `MovieNameMethodGet` は GET メソッドしか受け付けていないため、GET のままリクエストボディを設定する必要があるのですが、素直にそれをやると怒られてしまいます。
