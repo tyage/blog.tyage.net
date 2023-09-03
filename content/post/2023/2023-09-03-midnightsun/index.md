@@ -1,5 +1,5 @@
 ---
-title: "Midnight Sun CTF 2023 Finals"
+title: "Midnight Sun CTF 2023 Finals - Obelix"
 date: 2023-09-03T00:00:00Z
 type: post
 ---
