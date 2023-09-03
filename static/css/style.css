@@ -1,3 +1,7 @@
+.hightlight code {
+  text-wrap: wrap;
+}
+
 #webmentions .reacts {
   padding: 0;
 }
