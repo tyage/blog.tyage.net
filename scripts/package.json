@@ -9,6 +9,5 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@remy/webmention": "^1.4.5"
   }
 }
