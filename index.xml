@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog.tyage.net</title><link>https://blog.tyage.net/</link><description>Recent content on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Nov 2023 21:00:00 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml"/><item><title>TSG CTF 2023 Writeup</title><link>https://blog.tyage.net/post/2023/2023-11-09/</link><pubDate>Thu, 09 Nov 2023 21:00:00 +0900</pubDate><guid>https://blog.tyage.net/post/2023/2023-11-09/</guid><description>TokyoWesternsで参加していて2位でした。 コンテスト終了3分後にabsurdresのフラグが降ってきたので悔しい〜
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog.tyage.net</title><link>https://blog.tyage.net/</link><description>Recent content on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Dec 2023 20:49:38 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml"/><item><title>2023年宿泊した宿</title><link>https://blog.tyage.net/post/2023/2023-12-28-hotel-2023/</link><pubDate>Thu, 28 Dec 2023 20:49:38 +0900</pubDate><guid>https://blog.tyage.net/post/2023/2023-12-28-hotel-2023/</guid><description>2023年もそこそこホテルに泊まった。合計で18箇所。せっかくなので記録しておこうと思う。
+これ以外にも実家や親戚の家に泊まったりしてるので、2023年は家にいない時間が結構長かった気がする。
+1月 三井ガーデンホテル京橋 (東京都) 1人1泊 11,430円
+まあまあきれい。東京駅がでかすぎて移動がむずいという問題がある。
+山荘 神和苑 (大分県) 1人1泊 24,640円
+部屋に温泉があるので入り放題でよかった。
+2月 アパホテル〈浅草橋駅前〉 (東京都) 1人1泊 10,000円くらい?
+まあ普通。昔と比べると高くなったね。
+3月 なし
+4月 クロスホテル札幌 (北海道) 1人1泊 8,160円
+1泊だけだったからか、あんまり記憶にない
+5月 ハレクラニ (ハワイ) 1人1泊 40,729円
+一番安いガーデンコートヤードで予約していたのだけど、海が見える部屋にアップグレードしてもらえた。 普段は景色を気にしないタイプなのだが、部屋から見える海が良すぎた。 アップグレードしてもらえて本当によかったと思う。 海を眺めながらの朝食が気持ち良すぎる。
+アワーズイン阪急 (東京都) 1人1泊 8,000円くらい?
+きれいなのに安い。すごい。 出張宿泊上限1万円の民の光。 おふろの王様も安く使える。
+6月 なし
+7月 なし
+8月 クロス・ウェーブ府中 (東京都) 1人1泊 ???円
+セキュリティ・キャンプ。 飯がうまい。
+Sheraton Stockholm (スウェーデン ストックホルム) 1人1泊 ???円
+CTF宿。 ホテルのジム的なところにサウナがあった。
+Hotel Birger Jarl (スウェーデン ストックホルム) 1人1泊 21,686円</description></item><item><title>TSG CTF 2023 Writeup</title><link>https://blog.tyage.net/post/2023/2023-11-09/</link><pubDate>Thu, 09 Nov 2023 21:00:00 +0900</pubDate><guid>https://blog.tyage.net/post/2023/2023-11-09/</guid><description>TokyoWesternsで参加していて2位でした。 コンテスト終了3分後にabsurdresのフラグが降ってきたので悔しい〜
 以下解いた問題
 Upside-down cake 1000文字以下の回文を入力できれば勝ち、だがrequest body sizeの制限がかかっており1000文字送りつけることはできない。
 string.length &amp;lt; 1000 などのチェックを以下のJSONで回避する。
