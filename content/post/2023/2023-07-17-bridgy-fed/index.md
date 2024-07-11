@@ -2,6 +2,7 @@
 title: "このブログがFediverseに対応しました"
 date: 2023-07-17T21:35:19+09:00
 type: post
+showTableOfContents: true
 ---
 
 Twitter が日々壊れゆくなか、周りの人が Misskey や Mastodon や Threads に住居を移すようになりました。
