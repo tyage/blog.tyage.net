@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Titanium on blog.tyage.net</title><link>https://blog.tyage.net/tags/titanium/</link><description>Recent content in Titanium on blog.tyage.net</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/titanium/index.xml" rel="self" type="application/rss+xml"/><item><title>最近のこと</title><link>https://blog.tyage.net/archive/p380.html</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.net/archive/p380.html</guid><description>お久しぶりです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Titanium on blog.tyage.net</title><link>https://blog.tyage.net/tags/titanium/</link><description>Recent content in Titanium on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/titanium/index.xml" rel="self" type="application/rss+xml"/><item><title>最近のこと</title><link>https://blog.tyage.net/archive/p380.html</link><pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate><guid>https://blog.tyage.net/archive/p380.html</guid><description>お久しぶりです。
 とりあえず近況報告です。
 ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。
 お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。
@@ -61,41 +61,41 @@ Macユーザーの方はもっと参考になるサイトがあるはずです�
 &lt;p>最終的に必要だったことは以下の通りです。&lt;/p>
 &lt;ul>
 &lt;li>
-ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br />
-※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。
-&lt;/li>
+		ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br />
+		※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。
+	&lt;/li>
 &lt;li>&lt;a href="http://java.sun.com/javase/ja/6/download.html">JDK6&lt;/a>のインストール&lt;/li>
 &lt;li>
-環境変数PATHにJDKを設定する。&lt;br />
-例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br />
-※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください
-&lt;/li>
+		環境変数PATHにJDKを設定する。&lt;br />
+		例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br />
+		※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください
+	&lt;/li>
 &lt;li>&lt;a href="http://developer.android.com/sdk/index.html">Android SDK&lt;/a>のインストール&lt;/li>
 &lt;li>
-環境変数PATHにAndroid SDKを設定する。&lt;br />
-例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加
-&lt;/li>
+		環境変数PATHにAndroid SDKを設定する。&lt;br />
+		例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加
+	&lt;/li>
 &lt;li>&lt;a href="http://www.appcelerator.com/">Titanium Developer1.2.2&lt;/a>をインストール&lt;/li>
 &lt;li>一息ついて再起動する（必要ないかも？）&lt;/li>
 &lt;li>Titanium Developerを実行し、アカウント登録をする&lt;/li>
 &lt;li>Titanium Mobileをダウンロード&lt;/li>
 &lt;li>Android SDK Package ManagerでAPIパッケージをインストール&lt;/l>
 &lt;li>
-android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br />
-例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br />
-※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要
-&lt;/li>
+		android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br />
+		例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br />
+		※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要
+	&lt;/li>
 &lt;li>Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li>
 &lt;li>
-&lt;a href="https://github.com/appcelerator/KitchenSink">KitchenSink1.6.1&lt;/a>をダウンロード&lt;br />
-※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。
-&lt;/li>
+		&lt;a href="https://github.com/appcelerator/KitchenSink">KitchenSink1.6.1&lt;/a>をダウンロード&lt;br />
+		※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。
+	&lt;/li>
 &lt;li>Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li>
 &lt;li>
-KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br />
-※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br />
-※上手くいかない場合も何度かめげずにLaunchするといいらしい。
-&lt;/li>
+		KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br />
+		※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br />
+		※上手くいかない場合も何度かめげずにLaunchするといいらしい。
+	&lt;/li>
 &lt;li>長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li>
 &lt;li>お疲れさまでした。&lt;/li>
 &lt;/ul>
