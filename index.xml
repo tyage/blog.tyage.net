@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog.tyage.net</title><link>https://blog.tyage.net/</link><description>Recent content on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2024 21:36:07 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.tyage.net/post/2024/2024-07-11-bridgy-fed/</link><pubDate>Thu, 11 Jul 2024 21:36:07 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-07-11-bridgy-fed/</guid><description>Bridgy Fedがいつの間にかRSSから自動でポスト生成するようになったっぽい。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog.tyage.net</title><link>https://blog.tyage.net/</link><description>Recent content on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Jul 2024 20:34:44 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml"/><item><title>COOPがタイミング系のXS-Searchの緩和策にもなるらしい</title><link>https://blog.tyage.net/post/2024/2024-07-18-xs-search-vs-coop/</link><pubDate>Thu, 18 Jul 2024 20:34:44 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-07-18-xs-search-vs-coop/</guid><description>XS-Search/XS-Leaksのテクニックは数多くあるけれど、別ウィンドウ/フレームのリソースの読み込み時間を別オリジンから計測するのがよく知られていると思う。
+が、CookieのSameSite=Laxがデフォルトとなった現代ではiframeやfetchによる計測が難しくなってしまった。
+ref: https://xsleaks.dev/docs/attacks/timing-attacks/network-timing/#defense
+ということで現状汎用的に一番使いやすいのはwindow.open()を利用して、サーバがレスポンスを生成するのに何秒かかるかを計測するテクニック(先ほどのテーブルで言うCross-window Timing)になる。
+これは新規ウィンドウに開いた別オリジンのwindow.originにアクセスして確認する手法で、もしサーバからレスポンスが返ってきていないならそれはopenerのオリジンになるし、レスポンスが返ってきたあとなら例外が投げられるので計測できるというもの。
+要は、何秒後にwindow.originにアクセスできなくなるかを計測している。
+ref: https://xsleaks.dev/docs/attacks/timing-attacks/network-timing/#cross-window-timing-attacks
+これに対する対策としてはサーバ側でSec-Fetch-Siteを確認するとか様々あるけれど、先程のテーブルを見てみると、COOP(Cross-Origin-Opener-Policy)が有効な防御策として記載されているのが気になった。
+COOPはウィンドウのopenerと新規に開かれたウィンドウのプロセス分離するもので、これによって開いたウィンドウ内のiframeの数を数えたり、開いたウィンドウを更に別のURLに遷移させるといったことができなくなる。
+MDNにもXS-Leaksの対策になるということが書いてある。
+COOP will process-isolate your document and potential attackers can&amp;rsquo;t access your global object if they were to open it in a popup, preventing a set of cross-origin attacks dubbed XS-Leaks.
+ref: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy
+しかし、これは新規ウィンドウのwindow.originにアクセスできなくなるタイミングを計測する、Cross-window Timing Attackを防ぐものではない。
+実際、COOPがsame-originのサイトの読み込み時間をクロスオリジンから計測できている。 (画像ではjxckさんのデモサイトを利用)
+XS-Leaks wikiのコミットログを見ていると、過去の大規模変更の際に特にコメントなく変更が入っていたので、これは間違いなのではないかと考えた。
+が、PRを投げてみたところ、Defense表のチェックボックスは攻撃の緩和策にも付けているということだった。
+COOPはクロスオリジンからの時間計測そのものを防げないのに緩和策になるというのはどういうことか。
+これは実際にXS-Searchによって攻撃する時のことを考えてみるとわかる話だった。
+XS-Searchでは時間計測をすることそのものが目的ではなく、複数のURLのレスポンス時間をオラクルに隠された情報を入手するのが目的となる。
+そのため、普通は複数のURLにアクセスする必要があるのだが、Cross-window Timingの場合開いたウィンドウを使いまわすか、毎回新規ウィンドウを開くかどちらかということになる。
+後者の方法は、CTFのXSS問題でよく利用されるpuppeteerなんかでは制限なくできてしまうが、現実的には開くウィンドウ分のユーザインタラクションか、サイトのポップアップ許可が必要になる（たぶんほとんどのブラウザがそうかも？）。
+となると前者の方法、ウィンドウの使い回しが必要となるわけだが、COOPが設定されているとレスポンスが返ってきた瞬間これができなくなってしまう。 こういうわけで、COOPがタイミング系のXS-Searchに対して意図してかせずか有効な緩和策となるということであった。
+まとめるとこんな感じ。
+XS-Searchで複数のURLのレスポンス時間の差異が知りたい 複数のURLにアクセスしないといけない COOPがあると、開いたウィンドウを再利用できない 複数のウィンドウを開くには、ユーザが開くウィンドウ分クリックするか、サイトのポップアップを許可する必要がある 結果、Cross-window TimingのXS-Searchが難しくなる もちろん緩和策なので完璧な対策ではなく、少量のURLならユーザインタラクションを通じて計測結果が得られることもあると思う。
+他にも、ほとんどのURLはレスポンスに5秒以上かかるが、一部のURLはすぐにレスポンスが返ってくる、みたいな条件の場合には、レスポンスが3秒以上返ってこなかった場合にはCOOPを受信する前にウィンドウを次のURLに遷移させることで、すぐにレスポンスが返ってくるURLを知ることができそうではある。</description></item><item><title/><link>https://blog.tyage.net/post/2024/2024-07-11-bridgy-fed/</link><pubDate>Thu, 11 Jul 2024 21:36:07 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-07-11-bridgy-fed/</guid><description>Bridgy Fedがいつの間にかRSSから自動でポスト生成するようになったっぽい。
 https://snarfed.org/2024-01-09_51810
 これで以前書いた記事のStep.1, Step.2は不要になったかも？ すごい便利。</description></item><item><title>SECCON CTF 2023 Finals Writeup</title><link>https://blog.tyage.net/post/2023/2023-12-28-seccon/</link><pubDate>Thu, 28 Dec 2023 23:35:07 +0900</pubDate><guid>https://blog.tyage.net/post/2023/2023-12-28-seccon/</guid><description>チーム「ierae」でSECCON CTF 2023 Finals (International)に参加していた。
 結果としては10位くらいだったけど、1問解けば4位くらいまで上がれるくらい団子状態だった気がする。
