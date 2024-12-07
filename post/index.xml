@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on blog.tyage.net</title><link>https://blog.tyage.net/post/</link><description>Recent content in Posts on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 07 Dec 2024 17:52:58 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Automotive CTFの全xNexus問題のwriteup</title><link>https://blog.tyage.net/post/2024/2024-12-07-automotive-ctf/</link><pubDate>Sat, 07 Dec 2024 17:52:58 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-12-07-automotive-ctf/</guid><description>会社チーム「ierae」としてAutomotive CTF 2024に参加しました。 国内予選・国内決勝・国際決勝の3ステージがあったのですが、全てのステージでxNexusというVicOne社の提供するプラットフォームに関連する問題が出ました。
+チームメンバーの他の問題のwriteup: Automotive CTFのこと
 特段技術的に興味深い内容というわけではないのですが、自分しか解いていない問題もあるため供養します。
 xNexus Web RCE Anomaly - Automotive CTF 2024 Japan 予選 脅威分析プラットフォームであるxNexusのURLとアカウントが与えられるので、xNexusにログインしてどういった攻撃が飛んできたのかを調査するという問題です。 この問題に限らず、xNexusの問題は全て同じような形式です。
 問題文
 An RCE has been logged in xNexus, what was the exploit used? The answer should be enclosed in the proper flag format of this game. https://... ログインするとShellshockが検知されていることが表示されており、それがフラグでした。
 FLAG: bh{shellshock}
 xNexus CAN Bus Anomaly #1 - Automotive CTF 2024 Japan 予選 問題文
-Analyze CAN Bus Data anomalies and find the pattern. Answer should be enclosed in the standard format flag.</description></item><item><title>COOPがタイミング系のXS-Searchの緩和策にもなるらしい</title><link>https://blog.tyage.net/post/2024/2024-07-18-xs-search-vs-coop/</link><pubDate>Thu, 18 Jul 2024 20:34:44 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-07-18-xs-search-vs-coop/</guid><description>XS-Search/XS-Leaksのテクニックは数多くあるけれど、別ウィンドウ/フレームのリソースの読み込み時間を別オリジンから計測するのがよく知られていると思う。
+Analyze CAN Bus Data anomalies and find the pattern.</description></item><item><title>COOPがタイミング系のXS-Searchの緩和策にもなるらしい</title><link>https://blog.tyage.net/post/2024/2024-07-18-xs-search-vs-coop/</link><pubDate>Thu, 18 Jul 2024 20:34:44 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-07-18-xs-search-vs-coop/</guid><description>XS-Search/XS-Leaksのテクニックは数多くあるけれど、別ウィンドウ/フレームのリソースの読み込み時間を別オリジンから計測するのがよく知られていると思う。
 が、CookieのSameSite=Laxがデフォルトとなった現代ではiframeやfetchによる計測が難しくなってしまった。
 ref: https://xsleaks.dev/docs/attacks/timing-attacks/network-timing/#defense
 ということで現状汎用的に一番使いやすいのはwindow.open()を利用して、サーバがレスポンスを生成するのに何秒かかるかを計測するテクニック(先ほどのテーブルで言うCross-window Timing)になる。
