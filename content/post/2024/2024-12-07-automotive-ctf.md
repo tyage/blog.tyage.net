@@ -129,3 +129,7 @@ Someone is trying to kill my engine. Determine what vehicle I am driving includi
 https://github.com/shipcod3/canTot/blob/5bdfa6c64feba377a1ea4011da4f83db13431875/modules/ford_escape_kill_engine.py
 
 FLAG: `bh{Ford Escape 2010}`
+
+終わり。
+
+なんだったんだこのジャンル。
