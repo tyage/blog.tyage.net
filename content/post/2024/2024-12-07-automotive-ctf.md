@@ -109,7 +109,7 @@ FLAG: bh{7e0#06301c000fa50100}
 Description: Don't DDoS me, Bro! Track the CAN Bus anomaly in xNexus that performs this attack and determine what kind of attack it is.
 ```
 
-ログインすると`0000000000000000`というCAN Frameが見えたので、例のリポジトリで検索します。
+ログインすると`0000000000000000`というCAN Frameが見えたので、例のリポジトリを漁ります。
 firehoseという攻撃名らしい。
 
 https://github.com/shipcod3/canTot/blob/5bdfa6c64feba377a1ea4011da4f83db13431875/modules/kill_bus.py
