@@ -7,6 +7,8 @@ type: post
 会社チーム「ierae」としてAutomotive CTF 2024に参加しました。
 国内予選・国内決勝・国際決勝の3ステージがあったのですが、全てのステージでxNexusというVicOne社の提供するプラットフォームに関連する問題が出ました。
 
+チームメンバーの他の問題のwriteup: [Automotive CTFのこと](https://amenable-muscari-82a.notion.site/Automotive-CTF-15554c2c788a80609e26cd9fb1686a46)
+
 特段技術的に興味深い内容というわけではないのですが、自分しか解いていない問題もあるため供養します。
 
 ## xNexus Web RCE Anomaly - Automotive CTF 2024 Japan 予選
