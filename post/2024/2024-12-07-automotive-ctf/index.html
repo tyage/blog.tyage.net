@@ -7,7 +7,8 @@
 この問題に限らず、xNexusの問題は全て同じような形式です。</p><p>問題文</p><pre tabindex=0><code>An RCE has been logged in xNexus, what was the exploit used? The answer should be enclosed in the proper flag format of this game.
 
 https://...
-</code></pre><p>ログインするとShellshockが検知されていることが表示されており、それがフラグでした。</p><p>FLAG: <code>bh{shellshock}</code></p><h2 id=xnexus-can-bus-anomaly-1---automotive-ctf-2024-japan-予選>xNexus CAN Bus Anomaly #1 - Automotive CTF 2024 Japan 予選</h2><p>問題文</p><pre tabindex=0><code>Analyze CAN Bus Data anomalies and find the pattern. Answer should be enclosed in the standard format flag.
+</code></pre><p>ログインするとShellshockが検知されていることが表示されており、それがフラグでした。
+この問題は他のメンバーが解いてくれました。</p><p>FLAG: <code>bh{shellshock}</code></p><h2 id=xnexus-can-bus-anomaly-1---automotive-ctf-2024-japan-予選>xNexus CAN Bus Anomaly #1 - Automotive CTF 2024 Japan 予選</h2><p>問題文</p><pre tabindex=0><code>Analyze CAN Bus Data anomalies and find the pattern. Answer should be enclosed in the standard format flag.
 </code></pre><p>記録されているCANのデータを眺めていると、ASCIIの文字がちょくちょく出てきます。</p><p>うんうん唸りながらその断片を組み合わせてエスパーしながら何度もsubmitすると以下が正解でした。</p><p>FLAG: <code>bh{4nom4lyfl4g}</code></p><h2 id=xnexus-can-bus-anomaly-2---automotive-ctf-2024-japan-予選>xNexus CAN Bus Anomaly #2 - Automotive CTF 2024 Japan 予選</h2><p>問題文</p><pre tabindex=0><code>Someone is trying to disable the ESP and the power assisted system. Go track that anomaly with CAN ID 0x0645 and determine what car is being targeted for that kind of attack. The vehicle is the flag enclosed in the proper flag format.
 </code></pre><p>次のようなデータが送信されており、ここからどの車種が攻撃されているかを特定する問題。</p><pre tabindex=0><code>0x00000645 023e000000000000
 0x00000645 0211010000000000
