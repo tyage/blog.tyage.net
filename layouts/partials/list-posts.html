@@ -1,7 +1,7 @@
 <div class="post-title">
     <a href="{{ .Permalink }}" class="post-link">
-      {{ .Title }}
-      {{ if eq .Title "" }}{{ .Summary }}{{end}}
+      {{ .Title | plainify }}
+      {{ if eq .Title "" }}{{ .Summary | plainify }}{{end}}
     </a>
     <div class="flex-break"></div>
     <span class="post-date">{{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date}}</span>
