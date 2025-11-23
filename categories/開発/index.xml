@@ -1,293 +1,382 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発 on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/</link><description>Recent content in 開発 on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 29 Sep 2017 14:32:27 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>tyage.sakura.ne.jp を終了します</title><link>https://blog.tyage.net/archive/p1076.html</link><pubDate>Fri, 29 Sep 2017 14:32:27 +0000</pubDate><guid>https://blog.tyage.net/archive/p1076.html</guid><description>2009/03/21から8年半、ダラダラと運用していた tyage.sakura.ne.jp を、2017/09/30に終了します。
-またサイトのソースコードを以下に公開します。
-tyage.sakura.ne.jp 全体のリポジトリ 専用リポジトリがあるコンテンツ一覧 以下はKMCのLT大会で発表した際のスライドです。</description></item><item><title>プリパラで効率よく承認欲求を満たす</title><link>https://blog.tyage.net/archive/p918.html</link><pubDate>Wed, 02 Dec 2015 15:46:00 +0000</pubDate><guid>https://blog.tyage.net/archive/p918.html</guid><description>この記事は KMC Advent Calendar 2015 3日目(12/3)の記事です。
-2日目の記事は、id: utgwさんの 古明地こいしのアドベントカレンダー&amp;#038;雑記と来年の抱負 でした。
-今日はアドベントカレンダー用におもちゃを作ったので紹介します。
-プリパラで承認欲求を満たす 最近、Twitterの「お気に入り」が「いいね」に変わりましたね。
-そんな中Twitterやfacebookで「いいね」を集めている方もいらっしゃるかと思いますが、世の中にはもっと効率的に「いいね」を集める方法があります&amp;#8230;
-そうです、プリパラに行くのです!
-女児向けゲームなのでこれまで縁のなかった方も多いかと思いますが、SNSでは通常味わえないほどの「いいね」をこのプリパラでは低価格で集めることができます。
-1プレイ100円でリズムゲーム（ライブ）をプレイしたあとに「プリチケ」と呼ばれるカードが手に入るのですが、このライブを通じて通常2万前後の「いいね」を集めることができるのです。
-1いいねが100円　といった「いいね」代行業者がある中、プリパラは　1円で200いいね　を集めることができるのですから、コスパは最強と言えるでしょう。
-【ゲーム中には「いいね」が勢い良く流れる】
-リズムゲームでタイミングよく押せると「いいね」がもらえるのですが、もし合わなかったとしても「おしかったね」と励ましの言葉がもらえるので、ゲームが苦手な方も心が満たされるはず。
-（決してpoor、bad、failのような冷め切った言葉ではない！！！）
-プリパラシミュレータ ただ、今すぐ「いいね」をあつめにプリパラに行くのも難しいと思うので、簡単なプリパラシミュレータを作ってみました。
-Pripara Simulator
-ハートが中心に来たタイミングで画面を押せば「いいね」を集めることができます。
-さらに、ただただ「いいね」を集めたい人のために、「全自動承認モード」をご用意いたしました。
-タイミングを合わせなくても「いいね」が得られるという超便利アイテムです。
-これで皆さんの承認欲求がじゃぶじゃぶ満たされていけばと思います。
-スマートフォンでも遊べます。
-余談 2日前に思いたってかなり雑に作ってみました。
-ちょうど作ってる途中で @hakatashi の Travis-CIで最強のデプロイ環境を構築する という記事が流れてきたので使ってみました。
-Travis-CI is 便利。
-あと、シミュレータでは「ラッキー!サプライズ☆バースデイ」の序盤を真似して作ってみたのですが、譜面の部分をES2015のgeneratorを使って実装してみたら思ったよりいい感じになったような気がしています。
-scenario.js
-let luckySurpriseBirthday = function * &amp;#40;&amp;#41; &amp;#123; // ほんとにスペシャルなパーティーのはじまりは yield createCircle&amp;#40;1 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; yield createCircle&amp;#40;0 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; yield createCircle&amp;#40;7 / 8&amp;#41;; yield * wait&amp;#40;baseStep&amp;#41;; また一部の筐体ではゲームのプレイ内容を録画できるようになっているのですが、作るにあたってそこで録画した内容がかなり参考になりました。ありがたい。</description></item><item><title>Atomエディタ用にVideo player pluginを作りました</title><link>https://blog.tyage.net/archive/p790.html</link><pubDate>Sat, 26 Jul 2014 03:48:14 +0000</pubDate><guid>https://blog.tyage.net/archive/p790.html</guid><description>コーディング中でも動画が見たい人種に向けたプラグインです。
-BGA（background animation）を流しながらコードを書いたりすることが多いのですが、せっかくならエディタの背景で流したいですよね。
-ということで作ってみました。
-pluginページ: video-player
-使い方 vlcの実行ファイルへのパスを設定 (Macならデフォルト値が設定されています) &amp;#8220;Video Player: Play&amp;#8221; コマンドを実行 動画ファイルを選択 &amp;#8220;Video Player: Stop&amp;#8221; コマンドで終了 再生できる動画 video要素を利用しているだけなので、音声もちゃんと流れます。
-Atomはchromiumベースなのでogg, webm, wavが再生できるのですが、mp4等には対応していません。
-chromiumで対応していない形式に関しては、vlcを呼び出してogg形式に変換しつつ配信しています。
-そのため、vlcで再生可能な形式ならなんでも再生できます。（画像もいけます。）
-今後のアップデート コントローラを出すとか、複数動画連続再生に対応するとかは考えています。
-バグ報告等はgithubのissueに投げてください。
-pull requestも受け付けています。
-その他 他に同じようなエディタプラグインあったら参考にしたいので教えてください。
-正直、背景で動画流れてると集中できない気もする。</description></item><item><title>また働き始めたこと</title><link>https://blog.tyage.net/archive/p658.html</link><pubDate>Tue, 01 Jan 2013 19:47:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p658.html</guid><description>ネットではあんまり公にはしてなかったのだけど、10月ごろからまたReventive, Incにて働き始めました。
-「また」ってのは、2011年の初頭にも働いていたことがあって、そのころはTitanium Mobileでチャットアプリを作っていました。
-Titanium Mobileに毎日いらついていた覚えがあります。
-Titanium Mobileの存在自体がトラウマ化した・・・。
-んで、受験シーズンに突入したってことで一旦は抜けたんだけどまた戻って来ました。
-今はCloseというSNSのAndroid版を作っています。
-（一時期話題になってたので聞いたことがある方もいるかもしれません。）
-JavaでのAndroidアプリの開発はほぼ未経験で、Javaも普段は触ってないのですが、一日くらいコードを眺め続けてなんとか書けるようになりました。
-当然、一日で書けたのはほんの少しでしたが、二ヶ月経った今は、ある程度書けるようになったとおもいます。
-それと、他人とプロジェクトを共有したり、gitを本格的に使ったりってのも今まであまりやってこなかったので勉強になりました。
-iOSアプリ開発・Androidアプリの開発の両方をしているとやっぱり、Android側はIDEがあまりよくないし、端末間での誤差を調整するのがとてもつらいかなあと思います。
-当然ですがOSのバージョンが違えば挙動も違うし、使える機能・使えない機能があるし、端末によって不思議なことが頻繁に起こり、苦労します。
-それにリストビューとか、iOSと比べてあんまり機能が充実していないのではないかなあと感じることもしばしば。
-なんにせよ辛いことが多いですが、Objective-Cを書くよりかはJava書いてるほうが気が楽ではあります。
-現在気になっているのはテストの方法。。。
-今まで他人のやりかたを見てなかったので、コードを書いたらそれを端末上で実行し、手動デバッグを繰り返していたのですが明らかに効率が悪い。
-D○Aさんでも最終的には手動テストだと小耳に挟んだ気がするのだけど、流石にテストの効率化ぐらいはしてるだろうなあ。
-Androidテスト部の方からご教授願いたいでし。
-Androidアプリの開発をしていて色々と知見を得たことが多かったでし、仕事先の人は面白い人が多いです。
-ただ、Close for AndroidはこのようにAndroidアプリ開発初心者も開発に携わっているため、何かと問題を抱えていることもあります。
-そのため、あまり期待せずこれからの成長を暖かく見守っていただきながら、インストールしてもらえると嬉しく感じます（ステマじゃないよ宣伝だよ！）
-Close for Android
-Close for iOS</description></item><item><title>08/07</title><link>https://blog.tyage.net/archive/p555.html</link><pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate><guid>https://blog.tyage.net/archive/p555.html</guid><description>コンディション：普通
-朝食：寝てた
-昼食：記憶になし
-夕食：ささみとチーズを焼いた何か
-昨日の続きでnode.jsで遊ぶ。
-box2dをwebsocket通じて動かしたりしてた。
-heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）
-そんなことしていたら無駄に日を過ごした。</description></item><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>コンディション：良好
-朝食：寝てた
-昼食：記憶になし
-夕食：記憶になし
-珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。
-主目的はゲーム製作。
-以前に作成したゲームをnode.jsに移植する目的で進める。
-とりあえずOSをubuntu12.04に変えようと努力。
-まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。
-途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。
-その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。</description></item><item><title>さくらのvps契約+node.js</title><link>https://blog.tyage.net/archive/p497.html</link><pubDate>Thu, 09 Aug 2012 15:42:45 +0000</pubDate><guid>https://blog.tyage.net/archive/p497.html</guid><description>ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
-自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・
-環境 VPS の OS CentOS 6.2 x86_64 クライアント の OS Ubuntu 12.04 LTS 64 bit node.js v0.6.18 設定 さくらVPSで使うコマンドリストとサーバーの初期設定を主に参考にしています。
-公開鍵認証にしてあるならport番号の変更とかは必要ないような気もするのですが一応。
-作業用ユーザーの追加 useradd &amp;#91;user&amp;#93; passwd &amp;#91;user&amp;#93; usermod -G wheel &amp;#91;user&amp;#93; SSHポート番号変更 vim /etc/ssh/sshd_config #Port 22 Port [new port] 公開認証鍵に 鍵を作成し転送
-ssh-keygen -t rsa -C &amp;quot;[email]&amp;quot; scp ~/.ssh/id_rsa.pub &amp;#91;user&amp;#93;@&amp;#91;host&amp;#93;:/home/&amp;#91;user&amp;#93;/authorized_keys 公開鍵の設定
-cd $HOME mkdir .ssh chmod 700 .ssh chmod 600 authorized_keys mv authorized_keys .ssh/authorized_keys 設定を変更し反映
-vim /etc/ssh/sshd_config PermitRootLogin no PasswordAuthentication no /etc/init.</description></item><item><title>フォト蔵 to Flickr</title><link>https://blog.tyage.net/archive/p445.html</link><pubDate>Wed, 07 Mar 2012 14:15:58 +0000</pubDate><guid>https://blog.tyage.net/archive/p445.html</guid><description>リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。
-flickrの有料アカウントを取得したので、もうフォト蔵を使うこともなさそうです。
-（アルバム別ではなく）写真別に公開/非公開設定ができるflickrさんに惚れちゃいました(ﾟ∀ﾟ)ﾉ
-gistにコードを置いておくのでよければお使いください～
-（※一気に何枚もアップロードするのでパンクするかも）
-流れ：
-Create an Appからアプリを作成して、API KeyとSecret Keyを取得 フォト蔵 to Flickrを設置 コードに自分のフォト蔵ID,Passを書く コードにFlickrのAPI Key,Secret Keyを書く Flickrアプリの管理ページからCallback URLを指定する。 コードを実行（アクセス）してFlickrアプリの認証をし、移行開始 FlickrのAPI扱うのが面倒だった・・・（そのほうがセキュリティ上好ましいが）
-ライブラリはあるので、一から自分で作るのは訓練目的以外では止めたほうがいいですねえ。
-フォト蔵も、非公開アルバムの写真情報の取得ができないため、一旦アルバムを公開設定にした後に、再度非公開にするという作業が必要でした。
-（非公開アルバムは一時的に公開設定となるためご注意ください。）</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/archive/p368.html</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/archive/p368.html</guid><description>思い出せるものから書き上げていく
-tableのheader, footerを使っているwindowは閉じるとエラー
-touchendイベントがちゃんと取得できない
-getAllPeopleおかしい
-show, hideおかしい
-CommonJS対応のくせにrequire使えない
-一旦変数に代入せずに一気に、(new Ti.UI.createWindow()).show()　とするとエラー
-選択した写真のデータを送るときに一旦viewに設定しないといけない
-tableのrowはtable.dataから取得できない
-windowに追加後、heightを変更できない
-メアド用にキーボードを切り替えできない
-エミュ重い
-環境構築面倒
-tabがあるときの新規windowの扱いが不明。
-挙動が定まらない
-いろいろ非対応
-スクロールテーブルとか自作しないといけない
-jssのz-indexはzIndexと書かないと動かない。
-jssはセレクタに単一クラスかIDしか指定できない。
-その他のセレクタを指定すると落ちる。
-jssがなぜか更新されない。
-viewをmapの上に表示することができない。
-leftView, rightViewが非対応だった。
-マップのクリックイベントも、annotationのクリックイベントもおかしい。
-annotationのタイトルだけでイベントが発生する。
-テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある
-バグ多い
-APIリファレンスはうそつき</description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/archive/p335.html</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p335.html</guid><description>&lt;p>とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p>
-&lt;p>Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br />
-普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p>
-&lt;h2>初めに&lt;/h2>
-&lt;p>環境はWindows XP SP3です。&lt;br />
-Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p>
-&lt;p>最終的に必要だったことは以下の通りです。&lt;/p>
-&lt;ul>
-&lt;li>
-		ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br />
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発 on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/</link><description>Recent content in 開発 on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 29 Sep 2017 14:32:27 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>tyage.sakura.ne.jp を終了します</title><link>https://blog.tyage.net/archive/p1076.html</link><pubDate>Fri, 29 Sep 2017 14:32:27 +0000</pubDate><guid>https://blog.tyage.net/archive/p1076.html</guid><description>&lt;p&gt;2009/03/21から8年半、ダラダラと運用していた tyage.sakura.ne.jp を、2017/09/30に終了します。&lt;/p&gt;
+&lt;p&gt;またサイトのソースコードを以下に公開します。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tyage/tyage.sakura.ne.jp-public"&gt;tyage.sakura.ne.jp 全体のリポジトリ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tyage/tyage.sakura.ne.jp-public/wiki"&gt;専用リポジトリがあるコンテンツ一覧&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下はKMCのLT大会で発表した際のスライドです。&lt;/p&gt;
+&lt;p&gt;&lt;script async class="speakerdeck-embed" data-id="78cd69548b2d4ad8af4936454e15defa" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;&lt;/p&gt;</description></item><item><title>プリパラで効率よく承認欲求を満たす</title><link>https://blog.tyage.net/archive/p918.html</link><pubDate>Wed, 02 Dec 2015 15:46:00 +0000</pubDate><guid>https://blog.tyage.net/archive/p918.html</guid><description>&lt;p&gt;この記事は &lt;a href="http://www.adventar.org/calendars/809"&gt;KMC Advent Calendar 2015&lt;/a&gt; 3日目(12/3)の記事です。&lt;/p&gt;
+&lt;p&gt;2日目の記事は、id: utgwさんの &lt;a href="http://utgwkk.hateblo.jp/entry/2015/12/02/032047"&gt;古明地こいしのアドベントカレンダー&amp;#038;雑記と来年の抱負&lt;/a&gt; でした。&lt;/p&gt;
+&lt;p&gt;今日はアドベントカレンダー用におもちゃを作ったので紹介します。&lt;/p&gt;
+&lt;h2&gt;プリパラで承認欲求を満たす&lt;/h2&gt;
+&lt;p&gt;最近、Twitterの「お気に入り」が「いいね」に変わりましたね。&lt;/p&gt;
+&lt;p&gt;そんな中Twitterやfacebookで「いいね」を集めている方もいらっしゃるかと思いますが、世の中にはもっと効率的に「いいね」を集める方法があります&amp;#8230;&lt;/p&gt;
+&lt;p&gt;そうです、&lt;a href="http://pripara.jp/"&gt;プリパラ&lt;/a&gt;に行くのです!&lt;/p&gt;
+&lt;p&gt;女児向けゲームなのでこれまで縁のなかった方も多いかと思いますが、SNSでは通常味わえないほどの「いいね」をこのプリパラでは低価格で集めることができます。&lt;/p&gt;
+&lt;p&gt;1プレイ100円でリズムゲーム（ライブ）をプレイしたあとに「プリチケ」と呼ばれるカードが手に入るのですが、このライブを通じて通常2万前後の「いいね」を集めることができるのです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1いいねが100円&lt;/strong&gt;　といった「いいね」代行業者がある中、プリパラは　&lt;strong&gt;1円で200いいね&lt;/strong&gt;　を集めることができるのですから、コスパは最強と言えるでしょう。&lt;/p&gt;
+&lt;p&gt;【ゲーム中には「いいね」が勢い良く流れる】&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gyazo.com/88b6e23f1d3bdc47d7a51f1d4efef836"&gt;&lt;img src="https://i.gyazo.com/88b6e23f1d3bdc47d7a51f1d4efef836.gif" alt="https://gyazo.com/88b6e23f1d3bdc47d7a51f1d4efef836"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;リズムゲームでタイミングよく押せると「いいね」がもらえるのですが、もし合わなかったとしても「&lt;strong&gt;おしかったね&lt;/strong&gt;」と励ましの言葉がもらえるので、ゲームが苦手な方も心が満たされるはず。&lt;br /&gt;
+（決してpoor、bad、failのような冷め切った言葉ではない！！！）&lt;/p&gt;
+&lt;h2&gt;プリパラシミュレータ&lt;/h2&gt;
+&lt;p&gt;ただ、今すぐ「いいね」をあつめにプリパラに行くのも難しいと思うので、簡単なプリパラシミュレータを作ってみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tyage.github.io/pripara-simulator/" target="_blank"&gt;Pripara Simulator&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ハートが中心に来たタイミングで画面を押せば「いいね」を集めることができます。&lt;/p&gt;
+&lt;p&gt;さらに、ただただ「いいね」を集めたい人のために、「全自動承認モード」をご用意いたしました。&lt;/p&gt;
+&lt;p&gt;タイミングを合わせなくても「いいね」が得られるという超便利アイテムです。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gyazo.com/13e66d93b94d80c6c9743dff7ff632e2"&gt;&lt;img src="https://i.gyazo.com/13e66d93b94d80c6c9743dff7ff632e2.gif" alt="https://gyazo.com/13e66d93b94d80c6c9743dff7ff632e2"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;これで皆さんの承認欲求がじゃぶじゃぶ満たされていけばと思います。&lt;/p&gt;
+&lt;p&gt;スマートフォンでも遊べます。&lt;/p&gt;
+&lt;h2&gt;余談&lt;/h2&gt;
+&lt;p&gt;2日前に思いたってかなり雑に作ってみました。&lt;/p&gt;
+&lt;p&gt;ちょうど作ってる途中で @hakatashi の &lt;a href="http://qiita.com/hakatashi/items/4f0034200dfd876c4fda"&gt;Travis-CIで最強のデプロイ環境を構築する&lt;/a&gt; という記事が流れてきたので使ってみました。&lt;/p&gt;
+&lt;p&gt;Travis-CI is 便利。&lt;/p&gt;
+&lt;p&gt;あと、シミュレータでは「ラッキー!サプライズ☆バースデイ」の序盤を真似して作ってみたのですが、譜面の部分をES2015のgeneratorを使って実装してみたら思ったよりいい感じになったような気がしています。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tyage/pripara-simulator/blob/master/src/js/scenario.js"&gt;scenario.js&lt;/a&gt;&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="javascript" style="font-family:monospace;"&gt;let luckySurpriseBirthday &lt;span style="color: #339933;"&gt;=&lt;/span&gt; &lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt; &lt;span style="color: #339933;"&gt;*&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt;
+ &lt;span style="color: #006600; font-style: italic;"&gt;// ほんとにスペシャルなパーティーのはじまりは&lt;/span&gt;
+ yield createCircle&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #CC0000;"&gt;1&lt;/span&gt; &lt;span style="color: #339933;"&gt;/&lt;/span&gt; &lt;span style="color: #CC0000;"&gt;8&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+ yield &lt;span style="color: #339933;"&gt;*&lt;/span&gt; wait&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;baseStep&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+ yield createCircle&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #CC0000;"&gt;0&lt;/span&gt; &lt;span style="color: #339933;"&gt;/&lt;/span&gt; &lt;span style="color: #CC0000;"&gt;8&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+ yield &lt;span style="color: #339933;"&gt;*&lt;/span&gt; wait&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;baseStep&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+ yield createCircle&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #CC0000;"&gt;7&lt;/span&gt; &lt;span style="color: #339933;"&gt;/&lt;/span&gt; &lt;span style="color: #CC0000;"&gt;8&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+ yield &lt;span style="color: #339933;"&gt;*&lt;/span&gt; wait&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;baseStep&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;また一部の筐体ではゲームのプレイ内容を録画できるようになっているのですが、作るにあたってそこで録画した内容がかなり参考になりました。ありがたい。&lt;/p&gt;</description></item><item><title>Atomエディタ用にVideo player pluginを作りました</title><link>https://blog.tyage.net/archive/p790.html</link><pubDate>Sat, 26 Jul 2014 03:48:14 +0000</pubDate><guid>https://blog.tyage.net/archive/p790.html</guid><description>&lt;p&gt;&lt;img src="https://cloud.githubusercontent.com/assets/177858/3700235/a8a91544-13dd-11e4-98f9-7c8448cc2041.gif"&gt;&lt;/p&gt;
+&lt;p&gt;コーディング中でも動画が見たい人種に向けたプラグインです。&lt;/p&gt;
+&lt;p&gt;BGA（background animation）を流しながらコードを書いたりすることが多いのですが、せっかくならエディタの背景で流したいですよね。&lt;/p&gt;
+&lt;p&gt;ということで作ってみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://atom.io/packages/video-player"&gt;pluginページ: video-player&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;使い方&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;vlcの実行ファイルへのパスを設定 (Macならデフォルト値が設定されています)&lt;/li&gt;
+&lt;li&gt;&amp;#8220;Video Player: Play&amp;#8221; コマンドを実行&lt;/li&gt;
+&lt;li&gt;動画ファイルを選択&lt;/li&gt;
+&lt;li&gt;&amp;#8220;Video Player: Stop&amp;#8221; コマンドで終了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;再生できる動画&lt;/h2&gt;
+&lt;p&gt;video要素を利用しているだけなので、音声もちゃんと流れます。&lt;/p&gt;
+&lt;p&gt;Atomはchromiumベースなのでogg, webm, wavが再生できるのですが、mp4等には対応していません。&lt;/p&gt;
+&lt;p&gt;chromiumで対応していない形式に関しては、vlcを呼び出してogg形式に変換しつつ配信しています。&lt;/p&gt;
+&lt;p&gt;そのため、vlcで再生可能な形式ならなんでも再生できます。（画像もいけます。）&lt;/p&gt;
+&lt;h2&gt;今後のアップデート&lt;/h2&gt;
+&lt;p&gt;コントローラを出すとか、複数動画連続再生に対応するとかは考えています。&lt;/p&gt;
+&lt;p&gt;バグ報告等はgithubのissueに投げてください。&lt;/p&gt;
+&lt;p&gt;pull requestも受け付けています。&lt;/p&gt;
+&lt;h2&gt;その他&lt;/h2&gt;
+&lt;p&gt;他に同じようなエディタプラグインあったら参考にしたいので教えてください。&lt;/p&gt;
+&lt;p&gt;正直、背景で動画流れてると集中できない気もする。&lt;/p&gt;</description></item><item><title>また働き始めたこと</title><link>https://blog.tyage.net/archive/p658.html</link><pubDate>Tue, 01 Jan 2013 19:47:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p658.html</guid><description>&lt;p&gt;ネットではあんまり公にはしてなかったのだけど、10月ごろからまたReventive, Incにて働き始めました。&lt;/p&gt;
+&lt;p&gt;「また」ってのは、2011年の初頭にも働いていたことがあって、そのころはTitanium Mobileでチャットアプリを作っていました。&lt;/p&gt;
+&lt;p&gt;Titanium Mobileに毎日いらついていた覚えがあります。&lt;/p&gt;
+&lt;p&gt;Titanium Mobileの存在自体がトラウマ化した・・・。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;んで、受験シーズンに突入したってことで一旦は抜けたんだけどまた戻って来ました。&lt;/p&gt;
+&lt;p&gt;今は&lt;a href="http://reventive-world.com/Close/"&gt;Close&lt;/a&gt;というSNSのAndroid版を作っています。&lt;br /&gt;
+（一時期話題になってたので聞いたことがある方もいるかもしれません。）&lt;/p&gt;
+&lt;p&gt;JavaでのAndroidアプリの開発はほぼ未経験で、Javaも普段は触ってないのですが、一日くらいコードを眺め続けてなんとか書けるようになりました。&lt;/p&gt;
+&lt;p&gt;当然、一日で書けたのはほんの少しでしたが、二ヶ月経った今は、ある程度書けるようになったとおもいます。&lt;/p&gt;
+&lt;p&gt;それと、他人とプロジェクトを共有したり、gitを本格的に使ったりってのも今まであまりやってこなかったので勉強になりました。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;iOSアプリ開発・Androidアプリの開発の両方をしているとやっぱり、Android側はIDEがあまりよくないし、端末間での誤差を調整するのがとてもつらいかなあと思います。&lt;/p&gt;
+&lt;p&gt;当然ですがOSのバージョンが違えば挙動も違うし、使える機能・使えない機能があるし、端末によって不思議なことが頻繁に起こり、苦労します。&lt;/p&gt;
+&lt;p&gt;それにリストビューとか、iOSと比べてあんまり機能が充実していないのではないかなあと感じることもしばしば。&lt;/p&gt;
+&lt;p&gt;なんにせよ辛いことが多いですが、Objective-Cを書くよりかはJava書いてるほうが気が楽ではあります。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;現在気になっているのはテストの方法。。。&lt;/p&gt;
+&lt;p&gt;今まで他人のやりかたを見てなかったので、コードを書いたらそれを端末上で実行し、手動デバッグを繰り返していたのですが明らかに効率が悪い。&lt;/p&gt;
+&lt;p&gt;D○Aさんでも最終的には手動テストだと小耳に挟んだ気がするのだけど、流石にテストの効率化ぐらいはしてるだろうなあ。&lt;/p&gt;
+&lt;p&gt;Androidテスト部の方からご教授願いたいでし。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Androidアプリの開発をしていて色々と知見を得たことが多かったでし、仕事先の人は面白い人が多いです。&lt;/p&gt;
+&lt;p&gt;ただ、Close for AndroidはこのようにAndroidアプリ開発初心者も開発に携わっているため、何かと問題を抱えていることもあります。&lt;/p&gt;
+&lt;p&gt;そのため、あまり期待せずこれからの成長を暖かく見守っていただきながら、インストールしてもらえると嬉しく感じます（ステマじゃないよ宣伝だよ！）&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.reventive_world.android.close"&gt;Close for Android&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://itunes.apple.com/jp/app/close-best-free-social-life/id554069219?l=ja&amp;#038;ls=1&amp;#038;mt=8"&gt;Close for iOS&lt;/a&gt;&lt;/p&gt;</description></item><item><title>08/07</title><link>https://blog.tyage.net/archive/p555.html</link><pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate><guid>https://blog.tyage.net/archive/p555.html</guid><description>&lt;p&gt;コンディション：普通&lt;br /&gt;
+朝食：寝てた&lt;br /&gt;
+昼食：記憶になし&lt;br /&gt;
+夕食：ささみとチーズを焼いた何か&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=552"&gt;昨日&lt;/a&gt;の続きでnode.jsで遊ぶ。&lt;br /&gt;
+box2dをwebsocket通じて動かしたりしてた。&lt;br /&gt;
+heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）&lt;br /&gt;
+そんなことしていたら無駄に日を過ごした。&lt;/p&gt;</description></item><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>&lt;p&gt;コンディション：良好&lt;br /&gt;
+朝食：寝てた&lt;br /&gt;
+昼食：記憶になし&lt;br /&gt;
+夕食：記憶になし&lt;/p&gt;
+&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;
+主目的はゲーム製作。&lt;br /&gt;
+以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;
+&lt;p&gt;とりあえずOSをubuntu12.04に変えようと努力。&lt;br /&gt;
+まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。&lt;br /&gt;
+途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。&lt;/p&gt;
+&lt;p&gt;その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。&lt;/p&gt;</description></item><item><title>さくらのvps契約+node.js</title><link>https://blog.tyage.net/archive/p497.html</link><pubDate>Thu, 09 Aug 2012 15:42:45 +0000</pubDate><guid>https://blog.tyage.net/archive/p497.html</guid><description>&lt;p&gt;ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。&lt;br /&gt;
+自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・&lt;/p&gt;
+&lt;p&gt;　&lt;/p&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;VPS の OS&lt;/dt&gt;
+&lt;dd&gt;CentOS 6.2 x86_64&lt;/dd&gt;
+&lt;dt&gt;クライアント の OS&lt;/dt&gt;
+&lt;dd&gt;Ubuntu 12.04 LTS 64 bit&lt;/dd&gt;
+&lt;dt&gt;node.js&lt;/dt&gt;
+&lt;dd&gt;v0.6.18&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;　&lt;/p&gt;
+&lt;h2&gt;設定&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://wp.yat-net.com/?p=3074"&gt;さくらVPSで使うコマンドリストとサーバーの初期設定&lt;/a&gt;を主に参考にしています。&lt;br /&gt;
+公開鍵認証にしてあるならport番号の変更とかは必要ないような気もするのですが一応。&lt;/p&gt;
+&lt;h3&gt;作業用ユーザーの追加&lt;/h3&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;useradd &lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#91;&lt;/span&gt;user&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#93;&lt;/span&gt;
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;passwd&lt;/span&gt; &lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#91;&lt;/span&gt;user&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#93;&lt;/span&gt;
+usermod &lt;span style="color: #660033;"&gt;-G&lt;/span&gt; wheel &lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#91;&lt;/span&gt;user&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#93;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;h3&gt;SSHポート番号変更&lt;/h3&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;vim&lt;/span&gt; &lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;etc&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;ssh&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;sshd_config&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;pre&gt;
+#Port 22
+Port [new port]
+&lt;/pre&gt;
+&lt;h3&gt;公開認証鍵に&lt;/h3&gt;
+&lt;p&gt;鍵を作成し転送&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;ssh-keygen&lt;/span&gt; &lt;span style="color: #660033;"&gt;-t&lt;/span&gt; rsa &lt;span style="color: #660033;"&gt;-C&lt;/span&gt; &lt;span style="color: #ff0000;"&gt;&amp;quot;[email]&amp;quot;&lt;/span&gt;
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;scp&lt;/span&gt; ~&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;.ssh&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;id_rsa.pub &lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#91;&lt;/span&gt;user&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;@&lt;/span&gt;&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#91;&lt;/span&gt;host&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#93;&lt;/span&gt;:&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;home&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#91;&lt;/span&gt;user&lt;span style="color: #7a0874; font-weight: bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;authorized_keys&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;公開鍵の設定&lt;/p&gt;</description></item><item><title>フォト蔵 to Flickr</title><link>https://blog.tyage.net/archive/p445.html</link><pubDate>Wed, 07 Mar 2012 14:15:58 +0000</pubDate><guid>https://blog.tyage.net/archive/p445.html</guid><description>&lt;p&gt;リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。&lt;/p&gt;
+&lt;p&gt;flickrの有料アカウントを取得したので、もうフォト蔵を使うこともなさそうです。&lt;br /&gt;
+（アルバム別ではなく）写真別に公開/非公開設定ができるflickrさんに惚れちゃいました(ﾟ∀ﾟ)ﾉ&lt;/p&gt;
+&lt;p&gt;gistにコードを置いておくのでよければお使いください～&lt;br /&gt;
+（※一気に何枚もアップロードするのでパンクするかも）&lt;br /&gt;
+&lt;script src="https://gist.github.com/1993386.js?file=photozou2flickr.php"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;流れ：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.flickr.com/services/apps/create/"&gt;Create an App&lt;/a&gt;からアプリを作成して、API KeyとSecret Keyを取得&lt;/li&gt;
+&lt;li&gt;フォト蔵 to Flickrを設置&lt;/li&gt;
+&lt;li&gt;コードに自分のフォト蔵ID,Passを書く&lt;/li&gt;
+&lt;li&gt;コードにFlickrのAPI Key,Secret Keyを書く&lt;/li&gt;
+&lt;li&gt;Flickrアプリの管理ページからCallback URLを指定する。&lt;/li&gt;
+&lt;li&gt;コードを実行（アクセス）してFlickrアプリの認証をし、移行開始&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;FlickrのAPI扱うのが面倒だった・・・（そのほうがセキュリティ上好ましいが）&lt;br /&gt;
+ライブラリはあるので、一から自分で作るのは訓練目的以外では止めたほうがいいですねえ。&lt;/p&gt;
+&lt;p&gt;フォト蔵も、非公開アルバムの写真情報の取得ができないため、一旦アルバムを公開設定にした後に、再度非公開にするという作業が必要でした。&lt;br /&gt;
+（非公開アルバムは一時的に公開設定となるためご注意ください。）&lt;/p&gt;</description></item><item><title>Titanium * Android = デスマ</title><link>https://blog.tyage.net/archive/p368.html</link><pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate><guid>https://blog.tyage.net/archive/p368.html</guid><description>&lt;p&gt;　&lt;br /&gt;
+思い出せるものから書き上げていく&lt;/p&gt;
+&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;
+&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;
+&lt;p&gt;getAllPeopleおかしい&lt;/p&gt;
+&lt;p&gt;show, hideおかしい&lt;/p&gt;
+&lt;p&gt;CommonJS対応のくせにrequire使えない&lt;/p&gt;
+&lt;p&gt;一旦変数に代入せずに一気に、(new Ti.UI.createWindow()).show()　とするとエラー&lt;/p&gt;
+&lt;p&gt;選択した写真のデータを送るときに一旦viewに設定しないといけない&lt;/p&gt;
+&lt;p&gt;tableのrowはtable.dataから取得できない&lt;/p&gt;
+&lt;p&gt;windowに追加後、heightを変更できない&lt;/p&gt;
+&lt;p&gt;メアド用にキーボードを切り替えできない&lt;/p&gt;
+&lt;p&gt;エミュ重い&lt;/p&gt;
+&lt;p&gt;環境構築面倒&lt;/p&gt;
+&lt;p&gt;tabがあるときの新規windowの扱いが不明。&lt;br /&gt;
+挙動が定まらない&lt;/p&gt;
+&lt;p&gt;いろいろ非対応&lt;br /&gt;
+スクロールテーブルとか自作しないといけない&lt;/p&gt;
+&lt;p&gt;jssのz-indexはzIndexと書かないと動かない。&lt;/p&gt;
+&lt;p&gt;jssはセレクタに単一クラスかIDしか指定できない。&lt;/p&gt;
+&lt;p&gt;その他のセレクタを指定すると落ちる。&lt;/p&gt;
+&lt;p&gt;jssがなぜか更新されない。&lt;/p&gt;
+&lt;p&gt;viewをmapの上に表示することができない。&lt;/p&gt;
+&lt;p&gt;leftView, rightViewが非対応だった。&lt;/p&gt;
+&lt;p&gt;マップのクリックイベントも、annotationのクリックイベントもおかしい。&lt;/p&gt;
+&lt;p&gt;annotationのタイトルだけでイベントが発生する。&lt;/p&gt;
+&lt;p&gt;テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある&lt;/p&gt;
+&lt;p&gt;バグ多い&lt;/p&gt;
+&lt;p&gt;APIリファレンスはうそつき&lt;/p&gt;</description></item><item><title>僕とTitanium Developerの3日間戦争 – 導入まで</title><link>https://blog.tyage.net/archive/p335.html</link><pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p335.html</guid><description>&lt;p&gt;とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p&gt;
+&lt;p&gt;Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br /&gt;
+普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p&gt;
+&lt;h2&gt;初めに&lt;/h2&gt;
+&lt;p&gt;環境はWindows XP SP3です。&lt;br /&gt;
+Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p&gt;
+&lt;p&gt;最終的に必要だったことは以下の通りです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+		ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br /&gt;
 		※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。
-	&lt;/li>
-&lt;li>&lt;a href="http://java.sun.com/javase/ja/6/download.html">JDK6&lt;/a>のインストール&lt;/li>
-&lt;li>
-		環境変数PATHにJDKを設定する。&lt;br />
-		例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br />
+	&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://java.sun.com/javase/ja/6/download.html"&gt;JDK6&lt;/a&gt;のインストール&lt;/li&gt;
+&lt;li&gt;
+		環境変数PATHにJDKを設定する。&lt;br /&gt;
+		例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br /&gt;
 		※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください
-	&lt;/li>
-&lt;li>&lt;a href="http://developer.android.com/sdk/index.html">Android SDK&lt;/a>のインストール&lt;/li>
-&lt;li>
-		環境変数PATHにAndroid SDKを設定する。&lt;br />
+	&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://developer.android.com/sdk/index.html"&gt;Android SDK&lt;/a&gt;のインストール&lt;/li&gt;
+&lt;li&gt;
+		環境変数PATHにAndroid SDKを設定する。&lt;br /&gt;
 		例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加
-	&lt;/li>
-&lt;li>&lt;a href="http://www.appcelerator.com/">Titanium Developer1.2.2&lt;/a>をインストール&lt;/li>
-&lt;li>一息ついて再起動する（必要ないかも？）&lt;/li>
-&lt;li>Titanium Developerを実行し、アカウント登録をする&lt;/li>
-&lt;li>Titanium Mobileをダウンロード&lt;/li>
-&lt;li>Android SDK Package ManagerでAPIパッケージをインストール&lt;/l>
-&lt;li>
-		android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br />
-		例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br />
+	&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.appcelerator.com/"&gt;Titanium Developer1.2.2&lt;/a&gt;をインストール&lt;/li&gt;
+&lt;li&gt;一息ついて再起動する（必要ないかも？）&lt;/li&gt;
+&lt;li&gt;Titanium Developerを実行し、アカウント登録をする&lt;/li&gt;
+&lt;li&gt;Titanium Mobileをダウンロード&lt;/li&gt;
+&lt;li&gt;Android SDK Package ManagerでAPIパッケージをインストール&lt;/l&gt;
+&lt;li&gt;
+		android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br /&gt;
+		例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br /&gt;
 		※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要
-	&lt;/li>
-&lt;li>Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li>
-&lt;li>
-		&lt;a href="https://github.com/appcelerator/KitchenSink">KitchenSink1.6.1&lt;/a>をダウンロード&lt;br />
+	&lt;/li&gt;
+&lt;li&gt;Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li&gt;
+&lt;li&gt;
+		&lt;a href="https://github.com/appcelerator/KitchenSink"&gt;KitchenSink1.6.1&lt;/a&gt;をダウンロード&lt;br /&gt;
 		※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。
-	&lt;/li>
-&lt;li>Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li>
-&lt;li>
-		KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br />
-		※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br />
+	&lt;/li&gt;
+&lt;li&gt;Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li&gt;
+&lt;li&gt;
+		KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br /&gt;
+		※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br /&gt;
 		※上手くいかない場合も何度かめげずにLaunchするといいらしい。
-	&lt;/li>
-&lt;li>長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li>
-&lt;li>お疲れさまでした。&lt;/li>
-&lt;/ul>
-&lt;p></description></item><item><title>Skype×Skype</title><link>https://blog.tyage.net/archive/p308.html</link><pubDate>Sun, 27 Mar 2011 11:59:46 +0000</pubDate><guid>https://blog.tyage.net/archive/p308.html</guid><description>スカイプ友達募集掲示板「Skype × Skype」（スカイプスカイプ）って言うのを丸一日かけて作りました。
-見ての通り、出会い系の掲示板です。
-スカイプちゃんねるがメンテ中となり、Skype用の掲示板がなくなったので、似たのを作ればアクセスが稼げる！　と聞いたので。
-僕はいつも通りコーディング全般をし、デザインは提案者にしてもらいました。
-ちなみにサーバーはこのブログにも使われてるサーバーです。
-あとで調べて分かったんですが、やはり競合が多いです。
-アクセス稼ぐには宣伝が必要ですね。
-ちなみにスカイプちゃんねるは、絶賛売却中です。
-たぶんあと4日で復活するので、それまでしかアクセス稼げないでしょうね。
-広告をクリックしてもらうと僕の買い食い代に変わります。
-僕を太らせたい方は是非。</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
-まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
-しようとするが、herokuコマンドが見つからない状態にあったので、
-ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow
-の通りにしてみたところうまくいった。
-gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。
-extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
-[雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
-この二つを参考に、
-sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>サッカーアジア杯</title><link>https://blog.tyage.net/archive/p250.html</link><pubDate>Sat, 29 Jan 2011 18:46:10 +0000</pubDate><guid>https://blog.tyage.net/archive/p250.html</guid><description>オーストラリアを制して日本が優勝しましたね！
-あまりの興奮に寝られないでいる学生さんも多いのではないでしょうか！？
-そんな起きていても何もすることがない・・・そんな学生さんのために、本日公開されたツールを紹介したいと思います！
-その名も赤シート++！
-このブログを見てる方ならどこかで聞いた名前だと思いますがどうでしょうか？</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/archive/p243.html</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p243.html</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
-こんな感じに
-この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
-実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
-どうしても使いたい。
-代わりになるものがあればそれでいいけど。。
-あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/archive/p143.html</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/archive/p143.html</guid><description>赤シート2.0
-試験前だが、ふと思い立って作った。
-自分はPCがあると勉強ができない。
-どうしても電源を入れる癖がある。
-しかしSmart.fmは嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。
-とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。
-しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。
-そこで、自分に開発をしているのだと暗示をかけながら勉強をすればいいのではないかと思いついた。
-どのようなサービスがいいか考えたところ、優秀な同級生や妹を見ていると、ノートを赤いペンで書いて、上から赤シートをかぶせる勉強法を取っている人も多いことに気がついた。
-その方法を真似して、PC上でやってみようと考えたが、そのようなサービスでしっくりくるものがなかったため、できるだけ簡単にできるようなのを作ってみた。
-その結果できたのが、赤シート2.0である。
-いろいろとダサイが、俺得サービスなので問題ない。
-久々にcakePHPを使わないサービスを作ったので、3時間もかかった。
-PDOにも初挑戦してみた。
-使い方は、テキストの隠したい部分を「?」で囲み、それを投稿するだけである。
-隠した部分は選択して反転すれば見れるようになるので、問題ないであろう。
-（クリックすると見れるようになるようにしようかな。）
-サンプルとして、地理のプリントの写しを挙げておく。
-ほかにも、英文の穴埋めなどにも使うなど、いろいろな使い方があると思う。
-土壌まとめ[地理]
-熱帯まとめ[地理]</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.net/archive/p140.html</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.net/archive/p140.html</guid><description>boku2Dを開発中。
-サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。
-box2Dには足元にも及ばない、俺得ライブラリ。
-以前にも同じようなエンジンを作って、スーパー正男っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。
-HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。
-基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。
-一から作り直したので仕様も、前よりはすっきりしたはず。
-ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。
-Thanks to その１　誰もがやりたいパーティクルの衝突
-ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。
-（ここでも確認可能）
-これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。
-傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。
-今後 とりあえず衝突判定をもっと正確にできるようにしようと考え中。
-本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。
-JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。
-もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。
-あくまでこれは俺得ライブラリ。</description></item><item><title>もっとTwilに力を！！</title><link>https://blog.tyage.net/archive/p117.html</link><pubDate>Sat, 13 Nov 2010 09:08:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p117.html</guid><description>&lt;p>ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。&lt;/p>
-&lt;p>&lt;a href="http://tyage.sakura.ne.jp/twil.php">もっとTwilに力を！！ &amp;#8211; ケータイ only&lt;/a>&lt;br />
-※auのsh001でのみ確認&lt;/p>
-&lt;p>以前に記事を書いていたのだけども、それは消えてしまったので、再postしてみます。&lt;br />
-（googleのキャッシュも消えてる）&lt;br /></description></item><item><title>Bottom Coder.next</title><link>https://blog.tyage.net/archive/p110.html</link><pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate><guid>https://blog.tyage.net/archive/p110.html</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
-&lt;p>MA6に応募したよ！いえーい！&lt;/p>
-&lt;p>&lt;a href="http://ma6works.mashupaward.jp/bottomcoder/">#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a>&lt;/p>
-&lt;p>小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&amp;#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。&lt;/p>
-&lt;p>しくぁーし！&lt;br />
-こんなことでへこたれる俺ではぬぁーい！&lt;/p>
-&lt;p>とりあえずBottom Coderをまともに使えるものにしようとしました。&lt;br />
-自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！&lt;/p>
-&lt;p>まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。&lt;/p>
-&lt;p></description></item><item><title>Bottom Coder++</title><link>https://blog.tyage.net/archive/p95.html</link><pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate><guid>https://blog.tyage.net/archive/p95.html</guid><description>&lt;p>今日はBottomCoderのアップデートも行いました。&lt;/p>
-&lt;p>&lt;a href="http://tyage.sakura.ne.jp/bottom/">Bottom Coder Home&lt;/a>&lt;/p>
-&lt;p>MA6に何か提出しようと思い、APIを探していたところ、子飼弾さんのLLEvalがBottom Coderに使えそうだったので早速オンラインテスト機能として採用してみました。&lt;br />
-&lt;a href="http://ma6api.mashupaward.jp/entry/71601/">小飼弾（LLEval） | 提供API一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a>&lt;/p>
-&lt;h2>BottomCoderとは：&lt;/h2>
-&lt;p>世界的なプログラミングコンテストであるTop CoderのWeb版みたいなもんです。&lt;/p>
-&lt;p>@asi1024　から意見をもらって作ってみました。&lt;/p>
-&lt;p>今のところチャットと、問題を解くことしかできません。&lt;/p>
-&lt;p>今回は問題を解くに当たって、自前の環境を用意せずとも、オンラインで自分のコードをテストできるようにしました。&lt;br />
-この処理に、先ほど言ったLLEvalを採用しています。&lt;br />
-クロスオリジンXHRを使っているので、少しブラウザが制限されますが、プログラマならきっと最新のブラウザを使っているでしょうし、そこは問題なしとします。&lt;/p>
-&lt;p>また、システムテストもLLEvalを使って実行してもらい、答えと一致しているか判別しています。&lt;/p>
-&lt;p></description></item><item><title>開発中 – Google Maps王に、俺はなる！</title><link>https://blog.tyage.net/archive/p78.html</link><pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p78.html</guid><description>&lt;p>名前は特に意味なし。&lt;br />
-TOWNをまた新しく作り直してます。&lt;/p>
-&lt;p>Google MapsのV3が使いやすくなってたのでGoogle Mapsを使うことにしました。&lt;br />
-内容は以前のものをたいして変わらないと思います。&lt;br />
-作り直すごとに機能とか減ってると思うけど気のせい。&lt;/p>
-&lt;p>はじめ：&lt;a href="http://w3.oroti.net/~tyage/town/town_maker.cgi">近畿地方　―　ABCオロチ ver&lt;/a>&lt;br />
-二番目：&lt;a href="http://tyage.sakura.ne.jp/game/town/">KINKI in PHP（仮名） RC（Ver 1.0）&lt;/a>&lt;br />
-三番目：&lt;a href="http://tyage.sakura.ne.jp/town/users/login">退化地方&lt;/a>&lt;/p>
-&lt;p>住民さんは「またかよっ！」って思うかもしれないですけど、これがたぶん最後なので。。。&lt;br />
-まあ、またRoRで作り直そうかなとか考えちゃってますけど。&lt;/p>
-&lt;p></description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.net/archive/p64.html</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.net/archive/p64.html</guid><description>暇なのでひなったーにな～れ &amp;#8211; Hatena::Letを作った。
-サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。
-ひなったーにな～れ
-*&amp;#8220;･*。
-｜　`*｡
-｡∩　*
-+ (･ω･`)*+ﾟ
-*｡ ヽ　つ*ﾟ*
-ﾞ･+｡*･ﾟ⊃ +ﾟ
-☆　∪~ ｡*ﾟ
-ﾞ･+｡*･ﾟ
-例 Face Detector &amp;#8211; lab.gkbr.me
-before
-after
-補足 顔認識が注目されてるらしくて、今年の二月に既に顔認識をJSで実装してるぜってことでひなったーが人気を博してるらい。
-JavaScript+canvasで顔認識 &amp;#8211; 開発な日々の被ブクマ数はついに100を超えた。
-ここはひなったーLOVEな俺の出番だ！ってことで需要もないのに作って遊んだ。
-ひなったーのコードをコピペしたらめちゃ簡単。
-コードはすぐに書けたので、あとはひなったーの顔写真をいじいじしてました。
-横顔よりも正面の顔が欲しいなぁ。
-彼は今オーストラリアにいるから堂々とやってるんだけど、また勝手に顔写真使ったから怒られるかなあ。怒られたい。
-こちらもよろしく
-Love HINATA♥ &amp;#8211; Hatena::Let</description></item><item><title>ブログ記事が消滅しました</title><link>https://blog.tyage.net/archive/p7.html</link><pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p7.html</guid><description>&lt;p>ブログどころか、サイトで使っているDB内のテーブルが&lt;strong>全部&lt;/strong>空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p>
-&lt;p>事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /></description></item></channel></rss>
+	&lt;/li&gt;
+&lt;li&gt;長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li&gt;
+&lt;li&gt;お疲れさまでした。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;</description></item><item><title>Skype×Skype</title><link>https://blog.tyage.net/archive/p308.html</link><pubDate>Sun, 27 Mar 2011 11:59:46 +0000</pubDate><guid>https://blog.tyage.net/archive/p308.html</guid><description>&lt;p&gt;&lt;a href="http://skype-skype.com/"&gt;スカイプ友達募集掲示板「Skype × Skype」（スカイプスカイプ）&lt;/a&gt;って言うのを丸一日かけて作りました。&lt;/p&gt;
+&lt;p&gt;見ての通り、出会い系の掲示板です。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.skype-ch.com/"&gt;スカイプちゃんねる&lt;/a&gt;がメンテ中となり、Skype用の掲示板がなくなったので、似たのを作ればアクセスが稼げる！　と聞いたので。&lt;/p&gt;
+&lt;p&gt;僕はいつも通りコーディング全般をし、デザインは提案者にしてもらいました。&lt;/p&gt;
+&lt;p&gt;ちなみにサーバーはこのブログにも使われてるサーバーです。&lt;/p&gt;
+&lt;p&gt;あとで調べて分かったんですが、やはり競合が多いです。&lt;/p&gt;
+&lt;p&gt;アクセス稼ぐには宣伝が必要ですね。&lt;/p&gt;
+&lt;p&gt;ちなみにスカイプちゃんねるは、&lt;a href="http://page2.auctions.yahoo.co.jp/jp/auction/b121640707"&gt;絶賛売却中&lt;/a&gt;です。&lt;/p&gt;
+&lt;p&gt;たぶんあと4日で復活するので、それまでしかアクセス稼げないでしょうね。&lt;/p&gt;
+&lt;p&gt;広告をクリックしてもらうと僕の買い食い代に変わります。&lt;/p&gt;
+&lt;p&gt;僕を太らせたい方は是非。&lt;/p&gt;</description></item><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;
+&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; rubygems
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; ruby
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;git&lt;/span&gt;
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; rails
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; heroku
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;
+&lt;p&gt;しようとするが、herokuコマンドが見つからない状態にあったので、&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/909673/gems-and-ubuntu-9-04"&gt;ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;の通りにしてみたところうまくいった。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;gem environment
+&lt;span style="color: #7a0874; font-weight: bold;"&gt;export&lt;/span&gt; &lt;span style="color: #007800;"&gt;PATH&lt;/span&gt;=&lt;span style="color: #007800;"&gt;$PATH&lt;/span&gt;:&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;var&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;lib&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;gems&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;&lt;span style="color: #000000;"&gt;1.8&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。&lt;/p&gt;</description></item><item><title>サッカーアジア杯</title><link>https://blog.tyage.net/archive/p250.html</link><pubDate>Sat, 29 Jan 2011 18:46:10 +0000</pubDate><guid>https://blog.tyage.net/archive/p250.html</guid><description>&lt;p&gt;オーストラリアを制して日本が優勝しましたね！&lt;/p&gt;
+&lt;p&gt;あまりの興奮に寝られないでいる学生さんも多いのではないでしょうか！？&lt;/p&gt;
+&lt;p&gt;そんな起きていても何もすることがない・・・そんな学生さんのために、本日公開されたツールを紹介したいと思います！&lt;/p&gt;
+&lt;p&gt;その名も&lt;a href="http://tyage.sakura.ne.jp/akasheet/"&gt;赤シート++&lt;/a&gt;！&lt;/p&gt;
+&lt;p&gt;このブログを見てる方ならどこかで聞いた名前だと思いますがどうでしょうか？&lt;/p&gt;
+&lt;p&gt;そう、以前ブログでも&lt;a href='http://tyage.sakura.ne.jp/blog/?p=143'いきさつ等&lt;/a&gt;を紹介した、&lt;a href="http://tyage.sakura.ne.jp/dev/study/"&gt;赤シート2.0&lt;/a&gt;の改良版なのです！&lt;/p&gt;
+&lt;p&gt;改良された点はあまりにも多いためこのテンションでしゃべりきることができませんが、開発時間で言うと赤シート2.0が3時間なのに対し、赤シート++は20時間ほどかかっております！&lt;/p&gt;
+&lt;p&gt;もうこれだけでもすごいですね！&lt;/p&gt;
+&lt;p&gt;20時間というと、時給800円のアルバイトで1万6000円分の価値があります！&lt;/p&gt;
+&lt;p&gt;これがタダで使えるっていうんだから、使わない理由なんてあるわけないですね！&lt;/p&gt;
+&lt;p&gt;「今夜は眠れないぜ！」という学生さんは是非ともこれを使って、暗記しまくってもらえるといいと思います！&lt;/p&gt;
+&lt;p&gt;例えば日本史の勉強がしたい学生さんは、&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/akasheet/sheets/index/tags:%E6%97%A5%E6%9C%AC%E5%8F%B2"&gt;タグ検索 &amp;#8211; 日本史 &amp;#8211; 赤シート++&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ここにあるような、「日本史タグ」ついたシートを使って勉強するといいと思います！いえ！勉強しましょう！&lt;/p&gt;
+&lt;p&gt;僕はあいにく化学の課題が残っており、暗記なんてやってる状態ではないので、先におやすみさせていただきます。&lt;/p&gt;
+&lt;p&gt;今日はぐっすり眠れそうですね。&lt;/p&gt;
+&lt;p&gt;※そのうち赤シート++の解説をします&lt;/p&gt;</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/archive/p243.html</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p243.html</guid><description>&lt;p&gt;たとえばマーカーのアイコン画像の下に文字を表示したい。&lt;/p&gt;
+&lt;p&gt;こんな感じに&lt;br /&gt;
+&lt;a href="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png"&gt;&lt;img data-attachment-id="244" data-permalink="https://blog.tyage.net/?attachment_id=244" data-orig-file="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" data-orig-size="370,330" data-comments-opened="1" data-image-meta="{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}" data-image-title="maps" data-image-description="" data-medium-file="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" data-large-file="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" src="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" alt="" title="maps" width="370" height="330" class="alignnone size-full wp-image-244" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。&lt;/p&gt;
+&lt;p&gt;実際そうすれば問題はないんだけど、そうなると&lt;a href='http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/docs/reference.html'&gt;MarkerClustererライブラリ&lt;/a&gt;が使えない。&lt;/p&gt;
+&lt;p&gt;どうしても使いたい。&lt;br /&gt;
+代わりになるものがあればそれでいいけど。。&lt;/p&gt;
+&lt;p&gt;あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？&lt;/p&gt;</description></item><item><title>赤シート2.0</title><link>https://blog.tyage.net/archive/p143.html</link><pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate><guid>https://blog.tyage.net/archive/p143.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/dev/study/"&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;
+&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;
+どうしても電源を入れる癖がある。&lt;br /&gt;
+しかし&lt;a href="http://smart.fm/home"&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;
+&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;
+しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;
+&lt;p&gt;そこで、自分に開発をしているのだと暗示をかけながら勉強をすればいいのではないかと思いついた。&lt;br /&gt;
+どのようなサービスがいいか考えたところ、優秀な同級生や妹を見ていると、ノートを赤いペンで書いて、上から赤シートをかぶせる勉強法を取っている人も多いことに気がついた。&lt;br /&gt;
+その方法を真似して、PC上でやってみようと考えたが、そのようなサービスでしっくりくるものがなかったため、できるだけ簡単にできるようなのを作ってみた。&lt;br /&gt;
+その結果できたのが、赤シート2.0である。&lt;br /&gt;
+いろいろとダサイが、俺得サービスなので問題ない。&lt;/p&gt;
+&lt;p&gt;久々にcakePHPを使わないサービスを作ったので、3時間もかかった。&lt;br /&gt;
+PDOにも初挑戦してみた。&lt;/p&gt;
+&lt;p&gt;使い方は、テキストの隠したい部分を「?」で囲み、それを投稿するだけである。&lt;br /&gt;
+隠した部分は選択して反転すれば見れるようになるので、問題ないであろう。&lt;br /&gt;
+（クリックすると見れるようになるようにしようかな。）&lt;/p&gt;
+&lt;p&gt;サンプルとして、地理のプリントの写しを挙げておく。&lt;br /&gt;
+ほかにも、英文の穴埋めなどにも使うなど、いろいろな使い方があると思う。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/dev/study/view?id=57"&gt;土壌まとめ[地理]&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://tyage.sakura.ne.jp/dev/study/view?id=57"&gt;熱帯まとめ[地理]&lt;/a&gt;&lt;/p&gt;</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.net/archive/p140.html</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.net/archive/p140.html</guid><description>&lt;p&gt;&lt;a href='http://tyage.sakura.ne.jp/dev/boku2D/'&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;
+サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;
+box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;
+&lt;p&gt;以前にも同じようなエンジンを作って、&lt;a href='http://tyage.sakura.ne.jp/dev/AL/sample1.php'&gt;スーパー正男&lt;/a&gt;っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。&lt;/p&gt;
+&lt;p&gt;HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。&lt;br /&gt;
+基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。&lt;br /&gt;
+一から作り直したので仕様も、前よりはすっきりしたはず。&lt;/p&gt;
+&lt;p&gt;ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。&lt;br /&gt;
+Thanks to &lt;a href="http://marupeke296.com/COL_MV_No1_HowToCalcVelocity.html"&gt;その１　誰もがやりたいパーティクルの衝突&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。&lt;br /&gt;
+（&lt;a href='http://tyage.sakura.ne.jp/dev/boku2D/'&gt;ここ&lt;/a&gt;でも確認可能）&lt;br /&gt;
+これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。&lt;/p&gt;
+&lt;p&gt;傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。&lt;/p&gt;
+&lt;h3&gt;今後&lt;/h3&gt;
+&lt;p&gt;とりあえず衝突判定をもっと正確にできるようにしようと考え中。&lt;br /&gt;
+本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。&lt;/p&gt;
+&lt;p&gt;JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。&lt;br /&gt;
+もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。&lt;/p&gt;
+&lt;p&gt;あくまでこれは俺得ライブラリ。&lt;/p&gt;</description></item><item><title>もっとTwilに力を！！</title><link>https://blog.tyage.net/archive/p117.html</link><pubDate>Sat, 13 Nov 2010 09:08:51 +0000</pubDate><guid>https://blog.tyage.net/archive/p117.html</guid><description>&lt;p&gt;ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/twil.php"&gt;もっとTwilに力を！！ &amp;#8211; ケータイ only&lt;/a&gt;&lt;br /&gt;
+※auのsh001でのみ確認&lt;/p&gt;
+&lt;p&gt;以前に記事を書いていたのだけども、それは消えてしまったので、再postしてみます。&lt;br /&gt;
+（googleのキャッシュも消えてる）&lt;br /&gt;</description></item><item><title>Bottom Coder.next</title><link>https://blog.tyage.net/archive/p110.html</link><pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate><guid>https://blog.tyage.net/archive/p110.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/bottom/"&gt;Bottom Coder Home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MA6に応募したよ！いえーい！&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ma6works.mashupaward.jp/bottomcoder/"&gt;#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&amp;#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。&lt;/p&gt;
+&lt;p&gt;しくぁーし！&lt;br /&gt;
+こんなことでへこたれる俺ではぬぁーい！&lt;/p&gt;
+&lt;p&gt;とりあえずBottom Coderをまともに使えるものにしようとしました。&lt;br /&gt;
+自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！&lt;/p&gt;
+&lt;p&gt;まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。&lt;/p&gt;
+&lt;p&gt;</description></item><item><title>Bottom Coder++</title><link>https://blog.tyage.net/archive/p95.html</link><pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate><guid>https://blog.tyage.net/archive/p95.html</guid><description>&lt;p&gt;今日はBottomCoderのアップデートも行いました。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/bottom/"&gt;Bottom Coder Home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MA6に何か提出しようと思い、APIを探していたところ、子飼弾さんのLLEvalがBottom Coderに使えそうだったので早速オンラインテスト機能として採用してみました。&lt;br /&gt;
+&lt;a href="http://ma6api.mashupaward.jp/entry/71601/"&gt;小飼弾（LLEval） | 提供API一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;BottomCoderとは：&lt;/h2&gt;
+&lt;p&gt;世界的なプログラミングコンテストであるTop CoderのWeb版みたいなもんです。&lt;/p&gt;
+&lt;p&gt;@asi1024　から意見をもらって作ってみました。&lt;/p&gt;
+&lt;p&gt;今のところチャットと、問題を解くことしかできません。&lt;/p&gt;
+&lt;p&gt;今回は問題を解くに当たって、自前の環境を用意せずとも、オンラインで自分のコードをテストできるようにしました。&lt;br /&gt;
+この処理に、先ほど言ったLLEvalを採用しています。&lt;br /&gt;
+クロスオリジンXHRを使っているので、少しブラウザが制限されますが、プログラマならきっと最新のブラウザを使っているでしょうし、そこは問題なしとします。&lt;/p&gt;
+&lt;p&gt;また、システムテストもLLEvalを使って実行してもらい、答えと一致しているか判別しています。&lt;/p&gt;
+&lt;p&gt;</description></item><item><title>開発中 – Google Maps王に、俺はなる！</title><link>https://blog.tyage.net/archive/p78.html</link><pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p78.html</guid><description>&lt;p&gt;名前は特に意味なし。&lt;br /&gt;
+TOWNをまた新しく作り直してます。&lt;/p&gt;
+&lt;p&gt;Google MapsのV3が使いやすくなってたのでGoogle Mapsを使うことにしました。&lt;br /&gt;
+内容は以前のものをたいして変わらないと思います。&lt;br /&gt;
+作り直すごとに機能とか減ってると思うけど気のせい。&lt;/p&gt;
+&lt;p&gt;はじめ：&lt;a href="http://w3.oroti.net/~tyage/town/town_maker.cgi"&gt;近畿地方　―　ABCオロチ ver&lt;/a&gt;&lt;br /&gt;
+二番目：&lt;a href="http://tyage.sakura.ne.jp/game/town/"&gt;KINKI in PHP（仮名） RC（Ver 1.0）&lt;/a&gt;&lt;br /&gt;
+三番目：&lt;a href="http://tyage.sakura.ne.jp/town/users/login"&gt;退化地方&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;住民さんは「またかよっ！」って思うかもしれないですけど、これがたぶん最後なので。。。&lt;br /&gt;
+まあ、またRoRで作り直そうかなとか考えちゃってますけど。&lt;/p&gt;
+&lt;p&gt;</description></item><item><title>ひなったーにな～れ</title><link>https://blog.tyage.net/archive/p64.html</link><pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate><guid>https://blog.tyage.net/archive/p64.html</guid><description>&lt;p&gt;暇なので&lt;a href="http://let.hatelabo.jp/tyage/let/gYC-x4Lj3tznOw"&gt;ひなったーにな～れ &amp;#8211; Hatena::Let&lt;/a&gt;を作った。&lt;br /&gt;
+サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。&lt;/p&gt;
+&lt;p&gt;ひなったーにな～れ&lt;/p&gt;
+&lt;p&gt;　　　*&amp;#8220;･*。&lt;br /&gt;
+　　 ｜　　 `*｡&lt;br /&gt;
+　　｡∩　　　 *&lt;br /&gt;
+　 + (･ω･`)*+ﾟ&lt;br /&gt;
+　 *｡ ヽ　つ*ﾟ*&lt;br /&gt;
+　　ﾞ･+｡*･ﾟ⊃ +ﾟ&lt;br /&gt;
+　　☆　∪~ ｡*ﾟ&lt;br /&gt;
+　　 ﾞ･+｡*･ﾟ&lt;/p&gt;
+&lt;h2&gt;例&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://lab.gkbr.me/facedetect/"&gt;Face Detector &amp;#8211; lab.gkbr.me&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;before&lt;br /&gt;
+&lt;img src="http://pckles.com/tyage/bf3c5f.png"&gt;&lt;/p&gt;
+&lt;p&gt;after&lt;br /&gt;
+&lt;img src="http://pckles.com/tyage/3f8198.png"&gt;&lt;/p&gt;
+&lt;h2&gt;補足&lt;/h2&gt;
+&lt;p&gt;顔認識が注目されてるらしくて、今年の二月に既に顔認識をJSで実装してるぜってことでひなったーが人気を博してるらい。&lt;br /&gt;
+&lt;a href="http://hinata.in/blog/20100227231617.html"&gt;JavaScript+canvasで顔認識 &amp;#8211; 開発な日々&lt;/a&gt;の被ブクマ数はついに100を超えた。&lt;br /&gt;
+ここはひなったーLOVEな俺の出番だ！ってことで需要もないのに作って遊んだ。&lt;/p&gt;
+&lt;p&gt;ひなったーのコードをコピペしたらめちゃ簡単。&lt;br /&gt;
+コードはすぐに書けたので、あとはひなったーの顔写真をいじいじしてました。&lt;br /&gt;
+横顔よりも正面の顔が欲しいなぁ。&lt;/p&gt;
+&lt;p&gt;彼は今オーストラリアにいるから堂々とやってるんだけど、また勝手に顔写真使ったから怒られるかなあ。怒られたい。&lt;/p&gt;
+&lt;p&gt;こちらもよろしく&lt;br /&gt;
+&lt;a href="http://let.hatelabo.jp/tyage/let/gYC-xsb396GzHg"&gt;Love HINATA♥ &amp;#8211; Hatena::Let&lt;/a&gt;&lt;/p&gt;</description></item><item><title>ブログ記事が消滅しました</title><link>https://blog.tyage.net/archive/p7.html</link><pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p7.html</guid><description>&lt;p&gt;ブログどころか、サイトで使っているDB内のテーブルが&lt;strong&gt;全部&lt;/strong&gt;空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p&gt;
+&lt;p&gt;事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /&gt;</description></item></channel></rss>

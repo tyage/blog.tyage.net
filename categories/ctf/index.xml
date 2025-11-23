@@ -1,92 +1,149 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on blog.tyage.net</title><link>https://blog.tyage.net/categories/ctf/</link><description>Recent content in CTF on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 Jun 2018 15:11:37 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/ctf/index.xml" rel="self" type="application/rss+xml"/><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/archive/p1187.html</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/archive/p1187.html</guid><description>&lt;h2>なに&lt;/h2>
-&lt;p>CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。&lt;br />
-以下のような条件が必要なので現実に使える場面は普通はなさそう。&lt;br />
-CTFでは便利かもしれない。&lt;/p>
-&lt;ul>
-&lt;li>Webページで同一オリジンのページをiframeで読み込める&lt;/li>
-&lt;li>WebページのヘッダにCSPが設定されていない&lt;/li>
-&lt;li>Webページに指定したHTMLを埋め込める(XSSができる)&lt;/li>
-&lt;li>ただし、WebページにJavaScriptによるXSS防御機構がある&lt;/li>
-&lt;/ul>
-&lt;p>このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p></description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/archive/p1138.html</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/archive/p1138.html</guid><description>SECCON 2017国際決勝に参加した。
-5種類のKoH形式の問題と、いくつかのJeopardy形式の問題が出題された。
-問題参(KoH)の問題文:
-The Raspberry Pi distributed to each team contains the Bingo-Service program
-Please log-in your Raspberry Pi ( ssh: 192.168.4.254, user/pass = pi/kenjiinwonderland )
-Please set up Bingo-Service on 192.168.4.254 : 80
-If you click &amp;#8220;Measure&amp;#8221; button above, the system will accesses your Bingo-Service in a few minutes later
-&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/archive/p1043.html</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/archive/p1043.html</guid><description>Overview Problem page:
-http://css.chal.ctf.westerns.tokyo/
-Provided source code:
-proxy.py
-sanitizer.py
-There are 4 pages: /, /refresh, /chrowler, /flag.
-When we access /flag, it responses only local IP is allowed. (your IP: 110.3.193.114).
-So, we should use /chrowler (crawler using Chrome) to get the content in /flag.
-Find XSS Next, we search XSS and found /refresh has it. (We found the vulnerability when browsing with w3m)
-In this page, user will be redirected to the page where he or she is (which represented by Referer header).</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/archive/p1020.html</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p1020.html</guid><description>Overview Problem page:
-https://geokittiesv2.web.ctfcompetition.com/
-Copy of source code:
-https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127
-It receives comment, then admin checks it and clicks a link.
-The comment is validated by using htmlparser2.
-Allowed tags are: p, a, b, img, br, i
-Invalid attributes: on(.*)= and href=javascript:...
-Solution What we should do is find the differences in parsing between Google Chrome and htmlparser2.
-After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/archive/p990.html</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/archive/p990.html</guid><description>Overview Problem page:
-https://sanitizer.web.ctfcompetition.com
-Copy of source code:
-https://gist.github.com/tyage/6eabacf6001bd068287842b1052132e4
-The application sanitize input and render it.
-Sanitizing method The method of sanitizing is follow:
-1. Remove the words that match with /meta|srcdoc|utf-16be/i from input.
-2. Register a ServiceWorker then, render input in iframe
-3. In iframe, it load &amp;lt;script src=sanitize&amp;gt; which executes the following code:
-onload = _=&amp;gt; setTimeout&amp;#40;_=&amp;gt; parent.postMessage&amp;#40;document.body.innerHTML, location.origin&amp;#41;, 1000&amp;#41;; remove = node =&amp;gt; &amp;#40;node == document&amp;#41; ? document.</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/archive/p829.html</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p829.html</guid><description>This challenge needs only XSS but it is interesting to me 🙂
-These guys have ripped off our designs and using them in their web pages builder! We’d Haxx them, don’t worry we’ll give you decent points for it. http://188.40.18.76/ By using the form, we could generate a page.(such as http://188.40.18.76/output/19c94d778563b117e18e3442e887989aea14277d/filename)
-It htmlspecialchars the &amp;#8220;title&amp;#8221; and &amp;#8220;file content&amp;#8221; but not &amp;#8220;style&amp;#8221; or &amp;#8220;filename&amp;#8221;.
-The maximum size of &amp;#8220;style&amp;#8221; is 8bytes and that of &amp;#8220;filename&amp;#8221; is 65bytes.</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/archive/p802.html</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p802.html</guid><description>チームbinjaのパーカー運搬係として参加していました</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/archive/p730.html</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/archive/p730.html</guid><description>問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。
-一応、webを何問かとprogramming2問ほどを解きました。
-うちを含め多くのチームがweb問題を全完しており、今回のweb問題は易しかったように感じます。
-開始直後は、8-puzzleのprogrammingを解いて7位くらいだったけど、最終的には79位となった。
-2日目・3日目は学校をサボって灘高にいて、チームで問題を解いてたらだんだん正気が保てなくなってきた。
-「真の会社（DEFCON）」と「今勤めてる会社」どっち優先させるかとても悩ましい
-&amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
-ずーっとPCに計算させてる間歌ってる　http://t.co/LvCgHDutg7
-&amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
-HEYYEYAAEYAAAEYAEYAAが意識遠くなっても頭の中から聞こえるようになってきた
-&amp;mdash; ッぴょㄘゃ (@tyage) June 16, 2013
-DEFCONが僕達に残したもの</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/archive/p719.html</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/archive/p719.html</guid><description>Those aliens consider themselves as the most smart creatures in the world. Pff. They shouldn't even have tried to defeat mankind having such stupid stuff in their heads! As for you, why wouldn't you hack them? They'll most likely surrender then. By the way, it is known that they update some data every 10-20 seconds, but unfortunately our equipment can't intercept the data itself. http://superhosting.tasks.ufoctf.ru:8000/ 自分のウェブページが作れ、バックアップと復元ができるシステムになっている。
-バックアップしてみると、[username]_[md5(username)][md5(zipfile)].zipという名前でzipファイルがダウンロードでき、それをアップロードすることで復元ができるようになっている。
-zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。
-&amp;lt;?xml version=&amp;quot;1.</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/archive/p697.html</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/archive/p697.html</guid><description>DIMVA CTFに参加していた。
-私のチーム（Epsilon Delta）は850ポイントで17位だった。
-Web 100 画像アップローダーが用意されており、どうにかこうにかする問題。
-はじめにいくつか画像が用意されており、パスワードを入力しないと閲覧できない画像があったため、そのパスワードを求める問題と推察される。
-各画像にはタグがついており、同じタグを持つ写真を一覧で見れる。
-しかし、シングルクオートの入ったタグの場合は一覧ページでエラーが発生していたため、SQLインジェクションがあるとわかった。
-画像をアップロードした際、画像のコメントがタグになって登録されるので、そこにSQLインジェクションを埋め込む。
-' union all select password from pictures-- その後、一覧ページを閲覧することでパスワードが入手でき、c0ffeeからはじまるパスワードがFlagであると判明した。
-c0ffee29e34ad42d38cbe236913c911a パスワード付きの画像はこんな感じだった。
-素直でわかりやすい問題だったように思う。
-Web 200 普通にアクセスすると
-10 'user' and/or 'password' parameters missing, please provide an xml parameter of the following form to login: &amp;lt;login&amp;gt;&amp;lt;user&amp;gt;(base64-encoded username)&amp;lt;/user&amp;gt;&amp;lt;password&amp;gt;(base64-encoded password)&amp;lt;/password&amp;gt;&amp;lt;/login&amp;gt; ってのが返って来る。
-一日近く、urlにログイン用xmlを足したり、ファイルとして送信したり、送信するパケットのいろんなところに埋め込んだりして悩んだ。。。
-コンテスト終了直前になって、/?xml=&amp;#8230;とすればログインできることに気づく。
-xml parameterってのが素直にxmlって名前のリクエストパラメータだったのに、そこに気づくまでに一日かかって英語の壁を感じる。
-これがわかればあとは解くだけ。
-とりあえず色々試していると、以下のレスポンスが返って来たため、XPathへのインジェクションだとわかった。
-Error during login: Query: //User[UserName/text()='' and Password/text()='' '... ........................................................^^^ Invalid query somewhere around here (I think) 「&amp;#8217; or &amp;#8216;1&amp;#8217;=&amp;#8217;1」とかしてログインに成功すると、htmlのコメントで「users.</description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/archive/p689.html</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/archive/p689.html</guid><description>&lt;h3>CTF&lt;/h3>
-&lt;p>えと、ブログを更新停止している間に、Epsilon DeltaとしていくつかCTFに参加していました。&lt;/p>
-&lt;ul>
-&lt;li>Codegate YUT Preliminary 2013&lt;/li>
-&lt;li>Nuit du Hack CTF Quals 2013&lt;/li>
-&lt;li>BaltCTF Quals 2013&lt;/li>
-&lt;li>SECUINSIDE CTF Quals 2013&lt;/li>
-&lt;li>Boston Key Party CTF 2013&lt;/li>
-&lt;li>DEF CON CTF Qualifier 2013&lt;/li>
-&lt;li>SIGINT CTF 2013&lt;/li>
-&lt;/ul>
-&lt;p>はじめは海外のCTFの感覚がつかめず、ちゃんと解いたような記憶もなかったのですが、BKPあたりからは少し慣れてきたような気がします。&lt;/p>
-&lt;p>今まで解いてた問題のwrite upを書こうとも思ったのですが、すっかり忘れてしまっているため、一番最近やったSIGINT CTFのwrite upを書くことにします。&lt;/p>
-&lt;p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTF on blog.tyage.net</title><link>https://blog.tyage.net/categories/ctf/</link><description>Recent content in CTF on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 Jun 2018 15:11:37 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/ctf/index.xml" rel="self" type="application/rss+xml"/><item><title>CSP Embedded EnforcementでXSS mitigationをbypassする話</title><link>https://blog.tyage.net/archive/p1187.html</link><pubDate>Tue, 26 Jun 2018 15:11:37 +0000</pubDate><guid>https://blog.tyage.net/archive/p1187.html</guid><description>&lt;h2&gt;なに&lt;/h2&gt;
+&lt;p&gt;CSP Embedded Enforcementを使って、JavaScriptで書かれたXSS mitigationをbypassできるパターンがあるという話。&lt;br /&gt;
+以下のような条件が必要なので現実に使える場面は普通はなさそう。&lt;br /&gt;
+CTFでは便利かもしれない。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Webページで同一オリジンのページをiframeで読み込める&lt;/li&gt;
+&lt;li&gt;WebページのヘッダにCSPが設定されていない&lt;/li&gt;
+&lt;li&gt;Webページに指定したHTMLを埋め込める(XSSができる)&lt;/li&gt;
+&lt;li&gt;ただし、WebページにJavaScriptによるXSS防御機構がある&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;このとき、CSP Embedded Enforcementを使うことで、防御機構を回避して攻撃コードだけを実行することができる。&lt;/p&gt;</description></item><item><title>SECCON 2017 Final International competition – 参 writeup</title><link>https://blog.tyage.net/archive/p1138.html</link><pubDate>Thu, 22 Mar 2018 15:20:40 +0000</pubDate><guid>https://blog.tyage.net/archive/p1138.html</guid><description>&lt;p&gt;SECCON 2017国際決勝に参加した。&lt;/p&gt;
+&lt;p&gt;5種類のKoH形式の問題と、いくつかのJeopardy形式の問題が出題された。&lt;/p&gt;
+&lt;p&gt;問題参(KoH)の問題文:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+The Raspberry Pi distributed to each team contains the Bingo-Service program&lt;br /&gt;
+Please log-in your Raspberry Pi ( ssh: 192.168.4.254, user/pass = pi/kenjiinwonderland )&lt;br /&gt;
+Please set up Bingo-Service on 192.168.4.254 : 80&lt;br /&gt;
+If you click &amp;#8220;Measure&amp;#8221; button above, the system will accesses your Bingo-Service in a few minutes later&lt;br /&gt;
+&amp;#8220;Measure&amp;#8221; button can be clicked once every 7 minutes (Once you click it, you have to wait for 7 minutes)&lt;br /&gt;
+Even if you do not click &amp;#8220;Measure&amp;#8221; button, the system may occasionally access your Bingo-Service&lt;br /&gt;
+Response time of your service is measured&lt;br /&gt;
+The hash of the team with the shortest response time is automatically written to flag.cgi&lt;br /&gt;
+In this challenge, players do not need to write &amp;#8220;Team Hash&amp;#8221; on a regular basis&lt;br /&gt;
+You will get a keyword for an attack point, if &amp;#8220;Response Time&amp;#8221; of your service is less than 20.0&lt;br /&gt;
+checker.py in Raspberry Pi, is different from we used for accessing your service&lt;/p&gt;</description></item><item><title>Tokyo Westerns CTF 2017 – Clock Style Sheet writeup</title><link>https://blog.tyage.net/archive/p1043.html</link><pubDate>Tue, 05 Sep 2017 01:34:28 +0000</pubDate><guid>https://blog.tyage.net/archive/p1043.html</guid><description>&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Problem page:&lt;br /&gt;
+&lt;a href="http://css.chal.ctf.westerns.tokyo/"&gt;http://css.chal.ctf.westerns.tokyo/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Provided source code:&lt;br /&gt;
+&lt;a href="https://twctf2017.azureedge.net/attachments/proxy.py-6cac125d5b78cd89658bacf820c439e9c964bad1feedb8a97e4396fe2bd3434d"&gt;proxy.py&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://twctf2017.azureedge.net/attachments/sanitizer.py-39beede4e84efe18734390619ac0d6a14e978aa90fac7f4bae7b6c6a17d108ff"&gt;sanitizer.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are 4 pages: /, /refresh, /chrowler, /flag.&lt;/p&gt;
+&lt;p&gt;When we access /flag, it responses &lt;code&gt;only local IP is allowed. (your IP: 110.3.193.114)&lt;/code&gt;.&lt;br /&gt;
+So, we should use /chrowler (crawler using Chrome) to get the content in /flag.&lt;/p&gt;
+&lt;h2&gt;Find XSS&lt;/h2&gt;
+&lt;p&gt;Next, we search XSS and found /refresh has it. (We found the vulnerability when browsing with w3m)&lt;br /&gt;
+In this page, user will be redirected to the page where he or she is (which represented by Referer header).&lt;/p&gt;</description></item><item><title>Google CTF 2017 – Geokitties v2 writeup</title><link>https://blog.tyage.net/archive/p1020.html</link><pubDate>Sun, 25 Jun 2017 17:04:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p1020.html</guid><description>&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Problem page:&lt;br /&gt;
+&lt;a href="https://geokittiesv2.web.ctfcompetition.com/"&gt;https://geokittiesv2.web.ctfcompetition.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copy of source code:&lt;br /&gt;
+&lt;a href="https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127"&gt;https://gist.github.com/tyage/cac08c8e17b90b840fb22cb434cff127&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It receives comment, then admin checks it and clicks a link.&lt;/p&gt;
+&lt;p&gt;The comment is validated by using htmlparser2.&lt;/p&gt;
+&lt;p&gt;Allowed tags are: &lt;code&gt;&lt;i&gt;p, a, b, img, br, i&lt;/i&gt;&lt;/code&gt;&lt;br /&gt;
+Invalid attributes: &lt;code&gt;&lt;i&gt;on(.*)=&lt;/i&gt;&lt;/code&gt; and &lt;code&gt;&lt;i&gt;href=javascript:...&lt;/i&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;p&gt;What we should do is find the differences in parsing between Google Chrome and htmlparser2.&lt;/p&gt;
+&lt;p&gt;After some time, I realize that when input is utf-16 string, Chrome parses it as utf-16 string but htmlparser2 does not.&lt;/p&gt;</description></item><item><title>Google CTF 2017 – The X Sanitizer writeup</title><link>https://blog.tyage.net/archive/p990.html</link><pubDate>Sun, 25 Jun 2017 15:57:35 +0000</pubDate><guid>https://blog.tyage.net/archive/p990.html</guid><description>&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Problem page:&lt;br /&gt;
+&lt;a href="https://sanitizer.web.ctfcompetition.com"&gt;https://sanitizer.web.ctfcompetition.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copy of source code:&lt;br /&gt;
+&lt;a href="https://gist.github.com/tyage/6eabacf6001bd068287842b1052132e4"&gt;https://gist.github.com/tyage/6eabacf6001bd068287842b1052132e4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The application sanitize input and render it.&lt;/p&gt;
+&lt;h2&gt;Sanitizing method&lt;/h2&gt;
+&lt;p&gt;The method of sanitizing is follow:&lt;/p&gt;
+&lt;p&gt;1. Remove the words that match with &lt;code&gt;&lt;i&gt;/meta|srcdoc|utf-16be/i&lt;/i&gt;&lt;/code&gt; from input.&lt;br /&gt;
+2. Register a ServiceWorker then, render input in iframe&lt;br /&gt;
+3. In iframe, it load &lt;code&gt;&amp;lt;script src=sanitize&amp;gt;&lt;/code&gt; which executes the following code:&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="javascript" style="font-family:monospace;"&gt;onload &lt;span style="color: #339933;"&gt;=&lt;/span&gt; _&lt;span style="color: #339933;"&gt;=&amp;gt;&lt;/span&gt; setTimeout&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;_&lt;span style="color: #339933;"&gt;=&amp;gt;&lt;/span&gt; parent.&lt;span style="color: #660066;"&gt;postMessage&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;document.&lt;span style="color: #660066;"&gt;body&lt;/span&gt;.&lt;span style="color: #660066;"&gt;innerHTML&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; location.&lt;span style="color: #660066;"&gt;origin&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; &lt;span style="color: #CC0000;"&gt;1000&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+remove &lt;span style="color: #339933;"&gt;=&lt;/span&gt; node &lt;span style="color: #339933;"&gt;=&amp;gt;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;node &lt;span style="color: #339933;"&gt;==&lt;/span&gt; document&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #339933;"&gt;?&lt;/span&gt; document.&lt;span style="color: #660066;"&gt;body&lt;/span&gt;.&lt;span style="color: #660066;"&gt;innerHTML&lt;/span&gt; &lt;span style="color: #339933;"&gt;=&lt;/span&gt; &lt;span style="color: #3366CC;"&gt;''&lt;/span&gt; &lt;span style="color: #339933;"&gt;:&lt;/span&gt; node.&lt;span style="color: #660066;"&gt;parentNode&lt;/span&gt;.&lt;span style="color: #660066;"&gt;removeChild&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;node&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+document.&lt;span style="color: #660066;"&gt;addEventListener&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;securitypolicyviolation&amp;quot;&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; e &lt;span style="color: #339933;"&gt;=&amp;gt;&lt;/span&gt; remove&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;e.&lt;span style="color: #660066;"&gt;target&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+document.&lt;span style="color: #660066;"&gt;write&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;'&amp;lt;meta http-equiv=&amp;quot;Content-Security-Policy&amp;quot; content=&amp;quot;default-src &lt;span style="color: #000099; font-weight: bold;"&gt;\\&lt;/span&gt;'&lt;/span&gt;none\\&lt;span style="color: #3366CC;"&gt;'; script-src *&amp;quot;&amp;gt;&amp;lt;body&amp;gt;'&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;4. The code removes the node which violates CSP.&lt;br /&gt;
+5. To prevent loading the attacker&amp;#8217;s script, ServiceWorker overrides the response of contents as following code:&lt;/p&gt;</description></item><item><title>31C3 CTF – Page Builder writeup</title><link>https://blog.tyage.net/archive/p829.html</link><pubDate>Fri, 02 Jan 2015 00:32:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p829.html</guid><description>&lt;p&gt;This challenge needs only XSS but it is interesting to me 🙂&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+These guys have ripped off our designs and using them in their web pages builder! We’d Haxx them, don’t worry we’ll give you decent points for it. http://188.40.18.76/
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://blog.tyage.net/wp-content/uploads/2015/01/96291d2119ed92471bf6a9a94b458fda.png"&gt;&lt;img data-attachment-id="831" data-permalink="https://blog.tyage.net/?attachment_id=831" data-orig-file="https://blog.tyage.net/wp-content/uploads/2015/01/96291d2119ed92471bf6a9a94b458fda.png" data-orig-size="742,388" data-comments-opened="1" data-image-meta="{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}" data-image-title="スクリーンショット 2015-01-02 8.40.09" data-image-description="" data-medium-file="https://blog.tyage.net/wp-content/uploads/2015/01/96291d2119ed92471bf6a9a94b458fda.png" data-large-file="https://blog.tyage.net/wp-content/uploads/2015/01/96291d2119ed92471bf6a9a94b458fda.png" src="http://blog.tyage.net/wp-content/uploads/2015/01/96291d2119ed92471bf6a9a94b458fda-300x157.png" alt="スクリーンショット 2015-01-02 8.40.09" width="300" height="157" class="alignnone size-medium wp-image-831" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;By using the form, we could generate a page.(such as http://188.40.18.76/output/19c94d778563b117e18e3442e887989aea14277d/filename)&lt;/p&gt;</description></item><item><title>DEF CON CTF 2014</title><link>https://blog.tyage.net/archive/p802.html</link><pubDate>Tue, 12 Aug 2014 15:29:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p802.html</guid><description>&lt;p&gt;チームbinjaのパーカー運搬係として参加していました&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.flickr.com/photos/tyage/14710640429" title="DSC_0002 by チャゲ, on Flickr"&gt;&lt;img src="https://farm6.staticflickr.com/5596/14710640429_5340f694e5_c.jpg" width="800" height="600" alt="DSC_0002"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.flickr.com/photos/tyage/14894211811" title="DSC_0015 by チャゲ, on Flickr"&gt;&lt;img src="https://farm4.staticflickr.com/3843/14894211811_5ec384d141_c.jpg" width="800" height="600" alt="DSC_0015"&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>DEF CON CTF Qualifier 2013</title><link>https://blog.tyage.net/archive/p730.html</link><pubDate>Sat, 05 Oct 2013 16:02:42 +0000</pubDate><guid>https://blog.tyage.net/archive/p730.html</guid><description>&lt;p&gt;問題解いてた時のログが残ってないし、探せば他が出てくると思うのでwriteupは書きません。&lt;br /&gt;
+一応、webを何問かとprogramming2問ほどを解きました。&lt;/p&gt;
+&lt;p&gt;うちを含め多くのチームがweb問題を全完しており、今回のweb問題は易しかったように感じます。&lt;/p&gt;
+&lt;p&gt;開始直後は、8-puzzleのprogrammingを解いて7位くらいだったけど、最終的には79位となった。&lt;/p&gt;
+&lt;p&gt;2日目・3日目は学校をサボって灘高にいて、チームで問題を解いてたらだんだん正気が保てなくなってきた。&lt;/p&gt;
+&lt;blockquote class="twitter-tweet"&gt;
+&lt;p&gt;「真の会社（DEFCON）」と「今勤めてる会社」どっち優先させるかとても悩ましい&lt;/p&gt;
+&lt;p&gt;&amp;mdash; ッぴょㄘゃ (@tyage) &lt;a href="https://twitter.com/tyage/statuses/346092108974809088"&gt;June 16, 2013&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;blockquote class="twitter-tweet"&gt;
+&lt;p&gt;ずーっとPCに計算させてる間歌ってる　&lt;a href="http://t.co/LvCgHDutg7"&gt;http://t.co/LvCgHDutg7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;mdash; ッぴょㄘゃ (@tyage) &lt;a href="https://twitter.com/tyage/statuses/346307413932126210"&gt;June 16, 2013&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;blockquote class="twitter-tweet"&gt;
+&lt;p&gt;HEYYEYAAEYAAAEYAEYAAが意識遠くなっても頭の中から聞こえるようになってきた&lt;/p&gt;
+&lt;p&gt;&amp;mdash; ッぴょㄘゃ (@tyage) &lt;a href="https://twitter.com/tyage/statuses/346339658583662592"&gt;June 16, 2013&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;DEFCONが僕達に残したもの&lt;br /&gt;
+&lt;a href="http://www.flickr.com/photos/tyage/9265488572/" title="DSC_0131 by チャゲ, on Flickr"&gt;&lt;img src="http://farm3.staticflickr.com/2821/9265488572_4615ca2c4c.jpg" width="500" height="375" alt="DSC_0131"&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>UFO CTF 2013 writeup – Web200</title><link>https://blog.tyage.net/archive/p719.html</link><pubDate>Sat, 05 Oct 2013 14:55:08 +0000</pubDate><guid>https://blog.tyage.net/archive/p719.html</guid><description>&lt;pre&gt;
+Those aliens consider themselves as the most smart creatures in
+the world. Pff. They shouldn't even have tried to defeat mankind
+having such stupid stuff in their heads! As for you, why wouldn't
+you hack them? They'll most likely surrender then. By the way, it
+is known that they update some data every 10-20 seconds, but
+unfortunately our equipment can't intercept the data itself.
+ 
+http://superhosting.tasks.ufoctf.ru:8000/
+&lt;/pre&gt;
+&lt;p&gt;自分のウェブページが作れ、バックアップと復元ができるシステムになっている。&lt;/p&gt;
+&lt;p&gt;バックアップしてみると、[username]_[md5(username)][md5(zipfile)].zipという名前でzipファイルがダウンロードでき、それをアップロードすることで復元ができるようになっている。&lt;br /&gt;
+zipファイルの中身を解凍すると、.backupという名前で以下のようなファイルが入っている。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="xml" style="font-family:monospace;"&gt;&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;?xml&lt;/span&gt; &lt;span style="color: #000066;"&gt;version&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;encoding&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;?&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;django-objects&lt;/span&gt; &lt;span style="color: #000066;"&gt;version&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+	&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;object&lt;/span&gt; &lt;span style="color: #000066;"&gt;pk&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;12349813568&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;model&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;hosting.pagesettings&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;CharField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;owner_name&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;username&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;CharField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;owner_email&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;test@localhost&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;CharField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;page_title&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;My homepage&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;TextField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;page_content&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;Hello everyone! This is my new homepage.&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;CharField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;page_footer&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;Made with love and care&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;BooleanField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;page_is_public&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;False&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+		&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;field&lt;/span&gt; &lt;span style="color: #000066;"&gt;type&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;CharField&amp;quot;&lt;/span&gt; &lt;span style="color: #000066;"&gt;name&lt;/span&gt;=&lt;span style="color: #ff0000;"&gt;&amp;quot;page_public_id&amp;quot;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/field&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+	&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/object&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span style="color: #009900;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;lt;/django-objects&lt;span style="color: #000000; font-weight: bold;"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;いろいろと試した結果、復元時にpk(primary key)を変えた場合にそのpkを持つフィールドのデータを上書きすることができるとわかった。&lt;/p&gt;</description></item><item><title>DIMVA CTF 2013 writeup</title><link>https://blog.tyage.net/archive/p697.html</link><pubDate>Fri, 19 Jul 2013 16:29:48 +0000</pubDate><guid>https://blog.tyage.net/archive/p697.html</guid><description>&lt;p&gt;&lt;a href="https://dimvactf.0x90.eu" title="DIMVA CTF"&gt;DIMVA CTF&lt;/a&gt;に参加していた。&lt;/p&gt;
+&lt;p&gt;私のチーム（Epsilon Delta）は850ポイントで17位だった。&lt;/p&gt;
+&lt;h3&gt;Web 100&lt;/h3&gt;
+&lt;p&gt;画像アップローダーが用意されており、どうにかこうにかする問題。&lt;/p&gt;
+&lt;p&gt;はじめにいくつか画像が用意されており、パスワードを入力しないと閲覧できない画像があったため、そのパスワードを求める問題と推察される。&lt;/p&gt;
+&lt;p&gt;各画像にはタグがついており、同じタグを持つ写真を一覧で見れる。&lt;/p&gt;
+&lt;p&gt;しかし、シングルクオートの入ったタグの場合は一覧ページでエラーが発生していたため、SQLインジェクションがあるとわかった。&lt;/p&gt;
+&lt;p&gt;画像をアップロードした際、画像のコメントがタグになって登録されるので、そこにSQLインジェクションを埋め込む。&lt;/p&gt;
+&lt;pre&gt;
+' union all select password from pictures--
+&lt;/pre&gt;
+&lt;p&gt;その後、一覧ページを閲覧することでパスワードが入手でき、c0ffeeからはじまるパスワードがFlagであると判明した。&lt;/p&gt;
+&lt;pre&gt;
+c0ffee29e34ad42d38cbe236913c911a
+&lt;/pre&gt;
+&lt;p&gt;パスワード付きの画像はこんな感じだった。&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.tyage.net/wp-content/uploads/2013/07/4567.jpg"&gt;&lt;img data-attachment-id="699" data-permalink="https://blog.tyage.net/?attachment_id=699" data-orig-file="https://blog.tyage.net/wp-content/uploads/2013/07/4567.jpg" data-orig-size="616,425" data-comments-opened="1" data-image-meta="{&amp;quot;aperture&amp;quot;:&amp;quot;9&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;DSLR-A700&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;SONY DSC&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;1226238208&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;210&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;800&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0.001&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;SONY DSC&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;1&amp;quot;}" data-image-title="SONY DSC" data-image-description="" data-medium-file="https://blog.tyage.net/wp-content/uploads/2013/07/4567.jpg" data-large-file="https://blog.tyage.net/wp-content/uploads/2013/07/4567.jpg" src="http://blog.tyage.net/wp-content/uploads/2013/07/4567-300x206.jpg" alt="SONY DSC" width="300" height="206" class="alignnone size-medium wp-image-699" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;素直でわかりやすい問題だったように思う。&lt;/p&gt;
+&lt;h3&gt;Web 200&lt;/h3&gt;
+&lt;p&gt;普通にアクセスすると&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="line_numbers"&gt;&lt;pre&gt;10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="html5" style="font-family:monospace;"&gt;'user' and/or 'password' parameters missing, please provide an xml parameter of the following form to login: &lt;span style="color: #009900;"&gt;&amp;lt;login&amp;gt;&amp;lt;user&amp;gt;&lt;/span&gt;(base64-encoded username)&lt;span style="color: #009900;"&gt;&amp;lt;&lt;span style="color: #66cc66;"&gt;/&lt;/span&gt;user&amp;gt;&amp;lt;password&amp;gt;&lt;/span&gt;(base64-encoded password)&lt;span style="color: #009900;"&gt;&amp;lt;&lt;span style="color: #66cc66;"&gt;/&lt;/span&gt;password&amp;gt;&amp;lt;&lt;span style="color: #66cc66;"&gt;/&lt;/span&gt;login&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;ってのが返って来る。&lt;/p&gt;
+&lt;p&gt;一日近く、urlにログイン用xmlを足したり、ファイルとして送信したり、送信するパケットのいろんなところに埋め込んだりして悩んだ。。。&lt;/p&gt;</description></item><item><title>SIGINT CTF 2013 writeup – bloat (cloud 200)</title><link>https://blog.tyage.net/archive/p689.html</link><pubDate>Tue, 16 Jul 2013 20:23:45 +0000</pubDate><guid>https://blog.tyage.net/archive/p689.html</guid><description>&lt;h3&gt;CTF&lt;/h3&gt;
+&lt;p&gt;えと、ブログを更新停止している間に、Epsilon DeltaとしていくつかCTFに参加していました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Codegate YUT Preliminary 2013&lt;/li&gt;
+&lt;li&gt;Nuit du Hack CTF Quals 2013&lt;/li&gt;
+&lt;li&gt;BaltCTF Quals 2013&lt;/li&gt;
+&lt;li&gt;SECUINSIDE CTF Quals 2013&lt;/li&gt;
+&lt;li&gt;Boston Key Party CTF 2013&lt;/li&gt;
+&lt;li&gt;DEF CON CTF Qualifier 2013&lt;/li&gt;
+&lt;li&gt;SIGINT CTF 2013&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;はじめは海外のCTFの感覚がつかめず、ちゃんと解いたような記憶もなかったのですが、BKPあたりからは少し慣れてきたような気がします。&lt;/p&gt;
+&lt;p&gt;今まで解いてた問題のwrite upを書こうとも思ったのですが、すっかり忘れてしまっているため、一番最近やったSIGINT CTFのwrite upを書くことにします。&lt;/p&gt;
+&lt;p&gt;</description></item></channel></rss>

@@ -1,48 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>セプキャン on blog.tyage.net</title><link>https://blog.tyage.net/tags/%E3%82%BB%E3%83%97%E3%82%AD%E3%83%A3%E3%83%B3/</link><description>Recent content in セプキャン on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 24 Mar 2011 04:34:50 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/%E3%82%BB%E3%83%97%E3%82%AD%E3%83%A3%E3%83%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka</title><link>https://blog.tyage.net/archive/p301.html</link><pubDate>Thu, 24 Mar 2011 04:34:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p301.html</guid><description>まっちゃ１３９ Hiki &amp;#8211; 第22回まっちゃ１３９勉強会＋セキュリティキャンプ・キャラバン in Osaka
-Togetter &amp;#8211; 「第22回まっちゃ１３９勉強会＋セキュリティキャンプキャラバン in Osakaの参加者によるTweetまとめ」
-もう10日以上前の話にはなるんですが行ってきた報告をちょろりと。
-地震が原因で講師の方々がこれなくなり、開催されるかどうか不安でしたが、無事開催されました。
-よかったです。
-僕は定期考査中にも関わらず、その日の試験が終わってから直行しました。
-場所は関学の梅田キャンパスで、普段なら道に迷うところでしたが、実は一週間前に訪れていたので建物まではなんとかなりました。
-関西学院さんありがとうございました。
-講演内容は地震の影響で急遽変更となり、園田さんが二つ、はせがわさんが一つ講演をしてました。
-LTはセプキャン生（pastak）のその後とか、もりよしさんのPHPネタとかで盛り上がってました。
-その場でプレゼンを作って発表している方もいました。すごい。
-あと、ハッカージャパン一月号いただきました。
-セプキャンCTFの解説記事がありーの、ucqさんの記事がありーの、ajalaboxたんのコメントがありーので、セプキャン臭がプンプンしますよ！
-まっちゃ139では今回初めて懇親会に参加しました。
-いやー楽しかった。
-今回はセプキャン生が数多く出席してました。
-これぞセプキャン生の結束力？
-最後に、関西学院さんありがとうございました。</description></item><item><title>セキュリティ＆プログラミングキャンプ2010実施報告会に行ってきた</title><link>https://blog.tyage.net/archive/p200.html</link><pubDate>Wed, 22 Dec 2010 17:24:48 +0000</pubDate><guid>https://blog.tyage.net/archive/p200.html</guid><description>情報処理推進機構：IT人材育成：セキュリティ＆プログラミングキャンプ2010
-これを目的に格安で東京に行ってまいりました。
-セプキャンが廃止されるみたいな噂があって冷や冷やしていたんですが、報告会では積極的な意見が数々出ており（僕は意見を言えませんでしたが）、やはりこのキャンプは多くの影響を与えてきたんだなあと再認識しました。
-僕自身も、このキャンプに行った事で能力の高い人たちがいることを再認識し、その人々を間近で話すことができるという貴重な体験をすることができました。
-今回の報告会では、サイボウズの青野社長の講演の後、卒業生LTがあり、最後にディスカッションがありました。
-青野社長の講演では、日本では起業をするのはお勧めしないって言う話と、アメリカの女子にIT業界が人気っていう話が印象に残りました。
-セプキャンに関してもそうですが、日本人のIT技術者などに対する、よくない意味でのオタク的なイメージが変わらることが、この分野の成長には必要なのだと思われます。
-ディスカッションでは主に、
-成果を見せる必要があるということと、
-キャンプ卒業生による広報がやはり重要だという話と、
-wikiやポータルサイトのような、キャンプ卒業生や、未来のキャンプ生たちが交流できる場所がいるのではないかという話がされていました。（僕の記憶では）
-一つ目は、セキリュティ組ってどういう成果を出したらいいんだろう・・・ってのをもんもんと考えてました。
-ただ、成果を出しても、分かってくれる人は限られるという意見もあったように記憶しています。
-たしかに成果をずばっと見せるのは難しいかもしれないですね。
-二つ目に関しては、僕も以前に学校で話したりしていたのですが、
-プログラミングなどに興味のない人には、「ふーん。無料でいけるんだ。へー」としか思ってもらえませんでした。
-僕がもっと興味を持たせられるようなしゃべり方を身につけていればよかったのですが・・・。なかなか難しいですね。
-逆に、もともとプログラミングをやっている人の一部には、著名な講師の方々が来るということで、とても興味を抱いてもらうことができました。
-専門学校ならともかく、うちのような普通の学校の生徒に対する広報はなかなか難しいなあと思います。
-三つ目のwikiは、さっそく@mine_studio先生が開設されました。
-行動力がぱないですｗ
-http://spcamp.com/
-終わった後は懇親会がありました。
-少し疲れていたのもあって、あまり話しかけることができず、@grapswizさんと、@ajalaboxさんと三人でずっと固まっていましたｗ
-ただ、未来のキャンプ生から話しかけてもらうことができ、僕らが最後のキャンプ生になってはいけないなと感じながら帰りました。
-せっかく東京に行ったので、ついでにキーボードを1000円で購入し、翌日のJOIはそれで受験しました。</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/archive/p6.html</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p6.html</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5">一度消えた&lt;/a>XSSの記事を復活させました。&lt;/p>
-&lt;h1>注意書き&lt;/h1>
-&lt;p>はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p>
-&lt;p>記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p>
-&lt;p>以下ネタバレ注意です！&lt;/p>
-&lt;p>別の解き方があれば教えてください。&lt;br /></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>セプキャン on blog.tyage.net</title><link>https://blog.tyage.net/tags/%E3%82%BB%E3%83%97%E3%82%AD%E3%83%A3%E3%83%B3/</link><description>Recent content in セプキャン on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 24 Mar 2011 04:34:50 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/%E3%82%BB%E3%83%97%E3%82%AD%E3%83%A3%E3%83%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka</title><link>https://blog.tyage.net/archive/p301.html</link><pubDate>Thu, 24 Mar 2011 04:34:50 +0000</pubDate><guid>https://blog.tyage.net/archive/p301.html</guid><description>&lt;p&gt;&lt;a href="http://matcha139.hiemalis.org/hiki/?%C2%E822%B2%F3%A4%DE%A4%C3%A4%C1%A4%E3%A3%B1%A3%B3%A3%B9%CA%D9%B6%AF%B2%F1"&gt;まっちゃ１３９ Hiki &amp;#8211; 第22回まっちゃ１３９勉強会＋セキュリティキャンプ・キャラバン in Osaka&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://togetter.com/li/111522"&gt;Togetter &amp;#8211; 「第22回まっちゃ１３９勉強会＋セキュリティキャンプキャラバン in Osakaの参加者によるTweetまとめ」&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;もう10日以上前の話にはなるんですが行ってきた報告をちょろりと。&lt;/p&gt;
+&lt;p&gt;地震が原因で講師の方々がこれなくなり、開催されるかどうか不安でしたが、無事開催されました。&lt;br /&gt;
+よかったです。&lt;/p&gt;
+&lt;p&gt;僕は定期考査中にも関わらず、その日の試験が終わってから直行しました。&lt;br /&gt;
+場所は関学の梅田キャンパスで、普段なら道に迷うところでしたが、実は一週間前に訪れていたので建物まではなんとかなりました。&lt;/p&gt;
+&lt;p&gt;関西学院さんありがとうございました。&lt;/p&gt;
+&lt;p&gt;講演内容は地震の影響で急遽変更となり、園田さんが二つ、はせがわさんが一つ講演をしてました。&lt;/p&gt;
+&lt;p&gt;LTはセプキャン生（pastak）のその後とか、もりよしさんのPHPネタとかで盛り上がってました。&lt;br /&gt;
+その場でプレゼンを作って発表している方もいました。すごい。&lt;/p&gt;
+&lt;p&gt;あと、&lt;a href="http://www.amazon.co.jp/dp/B004CZCGVU/"&gt;ハッカージャパン一月号&lt;/a&gt;いただきました。&lt;br /&gt;
+セプキャンCTFの解説記事がありーの、ucqさんの記事がありーの、ajalaboxたんのコメントがありーので、セプキャン臭がプンプンしますよ！&lt;/p&gt;
+&lt;p&gt;まっちゃ139では今回初めて懇親会に参加しました。&lt;/p&gt;
+&lt;p&gt;いやー楽しかった。&lt;/p&gt;
+&lt;p&gt;今回はセプキャン生が数多く出席してました。&lt;br /&gt;
+これぞセプキャン生の結束力？&lt;/p&gt;
+&lt;p&gt;最後に、関西学院さんありがとうございました。&lt;/p&gt;</description></item><item><title>セキュリティ＆プログラミングキャンプ2010実施報告会に行ってきた</title><link>https://blog.tyage.net/archive/p200.html</link><pubDate>Wed, 22 Dec 2010 17:24:48 +0000</pubDate><guid>https://blog.tyage.net/archive/p200.html</guid><description>&lt;p&gt;&lt;a href="http://www.ipa.go.jp/jinzai/camp/2010debrief/index.html"&gt;情報処理推進機構：IT人材育成：セキュリティ＆プログラミングキャンプ2010&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;これを目的に&lt;a href='http://tyage.sakura.ne.jp/blog/?p=195'&gt;格安で&lt;/a&gt;東京に行ってまいりました。&lt;/p&gt;
+&lt;p&gt;セプキャンが廃止されるみたいな噂があって冷や冷やしていたんですが、報告会では積極的な意見が数々出ており（僕は意見を言えませんでしたが）、やはりこのキャンプは多くの影響を与えてきたんだなあと再認識しました。&lt;/p&gt;
+&lt;p&gt;僕自身も、このキャンプに行った事で能力の高い人たちがいることを再認識し、その人々を間近で話すことができるという貴重な体験をすることができました。&lt;/p&gt;
+&lt;p&gt;今回の報告会では、サイボウズの青野社長の講演の後、卒業生LTがあり、最後にディスカッションがありました。&lt;/p&gt;
+&lt;p&gt;青野社長の講演では、日本では起業をするのはお勧めしないって言う話と、アメリカの女子にIT業界が人気っていう話が印象に残りました。&lt;br /&gt;
+セプキャンに関してもそうですが、日本人のIT技術者などに対する、よくない意味でのオタク的なイメージが変わらることが、この分野の成長には必要なのだと思われます。&lt;/p&gt;
+&lt;p&gt;ディスカッションでは主に、&lt;br /&gt;
+成果を見せる必要があるということと、&lt;br /&gt;
+キャンプ卒業生による広報がやはり重要だという話と、&lt;br /&gt;
+wikiやポータルサイトのような、キャンプ卒業生や、未来のキャンプ生たちが交流できる場所がいるのではないかという話がされていました。（僕の記憶では）&lt;/p&gt;
+&lt;p&gt;一つ目は、セキリュティ組ってどういう成果を出したらいいんだろう・・・ってのをもんもんと考えてました。&lt;br /&gt;
+ただ、成果を出しても、分かってくれる人は限られるという意見もあったように記憶しています。&lt;br /&gt;
+たしかに成果をずばっと見せるのは難しいかもしれないですね。&lt;/p&gt;
+&lt;p&gt;二つ目に関しては、僕も以前に学校で話したりしていたのですが、&lt;br /&gt;
+プログラミングなどに興味のない人には、「ふーん。無料でいけるんだ。へー」としか思ってもらえませんでした。&lt;br /&gt;
+僕がもっと興味を持たせられるようなしゃべり方を身につけていればよかったのですが・・・。なかなか難しいですね。&lt;br /&gt;
+逆に、もともとプログラミングをやっている人の一部には、著名な講師の方々が来るということで、とても興味を抱いてもらうことができました。&lt;br /&gt;
+専門学校ならともかく、うちのような普通の学校の生徒に対する広報はなかなか難しいなあと思います。&lt;/p&gt;
+&lt;p&gt;三つ目のwikiは、さっそく@mine_studio先生が開設されました。&lt;br /&gt;
+行動力がぱないですｗ&lt;br /&gt;
+&lt;a href='http://spcamp.com/'&gt;http://spcamp.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;終わった後は懇親会がありました。&lt;br /&gt;
+少し疲れていたのもあって、あまり話しかけることができず、@grapswizさんと、@ajalaboxさんと三人でずっと固まっていましたｗ&lt;br /&gt;
+ただ、未来のキャンプ生から話しかけてもらうことができ、僕らが最後のキャンプ生になってはいけないなと感じながら帰りました。&lt;/p&gt;
+&lt;p&gt;せっかく東京に行ったので、ついでにキーボードを1000円で購入し、翌日のJOIはそれで受験しました。&lt;/p&gt;</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/archive/p6.html</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p6.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5"&gt;一度消えた&lt;/a&gt;XSSの記事を復活させました。&lt;/p&gt;
+&lt;h1&gt;注意書き&lt;/h1&gt;
+&lt;p&gt;はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p&gt;
+&lt;p&gt;記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p&gt;
+&lt;p&gt;以下ネタバレ注意です！&lt;/p&gt;
+&lt;p&gt;別の解き方があれば教えてください。&lt;br /&gt;</description></item></channel></rss>

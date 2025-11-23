@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CakePHP on blog.tyage.net</title><link>https://blog.tyage.net/tags/cakephp/</link><description>Recent content in CakePHP on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 06 Feb 2011 14:46:29 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/cakephp/index.xml" rel="self" type="application/rss+xml"/><item><title>cakePHPでURLパラメータを保持する</title><link>https://blog.tyage.net/archive/p260.html</link><pubDate>Sun, 06 Feb 2011 14:46:29 +0000</pubDate><guid>https://blog.tyage.net/archive/p260.html</guid><description>&lt;p>久しぶりにcakeの記事を書きます。&lt;/p>
-&lt;p>最近、cakePHP以外のフレームワークにも浮気しようとしているのですが勇気がでません。&lt;/p>
-&lt;p>要件は&lt;a href="http://tyage.sakura.ne.jp/blog/?p=61">悩み | チャゲってる日々 &amp;#8211; @tyage&lt;/a>にて書いてあります。&lt;br />
-一応解決したのですが、先ほどの記事を今読むと、かなり意味不明な内容になっているため、簡単にまとめてみます。&lt;br /></description></item><item><title>悩み</title><link>https://blog.tyage.net/archive/p61.html</link><pubDate>Sat, 23 Oct 2010 14:58:43 +0000</pubDate><guid>https://blog.tyage.net/archive/p61.html</guid><description>いろいろと悩み事の多いお年頃なんですが、あまり人には聞くことがありません。
-でもこれはどんだけ考えてもいい方法が思い浮かばないので、もし教えてくれる方がいれば教えてほしいという切実な願いです。
-要件 view部分ををいじらずに、リンク等URLにパラメータを保持したい。
-prefixを指定したときのように。
-ただし、prefixを使って、呼び出すaction名をいちいち書き換える手間もかけたくない。
-（__callメソッドを使えばいいのかもしれないですが・・・）
-cakeのcoreを書き換えたくない。
-詳細 現在作っているゲームで、iframeを通じてそのゲーム内のページを見れる機能があるのですが、iframeで見た場合のlayoutを変更したいと思っています。
-iframeで見るページは、iframe以外でも見れ、そのときはiframeで見たときと異なるlayoutとなるため、layoutを動的に変更させる必要があります。
-しかし、iframeかどうかの判別は、PHPからはできなさそうです。
-（もし方法があるなら教えてください＞＜）
-そこでiframeに指定したURLにパラメータを付け（?iframe=trueみたく）、iframe内でページ遷移が起こった場合もそのパラメータを保持し続ければいいのではないかと考えました。
-上に書いたように、呼び出すaction名を変更するprefix機能をそのまま使うこともできません。
-またbeforeRenderなどaction名が決まった時点で、prefixを設定しようかとも考えましたがそれも上手くいきませんでした。
-どうかこの私の至らない頭に解決法をお与えください。
-要件が上手くまとまったら質問サイトにでも投げかけようかな。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CakePHP on blog.tyage.net</title><link>https://blog.tyage.net/tags/cakephp/</link><description>Recent content in CakePHP on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 06 Feb 2011 14:46:29 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/cakephp/index.xml" rel="self" type="application/rss+xml"/><item><title>cakePHPでURLパラメータを保持する</title><link>https://blog.tyage.net/archive/p260.html</link><pubDate>Sun, 06 Feb 2011 14:46:29 +0000</pubDate><guid>https://blog.tyage.net/archive/p260.html</guid><description>&lt;p&gt;久しぶりにcakeの記事を書きます。&lt;/p&gt;
+&lt;p&gt;最近、cakePHP以外のフレームワークにも浮気しようとしているのですが勇気がでません。&lt;/p&gt;
+&lt;p&gt;要件は&lt;a href="http://tyage.sakura.ne.jp/blog/?p=61"&gt;悩み | チャゲってる日々 &amp;#8211; @tyage&lt;/a&gt;にて書いてあります。&lt;br /&gt;
+一応解決したのですが、先ほどの記事を今読むと、かなり意味不明な内容になっているため、簡単にまとめてみます。&lt;br /&gt;</description></item><item><title>悩み</title><link>https://blog.tyage.net/archive/p61.html</link><pubDate>Sat, 23 Oct 2010 14:58:43 +0000</pubDate><guid>https://blog.tyage.net/archive/p61.html</guid><description>&lt;p&gt;いろいろと悩み事の多いお年頃なんですが、あまり人には聞くことがありません。&lt;/p&gt;
+&lt;p&gt;でもこれはどんだけ考えてもいい方法が思い浮かばないので、もし教えてくれる方がいれば教えてほしいという切実な願いです。&lt;/p&gt;
+&lt;h2&gt;要件&lt;/h2&gt;
+&lt;p&gt;view部分ををいじらずに、リンク等URLにパラメータを保持したい。&lt;br /&gt;
+prefixを指定したときのように。&lt;/p&gt;
+&lt;p&gt;ただし、prefixを使って、呼び出すaction名をいちいち書き換える手間もかけたくない。&lt;br /&gt;
+（__callメソッドを使えばいいのかもしれないですが・・・）&lt;/p&gt;
+&lt;p&gt;cakeのcoreを書き換えたくない。&lt;/p&gt;
+&lt;h2&gt;詳細&lt;/h2&gt;
+&lt;p&gt;現在作っているゲームで、iframeを通じてそのゲーム内のページを見れる機能があるのですが、iframeで見た場合のlayoutを変更したいと思っています。&lt;/p&gt;
+&lt;p&gt;iframeで見るページは、iframe以外でも見れ、そのときはiframeで見たときと異なるlayoutとなるため、layoutを動的に変更させる必要があります。&lt;/p&gt;
+&lt;p&gt;しかし、iframeかどうかの判別は、PHPからはできなさそうです。&lt;br /&gt;
+（もし方法があるなら教えてください＞＜）&lt;/p&gt;
+&lt;p&gt;そこでiframeに指定したURLにパラメータを付け（?iframe=trueみたく）、iframe内でページ遷移が起こった場合もそのパラメータを保持し続ければいいのではないかと考えました。&lt;/p&gt;
+&lt;p&gt;上に書いたように、呼び出すaction名を変更するprefix機能をそのまま使うこともできません。&lt;/p&gt;
+&lt;p&gt;またbeforeRenderなどaction名が決まった時点で、prefixを設定しようかとも考えましたがそれも上手くいきませんでした。&lt;/p&gt;
+&lt;p&gt;どうかこの私の至らない頭に解決法をお与えください。&lt;/p&gt;
+&lt;p&gt;要件が上手くまとまったら質問サイトにでも投げかけようかな。&lt;/p&gt;</description></item></channel></rss>

@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redmine on blog.tyage.net</title><link>https://blog.tyage.net/tags/redmine/</link><description>Recent content in Redmine on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 15:51:18 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/redmine/index.xml" rel="self" type="application/rss+xml"/><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
-まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
-しようとするが、herokuコマンドが見つからない状態にあったので、
-ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow
-の通りにしてみたところうまくいった。
-gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。
-extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
-[雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
-この二つを参考に、
-sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redmine on blog.tyage.net</title><link>https://blog.tyage.net/tags/redmine/</link><description>Recent content in Redmine on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 15:51:18 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/redmine/index.xml" rel="self" type="application/rss+xml"/><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;
+&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; rubygems
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; ruby
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;git&lt;/span&gt;
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; rails
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; heroku
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;
+&lt;p&gt;しようとするが、herokuコマンドが見つからない状態にあったので、&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/909673/gems-and-ubuntu-9-04"&gt;ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;の通りにしてみたところうまくいった。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;gem environment
+&lt;span style="color: #7a0874; font-weight: bold;"&gt;export&lt;/span&gt; &lt;span style="color: #007800;"&gt;PATH&lt;/span&gt;=&lt;span style="color: #007800;"&gt;$PATH&lt;/span&gt;:&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;var&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;lib&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;gems&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;&lt;span style="color: #000000;"&gt;1.8&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。&lt;/p&gt;</description></item></channel></rss>

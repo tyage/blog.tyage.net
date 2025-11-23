@@ -1,22 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rails on blog.tyage.net</title><link>https://blog.tyage.net/tags/rails/</link><description>Recent content in Rails on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 15:51:18 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>なんとか設置できたものの、時間がかかったのでそれの記録。
-まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo gem install heroku sudo gem install sqlite3-ruby と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行
-しようとするが、herokuコマンドが見つからない状態にあったので、
-ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow
-の通りにしてみたところうまくいった。
-gem environment export PATH=$PATH:/var/lib/gems/1.8/bin これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。
-extconf.rb:3:in `require&amp;apos;: no such file to load &amp;#8212; mkmf (LoadError)
-[雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota
-この二つを参考に、
-sudo apt-get install sqlite3 sudo apt-get install libsqlite3-dev sudo apt-get install ruby1.</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/archive/p290.html</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p290.html</guid><description>HerokuいいですよねHeroku！
-今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
-（結局失敗したため、おとなしくUbuntuから使うことにしました。）
-普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。
-とりあえず一連の流れを
-rubyをRubyInstaller for Windowsを使ってインストール。
-ついでにgemとかもついてくるので、すぐにrailsをインストールすることから始められる。
-gem update gem install rails gem install heroku keys:add が、ここでメールアドレスとパスワードを入れたところでエラー
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17 2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he roku/credentials (Errno::ENOENT) Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに
-41 home_directory = home_directory.split&amp;#40;&amp;quot;&amp;quot;).join(&amp;quot;/&amp;quot;) if !home_directory.nil? と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。
-うぬー。。</description></item><item><title>ブログ記事が消滅しました</title><link>https://blog.tyage.net/archive/p7.html</link><pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p7.html</guid><description>&lt;p>ブログどころか、サイトで使っているDB内のテーブルが&lt;strong>全部&lt;/strong>空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p>
-&lt;p>事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rails on blog.tyage.net</title><link>https://blog.tyage.net/tags/rails/</link><description>Recent content in Rails on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 15:51:18 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Redmine設置した。</title><link>https://blog.tyage.net/archive/p296.html</link><pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p296.html</guid><description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;
+&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; rubygems
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; ruby
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;apt-get install&lt;/span&gt; &lt;span style="color: #c20cb9; font-weight: bold;"&gt;git&lt;/span&gt;
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; rails
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; heroku
+&lt;span style="color: #c20cb9; font-weight: bold;"&gt;sudo&lt;/span&gt; gem &lt;span style="color: #c20cb9; font-weight: bold;"&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;
+&lt;p&gt;しようとするが、herokuコマンドが見つからない状態にあったので、&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/909673/gems-and-ubuntu-9-04"&gt;ruby on rails &amp;#8211; Gems and Ubuntu 9.04 &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;の通りにしてみたところうまくいった。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;gem environment
+&lt;span style="color: #7a0874; font-weight: bold;"&gt;export&lt;/span&gt; &lt;span style="color: #007800;"&gt;PATH&lt;/span&gt;=&lt;span style="color: #007800;"&gt;$PATH&lt;/span&gt;:&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;var&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;lib&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;gems&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;&lt;span style="color: #000000;"&gt;1.8&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。&lt;/p&gt;</description></item><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/archive/p290.html</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p290.html</guid><description>&lt;p&gt;HerokuいいですよねHeroku！&lt;/p&gt;
+&lt;p&gt;今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。&lt;br /&gt;
+（結局失敗したため、おとなしくUbuntuから使うことにしました。）&lt;/p&gt;
+&lt;p&gt;普通は&lt;a href="http://devcenter.heroku.com/articles/quickstart"&gt;Heroku | Dev Center | Getting Started with Heroku&lt;/a&gt;を見ればできるはず。&lt;/p&gt;
+&lt;p&gt;とりあえず一連の流れを&lt;/p&gt;
+&lt;p&gt;rubyを&lt;a href="http://rubyinstaller.org/"&gt;RubyInstaller for Windows&lt;/a&gt;を使ってインストール。&lt;/p&gt;
+&lt;p&gt;ついでにgemとかもついてくるので、すぐにrailsをインストールすることから始められる。&lt;/p&gt;
+&lt;pre&gt;
+gem update
+gem install rails
+gem install
+heroku keys:add
+&lt;/pre&gt;
+&lt;p&gt;が、ここでメールアドレスとパスワードを入れたところでエラー&lt;/p&gt;
+&lt;pre&gt;
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17
+2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he
+roku/credentials (Errno::ENOENT)
+&lt;/pre&gt;
+&lt;p&gt;Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="line_numbers"&gt;&lt;pre&gt;41
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="ruby" style="font-family:monospace;"&gt;	 home_directory = home_directory.&lt;span style="color:#CC0066; font-weight:bold;"&gt;split&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#996600;"&gt;&amp;quot;&lt;span style="color:#000099;"&gt;&amp;quot;&lt;/span&gt;).join(&amp;quot;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;/&lt;/span&gt;&lt;span style="color:#996600;"&gt;&amp;quot;) if !home_directory.nil?&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。&lt;br /&gt;
+うぬー。。&lt;/p&gt;</description></item><item><title>ブログ記事が消滅しました</title><link>https://blog.tyage.net/archive/p7.html</link><pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p7.html</guid><description>&lt;p&gt;ブログどころか、サイトで使っているDB内のテーブルが&lt;strong&gt;全部&lt;/strong&gt;空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p&gt;
+&lt;p&gt;事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /&gt;</description></item></channel></rss>

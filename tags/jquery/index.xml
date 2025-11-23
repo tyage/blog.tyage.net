@@ -1,26 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JQuery on blog.tyage.net</title><link>https://blog.tyage.net/tags/jquery/</link><description>Recent content in JQuery on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Feb 2011 11:11:22 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/jquery/index.xml" rel="self" type="application/rss+xml"/><item><title>jQuery1.5ｷﾀｰ</title><link>https://blog.tyage.net/archive/p252.html</link><pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate><guid>https://blog.tyage.net/archive/p252.html</guid><description>jQuery1.5 jQuery: » jQuery 1.5 Beta 1 Released
-今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。
-バグフィックスと速度向上はもちろん行われています。
-特に、バクフィックスでは未だにIE対策が行われ、またv8での速度が大幅に向上したそうです！Chrome厨喚起！
-その他として、細かいことだけど、node.jsとの連携の強化？的なことや、Google Closure CompilerからUglifyJSなるものに圧縮ツールを変更したようですよ。
-Ajaxモジュールの書き換え 「これは今回の最も重要な変更点であり、パフォーマンスや機能の改善、安定性の向上をもたらす」そうです。（訳は適当）
-Julian Aubourgさんによるこの書き換えによって、以下の書き方ができるようになりました。
-// Assign handlers immediately after making the request, // and remember the jxhr object for this request var jxhr = $.ajax&amp;#40;&amp;#123; url: &amp;quot;example.php&amp;quot; &amp;#125;&amp;#41; .success&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;success&amp;quot;&amp;#41;; &amp;#125;&amp;#41; .error&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;error&amp;quot;&amp;#41;; &amp;#125;&amp;#41; .complete&amp;#40;function&amp;#40;&amp;#41; &amp;#123; alert&amp;#40;&amp;quot;complete&amp;quot;&amp;#41;; &amp;#125;&amp;#41;; &amp;nbsp; // perform other work here ... &amp;nbsp; // Set another completion function for the request above jxhr.</description></item><item><title>jQuery1.4.3ｳｯﾋｮｰ</title><link>https://blog.tyage.net/archive/p43.html</link><pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p43.html</guid><description>&lt;p>試験期間中の夜はテンション高いぜｲｴｰ&lt;/p>
-&lt;p>Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p>
-&lt;p>&lt;a href="http://blog.jquery.com/2010/10/16/jquery-143-released/">jQuery: » jQuery 1.4.3 Released&lt;/a>&lt;/p>
-&lt;p>jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=17">予想通り&lt;/a>&lt;/strike>かなりの変更が加えられてます！&lt;/p>
-&lt;p>内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br />
-発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /></description></item><item><title>jQuery 1.4.3RC2</title><link>https://blog.tyage.net/archive/p17.html</link><pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate><guid>https://blog.tyage.net/archive/p17.html</guid><description>追記：
-jQuery1.4.3が正式発表されました。
-jQuery1.4.3rc1、rc2と立て続けにリリースされたようです。
-試験中にも関わらず、差分取ってちまちまと見ています。
-コードの初っ端から少しずつ変わってて、サンドボックスがどうとか、ローカル変数が増えたり変更されたりしてました。
-内部のほうにはそれなりに変化があるようです。
-使う側としても、内部関数だったaccessがjQuery.accessとして定義されたり、jQuery.isNanとかjQuery.isWindowとかが増えてたり。
-$().data周りにも変更があるみたいで、jQuery1.4.3からしか使えないプラグインもあるらしいです。
-InfoQ: Data Link &amp;#8211; jQueryのためのデータバインディング
-あとはイベント周りとかCSSやAjaxに関わる部分も、関数が増えたり修正されたりしてました。
-jQuery 1.4.2 の xhr.abort() が IE7 でエラーになる問題の回避方法 &amp;#8211; Scalaとlift　のはずだった　・・・
-もちろんバグ取りはいっぱい行われています。
-Blackberry対策をしてあるのには少し笑えましたｗ
-それよりも1.5が楽しみです。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JQuery on blog.tyage.net</title><link>https://blog.tyage.net/tags/jquery/</link><description>Recent content in JQuery on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Feb 2011 11:11:22 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/jquery/index.xml" rel="self" type="application/rss+xml"/><item><title>jQuery1.5ｷﾀｰ</title><link>https://blog.tyage.net/archive/p252.html</link><pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate><guid>https://blog.tyage.net/archive/p252.html</guid><description>&lt;h2&gt;jQuery1.5&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://blog.jquery.com/2011/01/14/jquery-1-5-beta-1-released/"&gt;jQuery: » jQuery 1.5 Beta 1 Released&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。&lt;/p&gt;
+&lt;p&gt;バグフィックスと速度向上はもちろん行われています。&lt;/p&gt;
+&lt;p&gt;特に、バクフィックスでは未だにIE対策が行われ、またv8での速度が大幅に向上したそうです！Chrome厨喚起！&lt;/p&gt;
+&lt;p&gt;その他として、細かいことだけど、node.jsとの連携の強化？的なことや、Google Closure Compilerから&lt;a href='https://github.com/mishoo/UglifyJS'&gt;UglifyJS&lt;/a&gt;なるものに圧縮ツールを変更したようですよ。&lt;/p&gt;
+&lt;h2&gt;Ajaxモジュールの書き換え&lt;/h2&gt;
+&lt;p&gt;「これは今回の最も重要な変更点であり、パフォーマンスや機能の改善、安定性の向上をもたらす」そうです。（訳は適当）&lt;/p&gt;
+&lt;p&gt;Julian Aubourgさんによるこの書き換えによって、以下の書き方ができるようになりました。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="javascript" style="font-family:monospace;"&gt;&lt;span style="color: #006600; font-style: italic;"&gt;// Assign handlers immediately after making the request,&lt;/span&gt;
+&lt;span style="color: #006600; font-style: italic;"&gt;// and remember the jxhr object for this request&lt;/span&gt;
+&lt;span style="color: #000066; font-weight: bold;"&gt;var&lt;/span&gt; jxhr &lt;span style="color: #339933;"&gt;=&lt;/span&gt; $.&lt;span style="color: #660066;"&gt;ajax&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; url&lt;span style="color: #339933;"&gt;:&lt;/span&gt; &lt;span style="color: #3366CC;"&gt;&amp;quot;example.php&amp;quot;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;
+ .&lt;span style="color: #660066;"&gt;success&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;
+ .&lt;span style="color: #660066;"&gt;error&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;
+ .&lt;span style="color: #660066;"&gt;complete&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;complete&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&amp;nbsp;
+&lt;span style="color: #006600; font-style: italic;"&gt;// perform other work here ...&lt;/span&gt;
+&amp;nbsp;
+&lt;span style="color: #006600; font-style: italic;"&gt;// Set another completion function for the request above&lt;/span&gt;
+jxhr.&lt;span style="color: #660066;"&gt;complete&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;second complete&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;ふおお・・・びゅーちふる・・・&lt;/p&gt;</description></item><item><title>jQuery1.4.3ｳｯﾋｮｰ</title><link>https://blog.tyage.net/archive/p43.html</link><pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p43.html</guid><description>&lt;p&gt;試験期間中の夜はテンション高いぜｲｴｰ&lt;/p&gt;
+&lt;p&gt;Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.jquery.com/2010/10/16/jquery-143-released/"&gt;jQuery: » jQuery 1.4.3 Released&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=17"&gt;予想通り&lt;/a&gt;&lt;/strike&gt;かなりの変更が加えられてます！&lt;/p&gt;
+&lt;p&gt;内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br /&gt;
+発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /&gt;</description></item><item><title>jQuery 1.4.3RC2</title><link>https://blog.tyage.net/archive/p17.html</link><pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate><guid>https://blog.tyage.net/archive/p17.html</guid><description>&lt;p&gt;追記：&lt;br /&gt;
+&lt;a href="http://tyage.sakura.ne.jp/blog/?p=43"&gt;jQuery1.4.3が正式発表されました。&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="http://blog.jquery.com/2010/10/10/jquery-1-4-3-release-candidate-1-released/"&gt;jQuery1.4.3rc1&lt;/a&gt;、&lt;a href="http://blog.jquery.com/2010/10/12/jquery-1-4-3-release-candidate-2-released/"&gt;rc2&lt;/a&gt;と立て続けにリリースされたようです。&lt;/p&gt;
+&lt;p&gt;試験中にも関わらず、差分取ってちまちまと見ています。&lt;br /&gt;
+コードの初っ端から少しずつ変わってて、サンドボックスがどうとか、ローカル変数が増えたり変更されたりしてました。&lt;br /&gt;
+内部のほうにはそれなりに変化があるようです。&lt;/p&gt;
+&lt;p&gt;使う側としても、内部関数だったaccessがjQuery.accessとして定義されたり、jQuery.isNanとかjQuery.isWindowとかが増えてたり。&lt;/p&gt;
+&lt;p&gt;$().data周りにも変更があるみたいで、jQuery1.4.3からしか使えないプラグインもあるらしいです。&lt;br /&gt;
+&lt;a href="http://www.infoq.com/jp/news/2010/10/DataLink-jQuery"&gt;InfoQ: Data Link &amp;#8211; jQueryのためのデータバインディング&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;あとはイベント周りとかCSSやAjaxに関わる部分も、関数が増えたり修正されたりしてました。&lt;br /&gt;
+&lt;a href="http://d.hatena.ne.jp/scalar/20101012/1286874658"&gt;jQuery 1.4.2 の xhr.abort() が IE7 でエラーになる問題の回避方法 &amp;#8211; Scalaとlift　のはずだった　・・・&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;もちろんバグ取りはいっぱい行われています。&lt;br /&gt;
+Blackberry対策をしてあるのには少し笑えましたｗ&lt;/p&gt;
+&lt;p&gt;それよりも1.5が楽しみです。&lt;/p&gt;</description></item></channel></rss>

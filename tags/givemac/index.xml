@@ -1,44 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Givemac on blog.tyage.net</title><link>https://blog.tyage.net/tags/givemac/</link><description>Recent content in Givemac on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 05 Apr 2011 16:00:42 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/givemac/index.xml" rel="self" type="application/rss+xml"/><item><title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title><link>https://blog.tyage.net/archive/p315.html</link><pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate><guid>https://blog.tyage.net/archive/p315.html</guid><description>&lt;p>&lt;a href="http://tyage.sakura.ne.jp/blog/?p=313">前の記事&lt;/a>の内容を修正して、スライドにまとめてみた。&lt;/p>
-&lt;p>&lt;a href="http://tyage.sakura.ne.jp/givemac2">スライド&lt;/a>&lt;/p>
-&lt;p>&lt;a href="http://tyage.sakura.ne.jp/js/boku2d-base.js">boku2d(仮)&lt;/a>という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br />
-このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p>
-&lt;p>メインのコードは以下のような感じ。&lt;/p>
-&lt;p>コピペっぽいところがあるのはご愛嬌。&lt;br />
-（時間的に少し焦ってた）&lt;/p>
-&lt;p></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/archive/p313.html</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p313.html</guid><description>提出したスライドはこちら
-一応givemac2用の記事。
-少し設問とずれた話になりそうなので、提出するかどうかは迷い中。
-とりあえず思いついたことをだらだらと書いてみた。
-ほとんど自分の話だから注意。
-ソーシャルとゲーム ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。
-ここで僕の考えているソーシャルゲームと、読者の考えているソーシャルゲームが大幅に異なっている場合があると思います。
-ゲームについて 今の日本の子供であれば、周りを見る限り、ゲームをしない子供というのはかなり少ないはずです。
-ゲームというのは多くの子供の興味を引くものですし、敷居が低いものであります。
-そして、それによる影響は一生とまでは行かなくても、長期に渡って続く場合があると思います。
-良くも悪くも。
-そこで、ゲームの役割について、多くの子供に対する教育を挙げることができる、と僕は考えています。
-ソーシャルであることについて 当前のことながら、ゲームがソーシャルであることで、人と人とのかかわりが生まれてきます。
-先ほどの「教育」と無理やり関連付けると、ソーシャルであることで互いに何かを教えあう、もしくは自分と同じものに興味を持つ人を増やすことができるはずです。
-これはゲームを介して同じ趣味を持つ仲間とつながることができるということですが、この趣味というのはゲームの内容と関係がない場合もあります。
-また、同じ趣味を持った仲間ができるというだけでなく、人との関わり方を学ぶかもしれません。
-（荒らしへの対処法や、失敗した仲間への励ましなど。）
-学ぶことを目的としなくても、いつの間にか何かを学び、互いに教えあうことが、ソーシャルゲームではできるのだと思います。
-自分の事例 ここで自分の事例について述べてみます。
-自分は、ソーシャルゲームを通じて、プログラミングに興味を持つようになりました。
-それまで自分はプログラミングはおろか、パソコンに関してもそれほど興味を持っておりませんでした。
-小学校高学年のころ、自分はゲームをほとんど持っておらず、友達に借りたり、学校のPCルームで遊んだりしていました。
-そして、TOWNというオープンソースなコミュニティベースのソーシャルゲームを元にしたゲームに出会います。
-しかしこのゲームには脆弱性がありました。
-掲示板や日記や家など、各所でXSSができてしまったのです。
-元々HTMLなどの知識があった年上のユーザーがスクロールする文字や、カラフルに光るボタンや背景などをその場で見せてくれ、また自分もそれをコピペし、改変することで少しずつ学びはじめました。
-まるで魔法のようでした。
-もちろんそれを悪用するユーザーも出てきて、自分はXSSという語句は知らなくとも、HTMやJSが埋め込めることの危険性を認識するようになります。
-また、荒らしにも慣れ、はじめよりは落ち着いて対処できるようになります。
-次に、そのゲームには、インラインフレームで自分のサイトを表示するページがあり、そこで自作サイトを表示していた人の影響でホームページを作りはじめました。
-その後、中にはそのゲームの改造版などを作りだす同世代のユーザーも出現し、そのユーザーに教えてもらったり、本を買ったりしながらPerl/CGIについて学び、自分でいろいろなシステムを作るようになりました。
-そのゲームから派生したゲームは未だにチミチミと運営しています。
-また、このゲームからプログラミングに興味を持つようになったユーザーは少なくないですし、その方々の中には僕のように未だにプログラミングを趣味とし続けている方もいます。
-まとめ ソーシャルゲームが人に大きく影響することはまだ稀であるかもしれませんが、インターネットが当たり前の時代になって、ソーシャルゲームで遊ぶ子供が確実に増えている（と自分は思っている）ため、今後このように影響される若者は増えていくと考えています。
-今回は述べませんでしたが、SNSについて言えばこの影響はさらに大きいでしょう。
-最後に、この影響が社会問題ではなく、社会貢献という形になることを望んでいます。
-字数制限超え余裕でした！</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Givemac on blog.tyage.net</title><link>https://blog.tyage.net/tags/givemac/</link><description>Recent content in Givemac on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 05 Apr 2011 16:00:42 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/givemac/index.xml" rel="self" type="application/rss+xml"/><item><title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title><link>https://blog.tyage.net/archive/p315.html</link><pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate><guid>https://blog.tyage.net/archive/p315.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=313"&gt;前の記事&lt;/a&gt;の内容を修正して、スライドにまとめてみた。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/givemac2"&gt;スライド&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/js/boku2d-base.js"&gt;boku2d(仮)&lt;/a&gt;という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br /&gt;
+このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p&gt;
+&lt;p&gt;メインのコードは以下のような感じ。&lt;/p&gt;
+&lt;p&gt;コピペっぽいところがあるのはご愛嬌。&lt;br /&gt;
+（時間的に少し焦ってた）&lt;/p&gt;
+&lt;p&gt;</description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/archive/p313.html</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p313.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/givemac2"&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一応&lt;a href="http://wise9.jp/archives/1004"&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;
+&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;
+&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;
+&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;
+&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;
+&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;
+&lt;p&gt;ここで僕の考えているソーシャルゲームと、読者の考えているソーシャルゲームが大幅に異なっている場合があると思います。&lt;/p&gt;
+&lt;h3&gt;ゲームについて&lt;/h3&gt;
+&lt;p&gt;今の日本の子供であれば、周りを見る限り、ゲームをしない子供というのはかなり少ないはずです。&lt;/p&gt;
+&lt;p&gt;ゲームというのは多くの子供の興味を引くものですし、敷居が低いものであります。&lt;/p&gt;
+&lt;p&gt;そして、それによる影響は一生とまでは行かなくても、長期に渡って続く場合があると思います。&lt;br /&gt;
+良くも悪くも。&lt;/p&gt;
+&lt;p&gt;そこで、ゲームの役割について、多くの子供に対する教育を挙げることができる、と僕は考えています。&lt;/p&gt;
+&lt;h3&gt;ソーシャルであることについて&lt;/h3&gt;
+&lt;p&gt;当前のことながら、ゲームがソーシャルであることで、人と人とのかかわりが生まれてきます。&lt;/p&gt;
+&lt;p&gt;先ほどの「教育」と無理やり関連付けると、ソーシャルであることで互いに何かを教えあう、もしくは自分と同じものに興味を持つ人を増やすことができるはずです。&lt;/p&gt;
+&lt;p&gt;これはゲームを介して同じ趣味を持つ仲間とつながることができるということですが、この趣味というのはゲームの内容と関係がない場合もあります。&lt;/p&gt;
+&lt;p&gt;また、同じ趣味を持った仲間ができるというだけでなく、人との関わり方を学ぶかもしれません。&lt;br /&gt;
+（荒らしへの対処法や、失敗した仲間への励ましなど。）&lt;/p&gt;
+&lt;p&gt;学ぶことを目的としなくても、いつの間にか何かを学び、互いに教えあうことが、ソーシャルゲームではできるのだと思います。&lt;/p&gt;
+&lt;h2&gt;自分の事例&lt;/h2&gt;
+&lt;p&gt;ここで自分の事例について述べてみます。&lt;/p&gt;
+&lt;p&gt;自分は、ソーシャルゲームを通じて、プログラミングに興味を持つようになりました。&lt;/p&gt;
+&lt;p&gt;それまで自分はプログラミングはおろか、パソコンに関してもそれほど興味を持っておりませんでした。&lt;/p&gt;
+&lt;p&gt;小学校高学年のころ、自分はゲームをほとんど持っておらず、友達に借りたり、学校のPCルームで遊んだりしていました。&lt;/p&gt;
+&lt;p&gt;そして、&lt;a href="http://brassiere.jp/02cgi/09.html"&gt;TOWN&lt;/a&gt;というオープンソースなコミュニティベースのソーシャルゲームを元にしたゲームに出会います。&lt;/p&gt;
+&lt;p&gt;しかしこのゲームには脆弱性がありました。&lt;br /&gt;
+掲示板や日記や家など、各所でXSSができてしまったのです。&lt;/p&gt;
+&lt;p&gt;元々HTMLなどの知識があった年上のユーザーがスクロールする文字や、カラフルに光るボタンや背景などをその場で見せてくれ、また自分もそれをコピペし、改変することで少しずつ学びはじめました。&lt;br /&gt;
+まるで魔法のようでした。&lt;/p&gt;
+&lt;p&gt;もちろんそれを悪用するユーザーも出てきて、自分はXSSという語句は知らなくとも、HTMやJSが埋め込めることの危険性を認識するようになります。&lt;br /&gt;
+また、荒らしにも慣れ、はじめよりは落ち着いて対処できるようになります。&lt;/p&gt;
+&lt;p&gt;次に、そのゲームには、インラインフレームで自分のサイトを表示するページがあり、そこで自作サイトを表示していた人の影響でホームページを作りはじめました。&lt;/p&gt;
+&lt;p&gt;その後、中にはそのゲームの改造版などを作りだす同世代のユーザーも出現し、そのユーザーに教えてもらったり、本を買ったりしながらPerl/CGIについて学び、自分でいろいろなシステムを作るようになりました。&lt;/p&gt;
+&lt;p&gt;そのゲームから派生したゲームは未だにチミチミと運営しています。&lt;/p&gt;
+&lt;p&gt;また、このゲームからプログラミングに興味を持つようになったユーザーは少なくないですし、その方々の中には僕のように未だにプログラミングを趣味とし続けている方もいます。&lt;/p&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;ソーシャルゲームが人に大きく影響することはまだ稀であるかもしれませんが、インターネットが当たり前の時代になって、ソーシャルゲームで遊ぶ子供が確実に増えている（と自分は思っている）ため、今後このように影響される若者は増えていくと考えています。&lt;/p&gt;
+&lt;p&gt;今回は述べませんでしたが、SNSについて言えばこの影響はさらに大きいでしょう。&lt;/p&gt;
+&lt;p&gt;最後に、この影響が社会問題ではなく、社会貢献という形になることを望んでいます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;字数制限超え余裕でした！&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

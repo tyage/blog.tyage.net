@@ -1,11 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ruby on blog.tyage.net</title><link>https://blog.tyage.net/categories/ruby/</link><description>Recent content in Ruby on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 12:08:01 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/ruby/index.xml" rel="self" type="application/rss+xml"/><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/archive/p290.html</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p290.html</guid><description>HerokuいいですよねHeroku！
-今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。
-（結局失敗したため、おとなしくUbuntuから使うことにしました。）
-普通はHeroku | Dev Center | Getting Started with Herokuを見ればできるはず。
-とりあえず一連の流れを
-rubyをRubyInstaller for Windowsを使ってインストール。
-ついでにgemとかもついてくるので、すぐにrailsをインストールすることから始められる。
-gem update gem install rails gem install heroku keys:add が、ここでメールアドレスとパスワードを入れたところでエラー
-C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17 2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he roku/credentials (Errno::ENOENT) Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに
-41 home_directory = home_directory.split&amp;#40;&amp;quot;&amp;quot;).join(&amp;quot;/&amp;quot;) if !home_directory.nil? と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。
-うぬー。。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ruby on blog.tyage.net</title><link>https://blog.tyage.net/categories/ruby/</link><description>Recent content in Ruby on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 14 Mar 2011 12:08:01 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/ruby/index.xml" rel="self" type="application/rss+xml"/><item><title>WindowsからHeroku使おうとしてくじけた</title><link>https://blog.tyage.net/archive/p290.html</link><pubDate>Mon, 14 Mar 2011 12:08:01 +0000</pubDate><guid>https://blog.tyage.net/archive/p290.html</guid><description>&lt;p&gt;HerokuいいですよねHeroku！&lt;/p&gt;
+&lt;p&gt;今回はRedMineをHerokuで使おうと思いまして、Windows環境からトライしてみました。&lt;br /&gt;
+（結局失敗したため、おとなしくUbuntuから使うことにしました。）&lt;/p&gt;
+&lt;p&gt;普通は&lt;a href="http://devcenter.heroku.com/articles/quickstart"&gt;Heroku | Dev Center | Getting Started with Heroku&lt;/a&gt;を見ればできるはず。&lt;/p&gt;
+&lt;p&gt;とりあえず一連の流れを&lt;/p&gt;
+&lt;p&gt;rubyを&lt;a href="http://rubyinstaller.org/"&gt;RubyInstaller for Windows&lt;/a&gt;を使ってインストール。&lt;/p&gt;
+&lt;p&gt;ついでにgemとかもついてくるので、すぐにrailsをインストールすることから始められる。&lt;/p&gt;
+&lt;pre&gt;
+gem update
+gem install rails
+gem install
+heroku keys:add
+&lt;/pre&gt;
+&lt;p&gt;が、ここでメールアドレスとパスワードを入れたところでエラー&lt;/p&gt;
+&lt;pre&gt;
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/heroku-1.18.3/lib/heroku/commands/auth.rb:17
+2:in `chmod': No such file or directory - C:Documents and Settingsユーザー名/.he
+roku/credentials (Errno::ENOENT)
+&lt;/pre&gt;
+&lt;p&gt;Windowsのフォルダのセパレータが違うのかなと思い、auth.rbに&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="line_numbers"&gt;&lt;pre&gt;41
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="ruby" style="font-family:monospace;"&gt;	 home_directory = home_directory.&lt;span style="color:#CC0066; font-weight:bold;"&gt;split&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#996600;"&gt;&amp;quot;&lt;span style="color:#000099;"&gt;&amp;quot;&lt;/span&gt;).join(&amp;quot;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;/&lt;/span&gt;&lt;span style="color:#996600;"&gt;&amp;quot;) if !home_directory.nil?&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;と入れてみたのだけども、「Internal server error」が出て上手く行かなかった模様。&lt;br /&gt;
+うぬー。。&lt;/p&gt;</description></item></channel></rss>

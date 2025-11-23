@@ -1,107 +1,135 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>メモ on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/</link><description>Recent content in メモ on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 05 Dec 2016 12:24:31 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title><link>https://blog.tyage.net/archive/p944.html</link><pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate><guid>https://blog.tyage.net/archive/p944.html</guid><description>こんにちは.
-KMC5回生のtyageです.
-この記事は, KMCアドベントカレンダー 5日目の記事です.
-昨日はnonyleneさんの Android Studio をビルドする でした.
-唐突ですが, 今日はPHPの話をします.
-TL;DR PHPのZipArchiveライブラリには, globパターンでファイルを追加する addGlob メソッドがある.
-これにはいくつかoptionが指定できるのだが, 挙動がおかしい.
-送った修正PRに反応をもらえたため, 12/1にリリースされた PHP 7.1 に含まれないかなと期待していたが, 特に進展はなかった.
-みんな困ってないんか&amp;#8230;?
-ZipArchive::addGlob PHPでオシゴトをしていると, PHPでZipファイルを作りたい瞬間があるのではないかと思います.
-私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)
-また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.
-$dir = '/tmp/workdir/'; &amp;nbsp; // create jsons/api.json $jsonDir = $dir . 'jsons'; mkdir&amp;#40;$jsonDir&amp;#41;; file_put_contents&amp;#40;$jsonDir. 'api.json', json_encode&amp;#40;$request&amp;#41;&amp;#41;; &amp;nbsp; // create archive.zip $zip = new ZipArchive&amp;#40;&amp;#41;; $zip-&amp;gt;open&amp;#40;$dir . 'archive.zip', ZipArchive::CREATE&amp;#41;; $zip-&amp;gt;addGlob&amp;#40;$dir . '**/**', 0, &amp;#91;'remove_path' =&amp;gt; $dir&amp;#93;&amp;#41;; $zip-&amp;gt;close&amp;#40;&amp;#41;; ZipArchive::addGlobは, 第一引数にファイル検索パターンを, 第二引数にglobのフラグを, 第三引数にその他optionを指定します.</description></item><item><title>:visitedセレクタのプライバシー問題とSNSでの利用</title><link>https://blog.tyage.net/archive/p848.html</link><pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate><guid>https://blog.tyage.net/archive/p848.html</guid><description>追記(2015年9月9日) 以下の記事は、2015年1月4日時点での内容となります。
-2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。
-参考: CVE-2015-1765, Internet Explorer 用の累積的なセキュリティ更新プログラム (3058515)
-:visitedセレクタについて 半年以上前に少し調べたことについてまとめてみたいと思います。
-まずCSSの擬似セレクタに:visitedがあり、:visitedセレクタではプライバシーの問題上、使用可能なプロパティが制限されていることはご存知の方も多いと思います。
-訪問済みリンクの要素にbackground-imageを設定することで、訪問済みリンクの情報が漏れるという問題等の対策です。
-(Calm brilliance &amp;#8211; CSS Fingerprint: preliminary data)
-詳細は Privacy and the :visited selector にある通りですが、そこでは
-You will still be able to visually style visited links, but there are now limits on what styles you can use. Only the following properties can be applied to visited links:
-&amp;#8211; color
-&amp;#8211; background-color
-&amp;#8211; border-color (and its sub-properties)
-&amp;#8211; outline-color
-&amp;#8211; The color parts of the fill and stroke properties</description></item><item><title>録画環境を構築した</title><link>https://blog.tyage.net/archive/p762.html</link><pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate><guid>https://blog.tyage.net/archive/p762.html</guid><description>環境 ハードはこれ
-OSは未だにUbuntu 12.04
-録画するまで ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。
-深夜アニメを見る生活も捨てがたいし録画することにした。
-PCで見たいので録画カードとしてPT3を買った。
-届いてから設置して、Ubuntuにドライバを入れたりした。
-PT3のドライバがgithubにあったので、すごい時代だなあと思いながらインストール。
-recpt1が必要とのことだったのでこことかを参考にぐぐりながら入れて、再起動。
-B-CASカードに関してはここでは述べないこととする。
-録画管理にはepgdumpではなく、chinachuを使うことにした。
-たまたま冬コミでマニュアルを手に入れていたこともあるけど、モダンな感じなのとnode.jsで書かれているのがいい感じ。
-（epgdumpも入れてみたけどapacheやmysql依存してると開発環境とぶつかってよくない感じに・・・）
-chinachuのWUIは結構充実してて、その場で番組視聴したり録画視聴できるのが嬉しい。
-node.jsは既に入っていたし、wikiに書いてあるとおりにやったらすんなりいけた。
-コマンド1回でだいたい終わるのはとても気持ちいい。
-設定に関して、チャンネルは下のように総当たりでスキャンするか地域で調べるかすればよさげ。
-for var in `seq 13 80` ; do recpt1 --b25 --strip $var 10 ./$var.ts;done ど素人だけど半日あれば十分だった。
-エンコード問題 録画環境が構築できたので試しに録画してみた。
-ある程度覚悟はしていたものの、30分のアニメでm2ts形式のファイルだと3GB前後といった感じだった。
-うう〜ん。。。でかい。。。
-とりあえずmp4に変換しようと思い、HandBrakeを使ってみる。
-Linux環境でもQSVが使えるらしく、ffmpegよりエンコード速度が速いかもとのこと。
-[追記: 2014/10/25]まだLinux環境でもサポートされていないようでした。
-インストール時に注意なのが、「ppa:stebbins/handbrake-releases」には「handbrake」はなくて「handbrake-cli」と「handbrake-gtk」があるということ。
-試しに比較してみると、30分のアニメで、HandBrakeだと20分、ffmpegだと60分以上かかった。
-この時の圧縮後の容量はHandBrakeは400MB、ffmpegは600MBという感じだった。
-HandBrakeのほうが画質が落ちているように見えるが、比較しなければ気にならない程度。
-当然、エンコード方式等々で変わってくるだろうからコマンドを貼っておく。
-ffmpeg -i in.m2ts -vcodec libx264 out.mp4 HandBrakeCLI -e x264 --deinterlace fast --h264-profile main --modulus 2 -q 22 --aencoder copy:aac -i in.m2ts -o out.mp4 適当にencodeしたので適切に圧縮されているのか少し不安である。</description></item><item><title>スペインでFirefox OS端末は買えるのか？</title><link>https://blog.tyage.net/archive/p739.html</link><pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p739.html</guid><description>この記事はKMCアドベントカレンダーの4日目の記事です。
-1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。
-僕は10月末〜11月初めまで、Facebook CTF決勝のためにチームEpsilonDeltaの4人でスペインにいました。
-その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。
-もし今後スペインに行くことがあり、携帯端末を購入するという方の参考になればと思います。
-※Facebook CTFに関する詳しい内容はC85で頒布する部誌に記事を載せているのでそちらをよろしくお願いします。
-3日目 西地区 &amp;#8221;し&amp;#8221; ブロック 42bです。
-よろしくお願いします。
-3日目 西地区 &amp;#8221;し&amp;#8221; ブロック 42bです。
-事の始まり Firefox OS搭載の端末は、先ほど出てきたZTE Openの他にもPeak・Peak+・Keonなどありますが、これらは既に品切れ状態が続いており（Peakは再生産するらしい？）ほとんど手に入らないようです。
-ZTE Openが初めて販売されたのはスペインからということで少し話題になりました。(http://gigazine.net/news/20130710-firefox-os-smartphone-zte-open/)
-ZTE Openはebayで輸入することができるため日本にいても手に入るのですが、輸入にかかる費用を含めて1万円弱($94.99 USD)かかります。
-一方、スペインで買うと7000円弱(49 EUR)で手に入るとわかりました（運が良ければ中古で安く手に入らないかとも期待していた）。
-せっかくスペインに行くのだしこれを自分へのおみやげにしようと決めて出発したのでした。
-11/3 朝 スペイン・バルセロナ自体には10/30昼〜11/4昼までいたのですが、CTFがあったりその他に行く場所があったりして、ZTE Openを探す時間ができたのは11/3と11/4になってしまいました。
-11/3も観光地に寄る予定を組んでいたために、朝に1時間ほどしか動けませんでした。
-しかもこの日は日曜日。
-スペインでは日曜日になるとほぼ全ての店が閉まってしまいます。（日本だと異常事態ですね。）
-ということでこの日はどこに行っても閉店・・・（流石に一部のコンビニや観光地のショップは開いていましたが）
-ホテル付近の店は全滅という状態で諦めざるを得ませんでした。
-スペインに行く際は日曜日(domingo)に気をつけて下さい。
-11/4 9:30 この日は最終日なので9:30-12:00までの間に急いで探さないと行けませんでした。
-前日に調べた結果、とりあえずホテルのすぐ近くにあるmovistar直営店に寄ることにしました。
-movistarというのはスペイン語圏の国々で主に活動している会社で、スペインで最大の携帯事業会社となっています。
-世界第5位の通信事業会社Telefónicaの子会社でもあります。
-スペイン最大ということもあって、バルセロナの町の至る所にmovistarの直営店がありました。
-（その他にはvodafoneやorangeやyoigoといった会社が多く見られました。）
-どこにmovistarがあるのかはこのページで確認することができるのですが、本当にバルセロナを埋め尽くしているという感じです。
-スペインではこのmovistarがZTE Openを取り扱っているらしく、実際に店頭に並べられていたり広告が貼られているのは事前に確認済みです。
-このような特設ページも作られています。
-http://www.movistar.es/firefoxos
-スペイン語がわからない人間のために英語で書かれたZTE Open購入マニュアルも見つけました。
-How to Buy ZTE Open – Step by Step Guide
-これで準備も万全だ！と満を持してmovistarに入ると、スペイン人のお姉ちゃんが1人で店番をしているだけでした。
-僕「Hola!」</description></item><item><title>何か吐き出さないとなあ</title><link>https://blog.tyage.net/archive/p605.html</link><pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate><guid>https://blog.tyage.net/archive/p605.html</guid><description>ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。
-いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。
-とりあえず、以下のことについて書くつもりでいる。
-・ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）
-・会社でまた働き始めたこと
-・情報セキュリティワークショップin越後湯沢
-・アイデアソン
-・SECCON CTF
-・きょーくりっのワークショップ
-・学校や、普段の生活のこと
-・今まで一人でやっていたプロジェクトやプログラミングについて
-こぼしたいことはあるはずなのに、なぜか手が進まないのでこうやって自分にプレッシャーをかけてみる。
-自然とインプットもアウトプットもしなくなってから、自分が何をしているのかわからなくなったので振り返ればと思う。
-ただ、NF（京大11月祭）も近いので、またどうなることやら・・・</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/archive/p243.html</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p243.html</guid><description>たとえばマーカーのアイコン画像の下に文字を表示したい。
-こんな感じに
-この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。
-実際そうすれば問題はないんだけど、そうなるとMarkerClustererライブラリが使えない。
-どうしても使いたい。
-代わりになるものがあればそれでいいけど。。
-あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>メモ on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/</link><description>Recent content in メモ on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 05 Dec 2016 12:24:31 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title><link>https://blog.tyage.net/archive/p944.html</link><pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate><guid>https://blog.tyage.net/archive/p944.html</guid><description>&lt;p&gt;こんにちは.&lt;br /&gt;
+KMC5回生のtyageです.&lt;/p&gt;
+&lt;p&gt;この記事は, &lt;a href="http://www.adventar.org/calendars/1444"&gt;KMCアドベントカレンダー&lt;/a&gt; 5日目の記事です.&lt;br /&gt;
+昨日はnonyleneさんの &lt;a href="http://nonylene.hatenablog.jp/entry/2016/12/05/052817"&gt;Android Studio をビルドする&lt;/a&gt; でした.&lt;/p&gt;
+&lt;p&gt;唐突ですが, 今日はPHPの話をします.&lt;/p&gt;
+&lt;h2&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;PHPのZipArchiveライブラリには, globパターンでファイルを追加する &lt;code&gt;addGlob&lt;/code&gt; メソッドがある.&lt;br /&gt;
+これにはいくつかoptionが指定できるのだが, 挙動がおかしい.&lt;br /&gt;
+送った修正PRに反応をもらえたため, &lt;a href="http://php.net/archive/2016.php#id2016-12-01-3"&gt;12/1にリリースされた PHP 7.1&lt;/a&gt; に含まれないかなと期待していたが, 特に進展はなかった.&lt;br /&gt;
+みんな困ってないんか&amp;#8230;?&lt;/p&gt;
+&lt;h2&gt;ZipArchive::addGlob&lt;/h2&gt;
+&lt;p&gt;PHPでオシゴトをしていると, PHPでZipファイルを作りたい瞬間があるのではないかと思います.&lt;br /&gt;
+私も, リクエスト内容が書かれたjsonファイルや画像をZipファイルでまとめてPOSTする超コズミックなAPIを叩く, 最高の機会がありました. (社会の歯車である一労働者は, 用意されたAPIに文句を言う前に黙々と作業をしなければいけない時があります.)&lt;br /&gt;
+また, 様々な都合でZip圧縮前のフォルダを残しておく必要があったため, こんなコードを書いたのです.&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="php" style="font-family:monospace;"&gt;&lt;span style="color: #000088;"&gt;$dir&lt;/span&gt; &lt;span style="color: #339933;"&gt;=&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;'/tmp/workdir/'&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&amp;nbsp;
+&lt;span style="color: #666666; font-style: italic;"&gt;// create jsons/api.json&lt;/span&gt;
+&lt;span style="color: #000088;"&gt;$jsonDir&lt;/span&gt; &lt;span style="color: #339933;"&gt;=&lt;/span&gt; &lt;span style="color: #000088;"&gt;$dir&lt;/span&gt; &lt;span style="color: #339933;"&gt;.&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;'jsons'&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&lt;span style="color: #990000;"&gt;mkdir&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000088;"&gt;$jsonDir&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&lt;span style="color: #990000;"&gt;file_put_contents&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000088;"&gt;$jsonDir&lt;/span&gt;&lt;span style="color: #339933;"&gt;.&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;'api.json'&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; &lt;span style="color: #990000;"&gt;json_encode&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000088;"&gt;$request&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&amp;nbsp;
+&lt;span style="color: #666666; font-style: italic;"&gt;// create archive.zip&lt;/span&gt;
+&lt;span style="color: #000088;"&gt;$zip&lt;/span&gt; &lt;span style="color: #339933;"&gt;=&lt;/span&gt; &lt;span style="color: #000000; font-weight: bold;"&gt;new&lt;/span&gt; ZipArchive&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&lt;span style="color: #000088;"&gt;$zip&lt;/span&gt;&lt;span style="color: #339933;"&gt;-&amp;gt;&lt;/span&gt;&lt;span style="color: #004000;"&gt;open&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000088;"&gt;$dir&lt;/span&gt; &lt;span style="color: #339933;"&gt;.&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;'archive.zip'&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; ZipArchive&lt;span style="color: #339933;"&gt;::&lt;/span&gt;&lt;span style="color: #004000;"&gt;CREATE&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&lt;span style="color: #000088;"&gt;$zip&lt;/span&gt;&lt;span style="color: #339933;"&gt;-&amp;gt;&lt;/span&gt;&lt;span style="color: #004000;"&gt;addGlob&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000088;"&gt;$dir&lt;/span&gt; &lt;span style="color: #339933;"&gt;.&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;'**/**'&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; &lt;span style="color: #cc66cc;"&gt;0&lt;/span&gt;&lt;span style="color: #339933;"&gt;,&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color: #0000ff;"&gt;'remove_path'&lt;/span&gt; &lt;span style="color: #339933;"&gt;=&amp;gt;&lt;/span&gt; &lt;span style="color: #000088;"&gt;$dir&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
+&lt;span style="color: #000088;"&gt;$zip&lt;/span&gt;&lt;span style="color: #339933;"&gt;-&amp;gt;&lt;/span&gt;&lt;span style="color: #004000;"&gt;close&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;ZipArchive::addGlob&lt;/code&gt;は, 第一引数にファイル検索パターンを, 第二引数に&lt;a href="http://php.net/manual/ja/function.glob.php"&gt;globのフラグ&lt;/a&gt;を, 第三引数にその他optionを指定します.&lt;br /&gt;
+このoptionが今回の焦点となるのですが, 以下の項目が設定できます.&lt;/p&gt;</description></item><item><title>:visitedセレクタのプライバシー問題とSNSでの利用</title><link>https://blog.tyage.net/archive/p848.html</link><pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate><guid>https://blog.tyage.net/archive/p848.html</guid><description>&lt;h2&gt;追記(2015年9月9日)&lt;/h2&gt;
+&lt;p&gt;以下の記事は、2015年1月4日時点での内容となります。&lt;/p&gt;
+&lt;p&gt;2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1765"&gt;CVE-2015-1765&lt;/a&gt;, &lt;a href="https://technet.microsoft.com/ja-jp/library/MS15-056"&gt;Internet Explorer 用の累積的なセキュリティ更新プログラム (3058515)&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;:visitedセレクタについて&lt;/h2&gt;
+&lt;p&gt;半年以上前に少し調べたことについてまとめてみたいと思います。&lt;/p&gt;
+&lt;p&gt;まずCSSの擬似セレクタに:visitedがあり、:visitedセレクタではプライバシーの問題上、使用可能なプロパティが制限されていることはご存知の方も多いと思います。&lt;/p&gt;
+&lt;p&gt;訪問済みリンクの要素にbackground-imageを設定することで、訪問済みリンクの情報が漏れるという問題等の対策です。&lt;br /&gt;
+(&lt;a href="http://saizai.livejournal.com/960791.html"&gt;Calm brilliance &amp;#8211; CSS Fingerprint: preliminary data&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;詳細は &lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector"&gt;Privacy and the :visited selector&lt;/a&gt; にある通りですが、そこでは&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+You will still be able to visually style visited links, but there are now limits on what styles you can use. Only the following properties can be applied to visited links:&lt;/p&gt;
+&lt;p&gt;&amp;#8211; color&lt;br /&gt;
+&amp;#8211; background-color&lt;br /&gt;
+&amp;#8211; border-color (and its sub-properties)&lt;br /&gt;
+&amp;#8211; outline-color&lt;br /&gt;
+&amp;#8211; The color parts of the fill and stroke properties&lt;/p&gt;</description></item><item><title>録画環境を構築した</title><link>https://blog.tyage.net/archive/p762.html</link><pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate><guid>https://blog.tyage.net/archive/p762.html</guid><description>&lt;h2&gt;環境&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://blog.tyage.net/?p=455"&gt;ハードはこれ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OSは未だにUbuntu 12.04&lt;/p&gt;
+&lt;h2&gt;録画するまで&lt;/h2&gt;
+&lt;p&gt;ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。&lt;/p&gt;
+&lt;p&gt;深夜アニメを見る生活も捨てがたいし録画することにした。&lt;/p&gt;
+&lt;p&gt;PCで見たいので録画カードとして&lt;a href="http://www.amazon.co.jp/%E3%82%A2%E3%83%BC%E3%82%B9%E3%82%BD%E3%83%95%E3%83%88-PT3-Rev-A/dp/B00857CQAM/"&gt;PT3&lt;/a&gt;を買った。&lt;/p&gt;
+&lt;p&gt;届いてから設置して、Ubuntuにドライバを入れたりした。&lt;/p&gt;
+&lt;p&gt;PT3のドライバが&lt;a href="https://github.com/m-tsudo/pt3"&gt;github&lt;/a&gt;にあったので、すごい時代だなあと思いながらインストール。&lt;/p&gt;
+&lt;p&gt;recpt1が必要とのことだったので&lt;a href="http://transitive.info/2012/10/22/ubuntu-pt3-epgrec/"&gt;ここ&lt;/a&gt;とかを参考にぐぐりながら入れて、再起動。&lt;/p&gt;
+&lt;p&gt;B-CASカードに関してはここでは述べないこととする。&lt;/p&gt;
+&lt;p&gt;録画管理にはepgdumpではなく、&lt;a href="http://chinachu.akkar.in/"&gt;chinachu&lt;/a&gt;を使うことにした。&lt;/p&gt;
+&lt;p&gt;たまたま冬コミでマニュアルを手に入れていたこともあるけど、モダンな感じなのとnode.jsで書かれているのがいい感じ。&lt;br /&gt;
+（epgdumpも入れてみたけどapacheやmysql依存してると開発環境とぶつかってよくない感じに・・・）&lt;/p&gt;
+&lt;p&gt;chinachuのWUIは結構充実してて、その場で番組視聴したり録画視聴できるのが嬉しい。&lt;/p&gt;
+&lt;p&gt;node.jsは既に入っていたし、&lt;a href="https://github.com/kanreisa/Chinachu/wiki/Installation"&gt;wiki&lt;/a&gt;に書いてあるとおりにやったらすんなりいけた。&lt;/p&gt;
+&lt;p&gt;コマンド1回でだいたい終わるのはとても気持ちいい。&lt;/p&gt;
+&lt;p&gt;設定に関して、チャンネルは下のように総当たりでスキャンするか地域で調べるかすればよさげ。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;for&lt;/span&gt; var &lt;span style="color: #000000; font-weight: bold;"&gt;in&lt;/span&gt; &lt;span style="color: #000000; font-weight: bold;"&gt;`&lt;/span&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;seq&lt;/span&gt; &lt;span style="color: #000000;"&gt;13&lt;/span&gt; &lt;span style="color: #000000;"&gt;80&lt;/span&gt;&lt;span style="color: #000000; font-weight: bold;"&gt;`&lt;/span&gt; ; &lt;span style="color: #000000; font-weight: bold;"&gt;do&lt;/span&gt; recpt1 &lt;span style="color: #660033;"&gt;--b25&lt;/span&gt; &lt;span style="color: #660033;"&gt;--strip&lt;/span&gt; &lt;span style="color: #007800;"&gt;$var&lt;/span&gt; &lt;span style="color: #000000;"&gt;10&lt;/span&gt; .&lt;span style="color: #000000; font-weight: bold;"&gt;/&lt;/span&gt;&lt;span style="color: #007800;"&gt;$var&lt;/span&gt;.ts;&lt;span style="color: #000000; font-weight: bold;"&gt;done&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;ど素人だけど半日あれば十分だった。&lt;/p&gt;
+&lt;h2&gt;エンコード問題&lt;/h2&gt;
+&lt;p&gt;録画環境が構築できたので試しに録画してみた。&lt;/p&gt;
+&lt;p&gt;ある程度覚悟はしていたものの、30分のアニメでm2ts形式のファイルだと3GB前後といった感じだった。&lt;/p&gt;
+&lt;p&gt;うう〜ん。。。でかい。。。&lt;/p&gt;
+&lt;p&gt;とりあえずmp4に変換しようと思い、&lt;a href="http://handbrake.fr/"&gt;HandBrake&lt;/a&gt;を使ってみる。&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Linux環境でもQSVが使えるらしく、ffmpegよりエンコード速度が速いかもとのこと。&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;[追記: 2014/10/25]まだLinux環境でもサポートされていないようでした。&lt;/p&gt;
+&lt;p&gt;インストール時に注意なのが、「ppa:stebbins/handbrake-releases」には「handbrake」はなくて「handbrake-cli」と「handbrake-gtk」があるということ。&lt;/p&gt;
+&lt;p&gt;試しに比較してみると、30分のアニメで、HandBrakeだと20分、ffmpegだと60分以上かかった。&lt;/p&gt;
+&lt;p&gt;この時の圧縮後の容量はHandBrakeは400MB、ffmpegは600MBという感じだった。&lt;/p&gt;
+&lt;p&gt;HandBrakeのほうが画質が落ちているように見えるが、比較しなければ気にならない程度。&lt;/p&gt;
+&lt;p&gt;当然、エンコード方式等々で変わってくるだろうからコマンドを貼っておく。&lt;/p&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;&lt;span style="color: #c20cb9; font-weight: bold;"&gt;ffmpeg&lt;/span&gt; &lt;span style="color: #660033;"&gt;-i&lt;/span&gt; in.m2ts &lt;span style="color: #660033;"&gt;-vcodec&lt;/span&gt; libx264 out.mp4&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="bash" style="font-family:monospace;"&gt;HandBrakeCLI &lt;span style="color: #660033;"&gt;-e&lt;/span&gt; x264 &lt;span style="color: #660033;"&gt;--deinterlace&lt;/span&gt; fast &lt;span style="color: #660033;"&gt;--h264-profile&lt;/span&gt; main &lt;span style="color: #660033;"&gt;--modulus&lt;/span&gt; &lt;span style="color: #000000;"&gt;2&lt;/span&gt; &lt;span style="color: #660033;"&gt;-q&lt;/span&gt; &lt;span style="color: #000000;"&gt;22&lt;/span&gt; &lt;span style="color: #660033;"&gt;--aencoder&lt;/span&gt; copy:aac &lt;span style="color: #660033;"&gt;-i&lt;/span&gt; in.m2ts &lt;span style="color: #660033;"&gt;-o&lt;/span&gt; out.mp4&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;適当にencodeしたので適切に圧縮されているのか少し不安である。&lt;/p&gt;</description></item><item><title>スペインでFirefox OS端末は買えるのか？</title><link>https://blog.tyage.net/archive/p739.html</link><pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p739.html</guid><description>&lt;p&gt;この記事は&lt;a href="http://d.hatena.ne.jp/kmc-log/20131126/1385474872"&gt;KMCアドベントカレンダー&lt;/a&gt;の4日目の記事です。&lt;/p&gt;
+&lt;p&gt;1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。&lt;/p&gt;
+&lt;p&gt;僕は10月末〜11月初めまで、&lt;a href="https://ctftime.org/ctf/70"&gt;Facebook CTF決勝&lt;/a&gt;のためにチームEpsilonDeltaの4人でスペインにいました。&lt;br /&gt;
+その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。&lt;/p&gt;
+&lt;p&gt;もし今後スペインに行くことがあり、携帯端末を購入するという方の参考になればと思います。&lt;/p&gt;
+&lt;p&gt;※Facebook CTFに関する詳しい内容はC85で頒布する部誌に記事を載せているのでそちらをよろしくお願いします。&lt;br /&gt;
+&lt;strong&gt;3日目 西地区 &amp;#8221;し&amp;#8221; ブロック 42bです。&lt;/strong&gt;&lt;br /&gt;
+よろしくお願いします。&lt;br /&gt;
+&lt;strong&gt;3日目 西地区 &amp;#8221;し&amp;#8221; ブロック 42bです。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;事の始まり&lt;/h2&gt;
+&lt;p&gt;Firefox OS搭載の端末は、先ほど出てきたZTE Openの他にもPeak・Peak+・Keonなどありますが、これらは既に品切れ状態が続いており（Peakは再生産するらしい？）ほとんど手に入らないようです。&lt;/p&gt;
+&lt;p&gt;ZTE Openが初めて販売されたのはスペインからということで少し話題になりました。(&lt;a href="http://gigazine.net/news/20130710-firefox-os-smartphone-zte-open/"&gt;http://gigazine.net/news/20130710-firefox-os-smartphone-zte-open/&lt;/a&gt;)&lt;br /&gt;
+ZTE Openは&lt;a href="http://www.ebay.com/itm/331031989534"&gt;ebay&lt;/a&gt;で輸入することができるため日本にいても手に入るのですが、輸入にかかる費用を含めて1万円弱($94.99 USD)かかります。&lt;br /&gt;
+一方、スペインで買うと7000円弱(49 EUR)で手に入るとわかりました（運が良ければ中古で安く手に入らないかとも期待していた）。&lt;/p&gt;
+&lt;p&gt;せっかくスペインに行くのだしこれを自分へのおみやげにしようと決めて出発したのでした。&lt;/p&gt;
+&lt;h2&gt;11/3 朝&lt;/h2&gt;
+&lt;p&gt;スペイン・バルセロナ自体には10/30昼〜11/4昼までいたのですが、CTFがあったりその他に行く場所があったりして、ZTE Openを探す時間ができたのは11/3と11/4になってしまいました。&lt;/p&gt;
+&lt;p&gt;11/3も観光地に寄る予定を組んでいたために、朝に1時間ほどしか動けませんでした。&lt;/p&gt;
+&lt;p&gt;しかもこの日は日曜日。&lt;br /&gt;
+スペインでは日曜日になるとほぼ全ての店が閉まってしまいます。（日本だと異常事態ですね。）&lt;/p&gt;
+&lt;p&gt;ということでこの日はどこに行っても閉店・・・（流石に一部のコンビニや観光地のショップは開いていましたが）&lt;br /&gt;
+ホテル付近の店は全滅という状態で諦めざるを得ませんでした。&lt;/p&gt;
+&lt;p&gt;スペインに行く際は日曜日(domingo)に気をつけて下さい。&lt;/p&gt;
+&lt;h2&gt;11/4 9:30&lt;/h2&gt;
+&lt;p&gt;この日は最終日なので9:30-12:00までの間に急いで探さないと行けませんでした。&lt;/p&gt;
+&lt;p&gt;前日に調べた結果、とりあえずホテルのすぐ近くにあるmovistar直営店に寄ることにしました。&lt;/p&gt;
+&lt;p&gt;movistarというのはスペイン語圏の国々で主に活動している会社で、スペインで最大の携帯事業会社となっています。&lt;br /&gt;
+世界第5位の通信事業会社Telefónicaの子会社でもあります。&lt;/p&gt;
+&lt;p&gt;スペイン最大ということもあって、バルセロナの町の至る所にmovistarの直営店がありました。&lt;br /&gt;
+（その他にはvodafoneやorangeやyoigoといった会社が多く見られました。）&lt;/p&gt;
+&lt;p&gt;どこにmovistarがあるのかは&lt;a href="http://www.movistar.es/particulares/atencion-cliente/buscador-de-tiendas/"&gt;このページ&lt;/a&gt;で確認することができるのですが、本当にバルセロナを埋め尽くしているという感じです。&lt;br /&gt;
+&lt;img src="http://gyazo.com/11d4ce2d67d0e4c5e3ad75ab4f748da3.png"&gt;&lt;/p&gt;
+&lt;p&gt;スペインではこのmovistarがZTE Openを取り扱っているらしく、実際に店頭に並べられていたり広告が貼られているのは事前に確認済みです。&lt;br /&gt;
+このような特設ページも作られています。&lt;br /&gt;
+ &lt;a href="http://www.movistar.es/firefoxos"&gt;http://www.movistar.es/firefoxos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;スペイン語がわからない人間のために英語で書かれたZTE Open購入マニュアルも見つけました。&lt;br /&gt;
+&lt;a href="http://firefoxosguide.com/firefox-os/how-to-buy-zte-open-step-by-step-guide-contract-non-contract.html/"&gt;How to Buy ZTE Open – Step by Step Guide&lt;/a&gt;&lt;/p&gt;</description></item><item><title>何か吐き出さないとなあ</title><link>https://blog.tyage.net/archive/p605.html</link><pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate><guid>https://blog.tyage.net/archive/p605.html</guid><description>&lt;p&gt;　&lt;br /&gt;
+ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。&lt;br /&gt;
+いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。&lt;/p&gt;
+&lt;p&gt;とりあえず、以下のことについて書くつもりでいる。&lt;br /&gt;
+・ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）&lt;br /&gt;
+・会社でまた働き始めたこと&lt;br /&gt;
+・情報セキュリティワークショップin越後湯沢&lt;br /&gt;
+・アイデアソン&lt;br /&gt;
+・SECCON CTF&lt;br /&gt;
+・きょーくりっのワークショップ&lt;br /&gt;
+・学校や、普段の生活のこと&lt;br /&gt;
+・今まで一人でやっていたプロジェクトやプログラミングについて&lt;/p&gt;
+&lt;p&gt;こぼしたいことはあるはずなのに、なぜか手が進まないのでこうやって自分にプレッシャーをかけてみる。&lt;/p&gt;
+&lt;p&gt;自然とインプットもアウトプットもしなくなってから、自分が何をしているのかわからなくなったので振り返ればと思う。&lt;/p&gt;
+&lt;p&gt;ただ、NF（京大11月祭）も近いので、またどうなることやら・・・&lt;/p&gt;</description></item><item><title>google mapsでマーカーに文字を表示させたい</title><link>https://blog.tyage.net/archive/p243.html</link><pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate><guid>https://blog.tyage.net/archive/p243.html</guid><description>&lt;p&gt;たとえばマーカーのアイコン画像の下に文字を表示したい。&lt;/p&gt;
+&lt;p&gt;こんな感じに&lt;br /&gt;
+&lt;a href="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png"&gt;&lt;img data-attachment-id="244" data-permalink="https://blog.tyage.net/?attachment_id=244" data-orig-file="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" data-orig-size="370,330" data-comments-opened="1" data-image-meta="{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}" data-image-title="maps" data-image-description="" data-medium-file="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" data-large-file="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" src="https://blog.tyage.net/wp-content/uploads/2011/01/maps.png" alt="" title="maps" width="370" height="330" class="alignnone size-full wp-image-244" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。&lt;/p&gt;
+&lt;p&gt;実際そうすれば問題はないんだけど、そうなると&lt;a href='http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/docs/reference.html'&gt;MarkerClustererライブラリ&lt;/a&gt;が使えない。&lt;/p&gt;
+&lt;p&gt;どうしても使いたい。&lt;br /&gt;
+代わりになるものがあればそれでいいけど。。&lt;/p&gt;
+&lt;p&gt;あきらめてcanvasに文字を書いてdataスキームで画像として表示するとか・・・？&lt;/p&gt;</description></item></channel></rss>

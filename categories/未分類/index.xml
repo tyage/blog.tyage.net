@@ -1,77 +1,379 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>未分類 on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/</link><description>Recent content in 未分類 on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 14 Feb 2018 10:36:25 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>ANAプラチナメンバーになりました</title><link>https://blog.tyage.net/archive/p1113.html</link><pubDate>Wed, 14 Feb 2018 10:36:25 +0000</pubDate><guid>https://blog.tyage.net/archive/p1113.html</guid><description>2017年はいい感じに飛行機に乗る機会があって、年末修行したら 50022PP (ANA分: 34444PP) になりました。
-今年度までは学生なのでSFCに申し込めないですが、来年度からSFC会員に申し込もうと思います。(できるのか？)
-消えないうちにフライトを記録。
-日付 フライト ルート マイル PP 値段
-2017/03/25 NH 0026 大阪（伊丹）－東京（羽田） 280 560 125,940円　(25.76円/PP) 2017/03/25 UA 0882 TOKYO/NARITA &amp;#8211; OHARE 1,884 1,884 2017/03/31 NH 0039 東京（羽田）－大阪（伊丹） 280 560 2017/03/31 UA 0881 OHARE &amp;#8211; TOKYO/NARITA 1,884 1,884 2017/05/05 NH 0024 大阪（伊丹）－東京（羽田） 210 820 28,580円　(17.42円/PP) 2017/05/07 NH 0037 東京（羽田）－大阪（伊丹） 210 820 2017/05/12 NH 0030 大阪（伊丹）－東京（羽田） 210 820 24,980円　(15.23円/PP) 2017/05/13 NH 0031 東京（羽田）－大阪（伊丹） 210 820 2017/05/21 NH 0022 大阪（伊丹）－東京（羽田） 210 820 23,180円　(14.</description></item><item><title>ハンドルネーム</title><link>https://blog.tyage.net/archive/p781.html</link><pubDate>Mon, 19 May 2014 12:19:38 +0000</pubDate><guid>https://blog.tyage.net/archive/p781.html</guid><description>世間が某音楽デュオの話で盛り上がっているのでそれに便乗して&amp;#8230;
-よく聞かれるのですが、私のハンドルネームがチャゲになったのは、小学校3年生くらいの時からアダ名がそうだったからです。
-中学・高校・大学もずっとそのアダ名で呼ばれているのですが、なぜそう呼ばれ始めたのかよく覚えていません。
-（音楽ユニットに関係あったかもしれないしなかったかもしれない）
-ハンドルネームとしてインターネットで10年近く利用していますが、エゴサーチしづらいだけでなく、たまに音楽ユニットと間違われることがあります。
-最近だと、Google+で音楽ユニットの方が写っている忘年会の写真にタグ付けされて、限定公開の写真が見えてしまうということがありました。
-知らない人からgoogleプラスの写真でタグ付けされたとの通知が来て、見てみたらチャゲ＆ア○カのほうのチャゲさん達の忘年会の写真（限定公開）が・・・
-&amp;mdash; ッぴょㄘゃ (@tyage) 2014, 2月 18
-Google+のプロフィールには、学校名とか所属している会社とか書いてあるので、見たらすぐにわかるはずなのですが&amp;#8230;
-案外、タグ付けする際に確認せずに気軽にタグ付けする人が多いのかもしれないですね。
-逆に、芸能人になりすましてプロフィールを作ると、タグ付けされて情報が手に入ったりするのかもしれないと思いました。
-（やりたくないし。やらないですが）
-そもそも情報の公開範囲制限をかけてない投稿って多いですし、人間の操作ミスも含まれるので情報が漏れてしまうのを防ぐのはなかなか難しそうです。
-話が大きくそれましたが、私のハンドルネームの由来を知っている方はご一報ください。</description></item><item><title>サイト移転中です</title><link>https://blog.tyage.net/archive/p683.html</link><pubDate>Fri, 12 Jul 2013 11:21:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p683.html</guid><description>なかなか時間が取れず、サイトの移転を先延ばしにしていたのですが、移転することになりました。
-移転元: http://tyage.sakura.ne.jp/
-移転先: http://tyage.net/
-さくらのクラウド二万円クーポンを頂いたため、サーバはそこにおいてあります。
-さくらのVPSもさくらのレンタルサーバも契約してあるんですが、せっかくなのでクラウドに統一して、他はいらないかなと思っています。
-あんまり深く考えず、OSはDebian 7.1(wheezy)で、このブログとかはnginx使って動かしています。
-とりあえずブログから移転することにしました。
-移転前のサイトのコンテンツは、残すか消すか迷っています。
-いくつかのサービスやゲームはさくらのクラウド上で動かすつもりです。
-移転元のサイトは今年分の料金を払ったので、あと1年だけ残すことになります。
-ここのところ、ブログも書けていないのでちゃんと書いていきますね。
-移転に際して、以下のページを参考にさせていただきました。
-nginxベースの高速なWordPress環境をお名前.comのVPSで構築
-Debian Squeeze に nginx + php-fpm な Web サーバーを構築する</description></item><item><title>吐き溜め場</title><link>https://blog.tyage.net/archive/p411.html</link><pubDate>Sat, 17 Sep 2011 16:55:21 +0000</pubDate><guid>https://blog.tyage.net/archive/p411.html</guid><description>見るな</description></item><item><title>なんで、私がプログラミングを！？</title><link>https://blog.tyage.net/archive/p357.html</link><pubDate>Sat, 21 May 2011 08:02:40 +0000</pubDate><guid>https://blog.tyage.net/archive/p357.html</guid><description>&lt;p>@Sn0wNightによるエクストリーム過去晒しが流行ってたので、時代に乗り遅れつつ僕も書くことにした。&lt;br />
-参照：&lt;a href="http://b.zero-signal.net/?p=1704">僕がプログラミングをはじめたきっかけ &amp;#8211; ごみ箱&lt;/a>&lt;/p>
-&lt;h2>言語&lt;/h2>
-&lt;p>HTML　親友だと思ってます&lt;br />
-CSS　たぶん友達&lt;br />
-JavaScript　幼なじみ、片思い♡&lt;br />
-PHP　複雑な関係&lt;br />
-Perl　昔の友達&lt;br />
-SQL　友達の友達は知り合い&lt;br />
-Ruby/Python　顔見知り&lt;br />
-Java/C/C++　プログラミングコンテストでお会いしましたね&lt;br /></description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/archive/p313.html</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p313.html</guid><description>提出したスライドはこちら
-一応givemac2用の記事。
-少し設問とずれた話になりそうなので、提出するかどうかは迷い中。
-とりあえず思いついたことをだらだらと書いてみた。
-ほとんど自分の話だから注意。
-ソーシャルとゲーム ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。
-ここで僕の考えているソーシャルゲームと、読者の考えているソーシャルゲームが大幅に異なっている場合があると思います。
-ゲームについて 今の日本の子供であれば、周りを見る限り、ゲームをしない子供というのはかなり少ないはずです。
-ゲームというのは多くの子供の興味を引くものですし、敷居が低いものであります。
-そして、それによる影響は一生とまでは行かなくても、長期に渡って続く場合があると思います。
-良くも悪くも。
-そこで、ゲームの役割について、多くの子供に対する教育を挙げることができる、と僕は考えています。
-ソーシャルであることについて 当前のことながら、ゲームがソーシャルであることで、人と人とのかかわりが生まれてきます。
-先ほどの「教育」と無理やり関連付けると、ソーシャルであることで互いに何かを教えあう、もしくは自分と同じものに興味を持つ人を増やすことができるはずです。
-これはゲームを介して同じ趣味を持つ仲間とつながることができるということですが、この趣味というのはゲームの内容と関係がない場合もあります。
-また、同じ趣味を持った仲間ができるというだけでなく、人との関わり方を学ぶかもしれません。
-（荒らしへの対処法や、失敗した仲間への励ましなど。）
-学ぶことを目的としなくても、いつの間にか何かを学び、互いに教えあうことが、ソーシャルゲームではできるのだと思います。
-自分の事例 ここで自分の事例について述べてみます。
-自分は、ソーシャルゲームを通じて、プログラミングに興味を持つようになりました。
-それまで自分はプログラミングはおろか、パソコンに関してもそれほど興味を持っておりませんでした。
-小学校高学年のころ、自分はゲームをほとんど持っておらず、友達に借りたり、学校のPCルームで遊んだりしていました。
-そして、TOWNというオープンソースなコミュニティベースのソーシャルゲームを元にしたゲームに出会います。
-しかしこのゲームには脆弱性がありました。
-掲示板や日記や家など、各所でXSSができてしまったのです。
-元々HTMLなどの知識があった年上のユーザーがスクロールする文字や、カラフルに光るボタンや背景などをその場で見せてくれ、また自分もそれをコピペし、改変することで少しずつ学びはじめました。
-まるで魔法のようでした。
-もちろんそれを悪用するユーザーも出てきて、自分はXSSという語句は知らなくとも、HTMやJSが埋め込めることの危険性を認識するようになります。
-また、荒らしにも慣れ、はじめよりは落ち着いて対処できるようになります。
-次に、そのゲームには、インラインフレームで自分のサイトを表示するページがあり、そこで自作サイトを表示していた人の影響でホームページを作りはじめました。
-その後、中にはそのゲームの改造版などを作りだす同世代のユーザーも出現し、そのユーザーに教えてもらったり、本を買ったりしながらPerl/CGIについて学び、自分でいろいろなシステムを作るようになりました。
-そのゲームから派生したゲームは未だにチミチミと運営しています。
-また、このゲームからプログラミングに興味を持つようになったユーザーは少なくないですし、その方々の中には僕のように未だにプログラミングを趣味とし続けている方もいます。
-まとめ ソーシャルゲームが人に大きく影響することはまだ稀であるかもしれませんが、インターネットが当たり前の時代になって、ソーシャルゲームで遊ぶ子供が確実に増えている（と自分は思っている）ため、今後このように影響される若者は増えていくと考えています。
-今回は述べませんでしたが、SNSについて言えばこの影響はさらに大きいでしょう。
-最後に、この影響が社会問題ではなく、社会貢献という形になることを望んでいます。
-字数制限超え余裕でした！</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>未分類 on blog.tyage.net</title><link>https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/</link><description>Recent content in 未分類 on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 14 Feb 2018 10:36:25 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>ANAプラチナメンバーになりました</title><link>https://blog.tyage.net/archive/p1113.html</link><pubDate>Wed, 14 Feb 2018 10:36:25 +0000</pubDate><guid>https://blog.tyage.net/archive/p1113.html</guid><description>&lt;p&gt;2017年はいい感じに飛行機に乗る機会があって、年末修行したら 50022PP (ANA分: 34444PP) になりました。&lt;br /&gt;
+今年度までは学生なのでSFCに申し込めないですが、来年度からSFC会員に申し込もうと思います。(できるのか？)&lt;/p&gt;
+&lt;p&gt;消えないうちにフライトを記録。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日付&lt;/th&gt;
+&lt;th&gt;フライト&lt;/th&gt;
+&lt;th&gt;ルート&lt;/th&gt;
+&lt;th&gt;マイル&lt;/th&gt;
+&lt;th&gt;PP&lt;/th&gt;
+&lt;th&gt;値段&lt;/p&gt;
+&lt;th&gt;&lt;/tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/03/25&lt;/td&gt;
+&lt;td&gt;NH 0026&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;280&lt;/td&gt;
+&lt;td&gt;560&lt;/td&gt;
+&lt;td rowspan="4"&gt;125,940円　(25.76円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/03/25&lt;/td&gt;
+&lt;td&gt;UA 0882&lt;/td&gt;
+&lt;td&gt;TOKYO/NARITA &amp;#8211; OHARE&lt;/td&gt;
+&lt;td&gt;1,884&lt;/td&gt;
+&lt;td&gt;1,884&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/03/31&lt;/td&gt;
+&lt;td&gt;NH 0039&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;280&lt;/td&gt;
+&lt;td&gt;560&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/03/31&lt;/td&gt;
+&lt;td&gt;UA 0881&lt;/td&gt;
+&lt;td&gt;OHARE &amp;#8211; TOKYO/NARITA&lt;/td&gt;
+&lt;td&gt;1,884&lt;/td&gt;
+&lt;td&gt;1,884&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/05/05&lt;/td&gt;
+&lt;td&gt;NH 0024&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;28,580円　(17.42円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/05/07&lt;/td&gt;
+&lt;td&gt;NH 0037&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/05/12&lt;/td&gt;
+&lt;td&gt;NH 0030&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;24,980円　(15.23円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/05/13&lt;/td&gt;
+&lt;td&gt;NH 0031&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/05/21&lt;/td&gt;
+&lt;td&gt;NH 0022&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;23,180円　(14.13円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/05/21&lt;/td&gt;
+&lt;td&gt;NH 0041&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/06/26&lt;/td&gt;
+&lt;td&gt;NH 0979&lt;/td&gt;
+&lt;td&gt;OSAKA/KANSAI &amp;#8211; BEIJING CAPITAL&lt;/td&gt;
+&lt;td&gt;546&lt;/td&gt;
+&lt;td&gt;819&lt;/td&gt;
+&lt;td rowspan="2"&gt;74,200円　(45.29円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/06/30&lt;/td&gt;
+&lt;td&gt;NH 0980&lt;/td&gt;
+&lt;td&gt;BEIJING CAPITAL &amp;#8211; OSAKA/KANSAI&lt;/td&gt;
+&lt;td&gt;546&lt;/td&gt;
+&lt;td&gt;819&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/07/12&lt;/td&gt;
+&lt;td&gt;NH 0021&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td&gt;13,590円　(16.57円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/07/25&lt;/td&gt;
+&lt;td&gt;NH 0020&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;28,680円　(17.48円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/07/25&lt;/td&gt;
+&lt;td&gt;NH 0039&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/08/10&lt;/td&gt;
+&lt;td&gt;NH 0026&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;29,980円　(18.28円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/08/13&lt;/td&gt;
+&lt;td&gt;NH 0035&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/08/26&lt;/td&gt;
+&lt;td&gt;NH 0032&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="3"&gt;62,880円　(18.58円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/08/27&lt;/td&gt;
+&lt;td&gt;NH 0079&lt;/td&gt;
+&lt;td&gt;東京（羽田）－札幌（千歳）&lt;/td&gt;
+&lt;td&gt;420&lt;/td&gt;
+&lt;td&gt;1,165&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/08/29&lt;/td&gt;
+&lt;td&gt;NH 0772&lt;/td&gt;
+&lt;td&gt;札幌（千歳）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;548&lt;/td&gt;
+&lt;td&gt;1,399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/09/20&lt;/td&gt;
+&lt;td&gt;NH 3173&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－新潟&lt;/td&gt;
+&lt;td&gt;258&lt;/td&gt;
+&lt;td&gt;871&lt;/td&gt;
+&lt;td&gt;24,400円　(28.01円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/09/27&lt;/td&gt;
+&lt;td&gt;NH 0024&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;24,480円　(14.92円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/09/30&lt;/td&gt;
+&lt;td&gt;NH 0031&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/10/25&lt;/td&gt;
+&lt;td&gt;NH 2176&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（成田）&lt;/td&gt;
+&lt;td&gt;308&lt;/td&gt;
+&lt;td&gt;560&lt;/td&gt;
+&lt;td rowspan="4"&gt;133,360円　(17.96円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/10/25&lt;/td&gt;
+&lt;td&gt;LX 0161&lt;/td&gt;
+&lt;td&gt;TOKYO/NARITA &amp;#8211; ZURICH（ＮＨ）共同便利用&lt;/td&gt;
+&lt;td&gt;3,012&lt;/td&gt;
+&lt;td&gt;3,012&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/10/30&lt;/td&gt;
+&lt;td&gt;LX 0160&lt;/td&gt;
+&lt;td&gt;ZURICH &amp;#8211; TOKYO/NARITA（ＮＨ）共同便利用&lt;/td&gt;
+&lt;td&gt;3,012&lt;/td&gt;
+&lt;td&gt;3,012&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/10/31&lt;/td&gt;
+&lt;td&gt;NH 0991&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（関西）&lt;/td&gt;
+&lt;td&gt;462&lt;/td&gt;
+&lt;td&gt;840&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/11/08&lt;/td&gt;
+&lt;td&gt;NH 0024&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－東京（羽田）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;td rowspan="2"&gt;29,780円　(18.15円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/11/13&lt;/td&gt;
+&lt;td&gt;NH 0021&lt;/td&gt;
+&lt;td&gt;東京（羽田）－大阪（伊丹）&lt;/td&gt;
+&lt;td&gt;231&lt;/td&gt;
+&lt;td&gt;820&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/11/14&lt;/td&gt;
+&lt;td&gt;TG 0623&lt;/td&gt;
+&lt;td&gt;OSAKA/KANSAI &amp;#8211; BANGKOK&lt;/td&gt;
+&lt;td&gt;2,592&lt;/td&gt;
+&lt;td&gt;2,992&lt;/td&gt;
+&lt;td rowspan="2"&gt;99,960円　(16.70円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/11/18&lt;/td&gt;
+&lt;td&gt;TG 0622&lt;/td&gt;
+&lt;td&gt;BANGKOK &amp;#8211; OSAKA/KANSAI&lt;/td&gt;
+&lt;td&gt;2,592&lt;/td&gt;
+&lt;td&gt;2,992&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/12/22&lt;/td&gt;
+&lt;td&gt;NH 0577&lt;/td&gt;
+&lt;td&gt;神戸－札幌（千歳）&lt;/td&gt;
+&lt;td&gt;1,165&lt;/td&gt;
+&lt;td&gt;2,065&lt;/td&gt;
+&lt;td rowspan="4"&gt;91,600円　(10.62円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/12/23&lt;/td&gt;
+&lt;td&gt;NH 1712&lt;/td&gt;
+&lt;td&gt;札幌（千歳）－大阪（関西）&lt;/td&gt;
+&lt;td&gt;1,165&lt;/td&gt;
+&lt;td&gt;2,065&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/12/23&lt;/td&gt;
+&lt;td&gt;NH 1737&lt;/td&gt;
+&lt;td&gt;大阪（関西）－沖縄&lt;/td&gt;
+&lt;td&gt;1,292&lt;/td&gt;
+&lt;td&gt;2,247&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/12/24&lt;/td&gt;
+&lt;td&gt;NH 1734&lt;/td&gt;
+&lt;td&gt;沖縄－大阪（関西）&lt;/td&gt;
+&lt;td&gt;1,292&lt;/td&gt;
+&lt;td&gt;2,247&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/12/28&lt;/td&gt;
+&lt;td&gt;NH 0474&lt;/td&gt;
+&lt;td&gt;沖縄－東京（羽田）&lt;/td&gt;
+&lt;td&gt;1,722&lt;/td&gt;
+&lt;td&gt;2,860&lt;/td&gt;
+&lt;td rowspan="2"&gt;52,390円　(10.25円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017/12/28&lt;/td&gt;
+&lt;td&gt;NH 0765&lt;/td&gt;
+&lt;td&gt;大阪（伊丹）－沖縄&lt;/td&gt;
+&lt;td&gt;1,292&lt;/td&gt;
+&lt;td&gt;2,247&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="3"&gt;合計&lt;/td&gt;
+&lt;td&gt;30,101&lt;/td&gt;
+&lt;td&gt;50,220&lt;/td&gt;
+&lt;td&gt;867,980円　(17.35円/PP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;4月に韓国に行っているんですが、LCCだったためPP加算されていなかったりと、ガバガバです。&lt;br /&gt;
+年末になってやっとステータスが見えてきたので急いで修行していました。&lt;/p&gt;</description></item><item><title>ハンドルネーム</title><link>https://blog.tyage.net/archive/p781.html</link><pubDate>Mon, 19 May 2014 12:19:38 +0000</pubDate><guid>https://blog.tyage.net/archive/p781.html</guid><description>&lt;p&gt;世間が某音楽デュオの話で盛り上がっているのでそれに便乗して&amp;#8230;&lt;/p&gt;
+&lt;p&gt;よく聞かれるのですが、私のハンドルネームがチャゲになったのは、小学校3年生くらいの時からアダ名がそうだったからです。&lt;/p&gt;
+&lt;p&gt;中学・高校・大学もずっとそのアダ名で呼ばれているのですが、なぜそう呼ばれ始めたのかよく覚えていません。&lt;br /&gt;
+（音楽ユニットに関係あったかもしれないしなかったかもしれない）&lt;/p&gt;
+&lt;p&gt;ハンドルネームとしてインターネットで10年近く利用していますが、エゴサーチしづらいだけでなく、たまに音楽ユニットと間違われることがあります。&lt;/p&gt;
+&lt;p&gt;最近だと、Google+で音楽ユニットの方が写っている忘年会の写真にタグ付けされて、限定公開の写真が見えてしまうということがありました。&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;
+&lt;p&gt;知らない人からgoogleプラスの写真でタグ付けされたとの通知が来て、見てみたらチャゲ＆ア○カのほうのチャゲさん達の忘年会の写真（限定公開）が・・・&lt;/p&gt;
+&lt;p&gt;&amp;mdash; ッぴょㄘゃ (@tyage) &lt;a href="https://twitter.com/tyage/statuses/435808247983771648"&gt;2014, 2月 18&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Google+のプロフィールには、学校名とか所属している会社とか書いてあるので、見たらすぐにわかるはずなのですが&amp;#8230;&lt;/p&gt;
+&lt;p&gt;案外、タグ付けする際に確認せずに気軽にタグ付けする人が多いのかもしれないですね。&lt;/p&gt;
+&lt;p&gt;逆に、芸能人になりすましてプロフィールを作ると、タグ付けされて情報が手に入ったりするのかもしれないと思いました。&lt;br /&gt;
+（やりたくないし。やらないですが）&lt;/p&gt;
+&lt;p&gt;そもそも情報の公開範囲制限をかけてない投稿って多いですし、人間の操作ミスも含まれるので情報が漏れてしまうのを防ぐのはなかなか難しそうです。&lt;/p&gt;
+&lt;p&gt;話が大きくそれましたが、私のハンドルネームの由来を知っている方はご一報ください。&lt;/p&gt;</description></item><item><title>サイト移転中です</title><link>https://blog.tyage.net/archive/p683.html</link><pubDate>Fri, 12 Jul 2013 11:21:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p683.html</guid><description>&lt;p&gt;なかなか時間が取れず、サイトの移転を先延ばしにしていたのですが、移転することになりました。&lt;/p&gt;
+&lt;p&gt;移転元: &lt;a href="http://tyage.sakura.ne.jp/" title="http://tyage.sakura.ne.jp/"&gt;http://tyage.sakura.ne.jp/&lt;/a&gt;&lt;br /&gt;
+移転先: &lt;a href="http://tyage.net/" title="http://tyage.net/"&gt;http://tyage.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;さくらのクラウド二万円クーポンを頂いたため、サーバはそこにおいてあります。&lt;/p&gt;
+&lt;p&gt;さくらのVPSもさくらのレンタルサーバも契約してあるんですが、せっかくなのでクラウドに統一して、他はいらないかなと思っています。&lt;/p&gt;
+&lt;p&gt;あんまり深く考えず、OSはDebian 7.1(wheezy)で、このブログとかはnginx使って動かしています。&lt;/p&gt;
+&lt;p&gt;とりあえずブログから移転することにしました。&lt;/p&gt;
+&lt;p&gt;移転前のサイトのコンテンツは、残すか消すか迷っています。&lt;/p&gt;
+&lt;p&gt;いくつかのサービスやゲームはさくらのクラウド上で動かすつもりです。&lt;/p&gt;
+&lt;p&gt;移転元のサイトは今年分の料金を払ったので、あと1年だけ残すことになります。&lt;/p&gt;
+&lt;p&gt;ここのところ、ブログも書けていないのでちゃんと書いていきますね。&lt;/p&gt;
+&lt;p&gt;移転に際して、以下のページを参考にさせていただきました。&lt;br /&gt;
+&lt;a href="http://sourceforge.jp/magazine/12/09/12/0517235"&gt;nginxベースの高速なWordPress環境をお名前.comのVPSで構築&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://hima-j.in/linux/debian-squeeze-nginx-php-fpm-web-server/"&gt;Debian Squeeze に nginx + php-fpm な Web サーバーを構築する&lt;/a&gt;&lt;/p&gt;</description></item><item><title>吐き溜め場</title><link>https://blog.tyage.net/archive/p411.html</link><pubDate>Sat, 17 Sep 2011 16:55:21 +0000</pubDate><guid>https://blog.tyage.net/archive/p411.html</guid><description>&lt;p&gt;見るな&lt;/p&gt;
+&lt;p&gt;&lt;script src="https://gist.github.com/1224129.js?file=gistfile1.txt"&gt;&lt;/script&gt;&lt;/p&gt;</description></item><item><title>なんで、私がプログラミングを！？</title><link>https://blog.tyage.net/archive/p357.html</link><pubDate>Sat, 21 May 2011 08:02:40 +0000</pubDate><guid>https://blog.tyage.net/archive/p357.html</guid><description>&lt;p&gt;@Sn0wNightによるエクストリーム過去晒しが流行ってたので、時代に乗り遅れつつ僕も書くことにした。&lt;br /&gt;
+参照：&lt;a href="http://b.zero-signal.net/?p=1704"&gt;僕がプログラミングをはじめたきっかけ &amp;#8211; ごみ箱&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;言語&lt;/h2&gt;
+&lt;p&gt;HTML　親友だと思ってます&lt;br /&gt;
+CSS　たぶん友達&lt;br /&gt;
+JavaScript　幼なじみ、片思い♡&lt;br /&gt;
+PHP　複雑な関係&lt;br /&gt;
+Perl　昔の友達&lt;br /&gt;
+SQL　友達の友達は知り合い&lt;br /&gt;
+Ruby/Python　顔見知り&lt;br /&gt;
+Java/C/C++　プログラミングコンテストでお会いしましたね&lt;br /&gt;</description></item><item><title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title><link>https://blog.tyage.net/archive/p313.html</link><pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate><guid>https://blog.tyage.net/archive/p313.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/givemac2"&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一応&lt;a href="http://wise9.jp/archives/1004"&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;
+&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;
+&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;
+&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;
+&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;
+&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;
+&lt;p&gt;ここで僕の考えているソーシャルゲームと、読者の考えているソーシャルゲームが大幅に異なっている場合があると思います。&lt;/p&gt;
+&lt;h3&gt;ゲームについて&lt;/h3&gt;
+&lt;p&gt;今の日本の子供であれば、周りを見る限り、ゲームをしない子供というのはかなり少ないはずです。&lt;/p&gt;
+&lt;p&gt;ゲームというのは多くの子供の興味を引くものですし、敷居が低いものであります。&lt;/p&gt;
+&lt;p&gt;そして、それによる影響は一生とまでは行かなくても、長期に渡って続く場合があると思います。&lt;br /&gt;
+良くも悪くも。&lt;/p&gt;
+&lt;p&gt;そこで、ゲームの役割について、多くの子供に対する教育を挙げることができる、と僕は考えています。&lt;/p&gt;
+&lt;h3&gt;ソーシャルであることについて&lt;/h3&gt;
+&lt;p&gt;当前のことながら、ゲームがソーシャルであることで、人と人とのかかわりが生まれてきます。&lt;/p&gt;
+&lt;p&gt;先ほどの「教育」と無理やり関連付けると、ソーシャルであることで互いに何かを教えあう、もしくは自分と同じものに興味を持つ人を増やすことができるはずです。&lt;/p&gt;
+&lt;p&gt;これはゲームを介して同じ趣味を持つ仲間とつながることができるということですが、この趣味というのはゲームの内容と関係がない場合もあります。&lt;/p&gt;
+&lt;p&gt;また、同じ趣味を持った仲間ができるというだけでなく、人との関わり方を学ぶかもしれません。&lt;br /&gt;
+（荒らしへの対処法や、失敗した仲間への励ましなど。）&lt;/p&gt;
+&lt;p&gt;学ぶことを目的としなくても、いつの間にか何かを学び、互いに教えあうことが、ソーシャルゲームではできるのだと思います。&lt;/p&gt;
+&lt;h2&gt;自分の事例&lt;/h2&gt;
+&lt;p&gt;ここで自分の事例について述べてみます。&lt;/p&gt;
+&lt;p&gt;自分は、ソーシャルゲームを通じて、プログラミングに興味を持つようになりました。&lt;/p&gt;
+&lt;p&gt;それまで自分はプログラミングはおろか、パソコンに関してもそれほど興味を持っておりませんでした。&lt;/p&gt;
+&lt;p&gt;小学校高学年のころ、自分はゲームをほとんど持っておらず、友達に借りたり、学校のPCルームで遊んだりしていました。&lt;/p&gt;
+&lt;p&gt;そして、&lt;a href="http://brassiere.jp/02cgi/09.html"&gt;TOWN&lt;/a&gt;というオープンソースなコミュニティベースのソーシャルゲームを元にしたゲームに出会います。&lt;/p&gt;
+&lt;p&gt;しかしこのゲームには脆弱性がありました。&lt;br /&gt;
+掲示板や日記や家など、各所でXSSができてしまったのです。&lt;/p&gt;
+&lt;p&gt;元々HTMLなどの知識があった年上のユーザーがスクロールする文字や、カラフルに光るボタンや背景などをその場で見せてくれ、また自分もそれをコピペし、改変することで少しずつ学びはじめました。&lt;br /&gt;
+まるで魔法のようでした。&lt;/p&gt;
+&lt;p&gt;もちろんそれを悪用するユーザーも出てきて、自分はXSSという語句は知らなくとも、HTMやJSが埋め込めることの危険性を認識するようになります。&lt;br /&gt;
+また、荒らしにも慣れ、はじめよりは落ち着いて対処できるようになります。&lt;/p&gt;
+&lt;p&gt;次に、そのゲームには、インラインフレームで自分のサイトを表示するページがあり、そこで自作サイトを表示していた人の影響でホームページを作りはじめました。&lt;/p&gt;
+&lt;p&gt;その後、中にはそのゲームの改造版などを作りだす同世代のユーザーも出現し、そのユーザーに教えてもらったり、本を買ったりしながらPerl/CGIについて学び、自分でいろいろなシステムを作るようになりました。&lt;/p&gt;
+&lt;p&gt;そのゲームから派生したゲームは未だにチミチミと運営しています。&lt;/p&gt;
+&lt;p&gt;また、このゲームからプログラミングに興味を持つようになったユーザーは少なくないですし、その方々の中には僕のように未だにプログラミングを趣味とし続けている方もいます。&lt;/p&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;ソーシャルゲームが人に大きく影響することはまだ稀であるかもしれませんが、インターネットが当たり前の時代になって、ソーシャルゲームで遊ぶ子供が確実に増えている（と自分は思っている）ため、今後このように影響される若者は増えていくと考えています。&lt;/p&gt;
+&lt;p&gt;今回は述べませんでしたが、SNSについて言えばこの影響はさらに大きいでしょう。&lt;/p&gt;
+&lt;p&gt;最後に、この影響が社会問題ではなく、社会貢献という形になることを望んでいます。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;字数制限超え余裕でした！&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
