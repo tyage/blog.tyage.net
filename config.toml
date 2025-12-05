@@ -40,7 +40,7 @@ theme = "gokarna"
     {name = "email", rel = "me", url = "mailto:namatyage@gmail.com"},
     {name = "mastodon", rel = "me", url = "https://fed.brid.gy/web/blog.tyage.net"},
   ]
-  togglePreviousAndNextButtons = "true"
+  togglePreviousAndNextButtons = true
   showBackToTopButton = true
   dateFormat = "2006/01/02"
   customHeadHTML = """
