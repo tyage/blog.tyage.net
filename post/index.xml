@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on blog.tyage.net</title><link>https://blog.tyage.net/post/</link><description>Recent content in Posts on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 07 Dec 2024 17:52:58 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Automotive CTFの全xNexus問題のwriteup</title><link>https://blog.tyage.net/post/2024/2024-12-07-automotive-ctf/</link><pubDate>Sat, 07 Dec 2024 17:52:58 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-12-07-automotive-ctf/</guid><description>&lt;p&gt;会社チーム「ierae」としてAutomotive CTF 2024に参加しました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on blog.tyage.net</title><link>https://blog.tyage.net/post/</link><description>Recent content in Posts on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Dec 2025 23:30:00 +0900</lastBuildDate><atom:link href="https://blog.tyage.net/post/index.xml" rel="self" type="application/rss+xml"/><item><title>実践 Webペネトレーションテストを出版しました！</title><link>https://blog.tyage.net/post/2025/2025-12-05-practical-web-penetration-testing/</link><pubDate>Fri, 05 Dec 2025 23:30:00 +0900</pubDate><guid>https://blog.tyage.net/post/2025/2025-12-05-practical-web-penetration-testing/</guid><description>&lt;p&gt;オライリー・ジャパンより「&lt;a href="https://www.oreilly.co.jp/books/9784814401253/"&gt;実践 Webペネトレーションテスト&lt;/a&gt;」という書籍を出版しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src="./book.png" alt="本の表紙"&gt;&lt;/p&gt;
+&lt;p&gt;（表紙はモモンガでもムササビでもなく、&lt;a href="https://ja.wikipedia.org/wiki/%E7%9A%AE%E7%BF%BC%E7%9B%AE"&gt;ヒヨケザル&lt;/a&gt;という動物です。）&lt;/p&gt;
+&lt;h2 id="本書の内容"&gt;本書の内容&lt;/h2&gt;
+&lt;p&gt;ペネトレーションテスト（侵入テスト）はシステムに対する擬似的な攻撃を行うことですが、本書ではWebアプリケーションを対象としたものを特にWebペネトレーションテストと呼んでいます。
+本書はこのWebペネトレーションテストの手法を実践的に学ぶことができる書籍で、Webアプリケーションやネットワークの基礎的な知識が必要となるものの、セキュリティエンジニアのみならず、Webアプリケーションの開発に携わる方にとっても楽しめる内容となっています。&lt;/p&gt;
+&lt;p&gt;構成としては、「第I部 実践編」と「第II部 発展編」の2部に分かれています。
+「第I部 実践編」では、Webペネトレーションテストに必要な技術を紹介し、ハンズオン環境で侵入してから攻撃を展開するところも体験できるようになっています。
+「第II部 発展編」では、実践編には収めきれなかったものの、重要なトピックを収録しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第I部 実践編
+&lt;ul&gt;
+&lt;li&gt;1章 Webペネトレーションテストラボの環境構築&lt;/li&gt;
+&lt;li&gt;2章 偵察活動 - アタックサーフェスの調査&lt;/li&gt;
+&lt;li&gt;3章 アプリケーションへの攻撃 - 目的達成のための脆弱性調査&lt;/li&gt;
+&lt;li&gt;4章 攻撃シナリオの実行 - 脆弱性を組み合わせた攻撃の実践&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;第II部 発展編
+&lt;ul&gt;
+&lt;li&gt;5章 ソースコード解析による脆弱性調査&lt;/li&gt;
+&lt;li&gt;6章 クラウドサービスの調査&lt;/li&gt;
+&lt;li&gt;7章 制限の回避と突破&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目次のとおり、技術書ですので実務的な観点よりも技術的な観点を中心にしています。
+また、具体的なツールの使用方法はほどほどに、その原理や目的が理解できることを重視して執筆しました。&lt;/p&gt;
+&lt;p&gt;例えば「2章 偵察活動」では、特に対象スコープが広いWebペネトレーションテストで最初に実施する、偵察活動を紹介しています。
+偵察活動で必要な作業は自動化できるものが多く、実際のところはツールを実行することが主流といったことも聞きますが、本書ではそういったツールが実施していることを少し分解して説明しています。&lt;/p&gt;
+&lt;p&gt;また、「3章 アプリケーションへの攻撃」では、SQLインジェクションやOSコマンドインジェクションのような典型的で有名な脆弱性も紹介していますが、認証に関わる脆弱性、特にパスワードリセット機能の脆弱性のような、個別の実装ロジックによる脆弱性も紹介しています。
+加えて、典型的な脆弱性を紹介する際には、脆弱性そのものの内容だけでなく、Webアプリケーションにおいて実際にどういった形で脆弱性を作り込みやすいのかも紹介しています。
+これはWebペネトレーションテストやバグバウンティなどで我々が実際に脆弱性を見かける際の、実体験に基づく内容になっています。
+逆に、有名ではあるものの、見かけることの少ない脆弱性や、リスクが大きくない脆弱性については解説がなかったりします。&lt;/p&gt;
+&lt;p&gt;「4章 攻撃シナリオの実行」は本書でも特徴的な章になったのではないかと思います。
+この章は、ショッピングサイト（ウェブペンSHOP）というハンズオン環境を対象にして、外部から侵入し攻撃を展開するシナリオを体験できるような内容になっています。
+これに関しても、実体験を基にした要素をいくつか取り入れているのですが、1つのWebアプリケーションを前にしてどう取り組んでいくかや、試行錯誤によって道が広がっていく過程を楽しんでもらえると嬉しいです。&lt;/p&gt;
+&lt;p&gt;ペネトレーションテストという内容の触りとしては、「第I部 実践編」までで実践的に学ぶことができるようになっていますが、実際にペネトレーションテストをする際には幅広い知識や技術が必要になります。
+すべてを紹介しているとキリがないのですが、本書では「第II部 発展編」に、こういった知識の中でも特に役に立つと思うものを紹介しています。&lt;/p&gt;
+&lt;p&gt;個人的には、「7章 制限の回避と突破」の最後に解説する「ブロック暗号に対する攻撃」は、面白い内容になったのではないかと思います。
+ブロック暗号はWebアプリケーションでユーザが触れる領域においても実はよく利用されているのですが、一見すると暗号化されたデータはランダムな文字列にしか見えないので、外部からのテストでスルーされてしまうことが多いです。
+しかし、いくつかのデータのパターンを比較したりして暗号文の原理を紐解いてみると、そのWebアプリケーションにおける致命的な脆弱性が判明することも珍しくありません。&lt;/p&gt;
+&lt;h2 id="謝辞"&gt;謝辞&lt;/h2&gt;
+&lt;p&gt;本書の執筆にあたり、2年以上一緒に執筆した著者陣、レビューをしていただいた皆様、編集者の皆様に感謝いたします。
+特にレビューに際しては、日本のセキュリティを代表する錚々たる面々にレビューいただけて感謝しかありません。&lt;/p&gt;
+&lt;p&gt;セキュリティに興味があるエンジニアの方のみならず、Webアプリケーションを開発している方々にとっても、面白いと思ってもらえるような書籍になったのではないかと思います。
+ぜひ手に取っていただければ幸いです。&lt;/p&gt;</description></item><item><title>Automotive CTFの全xNexus問題のwriteup</title><link>https://blog.tyage.net/post/2024/2024-12-07-automotive-ctf/</link><pubDate>Sat, 07 Dec 2024 17:52:58 +0900</pubDate><guid>https://blog.tyage.net/post/2024/2024-12-07-automotive-ctf/</guid><description>&lt;p&gt;会社チーム「ierae」としてAutomotive CTF 2024に参加しました。
 国内予選・国内決勝・国際決勝の3ステージがあったのですが、全てのステージでxNexusというVicOne社の提供するプラットフォームに関連する問題が出ました。&lt;/p&gt;
 &lt;p&gt;チームメンバーの他の問題のwriteup: &lt;a href="https://amenable-muscari-82a.notion.site/Automotive-CTF-15554c2c788a80609e26cd9fb1686a46"&gt;Automotive CTFのこと&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;特段技術的に興味深い内容というわけではないのですが、自分しか解いていない問題もあるため供養します。&lt;/p&gt;
