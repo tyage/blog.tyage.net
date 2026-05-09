@@ -1,29 +1,347 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>Redmine設置した。</title><meta name=description content="なんとか設置できたものの、時間がかかったのでそれの記録。
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Redmine設置した。</title>
+    <meta name="description" content="なんとか設置できたものの、時間がかかったのでそれの記録。
 まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo …"><meta name=keywords content='Heroku,Rails,Redmine'><meta property="og:url" content="https://blog.tyage.net/archive/p296.html"><meta property="og:type" content="website"><meta property="og:title" content="Redmine設置した。"><meta property="og:description" content="なんとか設置できたものの、時間がかかったのでそれの記録。
+sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo …">
+    <meta name="keywords" content='Heroku, Rails, Redmine'>
+
+    <meta property="og:url" content="https://blog.tyage.net/archive/p296.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Redmine設置した。">
+    <meta property="og:description" content="なんとか設置できたものの、時間がかかったのでそれの記録。
 まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo …"><meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg"><meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Redmine設置した。"><meta name=twitter:description content="なんとか設置できたものの、時間がかかったのでそれの記録。
+sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo …">
+    <meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg">
+    <meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Redmine設置した。">
+    <meta name="twitter:description" content="なんとか設置できたものの、時間がかかったのでそれの記録。
 まず事前に必要なものをインストールする。
-sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo …"><meta property="twitter:domain" content="https://blog.tyage.net/archive/p296.html"><meta property="twitter:url" content="https://blog.tyage.net/archive/p296.html"><meta name=twitter:image content="https://blog.tyage.net/icon/icon.jpg"><link rel=canonical href=https://blog.tyage.net/archive/p296.html><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><link id=dark-theme rel=stylesheet href=/css/dark.min.css><script src=/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js integrity="sha256-cCk0mKqWstu3Z+wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script><link rel=webmention href=https://webmention.io/blog.tyage.net/webmention><link rel=pingback href=https://webmention.io/blog.tyage.net/xmlrpc><link rel=stylesheet type=text/css href=/css/style.css><script src=/js/redirect.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-C64TPJYY96")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin=anonymous></script></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://blog.tyage.net/><img src=/icon/icon.jpg alt=avatar></a></div><div class=nav-title><a class=nav-brand href=https://blog.tyage.net/>blog.tyage.net</a></div><div class=nav-links><div class=nav-link><a href=https://blog.tyage.net/post aria-label=Posts><span data-feather=book></span> Posts</a></div><div class=nav-link><a href=https://blog.tyage.net/index.xml aria-label=rss><span data-feather=rss></span> RSS</a></div><div class=nav-link><a href=https://tyage.net aria-label="About me"><span data-feather=home></span> About me</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></li><li class=nav-item><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></li><li class=nav-item><a href=https://tyage.net><span data-feather=home></span> About me</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container h-entry"><div class=post-header-section><h1>Redmine設置した。</h1><small role=doc-subtitle></small><p class=post-date>2011/03/14</p><ul class=post-tags><li class=post-tag><a href=https://blog.tyage.net/tags/heroku>Heroku</a></li><li class=post-tag><a href=https://blog.tyage.net/tags/rails>Rails</a></li><li class=post-tag><a href=https://blog.tyage.net/tags/redmine>Redmine</a></li></ul></div><div class=post-content><div class=e-content><p>なんとか設置できたものの、時間がかかったのでそれの記録。</p><p>まず事前に必要なものをインストールする。</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>sudo</span> <span style=color:#c20cb9;font-weight:700>apt-get install</span> rubygems
-<span style=color:#c20cb9;font-weight:700>sudo</span> <span style=color:#c20cb9;font-weight:700>apt-get install</span> ruby
-<span style=color:#c20cb9;font-weight:700>sudo</span> <span style=color:#c20cb9;font-weight:700>apt-get install</span> <span style=color:#c20cb9;font-weight:700>git</span>
-<span style=color:#c20cb9;font-weight:700>sudo</span> gem <span style=color:#c20cb9;font-weight:700>install</span> rails
-<span style=color:#c20cb9;font-weight:700>sudo</span> gem <span style=color:#c20cb9;font-weight:700>install</span> heroku
-<span style=color:#c20cb9;font-weight:700>sudo</span> gem <span style=color:#c20cb9;font-weight:700>install</span> sqlite3-ruby</pre></td></tr></table></div><p>と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行</p><p>しようとするが、herokuコマンドが見つからない状態にあったので、</p><p><a href=http://stackoverflow.com/questions/909673/gems-and-ubuntu-9-04>ruby on rails &#8211; Gems and Ubuntu 9.04 &#8211; Stack Overflow</a></p><p>の通りにしてみたところうまくいった。</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace>gem environment
-<span style=color:#7a0874;font-weight:700>export</span> <span style=color:#007800>PATH</span>=<span style=color:#007800>$PATH</span>:<span style=color:#000;font-weight:700>/</span>var<span style=color:#000;font-weight:700>/</span>lib<span style=color:#000;font-weight:700>/</span>gems<span style=color:#000;font-weight:700>/</span><span style=color:#000>1.8</span><span style=color:#000;font-weight:700>/</span>bin</pre></td></tr></table></div><p>これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。</p><p><a href=http://heatware.net/ruby-rails/solved-installing-sqlite3-ruby-gem-extconf-rb-mkmf-loaderror/>extconf.rb:3:in `require': no such file to load &#8212; mkmf (LoadError)</a><br><a href=http://haraita9283.blog98.fc2.com/blog-entry-72.html>[雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota</a></p><p>この二つを参考に、</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>sudo</span> <span style=color:#c20cb9;font-weight:700>apt-get install</span> sqlite3
-<span style=color:#c20cb9;font-weight:700>sudo</span> <span style=color:#c20cb9;font-weight:700>apt-get install</span> libsqlite3-dev
-<span style=color:#c20cb9;font-weight:700>sudo</span> <span style=color:#c20cb9;font-weight:700>apt-get install</span> ruby1.8-dev
-<span style=color:#c20cb9;font-weight:700>sudo</span> gem <span style=color:#c20cb9;font-weight:700>install</span> sqlite3-ruby</pre></td></tr></table></div><p>を実行したところうまくインストール完了</p><p>その後は、<a href=http://docs.komagata.org/4558>Redmineを簡単にHerokuに置く &#8211; komagata [p0t]</a>の通りに</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>sudo</span> gem <span style=color:#c20cb9;font-weight:700>install</span> heroku rails <span style=color:#603>-v</span>=2.3.5 sqlite3-ruby taps
-<span style=color:#c20cb9;font-weight:700>git clone</span> git:<span style=color:#000;font-weight:700>//</span>github.com<span style=color:#000;font-weight:700>/</span>komagata<span style=color:#000;font-weight:700>/</span>redmine.git <span style=color:#603>-b</span> 0.9.6-for-heroku
-<span style=color:#7a0874;font-weight:700>cd</span> redmine
-heroku create <span style=color:#000;font-weight:700>&lt;</span>プロジェクト名<span style=color:#000;font-weight:700>&gt;</span>
+sudo apt-get install rubygems sudo apt-get install ruby sudo apt-get install git sudo gem install rails sudo …">
+    <meta property="twitter:domain" content="https://blog.tyage.net/archive/p296.html">
+    <meta property="twitter:url" content="https://blog.tyage.net/archive/p296.html">
+    <meta name="twitter:image" content="https://blog.tyage.net/icon/icon.jpg">
+
+    
+    <link rel="canonical" href="https://blog.tyage.net/archive/p296.html">
+
+    
+    <link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/https://blog.tyage.net/archive/p296.html">
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js" integrity="sha256-cCk0mKqWstu3Z&#43;wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script>
+
+    
+    
+    <link rel="webmention" href="https://webmention.io/blog.tyage.net/webmention" />
+<link rel="pingback" href="https://webmention.io/blog.tyage.net/xmlrpc" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script src="/js/redirect.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C64TPJYY96');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
+  
+    
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.tyage.net/">
+                <img src='/icon/icon.jpg' alt="avatar">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.tyage.net/">blog.tyage.net</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/post" aria-label="Posts" ><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/index.xml" aria-label="rss" ><span data-feather='rss'></span> RSS </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tyage.net" aria-label="About me" ><span data-feather='home'></span> About me </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/post" ><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/index.xml" ><span data-feather='rss'></span> RSS </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tyage.net" ><span data-feather='home'></span> About me </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container h-entry">
+    <div class="post-header-section">
+        <h1>Redmine設置した。</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              2011/03/14
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="https://blog.tyage.net/tags/heroku">Heroku</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="https://blog.tyage.net/tags/rails">Rails</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="https://blog.tyage.net/tags/redmine">Redmine</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div class="e-content">
+            <p>なんとか設置できたものの、時間がかかったのでそれの記録。</p>
+<p>まず事前に必要なものをインストールする。</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> rubygems
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> ruby
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> <span style="color: #c20cb9; font-weight: bold;">git</span>
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> gem <span style="color: #c20cb9; font-weight: bold;">install</span> rails
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> gem <span style="color: #c20cb9; font-weight: bold;">install</span> heroku
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> gem <span style="color: #c20cb9; font-weight: bold;">install</span> sqlite3-ruby</pre></td></tr></table></div>
+<p>と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行</p>
+<p>しようとするが、herokuコマンドが見つからない状態にあったので、</p>
+<p><a href="http://stackoverflow.com/questions/909673/gems-and-ubuntu-9-04">ruby on rails &#8211; Gems and Ubuntu 9.04 &#8211; Stack Overflow</a></p>
+<p>の通りにしてみたところうまくいった。</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;">gem environment
+<span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">PATH</span>=<span style="color: #007800;">$PATH</span>:<span style="color: #000000; font-weight: bold;">/</span>var<span style="color: #000000; font-weight: bold;">/</span>lib<span style="color: #000000; font-weight: bold;">/</span>gems<span style="color: #000000; font-weight: bold;">/</span><span style="color: #000000;">1.8</span><span style="color: #000000; font-weight: bold;">/</span>bin</pre></td></tr></table></div>
+<p>これで大丈夫だろうと続けてみるが、やはりsqlite3がないと「heroku db:push」で詰まるようだ。</p>
+<p><a href="http://heatware.net/ruby-rails/solved-installing-sqlite3-ruby-gem-extconf-rb-mkmf-loaderror/">extconf.rb:3:in `require&apos;: no such file to load &#8212; mkmf (LoadError)</a><br />
+<a href="http://haraita9283.blog98.fc2.com/blog-entry-72.html">[雑ログ] Ubuntu 7.04 にて gimp-ruby をインストールしようとしてあきらめた | anobota</a></p>
+<p>この二つを参考に、</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> sqlite3
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> libsqlite3-dev
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> ruby1.8-dev
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> gem <span style="color: #c20cb9; font-weight: bold;">install</span> sqlite3-ruby</pre></td></tr></table></div>
+<p>を実行したところうまくインストール完了</p>
+<p>その後は、<a href="http://docs.komagata.org/4558">Redmineを簡単にHerokuに置く &#8211; komagata [p0t]</a>の通りに</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">sudo</span> gem <span style="color: #c20cb9; font-weight: bold;">install</span> heroku rails <span style="color: #660033;">-v</span>=2.3.5 sqlite3-ruby taps
+<span style="color: #c20cb9; font-weight: bold;">git clone</span> git:<span style="color: #000000; font-weight: bold;">//</span>github.com<span style="color: #000000; font-weight: bold;">/</span>komagata<span style="color: #000000; font-weight: bold;">/</span>redmine.git <span style="color: #660033;">-b</span> 0.9.6-for-heroku
+<span style="color: #7a0874; font-weight: bold;">cd</span> redmine
+heroku create <span style="color: #000000; font-weight: bold;">&lt;</span>プロジェクト名<span style="color: #000000; font-weight: bold;">&gt;</span>
 heroku db:push
-<span style=color:#c20cb9;font-weight:700>git push</span> heroku 0.9.6-for-heroku:master</pre></td></tr></table></div><p>を実行し、進めていくと設置完了！<br>やったね！</p><p>あとでバージョンアップとかするつもり</p></div></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/archive/p290.html>&#8592;
-Previous:
-WindowsからHeroku使おうとしてくじけた</a></p><p class=prev-post-date>2011/03/14</p></div><div class=next-post><p><a href=/archive/p301.html>Next:
-第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka
-&#8594;</a></p><p class=next-post-date>2011/03/24</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script><div id=comments><script src=/js/webmention.min.js data-max-webmentions=60 async></script><div id=webmentions></div></div><div style=display:none><a class=u-bridgy-fed href=https://fed.brid.gy/></a><p class=dt-published>2011-03-14T15:51:18+00:00</p></div></div></main><footer class=footer><span>Made with &#10084;&#65039; using <a target=_blank href=https://github.com/gokarna-theme/gokarna-hugo>Gokarna</a></span></footer></body></html>
+<span style="color: #c20cb9; font-weight: bold;">git push</span> heroku 0.9.6-for-heroku:master</pre></td></tr></table></div>
+<p>を実行し、進めていくと設置完了！<br />
+やったね！</p>
+<p>あとでバージョンアップとかするつもり</p>
+
+        </div>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                <nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/archive/p290.html">
+                &#8592;
+                Previous:
+                WindowsからHeroku使おうとしてくじけた
+            </a>
+        </p>
+        <p class="prev-post-date">
+            2011/03/14
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/archive/p301.html">
+                Next:
+                第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka
+                &#8594;
+            </a>
+        </p>
+            <p class="next-post-date">
+                2011/03/24
+            </p>
+    </div>
+    
+</nav>
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+    <div id="comments">
+        <script src="/js/webmention.min.js" data-max-webmentions="60" async></script>
+<div id="webmentions"></div>
+
+    </div>
+    
+
+    <div style="display: none;">
+        <a class="u-bridgy-fed" href="https://fed.brid.gy/"></a>
+        <p class="dt-published">2011-03-14T15:51:18&#43;00:00</p>
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/gokarna-theme/gokarna-hugo">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

@@ -1,114 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on blog.tyage.net</title><link>https://blog.tyage.net/categories/javascript/</link><description>Recent content in JavaScript on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 14 Dec 2012 06:55:12 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>d=(^o^)=b.js – Aizu Advent Calendar</title><link>https://blog.tyage.net/archive/p609.html</link><pubDate>Fri, 14 Dec 2012 06:55:12 +0000</pubDate><guid>https://blog.tyage.net/archive/p609.html</guid><description>&lt;p&gt;&lt;strong&gt;※追記：mac以外で閲覧するとコードが壊れているみたいです。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;やっほー！d=(^o^)=b&lt;/p&gt;
-&lt;p&gt;今日は&lt;a href="http://atnd.org/events/33782"&gt;Aizu Advent Calendar&lt;/a&gt;14日目として記事を書くよd=(^o^)=b&lt;/p&gt;
-&lt;p&gt;ってことで、何を書こうか迷ったんだけど、d=(^o^)=bをネタに書きますd=(^o^)=b&lt;/p&gt;
-&lt;p&gt;ところで、d=(^o^)=b　←この顔文字、ヅ大生（主に@yutopp氏？）がよく使っている気がするけど、気のせいかしらd=(^o^)=b&lt;/p&gt;
-&lt;p&gt;↓例&lt;br /&gt;
-&lt;a href="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png"&gt;&lt;img data-attachment-id="611" data-permalink="https://blog.tyage.net/?attachment_id=611" data-orig-file="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" data-orig-size="253,659" data-comments-opened="1" data-image-meta="{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}" data-image-title="スクリーンショット 2012-12-09 19.30.22" data-image-description="" data-medium-file="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" data-large-file="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" src="https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png" alt="" title="スクリーンショット 2012-12-09 19.30.22" width="253" height="659" class="alignnone size-full wp-image-611" style="border:1px solid #999;" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;d=(^o^)=bがなにを意味するのかはよくわかんないんだけど、まあ本題へd=(^o^)=b&lt;br /&gt;</description></item><item><title>08/07</title><link>https://blog.tyage.net/archive/p555.html</link><pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate><guid>https://blog.tyage.net/archive/p555.html</guid><description>&lt;p&gt;コンディション：普通&lt;br /&gt;
-朝食：寝てた&lt;br /&gt;
-昼食：記憶になし&lt;br /&gt;
-夕食：ささみとチーズを焼いた何か&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=552"&gt;昨日&lt;/a&gt;の続きでnode.jsで遊ぶ。&lt;br /&gt;
-box2dをwebsocket通じて動かしたりしてた。&lt;br /&gt;
-heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）&lt;br /&gt;
-そんなことしていたら無駄に日を過ごした。&lt;/p&gt;</description></item><item><title>08/06</title><link>https://blog.tyage.net/archive/p552.html</link><pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate><guid>https://blog.tyage.net/archive/p552.html</guid><description>&lt;p&gt;コンディション：良好&lt;br /&gt;
-朝食：寝てた&lt;br /&gt;
-昼食：記憶になし&lt;br /&gt;
-夕食：記憶になし&lt;/p&gt;
-&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;
-主目的はゲーム製作。&lt;br /&gt;
-以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;
-&lt;p&gt;とりあえずOSをubuntu12.04に変えようと努力。&lt;br /&gt;
-まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。&lt;br /&gt;
-途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。&lt;/p&gt;
-&lt;p&gt;その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。&lt;/p&gt;</description></item><item><title>ゴルフゲームをコードゴルフ</title><link>https://blog.tyage.net/archive/p417.html</link><pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate><guid>https://blog.tyage.net/archive/p417.html</guid><description>&lt;p&gt;　&lt;br /&gt;
-一部でコードゴルフが流行っていたので、便乗してみた。&lt;/p&gt;
-&lt;p&gt;ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。&lt;/p&gt;
-&lt;p&gt;まずこれ。&lt;br /&gt;
-できるだけゴルフっぽくしたやつ&lt;br /&gt;
-(217文字)&lt;br /&gt;
-&lt;script src="https://gist.github.com/1232409.js?file=gistfile1.js"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;次に、いろいろと制限を加えてコードをスリムにしたやつ&lt;br /&gt;
-(141文字)&lt;br /&gt;
-&lt;script src="https://gist.github.com/1240537.js?file=golf2.js"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;最後に、consoleで動かすようにして、140文字以下にしたもの&lt;br /&gt;
-(134文字)&lt;br /&gt;
-&lt;script src="https://gist.github.com/1240617.js?file=golf3.js"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;もっと短くならないかなぁ。&lt;/p&gt;</description></item><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.net/archive/p328.html</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.net/archive/p328.html</guid><description>&lt;p&gt;&lt;a href="http://www.ospn.jp/osc2011-kobe/"&gt;オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a&gt;に参加してきました。&lt;/p&gt;
-&lt;p&gt;去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p&gt;
-&lt;p&gt;それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br /&gt;
-ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br /&gt;
-ごめんなさい。&lt;/p&gt;
-&lt;p&gt;発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br /&gt;
-それでもなんとか端折りながら5分に収めましたがｗ&lt;/p&gt;
-&lt;p&gt;後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br /&gt;
-初・OSC懇親会は楽しかった！&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877087"&gt;&lt;img src="http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg" alt="OSC神戸" width="450" height="253" style="border:0" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877087"&gt;OSC神戸&lt;/a&gt; posted by &lt;a href="http://photozou.jp/user/top/265673"&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877429"&gt;&lt;img src="http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg" alt="OSC神戸でもらった" width="450" height="253" style="border:0" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877429"&gt;OSC神戸でもらった&lt;/a&gt; posted by &lt;a href="http://photozou.jp/user/top/265673"&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;</description></item><item><title>jQuery1.5ｷﾀｰ</title><link>https://blog.tyage.net/archive/p252.html</link><pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate><guid>https://blog.tyage.net/archive/p252.html</guid><description>&lt;h2&gt;jQuery1.5&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://blog.jquery.com/2011/01/14/jquery-1-5-beta-1-released/"&gt;jQuery: » jQuery 1.5 Beta 1 Released&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。&lt;/p&gt;
-&lt;p&gt;バグフィックスと速度向上はもちろん行われています。&lt;/p&gt;
-&lt;p&gt;特に、バクフィックスでは未だにIE対策が行われ、またv8での速度が大幅に向上したそうです！Chrome厨喚起！&lt;/p&gt;
-&lt;p&gt;その他として、細かいことだけど、node.jsとの連携の強化？的なことや、Google Closure Compilerから&lt;a href='https://github.com/mishoo/UglifyJS'&gt;UglifyJS&lt;/a&gt;なるものに圧縮ツールを変更したようですよ。&lt;/p&gt;
-&lt;h2&gt;Ajaxモジュールの書き換え&lt;/h2&gt;
-&lt;p&gt;「これは今回の最も重要な変更点であり、パフォーマンスや機能の改善、安定性の向上をもたらす」そうです。（訳は適当）&lt;/p&gt;
-&lt;p&gt;Julian Aubourgさんによるこの書き換えによって、以下の書き方ができるようになりました。&lt;/p&gt;
-&lt;div class="wp_syntax" style="position:relative;"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="code"&gt;&lt;pre class="javascript" style="font-family:monospace;"&gt;&lt;span style="color: #006600; font-style: italic;"&gt;// Assign handlers immediately after making the request,&lt;/span&gt;
-&lt;span style="color: #006600; font-style: italic;"&gt;// and remember the jxhr object for this request&lt;/span&gt;
-&lt;span style="color: #000066; font-weight: bold;"&gt;var&lt;/span&gt; jxhr &lt;span style="color: #339933;"&gt;=&lt;/span&gt; $.&lt;span style="color: #660066;"&gt;ajax&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; url&lt;span style="color: #339933;"&gt;:&lt;/span&gt; &lt;span style="color: #3366CC;"&gt;&amp;quot;example.php&amp;quot;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;
- .&lt;span style="color: #660066;"&gt;success&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;
- .&lt;span style="color: #660066;"&gt;error&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;
- .&lt;span style="color: #660066;"&gt;complete&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;complete&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;
-&amp;nbsp;
-&lt;span style="color: #006600; font-style: italic;"&gt;// perform other work here ...&lt;/span&gt;
-&amp;nbsp;
-&lt;span style="color: #006600; font-style: italic;"&gt;// Set another completion function for the request above&lt;/span&gt;
-jxhr.&lt;span style="color: #660066;"&gt;complete&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #000066; font-weight: bold;"&gt;function&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#123;&lt;/span&gt; alert&lt;span style="color: #009900;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #3366CC;"&gt;&amp;quot;second complete&amp;quot;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt; &lt;span style="color: #009900;"&gt;&amp;#125;&lt;/span&gt;&lt;span style="color: #009900;"&gt;&amp;#41;&lt;/span&gt;&lt;span style="color: #339933;"&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
-&lt;p&gt;ふおお・・・びゅーちふる・・・&lt;/p&gt;</description></item><item><title>node.jsでJOI受けた。</title><link>https://blog.tyage.net/archive/p188.html</link><pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p188.html</guid><description>&lt;p&gt;&lt;a href="http://www.ioi-jp.org/"&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;PHPを使うか、ブラウザのコンソール画面でJavaScript実行させるか、node.jsを使うかで悩んだ末、勉強もかねてnode.jsを使いました。&lt;/p&gt;
-&lt;p&gt;結果はかなり微妙でしたが、node.jsの勉強になったと思うので、よしとします。&lt;br /&gt;
-予選通過するかしないかギリギリのラインですが、どっかでミスってる可能性大なので、たぶん通過しません。&lt;/p&gt;
-&lt;p&gt;残ってるコードはこんな感じ&lt;/p&gt;
-&lt;p&gt;&amp;#8211; Q1&lt;br /&gt;
-&lt;script src="https://gist.github.com/747193.js?file=joi-2010-1.js"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#8211; Q2&lt;br /&gt;
-&lt;script src="https://gist.github.com/747194.js?file=joi-2010-2.js"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#8211; Q3&lt;br /&gt;
-&lt;script src="https://gist.github.com/747195.js?file=joi-2010-3.js"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;Q4は二問ほどを総当り（ブルートフォース的に）解いて、残りを解くために改良していたところで、バグに見舞われてしまい、終了となりました。&lt;br /&gt;
-Q5もはじめの一問を解いたけど、たぶん点数に加算されない気がするなあ。&lt;/p&gt;
-&lt;p&gt;Q2を解き始めたところから、「split(&amp;#8216;n&amp;#8217;)」で一行ずつ取得という処理ができなくなり、そこでも時間を潰したかな。&lt;br /&gt;
-rnでsplitしても、また別の問題が浮上してくるのですごく戸惑いました。&lt;br /&gt;
-最終的にはダウンロードした入力データを、エディタで改行を除くなどして応急処置をほどこしました。&lt;/p&gt;
-&lt;p&gt;向こうの想定するC,C++ではなくて、node.jsで解いた罰かもしれんねー&lt;/p&gt;
-&lt;p&gt;まあこれで、アリ本を買うことなんかは今後もないでしょう&lt;/p&gt;</description></item><item><title>「node.js」はじめました</title><link>https://blog.tyage.net/archive/p185.html</link><pubDate>Thu, 16 Dec 2010 15:55:22 +0000</pubDate><guid>https://blog.tyage.net/archive/p185.html</guid><description>&lt;p&gt;ubuntu環境が手に入ったので前々から気になってたnode.jsはじめた。&lt;/p&gt;
-&lt;p&gt;JavaScriptでサーバーサイドが書けるなんて、JavaScript最強伝説()始まってんじゃね！？&lt;/p&gt;
-&lt;p&gt;恋するnoderの@KOBA789先輩に手ほどきしてもらいながら、なんとかHello Worldまでできたー。&lt;/p&gt;
-&lt;p&gt;ほとんど経験のないコマンド処理に迷ったりもしたけどまあそれはともかく。。。&lt;/p&gt;
-&lt;p&gt;</description></item><item><title>今日の教訓</title><link>https://blog.tyage.net/archive/p138.html</link><pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate><guid>https://blog.tyage.net/archive/p138.html</guid><description>&lt;p&gt;オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意&lt;/p&gt;</description></item><item><title>jQuery1.4.3ｳｯﾋｮｰ</title><link>https://blog.tyage.net/archive/p43.html</link><pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate><guid>https://blog.tyage.net/archive/p43.html</guid><description>&lt;p&gt;試験期間中の夜はテンション高いぜｲｴｰ&lt;/p&gt;
-&lt;p&gt;Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://blog.jquery.com/2010/10/16/jquery-143-released/"&gt;jQuery: » jQuery 1.4.3 Released&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=17"&gt;予想通り&lt;/a&gt;&lt;/strike&gt;かなりの変更が加えられてます！&lt;/p&gt;
-&lt;p&gt;内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br /&gt;
-発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /&gt;</description></item><item><title>jQuery 1.4.3RC2</title><link>https://blog.tyage.net/archive/p17.html</link><pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate><guid>https://blog.tyage.net/archive/p17.html</guid><description>&lt;p&gt;追記：&lt;br /&gt;
-&lt;a href="http://tyage.sakura.ne.jp/blog/?p=43"&gt;jQuery1.4.3が正式発表されました。&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="http://blog.jquery.com/2010/10/10/jquery-1-4-3-release-candidate-1-released/"&gt;jQuery1.4.3rc1&lt;/a&gt;、&lt;a href="http://blog.jquery.com/2010/10/12/jquery-1-4-3-release-candidate-2-released/"&gt;rc2&lt;/a&gt;と立て続けにリリースされたようです。&lt;/p&gt;
-&lt;p&gt;試験中にも関わらず、差分取ってちまちまと見ています。&lt;br /&gt;
-コードの初っ端から少しずつ変わってて、サンドボックスがどうとか、ローカル変数が増えたり変更されたりしてました。&lt;br /&gt;
-内部のほうにはそれなりに変化があるようです。&lt;/p&gt;
-&lt;p&gt;使う側としても、内部関数だったaccessがjQuery.accessとして定義されたり、jQuery.isNanとかjQuery.isWindowとかが増えてたり。&lt;/p&gt;
-&lt;p&gt;$().data周りにも変更があるみたいで、jQuery1.4.3からしか使えないプラグインもあるらしいです。&lt;br /&gt;
-&lt;a href="http://www.infoq.com/jp/news/2010/10/DataLink-jQuery"&gt;InfoQ: Data Link &amp;#8211; jQueryのためのデータバインディング&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;あとはイベント周りとかCSSやAjaxに関わる部分も、関数が増えたり修正されたりしてました。&lt;br /&gt;
-&lt;a href="http://d.hatena.ne.jp/scalar/20101012/1286874658"&gt;jQuery 1.4.2 の xhr.abort() が IE7 でエラーになる問題の回避方法 &amp;#8211; Scalaとlift　のはずだった　・・・&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;もちろんバグ取りはいっぱい行われています。&lt;br /&gt;
-Blackberry対策をしてあるのには少し笑えましたｗ&lt;/p&gt;
-&lt;p&gt;それよりも1.5が楽しみです。&lt;/p&gt;</description></item><item><title>セプキャン2010で出たXSSの問題（ネタバレ）</title><link>https://blog.tyage.net/archive/p6.html</link><pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate><guid>https://blog.tyage.net/archive/p6.html</guid><description>&lt;p&gt;&lt;a href="http://tyage.sakura.ne.jp/blog/?p=5"&gt;一度消えた&lt;/a&gt;XSSの記事を復活させました。&lt;/p&gt;
-&lt;h1&gt;注意書き&lt;/h1&gt;
-&lt;p&gt;はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p&gt;
-&lt;p&gt;記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p&gt;
-&lt;p&gt;以下ネタバレ注意です！&lt;/p&gt;
-&lt;p&gt;別の解き方があれば教えてください。&lt;br /&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on blog.tyage.net</title>
+    <link>https://blog.tyage.net/categories/javascript/</link>
+    <description>Recent content in JavaScript on blog.tyage.net</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Dec 2012 06:55:12 +0000</lastBuildDate>
+    <atom:link href="https://blog.tyage.net/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>d=(^o^)=b.js – Aizu Advent Calendar</title>
+      <link>https://blog.tyage.net/archive/p609.html</link>
+      <pubDate>Fri, 14 Dec 2012 06:55:12 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p609.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;※追記：mac以外で閲覧するとコードが壊れているみたいです。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;やっほー！d=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;今日は&lt;a href=&#34;http://atnd.org/events/33782&#34;&gt;Aizu Advent Calendar&lt;/a&gt;14日目として記事を書くよd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;ってことで、何を書こうか迷ったんだけど、d=(^o^)=bをネタに書きますd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;ところで、d=(^o^)=b　←この顔文字、ヅ大生（主に@yutopp氏？）がよく使っている気がするけど、気のせいかしらd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;↓例&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34;&gt;&lt;img data-attachment-id=&#34;611&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=611&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; data-orig-size=&#34;253,659&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;スクリーンショット 2012-12-09 19.30.22&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; alt=&#34;&#34; title=&#34;スクリーンショット 2012-12-09 19.30.22&#34; width=&#34;253&#34; height=&#34;659&#34; class=&#34;alignnone size-full wp-image-611&#34; style=&#34;border:1px solid #999;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;d=(^o^)=bがなにを意味するのかはよくわかんないんだけど、まあ本題へd=(^o^)=b&lt;br /&gt;</description>
+    </item>
+    <item>
+      <title>08/07</title>
+      <link>https://blog.tyage.net/archive/p555.html</link>
+      <pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p555.html</guid>
+      <description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：ささみとチーズを焼いた何か&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=552&#34;&gt;昨日&lt;/a&gt;の続きでnode.jsで遊ぶ。&lt;br /&gt;&#xA;box2dをwebsocket通じて動かしたりしてた。&lt;br /&gt;&#xA;heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）&lt;br /&gt;&#xA;そんなことしていたら無駄に日を過ごした。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>08/06</title>
+      <link>https://blog.tyage.net/archive/p552.html</link>
+      <pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p552.html</guid>
+      <description>&lt;p&gt;コンディション：良好&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：記憶になし&lt;/p&gt;&#xA;&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;&#xA;主目的はゲーム製作。&lt;br /&gt;&#xA;以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;&#xA;&lt;p&gt;とりあえずOSをubuntu12.04に変えようと努力。&lt;br /&gt;&#xA;まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。&lt;br /&gt;&#xA;途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。&lt;/p&gt;&#xA;&lt;p&gt;その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ゴルフゲームをコードゴルフ</title>
+      <link>https://blog.tyage.net/archive/p417.html</link>
+      <pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p417.html</guid>
+      <description>&lt;p&gt;　&lt;br /&gt;&#xA;一部でコードゴルフが流行っていたので、便乗してみた。&lt;/p&gt;&#xA;&lt;p&gt;ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。&lt;/p&gt;&#xA;&lt;p&gt;まずこれ。&lt;br /&gt;&#xA;できるだけゴルフっぽくしたやつ&lt;br /&gt;&#xA;(217文字)&lt;br /&gt;&#xA;&lt;script src=&#34;https://gist.github.com/1232409.js?file=gistfile1.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;次に、いろいろと制限を加えてコードをスリムにしたやつ&lt;br /&gt;&#xA;(141文字)&lt;br /&gt;&#xA;&lt;script src=&#34;https://gist.github.com/1240537.js?file=golf2.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;最後に、consoleで動かすようにして、140文字以下にしたもの&lt;br /&gt;&#xA;(134文字)&lt;br /&gt;&#xA;&lt;script src=&#34;https://gist.github.com/1240617.js?file=golf3.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;もっと短くならないかなぁ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>オープンソースカンファレンス2011 @神戸</title>
+      <link>https://blog.tyage.net/archive/p328.html</link>
+      <pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p328.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ospn.jp/osc2011-kobe/&#34;&gt;オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a&gt;に参加してきました。&lt;/p&gt;&#xA;&lt;p&gt;去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p&gt;&#xA;&lt;p&gt;それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br /&gt;&#xA;ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br /&gt;&#xA;ごめんなさい。&lt;/p&gt;&#xA;&lt;p&gt;発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br /&gt;&#xA;それでもなんとか端折りながら5分に収めましたがｗ&lt;/p&gt;&#xA;&lt;p&gt;後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br /&gt;&#xA;初・OSC懇親会は楽しかった！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;&lt;img src=&#34;http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg&#34; alt=&#34;OSC神戸&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;OSC神戸&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;&lt;img src=&#34;http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg&#34; alt=&#34;OSC神戸でもらった&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;OSC神戸でもらった&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;</description>
+    </item>
+    <item>
+      <title>jQuery1.5ｷﾀｰ</title>
+      <link>https://blog.tyage.net/archive/p252.html</link>
+      <pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p252.html</guid>
+      <description>&lt;h2&gt;jQuery1.5&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2011/01/14/jquery-1-5-beta-1-released/&#34;&gt;jQuery: » jQuery 1.5 Beta 1 Released&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。&lt;/p&gt;&#xA;&lt;p&gt;バグフィックスと速度向上はもちろん行われています。&lt;/p&gt;&#xA;&lt;p&gt;特に、バクフィックスでは未だにIE対策が行われ、またv8での速度が大幅に向上したそうです！Chrome厨喚起！&lt;/p&gt;&#xA;&lt;p&gt;その他として、細かいことだけど、node.jsとの連携の強化？的なことや、Google Closure Compilerから&lt;a href=&#39;https://github.com/mishoo/UglifyJS&#39;&gt;UglifyJS&lt;/a&gt;なるものに圧縮ツールを変更したようですよ。&lt;/p&gt;&#xA;&lt;h2&gt;Ajaxモジュールの書き換え&lt;/h2&gt;&#xA;&lt;p&gt;「これは今回の最も重要な変更点であり、パフォーマンスや機能の改善、安定性の向上をもたらす」そうです。（訳は適当）&lt;/p&gt;&#xA;&lt;p&gt;Julian Aubourgさんによるこの書き換えによって、以下の書き方ができるようになりました。&lt;/p&gt;&#xA;&lt;div class=&#34;wp_syntax&#34; style=&#34;position:relative;&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre class=&#34;javascript&#34; style=&#34;font-family:monospace;&#34;&gt;&lt;span style=&#34;color: #006600; font-style: italic;&#34;&gt;// Assign handlers immediately after making the request,&lt;/span&gt;&#xA;&lt;span style=&#34;color: #006600; font-style: italic;&#34;&gt;// and remember the jxhr object for this request&lt;/span&gt;&#xA;&lt;span style=&#34;color: #000066; font-weight: bold;&#34;&gt;var&lt;/span&gt; jxhr &lt;span style=&#34;color: #339933;&#34;&gt;=&lt;/span&gt; $.&lt;span style=&#34;color: #660066;&#34;&gt;ajax&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#123;&lt;/span&gt; url&lt;span style=&#34;color: #339933;&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #3366CC;&#34;&gt;&amp;quot;example.php&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&#xA;    .&lt;span style=&#34;color: #660066;&#34;&gt;success&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #000066; font-weight: bold;&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#123;&lt;/span&gt; alert&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #3366CC;&#34;&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #339933;&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&#xA;    .&lt;span style=&#34;color: #660066;&#34;&gt;error&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #000066; font-weight: bold;&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#123;&lt;/span&gt; alert&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #3366CC;&#34;&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #339933;&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&#xA;    .&lt;span style=&#34;color: #660066;&#34;&gt;complete&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #000066; font-weight: bold;&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#123;&lt;/span&gt; alert&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #3366CC;&#34;&gt;&amp;quot;complete&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #339933;&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #339933;&#34;&gt;;&lt;/span&gt;&#xA;&amp;nbsp;&#xA;&lt;span style=&#34;color: #006600; font-style: italic;&#34;&gt;// perform other work here ...&lt;/span&gt;&#xA;&amp;nbsp;&#xA;&lt;span style=&#34;color: #006600; font-style: italic;&#34;&gt;// Set another completion function for the request above&lt;/span&gt;&#xA;jxhr.&lt;span style=&#34;color: #660066;&#34;&gt;complete&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #000066; font-weight: bold;&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#123;&lt;/span&gt; alert&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#40;&lt;/span&gt;&lt;span style=&#34;color: #3366CC;&#34;&gt;&amp;quot;second complete&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #339933;&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #009900;&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color: #009900;&#34;&gt;&amp;#41;&lt;/span&gt;&lt;span style=&#34;color: #339933;&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&#xA;&lt;p&gt;ふおお・・・びゅーちふる・・・&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>node.jsでJOI受けた。</title>
+      <link>https://blog.tyage.net/archive/p188.html</link>
+      <pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p188.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;PHPを使うか、ブラウザのコンソール画面でJavaScript実行させるか、node.jsを使うかで悩んだ末、勉強もかねてnode.jsを使いました。&lt;/p&gt;&#xA;&lt;p&gt;結果はかなり微妙でしたが、node.jsの勉強になったと思うので、よしとします。&lt;br /&gt;&#xA;予選通過するかしないかギリギリのラインですが、どっかでミスってる可能性大なので、たぶん通過しません。&lt;/p&gt;&#xA;&lt;p&gt;残ってるコードはこんな感じ&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; Q1&lt;br /&gt;&#xA;&lt;script src=&#34;https://gist.github.com/747193.js?file=joi-2010-1.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; Q2&lt;br /&gt;&#xA;&lt;script src=&#34;https://gist.github.com/747194.js?file=joi-2010-2.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;#8211; Q3&lt;br /&gt;&#xA;&lt;script src=&#34;https://gist.github.com/747195.js?file=joi-2010-3.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;Q4は二問ほどを総当り（ブルートフォース的に）解いて、残りを解くために改良していたところで、バグに見舞われてしまい、終了となりました。&lt;br /&gt;&#xA;Q5もはじめの一問を解いたけど、たぶん点数に加算されない気がするなあ。&lt;/p&gt;&#xA;&lt;p&gt;Q2を解き始めたところから、「split(&amp;#8216;n&amp;#8217;)」で一行ずつ取得という処理ができなくなり、そこでも時間を潰したかな。&lt;br /&gt;&#xA;rnでsplitしても、また別の問題が浮上してくるのですごく戸惑いました。&lt;br /&gt;&#xA;最終的にはダウンロードした入力データを、エディタで改行を除くなどして応急処置をほどこしました。&lt;/p&gt;&#xA;&lt;p&gt;向こうの想定するC,C++ではなくて、node.jsで解いた罰かもしれんねー&lt;/p&gt;&#xA;&lt;p&gt;まあこれで、アリ本を買うことなんかは今後もないでしょう&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「node.js」はじめました</title>
+      <link>https://blog.tyage.net/archive/p185.html</link>
+      <pubDate>Thu, 16 Dec 2010 15:55:22 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p185.html</guid>
+      <description>&lt;p&gt;ubuntu環境が手に入ったので前々から気になってたnode.jsはじめた。&lt;/p&gt;&#xA;&lt;p&gt;JavaScriptでサーバーサイドが書けるなんて、JavaScript最強伝説()始まってんじゃね！？&lt;/p&gt;&#xA;&lt;p&gt;恋するnoderの@KOBA789先輩に手ほどきしてもらいながら、なんとかHello Worldまでできたー。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど経験のないコマンド処理に迷ったりもしたけどまあそれはともかく。。。&lt;/p&gt;&#xA;&lt;p&gt;</description>
+    </item>
+    <item>
+      <title>今日の教訓</title>
+      <link>https://blog.tyage.net/archive/p138.html</link>
+      <pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p138.html</guid>
+      <description>&lt;p&gt;オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>jQuery1.4.3ｳｯﾋｮｰ</title>
+      <link>https://blog.tyage.net/archive/p43.html</link>
+      <pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p43.html</guid>
+      <description>&lt;p&gt;試験期間中の夜はテンション高いぜｲｴｰ&lt;/p&gt;&#xA;&lt;p&gt;Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2010/10/16/jquery-143-released/&#34;&gt;jQuery: » jQuery 1.4.3 Released&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=17&#34;&gt;予想通り&lt;/a&gt;&lt;/strike&gt;かなりの変更が加えられてます！&lt;/p&gt;&#xA;&lt;p&gt;内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br /&gt;&#xA;発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /&gt;</description>
+    </item>
+    <item>
+      <title>jQuery 1.4.3RC2</title>
+      <link>https://blog.tyage.net/archive/p17.html</link>
+      <pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p17.html</guid>
+      <description>&lt;p&gt;追記：&lt;br /&gt;&#xA;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=43&#34;&gt;jQuery1.4.3が正式発表されました。&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2010/10/10/jquery-1-4-3-release-candidate-1-released/&#34;&gt;jQuery1.4.3rc1&lt;/a&gt;、&lt;a href=&#34;http://blog.jquery.com/2010/10/12/jquery-1-4-3-release-candidate-2-released/&#34;&gt;rc2&lt;/a&gt;と立て続けにリリースされたようです。&lt;/p&gt;&#xA;&lt;p&gt;試験中にも関わらず、差分取ってちまちまと見ています。&lt;br /&gt;&#xA;コードの初っ端から少しずつ変わってて、サンドボックスがどうとか、ローカル変数が増えたり変更されたりしてました。&lt;br /&gt;&#xA;内部のほうにはそれなりに変化があるようです。&lt;/p&gt;&#xA;&lt;p&gt;使う側としても、内部関数だったaccessがjQuery.accessとして定義されたり、jQuery.isNanとかjQuery.isWindowとかが増えてたり。&lt;/p&gt;&#xA;&lt;p&gt;$().data周りにも変更があるみたいで、jQuery1.4.3からしか使えないプラグインもあるらしいです。&lt;br /&gt;&#xA;&lt;a href=&#34;http://www.infoq.com/jp/news/2010/10/DataLink-jQuery&#34;&gt;InfoQ: Data Link &amp;#8211; jQueryのためのデータバインディング&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;あとはイベント周りとかCSSやAjaxに関わる部分も、関数が増えたり修正されたりしてました。&lt;br /&gt;&#xA;&lt;a href=&#34;http://d.hatena.ne.jp/scalar/20101012/1286874658&#34;&gt;jQuery 1.4.2 の xhr.abort() が IE7 でエラーになる問題の回避方法 &amp;#8211; Scalaとlift　のはずだった　・・・&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;もちろんバグ取りはいっぱい行われています。&lt;br /&gt;&#xA;Blackberry対策をしてあるのには少し笑えましたｗ&lt;/p&gt;&#xA;&lt;p&gt;それよりも1.5が楽しみです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>セプキャン2010で出たXSSの問題（ネタバレ）</title>
+      <link>https://blog.tyage.net/archive/p6.html</link>
+      <pubDate>Fri, 08 Oct 2010 12:46:24 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p6.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=5&#34;&gt;一度消えた&lt;/a&gt;XSSの記事を復活させました。&lt;/p&gt;&#xA;&lt;h1&gt;注意書き&lt;/h1&gt;&#xA;&lt;p&gt;はせがわさんに大まかに教えてもらった上で解いたので、全部自力という訳ではないです＞＜&lt;/p&gt;&#xA;&lt;p&gt;記事を書いたのは8月19日で、そこから公開をためらっていたのですが、少し需要があるようなので公開します。&lt;/p&gt;&#xA;&lt;p&gt;以下ネタバレ注意です！&lt;/p&gt;&#xA;&lt;p&gt;別の解き方があれば教えてください。&lt;br /&gt;</description>
+    </item>
+  </channel>
+</rss>

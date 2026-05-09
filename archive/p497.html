@@ -1,35 +1,362 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>さくらのvps契約+node.js</title><meta name=description content="ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>さくらのvps契約&#43;node.js</title>
+    <meta name="description" content="ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
 自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・
-環境 VPS の OS …"><meta name=keywords content><meta property="og:url" content="https://blog.tyage.net/archive/p497.html"><meta property="og:type" content="website"><meta property="og:title" content="さくらのvps契約+node.js"><meta property="og:description" content="ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
+環境 VPS の OS …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://blog.tyage.net/archive/p497.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="さくらのvps契約&#43;node.js">
+    <meta property="og:description" content="ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
 自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・
-環境 VPS の OS …"><meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg"><meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="さくらのvps契約+node.js"><meta name=twitter:description content="ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
+環境 VPS の OS …">
+    <meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg">
+    <meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="さくらのvps契約&#43;node.js">
+    <meta name="twitter:description" content="ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。
 自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・
-環境 VPS の OS …"><meta property="twitter:domain" content="https://blog.tyage.net/archive/p497.html"><meta property="twitter:url" content="https://blog.tyage.net/archive/p497.html"><meta name=twitter:image content="https://blog.tyage.net/icon/icon.jpg"><link rel=canonical href=https://blog.tyage.net/archive/p497.html><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><link id=dark-theme rel=stylesheet href=/css/dark.min.css><script src=/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js integrity="sha256-cCk0mKqWstu3Z+wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script><link rel=webmention href=https://webmention.io/blog.tyage.net/webmention><link rel=pingback href=https://webmention.io/blog.tyage.net/xmlrpc><link rel=stylesheet type=text/css href=/css/style.css><script src=/js/redirect.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-C64TPJYY96")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin=anonymous></script></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://blog.tyage.net/><img src=/icon/icon.jpg alt=avatar></a></div><div class=nav-title><a class=nav-brand href=https://blog.tyage.net/>blog.tyage.net</a></div><div class=nav-links><div class=nav-link><a href=https://blog.tyage.net/post aria-label=Posts><span data-feather=book></span> Posts</a></div><div class=nav-link><a href=https://blog.tyage.net/index.xml aria-label=rss><span data-feather=rss></span> RSS</a></div><div class=nav-link><a href=https://tyage.net aria-label="About me"><span data-feather=home></span> About me</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://blog.tyage.net/post><span data-feather=book></span> Posts</a></li><li class=nav-item><a href=https://blog.tyage.net/index.xml><span data-feather=rss></span> RSS</a></li><li class=nav-item><a href=https://tyage.net><span data-feather=home></span> About me</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container h-entry"><div class=post-header-section><h1>さくらのvps契約+node.js</h1><small role=doc-subtitle></small><p class=post-date>2012/08/09</p><ul class=post-tags></ul></div><div class=post-content><div class=e-content><p>ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。<br>自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・</p><p>　</p><h2>環境</h2><dl><dt>VPS の OS</dt><dd>CentOS 6.2 x86_64</dd><dt>クライアント の OS</dt><dd>Ubuntu 12.04 LTS 64 bit</dd><dt>node.js</dt><dd>v0.6.18</dd></dl><p>　</p><h2>設定</h2><p><a href="http://wp.yat-net.com/?p=3074">さくらVPSで使うコマンドリストとサーバーの初期設定</a>を主に参考にしています。<br>公開鍵認証にしてあるならport番号の変更とかは必要ないような気もするのですが一応。</p><h3>作業用ユーザーの追加</h3><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace>useradd <span style=color:#7a0874;font-weight:700>&#91;</span>user<span style=color:#7a0874;font-weight:700>&#93;</span>
-<span style=color:#c20cb9;font-weight:700>passwd</span> <span style=color:#7a0874;font-weight:700>&#91;</span>user<span style=color:#7a0874;font-weight:700>&#93;</span>
-usermod <span style=color:#603>-G</span> wheel <span style=color:#7a0874;font-weight:700>&#91;</span>user<span style=color:#7a0874;font-weight:700>&#93;</span></pre></td></tr></table></div><h3>SSHポート番号変更</h3><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>vim</span> <span style=color:#000;font-weight:700>/</span>etc<span style=color:#000;font-weight:700>/</span>ssh<span style=color:#000;font-weight:700>/</span>sshd_config</pre></td></tr></table></div><pre>
+環境 VPS の OS …">
+    <meta property="twitter:domain" content="https://blog.tyage.net/archive/p497.html">
+    <meta property="twitter:url" content="https://blog.tyage.net/archive/p497.html">
+    <meta name="twitter:image" content="https://blog.tyage.net/icon/icon.jpg">
+
+    
+    <link rel="canonical" href="https://blog.tyage.net/archive/p497.html">
+
+    
+    <link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/https://blog.tyage.net/archive/p497.html">
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js" integrity="sha256-cCk0mKqWstu3Z&#43;wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script>
+
+    
+    
+    <link rel="webmention" href="https://webmention.io/blog.tyage.net/webmention" />
+<link rel="pingback" href="https://webmention.io/blog.tyage.net/xmlrpc" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script src="/js/redirect.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C64TPJYY96');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1507795450221855" crossorigin="anonymous"></script>
+  
+    
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.tyage.net/">
+                <img src='/icon/icon.jpg' alt="avatar">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.tyage.net/">blog.tyage.net</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/post" aria-label="Posts" ><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/index.xml" aria-label="rss" ><span data-feather='rss'></span> RSS </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tyage.net" aria-label="About me" ><span data-feather='home'></span> About me </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/post" ><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/index.xml" ><span data-feather='rss'></span> RSS </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tyage.net" ><span data-feather='home'></span> About me </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container h-entry">
+    <div class="post-header-section">
+        <h1>さくらのvps契約+node.js</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              2012/08/09
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div class="e-content">
+            <p>ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。<br />
+自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・</p>
+<p>　</p>
+<h2>環境</h2>
+<dl>
+<dt>VPS の OS</dt>
+<dd>CentOS 6.2 x86_64</dd>
+<dt>クライアント の OS</dt>
+<dd>Ubuntu 12.04 LTS 64 bit</dd>
+<dt>node.js</dt>
+<dd>v0.6.18</dd>
+</dl>
+<p>　</p>
+<h2>設定</h2>
+<p><a href="http://wp.yat-net.com/?p=3074">さくらVPSで使うコマンドリストとサーバーの初期設定</a>を主に参考にしています。<br />
+公開鍵認証にしてあるならport番号の変更とかは必要ないような気もするのですが一応。</p>
+<h3>作業用ユーザーの追加</h3>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;">useradd <span style="color: #7a0874; font-weight: bold;">&#91;</span>user<span style="color: #7a0874; font-weight: bold;">&#93;</span>
+<span style="color: #c20cb9; font-weight: bold;">passwd</span> <span style="color: #7a0874; font-weight: bold;">&#91;</span>user<span style="color: #7a0874; font-weight: bold;">&#93;</span>
+usermod <span style="color: #660033;">-G</span> wheel <span style="color: #7a0874; font-weight: bold;">&#91;</span>user<span style="color: #7a0874; font-weight: bold;">&#93;</span></pre></td></tr></table></div>
+<h3>SSHポート番号変更</h3>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">vim</span> <span style="color: #000000; font-weight: bold;">/</span>etc<span style="color: #000000; font-weight: bold;">/</span>ssh<span style="color: #000000; font-weight: bold;">/</span>sshd_config</pre></td></tr></table></div>
+<pre>
 #Port 22
 Port [new port]
-</pre><h3>公開認証鍵に</h3><p>鍵を作成し転送</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>ssh-keygen</span> <span style=color:#603>-t</span> rsa <span style=color:#603>-C</span> <span style=color:red>&quot;[email]&quot;</span>
-<span style=color:#c20cb9;font-weight:700>scp</span> ~<span style=color:#000;font-weight:700>/</span>.ssh<span style=color:#000;font-weight:700>/</span>id_rsa.pub <span style=color:#7a0874;font-weight:700>&#91;</span>user<span style=color:#7a0874;font-weight:700>&#93;</span><span style=color:#000;font-weight:700>@</span><span style=color:#7a0874;font-weight:700>&#91;</span>host<span style=color:#7a0874;font-weight:700>&#93;</span>:<span style=color:#000;font-weight:700>/</span>home<span style=color:#000;font-weight:700>/</span><span style=color:#7a0874;font-weight:700>&#91;</span>user<span style=color:#7a0874;font-weight:700>&#93;</span><span style=color:#000;font-weight:700>/</span>authorized_keys</pre></td></tr></table></div><p>公開鍵の設定</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#7a0874;font-weight:700>cd</span> <span style=color:#007800>$HOME</span>
-<span style=color:#c20cb9;font-weight:700>mkdir</span> .ssh
-<span style=color:#c20cb9;font-weight:700>chmod</span> <span style=color:#000>700</span> .ssh
-<span style=color:#c20cb9;font-weight:700>chmod</span> <span style=color:#000>600</span> authorized_keys
-<span style=color:#c20cb9;font-weight:700>mv</span> authorized_keys .ssh<span style=color:#000;font-weight:700>/</span>authorized_keys</pre></td></tr></table></div><p>設定を変更し反映</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>vim</span> <span style=color:#000;font-weight:700>/</span>etc<span style=color:#000;font-weight:700>/</span>ssh<span style=color:#000;font-weight:700>/</span>sshd_config</pre></td></tr></table></div><pre>
+</pre>
+<h3>公開認証鍵に</h3>
+<p>鍵を作成し転送</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">ssh-keygen</span> <span style="color: #660033;">-t</span> rsa <span style="color: #660033;">-C</span> <span style="color: #ff0000;">&quot;[email]&quot;</span>
+<span style="color: #c20cb9; font-weight: bold;">scp</span> ~<span style="color: #000000; font-weight: bold;">/</span>.ssh<span style="color: #000000; font-weight: bold;">/</span>id_rsa.pub <span style="color: #7a0874; font-weight: bold;">&#91;</span>user<span style="color: #7a0874; font-weight: bold;">&#93;</span><span style="color: #000000; font-weight: bold;">@</span><span style="color: #7a0874; font-weight: bold;">&#91;</span>host<span style="color: #7a0874; font-weight: bold;">&#93;</span>:<span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span><span style="color: #7a0874; font-weight: bold;">&#91;</span>user<span style="color: #7a0874; font-weight: bold;">&#93;</span><span style="color: #000000; font-weight: bold;">/</span>authorized_keys</pre></td></tr></table></div>
+<p>公開鍵の設定</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #7a0874; font-weight: bold;">cd</span> <span style="color: #007800;">$HOME</span>
+<span style="color: #c20cb9; font-weight: bold;">mkdir</span> .ssh
+<span style="color: #c20cb9; font-weight: bold;">chmod</span> <span style="color: #000000;">700</span> .ssh
+<span style="color: #c20cb9; font-weight: bold;">chmod</span> <span style="color: #000000;">600</span> authorized_keys
+<span style="color: #c20cb9; font-weight: bold;">mv</span> authorized_keys .ssh<span style="color: #000000; font-weight: bold;">/</span>authorized_keys</pre></td></tr></table></div>
+<p>設定を変更し反映</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">vim</span> <span style="color: #000000; font-weight: bold;">/</span>etc<span style="color: #000000; font-weight: bold;">/</span>ssh<span style="color: #000000; font-weight: bold;">/</span>sshd_config</pre></td></tr></table></div>
+<pre>
 PermitRootLogin no
 PasswordAuthentication no
-</pre><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#000;font-weight:700>/</span>etc<span style=color:#000;font-weight:700>/</span>init.d<span style=color:#000;font-weight:700>/</span>sshd restart</pre></td></tr></table></div><p>　</p><h2>node.jsの導入</h2><p><a href=https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager>Installing Node.js via package manager</a>を参考に。</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>wget</span> http:<span style=color:#000;font-weight:700>//</span>nodejs.tchol.org<span style=color:#000;font-weight:700>/</span>repocfg<span style=color:#000;font-weight:700>/</span>el<span style=color:#000;font-weight:700>/</span>nodejs-stable-release.noarch.rpm
-<span style=color:#c20cb9;font-weight:700>yum localinstall</span> <span style=color:#603>--nogpgcheck</span> nodejs-stable-release.noarch.rpm
-<span style=color:#c20cb9;font-weight:700>yum install</span> nodejs-compat-symlinks npm
-<span style=color:#c20cb9;font-weight:700>rm</span> nodejs-stable-release.noarch.rpm</pre></td></tr></table></div><p>2012/8/9時点ではnode v0.6.18が入りました。</p><p>　</p><h2>動作テスト</h2><p>適当なフォルダに移動し、</p><div class=wp_syntax style=position:relative><table><tr><td class=code><pre class=bash style=font-family:monospace><span style=color:#c20cb9;font-weight:700>git init</span>
-<span style=color:#c20cb9;font-weight:700>git clone</span> git:<span style=color:#000;font-weight:700>//</span>github.com<span style=color:#000;font-weight:700>/</span>tyage<span style=color:#000;font-weight:700>/</span>nekomeshi.git
-<span style=color:#7a0874;font-weight:700>cd</span> nekomeshi
-npm <span style=color:#c20cb9;font-weight:700>install</span>
-node app.js</pre></td></tr></table></div><p>これで動作テストは完了です。</p></div></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/archive/p487.html>&#8592;
-Previous:
-06/25</a></p><p class=prev-post-date>2012/06/25</p></div><div class=next-post><p><a href=/archive/p525.html>Next:
-08/04
-&#8594;</a></p><p class=next-post-date>2012/08/13</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script><div id=comments><script src=/js/webmention.min.js data-max-webmentions=60 async></script><div id=webmentions></div></div><div style=display:none><a class=u-bridgy-fed href=https://fed.brid.gy/></a><p class=dt-published>2012-08-09T15:42:45+00:00</p></div></div></main><footer class=footer><span>Made with &#10084;&#65039; using <a target=_blank href=https://github.com/gokarna-theme/gokarna-hugo>Gokarna</a></span></footer></body></html>
+</pre>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">/</span>etc<span style="color: #000000; font-weight: bold;">/</span>init.d<span style="color: #000000; font-weight: bold;">/</span>sshd restart</pre></td></tr></table></div>
+<p>　</p>
+<h2>node.jsの導入</h2>
+<p><a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">Installing Node.js via package manager</a>を参考に。</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">wget</span> http:<span style="color: #000000; font-weight: bold;">//</span>nodejs.tchol.org<span style="color: #000000; font-weight: bold;">/</span>repocfg<span style="color: #000000; font-weight: bold;">/</span>el<span style="color: #000000; font-weight: bold;">/</span>nodejs-stable-release.noarch.rpm
+<span style="color: #c20cb9; font-weight: bold;">yum localinstall</span> <span style="color: #660033;">--nogpgcheck</span> nodejs-stable-release.noarch.rpm
+<span style="color: #c20cb9; font-weight: bold;">yum install</span> nodejs-compat-symlinks npm
+<span style="color: #c20cb9; font-weight: bold;">rm</span> nodejs-stable-release.noarch.rpm</pre></td></tr></table></div>
+<p>2012/8/9時点ではnode v0.6.18が入りました。</p>
+<p>　</p>
+<h2>動作テスト</h2>
+<p>適当なフォルダに移動し、</p>
+<div class="wp_syntax" style="position:relative;"><table><tr><td class="code"><pre class="bash" style="font-family:monospace;"><span style="color: #c20cb9; font-weight: bold;">git init</span>
+<span style="color: #c20cb9; font-weight: bold;">git clone</span> git:<span style="color: #000000; font-weight: bold;">//</span>github.com<span style="color: #000000; font-weight: bold;">/</span>tyage<span style="color: #000000; font-weight: bold;">/</span>nekomeshi.git
+<span style="color: #7a0874; font-weight: bold;">cd</span> nekomeshi
+npm <span style="color: #c20cb9; font-weight: bold;">install</span>
+node app.js</pre></td></tr></table></div>
+<p>これで動作テストは完了です。</p>
+
+        </div>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                <nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/archive/p487.html">
+                &#8592;
+                Previous:
+                06/25
+            </a>
+        </p>
+        <p class="prev-post-date">
+            2012/06/25
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/archive/p525.html">
+                Next:
+                08/04
+                &#8594;
+            </a>
+        </p>
+            <p class="next-post-date">
+                2012/08/13
+            </p>
+    </div>
+    
+</nav>
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+    <div id="comments">
+        <script src="/js/webmention.min.js" data-max-webmentions="60" async></script>
+<div id="webmentions"></div>
+
+    </div>
+    
+
+    <div style="display: none;">
+        <a class="u-bridgy-fed" href="https://fed.brid.gy/"></a>
+        <p class="dt-published">2012-08-09T15:42:45&#43;00:00</p>
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/gokarna-theme/gokarna-hugo">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

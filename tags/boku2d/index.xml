@@ -1,30 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Boku2D on blog.tyage.net</title><link>https://blog.tyage.net/tags/boku2d/</link><description>Recent content in Boku2D on blog.tyage.net</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 23 Apr 2011 15:27:15 +0000</lastBuildDate><atom:link href="https://blog.tyage.net/tags/boku2d/index.xml" rel="self" type="application/rss+xml"/><item><title>オープンソースカンファレンス2011 @神戸</title><link>https://blog.tyage.net/archive/p328.html</link><pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate><guid>https://blog.tyage.net/archive/p328.html</guid><description>&lt;p&gt;&lt;a href="http://www.ospn.jp/osc2011-kobe/"&gt;オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a&gt;に参加してきました。&lt;/p&gt;
-&lt;p&gt;去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p&gt;
-&lt;p&gt;それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br /&gt;
-ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br /&gt;
-ごめんなさい。&lt;/p&gt;
-&lt;p&gt;発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br /&gt;
-それでもなんとか端折りながら5分に収めましたがｗ&lt;/p&gt;
-&lt;p&gt;後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br /&gt;
-初・OSC懇親会は楽しかった！&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877087"&gt;&lt;img src="http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg" alt="OSC神戸" width="450" height="253" style="border:0" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877087"&gt;OSC神戸&lt;/a&gt; posted by &lt;a href="http://photozou.jp/user/top/265673"&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877429"&gt;&lt;img src="http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg" alt="OSC神戸でもらった" width="450" height="253" style="border:0" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href="http://photozou.jp/photo/show/265673/75877429"&gt;OSC神戸でもらった&lt;/a&gt; posted by &lt;a href="http://photozou.jp/user/top/265673"&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;</description></item><item><title>開発中 – boku2D</title><link>https://blog.tyage.net/archive/p140.html</link><pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate><guid>https://blog.tyage.net/archive/p140.html</guid><description>&lt;p&gt;&lt;a href='http://tyage.sakura.ne.jp/dev/boku2D/'&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;
-サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;
-box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;
-&lt;p&gt;以前にも同じようなエンジンを作って、&lt;a href='http://tyage.sakura.ne.jp/dev/AL/sample1.php'&gt;スーパー正男&lt;/a&gt;っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。&lt;/p&gt;
-&lt;p&gt;HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。&lt;br /&gt;
-基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。&lt;br /&gt;
-一から作り直したので仕様も、前よりはすっきりしたはず。&lt;/p&gt;
-&lt;p&gt;ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。&lt;br /&gt;
-Thanks to &lt;a href="http://marupeke296.com/COL_MV_No1_HowToCalcVelocity.html"&gt;その１　誰もがやりたいパーティクルの衝突&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。&lt;br /&gt;
-（&lt;a href='http://tyage.sakura.ne.jp/dev/boku2D/'&gt;ここ&lt;/a&gt;でも確認可能）&lt;br /&gt;
-これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。&lt;/p&gt;
-&lt;p&gt;傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。&lt;/p&gt;
-&lt;h3&gt;今後&lt;/h3&gt;
-&lt;p&gt;とりあえず衝突判定をもっと正確にできるようにしようと考え中。&lt;br /&gt;
-本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。&lt;/p&gt;
-&lt;p&gt;JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。&lt;br /&gt;
-もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。&lt;/p&gt;
-&lt;p&gt;あくまでこれは俺得ライブラリ。&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boku2D on blog.tyage.net</title>
+    <link>https://blog.tyage.net/tags/boku2d/</link>
+    <description>Recent content in Boku2D on blog.tyage.net</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Apr 2011 15:27:15 +0000</lastBuildDate>
+    <atom:link href="https://blog.tyage.net/tags/boku2d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>オープンソースカンファレンス2011 @神戸</title>
+      <link>https://blog.tyage.net/archive/p328.html</link>
+      <pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p328.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ospn.jp/osc2011-kobe/&#34;&gt;オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a&gt;に参加してきました。&lt;/p&gt;&#xA;&lt;p&gt;去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p&gt;&#xA;&lt;p&gt;それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br /&gt;&#xA;ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br /&gt;&#xA;ごめんなさい。&lt;/p&gt;&#xA;&lt;p&gt;発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br /&gt;&#xA;それでもなんとか端折りながら5分に収めましたがｗ&lt;/p&gt;&#xA;&lt;p&gt;後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br /&gt;&#xA;初・OSC懇親会は楽しかった！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;&lt;img src=&#34;http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg&#34; alt=&#34;OSC神戸&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;OSC神戸&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;&lt;img src=&#34;http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg&#34; alt=&#34;OSC神戸でもらった&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;OSC神戸でもらった&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;</description>
+    </item>
+    <item>
+      <title>開発中 – boku2D</title>
+      <link>https://blog.tyage.net/archive/p140.html</link>
+      <pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate>
+      <guid>https://blog.tyage.net/archive/p140.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;&#xA;&lt;p&gt;以前にも同じようなエンジンを作って、&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/AL/sample1.php&#39;&gt;スーパー正男&lt;/a&gt;っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。&lt;/p&gt;&#xA;&lt;p&gt;HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。&lt;br /&gt;&#xA;基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。&lt;br /&gt;&#xA;一から作り直したので仕様も、前よりはすっきりしたはず。&lt;/p&gt;&#xA;&lt;p&gt;ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。&lt;br /&gt;&#xA;Thanks to &lt;a href=&#34;http://marupeke296.com/COL_MV_No1_HowToCalcVelocity.html&#34;&gt;その１　誰もがやりたいパーティクルの衝突&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。&lt;br /&gt;&#xA;（&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;ここ&lt;/a&gt;でも確認可能）&lt;br /&gt;&#xA;これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。&lt;/p&gt;&#xA;&lt;p&gt;傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。&lt;/p&gt;&#xA;&lt;h3&gt;今後&lt;/h3&gt;&#xA;&lt;p&gt;とりあえず衝突判定をもっと正確にできるようにしようと考え中。&lt;br /&gt;&#xA;本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。&lt;/p&gt;&#xA;&lt;p&gt;JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。&lt;br /&gt;&#xA;もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。&lt;/p&gt;&#xA;&lt;p&gt;あくまでこれは俺得ライブラリ。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
