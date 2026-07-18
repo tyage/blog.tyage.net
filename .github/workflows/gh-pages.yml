@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: true # Fetch Hugo themes
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
@@ -31,7 +31,9 @@ jobs:
           cname: blog.tyage.net
 
       - name: Send webmention
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
       - run: git clone https://github.com/${GITHUB_REPOSITORY} --depth=2 --branch=gh-pages gh-pages
       - run: sleep 60 # Wait until Netlify will update content
       - run: node ../scripts/notify-fed-bridgy.js
