@@ -1,5 +1,6 @@
 baseURL = "https://blog.tyage.net"
-languageCode = "ja-jp"
+defaultContentLanguage = "ja"
+locale = "ja-JP"
 hasCJKLanguage = true
 title = "blog.tyage.net"
 theme = "gokarna"
@@ -54,7 +55,7 @@ theme = "gokarna"
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){window.dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-C64TPJYY96');
