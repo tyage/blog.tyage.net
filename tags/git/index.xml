@@ -5,7 +5,7 @@
     <link>https://blog.tyage.net/tags/git/</link>
     <description>Recent content in Git on blog.tyage.net</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>ja-jp</language>
     <lastBuildDate>Mon, 13 Dec 2010 14:09:59 +0000</lastBuildDate>
     <atom:link href="https://blog.tyage.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://blog.tyage.net/archive/p182.html</link>
       <pubDate>Mon, 13 Dec 2010 14:09:59 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p182.html</guid>
-      <description>&lt;p&gt;できない。&lt;/p&gt;&#xA;&lt;p&gt;ぐぐったら下の三つがそれらしいので試してみたがだめだった。&lt;br /&gt;&#xA;バージョンは最新の1.7.3.3でやってる。&lt;br /&gt;&#xA;&lt;a href=&#34;http://d.hatena.ne.jp/shiba1029196473/20100219&#34;&gt;2010-02-19 &amp;#8211; Dive into the Tech World!&lt;/a&gt;&lt;br /&gt;&#xA;&lt;a href=&#34;http://magpad.jugem.jp/?eid=137&#34;&gt;さくらのレンタルサーバにgitをインストールする方法 | public static void main&lt;/a&gt;&lt;br /&gt;&#xA;&lt;a href=&#34;http://d.hatena.ne.jp/keisukefukuda/20080520/p1&#34;&gt;サクラのレンタルサーバーでgitを使う &amp;#8211; Text::Easyhacking&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;というかexportコマンドが用意されてないみたいだけどよく分かんない。&lt;/p&gt;&#xA;&lt;p&gt;未だにLinuxとかそのコマンドに関しては初心者から脱却できないでいる。&lt;br /&gt;&#xA;進展があるとすれば、最近ubuntuを使い始めたくらい。&lt;/p&gt;&#xA;&lt;p&gt;ちまちま雑誌とか読んでれば分かるようになるかな。&lt;br /&gt;&#xA;さくら鯖にrails入れようとしたときも失敗したし、まずはローカル環境でできるようになってからにする。&lt;/p&gt;</description>
+      <description>&lt;p&gt;できない。&lt;/p&gt;&#xA;&lt;p&gt;ぐぐったら下の三つがそれらしいので試してみたがだめだった。&lt;br /&gt;&#xA;バージョンは最新の1.7.3.3でやってる。&lt;br /&gt;&#xA;&lt;a href=&#34;http://d.hatena.ne.jp/shiba1029196473/20100219&#34;&gt;2010-02-19 &amp;#8211; Dive into the Tech World!&lt;/a&gt;&lt;br /&gt;&#xA;&lt;a href=&#34;http://magpad.jugem.jp/?eid=137&#34;&gt;さくらのレンタルサーバにgitをインストールする方法 | public static void main&lt;/a&gt;&lt;br /&gt;&#xA;&lt;a href=&#34;http://d.hatena.ne.jp/keisukefukuda/20080520/p1&#34;&gt;サクラのレンタルサーバーでgitを使う &amp;#8211; Text::Easyhacking&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

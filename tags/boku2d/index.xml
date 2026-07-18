@@ -5,7 +5,7 @@
     <link>https://blog.tyage.net/tags/boku2d/</link>
     <description>Recent content in Boku2D on blog.tyage.net</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>ja-jp</language>
     <lastBuildDate>Sat, 23 Apr 2011 15:27:15 +0000</lastBuildDate>
     <atom:link href="https://blog.tyage.net/tags/boku2d/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -20,7 +20,7 @@
       <link>https://blog.tyage.net/archive/p140.html</link>
       <pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p140.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;&#xA;&lt;p&gt;以前にも同じようなエンジンを作って、&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/AL/sample1.php&#39;&gt;スーパー正男&lt;/a&gt;っぽいのをJavaScriptで再現していたのだけども、あまりにもコードが見てられないので新しく作り始めた。&lt;/p&gt;&#xA;&lt;p&gt;HTMLからデータを取り込む機能を少々強化したり（jQueryを入れてあるとgood）、ベクトルオブジェクトを使ったりしてる。&lt;br /&gt;&#xA;基本的にこちらが提供するのはエンジンだけで、描画は自前で処理してもらおうと考えているが、DOMを使っている場合はライブラリで提供された関数を使うのもよし。&lt;br /&gt;&#xA;一から作り直したので仕様も、前よりはすっきりしたはず。&lt;/p&gt;&#xA;&lt;p&gt;ちょっとリアルっぽさを出すために、物理の知識を入れたりして調子に乗ってる。&lt;br /&gt;&#xA;Thanks to &lt;a href=&#34;http://marupeke296.com/COL_MV_No1_HowToCalcVelocity.html&#34;&gt;その１　誰もがやりたいパーティクルの衝突&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;ただ、複数の物体が同時にぶつかるなどの状況になると、衝突判定がおかしくなってしまう。&lt;br /&gt;&#xA;（&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;ここ&lt;/a&gt;でも確認可能）&lt;br /&gt;&#xA;これは前に作ったエンジンと同じで、どうやら僕の頭じゃ解決できないらしく、物理エンジンの勉強でもしようかと思考中。&lt;/p&gt;&#xA;&lt;p&gt;傾きをつけることもできそうだと考えたが、box2DJSで試したところ、傾きがあるとゲームとして使う際に問題がありそうだと思われたため、あえて入れていない。&lt;/p&gt;&#xA;&lt;h3&gt;今後&lt;/h3&gt;&#xA;&lt;p&gt;とりあえず衝突判定をもっと正確にできるようにしようと考え中。&lt;br /&gt;&#xA;本を見ても解決できそうにないので、他の物理エンジンのコードを読むのがいいかなと思っている。&lt;/p&gt;&#xA;&lt;p&gt;JSで使える物理エンジンといえば、@technohippy様がActionScriptからJavaScriptに変換なされたbox2DJSなので、まずはそれを読むことにする。&lt;br /&gt;&#xA;もう少しやる気が出れば、最新のbox2Dをライブラリなしで変換しようとするかもしれない。&lt;/p&gt;&#xA;&lt;p&gt;あくまでこれは俺得ライブラリ。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

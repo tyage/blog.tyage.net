@@ -5,7 +5,7 @@
     <link>https://blog.tyage.net/tags/php/</link>
     <description>Recent content in PHP on blog.tyage.net</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>ja-jp</language>
     <lastBuildDate>Fri, 04 Mar 2011 11:30:49 +0000</lastBuildDate>
     <atom:link href="https://blog.tyage.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,14 +13,14 @@
       <link>https://blog.tyage.net/archive/p276.html</link>
       <pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p276.html</guid>
-      <description>&lt;p&gt;Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。&lt;/p&gt;&#xA;&lt;p&gt;少なくともLhaplusだと解凍できなかった。&lt;/p&gt;&#xA;&lt;p&gt;問題になるのはWindowsだけかな。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。&lt;/p&gt;&#xA;&lt;p&gt;少なくともLhaplusだと解凍できなかった。&lt;/p&gt;</description>
     </item>
     <item>
       <title>赤シート2.0</title>
       <link>https://blog.tyage.net/archive/p143.html</link>
       <pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p143.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/&#34;&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;&#xA;&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;&#xA;どうしても電源を入れる癖がある。&lt;br /&gt;&#xA;しかし&lt;a href=&#34;http://smart.fm/home&#34;&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;&#xA;&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;&#xA;しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;&#xA;&lt;p&gt;そこで、自分に開発をしているのだと暗示をかけながら勉強をすればいいのではないかと思いついた。&lt;br /&gt;&#xA;どのようなサービスがいいか考えたところ、優秀な同級生や妹を見ていると、ノートを赤いペンで書いて、上から赤シートをかぶせる勉強法を取っている人も多いことに気がついた。&lt;br /&gt;&#xA;その方法を真似して、PC上でやってみようと考えたが、そのようなサービスでしっくりくるものがなかったため、できるだけ簡単にできるようなのを作ってみた。&lt;br /&gt;&#xA;その結果できたのが、赤シート2.0である。&lt;br /&gt;&#xA;いろいろとダサイが、俺得サービスなので問題ない。&lt;/p&gt;&#xA;&lt;p&gt;久々にcakePHPを使わないサービスを作ったので、3時間もかかった。&lt;br /&gt;&#xA;PDOにも初挑戦してみた。&lt;/p&gt;&#xA;&lt;p&gt;使い方は、テキストの隠したい部分を「?」で囲み、それを投稿するだけである。&lt;br /&gt;&#xA;隠した部分は選択して反転すれば見れるようになるので、問題ないであろう。&lt;br /&gt;&#xA;（クリックすると見れるようになるようにしようかな。）&lt;/p&gt;&#xA;&lt;p&gt;サンプルとして、地理のプリントの写しを挙げておく。&lt;br /&gt;&#xA;ほかにも、英文の穴埋めなどにも使うなど、いろいろな使い方があると思う。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/view?id=57&#34;&gt;土壌まとめ[地理]&lt;/a&gt;&lt;br /&gt;&#xA;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/view?id=57&#34;&gt;熱帯まとめ[地理]&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/&#34;&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;&#xA;&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;&#xA;どうしても電源を入れる癖がある。&lt;br /&gt;&#xA;しかし&lt;a href=&#34;http://smart.fm/home&#34;&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;&#xA;&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;&#xA;しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

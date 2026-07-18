@@ -5,7 +5,7 @@
     <link>https://blog.tyage.net/tags/titanium/</link>
     <description>Recent content in Titanium on blog.tyage.net</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>ja-jp</language>
     <lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate>
     <atom:link href="https://blog.tyage.net/tags/titanium/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,14 +13,14 @@
       <link>https://blog.tyage.net/archive/p380.html</link>
       <pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p380.html</guid>
-      <description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;&#xA;&lt;p&gt;愛を込めて言います。Titanium死ね&lt;/p&gt;&#xA;&lt;p&gt;他には、&lt;a href=&#34;http://www.gsic.titech.ac.jp/supercon/main/attwiki/&#34;&gt;SuperCon&lt;/a&gt;という大会の予選を通過しました。&lt;/p&gt;&#xA;&lt;p&gt;というか、チームリーダに頼ってたら通過していました。&lt;/p&gt;&#xA;&lt;p&gt;金魚の糞をしていたらSuperCon一級なるものが頂けました。おいしい。&lt;/p&gt;&#xA;&lt;p&gt;去年は自分は参加していなかったのですが、我が高校は全国4位だったようで。&lt;/p&gt;&#xA;&lt;p&gt;まあ本選がんばります。&lt;/p&gt;&#xA;&lt;p&gt;それと、ごく最近の話ですが、模試がいくつか帰ってきました。&lt;/p&gt;&#xA;&lt;p&gt;もう受験期なんだなーと実感しましたね。（※もう残り半年です）&lt;/p&gt;&#xA;&lt;p&gt;とりあえずいろいろ考えて、京都大学工学部情報学科を目指すことにしました。&lt;/p&gt;&#xA;&lt;p&gt;で、帰ってきた模試の結果はこんな感じでした。&lt;/p&gt;&#xA;&lt;h4&gt;駿台全国模試&lt;/h4&gt;&#xA;&lt;p&gt;京工情報：A （18 / 326）&lt;br /&gt;&#xA;阪大基礎工情報後：A (5 / 235)&lt;br /&gt;&#xA;神戸大工情報知能：A (3 / 180)&lt;br /&gt;&#xA;以下略&lt;/p&gt;&#xA;&lt;h4&gt;進研マーク模試&lt;/h4&gt;&#xA;&lt;p&gt;京工情報：C （43 / 235）&lt;br /&gt;&#xA;阪大基礎工情報前：A (2 / 148)&lt;br /&gt;&#xA;筑波大情報前：A (1 / 475)&lt;br /&gt;&#xA;神戸大工前：A (1 / 1678)&lt;br /&gt;&#xA;以下略&lt;/p&gt;&#xA;&lt;p&gt;マークはこの時期にCを取れたらまあまあと言われたのですが、安心してられないなあと。&lt;/p&gt;&#xA;&lt;p&gt;それよりも、駿台の模試が全体的にかなり悪かったのはどうにかしないといけない。&lt;/p&gt;&#xA;&lt;p&gt;特に英語。こんなに悪いとは思ってもみなかった。&lt;/p&gt;&#xA;&lt;p&gt;判定で安心していたら、校内順位は駿台のほうが大きく下であった。&lt;/p&gt;&#xA;&lt;p&gt;来週の期末試験はがんばろう・・・&lt;/p&gt;</description>
+      <description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Titanium * Android = デスマ</title>
       <link>https://blog.tyage.net/archive/p368.html</link>
       <pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p368.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;思い出せるものから書き上げていく&lt;/p&gt;&#xA;&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;&#xA;&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;&#xA;&lt;p&gt;getAllPeopleおかしい&lt;/p&gt;&#xA;&lt;p&gt;show, hideおかしい&lt;/p&gt;&#xA;&lt;p&gt;CommonJS対応のくせにrequire使えない&lt;/p&gt;&#xA;&lt;p&gt;一旦変数に代入せずに一気に、(new Ti.UI.createWindow()).show()　とするとエラー&lt;/p&gt;&#xA;&lt;p&gt;選択した写真のデータを送るときに一旦viewに設定しないといけない&lt;/p&gt;&#xA;&lt;p&gt;tableのrowはtable.dataから取得できない&lt;/p&gt;&#xA;&lt;p&gt;windowに追加後、heightを変更できない&lt;/p&gt;&#xA;&lt;p&gt;メアド用にキーボードを切り替えできない&lt;/p&gt;&#xA;&lt;p&gt;エミュ重い&lt;/p&gt;&#xA;&lt;p&gt;環境構築面倒&lt;/p&gt;&#xA;&lt;p&gt;tabがあるときの新規windowの扱いが不明。&lt;br /&gt;&#xA;挙動が定まらない&lt;/p&gt;&#xA;&lt;p&gt;いろいろ非対応&lt;br /&gt;&#xA;スクロールテーブルとか自作しないといけない&lt;/p&gt;&#xA;&lt;p&gt;jssのz-indexはzIndexと書かないと動かない。&lt;/p&gt;&#xA;&lt;p&gt;jssはセレクタに単一クラスかIDしか指定できない。&lt;/p&gt;&#xA;&lt;p&gt;その他のセレクタを指定すると落ちる。&lt;/p&gt;&#xA;&lt;p&gt;jssがなぜか更新されない。&lt;/p&gt;&#xA;&lt;p&gt;viewをmapの上に表示することができない。&lt;/p&gt;&#xA;&lt;p&gt;leftView, rightViewが非対応だった。&lt;/p&gt;&#xA;&lt;p&gt;マップのクリックイベントも、annotationのクリックイベントもおかしい。&lt;/p&gt;&#xA;&lt;p&gt;annotationのタイトルだけでイベントが発生する。&lt;/p&gt;&#xA;&lt;p&gt;テーブル内のあるrowの操作が同一テーブル内の要素に干渉することがある&lt;/p&gt;&#xA;&lt;p&gt;バグ多い&lt;/p&gt;&#xA;&lt;p&gt;APIリファレンスはうそつき&lt;/p&gt;</description>
+      <description>&lt;p&gt;　&lt;br /&gt;&#xA;思い出せるものから書き上げていく&lt;/p&gt;&#xA;&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;&#xA;&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;</description>
     </item>
     <item>
       <title>僕とTitanium Developerの3日間戦争 – 導入まで</title>

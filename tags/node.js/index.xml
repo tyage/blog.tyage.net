@@ -5,7 +5,7 @@
     <link>https://blog.tyage.net/tags/node.js/</link>
     <description>Recent content in Node.js on blog.tyage.net</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>ja-jp</language>
     <lastBuildDate>Mon, 13 Aug 2012 22:52:44 +0000</lastBuildDate>
     <atom:link href="https://blog.tyage.net/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://blog.tyage.net/archive/p552.html</link>
       <pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p552.html</guid>
-      <description>&lt;p&gt;コンディション：良好&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：記憶になし&lt;/p&gt;&#xA;&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;&#xA;主目的はゲーム製作。&lt;br /&gt;&#xA;以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;&#xA;&lt;p&gt;とりあえずOSをubuntu12.04に変えようと努力。&lt;br /&gt;&#xA;まずはUNetbootinを使ってUSBにubuntuイメージファイルを入れ、usb起動してインストール。&lt;br /&gt;&#xA;途中、Grubを認識しなくなってError 17を出したりしたけど、起動オプションいじったりしてたらなんとかなった。&lt;/p&gt;&#xA;&lt;p&gt;その後はnode.jsインストールしたり、herokuだとwebSocketゲームはつらいなあと再度確認したりしてた。&lt;/p&gt;</description>
+      <description>&lt;p&gt;コンディション：良好&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：記憶になし&lt;/p&gt;&#xA;&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;&#xA;主目的はゲーム製作。&lt;br /&gt;&#xA;以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;</description>
     </item>
     <item>
       <title>オープンソースカンファレンス2011 @神戸</title>
@@ -27,7 +27,7 @@
       <link>https://blog.tyage.net/archive/p234.html</link>
       <pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate>
       <guid>https://blog.tyage.net/archive/p234.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/joi/2010/2011-yo-prob_and_sol/&#34;&gt;情報オリンピック予選&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;何故か通過しました。&lt;/p&gt;&#xA;&lt;p&gt;点数は７２点でギリギリ。（ボーダーも７２点）&lt;br /&gt;&#xA;20+20+20+8+4 = 72　てな感じでした。&lt;/p&gt;&#xA;&lt;p&gt;うどんすすりながら、node.jsで受けた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=188&#34;&gt;こんな回答&lt;/a&gt;だったのに通過していいのか。&lt;/p&gt;&#xA;&lt;p&gt;KYの二年は、自分も含め少なくとも３人通過した見たい。&lt;/p&gt;&#xA;&lt;p&gt;他の二人はめちゃんこ点数高いです。&lt;/p&gt;&#xA;&lt;p&gt;ぼかぁアルゴリズマーじゃないし、普段から勉強もしてないんで、本戦ではみなさんがんばってくださいって感じですね。&lt;/p&gt;&#xA;&lt;p&gt;たぶん、あの二人は余裕で本戦も通過しそうだなあ。&lt;/p&gt;&#xA;&lt;p&gt;罪悪感はあるけど、マイナーな言語で受けると逆に受かりやすい場合もあるんだなあと実感。&lt;br /&gt;&#xA;（ヒント：提出したプログラム）&lt;/p&gt;&#xA;&lt;p&gt;また、ただで東京に行って参ります。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/joi/2010/2011-yo-prob_and_sol/&#34;&gt;情報オリンピック予選&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;何故か通過しました。&lt;/p&gt;&#xA;&lt;p&gt;点数は７２点でギリギリ。（ボーダーも７２点）&lt;br /&gt;&#xA;20+20+20+8+4 = 72　てな感じでした。&lt;/p&gt;&#xA;&lt;p&gt;うどんすすりながら、node.jsで受けた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=188&#34;&gt;こんな回答&lt;/a&gt;だったのに通過していいのか。&lt;/p&gt;&#xA;&lt;p&gt;KYの二年は、自分も含め少なくとも３人通過した見たい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>「node.js」はじめました</title>
