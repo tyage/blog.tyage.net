@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Titanium on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/titanium/</link>
-    <description>Recent content in Titanium on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/titanium/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>最近のこと</title>
-      <link>https://blog.tyage.net/archive/p380.html</link>
-      <pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p380.html</guid>
-      <description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Titanium * Android = デスマ</title>
-      <link>https://blog.tyage.net/archive/p368.html</link>
-      <pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p368.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;思い出せるものから書き上げていく&lt;/p&gt;&#xA;&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;&#xA;&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>僕とTitanium Developerの3日間戦争 – 導入まで</title>
-      <link>https://blog.tyage.net/archive/p335.html</link>
-      <pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p335.html</guid>
-      <description>&lt;p&gt;とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p&gt;&#xA;&lt;p&gt;Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br /&gt;&#xA;普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p&gt;&#xA;&lt;h2&gt;初めに&lt;/h2&gt;&#xA;&lt;p&gt;環境はWindows XP SP3です。&lt;br /&gt;&#xA;Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p&gt;&#xA;&lt;p&gt;最終的に必要だったことは以下の通りです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br /&gt;&#xA;&#x9;&#x9;※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://java.sun.com/javase/ja/6/download.html&#34;&gt;JDK6&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにJDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br /&gt;&#xA;&#x9;&#x9;※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;Android SDK&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにAndroid SDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Titanium Developer1.2.2&lt;/a&gt;をインストール&lt;/li&gt;&#xA;&lt;li&gt;一息ついて再起動する（必要ないかも？）&lt;/li&gt;&#xA;&lt;li&gt;Titanium Developerを実行し、アカウント登録をする&lt;/li&gt;&#xA;&lt;li&gt;Titanium Mobileをダウンロード&lt;/li&gt;&#xA;&lt;li&gt;Android SDK Package ManagerでAPIパッケージをインストール&lt;/l&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br /&gt;&#xA;&#x9;&#x9;例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br /&gt;&#xA;&#x9;&#x9;※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;&lt;a href=&#34;https://github.com/appcelerator/KitchenSink&#34;&gt;KitchenSink1.6.1&lt;/a&gt;をダウンロード&lt;br /&gt;&#xA;&#x9;&#x9;※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br /&gt;&#xA;&#x9;&#x9;※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br /&gt;&#xA;&#x9;&#x9;※上手くいかない場合も何度かめげずにLaunchするといいらしい。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li&gt;&#xA;&lt;li&gt;お疲れさまでした。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Titanium on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/titanium/</link>
+		<description>Recent content in Titanium on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 02 Jul 2011 12:43:27 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/titanium/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>最近のこと</title>
+				<link>https://blog.tyage.net/archive/p380.html</link>
+				<pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p380.html</guid>
+				<description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Titanium * Android = デスマ</title>
+				<link>https://blog.tyage.net/archive/p368.html</link>
+				<pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p368.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;思い出せるものから書き上げていく&lt;/p&gt;&#xA;&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;&#xA;&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>僕とTitanium Developerの3日間戦争 – 導入まで</title>
+				<link>https://blog.tyage.net/archive/p335.html</link>
+				<pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p335.html</guid>
+				<description>&lt;p&gt;とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p&gt;&#xA;&lt;p&gt;Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br /&gt;&#xA;普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p&gt;&#xA;&lt;h2&gt;初めに&lt;/h2&gt;&#xA;&lt;p&gt;環境はWindows XP SP3です。&lt;br /&gt;&#xA;Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p&gt;&#xA;&lt;p&gt;最終的に必要だったことは以下の通りです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br /&gt;&#xA;&#x9;&#x9;※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://java.sun.com/javase/ja/6/download.html&#34;&gt;JDK6&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにJDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br /&gt;&#xA;&#x9;&#x9;※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;Android SDK&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにAndroid SDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Titanium Developer1.2.2&lt;/a&gt;をインストール&lt;/li&gt;&#xA;&lt;li&gt;一息ついて再起動する（必要ないかも？）&lt;/li&gt;&#xA;&lt;li&gt;Titanium Developerを実行し、アカウント登録をする&lt;/li&gt;&#xA;&lt;li&gt;Titanium Mobileをダウンロード&lt;/li&gt;&#xA;&lt;li&gt;Android SDK Package ManagerでAPIパッケージをインストール&lt;/l&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br /&gt;&#xA;&#x9;&#x9;例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br /&gt;&#xA;&#x9;&#x9;※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;&lt;a href=&#34;https://github.com/appcelerator/KitchenSink&#34;&gt;KitchenSink1.6.1&lt;/a&gt;をダウンロード&lt;br /&gt;&#xA;&#x9;&#x9;※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br /&gt;&#xA;&#x9;&#x9;※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br /&gt;&#xA;&#x9;&#x9;※上手くいかない場合も何度かめげずにLaunchするといいらしい。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li&gt;&#xA;&lt;li&gt;お疲れさまでした。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>オフ on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/%E3%82%AA%E3%83%95/</link>
-    <description>Recent content in オフ on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 13 Aug 2012 23:03:10 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/%E3%82%AA%E3%83%95/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>08/08</title>
-      <link>https://blog.tyage.net/archive/p557.html</link>
-      <pubDate>Mon, 13 Aug 2012 23:03:10 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p557.html</guid>
-      <description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝飯：寝てた&lt;br /&gt;&#xA;昼飯：残飯とマクドポテト&lt;br /&gt;&#xA;夕飯：記憶にない&lt;/p&gt;&#xA;&lt;p&gt;この日はふぇる絵オフなので早く起きるつもりが15時半に起床。&lt;br /&gt;&#xA;寝ている間に集合時間が17時にfixされていたのでギリギリセーフ。&lt;br /&gt;&#xA;しかし主催者のふぇるが体調を崩して参加できないという事態。&lt;br /&gt;&#xA;とにかく京都駅でオフ会参加者を探して、二人ほど違う人に声かけをする。&lt;br /&gt;&#xA;すごく恥ずかしい。&lt;br /&gt;&#xA;まあ主催者はいなかったけど、ぺちゃくちゃ話してたら22時になって解散する。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>08/05</title>
-      <link>https://blog.tyage.net/archive/p530.html</link>
-      <pubDate>Mon, 13 Aug 2012 22:27:44 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p530.html</guid>
-      <description>&lt;p&gt;コンディション：寝不足&lt;br /&gt;&#xA;朝飯：記憶になし&lt;br /&gt;&#xA;昼飯：残飯＋桃&lt;br /&gt;&#xA;夕飯：お好み焼き&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=525&#34;&gt;昨日&lt;/a&gt;から起きつづけてminecraftをする。&lt;br /&gt;&#xA; @masachaco さんの鯖に入れてもらってヅ大の人達とminecraftし続けて気がつけば5時に・・・&lt;br /&gt;&#xA;そろそろやばいので寝る。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>関西青少年オフ – 04</title>
-      <link>https://blog.tyage.net/archive/p321.html</link>
-      <pubDate>Wed, 06 Apr 2011 05:55:10 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p321.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tweetvite.com/event/seisyounen04&#34;&gt;Tweetvite :: 関西青少年オフ-04&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;舞洲緑地にて楽しく缶蹴りしてました。&lt;/p&gt;&#xA;&lt;p&gt;無線使ったり、一眼レフで監視したりと少し変な缶蹴りだったような。&lt;/p&gt;&#xA;&lt;p&gt;走りまわったので翌日に筋肉痛になるかと思いきや、花粉症で微熱がでました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>青少年オフと京大学院祭</title>
-      <link>https://blog.tyage.net/archive/p134.html</link>
-      <pubDate>Wed, 24 Nov 2010 13:39:21 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p134.html</guid>
-      <description>&lt;p&gt;日曜日に、&lt;a href=&#34;http://tweetvite.com/event/u20_04&#34;&gt;2010関西青少年？オフ&lt;/a&gt;に行きました。&lt;br /&gt;&#xA;その後、&lt;a href=&#34;http://www.nf.la/&#34;&gt;トップページ &amp;#8211; 第52回京都大学11月祭&lt;/a&gt;にて同級生達と合流してきました。&lt;/p&gt;&#xA;&lt;h3&gt;青少年オフ&lt;/h3&gt;&#xA;&lt;p&gt;関西青少年オフでは、嵐電に乗って集合場所に到着した後、&lt;a href=&#34;http://r.tabelog.com/kyoto/A2605/A260501/26000617/&#34;&gt;ジャンボ&lt;/a&gt;というお店に行きました。でかいことで有名だそうです。&lt;br /&gt;&#xA;（20分ほど遅刻しました。ごめんなさい。）&lt;br /&gt;&#xA;焼きそばとお好み焼きを腹いっぱい食べました。でかくてうまかった。&lt;/p&gt;&#xA;&lt;p&gt;その後は、また嵐電に乗って嵐山に行った後、@moccaxと合流して紅葉狩り。&lt;br /&gt;&#xA;とにかく人、人、人。（たまにおっちゃん暴走族）&lt;br /&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>オフ on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/%E3%82%AA%E3%83%95/</link>
+		<description>Recent content in オフ on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 13 Aug 2012 23:03:10 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/%E3%82%AA%E3%83%95/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>08/08</title>
+				<link>https://blog.tyage.net/archive/p557.html</link>
+				<pubDate>Mon, 13 Aug 2012 23:03:10 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p557.html</guid>
+				<description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝飯：寝てた&lt;br /&gt;&#xA;昼飯：残飯とマクドポテト&lt;br /&gt;&#xA;夕飯：記憶にない&lt;/p&gt;&#xA;&lt;p&gt;この日はふぇる絵オフなので早く起きるつもりが15時半に起床。&lt;br /&gt;&#xA;寝ている間に集合時間が17時にfixされていたのでギリギリセーフ。&lt;br /&gt;&#xA;しかし主催者のふぇるが体調を崩して参加できないという事態。&lt;br /&gt;&#xA;とにかく京都駅でオフ会参加者を探して、二人ほど違う人に声かけをする。&lt;br /&gt;&#xA;すごく恥ずかしい。&lt;br /&gt;&#xA;まあ主催者はいなかったけど、ぺちゃくちゃ話してたら22時になって解散する。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>08/05</title>
+				<link>https://blog.tyage.net/archive/p530.html</link>
+				<pubDate>Mon, 13 Aug 2012 22:27:44 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p530.html</guid>
+				<description>&lt;p&gt;コンディション：寝不足&lt;br /&gt;&#xA;朝飯：記憶になし&lt;br /&gt;&#xA;昼飯：残飯＋桃&lt;br /&gt;&#xA;夕飯：お好み焼き&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=525&#34;&gt;昨日&lt;/a&gt;から起きつづけてminecraftをする。&lt;br /&gt;&#xA; @masachaco さんの鯖に入れてもらってヅ大の人達とminecraftし続けて気がつけば5時に・・・&lt;br /&gt;&#xA;そろそろやばいので寝る。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>関西青少年オフ – 04</title>
+				<link>https://blog.tyage.net/archive/p321.html</link>
+				<pubDate>Wed, 06 Apr 2011 05:55:10 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p321.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tweetvite.com/event/seisyounen04&#34;&gt;Tweetvite :: 関西青少年オフ-04&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;舞洲緑地にて楽しく缶蹴りしてました。&lt;/p&gt;&#xA;&lt;p&gt;無線使ったり、一眼レフで監視したりと少し変な缶蹴りだったような。&lt;/p&gt;&#xA;&lt;p&gt;走りまわったので翌日に筋肉痛になるかと思いきや、花粉症で微熱がでました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>青少年オフと京大学院祭</title>
+				<link>https://blog.tyage.net/archive/p134.html</link>
+				<pubDate>Wed, 24 Nov 2010 13:39:21 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p134.html</guid>
+				<description>&lt;p&gt;日曜日に、&lt;a href=&#34;http://tweetvite.com/event/u20_04&#34;&gt;2010関西青少年？オフ&lt;/a&gt;に行きました。&lt;br /&gt;&#xA;その後、&lt;a href=&#34;http://www.nf.la/&#34;&gt;トップページ &amp;#8211; 第52回京都大学11月祭&lt;/a&gt;にて同級生達と合流してきました。&lt;/p&gt;&#xA;&lt;h3&gt;青少年オフ&lt;/h3&gt;&#xA;&lt;p&gt;関西青少年オフでは、嵐電に乗って集合場所に到着した後、&lt;a href=&#34;http://r.tabelog.com/kyoto/A2605/A260501/26000617/&#34;&gt;ジャンボ&lt;/a&gt;というお店に行きました。でかいことで有名だそうです。&lt;br /&gt;&#xA;（20分ほど遅刻しました。ごめんなさい。）&lt;br /&gt;&#xA;焼きそばとお好み焼きを腹いっぱい食べました。でかくてうまかった。&lt;/p&gt;&#xA;&lt;p&gt;その後は、また嵐電に乗って嵐山に行った後、@moccaxと合流して紅葉狩り。&lt;br /&gt;&#xA;とにかく人、人、人。（たまにおっちゃん暴走族）&lt;br /&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,166 +1,171 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>開発 on blog.tyage.net</title>
-    <link>https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/</link>
-    <description>Recent content in 開発 on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Fri, 29 Sep 2017 14:32:27 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>tyage.sakura.ne.jp を終了します</title>
-      <link>https://blog.tyage.net/archive/p1076.html</link>
-      <pubDate>Fri, 29 Sep 2017 14:32:27 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p1076.html</guid>
-      <description>&lt;p&gt;2009/03/21から8年半、ダラダラと運用していた tyage.sakura.ne.jp を、2017/09/30に終了します。&lt;/p&gt;&#xA;&lt;p&gt;またサイトのソースコードを以下に公開します。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/tyage/tyage.sakura.ne.jp-public&#34;&gt;tyage.sakura.ne.jp 全体のリポジトリ&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/tyage/tyage.sakura.ne.jp-public/wiki&#34;&gt;専用リポジトリがあるコンテンツ一覧&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;以下はKMCのLT大会で発表した際のスライドです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>プリパラで効率よく承認欲求を満たす</title>
-      <link>https://blog.tyage.net/archive/p918.html</link>
-      <pubDate>Wed, 02 Dec 2015 15:46:00 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p918.html</guid>
-      <description>&lt;p&gt;この記事は &lt;a href=&#34;http://www.adventar.org/calendars/809&#34;&gt;KMC Advent Calendar 2015&lt;/a&gt; 3日目(12/3)の記事です。&lt;/p&gt;&#xA;&lt;p&gt;2日目の記事は、id: utgwさんの &lt;a href=&#34;http://utgwkk.hateblo.jp/entry/2015/12/02/032047&#34;&gt;古明地こいしのアドベントカレンダー&amp;#038;雑記と来年の抱負&lt;/a&gt; でした。&lt;/p&gt;&#xA;&lt;p&gt;今日はアドベントカレンダー用におもちゃを作ったので紹介します。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Atomエディタ用にVideo player pluginを作りました</title>
-      <link>https://blog.tyage.net/archive/p790.html</link>
-      <pubDate>Sat, 26 Jul 2014 03:48:14 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p790.html</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/177858/3700235/a8a91544-13dd-11e4-98f9-7c8448cc2041.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;コーディング中でも動画が見たい人種に向けたプラグインです。&lt;/p&gt;&#xA;&lt;p&gt;BGA（background animation）を流しながらコードを書いたりすることが多いのですが、せっかくならエディタの背景で流したいですよね。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>また働き始めたこと</title>
-      <link>https://blog.tyage.net/archive/p658.html</link>
-      <pubDate>Tue, 01 Jan 2013 19:47:01 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p658.html</guid>
-      <description>&lt;p&gt;ネットではあんまり公にはしてなかったのだけど、10月ごろからまたReventive, Incにて働き始めました。&lt;/p&gt;&#xA;&lt;p&gt;「また」ってのは、2011年の初頭にも働いていたことがあって、そのころはTitanium Mobileでチャットアプリを作っていました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>08/07</title>
-      <link>https://blog.tyage.net/archive/p555.html</link>
-      <pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p555.html</guid>
-      <description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：ささみとチーズを焼いた何か&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=552&#34;&gt;昨日&lt;/a&gt;の続きでnode.jsで遊ぶ。&lt;br /&gt;&#xA;box2dをwebsocket通じて動かしたりしてた。&lt;br /&gt;&#xA;heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）&lt;br /&gt;&#xA;そんなことしていたら無駄に日を過ごした。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>08/06</title>
-      <link>https://blog.tyage.net/archive/p552.html</link>
-      <pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p552.html</guid>
-      <description>&lt;p&gt;コンディション：良好&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：記憶になし&lt;/p&gt;&#xA;&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;&#xA;主目的はゲーム製作。&lt;br /&gt;&#xA;以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>さくらのvps契約&#43;node.js</title>
-      <link>https://blog.tyage.net/archive/p497.html</link>
-      <pubDate>Thu, 09 Aug 2012 15:42:45 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p497.html</guid>
-      <description>&lt;p&gt;ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。&lt;br /&gt;&#xA;自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>フォト蔵 to Flickr</title>
-      <link>https://blog.tyage.net/archive/p445.html</link>
-      <pubDate>Wed, 07 Mar 2012 14:15:58 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p445.html</guid>
-      <description>&lt;p&gt;リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。&lt;/p&gt;&#xA;&lt;p&gt;flickrの有料アカウントを取得したので、もうフォト蔵を使うこともなさそうです。&lt;br /&gt;&#xA;（アルバム別ではなく）写真別に公開/非公開設定ができるflickrさんに惚れちゃいました(ﾟ∀ﾟ)ﾉ&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Titanium * Android = デスマ</title>
-      <link>https://blog.tyage.net/archive/p368.html</link>
-      <pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p368.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;思い出せるものから書き上げていく&lt;/p&gt;&#xA;&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;&#xA;&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>僕とTitanium Developerの3日間戦争 – 導入まで</title>
-      <link>https://blog.tyage.net/archive/p335.html</link>
-      <pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p335.html</guid>
-      <description>&lt;p&gt;とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p&gt;&#xA;&lt;p&gt;Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br /&gt;&#xA;普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p&gt;&#xA;&lt;h2&gt;初めに&lt;/h2&gt;&#xA;&lt;p&gt;環境はWindows XP SP3です。&lt;br /&gt;&#xA;Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p&gt;&#xA;&lt;p&gt;最終的に必要だったことは以下の通りです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br /&gt;&#xA;&#x9;&#x9;※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://java.sun.com/javase/ja/6/download.html&#34;&gt;JDK6&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにJDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br /&gt;&#xA;&#x9;&#x9;※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;Android SDK&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにAndroid SDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Titanium Developer1.2.2&lt;/a&gt;をインストール&lt;/li&gt;&#xA;&lt;li&gt;一息ついて再起動する（必要ないかも？）&lt;/li&gt;&#xA;&lt;li&gt;Titanium Developerを実行し、アカウント登録をする&lt;/li&gt;&#xA;&lt;li&gt;Titanium Mobileをダウンロード&lt;/li&gt;&#xA;&lt;li&gt;Android SDK Package ManagerでAPIパッケージをインストール&lt;/l&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br /&gt;&#xA;&#x9;&#x9;例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br /&gt;&#xA;&#x9;&#x9;※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;&lt;a href=&#34;https://github.com/appcelerator/KitchenSink&#34;&gt;KitchenSink1.6.1&lt;/a&gt;をダウンロード&lt;br /&gt;&#xA;&#x9;&#x9;※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br /&gt;&#xA;&#x9;&#x9;※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br /&gt;&#xA;&#x9;&#x9;※上手くいかない場合も何度かめげずにLaunchするといいらしい。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li&gt;&#xA;&lt;li&gt;お疲れさまでした。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>Skype×Skype</title>
-      <link>https://blog.tyage.net/archive/p308.html</link>
-      <pubDate>Sun, 27 Mar 2011 11:59:46 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p308.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://skype-skype.com/&#34;&gt;スカイプ友達募集掲示板「Skype × Skype」（スカイプスカイプ）&lt;/a&gt;って言うのを丸一日かけて作りました。&lt;/p&gt;&#xA;&lt;p&gt;見ての通り、出会い系の掲示板です。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.skype-ch.com/&#34;&gt;スカイプちゃんねる&lt;/a&gt;がメンテ中となり、Skype用の掲示板がなくなったので、似たのを作ればアクセスが稼げる！　と聞いたので。&lt;/p&gt;&#xA;&lt;p&gt;僕はいつも通りコーディング全般をし、デザインは提案者にしてもらいました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Redmine設置した。</title>
-      <link>https://blog.tyage.net/archive/p296.html</link>
-      <pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p296.html</guid>
-      <description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;&#xA;&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;&#xA;&lt;div class=&#34;wp_syntax&#34; style=&#34;position:relative;&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre class=&#34;bash&#34; style=&#34;font-family:monospace;&#34;&gt;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; rubygems&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; ruby&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;git&lt;/span&gt;&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; rails&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; heroku&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&#xA;&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>サッカーアジア杯</title>
-      <link>https://blog.tyage.net/archive/p250.html</link>
-      <pubDate>Sat, 29 Jan 2011 18:46:10 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p250.html</guid>
-      <description>&lt;p&gt;オーストラリアを制して日本が優勝しましたね！&lt;/p&gt;&#xA;&lt;p&gt;あまりの興奮に寝られないでいる学生さんも多いのではないでしょうか！？&lt;/p&gt;&#xA;&lt;p&gt;そんな起きていても何もすることがない・・・そんな学生さんのために、本日公開されたツールを紹介したいと思います！&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>google mapsでマーカーに文字を表示させたい</title>
-      <link>https://blog.tyage.net/archive/p243.html</link>
-      <pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p243.html</guid>
-      <description>&lt;p&gt;たとえばマーカーのアイコン画像の下に文字を表示したい。&lt;/p&gt;&#xA;&lt;p&gt;こんな感じに&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34;&gt;&lt;img data-attachment-id=&#34;244&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=244&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-orig-size=&#34;370,330&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;maps&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; alt=&#34;&#34; title=&#34;maps&#34; width=&#34;370&#34; height=&#34;330&#34; class=&#34;alignnone size-full wp-image-244&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>赤シート2.0</title>
-      <link>https://blog.tyage.net/archive/p143.html</link>
-      <pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p143.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/&#34;&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;&#xA;&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;&#xA;どうしても電源を入れる癖がある。&lt;br /&gt;&#xA;しかし&lt;a href=&#34;http://smart.fm/home&#34;&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;&#xA;&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;&#xA;しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>開発中 – boku2D</title>
-      <link>https://blog.tyage.net/archive/p140.html</link>
-      <pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p140.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>もっとTwilに力を！！</title>
-      <link>https://blog.tyage.net/archive/p117.html</link>
-      <pubDate>Sat, 13 Nov 2010 09:08:51 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p117.html</guid>
-      <description>&lt;p&gt;ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/twil.php&#34;&gt;もっとTwilに力を！！ &amp;#8211; ケータイ only&lt;/a&gt;&lt;br /&gt;&#xA;※auのsh001でのみ確認&lt;/p&gt;&#xA;&lt;p&gt;以前に記事を書いていたのだけども、それは消えてしまったので、再postしてみます。&lt;br /&gt;&#xA;（googleのキャッシュも消えてる）&lt;br /&gt;</description>
-    </item>
-    <item>
-      <title>Bottom Coder.next</title>
-      <link>https://blog.tyage.net/archive/p110.html</link>
-      <pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p110.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/bottom/&#34;&gt;Bottom Coder Home&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;MA6に応募したよ！いえーい！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ma6works.mashupaward.jp/bottomcoder/&#34;&gt;#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&amp;#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。&lt;/p&gt;&#xA;&lt;p&gt;しくぁーし！&lt;br /&gt;&#xA;こんなことでへこたれる俺ではぬぁーい！&lt;/p&gt;&#xA;&lt;p&gt;とりあえずBottom Coderをまともに使えるものにしようとしました。&lt;br /&gt;&#xA;自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！&lt;/p&gt;&#xA;&lt;p&gt;まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>Bottom Coder&#43;&#43;</title>
-      <link>https://blog.tyage.net/archive/p95.html</link>
-      <pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p95.html</guid>
-      <description>&lt;p&gt;今日はBottomCoderのアップデートも行いました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/bottom/&#34;&gt;Bottom Coder Home&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;MA6に何か提出しようと思い、APIを探していたところ、子飼弾さんのLLEvalがBottom Coderに使えそうだったので早速オンラインテスト機能として採用してみました。&lt;br /&gt;&#xA;&lt;a href=&#34;http://ma6api.mashupaward.jp/entry/71601/&#34;&gt;小飼弾（LLEval） | 提供API一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;BottomCoderとは：&lt;/h2&gt;&#xA;&lt;p&gt;世界的なプログラミングコンテストであるTop CoderのWeb版みたいなもんです。&lt;/p&gt;&#xA;&lt;p&gt;@asi1024　から意見をもらって作ってみました。&lt;/p&gt;&#xA;&lt;p&gt;今のところチャットと、問題を解くことしかできません。&lt;/p&gt;&#xA;&lt;p&gt;今回は問題を解くに当たって、自前の環境を用意せずとも、オンラインで自分のコードをテストできるようにしました。&lt;br /&gt;&#xA;この処理に、先ほど言ったLLEvalを採用しています。&lt;br /&gt;&#xA;クロスオリジンXHRを使っているので、少しブラウザが制限されますが、プログラマならきっと最新のブラウザを使っているでしょうし、そこは問題なしとします。&lt;/p&gt;&#xA;&lt;p&gt;また、システムテストもLLEvalを使って実行してもらい、答えと一致しているか判別しています。&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>開発中 – Google Maps王に、俺はなる！</title>
-      <link>https://blog.tyage.net/archive/p78.html</link>
-      <pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p78.html</guid>
-      <description>&lt;p&gt;名前は特に意味なし。&lt;br /&gt;&#xA;TOWNをまた新しく作り直してます。&lt;/p&gt;&#xA;&lt;p&gt;Google MapsのV3が使いやすくなってたのでGoogle Mapsを使うことにしました。&lt;br /&gt;&#xA;内容は以前のものをたいして変わらないと思います。&lt;br /&gt;&#xA;作り直すごとに機能とか減ってると思うけど気のせい。&lt;/p&gt;&#xA;&lt;p&gt;はじめ：&lt;a href=&#34;http://w3.oroti.net/~tyage/town/town_maker.cgi&#34;&gt;近畿地方　―　ABCオロチ ver&lt;/a&gt;&lt;br /&gt;&#xA;二番目：&lt;a href=&#34;http://tyage.sakura.ne.jp/game/town/&#34;&gt;KINKI in PHP（仮名） RC（Ver 1.0）&lt;/a&gt;&lt;br /&gt;&#xA;三番目：&lt;a href=&#34;http://tyage.sakura.ne.jp/town/users/login&#34;&gt;退化地方&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;住民さんは「またかよっ！」って思うかもしれないですけど、これがたぶん最後なので。。。&lt;br /&gt;&#xA;まあ、またRoRで作り直そうかなとか考えちゃってますけど。&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>ひなったーにな～れ</title>
-      <link>https://blog.tyage.net/archive/p64.html</link>
-      <pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p64.html</guid>
-      <description>&lt;p&gt;暇なので&lt;a href=&#34;http://let.hatelabo.jp/tyage/let/gYC-x4Lj3tznOw&#34;&gt;ひなったーにな～れ &amp;#8211; Hatena::Let&lt;/a&gt;を作った。&lt;br /&gt;&#xA;サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。&lt;/p&gt;&#xA;&lt;p&gt;ひなったーにな～れ&lt;/p&gt;&#xA;&lt;p&gt;　　　*&amp;#8220;･*。&lt;br /&gt;&#xA;　　 ｜　　 `*｡&lt;br /&gt;&#xA;　　｡∩　　　 *&lt;br /&gt;&#xA;　 + (･ω･`)*+ﾟ&lt;br /&gt;&#xA;　 *｡ ヽ　つ*ﾟ*&lt;br /&gt;&#xA;　　ﾞ･+｡*･ﾟ⊃ +ﾟ&lt;br /&gt;&#xA;　　☆　∪~ ｡*ﾟ&lt;br /&gt;&#xA;　　 ﾞ･+｡*･ﾟ&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ブログ記事が消滅しました</title>
-      <link>https://blog.tyage.net/archive/p7.html</link>
-      <pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p7.html</guid>
-      <description>&lt;p&gt;ブログどころか、サイトで使っているDB内のテーブルが&lt;strong&gt;全部&lt;/strong&gt;空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p&gt;&#xA;&lt;p&gt;事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>開発 on blog.tyage.net</title>
+		<link>https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/</link>
+		<description>Recent content in 開発 on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 29 Sep 2017 14:32:27 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/categories/%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>tyage.sakura.ne.jp を終了します</title>
+				<link>https://blog.tyage.net/archive/p1076.html</link>
+				<pubDate>Fri, 29 Sep 2017 14:32:27 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p1076.html</guid>
+				<description>&lt;p&gt;2009/03/21から8年半、ダラダラと運用していた tyage.sakura.ne.jp を、2017/09/30に終了します。&lt;/p&gt;&#xA;&lt;p&gt;またサイトのソースコードを以下に公開します。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/tyage/tyage.sakura.ne.jp-public&#34;&gt;tyage.sakura.ne.jp 全体のリポジトリ&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/tyage/tyage.sakura.ne.jp-public/wiki&#34;&gt;専用リポジトリがあるコンテンツ一覧&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;以下はKMCのLT大会で発表した際のスライドです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>プリパラで効率よく承認欲求を満たす</title>
+				<link>https://blog.tyage.net/archive/p918.html</link>
+				<pubDate>Wed, 02 Dec 2015 15:46:00 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p918.html</guid>
+				<description>&lt;p&gt;この記事は &lt;a href=&#34;http://www.adventar.org/calendars/809&#34;&gt;KMC Advent Calendar 2015&lt;/a&gt; 3日目(12/3)の記事です。&lt;/p&gt;&#xA;&lt;p&gt;2日目の記事は、id: utgwさんの &lt;a href=&#34;http://utgwkk.hateblo.jp/entry/2015/12/02/032047&#34;&gt;古明地こいしのアドベントカレンダー&amp;#038;雑記と来年の抱負&lt;/a&gt; でした。&lt;/p&gt;&#xA;&lt;p&gt;今日はアドベントカレンダー用におもちゃを作ったので紹介します。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Atomエディタ用にVideo player pluginを作りました</title>
+				<link>https://blog.tyage.net/archive/p790.html</link>
+				<pubDate>Sat, 26 Jul 2014 03:48:14 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p790.html</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/177858/3700235/a8a91544-13dd-11e4-98f9-7c8448cc2041.gif&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;コーディング中でも動画が見たい人種に向けたプラグインです。&lt;/p&gt;&#xA;&lt;p&gt;BGA（background animation）を流しながらコードを書いたりすることが多いのですが、せっかくならエディタの背景で流したいですよね。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>また働き始めたこと</title>
+				<link>https://blog.tyage.net/archive/p658.html</link>
+				<pubDate>Tue, 01 Jan 2013 19:47:01 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p658.html</guid>
+				<description>&lt;p&gt;ネットではあんまり公にはしてなかったのだけど、10月ごろからまたReventive, Incにて働き始めました。&lt;/p&gt;&#xA;&lt;p&gt;「また」ってのは、2011年の初頭にも働いていたことがあって、そのころはTitanium Mobileでチャットアプリを作っていました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>08/07</title>
+				<link>https://blog.tyage.net/archive/p555.html</link>
+				<pubDate>Mon, 13 Aug 2012 22:56:32 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p555.html</guid>
+				<description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：ささみとチーズを焼いた何か&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=552&#34;&gt;昨日&lt;/a&gt;の続きでnode.jsで遊ぶ。&lt;br /&gt;&#xA;box2dをwebsocket通じて動かしたりしてた。&lt;br /&gt;&#xA;heroku場で動かすとカックカクだけどオフラインならヌルヌル。（当然か。）&lt;br /&gt;&#xA;そんなことしていたら無駄に日を過ごした。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>08/06</title>
+				<link>https://blog.tyage.net/archive/p552.html</link>
+				<pubDate>Mon, 13 Aug 2012 22:52:44 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p552.html</guid>
+				<description>&lt;p&gt;コンディション：良好&lt;br /&gt;&#xA;朝食：寝てた&lt;br /&gt;&#xA;昼食：記憶になし&lt;br /&gt;&#xA;夕食：記憶になし&lt;/p&gt;&#xA;&lt;p&gt;珍しく用事がない日なので、久しぶりにnode.jsで遊ぶ。&lt;br /&gt;&#xA;主目的はゲーム製作。&lt;br /&gt;&#xA;以前に作成したゲームをnode.jsに移植する目的で進める。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>さくらのvps契約&#43;node.js</title>
+				<link>https://blog.tyage.net/archive/p497.html</link>
+				<pubDate>Thu, 09 Aug 2012 15:42:45 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p497.html</guid>
+				<description>&lt;p&gt;ふと思い立って、node.jsで再開発したゲームをherokuで動かしていたのですが、当然重たくなってきたためさくらのvpsを契約しました。&lt;br /&gt;&#xA;自分自身、数年前に似たようなネタをやっており、ネタとしてはずいぶんと古い気がするのですが、最近はほとんどコーディングしていないことの反省も込めて・・・&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>フォト蔵 to Flickr</title>
+				<link>https://blog.tyage.net/archive/p445.html</link>
+				<pubDate>Wed, 07 Mar 2012 14:15:58 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p445.html</guid>
+				<description>&lt;p&gt;リハビリがてらに、フォト蔵からflickrへと写真を移行するものを作ってみました。&lt;/p&gt;&#xA;&lt;p&gt;flickrの有料アカウントを取得したので、もうフォト蔵を使うこともなさそうです。&lt;br /&gt;&#xA;（アルバム別ではなく）写真別に公開/非公開設定ができるflickrさんに惚れちゃいました(ﾟ∀ﾟ)ﾉ&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Titanium * Android = デスマ</title>
+				<link>https://blog.tyage.net/archive/p368.html</link>
+				<pubDate>Mon, 23 May 2011 18:38:21 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p368.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;思い出せるものから書き上げていく&lt;/p&gt;&#xA;&lt;p&gt;tableのheader, footerを使っているwindowは閉じるとエラー&lt;/p&gt;&#xA;&lt;p&gt;touchendイベントがちゃんと取得できない&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>僕とTitanium Developerの3日間戦争 – 導入まで</title>
+				<link>https://blog.tyage.net/archive/p335.html</link>
+				<pubDate>Wed, 27 Apr 2011 11:24:51 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p335.html</guid>
+				<description>&lt;p&gt;とある事情でTitaniumを使ってAndroid/iPhoneアプリを作ることになったのですが、早速Titaniumに手こずってしまったので、記録をまとめてみました。&lt;/p&gt;&#xA;&lt;p&gt;Titaniumの導入まで（この場合、KitchenSinkをAndroidエミュレータで動かすまで）に三日、作業時間だと約20時間もかかったのは、自分が情弱だったのが原因です。&lt;br /&gt;&#xA;普通はこんなに時間がかかるはずがないです。（たぶん・・・）&lt;/p&gt;&#xA;&lt;h2&gt;初めに&lt;/h2&gt;&#xA;&lt;p&gt;環境はWindows XP SP3です。&lt;br /&gt;&#xA;Macユーザーの方はもっと参考になるサイトがあるはずです。お疲れさまでした。&lt;/p&gt;&#xA;&lt;p&gt;最終的に必要だったことは以下の通りです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;ユーザ名（もしくはホームディレクトリ名）に日本語が含まれないことを確認&lt;br /&gt;&#xA;&#x9;&#x9;※もしユーザ名に日本語が含まれていれば、アルファベットのみのユーザ名で新しく作ることをお勧めします。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://java.sun.com/javase/ja/6/download.html&#34;&gt;JDK6&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにJDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例： 「C:Program FilesJavajdk1.6.0_24bin;」をPATHに追加&lt;br /&gt;&#xA;&#x9;&#x9;※JDKのバージョン等でパスは異なりますが、最後に「bin」を付けるのを忘れないでください&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;Android SDK&lt;/a&gt;のインストール&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;環境変数PATHにAndroid SDKを設定する。&lt;br /&gt;&#xA;&#x9;&#x9;例：「C:Program FilesAndroidandroid-sdkplatform-tools;C:Program FilesAndroidandroid-sdktools;」を追加&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Titanium Developer1.2.2&lt;/a&gt;をインストール&lt;/li&gt;&#xA;&lt;li&gt;一息ついて再起動する（必要ないかも？）&lt;/li&gt;&#xA;&lt;li&gt;Titanium Developerを実行し、アカウント登録をする&lt;/li&gt;&#xA;&lt;li&gt;Titanium Mobileをダウンロード&lt;/li&gt;&#xA;&lt;li&gt;Android SDK Package ManagerでAPIパッケージをインストール&lt;/l&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;android-sdktoolsにあるadb.exeをandroid-sdkplatform-toolsにコピーする&lt;br /&gt;&#xA;&#x9;&#x9;例：「copy &amp;#8220;C:Program FilesAndroidandroid-sdkplatform-toolsadb.exe&amp;#8221; &amp;#8220;C:Program FilesAndroidandroid-sdktools&amp;#8221;」&lt;br /&gt;&#xA;&#x9;&#x9;※TitaniumがAndroid SDKのバージョンアップに追いついていないため必要&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperにAndroid SDKのパスを設定する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;&lt;a href=&#34;https://github.com/appcelerator/KitchenSink&#34;&gt;KitchenSink1.6.1&lt;/a&gt;をダウンロード&lt;br /&gt;&#xA;&#x9;&#x9;※KitchenSinkディレクトリまでのパスが長くならない場所に置いてください。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;Titanium DeveloperからKitchenSinkをインポートしてプロジェクトを作成する&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#x9;&#x9;KitchenSinkプロジェクトを選択肢、Test &amp;#038; PackageタブからLaunch&lt;br /&gt;&#xA;&#x9;&#x9;※SDKはAPIs 2.2かAPIs 2.3がいいらしい。&lt;br /&gt;&#xA;&#x9;&#x9;※上手くいかない場合も何度かめげずにLaunchするといいらしい。&#xA;&#x9;&lt;/li&gt;&#xA;&lt;li&gt;長いイライラタイムを過ぎるとKitchenSinkが動く！！&lt;/li&gt;&#xA;&lt;li&gt;お疲れさまでした。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>Skype×Skype</title>
+				<link>https://blog.tyage.net/archive/p308.html</link>
+				<pubDate>Sun, 27 Mar 2011 11:59:46 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p308.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://skype-skype.com/&#34;&gt;スカイプ友達募集掲示板「Skype × Skype」（スカイプスカイプ）&lt;/a&gt;って言うのを丸一日かけて作りました。&lt;/p&gt;&#xA;&lt;p&gt;見ての通り、出会い系の掲示板です。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.skype-ch.com/&#34;&gt;スカイプちゃんねる&lt;/a&gt;がメンテ中となり、Skype用の掲示板がなくなったので、似たのを作ればアクセスが稼げる！　と聞いたので。&lt;/p&gt;&#xA;&lt;p&gt;僕はいつも通りコーディング全般をし、デザインは提案者にしてもらいました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Redmine設置した。</title>
+				<link>https://blog.tyage.net/archive/p296.html</link>
+				<pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p296.html</guid>
+				<description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;&#xA;&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;&#xA;&lt;div class=&#34;wp_syntax&#34; style=&#34;position:relative;&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre class=&#34;bash&#34; style=&#34;font-family:monospace;&#34;&gt;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; rubygems&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; ruby&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;git&lt;/span&gt;&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; rails&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; heroku&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&#xA;&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>サッカーアジア杯</title>
+				<link>https://blog.tyage.net/archive/p250.html</link>
+				<pubDate>Sat, 29 Jan 2011 18:46:10 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p250.html</guid>
+				<description>&lt;p&gt;オーストラリアを制して日本が優勝しましたね！&lt;/p&gt;&#xA;&lt;p&gt;あまりの興奮に寝られないでいる学生さんも多いのではないでしょうか！？&lt;/p&gt;&#xA;&lt;p&gt;そんな起きていても何もすることがない・・・そんな学生さんのために、本日公開されたツールを紹介したいと思います！&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>google mapsでマーカーに文字を表示させたい</title>
+				<link>https://blog.tyage.net/archive/p243.html</link>
+				<pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p243.html</guid>
+				<description>&lt;p&gt;たとえばマーカーのアイコン画像の下に文字を表示したい。&lt;/p&gt;&#xA;&lt;p&gt;こんな感じに&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34;&gt;&lt;img data-attachment-id=&#34;244&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=244&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-orig-size=&#34;370,330&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;maps&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; alt=&#34;&#34; title=&#34;maps&#34; width=&#34;370&#34; height=&#34;330&#34; class=&#34;alignnone size-full wp-image-244&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>赤シート2.0</title>
+				<link>https://blog.tyage.net/archive/p143.html</link>
+				<pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p143.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/&#34;&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;&#xA;&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;&#xA;どうしても電源を入れる癖がある。&lt;br /&gt;&#xA;しかし&lt;a href=&#34;http://smart.fm/home&#34;&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;&#xA;&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;&#xA;しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>開発中 – boku2D</title>
+				<link>https://blog.tyage.net/archive/p140.html</link>
+				<pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p140.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>もっとTwilに力を！！</title>
+				<link>https://blog.tyage.net/archive/p117.html</link>
+				<pubDate>Sat, 13 Nov 2010 09:08:51 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p117.html</guid>
+				<description>&lt;p&gt;ちょっと前に10分ほどで作ったプログラムをTwitterで再び流してみたところ、少々反響がありました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/twil.php&#34;&gt;もっとTwilに力を！！ &amp;#8211; ケータイ only&lt;/a&gt;&lt;br /&gt;&#xA;※auのsh001でのみ確認&lt;/p&gt;&#xA;&lt;p&gt;以前に記事を書いていたのだけども、それは消えてしまったので、再postしてみます。&lt;br /&gt;&#xA;（googleのキャッシュも消えてる）&lt;br /&gt;</description>
+			</item>
+			<item>
+				<title>Bottom Coder.next</title>
+				<link>https://blog.tyage.net/archive/p110.html</link>
+				<pubDate>Tue, 09 Nov 2010 14:44:16 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p110.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/bottom/&#34;&gt;Bottom Coder Home&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;MA6に応募したよ！いえーい！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://ma6works.mashupaward.jp/bottomcoder/&#34;&gt;#340 Bottom Coder | 応募作品一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;小飼弾さんの審査員賞とかもらえないかなーなんてちょっぴり期待しつつ出して見たわけですが、あまりにもライバルが強すぎて少し(´ﾟ&amp;#8217;ωﾟ`)ｼｮﾎﾞｰﾝ。&lt;/p&gt;&#xA;&lt;p&gt;しくぁーし！&lt;br /&gt;&#xA;こんなことでへこたれる俺ではぬぁーい！&lt;/p&gt;&#xA;&lt;p&gt;とりあえずBottom Coderをまともに使えるものにしようとしました。&lt;br /&gt;&#xA;自分の回答を一覧や問題一覧を見たり、投稿後にテストができるようにという基本的な機能を追加！&lt;/p&gt;&#xA;&lt;p&gt;まだどうするか決めていませんが、投稿後のテストは、コンテスト中のものに関してはできないほうがいいかも。。。&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>Bottom Coder&#43;&#43;</title>
+				<link>https://blog.tyage.net/archive/p95.html</link>
+				<pubDate>Sun, 07 Nov 2010 14:39:07 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p95.html</guid>
+				<description>&lt;p&gt;今日はBottomCoderのアップデートも行いました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/bottom/&#34;&gt;Bottom Coder Home&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;MA6に何か提出しようと思い、APIを探していたところ、子飼弾さんのLLEvalがBottom Coderに使えそうだったので早速オンラインテスト機能として採用してみました。&lt;br /&gt;&#xA;&lt;a href=&#34;http://ma6api.mashupaward.jp/entry/71601/&#34;&gt;小飼弾（LLEval） | 提供API一覧 | Mashup Awards 6 (#MA6) on CREYLE&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;BottomCoderとは：&lt;/h2&gt;&#xA;&lt;p&gt;世界的なプログラミングコンテストであるTop CoderのWeb版みたいなもんです。&lt;/p&gt;&#xA;&lt;p&gt;@asi1024　から意見をもらって作ってみました。&lt;/p&gt;&#xA;&lt;p&gt;今のところチャットと、問題を解くことしかできません。&lt;/p&gt;&#xA;&lt;p&gt;今回は問題を解くに当たって、自前の環境を用意せずとも、オンラインで自分のコードをテストできるようにしました。&lt;br /&gt;&#xA;この処理に、先ほど言ったLLEvalを採用しています。&lt;br /&gt;&#xA;クロスオリジンXHRを使っているので、少しブラウザが制限されますが、プログラマならきっと最新のブラウザを使っているでしょうし、そこは問題なしとします。&lt;/p&gt;&#xA;&lt;p&gt;また、システムテストもLLEvalを使って実行してもらい、答えと一致しているか判別しています。&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>開発中 – Google Maps王に、俺はなる！</title>
+				<link>https://blog.tyage.net/archive/p78.html</link>
+				<pubDate>Sun, 07 Nov 2010 09:07:50 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p78.html</guid>
+				<description>&lt;p&gt;名前は特に意味なし。&lt;br /&gt;&#xA;TOWNをまた新しく作り直してます。&lt;/p&gt;&#xA;&lt;p&gt;Google MapsのV3が使いやすくなってたのでGoogle Mapsを使うことにしました。&lt;br /&gt;&#xA;内容は以前のものをたいして変わらないと思います。&lt;br /&gt;&#xA;作り直すごとに機能とか減ってると思うけど気のせい。&lt;/p&gt;&#xA;&lt;p&gt;はじめ：&lt;a href=&#34;http://w3.oroti.net/~tyage/town/town_maker.cgi&#34;&gt;近畿地方　―　ABCオロチ ver&lt;/a&gt;&lt;br /&gt;&#xA;二番目：&lt;a href=&#34;http://tyage.sakura.ne.jp/game/town/&#34;&gt;KINKI in PHP（仮名） RC（Ver 1.0）&lt;/a&gt;&lt;br /&gt;&#xA;三番目：&lt;a href=&#34;http://tyage.sakura.ne.jp/town/users/login&#34;&gt;退化地方&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;住民さんは「またかよっ！」って思うかもしれないですけど、これがたぶん最後なので。。。&lt;br /&gt;&#xA;まあ、またRoRで作り直そうかなとか考えちゃってますけど。&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>ひなったーにな～れ</title>
+				<link>https://blog.tyage.net/archive/p64.html</link>
+				<pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p64.html</guid>
+				<description>&lt;p&gt;暇なので&lt;a href=&#34;http://let.hatelabo.jp/tyage/let/gYC-x4Lj3tznOw&#34;&gt;ひなったーにな～れ &amp;#8211; Hatena::Let&lt;/a&gt;を作った。&lt;br /&gt;&#xA;サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。&lt;/p&gt;&#xA;&lt;p&gt;ひなったーにな～れ&lt;/p&gt;&#xA;&lt;p&gt;　　　*&amp;#8220;･*。&lt;br /&gt;&#xA;　　 ｜　　 `*｡&lt;br /&gt;&#xA;　　｡∩　　　 *&lt;br /&gt;&#xA;　 + (･ω･`)*+ﾟ&lt;br /&gt;&#xA;　 *｡ ヽ　つ*ﾟ*&lt;br /&gt;&#xA;　　ﾞ･+｡*･ﾟ⊃ +ﾟ&lt;br /&gt;&#xA;　　☆　∪~ ｡*ﾟ&lt;br /&gt;&#xA;　　 ﾞ･+｡*･ﾟ&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ブログ記事が消滅しました</title>
+				<link>https://blog.tyage.net/archive/p7.html</link>
+				<pubDate>Thu, 07 Oct 2010 10:56:52 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p7.html</guid>
+				<description>&lt;p&gt;ブログどころか、サイトで使っているDB内のテーブルが&lt;strong&gt;全部&lt;/strong&gt;空っぽになってしまいました。。。(´；ω；｀)ﾌﾞﾜｯ&lt;/p&gt;&#xA;&lt;p&gt;事の発端は、このサイトのサーバーにRailsをインストールして、何かつくろうとしていた時でした。&lt;br /&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>情報オリンピック on blog.tyage.net</title>
-    <link>https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/</link>
-    <description>Recent content in 情報オリンピック on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Tue, 15 Feb 2011 11:25:47 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>最近あったことども</title>
-      <link>https://blog.tyage.net/archive/p267.html</link>
-      <pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p267.html</guid>
-      <description>&lt;p&gt;最近は比較的忙しかった。&lt;/p&gt;&#xA;&lt;p&gt;つらつらとまとめてみる。&lt;/p&gt;&#xA;&lt;p&gt;受験まで後一年らしい。&lt;br /&gt;&#xA;しらね&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>JOI予選通過しました</title>
-      <link>https://blog.tyage.net/archive/p234.html</link>
-      <pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p234.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/joi/2010/2011-yo-prob_and_sol/&#34;&gt;情報オリンピック予選&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;何故か通過しました。&lt;/p&gt;&#xA;&lt;p&gt;点数は７２点でギリギリ。（ボーダーも７２点）&lt;br /&gt;&#xA;20+20+20+8+4 = 72　てな感じでした。&lt;/p&gt;&#xA;&lt;p&gt;うどんすすりながら、node.jsで受けた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=188&#34;&gt;こんな回答&lt;/a&gt;だったのに通過していいのか。&lt;/p&gt;&#xA;&lt;p&gt;KYの二年は、自分も含め少なくとも３人通過した見たい。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>node.jsでJOI受けた。</title>
-      <link>https://blog.tyage.net/archive/p188.html</link>
-      <pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p188.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;PHPを使うか、ブラウザのコンソール画面でJavaScript実行させるか、node.jsを使うかで悩んだ末、勉強もかねてnode.jsを使いました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>JOIの解答がGoogle Chromeで提出できないという話</title>
-      <link>https://blog.tyage.net/archive/p164.html</link>
-      <pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p164.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;現象&lt;/h2&gt;&#xA;&lt;p&gt;なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>情報オリンピック on blog.tyage.net</title>
+		<link>https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/</link>
+		<description>Recent content in 情報オリンピック on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 15 Feb 2011 11:25:47 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/categories/%E6%83%85%E5%A0%B1%E3%82%AA%E3%83%AA%E3%83%B3%E3%83%94%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>最近あったことども</title>
+				<link>https://blog.tyage.net/archive/p267.html</link>
+				<pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p267.html</guid>
+				<description>&lt;p&gt;最近は比較的忙しかった。&lt;/p&gt;&#xA;&lt;p&gt;つらつらとまとめてみる。&lt;/p&gt;&#xA;&lt;p&gt;受験まで後一年らしい。&lt;br /&gt;&#xA;しらね&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>JOI予選通過しました</title>
+				<link>https://blog.tyage.net/archive/p234.html</link>
+				<pubDate>Thu, 23 Dec 2010 05:06:25 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p234.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/joi/2010/2011-yo-prob_and_sol/&#34;&gt;情報オリンピック予選&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;何故か通過しました。&lt;/p&gt;&#xA;&lt;p&gt;点数は７２点でギリギリ。（ボーダーも７２点）&lt;br /&gt;&#xA;20+20+20+8+4 = 72　てな感じでした。&lt;/p&gt;&#xA;&lt;p&gt;うどんすすりながら、node.jsで受けた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=188&#34;&gt;こんな回答&lt;/a&gt;だったのに通過していいのか。&lt;/p&gt;&#xA;&lt;p&gt;KYの二年は、自分も含め少なくとも３人通過した見たい。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>node.jsでJOI受けた。</title>
+				<link>https://blog.tyage.net/archive/p188.html</link>
+				<pubDate>Sun, 19 Dec 2010 08:22:24 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p188.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;PHPを使うか、ブラウザのコンソール画面でJavaScript実行させるか、node.jsを使うかで悩んだ末、勉強もかねてnode.jsを使いました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>JOIの解答がGoogle Chromeで提出できないという話</title>
+				<link>https://blog.tyage.net/archive/p164.html</link>
+				<pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p164.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;現象&lt;/h2&gt;&#xA;&lt;p&gt;なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

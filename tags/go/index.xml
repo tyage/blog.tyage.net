@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Go on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/go/</link>
-    <description>Recent content in Go on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 06 Apr 2011 05:45:55 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/go/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Go言語勉強会＠はてな</title>
-      <link>https://blog.tyage.net/archive/p319.html</link>
-      <pubDate>Wed, 06 Apr 2011 05:45:55 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p319.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://onsg.techtalk.jp/13&#34;&gt;第13回 テーマ「Go言語」 &amp;#8211; Online.sg&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Go本を書いた @umisama 氏を講師に、半年ぶりのOnline.sgでした。&lt;/p&gt;&#xA;&lt;p&gt;会場は ㈱はてな でした。&lt;br /&gt;&#xA;会場提供ありがとうございますた。&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Go on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/go/</link>
+		<description>Recent content in Go on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 06 Apr 2011 05:45:55 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/go/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Go言語勉強会＠はてな</title>
+				<link>https://blog.tyage.net/archive/p319.html</link>
+				<pubDate>Wed, 06 Apr 2011 05:45:55 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p319.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://onsg.techtalk.jp/13&#34;&gt;第13回 テーマ「Go言語」 &amp;#8211; Online.sg&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Go本を書いた @umisama 氏を講師に、半年ぶりのOnline.sgでした。&lt;/p&gt;&#xA;&lt;p&gt;会場は ㈱はてな でした。&lt;br /&gt;&#xA;会場提供ありがとうございますた。&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+	</channel>
 </rss>

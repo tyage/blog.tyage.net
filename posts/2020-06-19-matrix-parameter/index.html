@@ -52,7 +52,7 @@ With matrix variables, we can set the values …">
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js" integrity="sha256-cCk0mKqWstu3Z&#43;wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script>
+    <script src="/js/bundle.min.7136b4abac7b277aba8bc933917f4602d39a5c44f5590be687244bc86ef4f162.js" integrity="sha256-cTa0q6x7J3q6i8kzkX9GAtOaXET1WQvmhyRLyG708WI="></script>
 
     
 
@@ -191,7 +191,7 @@ With matrix variables, we can set the values …">
         <div class="e-content">
             <p>Spring framework, which is a popular web application framework for Java, supports <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-matrix-variables">&ldquo;matrix variables&rdquo;</a>.</p>
 <p>With matrix variables, we can set the values of parameters in the path segment.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// GET /owners/42;q=11/pets/21;q=22</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// GET /owners/42;q=11/pets/21;q=22</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@GetMapping</span>(<span style="color:#e6db74">&#34;/owners/{ownerId}/pets/{petId}&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">findPet</span>(
@@ -215,7 +215,7 @@ Apache Shiro is a security framework that provides authentications, authorizatio
 With Shiro, we can easily implement the authentication filter so that we can restrict the access to some endpoints from normal users.</p>
 <p>Let&rsquo;s see the sample application officially provided: <a href="https://github.com/apache/shiro/tree/master/samples/spring-hibernate">https://github.com/apache/shiro/tree/master/samples/spring-hibernate</a> .
 In this app, <a href="https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml">applicationContext.xml</a> defines that only authenticated users can visit the URI like <code>/s/**</code>. Users can&rsquo;t access <code>http://localhost:9080/s/home</code> without login.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;shiroFilter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.apache.shiro.spring.web.ShiroFilterFactoryBean&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;shiroFilter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.apache.shiro.spring.web.ShiroFilterFactoryBean&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>    ...
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;filterChainDefinitions&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;value&gt;</span>
@@ -227,14 +227,14 @@ In this app, <a href="https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
 </span></span></code></pre></div><p><em><a href="https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2066dd6287643b32b492/samples/spring-hibernate/src/main/webapp/WEB-INF/applicationContext.xml#L123">source</a></em></p>
 <p>When I looked into the Shiro, I found the following method which truncates the characters appears after semicolon.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">decodeAndCleanUriString</span>(HttpServletRequest request, String uri) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">decodeAndCleanUriString</span>(HttpServletRequest request, String uri) {
 </span></span><span style="display:flex;"><span>    uri <span style="color:#f92672">=</span> decodeRequestString(request, uri);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> semicolonIndex <span style="color:#f92672">=</span> uri.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#39;;&#39;</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (semicolonIndex <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1 <span style="color:#f92672">?</span> uri.<span style="color:#a6e22e">substring</span>(0, semicolonIndex) : uri);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p><em><a href="https://github.com/apache/shiro/blob/fa1686d0a9fc5914e8dfc6eb92d82c6e4f12be41/web/src/main/java/org/apache/shiro/web/util/WebUtils.java#L234">source</a></em></p>
 <p>Also, URI string which contains <code>../</code> is normalized <strong>after</strong> it is cleaned. I&rsquo;d also note that <code>HttpServletRequest.getRequestURI()</code> returns the requested URI as it is.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">getRequestUri</span>(HttpServletRequest request) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">getRequestUri</span>(HttpServletRequest request) {
 </span></span><span style="display:flex;"><span>    String uri <span style="color:#f92672">=</span> (String) request.<span style="color:#a6e22e">getAttribute</span>(INCLUDE_REQUEST_URI_ATTRIBUTE);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (uri <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>) {
 </span></span><span style="display:flex;"><span>        uri <span style="color:#f92672">=</span> request.<span style="color:#a6e22e">getRequestURI</span>();
@@ -246,26 +246,26 @@ In this app, <a href="https://github.com/apache/shiro/blob/2e297858be85ffe95b9d2
 <p>As a result, I could bypass the authentication filter in the sample application with this command: <code>curl 'http://localhost:9080/unauthorized;/../s/home' --path-as-is</code>. It shows the home page without login because Shiro does not restrict the access to <code>/unauthorized</code> and Spring returns the result of <code>/s/home</code>!</p>
 <p>To make it more clear, I will show how Shiro and Spring Framework treat this request URI.</p>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>URI</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Original request</td>
-          <td><code>http://localhost:8090/unauthorized;/../s/home</code></td>
-      </tr>
-      <tr>
-          <td>Shiro</td>
-          <td><code>http://localhost:8090/unauthorized</code></td>
-      </tr>
-      <tr>
-          <td>Spring Framework</td>
-          <td><code>http://localhost:8090/s/home</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>URI</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Original request</td>
+					<td><code>http://localhost:8090/unauthorized;/../s/home</code></td>
+			</tr>
+			<tr>
+					<td>Shiro</td>
+					<td><code>http://localhost:8090/unauthorized</code></td>
+			</tr>
+			<tr>
+					<td>Spring Framework</td>
+					<td><code>http://localhost:8090/s/home</code></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="timeline">Timeline</h3>
 <ul>
@@ -280,7 +280,7 @@ If your request filter uses <code>request.getReuqestURI()</code> or <code>reques
 <p>I prepared a <a href="https://github.com/tyage/spring-undertow-sample-app">simple application here</a>.
 In this app, DemoInterceptor allows the requests only if their paths start with <code>/api/public</code>.
 Therefore, nobody can&rsquo;t access <code>http://localhost:9000/secret</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DemoInterceptor</span> <span style="color:#66d9ef">extends</span> HandlerInterceptorAdapter {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DemoInterceptor</span> <span style="color:#66d9ef">extends</span> HandlerInterceptorAdapter {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">preHandle</span>(<span style="color:#66d9ef">final</span> HttpServletRequest request, <span style="color:#66d9ef">final</span> HttpServletResponse response, <span style="color:#66d9ef">final</span> Object handler) {
 </span></span><span style="display:flex;"><span>        String uri <span style="color:#f92672">=</span> request.<span style="color:#a6e22e">getRequestURI</span>();
@@ -297,7 +297,7 @@ Let&rsquo;s look into the details.</p>
 <p>First, let&rsquo;s see the result of <code>request.getRequestURI()</code> in DemoInterceptor.
 It returns <code>/api/public/aa</code> (note that it isn&rsquo;t <code>/api/public/aa/secret</code>)!.
 This is because Undertow thinks that the path segment has ended when it finds a semicolon.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handlePath</span>(ByteBuffer buffer, ParseState state, HttpServerExchange exchange) <span style="color:#66d9ef">throws</span> BadRequestException {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handlePath</span>(ByteBuffer buffer, ParseState state, HttpServerExchange exchange) <span style="color:#66d9ef">throws</span> BadRequestException {
 </span></span><span style="display:flex;"><span>    ...
 </span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (next <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;;&#39;</span> <span style="color:#f92672">&amp;&amp;</span> (parseState <span style="color:#f92672">==</span> START <span style="color:#f92672">||</span> parseState <span style="color:#f92672">==</span> HOST_DONE <span style="color:#f92672">||</span> parseState <span style="color:#f92672">==</span> IN_PATH)) {
 </span></span><span style="display:flex;"><span>        beginPathParameters(state, exchange, stringBuilder, parseState, canonicalPathStart, urlDecodeRequired);
@@ -307,7 +307,7 @@ This is because Undertow thinks that the path segment has ended when it finds a 
 <p>But isn&rsquo;t it weird that Spring Framework calls the method mapped to <code>/secret</code> even though the path in the Undertow is <code>/api/public/aa</code>?
 This is because Spring Framework normalizes the path if servlet path and requested path are different.
 The comment in <code>getPathWithinServletMapping</code> method says if servlet mapping is <code>/test/*</code> and request URI is <code>/test/a</code>, path in this app will be <code>/a</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">/**
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">/**
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Return the path within the servlet mapping for the given request,
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * i.e. the part of the request&#39;s URL beyond the part that called the servlet,
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">   ...
@@ -321,26 +321,26 @@ Following image shows the value of <code>pathWithinApp</code> is <code>&quot;/ap
 <p><img src="spring-path-normalize.png" alt=""></p>
 <p>Here is the table again.</p>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>URI</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Original request</td>
-          <td><code>http://localhost:9000/api/public/aa;/secret</code></td>
-      </tr>
-      <tr>
-          <td>Undertow</td>
-          <td><code>http://localhost:9000/api/public/aa</code></td>
-      </tr>
-      <tr>
-          <td>Spring Framework</td>
-          <td><code>http://localhost:9000/secret</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>URI</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Original request</td>
+					<td><code>http://localhost:9000/api/public/aa;/secret</code></td>
+			</tr>
+			<tr>
+					<td>Undertow</td>
+					<td><code>http://localhost:9000/api/public/aa</code></td>
+			</tr>
+			<tr>
+					<td>Spring Framework</td>
+					<td><code>http://localhost:9000/secret</code></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="timeline-1">Timeline</h3>
 <ul>
@@ -367,7 +367,7 @@ It may be fine if your application installs Spring Security.</p>
         <p>
             <a href="/posts/2020-05-05-new-blog/">
                 &#8592;
-                Previous:
+                :
                 ブログをHugo + GitHub Pagesに変えた
             </a>
         </p>
@@ -381,7 +381,7 @@ It may be fine if your application installs Spring Security.</p>
     <div class="next-post">
         <p>
             <a href="/posts/2021-04-02-improper-access-control-github-workflow/">
-                Next:
+                :
                 Gain write permission of repositories with a bug in GitHub Actions
                 &#8594;
             </a>

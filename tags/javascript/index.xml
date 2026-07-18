@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>JavaScript on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/javascript/</link>
-    <description>Recent content in JavaScript on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 26 Sep 2011 15:23:35 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ゴルフゲームをコードゴルフ</title>
-      <link>https://blog.tyage.net/archive/p417.html</link>
-      <pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p417.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;一部でコードゴルフが流行っていたので、便乗してみた。&lt;/p&gt;&#xA;&lt;p&gt;ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>開発中 – boku2D</title>
-      <link>https://blog.tyage.net/archive/p140.html</link>
-      <pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p140.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>今日の教訓</title>
-      <link>https://blog.tyage.net/archive/p138.html</link>
-      <pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p138.html</guid>
-      <description>&lt;p&gt;オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ひなったーにな～れ</title>
-      <link>https://blog.tyage.net/archive/p64.html</link>
-      <pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p64.html</guid>
-      <description>&lt;p&gt;暇なので&lt;a href=&#34;http://let.hatelabo.jp/tyage/let/gYC-x4Lj3tznOw&#34;&gt;ひなったーにな～れ &amp;#8211; Hatena::Let&lt;/a&gt;を作った。&lt;br /&gt;&#xA;サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。&lt;/p&gt;&#xA;&lt;p&gt;ひなったーにな～れ&lt;/p&gt;&#xA;&lt;p&gt;　　　*&amp;#8220;･*。&lt;br /&gt;&#xA;　　 ｜　　 `*｡&lt;br /&gt;&#xA;　　｡∩　　　 *&lt;br /&gt;&#xA;　 + (･ω･`)*+ﾟ&lt;br /&gt;&#xA;　 *｡ ヽ　つ*ﾟ*&lt;br /&gt;&#xA;　　ﾞ･+｡*･ﾟ⊃ +ﾟ&lt;br /&gt;&#xA;　　☆　∪~ ｡*ﾟ&lt;br /&gt;&#xA;　　 ﾞ･+｡*･ﾟ&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>JavaScript on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/javascript/</link>
+		<description>Recent content in JavaScript on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 26 Sep 2011 15:23:35 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>ゴルフゲームをコードゴルフ</title>
+				<link>https://blog.tyage.net/archive/p417.html</link>
+				<pubDate>Mon, 26 Sep 2011 15:23:35 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p417.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;一部でコードゴルフが流行っていたので、便乗してみた。&lt;/p&gt;&#xA;&lt;p&gt;ずいぶん昔に、某巨大掲示板にて、ゴルフゲームをコードゴルフする遊びが流行っていたので、そこからアイデアを得ました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>開発中 – boku2D</title>
+				<link>https://blog.tyage.net/archive/p140.html</link>
+				<pubDate>Wed, 01 Dec 2010 11:34:39 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p140.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#39;http://tyage.sakura.ne.jp/dev/boku2D/&#39;&gt;boku2D&lt;/a&gt;を開発中。&lt;br /&gt;&#xA;サイト上でゲーム作ったり、サイトのコンテンツ自体をゲームっぽくしたりするJavaScriptライブラリ。&lt;br /&gt;&#xA;box2Dには足元にも及ばない、俺得ライブラリ。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>今日の教訓</title>
+				<link>https://blog.tyage.net/archive/p138.html</link>
+				<pubDate>Sat, 27 Nov 2010 15:26:18 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p138.html</guid>
+				<description>&lt;p&gt;オブジェクトの__proto__プロパティをいじってると、知らず知らずのうちにObject.prototypeを拡張してたりするので注意&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ひなったーにな～れ</title>
+				<link>https://blog.tyage.net/archive/p64.html</link>
+				<pubDate>Thu, 04 Nov 2010 10:35:58 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p64.html</guid>
+				<description>&lt;p&gt;暇なので&lt;a href=&#34;http://let.hatelabo.jp/tyage/let/gYC-x4Lj3tznOw&#34;&gt;ひなったーにな～れ &amp;#8211; Hatena::Let&lt;/a&gt;を作った。&lt;br /&gt;&#xA;サイト上の画像から顔を探して、見つけたらひなったーの顔写真に入れ替えちゃう。&lt;/p&gt;&#xA;&lt;p&gt;ひなったーにな～れ&lt;/p&gt;&#xA;&lt;p&gt;　　　*&amp;#8220;･*。&lt;br /&gt;&#xA;　　 ｜　　 `*｡&lt;br /&gt;&#xA;　　｡∩　　　 *&lt;br /&gt;&#xA;　 + (･ω･`)*+ﾟ&lt;br /&gt;&#xA;　 *｡ ヽ　つ*ﾟ*&lt;br /&gt;&#xA;　　ﾞ･+｡*･ﾟ⊃ +ﾟ&lt;br /&gt;&#xA;　　☆　∪~ ｡*ﾟ&lt;br /&gt;&#xA;　　 ﾞ･+｡*･ﾟ&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

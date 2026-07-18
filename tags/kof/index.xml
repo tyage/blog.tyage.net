@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>KOF on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/kof/</link>
-    <description>Recent content in KOF on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 08 Nov 2010 10:21:12 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/kof/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>KOF2010 – 二日目</title>
-      <link>https://blog.tyage.net/archive/p76.html</link>
-      <pubDate>Mon, 08 Nov 2010 10:21:12 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p76.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=71&#34;&gt;KOF2010 – 一日目 | チャゲってる日々 &amp;#8211; @tyage&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この日は同級生の@asi1024を誘って行った。&lt;br /&gt;&#xA;彼は情オリとかSuperConとか出てるし、知り合いもいて楽しそうだった。よかったよかった。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>KOF2010 – 一日目</title>
-      <link>https://blog.tyage.net/archive/p71.html</link>
-      <pubDate>Fri, 05 Nov 2010 15:14:33 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p71.html</guid>
-      <description>&lt;p&gt;金曜だけど保護者会ってことでお昼に学校が終わったので行って来ました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://k-of.jp/2010/index.html&#34;&gt;KOF2010：関西オープンソース2010&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;思ったほど迷子にならず順調に到着。&lt;br /&gt;&#xA;往復1000円、所要時間は2時間ほど。&lt;br /&gt;&#xA;場所は大阪南港ATC（アジアトレードセンター？）です。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>KOF on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/kof/</link>
+		<description>Recent content in KOF on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 08 Nov 2010 10:21:12 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/kof/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>KOF2010 – 二日目</title>
+				<link>https://blog.tyage.net/archive/p76.html</link>
+				<pubDate>Mon, 08 Nov 2010 10:21:12 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p76.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=71&#34;&gt;KOF2010 – 一日目 | チャゲってる日々 &amp;#8211; @tyage&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この日は同級生の@asi1024を誘って行った。&lt;br /&gt;&#xA;彼は情オリとかSuperConとか出てるし、知り合いもいて楽しそうだった。よかったよかった。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>KOF2010 – 一日目</title>
+				<link>https://blog.tyage.net/archive/p71.html</link>
+				<pubDate>Fri, 05 Nov 2010 15:14:33 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p71.html</guid>
+				<description>&lt;p&gt;金曜だけど保護者会ってことでお昼に学校が終わったので行って来ました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://k-of.jp/2010/index.html&#34;&gt;KOF2010：関西オープンソース2010&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;思ったほど迷子にならず順調に到着。&lt;br /&gt;&#xA;往復1000円、所要時間は2時間ほど。&lt;br /&gt;&#xA;場所は大阪南港ATC（アジアトレードセンター？）です。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

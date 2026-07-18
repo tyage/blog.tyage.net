@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>JQuery on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/jquery/</link>
-    <description>Recent content in JQuery on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Tue, 01 Feb 2011 11:11:22 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>jQuery1.5ｷﾀｰ</title>
-      <link>https://blog.tyage.net/archive/p252.html</link>
-      <pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p252.html</guid>
-      <description>&lt;h2&gt;jQuery1.5&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2011/01/14/jquery-1-5-beta-1-released/&#34;&gt;jQuery: » jQuery 1.5 Beta 1 Released&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。&lt;/p&gt;&#xA;&lt;p&gt;バグフィックスと速度向上はもちろん行われています。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>jQuery1.4.3ｳｯﾋｮｰ</title>
-      <link>https://blog.tyage.net/archive/p43.html</link>
-      <pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p43.html</guid>
-      <description>&lt;p&gt;試験期間中の夜はテンション高いぜｲｴｰ&lt;/p&gt;&#xA;&lt;p&gt;Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2010/10/16/jquery-143-released/&#34;&gt;jQuery: » jQuery 1.4.3 Released&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=17&#34;&gt;予想通り&lt;/a&gt;&lt;/strike&gt;かなりの変更が加えられてます！&lt;/p&gt;&#xA;&lt;p&gt;内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br /&gt;&#xA;発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /&gt;</description>
-    </item>
-    <item>
-      <title>jQuery 1.4.3RC2</title>
-      <link>https://blog.tyage.net/archive/p17.html</link>
-      <pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p17.html</guid>
-      <description>&lt;p&gt;追記：&lt;br /&gt;&#xA;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=43&#34;&gt;jQuery1.4.3が正式発表されました。&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2010/10/10/jquery-1-4-3-release-candidate-1-released/&#34;&gt;jQuery1.4.3rc1&lt;/a&gt;、&lt;a href=&#34;http://blog.jquery.com/2010/10/12/jquery-1-4-3-release-candidate-2-released/&#34;&gt;rc2&lt;/a&gt;と立て続けにリリースされたようです。&lt;/p&gt;&#xA;&lt;p&gt;試験中にも関わらず、差分取ってちまちまと見ています。&lt;br /&gt;&#xA;コードの初っ端から少しずつ変わってて、サンドボックスがどうとか、ローカル変数が増えたり変更されたりしてました。&lt;br /&gt;&#xA;内部のほうにはそれなりに変化があるようです。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>JQuery on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/jquery/</link>
+		<description>Recent content in JQuery on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 01 Feb 2011 11:11:22 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>jQuery1.5ｷﾀｰ</title>
+				<link>https://blog.tyage.net/archive/p252.html</link>
+				<pubDate>Tue, 01 Feb 2011 11:11:22 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p252.html</guid>
+				<description>&lt;h2&gt;jQuery1.5&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2011/01/14/jquery-1-5-beta-1-released/&#34;&gt;jQuery: » jQuery 1.5 Beta 1 Released&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今回のリリースの目玉は、Ajax周りの書き換えとその新記法、そしてサブクラスという新機能です。&lt;/p&gt;&#xA;&lt;p&gt;バグフィックスと速度向上はもちろん行われています。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>jQuery1.4.3ｳｯﾋｮｰ</title>
+				<link>https://blog.tyage.net/archive/p43.html</link>
+				<pubDate>Sat, 16 Oct 2010 15:07:34 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p43.html</guid>
+				<description>&lt;p&gt;試験期間中の夜はテンション高いぜｲｴｰ&lt;/p&gt;&#xA;&lt;p&gt;Google Reader見てたらjQuery1.4.3が来てるじゃないすか！！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2010/10/16/jquery-143-released/&#34;&gt;jQuery: » jQuery 1.4.3 Released&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;jQuery1.4.2のときは大した変更がなかったんですが、1.4.3は&lt;strike&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=17&#34;&gt;予想通り&lt;/a&gt;&lt;/strike&gt;かなりの変更が加えられてます！&lt;/p&gt;&#xA;&lt;p&gt;内容は本家のブログが詳細に語っているので、そちらを見ることをお勧めしますが、ぱっと見なんかすごそう！ってのをちょいちょい感想を加えつつ大雑把にまとめ。&lt;br /&gt;&#xA;発表から数時間後に急いで書いたので、間違ってたり理解できてないところが多々あると思います；&lt;br /&gt;</description>
+			</item>
+			<item>
+				<title>jQuery 1.4.3RC2</title>
+				<link>https://blog.tyage.net/archive/p17.html</link>
+				<pubDate>Thu, 14 Oct 2010 06:16:47 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p17.html</guid>
+				<description>&lt;p&gt;追記：&lt;br /&gt;&#xA;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=43&#34;&gt;jQuery1.4.3が正式発表されました。&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr /&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.jquery.com/2010/10/10/jquery-1-4-3-release-candidate-1-released/&#34;&gt;jQuery1.4.3rc1&lt;/a&gt;、&lt;a href=&#34;http://blog.jquery.com/2010/10/12/jquery-1-4-3-release-candidate-2-released/&#34;&gt;rc2&lt;/a&gt;と立て続けにリリースされたようです。&lt;/p&gt;&#xA;&lt;p&gt;試験中にも関わらず、差分取ってちまちまと見ています。&lt;br /&gt;&#xA;コードの初っ端から少しずつ変わってて、サンドボックスがどうとか、ローカル変数が増えたり変更されたりしてました。&lt;br /&gt;&#xA;内部のほうにはそれなりに変化があるようです。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

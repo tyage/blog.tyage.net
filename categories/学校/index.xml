@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>学校 on blog.tyage.net</title>
-    <link>https://blog.tyage.net/categories/%E5%AD%A6%E6%A0%A1/</link>
-    <description>Recent content in 学校 on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 02 Apr 2012 17:01:04 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/categories/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>KMC</title>
-      <link>https://blog.tyage.net/archive/p460.html</link>
-      <pubDate>Mon, 02 Apr 2012 17:01:04 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p460.html</guid>
-      <description>&lt;p&gt;入隊しました。&lt;/p&gt;&#xA;&lt;p&gt;目標：乗っ取り&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>そつぎょうし</title>
-      <link>https://blog.tyage.net/archive/p434.html</link>
-      <pubDate>Sat, 11 Feb 2012 08:04:49 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p434.html</guid>
-      <description>&lt;p&gt;ました&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>模試</title>
-      <link>https://blog.tyage.net/archive/p422.html</link>
-      <pubDate>Tue, 04 Oct 2011 12:00:44 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p422.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;第一回京大即応オープンと第一回京大実践模試が帰ってきたので自戒もこめて晒し。&lt;/p&gt;&#xA;&lt;h2&gt;京大即応オープン（河合/Z会）&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/102110743&#34;&gt;&lt;img src=&#34;http://art56.photozou.jp/pub/673/265673/photo/102110743.jpg&#34; alt=&#34;第一回京大即応オープン&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;&lt;tr&gt;&#xA;&lt;th&gt;科目&lt;/th&gt;&#xA;&lt;th&gt;得点/配点&lt;/th&gt;&#xA;&lt;th&gt;偏差値&lt;/th&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;英語&lt;/td&gt;&#xA;&lt;td&gt;67/150&lt;/td&gt;&#xA;&lt;td&gt;57.0&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;数学&lt;/td&gt;&#xA;&lt;td&gt;144/200&lt;/td&gt;&#xA;&lt;td&gt;74.2&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;国語&lt;/td&gt;&#xA;&lt;td&gt;48/100&lt;/td&gt;&#xA;&lt;td&gt;57.4&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;物理&lt;/td&gt;&#xA;&lt;td&gt;44/100&lt;/td&gt;&#xA;&lt;td&gt;56.0&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;化学&lt;/td&gt;&#xA;&lt;td&gt;62/100&lt;/td&gt;&#xA;&lt;td&gt;66.9&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;工学部配点&lt;/td&gt;&#xA;&lt;td&gt;450/800&lt;/td&gt;&#xA;&lt;td&gt;68.9&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;工学部情報学科では6位/179でA判定でした。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>最近のこと</title>
-      <link>https://blog.tyage.net/archive/p380.html</link>
-      <pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p380.html</guid>
-      <description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>試験対策 – 日本史</title>
-      <link>https://blog.tyage.net/archive/p155.html</link>
-      <pubDate>Wed, 08 Dec 2010 12:43:37 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p155.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=145&#34;&gt;前回の地理まとめ&lt;/a&gt;がちょっと好評だったため、日本史まとめもしちゃう。&lt;/p&gt;&#xA;&lt;p&gt;テストの点数が上がる保障はありません。&lt;br /&gt;&#xA;これを使った僕自身、地理のテストに関しては、いつもの数倍勉強した割に、いつも通り空白が・・・。&lt;br /&gt;&#xA;内容の暗記はできてたけど、問われ方を変えられるとぜんぜん思い出せないのよねん。。。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>期末試験対策 – 地理</title>
-      <link>https://blog.tyage.net/archive/p145.html</link>
-      <pubDate>Tue, 07 Dec 2010 06:04:39 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p145.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=143&#34;&gt;前回作った赤シートツール&lt;/a&gt;を使って地理のまとめを作り上げることにします。&lt;/p&gt;&#xA;&lt;p&gt;いつも試験のたびに勉強資料を提供してくださるN様も地理の写真をupするようですが、自分の勉強のためにもやっておこうと。&lt;br /&gt;&#xA;ちなみに歴史もやる予定。&lt;br /&gt;&#xA;足らないとことかミスとかあるし、誰か改良してくれるとありがたいけど、誰もしないよねー&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>学校 on blog.tyage.net</title>
+		<link>https://blog.tyage.net/categories/%E5%AD%A6%E6%A0%A1/</link>
+		<description>Recent content in 学校 on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 02 Apr 2012 17:01:04 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/categories/%E5%AD%A6%E6%A0%A1/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>KMC</title>
+				<link>https://blog.tyage.net/archive/p460.html</link>
+				<pubDate>Mon, 02 Apr 2012 17:01:04 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p460.html</guid>
+				<description>&lt;p&gt;入隊しました。&lt;/p&gt;&#xA;&lt;p&gt;目標：乗っ取り&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>そつぎょうし</title>
+				<link>https://blog.tyage.net/archive/p434.html</link>
+				<pubDate>Sat, 11 Feb 2012 08:04:49 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p434.html</guid>
+				<description>&lt;p&gt;ました&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>模試</title>
+				<link>https://blog.tyage.net/archive/p422.html</link>
+				<pubDate>Tue, 04 Oct 2011 12:00:44 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p422.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;第一回京大即応オープンと第一回京大実践模試が帰ってきたので自戒もこめて晒し。&lt;/p&gt;&#xA;&lt;h2&gt;京大即応オープン（河合/Z会）&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/102110743&#34;&gt;&lt;img src=&#34;http://art56.photozou.jp/pub/673/265673/photo/102110743.jpg&#34; alt=&#34;第一回京大即応オープン&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;&lt;tr&gt;&#xA;&lt;th&gt;科目&lt;/th&gt;&#xA;&lt;th&gt;得点/配点&lt;/th&gt;&#xA;&lt;th&gt;偏差値&lt;/th&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;英語&lt;/td&gt;&#xA;&lt;td&gt;67/150&lt;/td&gt;&#xA;&lt;td&gt;57.0&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;数学&lt;/td&gt;&#xA;&lt;td&gt;144/200&lt;/td&gt;&#xA;&lt;td&gt;74.2&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;国語&lt;/td&gt;&#xA;&lt;td&gt;48/100&lt;/td&gt;&#xA;&lt;td&gt;57.4&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;物理&lt;/td&gt;&#xA;&lt;td&gt;44/100&lt;/td&gt;&#xA;&lt;td&gt;56.0&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;化学&lt;/td&gt;&#xA;&lt;td&gt;62/100&lt;/td&gt;&#xA;&lt;td&gt;66.9&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;tr&gt;&#xA;&lt;td&gt;工学部配点&lt;/td&gt;&#xA;&lt;td&gt;450/800&lt;/td&gt;&#xA;&lt;td&gt;68.9&lt;/td&gt;&#xA;&lt;/tr&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;工学部情報学科では6位/179でA判定でした。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>最近のこと</title>
+				<link>https://blog.tyage.net/archive/p380.html</link>
+				<pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p380.html</guid>
+				<description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>試験対策 – 日本史</title>
+				<link>https://blog.tyage.net/archive/p155.html</link>
+				<pubDate>Wed, 08 Dec 2010 12:43:37 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p155.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=145&#34;&gt;前回の地理まとめ&lt;/a&gt;がちょっと好評だったため、日本史まとめもしちゃう。&lt;/p&gt;&#xA;&lt;p&gt;テストの点数が上がる保障はありません。&lt;br /&gt;&#xA;これを使った僕自身、地理のテストに関しては、いつもの数倍勉強した割に、いつも通り空白が・・・。&lt;br /&gt;&#xA;内容の暗記はできてたけど、問われ方を変えられるとぜんぜん思い出せないのよねん。。。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>期末試験対策 – 地理</title>
+				<link>https://blog.tyage.net/archive/p145.html</link>
+				<pubDate>Tue, 07 Dec 2010 06:04:39 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p145.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=143&#34;&gt;前回作った赤シートツール&lt;/a&gt;を使って地理のまとめを作り上げることにします。&lt;/p&gt;&#xA;&lt;p&gt;いつも試験のたびに勉強資料を提供してくださるN様も地理の写真をupするようですが、自分の勉強のためにもやっておこうと。&lt;br /&gt;&#xA;ちなみに歴史もやる予定。&lt;br /&gt;&#xA;足らないとことかミスとかあるし、誰か改良してくれるとありがたいけど、誰もしないよねー&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

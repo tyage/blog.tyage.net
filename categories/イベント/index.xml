@@ -1,159 +1,164 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>イベント on blog.tyage.net</title>
-    <link>https://blog.tyage.net/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
-    <description>Recent content in イベント on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 18 May 2015 08:46:04 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>セキュリティミニキャンプ新潟でチューターをしていました</title>
-      <link>https://blog.tyage.net/archive/p888.html</link>
-      <pubDate>Mon, 18 May 2015 08:46:04 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p888.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.security-camp.org/minicamp/niigata2015.html&#34;&gt;セキュリティミニキャンプ新潟&lt;/a&gt;が5/16, 5/17にありました。&lt;/p&gt;&#xA;&lt;p&gt;ちなみにDEFCON Qualsが5/16~18にありました。&lt;/p&gt;&#xA;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&#xA;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/tyage&#34;&gt;@tyage&lt;/a&gt; DEFCON&lt;/p&gt;&#xA;&lt;p&gt;&amp;mdash; 軟こんにゃく (@potetisensei) &lt;a href=&#34;https://twitter.com/potetisensei/status/599159774794526721&#34;&gt;May 15, 2015&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;チューターとしてはあまり仕事をしていなかったかと思いますが、軽い発表をさせてもらいました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>セキュリティ系イベント参加ログ</title>
-      <link>https://blog.tyage.net/archive/p649.html</link>
-      <pubDate>Tue, 01 Jan 2013 18:54:42 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p649.html</guid>
-      <description>&lt;p&gt;新年明けましておめでとうございます。&lt;/p&gt;&#xA;&lt;p&gt;少し時間ができたので適当にブログを書いていくことにしました。&lt;/p&gt;&#xA;&lt;p&gt;今回は、二ヶ月の間に参加していたセキュリティ系イベントをまとめて書いていこうとおもいますです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）&#xA;&lt;li&gt;情報セキュリティ・ワークショップ in 越後湯沢&#xA;&lt;li&gt;第3回SECCON 奈良大会&#xA;&lt;li&gt;ゲヒルンウェブセキュリティ勉強会　第２回　in京都&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>d=(^o^)=b.js – Aizu Advent Calendar</title>
-      <link>https://blog.tyage.net/archive/p609.html</link>
-      <pubDate>Fri, 14 Dec 2012 06:55:12 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p609.html</guid>
-      <description>&lt;p&gt;&lt;strong&gt;※追記：mac以外で閲覧するとコードが壊れているみたいです。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;やっほー！d=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;今日は&lt;a href=&#34;http://atnd.org/events/33782&#34;&gt;Aizu Advent Calendar&lt;/a&gt;14日目として記事を書くよd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;ってことで、何を書こうか迷ったんだけど、d=(^o^)=bをネタに書きますd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;ところで、d=(^o^)=b　←この顔文字、ヅ大生（主に@yutopp氏？）がよく使っている気がするけど、気のせいかしらd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;↓例&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34;&gt;&lt;img data-attachment-id=&#34;611&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=611&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; data-orig-size=&#34;253,659&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;スクリーンショット 2012-12-09 19.30.22&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; alt=&#34;&#34; title=&#34;スクリーンショット 2012-12-09 19.30.22&#34; width=&#34;253&#34; height=&#34;659&#34; class=&#34;alignnone size-full wp-image-611&#34; style=&#34;border:1px solid #999;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;d=(^o^)=bがなにを意味するのかはよくわかんないんだけど、まあ本題へd=(^o^)=b&lt;br /&gt;</description>
-    </item>
-    <item>
-      <title>08/12</title>
-      <link>https://blog.tyage.net/archive/p571.html</link>
-      <pubDate>Mon, 13 Aug 2012 23:46:32 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p571.html</guid>
-      <description>&lt;p&gt;コンディション：昇天直前&lt;br /&gt;&#xA;朝食：サラダ巻一本+redbull&lt;br /&gt;&#xA;昼食：サンドイッチ一個+redubll&lt;br /&gt;&#xA;夕食：寝てた&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=565&#34;&gt;昨日&lt;/a&gt;の続きで京都会場に泊まり続ける。&lt;br /&gt;&#xA;結局、京都会場はほとんどが帰ってしまい、最終的に二人しか残らなかった。&lt;br /&gt;&#xA;ほとんど寝てない。&lt;br /&gt;&#xA;ちょっと意識を失う度にredbullを注入して意識を保っていた。&lt;br /&gt;&#xA;（計redubll6本ちょっと）&lt;br /&gt;&#xA;京都会場は自分以外死んでいたが、東京会場では大勢が起きていた。&lt;br /&gt;&#xA;あいつらおかしい。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>08/11</title>
-      <link>https://blog.tyage.net/archive/p565.html</link>
-      <pubDate>Mon, 13 Aug 2012 23:32:27 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p565.html</guid>
-      <description>&lt;p&gt;コンディション：やばい&lt;br /&gt;&#xA;朝食：スープ&lt;br /&gt;&#xA;昼食：おにぎり一個+redbull&lt;br /&gt;&#xA;夕食：中華料理+redubll&lt;/p&gt;&#xA;&lt;p&gt;なぜか5時くらいに寝て、9時くらいに起きた。&lt;br /&gt;&#xA;メールを確認すると10日前からAppleに申請していたアプリがやっと承認されていた。&lt;br /&gt;&#xA;&lt;a href=&#34;http://itunes.apple.com/us/app/number/id549400344?l=ja&amp;#038;ls=1&amp;#038;mt=8&#34;&gt;NUMBER&lt;/a&gt;というアプリです。&lt;br /&gt;&#xA;私の金欠補助のため、ダウンロードお願いします。&lt;br /&gt;&#xA;これから色々とアップデートをしていく予定。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>08/08</title>
-      <link>https://blog.tyage.net/archive/p557.html</link>
-      <pubDate>Mon, 13 Aug 2012 23:03:10 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p557.html</guid>
-      <description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝飯：寝てた&lt;br /&gt;&#xA;昼飯：残飯とマクドポテト&lt;br /&gt;&#xA;夕飯：記憶にない&lt;/p&gt;&#xA;&lt;p&gt;この日はふぇる絵オフなので早く起きるつもりが15時半に起床。&lt;br /&gt;&#xA;寝ている間に集合時間が17時にfixされていたのでギリギリセーフ。&lt;br /&gt;&#xA;しかし主催者のふぇるが体調を崩して参加できないという事態。&lt;br /&gt;&#xA;とにかく京都駅でオフ会参加者を探して、二人ほど違う人に声かけをする。&lt;br /&gt;&#xA;すごく恥ずかしい。&lt;br /&gt;&#xA;まあ主催者はいなかったけど、ぺちゃくちゃ話してたら22時になって解散する。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>超交流会2012</title>
-      <link>https://blog.tyage.net/archive/p471.html</link>
-      <pubDate>Sun, 27 May 2012 16:11:48 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p471.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;&lt;a href=&#34;http://www.johogaku.net/sn2012&#34;&gt;超交流会2012&lt;/a&gt;に「きょーくりっ」ブースとして出展していました。&lt;/p&gt;&#xA;&lt;p&gt;ブースはこんな感じ。（QRコードだけのブースです）&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/tyage/7277875688/&#34; title=&#34;DSC_0046 by チャゲ, on Flickr&#34;&gt;&lt;img src=&#34;http://farm8.staticflickr.com/7103/7277875688_891f6718d9.jpg&#34; width=&#34;500&#34; height=&#34;375&#34; alt=&#34;DSC_0046&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;QRコードはサイトのURLとかでした。（&lt;a href=&#34;http://pwsk.cosmio.net/&#34;&gt;http://pwsk.cosmio.net/&lt;/a&gt;）&lt;/p&gt;&#xA;&lt;p&gt;他、ダンボール着用状態で一分間スピーチをしてましたよ～&lt;br /&gt;&#xA;（スピーチを申し込んでいたんだけども、名前が載っていないのはなんでだったんだろう・・・？）&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>第2回　SECCON ておくれ大会に行ってきた</title>
-      <link>https://blog.tyage.net/archive/p466.html</link>
-      <pubDate>Sun, 27 May 2012 14:04:17 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p466.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.seccon.jp/p/20125tsukuba.html&#34;&gt;第2回　SECCON つくば大会（関東地区）&lt;/a&gt;がておくれ大学（通称：筑波大学）で開催されていたので参加しました。&lt;br /&gt;&#xA;チームIMOCANとして、@sora_h, @grapswiz, @yasulibさん達四人でエントリーしました。（自分以外は社会人なんですねー）&lt;br /&gt;&#xA;チームとしては、ゆる～く楽しくやりましょう！という感じだったのですが、4位獲得し、表彰されました！&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ICT Challenge&#43;Rに行って来ました</title>
-      <link>https://blog.tyage.net/archive/p405.html</link>
-      <pubDate>Thu, 08 Sep 2011 13:54:41 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p405.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;（詳細は&lt;a href=&#34;http://d.hatena.ne.jp/Pasta-K/20110902/1314974691&#34;&gt;@pastakのブログ&lt;/a&gt;にあります。）&lt;/p&gt;&#xA;&lt;p&gt;@pastakとペアで&lt;a href=&#34;http://www.ict-challenger.jp/&#34;&gt;ICT Challenge+R&lt;/a&gt;に行って発表して来ました。&lt;br /&gt;&#xA;ネタは、赤シート2.0です。&lt;/p&gt;&#xA;&lt;p&gt;結果、「上月スポーツ・教育財団賞」をいただきました！&lt;br /&gt;&#xA;発表後は琵琶湖にて船上で表彰式・懇親会を行ったそうですが、僕は翌日の模試のために発表後すぐに帰ってしまいました。&lt;br /&gt;&#xA;とても残念！&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SuperCon2011</title>
-      <link>https://blog.tyage.net/archive/p397.html</link>
-      <pubDate>Sun, 28 Aug 2011 15:18:33 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p397.html</guid>
-      <description>&lt;p&gt;※注：参加者以外にはずいぶんと分かりにくい内容です&lt;/p&gt;&#xA;&lt;p&gt;今年の夏の思い出：SuperCon2011&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.gsic.titech.ac.jp/supercon/main/attwiki/index.php?Supercomputing%20Contest%202011&#34;&gt;Supercomputing Contest 2011&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今年のテーマは「&lt;a href=&#34;https://www.cp.cmc.osaka-u.ac.jp/supercon/naklon.html&#34;&gt;なくろん&lt;/a&gt;」でした。&lt;/p&gt;&#xA;&lt;h3&gt;0日目&lt;/h3&gt;&#xA;&lt;p&gt;去年は@asi1024と、別のメンバーがSuperConに出場していたが、今年は@asi1024と自分と後輩の三人で出場することになった。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OSC京都2011と祇園祭</title>
-      <link>https://blog.tyage.net/archive/p386.html</link>
-      <pubDate>Sat, 06 Aug 2011 04:27:32 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p386.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ospn.jp/osc2011-kyoto/&#34;&gt;OSC京都2011&lt;/a&gt;から三週間が経ってしまいましたが書きます。&lt;/p&gt;&#xA;&lt;h1&gt;一日目(8/15)&lt;/h1&gt;&#xA;&lt;h2&gt;OSC&lt;/h2&gt;&#xA;&lt;p&gt;学校から、祇園祭に参加する@keirfulと一緒に京都へ。&lt;br /&gt;&#xA;@keirfulのお陰でOSC会場の場所を間違えずになんとか到着。&lt;br /&gt;&#xA;@mactkg, @masawadaの東京勢、@pastak, @umisama, @waturaのきょーくりメンバーと合流&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>オープンソースカンファレンス2011 @神戸</title>
-      <link>https://blog.tyage.net/archive/p328.html</link>
-      <pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p328.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ospn.jp/osc2011-kobe/&#34;&gt;オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a&gt;に参加してきました。&lt;/p&gt;&#xA;&lt;p&gt;去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p&gt;&#xA;&lt;p&gt;それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br /&gt;&#xA;ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br /&gt;&#xA;ごめんなさい。&lt;/p&gt;&#xA;&lt;p&gt;発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br /&gt;&#xA;それでもなんとか端折りながら5分に収めましたがｗ&lt;/p&gt;&#xA;&lt;p&gt;後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br /&gt;&#xA;初・OSC懇親会は楽しかった！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;&lt;img src=&#34;http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg&#34; alt=&#34;OSC神戸&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;OSC神戸&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;&lt;img src=&#34;http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg&#34; alt=&#34;OSC神戸でもらった&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;OSC神戸でもらった&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>関西青少年オフ – 04</title>
-      <link>https://blog.tyage.net/archive/p321.html</link>
-      <pubDate>Wed, 06 Apr 2011 05:55:10 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p321.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tweetvite.com/event/seisyounen04&#34;&gt;Tweetvite :: 関西青少年オフ-04&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;舞洲緑地にて楽しく缶蹴りしてました。&lt;/p&gt;&#xA;&lt;p&gt;無線使ったり、一眼レフで監視したりと少し変な缶蹴りだったような。&lt;/p&gt;&#xA;&lt;p&gt;走りまわったので翌日に筋肉痛になるかと思いきや、花粉症で微熱がでました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title>
-      <link>https://blog.tyage.net/archive/p315.html</link>
-      <pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p315.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=313&#34;&gt;前の記事&lt;/a&gt;の内容を修正して、スライドにまとめてみた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;スライド&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/js/boku2d-base.js&#34;&gt;boku2d(仮)&lt;/a&gt;という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br /&gt;&#xA;このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p&gt;&#xA;&lt;p&gt;メインのコードは以下のような感じ。&lt;/p&gt;&#xA;&lt;p&gt;コピペっぽいところがあるのはご愛嬌。&lt;br /&gt;&#xA;（時間的に少し焦ってた）&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title>
-      <link>https://blog.tyage.net/archive/p313.html</link>
-      <pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p313.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;一応&lt;a href=&#34;http://wise9.jp/archives/1004&#34;&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;&#xA;&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;&#xA;&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;&#xA;&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3月25日</title>
-      <link>https://blog.tyage.net/archive/p305.html</link>
-      <pubDate>Sun, 27 Mar 2011 11:49:05 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p305.html</guid>
-      <description>&lt;h2&gt;ねーもオフ&lt;/h2&gt;&#xA;&lt;p&gt;@ok_namo が彼の高校の甲子園の応援のため、関西に来ていたので神戸案内をしてました。&lt;/p&gt;&#xA;&lt;p&gt;他に 「 @yushipon と @mgmgkzm 」 が参加していました。&lt;/p&gt;&#xA;&lt;p&gt;案内と言っても、どこに行くかも決まらないので、@mgmgkzm を観光しながら南京町とかぶらぶらした。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>最近あったことども</title>
-      <link>https://blog.tyage.net/archive/p267.html</link>
-      <pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p267.html</guid>
-      <description>&lt;p&gt;最近は比較的忙しかった。&lt;/p&gt;&#xA;&lt;p&gt;つらつらとまとめてみる。&lt;/p&gt;&#xA;&lt;p&gt;受験まで後一年らしい。&lt;br /&gt;&#xA;しらね&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>セキュリティ＆プログラミングキャンプ2010実施報告会に行ってきた</title>
-      <link>https://blog.tyage.net/archive/p200.html</link>
-      <pubDate>Wed, 22 Dec 2010 17:24:48 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p200.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ipa.go.jp/jinzai/camp/2010debrief/index.html&#34;&gt;情報処理推進機構：IT人材育成：セキュリティ＆プログラミングキャンプ2010&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;これを目的に&lt;a href=&#39;http://tyage.sakura.ne.jp/blog/?p=195&#39;&gt;格安で&lt;/a&gt;東京に行ってまいりました。&lt;/p&gt;&#xA;&lt;p&gt;セプキャンが廃止されるみたいな噂があって冷や冷やしていたんですが、報告会では積極的な意見が数々出ており（僕は意見を言えませんでしたが）、やはりこのキャンプは多くの影響を与えてきたんだなあと再認識しました。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>青少年オフと京大学院祭</title>
-      <link>https://blog.tyage.net/archive/p134.html</link>
-      <pubDate>Wed, 24 Nov 2010 13:39:21 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p134.html</guid>
-      <description>&lt;p&gt;日曜日に、&lt;a href=&#34;http://tweetvite.com/event/u20_04&#34;&gt;2010関西青少年？オフ&lt;/a&gt;に行きました。&lt;br /&gt;&#xA;その後、&lt;a href=&#34;http://www.nf.la/&#34;&gt;トップページ &amp;#8211; 第52回京都大学11月祭&lt;/a&gt;にて同級生達と合流してきました。&lt;/p&gt;&#xA;&lt;h3&gt;青少年オフ&lt;/h3&gt;&#xA;&lt;p&gt;関西青少年オフでは、嵐電に乗って集合場所に到着した後、&lt;a href=&#34;http://r.tabelog.com/kyoto/A2605/A260501/26000617/&#34;&gt;ジャンボ&lt;/a&gt;というお店に行きました。でかいことで有名だそうです。&lt;br /&gt;&#xA;（20分ほど遅刻しました。ごめんなさい。）&lt;br /&gt;&#xA;焼きそばとお好み焼きを腹いっぱい食べました。でかくてうまかった。&lt;/p&gt;&#xA;&lt;p&gt;その後は、また嵐電に乗って嵐山に行った後、@moccaxと合流して紅葉狩り。&lt;br /&gt;&#xA;とにかく人、人、人。（たまにおっちゃん暴走族）&lt;br /&gt;</description>
-    </item>
-    <item>
-      <title>KOF2010 – 二日目</title>
-      <link>https://blog.tyage.net/archive/p76.html</link>
-      <pubDate>Mon, 08 Nov 2010 10:21:12 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p76.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=71&#34;&gt;KOF2010 – 一日目 | チャゲってる日々 &amp;#8211; @tyage&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この日は同級生の@asi1024を誘って行った。&lt;br /&gt;&#xA;彼は情オリとかSuperConとか出てるし、知り合いもいて楽しそうだった。よかったよかった。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>KOF2010 – 一日目</title>
-      <link>https://blog.tyage.net/archive/p71.html</link>
-      <pubDate>Fri, 05 Nov 2010 15:14:33 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p71.html</guid>
-      <description>&lt;p&gt;金曜だけど保護者会ってことでお昼に学校が終わったので行って来ました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://k-of.jp/2010/index.html&#34;&gt;KOF2010：関西オープンソース2010&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;思ったほど迷子にならず順調に到着。&lt;br /&gt;&#xA;往復1000円、所要時間は2時間ほど。&lt;br /&gt;&#xA;場所は大阪南港ATC（アジアトレードセンター？）です。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>イベント on blog.tyage.net</title>
+		<link>https://blog.tyage.net/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
+		<description>Recent content in イベント on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 18 May 2015 08:46:04 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>セキュリティミニキャンプ新潟でチューターをしていました</title>
+				<link>https://blog.tyage.net/archive/p888.html</link>
+				<pubDate>Mon, 18 May 2015 08:46:04 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p888.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.security-camp.org/minicamp/niigata2015.html&#34;&gt;セキュリティミニキャンプ新潟&lt;/a&gt;が5/16, 5/17にありました。&lt;/p&gt;&#xA;&lt;p&gt;ちなみにDEFCON Qualsが5/16~18にありました。&lt;/p&gt;&#xA;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&#xA;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/tyage&#34;&gt;@tyage&lt;/a&gt; DEFCON&lt;/p&gt;&#xA;&lt;p&gt;&amp;mdash; 軟こんにゃく (@potetisensei) &lt;a href=&#34;https://twitter.com/potetisensei/status/599159774794526721&#34;&gt;May 15, 2015&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;&#xA;&lt;p&gt;チューターとしてはあまり仕事をしていなかったかと思いますが、軽い発表をさせてもらいました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>セキュリティ系イベント参加ログ</title>
+				<link>https://blog.tyage.net/archive/p649.html</link>
+				<pubDate>Tue, 01 Jan 2013 18:54:42 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p649.html</guid>
+				<description>&lt;p&gt;新年明けましておめでとうございます。&lt;/p&gt;&#xA;&lt;p&gt;少し時間ができたので適当にブログを書いていくことにしました。&lt;/p&gt;&#xA;&lt;p&gt;今回は、二ヶ月の間に参加していたセキュリティ系イベントをまとめて書いていこうとおもいますです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ウェブセキュリティ勉強会/OWASP Japan （大阪サテライト）&#xA;&lt;li&gt;情報セキュリティ・ワークショップ in 越後湯沢&#xA;&lt;li&gt;第3回SECCON 奈良大会&#xA;&lt;li&gt;ゲヒルンウェブセキュリティ勉強会　第２回　in京都&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>d=(^o^)=b.js – Aizu Advent Calendar</title>
+				<link>https://blog.tyage.net/archive/p609.html</link>
+				<pubDate>Fri, 14 Dec 2012 06:55:12 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p609.html</guid>
+				<description>&lt;p&gt;&lt;strong&gt;※追記：mac以外で閲覧するとコードが壊れているみたいです。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;やっほー！d=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;今日は&lt;a href=&#34;http://atnd.org/events/33782&#34;&gt;Aizu Advent Calendar&lt;/a&gt;14日目として記事を書くよd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;ってことで、何を書こうか迷ったんだけど、d=(^o^)=bをネタに書きますd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;ところで、d=(^o^)=b　←この顔文字、ヅ大生（主に@yutopp氏？）がよく使っている気がするけど、気のせいかしらd=(^o^)=b&lt;/p&gt;&#xA;&lt;p&gt;↓例&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34;&gt;&lt;img data-attachment-id=&#34;611&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=611&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; data-orig-size=&#34;253,659&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;スクリーンショット 2012-12-09 19.30.22&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2012/12/26f1522c61aaeaa0eef7fcf7a399ba5e.png&#34; alt=&#34;&#34; title=&#34;スクリーンショット 2012-12-09 19.30.22&#34; width=&#34;253&#34; height=&#34;659&#34; class=&#34;alignnone size-full wp-image-611&#34; style=&#34;border:1px solid #999;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;d=(^o^)=bがなにを意味するのかはよくわかんないんだけど、まあ本題へd=(^o^)=b&lt;br /&gt;</description>
+			</item>
+			<item>
+				<title>08/12</title>
+				<link>https://blog.tyage.net/archive/p571.html</link>
+				<pubDate>Mon, 13 Aug 2012 23:46:32 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p571.html</guid>
+				<description>&lt;p&gt;コンディション：昇天直前&lt;br /&gt;&#xA;朝食：サラダ巻一本+redbull&lt;br /&gt;&#xA;昼食：サンドイッチ一個+redubll&lt;br /&gt;&#xA;夕食：寝てた&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=565&#34;&gt;昨日&lt;/a&gt;の続きで京都会場に泊まり続ける。&lt;br /&gt;&#xA;結局、京都会場はほとんどが帰ってしまい、最終的に二人しか残らなかった。&lt;br /&gt;&#xA;ほとんど寝てない。&lt;br /&gt;&#xA;ちょっと意識を失う度にredbullを注入して意識を保っていた。&lt;br /&gt;&#xA;（計redubll6本ちょっと）&lt;br /&gt;&#xA;京都会場は自分以外死んでいたが、東京会場では大勢が起きていた。&lt;br /&gt;&#xA;あいつらおかしい。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>08/11</title>
+				<link>https://blog.tyage.net/archive/p565.html</link>
+				<pubDate>Mon, 13 Aug 2012 23:32:27 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p565.html</guid>
+				<description>&lt;p&gt;コンディション：やばい&lt;br /&gt;&#xA;朝食：スープ&lt;br /&gt;&#xA;昼食：おにぎり一個+redbull&lt;br /&gt;&#xA;夕食：中華料理+redubll&lt;/p&gt;&#xA;&lt;p&gt;なぜか5時くらいに寝て、9時くらいに起きた。&lt;br /&gt;&#xA;メールを確認すると10日前からAppleに申請していたアプリがやっと承認されていた。&lt;br /&gt;&#xA;&lt;a href=&#34;http://itunes.apple.com/us/app/number/id549400344?l=ja&amp;#038;ls=1&amp;#038;mt=8&#34;&gt;NUMBER&lt;/a&gt;というアプリです。&lt;br /&gt;&#xA;私の金欠補助のため、ダウンロードお願いします。&lt;br /&gt;&#xA;これから色々とアップデートをしていく予定。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>08/08</title>
+				<link>https://blog.tyage.net/archive/p557.html</link>
+				<pubDate>Mon, 13 Aug 2012 23:03:10 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p557.html</guid>
+				<description>&lt;p&gt;コンディション：普通&lt;br /&gt;&#xA;朝飯：寝てた&lt;br /&gt;&#xA;昼飯：残飯とマクドポテト&lt;br /&gt;&#xA;夕飯：記憶にない&lt;/p&gt;&#xA;&lt;p&gt;この日はふぇる絵オフなので早く起きるつもりが15時半に起床。&lt;br /&gt;&#xA;寝ている間に集合時間が17時にfixされていたのでギリギリセーフ。&lt;br /&gt;&#xA;しかし主催者のふぇるが体調を崩して参加できないという事態。&lt;br /&gt;&#xA;とにかく京都駅でオフ会参加者を探して、二人ほど違う人に声かけをする。&lt;br /&gt;&#xA;すごく恥ずかしい。&lt;br /&gt;&#xA;まあ主催者はいなかったけど、ぺちゃくちゃ話してたら22時になって解散する。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>超交流会2012</title>
+				<link>https://blog.tyage.net/archive/p471.html</link>
+				<pubDate>Sun, 27 May 2012 16:11:48 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p471.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;&lt;a href=&#34;http://www.johogaku.net/sn2012&#34;&gt;超交流会2012&lt;/a&gt;に「きょーくりっ」ブースとして出展していました。&lt;/p&gt;&#xA;&lt;p&gt;ブースはこんな感じ。（QRコードだけのブースです）&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/tyage/7277875688/&#34; title=&#34;DSC_0046 by チャゲ, on Flickr&#34;&gt;&lt;img src=&#34;http://farm8.staticflickr.com/7103/7277875688_891f6718d9.jpg&#34; width=&#34;500&#34; height=&#34;375&#34; alt=&#34;DSC_0046&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;QRコードはサイトのURLとかでした。（&lt;a href=&#34;http://pwsk.cosmio.net/&#34;&gt;http://pwsk.cosmio.net/&lt;/a&gt;）&lt;/p&gt;&#xA;&lt;p&gt;他、ダンボール着用状態で一分間スピーチをしてましたよ～&lt;br /&gt;&#xA;（スピーチを申し込んでいたんだけども、名前が載っていないのはなんでだったんだろう・・・？）&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>第2回　SECCON ておくれ大会に行ってきた</title>
+				<link>https://blog.tyage.net/archive/p466.html</link>
+				<pubDate>Sun, 27 May 2012 14:04:17 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p466.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.seccon.jp/p/20125tsukuba.html&#34;&gt;第2回　SECCON つくば大会（関東地区）&lt;/a&gt;がておくれ大学（通称：筑波大学）で開催されていたので参加しました。&lt;br /&gt;&#xA;チームIMOCANとして、@sora_h, @grapswiz, @yasulibさん達四人でエントリーしました。（自分以外は社会人なんですねー）&lt;br /&gt;&#xA;チームとしては、ゆる～く楽しくやりましょう！という感じだったのですが、4位獲得し、表彰されました！&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ICT Challenge&#43;Rに行って来ました</title>
+				<link>https://blog.tyage.net/archive/p405.html</link>
+				<pubDate>Thu, 08 Sep 2011 13:54:41 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p405.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;（詳細は&lt;a href=&#34;http://d.hatena.ne.jp/Pasta-K/20110902/1314974691&#34;&gt;@pastakのブログ&lt;/a&gt;にあります。）&lt;/p&gt;&#xA;&lt;p&gt;@pastakとペアで&lt;a href=&#34;http://www.ict-challenger.jp/&#34;&gt;ICT Challenge+R&lt;/a&gt;に行って発表して来ました。&lt;br /&gt;&#xA;ネタは、赤シート2.0です。&lt;/p&gt;&#xA;&lt;p&gt;結果、「上月スポーツ・教育財団賞」をいただきました！&lt;br /&gt;&#xA;発表後は琵琶湖にて船上で表彰式・懇親会を行ったそうですが、僕は翌日の模試のために発表後すぐに帰ってしまいました。&lt;br /&gt;&#xA;とても残念！&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>SuperCon2011</title>
+				<link>https://blog.tyage.net/archive/p397.html</link>
+				<pubDate>Sun, 28 Aug 2011 15:18:33 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p397.html</guid>
+				<description>&lt;p&gt;※注：参加者以外にはずいぶんと分かりにくい内容です&lt;/p&gt;&#xA;&lt;p&gt;今年の夏の思い出：SuperCon2011&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.gsic.titech.ac.jp/supercon/main/attwiki/index.php?Supercomputing%20Contest%202011&#34;&gt;Supercomputing Contest 2011&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今年のテーマは「&lt;a href=&#34;https://www.cp.cmc.osaka-u.ac.jp/supercon/naklon.html&#34;&gt;なくろん&lt;/a&gt;」でした。&lt;/p&gt;&#xA;&lt;h3&gt;0日目&lt;/h3&gt;&#xA;&lt;p&gt;去年は@asi1024と、別のメンバーがSuperConに出場していたが、今年は@asi1024と自分と後輩の三人で出場することになった。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>OSC京都2011と祇園祭</title>
+				<link>https://blog.tyage.net/archive/p386.html</link>
+				<pubDate>Sat, 06 Aug 2011 04:27:32 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p386.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ospn.jp/osc2011-kyoto/&#34;&gt;OSC京都2011&lt;/a&gt;から三週間が経ってしまいましたが書きます。&lt;/p&gt;&#xA;&lt;h1&gt;一日目(8/15)&lt;/h1&gt;&#xA;&lt;h2&gt;OSC&lt;/h2&gt;&#xA;&lt;p&gt;学校から、祇園祭に参加する@keirfulと一緒に京都へ。&lt;br /&gt;&#xA;@keirfulのお陰でOSC会場の場所を間違えずになんとか到着。&lt;br /&gt;&#xA;@mactkg, @masawadaの東京勢、@pastak, @umisama, @waturaのきょーくりメンバーと合流&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>オープンソースカンファレンス2011 @神戸</title>
+				<link>https://blog.tyage.net/archive/p328.html</link>
+				<pubDate>Sat, 23 Apr 2011 15:27:15 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p328.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ospn.jp/osc2011-kobe/&#34;&gt;オープンソースカンファレンス2011 Kobe &amp;#8211; オープンソースの文化祭！&lt;/a&gt;に参加してきました。&lt;/p&gt;&#xA;&lt;p&gt;去年と同じハーバーランドで行われたにも関わらず、迷子になってしまいました。&lt;/p&gt;&#xA;&lt;p&gt;それはともかく、今回は学生LTセミナーでライトニングトークをしてきました。&lt;br /&gt;&#xA;ここでも毎度のようにプロジェクターと上手く接続ができなくなり、貴重な時間を食いつぶしました・・・。&lt;br /&gt;&#xA;ごめんなさい。&lt;/p&gt;&#xA;&lt;p&gt;発表はかなりあたふたしてしまい、もともと五分でぎりぎりな内容だったのですが、さらにPCが不調だったためデモすらできないという状況でした。&lt;br /&gt;&#xA;それでもなんとか端折りながら5分に収めましたがｗ&lt;/p&gt;&#xA;&lt;p&gt;後はFireFox4のセミナーを見たり火狐グッズをいただいたりしてました。&lt;br /&gt;&#xA;初・OSC懇親会は楽しかった！&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;&lt;img src=&#34;http://art24.photozou.jp/pub/673/265673/photo/75877087.jpg&#34; alt=&#34;OSC神戸&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877087&#34;&gt;OSC神戸&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;&lt;img src=&#34;http://art35.photozou.jp/pub/673/265673/photo/75877429.jpg&#34; alt=&#34;OSC神戸でもらった&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/75877429&#34;&gt;OSC神戸でもらった&lt;/a&gt; posted by &lt;a href=&#34;http://photozou.jp/user/top/265673&#34;&gt;(C)チャゲ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>関西青少年オフ – 04</title>
+				<link>https://blog.tyage.net/archive/p321.html</link>
+				<pubDate>Wed, 06 Apr 2011 05:55:10 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p321.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tweetvite.com/event/seisyounen04&#34;&gt;Tweetvite :: 関西青少年オフ-04&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;舞洲緑地にて楽しく缶蹴りしてました。&lt;/p&gt;&#xA;&lt;p&gt;無線使ったり、一眼レフで監視したりと少し変な缶蹴りだったような。&lt;/p&gt;&#xA;&lt;p&gt;走りまわったので翌日に筋肉痛になるかと思いきや、花粉症で微熱がでました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title>
+				<link>https://blog.tyage.net/archive/p315.html</link>
+				<pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p315.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=313&#34;&gt;前の記事&lt;/a&gt;の内容を修正して、スライドにまとめてみた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;スライド&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/js/boku2d-base.js&#34;&gt;boku2d(仮)&lt;/a&gt;という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br /&gt;&#xA;このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p&gt;&#xA;&lt;p&gt;メインのコードは以下のような感じ。&lt;/p&gt;&#xA;&lt;p&gt;コピペっぽいところがあるのはご愛嬌。&lt;br /&gt;&#xA;（時間的に少し焦ってた）&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title>
+				<link>https://blog.tyage.net/archive/p313.html</link>
+				<pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p313.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;一応&lt;a href=&#34;http://wise9.jp/archives/1004&#34;&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;&#xA;&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;&#xA;&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;&#xA;&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3月25日</title>
+				<link>https://blog.tyage.net/archive/p305.html</link>
+				<pubDate>Sun, 27 Mar 2011 11:49:05 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p305.html</guid>
+				<description>&lt;h2&gt;ねーもオフ&lt;/h2&gt;&#xA;&lt;p&gt;@ok_namo が彼の高校の甲子園の応援のため、関西に来ていたので神戸案内をしてました。&lt;/p&gt;&#xA;&lt;p&gt;他に 「 @yushipon と @mgmgkzm 」 が参加していました。&lt;/p&gt;&#xA;&lt;p&gt;案内と言っても、どこに行くかも決まらないので、@mgmgkzm を観光しながら南京町とかぶらぶらした。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>最近あったことども</title>
+				<link>https://blog.tyage.net/archive/p267.html</link>
+				<pubDate>Tue, 15 Feb 2011 11:25:47 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p267.html</guid>
+				<description>&lt;p&gt;最近は比較的忙しかった。&lt;/p&gt;&#xA;&lt;p&gt;つらつらとまとめてみる。&lt;/p&gt;&#xA;&lt;p&gt;受験まで後一年らしい。&lt;br /&gt;&#xA;しらね&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>セキュリティ＆プログラミングキャンプ2010実施報告会に行ってきた</title>
+				<link>https://blog.tyage.net/archive/p200.html</link>
+				<pubDate>Wed, 22 Dec 2010 17:24:48 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p200.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ipa.go.jp/jinzai/camp/2010debrief/index.html&#34;&gt;情報処理推進機構：IT人材育成：セキュリティ＆プログラミングキャンプ2010&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;これを目的に&lt;a href=&#39;http://tyage.sakura.ne.jp/blog/?p=195&#39;&gt;格安で&lt;/a&gt;東京に行ってまいりました。&lt;/p&gt;&#xA;&lt;p&gt;セプキャンが廃止されるみたいな噂があって冷や冷やしていたんですが、報告会では積極的な意見が数々出ており（僕は意見を言えませんでしたが）、やはりこのキャンプは多くの影響を与えてきたんだなあと再認識しました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>青少年オフと京大学院祭</title>
+				<link>https://blog.tyage.net/archive/p134.html</link>
+				<pubDate>Wed, 24 Nov 2010 13:39:21 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p134.html</guid>
+				<description>&lt;p&gt;日曜日に、&lt;a href=&#34;http://tweetvite.com/event/u20_04&#34;&gt;2010関西青少年？オフ&lt;/a&gt;に行きました。&lt;br /&gt;&#xA;その後、&lt;a href=&#34;http://www.nf.la/&#34;&gt;トップページ &amp;#8211; 第52回京都大学11月祭&lt;/a&gt;にて同級生達と合流してきました。&lt;/p&gt;&#xA;&lt;h3&gt;青少年オフ&lt;/h3&gt;&#xA;&lt;p&gt;関西青少年オフでは、嵐電に乗って集合場所に到着した後、&lt;a href=&#34;http://r.tabelog.com/kyoto/A2605/A260501/26000617/&#34;&gt;ジャンボ&lt;/a&gt;というお店に行きました。でかいことで有名だそうです。&lt;br /&gt;&#xA;（20分ほど遅刻しました。ごめんなさい。）&lt;br /&gt;&#xA;焼きそばとお好み焼きを腹いっぱい食べました。でかくてうまかった。&lt;/p&gt;&#xA;&lt;p&gt;その後は、また嵐電に乗って嵐山に行った後、@moccaxと合流して紅葉狩り。&lt;br /&gt;&#xA;とにかく人、人、人。（たまにおっちゃん暴走族）&lt;br /&gt;</description>
+			</item>
+			<item>
+				<title>KOF2010 – 二日目</title>
+				<link>https://blog.tyage.net/archive/p76.html</link>
+				<pubDate>Mon, 08 Nov 2010 10:21:12 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p76.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=71&#34;&gt;KOF2010 – 一日目 | チャゲってる日々 &amp;#8211; @tyage&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この日は同級生の@asi1024を誘って行った。&lt;br /&gt;&#xA;彼は情オリとかSuperConとか出てるし、知り合いもいて楽しそうだった。よかったよかった。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>KOF2010 – 一日目</title>
+				<link>https://blog.tyage.net/archive/p71.html</link>
+				<pubDate>Fri, 05 Nov 2010 15:14:33 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p71.html</guid>
+				<description>&lt;p&gt;金曜だけど保護者会ってことでお昼に学校が終わったので行って来ました。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://k-of.jp/2010/index.html&#34;&gt;KOF2010：関西オープンソース2010&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;思ったほど迷子にならず順調に到着。&lt;br /&gt;&#xA;往復1000円、所要時間は2時間ほど。&lt;br /&gt;&#xA;場所は大阪南港ATC（アジアトレードセンター？）です。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

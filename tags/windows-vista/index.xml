@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Windows Vista on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/windows-vista/</link>
-    <description>Recent content in Windows Vista on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Thu, 18 Nov 2010 13:09:51 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/windows-vista/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>初心者がubuntuを入れるまで</title>
-      <link>https://blog.tyage.net/archive/p122.html</link>
-      <pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p122.html</guid>
-      <description>&lt;h3&gt;経緯&lt;/h3&gt;&#xA;&lt;p&gt;以前に、&lt;a href=&#34;http://tsukulog.info/&#34;&gt;あらゆる物作りレシピ共有サイト「つくログ」&lt;/a&gt;を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html&#34;&gt;PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;↑これ。でかい。2002年もの&lt;/p&gt;&#xA;&lt;p&gt;モニターも一緒にいただいたのだが、モニター用のアダプタがなかったため、ディスプレイなしで操作するわけにもいかず、放置すること数ヶ月。&lt;/p&gt;&#xA;&lt;p&gt;誕生日が来て、軍資金も増えたため、思い切って21.5インチのモニターを買って見た。&lt;br /&gt;&#xA;amazonで送料無料が完全サービス化されたので、amazonさんで人気の高そうなのを選ぶことにする。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/gp/product/B002MRTR26&#34;&gt;Amazon.co.jp： BenQ 21.5型 LCDワイドモニタ E2220HD(グロッシーブラック) E2220HD: パソコン・周辺機器&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;このモニターはamazonが一番安かったため、手は震えていたものの、思い切ってポチッとしてみた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/56906052&#34;&gt;&lt;img src=&#34;http://art31.photozou.jp/pub/673/265673/photo/56906052.jpg&#34; alt=&#34;SH380017&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;画面はきれいだし、薄いため置き場所にも困らず、モニターにはほとんど満足している。&lt;/p&gt;&#xA;&lt;p&gt;&lt;del datetime=&#34;2010-12-15T01:11:28+00:00&#34;&gt;一つ問題点を上げるとすると、やっぱり音が出ないことかな。&lt;br /&gt;&#xA;音声機能はついているのだが、どうも音がうまく出てこない。&lt;br /&gt;&#xA;もちろん設置方法が間違ってるかもしれないけど・・・。&lt;br /&gt;&#xA;&lt;/del&gt;&lt;br /&gt;&#xA;後日試したところ、きちんと音がでました。へ(_ _)へ&lt;/p&gt;&#xA;&lt;p&gt;今、我が家にはテレビがないため、モニターから音が出るとテレビ代わりになってとても助かる。&lt;br /&gt;&#xA;KeyHoleTVバンザイ！&lt;br /&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Windows Vista on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/windows-vista/</link>
+		<description>Recent content in Windows Vista on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 18 Nov 2010 13:09:51 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/windows-vista/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>初心者がubuntuを入れるまで</title>
+				<link>https://blog.tyage.net/archive/p122.html</link>
+				<pubDate>Thu, 18 Nov 2010 13:09:51 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p122.html</guid>
+				<description>&lt;h3&gt;経緯&lt;/h3&gt;&#xA;&lt;p&gt;以前に、&lt;a href=&#34;http://tsukulog.info/&#34;&gt;あらゆる物作りレシピ共有サイト「つくログ」&lt;/a&gt;を開発したのですが、それの共同開発者の方からVAIOをいただいた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://vcl.vaio.sony.co.jp/support/pcom/pcv-rz50.html&#34;&gt;PCV-RZ50 | 製品別情報 | サポート | VAIO | ソニー&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;↑これ。でかい。2002年もの&lt;/p&gt;&#xA;&lt;p&gt;モニターも一緒にいただいたのだが、モニター用のアダプタがなかったため、ディスプレイなしで操作するわけにもいかず、放置すること数ヶ月。&lt;/p&gt;&#xA;&lt;p&gt;誕生日が来て、軍資金も増えたため、思い切って21.5インチのモニターを買って見た。&lt;br /&gt;&#xA;amazonで送料無料が完全サービス化されたので、amazonさんで人気の高そうなのを選ぶことにする。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/gp/product/B002MRTR26&#34;&gt;Amazon.co.jp： BenQ 21.5型 LCDワイドモニタ E2220HD(グロッシーブラック) E2220HD: パソコン・周辺機器&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;このモニターはamazonが一番安かったため、手は震えていたものの、思い切ってポチッとしてみた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://photozou.jp/photo/show/265673/56906052&#34;&gt;&lt;img src=&#34;http://art31.photozou.jp/pub/673/265673/photo/56906052.jpg&#34; alt=&#34;SH380017&#34; width=&#34;450&#34; height=&#34;253&#34; style=&#34;border:0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;画面はきれいだし、薄いため置き場所にも困らず、モニターにはほとんど満足している。&lt;/p&gt;&#xA;&lt;p&gt;&lt;del datetime=&#34;2010-12-15T01:11:28+00:00&#34;&gt;一つ問題点を上げるとすると、やっぱり音が出ないことかな。&lt;br /&gt;&#xA;音声機能はついているのだが、どうも音がうまく出てこない。&lt;br /&gt;&#xA;もちろん設置方法が間違ってるかもしれないけど・・・。&lt;br /&gt;&#xA;&lt;/del&gt;&lt;br /&gt;&#xA;後日試したところ、きちんと音がでました。へ(_ _)へ&lt;/p&gt;&#xA;&lt;p&gt;今、我が家にはテレビがないため、モニターから音が出るとテレビ代わりになってとても助かる。&lt;br /&gt;&#xA;KeyHoleTVバンザイ！&lt;br /&gt;</description>
+			</item>
+	</channel>
 </rss>

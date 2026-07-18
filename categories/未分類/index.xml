@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>未分類 on blog.tyage.net</title>
-    <link>https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/</link>
-    <description>Recent content in 未分類 on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 14 Feb 2018 10:36:25 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ANAプラチナメンバーになりました</title>
-      <link>https://blog.tyage.net/archive/p1113.html</link>
-      <pubDate>Wed, 14 Feb 2018 10:36:25 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p1113.html</guid>
-      <description>&lt;p&gt;2017年はいい感じに飛行機に乗る機会があって、年末修行したら 50022PP (ANA分: 34444PP) になりました。&lt;br /&gt;&#xA;今年度までは学生なのでSFCに申し込めないですが、来年度からSFC会員に申し込もうと思います。(できるのか？)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ハンドルネーム</title>
-      <link>https://blog.tyage.net/archive/p781.html</link>
-      <pubDate>Mon, 19 May 2014 12:19:38 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p781.html</guid>
-      <description>&lt;p&gt;世間が某音楽デュオの話で盛り上がっているのでそれに便乗して&amp;#8230;&lt;/p&gt;&#xA;&lt;p&gt;よく聞かれるのですが、私のハンドルネームがチャゲになったのは、小学校3年生くらいの時からアダ名がそうだったからです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>サイト移転中です</title>
-      <link>https://blog.tyage.net/archive/p683.html</link>
-      <pubDate>Fri, 12 Jul 2013 11:21:52 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p683.html</guid>
-      <description>&lt;p&gt;なかなか時間が取れず、サイトの移転を先延ばしにしていたのですが、移転することになりました。&lt;/p&gt;&#xA;&lt;p&gt;移転元: &lt;a href=&#34;http://tyage.sakura.ne.jp/&#34; title=&#34;http://tyage.sakura.ne.jp/&#34;&gt;http://tyage.sakura.ne.jp/&lt;/a&gt;&lt;br /&gt;&#xA;移転先: &lt;a href=&#34;http://tyage.net/&#34; title=&#34;http://tyage.net/&#34;&gt;http://tyage.net/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;さくらのクラウド二万円クーポンを頂いたため、サーバはそこにおいてあります。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>吐き溜め場</title>
-      <link>https://blog.tyage.net/archive/p411.html</link>
-      <pubDate>Sat, 17 Sep 2011 16:55:21 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p411.html</guid>
-      <description>&lt;p&gt;見るな&lt;/p&gt;&#xA;&lt;p&gt;&lt;script src=&#34;https://gist.github.com/1224129.js?file=gistfile1.txt&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>なんで、私がプログラミングを！？</title>
-      <link>https://blog.tyage.net/archive/p357.html</link>
-      <pubDate>Sat, 21 May 2011 08:02:40 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p357.html</guid>
-      <description>&lt;p&gt;@Sn0wNightによるエクストリーム過去晒しが流行ってたので、時代に乗り遅れつつ僕も書くことにした。&lt;br /&gt;&#xA;参照：&lt;a href=&#34;http://b.zero-signal.net/?p=1704&#34;&gt;僕がプログラミングをはじめたきっかけ &amp;#8211; ごみ箱&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;言語&lt;/h2&gt;&#xA;&lt;p&gt;HTML　親友だと思ってます&lt;br /&gt;&#xA;CSS　たぶん友達&lt;br /&gt;&#xA;JavaScript　幼なじみ、片思い♡&lt;br /&gt;&#xA;PHP　複雑な関係&lt;br /&gt;&#xA;Perl　昔の友達&lt;br /&gt;&#xA;SQL　友達の友達は知り合い&lt;br /&gt;&#xA;Ruby/Python　顔見知り&lt;br /&gt;&#xA;Java/C/C++　プログラミングコンテストでお会いしましたね&lt;br /&gt;</description>
-    </item>
-    <item>
-      <title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title>
-      <link>https://blog.tyage.net/archive/p313.html</link>
-      <pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p313.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;一応&lt;a href=&#34;http://wise9.jp/archives/1004&#34;&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;&#xA;&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;&#xA;&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;&#xA;&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>未分類 on blog.tyage.net</title>
+		<link>https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/</link>
+		<description>Recent content in 未分類 on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 14 Feb 2018 10:36:25 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/categories/%E6%9C%AA%E5%88%86%E9%A1%9E/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>ANAプラチナメンバーになりました</title>
+				<link>https://blog.tyage.net/archive/p1113.html</link>
+				<pubDate>Wed, 14 Feb 2018 10:36:25 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p1113.html</guid>
+				<description>&lt;p&gt;2017年はいい感じに飛行機に乗る機会があって、年末修行したら 50022PP (ANA分: 34444PP) になりました。&lt;br /&gt;&#xA;今年度までは学生なのでSFCに申し込めないですが、来年度からSFC会員に申し込もうと思います。(できるのか？)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ハンドルネーム</title>
+				<link>https://blog.tyage.net/archive/p781.html</link>
+				<pubDate>Mon, 19 May 2014 12:19:38 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p781.html</guid>
+				<description>&lt;p&gt;世間が某音楽デュオの話で盛り上がっているのでそれに便乗して&amp;#8230;&lt;/p&gt;&#xA;&lt;p&gt;よく聞かれるのですが、私のハンドルネームがチャゲになったのは、小学校3年生くらいの時からアダ名がそうだったからです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>サイト移転中です</title>
+				<link>https://blog.tyage.net/archive/p683.html</link>
+				<pubDate>Fri, 12 Jul 2013 11:21:52 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p683.html</guid>
+				<description>&lt;p&gt;なかなか時間が取れず、サイトの移転を先延ばしにしていたのですが、移転することになりました。&lt;/p&gt;&#xA;&lt;p&gt;移転元: &lt;a href=&#34;http://tyage.sakura.ne.jp/&#34; title=&#34;http://tyage.sakura.ne.jp/&#34;&gt;http://tyage.sakura.ne.jp/&lt;/a&gt;&lt;br /&gt;&#xA;移転先: &lt;a href=&#34;http://tyage.net/&#34; title=&#34;http://tyage.net/&#34;&gt;http://tyage.net/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;さくらのクラウド二万円クーポンを頂いたため、サーバはそこにおいてあります。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>吐き溜め場</title>
+				<link>https://blog.tyage.net/archive/p411.html</link>
+				<pubDate>Sat, 17 Sep 2011 16:55:21 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p411.html</guid>
+				<description>&lt;p&gt;見るな&lt;/p&gt;&#xA;&lt;p&gt;&lt;script src=&#34;https://gist.github.com/1224129.js?file=gistfile1.txt&#34;&gt;&lt;/script&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>なんで、私がプログラミングを！？</title>
+				<link>https://blog.tyage.net/archive/p357.html</link>
+				<pubDate>Sat, 21 May 2011 08:02:40 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p357.html</guid>
+				<description>&lt;p&gt;@Sn0wNightによるエクストリーム過去晒しが流行ってたので、時代に乗り遅れつつ僕も書くことにした。&lt;br /&gt;&#xA;参照：&lt;a href=&#34;http://b.zero-signal.net/?p=1704&#34;&gt;僕がプログラミングをはじめたきっかけ &amp;#8211; ごみ箱&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;言語&lt;/h2&gt;&#xA;&lt;p&gt;HTML　親友だと思ってます&lt;br /&gt;&#xA;CSS　たぶん友達&lt;br /&gt;&#xA;JavaScript　幼なじみ、片思い♡&lt;br /&gt;&#xA;PHP　複雑な関係&lt;br /&gt;&#xA;Perl　昔の友達&lt;br /&gt;&#xA;SQL　友達の友達は知り合い&lt;br /&gt;&#xA;Ruby/Python　顔見知り&lt;br /&gt;&#xA;Java/C/C++　プログラミングコンテストでお会いしましたね&lt;br /&gt;</description>
+			</item>
+			<item>
+				<title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title>
+				<link>https://blog.tyage.net/archive/p313.html</link>
+				<pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p313.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;一応&lt;a href=&#34;http://wise9.jp/archives/1004&#34;&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;&#xA;&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;&#xA;&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;&#xA;&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

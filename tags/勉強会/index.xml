@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>勉強会 on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
-    <description>Recent content in 勉強会 on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 06 Apr 2011 05:45:55 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Go言語勉強会＠はてな</title>
-      <link>https://blog.tyage.net/archive/p319.html</link>
-      <pubDate>Wed, 06 Apr 2011 05:45:55 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p319.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://onsg.techtalk.jp/13&#34;&gt;第13回 テーマ「Go言語」 &amp;#8211; Online.sg&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Go本を書いた @umisama 氏を講師に、半年ぶりのOnline.sgでした。&lt;/p&gt;&#xA;&lt;p&gt;会場は ㈱はてな でした。&lt;br /&gt;&#xA;会場提供ありがとうございますた。&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka</title>
-      <link>https://blog.tyage.net/archive/p301.html</link>
-      <pubDate>Thu, 24 Mar 2011 04:34:50 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p301.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://matcha139.hiemalis.org/hiki/?%C2%E822%B2%F3%A4%DE%A4%C3%A4%C1%A4%E3%A3%B1%A3%B3%A3%B9%CA%D9%B6%AF%B2%F1&#34;&gt;まっちゃ１３９ Hiki &amp;#8211; 第22回まっちゃ１３９勉強会＋セキュリティキャンプ・キャラバン in Osaka&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://togetter.com/li/111522&#34;&gt;Togetter &amp;#8211; 「第22回まっちゃ１３９勉強会＋セキュリティキャンプキャラバン in Osakaの参加者によるTweetまとめ」&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>勉強会 on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
+		<description>Recent content in 勉強会 on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 06 Apr 2011 05:45:55 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Go言語勉強会＠はてな</title>
+				<link>https://blog.tyage.net/archive/p319.html</link>
+				<pubDate>Wed, 06 Apr 2011 05:45:55 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p319.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://onsg.techtalk.jp/13&#34;&gt;第13回 テーマ「Go言語」 &amp;#8211; Online.sg&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Go本を書いた @umisama 氏を講師に、半年ぶりのOnline.sgでした。&lt;/p&gt;&#xA;&lt;p&gt;会場は ㈱はてな でした。&lt;br /&gt;&#xA;会場提供ありがとうございますた。&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>第22回まっちゃ１３９勉強会＋セプキャン・キャラバン in Osaka</title>
+				<link>https://blog.tyage.net/archive/p301.html</link>
+				<pubDate>Thu, 24 Mar 2011 04:34:50 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p301.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://matcha139.hiemalis.org/hiki/?%C2%E822%B2%F3%A4%DE%A4%C3%A4%C1%A4%E3%A3%B1%A3%B3%A3%B9%CA%D9%B6%AF%B2%F1&#34;&gt;まっちゃ１３９ Hiki &amp;#8211; 第22回まっちゃ１３９勉強会＋セキュリティキャンプ・キャラバン in Osaka&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://togetter.com/li/111522&#34;&gt;Togetter &amp;#8211; 「第22回まっちゃ１３９勉強会＋セキュリティキャンプキャラバン in Osakaの参加者によるTweetまとめ」&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>試験 on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/%E8%A9%A6%E9%A8%93/</link>
-    <description>Recent content in 試験 on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 08 Dec 2010 12:43:37 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/%E8%A9%A6%E9%A8%93/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>試験対策 – 日本史</title>
-      <link>https://blog.tyage.net/archive/p155.html</link>
-      <pubDate>Wed, 08 Dec 2010 12:43:37 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p155.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=145&#34;&gt;前回の地理まとめ&lt;/a&gt;がちょっと好評だったため、日本史まとめもしちゃう。&lt;/p&gt;&#xA;&lt;p&gt;テストの点数が上がる保障はありません。&lt;br /&gt;&#xA;これを使った僕自身、地理のテストに関しては、いつもの数倍勉強した割に、いつも通り空白が・・・。&lt;br /&gt;&#xA;内容の暗記はできてたけど、問われ方を変えられるとぜんぜん思い出せないのよねん。。。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>期末試験対策 – 地理</title>
-      <link>https://blog.tyage.net/archive/p145.html</link>
-      <pubDate>Tue, 07 Dec 2010 06:04:39 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p145.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=143&#34;&gt;前回作った赤シートツール&lt;/a&gt;を使って地理のまとめを作り上げることにします。&lt;/p&gt;&#xA;&lt;p&gt;いつも試験のたびに勉強資料を提供してくださるN様も地理の写真をupするようですが、自分の勉強のためにもやっておこうと。&lt;br /&gt;&#xA;ちなみに歴史もやる予定。&lt;br /&gt;&#xA;足らないとことかミスとかあるし、誰か改良してくれるとありがたいけど、誰もしないよねー&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>試験 on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/%E8%A9%A6%E9%A8%93/</link>
+		<description>Recent content in 試験 on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 08 Dec 2010 12:43:37 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/%E8%A9%A6%E9%A8%93/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>試験対策 – 日本史</title>
+				<link>https://blog.tyage.net/archive/p155.html</link>
+				<pubDate>Wed, 08 Dec 2010 12:43:37 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p155.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=145&#34;&gt;前回の地理まとめ&lt;/a&gt;がちょっと好評だったため、日本史まとめもしちゃう。&lt;/p&gt;&#xA;&lt;p&gt;テストの点数が上がる保障はありません。&lt;br /&gt;&#xA;これを使った僕自身、地理のテストに関しては、いつもの数倍勉強した割に、いつも通り空白が・・・。&lt;br /&gt;&#xA;内容の暗記はできてたけど、問われ方を変えられるとぜんぜん思い出せないのよねん。。。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>期末試験対策 – 地理</title>
+				<link>https://blog.tyage.net/archive/p145.html</link>
+				<pubDate>Tue, 07 Dec 2010 06:04:39 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p145.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=143&#34;&gt;前回作った赤シートツール&lt;/a&gt;を使って地理のまとめを作り上げることにします。&lt;/p&gt;&#xA;&lt;p&gt;いつも試験のたびに勉強資料を提供してくださるN様も地理の写真をupするようですが、自分の勉強のためにもやっておこうと。&lt;br /&gt;&#xA;ちなみに歴史もやる予定。&lt;br /&gt;&#xA;足らないとことかミスとかあるし、誰か改良してくれるとありがたいけど、誰もしないよねー&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

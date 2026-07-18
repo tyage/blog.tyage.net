@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>PHP on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/php/</link>
-    <description>Recent content in PHP on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Fri, 04 Mar 2011 11:30:49 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pear</title>
-      <link>https://blog.tyage.net/archive/p276.html</link>
-      <pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p276.html</guid>
-      <description>&lt;p&gt;Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。&lt;/p&gt;&#xA;&lt;p&gt;少なくともLhaplusだと解凍できなかった。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>赤シート2.0</title>
-      <link>https://blog.tyage.net/archive/p143.html</link>
-      <pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p143.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/&#34;&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;&#xA;&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;&#xA;どうしても電源を入れる癖がある。&lt;br /&gt;&#xA;しかし&lt;a href=&#34;http://smart.fm/home&#34;&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;&#xA;&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;&#xA;しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>PHP on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/php/</link>
+		<description>Recent content in PHP on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 04 Mar 2011 11:30:49 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/php/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pear</title>
+				<link>https://blog.tyage.net/archive/p276.html</link>
+				<pubDate>Fri, 04 Mar 2011 11:30:49 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p276.html</guid>
+				<description>&lt;p&gt;Pearからコマンドでインストールするのではなく、手動でダウンロードして解凍するときは、「解凍レンジ」を使ったほうがよい。&lt;/p&gt;&#xA;&lt;p&gt;少なくともLhaplusだと解凍できなかった。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>赤シート2.0</title>
+				<link>https://blog.tyage.net/archive/p143.html</link>
+				<pubDate>Thu, 02 Dec 2010 14:26:53 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p143.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/dev/study/&#34;&gt;赤シート2.0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;試験前だが、ふと思い立って作った。&lt;/p&gt;&#xA;&lt;p&gt;自分はPCがあると勉強ができない。&lt;br /&gt;&#xA;どうしても電源を入れる癖がある。&lt;br /&gt;&#xA;しかし&lt;a href=&#34;http://smart.fm/home&#34;&gt;Smart.fm&lt;/a&gt;は嫌いじゃないし、もしかしたらPCを使えば集中できるのではなかろうかと。&lt;/p&gt;&#xA;&lt;p&gt;とは言うものの、今まで試験中にPCをつけると、TwitterをしたりSkypeをしたりするため、うまくいったためしがない。&lt;br /&gt;&#xA;しかしサービスの開発中は、Skypeで呼び出されようが、TwitterでReplyが来ようが、無視するくらい集中できる自信はある。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

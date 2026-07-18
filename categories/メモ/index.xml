@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>メモ on blog.tyage.net</title>
-    <link>https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/</link>
-    <description>Recent content in メモ on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 05 Dec 2016 12:24:31 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title>
-      <link>https://blog.tyage.net/archive/p944.html</link>
-      <pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p944.html</guid>
-      <description>&lt;p&gt;こんにちは.&lt;br /&gt;&#xA;KMC5回生のtyageです.&lt;/p&gt;&#xA;&lt;p&gt;この記事は, &lt;a href=&#34;http://www.adventar.org/calendars/1444&#34;&gt;KMCアドベントカレンダー&lt;/a&gt; 5日目の記事です.&lt;br /&gt;&#xA;昨日はnonyleneさんの &lt;a href=&#34;http://nonylene.hatenablog.jp/entry/2016/12/05/052817&#34;&gt;Android Studio をビルドする&lt;/a&gt; でした.&lt;/p&gt;&#xA;&lt;p&gt;唐突ですが, 今日はPHPの話をします.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>:visitedセレクタのプライバシー問題とSNSでの利用</title>
-      <link>https://blog.tyage.net/archive/p848.html</link>
-      <pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p848.html</guid>
-      <description>&lt;h2&gt;追記(2015年9月9日)&lt;/h2&gt;&#xA;&lt;p&gt;以下の記事は、2015年1月4日時点での内容となります。&lt;/p&gt;&#xA;&lt;p&gt;2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>録画環境を構築した</title>
-      <link>https://blog.tyage.net/archive/p762.html</link>
-      <pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p762.html</guid>
-      <description>&lt;h2&gt;環境&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.tyage.net/?p=455&#34;&gt;ハードはこれ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;OSは未だにUbuntu 12.04&lt;/p&gt;&#xA;&lt;h2&gt;録画するまで&lt;/h2&gt;&#xA;&lt;p&gt;ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>スペインでFirefox OS端末は買えるのか？</title>
-      <link>https://blog.tyage.net/archive/p739.html</link>
-      <pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p739.html</guid>
-      <description>&lt;p&gt;この記事は&lt;a href=&#34;http://d.hatena.ne.jp/kmc-log/20131126/1385474872&#34;&gt;KMCアドベントカレンダー&lt;/a&gt;の4日目の記事です。&lt;/p&gt;&#xA;&lt;p&gt;1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。&lt;/p&gt;&#xA;&lt;p&gt;僕は10月末〜11月初めまで、&lt;a href=&#34;https://ctftime.org/ctf/70&#34;&gt;Facebook CTF決勝&lt;/a&gt;のためにチームEpsilonDeltaの4人でスペインにいました。&lt;br /&gt;&#xA;その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>何か吐き出さないとなあ</title>
-      <link>https://blog.tyage.net/archive/p605.html</link>
-      <pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p605.html</guid>
-      <description>&lt;p&gt;　&lt;br /&gt;&#xA;ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。&lt;br /&gt;&#xA;いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>google mapsでマーカーに文字を表示させたい</title>
-      <link>https://blog.tyage.net/archive/p243.html</link>
-      <pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p243.html</guid>
-      <description>&lt;p&gt;たとえばマーカーのアイコン画像の下に文字を表示したい。&lt;/p&gt;&#xA;&lt;p&gt;こんな感じに&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34;&gt;&lt;img data-attachment-id=&#34;244&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=244&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-orig-size=&#34;370,330&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;maps&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; alt=&#34;&#34; title=&#34;maps&#34; width=&#34;370&#34; height=&#34;330&#34; class=&#34;alignnone size-full wp-image-244&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>メモ on blog.tyage.net</title>
+		<link>https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/</link>
+		<description>Recent content in メモ on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 05 Dec 2016 12:24:31 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/categories/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>嘘つきPHP ZipArchive::addGlobと壊れたファイルパス</title>
+				<link>https://blog.tyage.net/archive/p944.html</link>
+				<pubDate>Mon, 05 Dec 2016 12:24:31 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p944.html</guid>
+				<description>&lt;p&gt;こんにちは.&lt;br /&gt;&#xA;KMC5回生のtyageです.&lt;/p&gt;&#xA;&lt;p&gt;この記事は, &lt;a href=&#34;http://www.adventar.org/calendars/1444&#34;&gt;KMCアドベントカレンダー&lt;/a&gt; 5日目の記事です.&lt;br /&gt;&#xA;昨日はnonyleneさんの &lt;a href=&#34;http://nonylene.hatenablog.jp/entry/2016/12/05/052817&#34;&gt;Android Studio をビルドする&lt;/a&gt; でした.&lt;/p&gt;&#xA;&lt;p&gt;唐突ですが, 今日はPHPの話をします.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>:visitedセレクタのプライバシー問題とSNSでの利用</title>
+				<link>https://blog.tyage.net/archive/p848.html</link>
+				<pubDate>Sun, 04 Jan 2015 07:22:14 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p848.html</guid>
+				<description>&lt;h2&gt;追記(2015年9月9日)&lt;/h2&gt;&#xA;&lt;p&gt;以下の記事は、2015年1月4日時点での内容となります。&lt;/p&gt;&#xA;&lt;p&gt;2015年9月9日時点において、IE11で:visitedなリンクに対して透過度を変更できる仕様は修正されているようです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>録画環境を構築した</title>
+				<link>https://blog.tyage.net/archive/p762.html</link>
+				<pubDate>Mon, 17 Feb 2014 16:43:22 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p762.html</guid>
+				<description>&lt;h2&gt;環境&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://blog.tyage.net/?p=455&#34;&gt;ハードはこれ&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;OSは未だにUbuntu 12.04&lt;/p&gt;&#xA;&lt;h2&gt;録画するまで&lt;/h2&gt;&#xA;&lt;p&gt;ここ数カ月はサラリーマン生活をしていて、朝10時に出勤しているのだけど、そうなるとさすがに夜更しがつらくなってきた。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>スペインでFirefox OS端末は買えるのか？</title>
+				<link>https://blog.tyage.net/archive/p739.html</link>
+				<pubDate>Wed, 04 Dec 2013 06:07:34 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p739.html</guid>
+				<description>&lt;p&gt;この記事は&lt;a href=&#34;http://d.hatena.ne.jp/kmc-log/20131126/1385474872&#34;&gt;KMCアドベントカレンダー&lt;/a&gt;の4日目の記事です。&lt;/p&gt;&#xA;&lt;p&gt;1〜3日目の人達は技術系の記事を書いているため、僕は少し緩めの話をしようと思います。&lt;/p&gt;&#xA;&lt;p&gt;僕は10月末〜11月初めまで、&lt;a href=&#34;https://ctftime.org/ctf/70&#34;&gt;Facebook CTF決勝&lt;/a&gt;のためにチームEpsilonDeltaの4人でスペインにいました。&lt;br /&gt;&#xA;その時に、スペインで販売されているFirefox OS搭載の端末「ZTE Open」を購入しようとしたという話です。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>何か吐き出さないとなあ</title>
+				<link>https://blog.tyage.net/archive/p605.html</link>
+				<pubDate>Sun, 18 Nov 2012 15:32:58 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p605.html</guid>
+				<description>&lt;p&gt;　&lt;br /&gt;&#xA;ここんところ某つぶやきサイトでうだうだ言ってるだけで、こうやって書くことがないからか、よくわからないストレスが溜まっている。&lt;br /&gt;&#xA;いろいろなことがあって（でも何もできてないのだけど）何か書かないといけないと思った。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>google mapsでマーカーに文字を表示させたい</title>
+				<link>https://blog.tyage.net/archive/p243.html</link>
+				<pubDate>Wed, 19 Jan 2011 15:10:49 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p243.html</guid>
+				<description>&lt;p&gt;たとえばマーカーのアイコン画像の下に文字を表示したい。&lt;/p&gt;&#xA;&lt;p&gt;こんな感じに&lt;br /&gt;&#xA;&lt;a href=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34;&gt;&lt;img data-attachment-id=&#34;244&#34; data-permalink=&#34;https://blog.tyage.net/?attachment_id=244&#34; data-orig-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-orig-size=&#34;370,330&#34; data-comments-opened=&#34;1&#34; data-image-meta=&#34;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&#34; data-image-title=&#34;maps&#34; data-image-description=&#34;&#34; data-medium-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; data-large-file=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; src=&#34;https://blog.tyage.net/wp-content/uploads/2011/01/maps.png&#34; alt=&#34;&#34; title=&#34;maps&#34; width=&#34;370&#34; height=&#34;330&#34; class=&#34;alignnone size-full wp-image-244&#34; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;この画像ではマーカーの代わりにoverlayViewを継承したカスタムオーバーレイを使っている。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

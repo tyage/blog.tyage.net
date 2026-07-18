@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Google Chrome on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/google-chrome/</link>
-    <description>Recent content in Google Chrome on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 11 Dec 2010 07:57:07 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/google-chrome/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>JOIの解答がGoogle Chromeで提出できないという話</title>
-      <link>https://blog.tyage.net/archive/p164.html</link>
-      <pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p164.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;現象&lt;/h2&gt;&#xA;&lt;p&gt;なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Google Chrome on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/google-chrome/</link>
+		<description>Recent content in Google Chrome on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 11 Dec 2010 07:57:07 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/google-chrome/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>JOIの解答がGoogle Chromeで提出できないという話</title>
+				<link>https://blog.tyage.net/archive/p164.html</link>
+				<pubDate>Sat, 11 Dec 2010 07:57:07 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p164.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://www.ioi-jp.org/&#34;&gt;情報オリンピック日本委員会&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2&gt;現象&lt;/h2&gt;&#xA;&lt;p&gt;なーんかJOIの予選練習問題解いてたら、@asi1024がChromeでCのソースコードをアップできないって言うんで、どういうことかなーって思ってたら、後日JOIから発表があった。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

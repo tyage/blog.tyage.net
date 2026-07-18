@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Givemac on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/givemac/</link>
-    <description>Recent content in Givemac on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Tue, 05 Apr 2011 16:00:42 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/givemac/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title>
-      <link>https://blog.tyage.net/archive/p315.html</link>
-      <pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p315.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=313&#34;&gt;前の記事&lt;/a&gt;の内容を修正して、スライドにまとめてみた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;スライド&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/js/boku2d-base.js&#34;&gt;boku2d(仮)&lt;/a&gt;という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br /&gt;&#xA;このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p&gt;&#xA;&lt;p&gt;メインのコードは以下のような感じ。&lt;/p&gt;&#xA;&lt;p&gt;コピペっぽいところがあるのはご愛嬌。&lt;br /&gt;&#xA;（時間的に少し焦ってた）&lt;/p&gt;&#xA;&lt;p&gt;</description>
-    </item>
-    <item>
-      <title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title>
-      <link>https://blog.tyage.net/archive/p313.html</link>
-      <pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p313.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;一応&lt;a href=&#34;http://wise9.jp/archives/1004&#34;&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;&#xA;&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;&#xA;&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;&#xA;&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Givemac on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/givemac/</link>
+		<description>Recent content in Givemac on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 05 Apr 2011 16:00:42 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/givemac/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>ソーシャルゲームはどのように社会へ貢献していくか #givemac2</title>
+				<link>https://blog.tyage.net/archive/p315.html</link>
+				<pubDate>Tue, 05 Apr 2011 16:00:42 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p315.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/blog/?p=313&#34;&gt;前の記事&lt;/a&gt;の内容を修正して、スライドにまとめてみた。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;スライド&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/js/boku2d-base.js&#34;&gt;boku2d(仮)&lt;/a&gt;という自作のライブラリを使ってナビゲーション部分を実装した。&lt;br /&gt;&#xA;このエンジンも判定に含めてくれるとうれしいなぁ。&lt;/p&gt;&#xA;&lt;p&gt;メインのコードは以下のような感じ。&lt;/p&gt;&#xA;&lt;p&gt;コピペっぽいところがあるのはご愛嬌。&lt;br /&gt;&#xA;（時間的に少し焦ってた）&lt;/p&gt;&#xA;&lt;p&gt;</description>
+			</item>
+			<item>
+				<title>ソーシャルゲームはどのように社会へ貢献していくか（α）</title>
+				<link>https://blog.tyage.net/archive/p313.html</link>
+				<pubDate>Mon, 04 Apr 2011 09:20:52 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p313.html</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;http://tyage.sakura.ne.jp/givemac2&#34;&gt;提出したスライドはこちら&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;一応&lt;a href=&#34;http://wise9.jp/archives/1004&#34;&gt;givemac2&lt;/a&gt;用の記事。&lt;/p&gt;&#xA;&lt;p&gt;少し設問とずれた話になりそうなので、提出するかどうかは迷い中。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず思いついたことをだらだらと書いてみた。&lt;/p&gt;&#xA;&lt;p&gt;ほとんど自分の話だから注意。&lt;/p&gt;&#xA;&lt;h2&gt;ソーシャルとゲーム&lt;/h2&gt;&#xA;&lt;p&gt;ソーシャルゲームの社会貢献について考えていく上で、ソーシャルとゲームがそれぞれどのような役割を担うことができるかについて考えてみました。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

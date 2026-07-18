@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Redmine on blog.tyage.net</title>
-    <link>https://blog.tyage.net/tags/redmine/</link>
-    <description>Recent content in Redmine on blog.tyage.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 14 Mar 2011 15:51:18 +0000</lastBuildDate>
-    <atom:link href="https://blog.tyage.net/tags/redmine/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Redmine設置した。</title>
-      <link>https://blog.tyage.net/archive/p296.html</link>
-      <pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate>
-      <guid>https://blog.tyage.net/archive/p296.html</guid>
-      <description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;&#xA;&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;&#xA;&lt;div class=&#34;wp_syntax&#34; style=&#34;position:relative;&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre class=&#34;bash&#34; style=&#34;font-family:monospace;&#34;&gt;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; rubygems&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; ruby&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;git&lt;/span&gt;&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; rails&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; heroku&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&#xA;&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Redmine on blog.tyage.net</title>
+		<link>https://blog.tyage.net/tags/redmine/</link>
+		<description>Recent content in Redmine on blog.tyage.net</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 14 Mar 2011 15:51:18 +0000</lastBuildDate>
+		
+			<atom:link href="https://blog.tyage.net/tags/redmine/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Redmine設置した。</title>
+				<link>https://blog.tyage.net/archive/p296.html</link>
+				<pubDate>Mon, 14 Mar 2011 15:51:18 +0000</pubDate>
+				<guid>https://blog.tyage.net/archive/p296.html</guid>
+				<description>&lt;p&gt;なんとか設置できたものの、時間がかかったのでそれの記録。&lt;/p&gt;&#xA;&lt;p&gt;まず事前に必要なものをインストールする。&lt;/p&gt;&#xA;&lt;div class=&#34;wp_syntax&#34; style=&#34;position:relative;&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre class=&#34;bash&#34; style=&#34;font-family:monospace;&#34;&gt;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; rubygems&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; ruby&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;apt-get install&lt;/span&gt; &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;git&lt;/span&gt;&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; rails&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; heroku&#xA;&lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;sudo&lt;/span&gt; gem &lt;span style=&#34;color: #c20cb9; font-weight: bold;&#34;&gt;install&lt;/span&gt; sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&#xA;&lt;p&gt;と、ここでエラーが出て、どうやらsqlite3がインストールできないことが分かるが無視して続行&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
