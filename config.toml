@@ -1,5 +1,6 @@
 baseURL = "https://blog.tyage.net"
-languageCode = "en-us"
+languageCode = "ja-jp"
+hasCJKLanguage = true
 title = "blog.tyage.net"
 theme = "gokarna"
 
