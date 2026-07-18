@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://blog.tyage.net/sitemap.xml
