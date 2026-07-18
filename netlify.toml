@@ -5,6 +5,11 @@
 [build.environment]
   HUGO_VERSION = "0.152.2"
 
+# Preserve legacy article URLs ending in .html.
+# This file-based setting overrides the Pretty URLs setting in the Netlify UI.
+[build.processing.html]
+  pretty_urls = false
+
 # https://fed.brid.gy/docs#redirect+these+URL+paths
 [[redirects]]
   from = "/.well-known/host-meta*"
