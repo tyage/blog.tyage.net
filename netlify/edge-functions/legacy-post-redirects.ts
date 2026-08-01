@@ -25,16 +25,8 @@ export default function legacyPostRedirect(request: Request) {
       return Response.redirect(destination, 301);
     }
   }
-
-  const extensionlessPost = url.pathname.match(/^\/archive\/p(\d+)$/);
-
-  if (extensionlessPost !== null && legacyPostIds.has(extensionlessPost[1])) {
-    url.pathname = `${url.pathname}.html`;
-
-    return Response.redirect(url, 301);
-  }
 }
 
 export const config = {
-  path: ["/", "/archive/*"],
+  path: "/",
 };
