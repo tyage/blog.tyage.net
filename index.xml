@@ -14,7 +14,7 @@
 		
 			<atom:link href="https://blog.tyage.net/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Leaking cross-origin text through scroll-into-view</title>
+				<title>An XS-Leak to read cross-origin text through scroll-into-view</title>
 				<link>https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/</link>
 				<pubDate>Fri, 30 Oct 2026 00:00:00 +0900</pubDate>
 				<guid>https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/</guid>
