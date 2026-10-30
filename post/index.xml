@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Fri, 05 Dec 2025 23:30:00 +0900</lastBuildDate>
+			<lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0900</lastBuildDate>
 		
 			<atom:link href="https://blog.tyage.net/post/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Leaking cross-origin text through scroll-into-view</title>
+				<link>https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/</link>
+				<pubDate>Fri, 30 Oct 2026 00:00:00 +0900</pubDate>
+				<guid>https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A few weeks ago, I created a challenge for IERAE CTF 2026 - FINAL for Humans Round 1. The challenge asked how to extract text embedded in an iframe when you can apply some CSS to it.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/tyage/dopa-secret&#34;&gt;https://github.com/tyage/dopa-secret&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this post, I describe an XS-Leaks technique that, to the best of my knowledge, is new. It measures the size of elements rendered inside a cross-origin iframe and, ultimately, recovers text rendered inside it, as shown below. This technique relies on behavior present in Google Chrome (version 156.0.8078.80) and may affect sites that can be embedded by other sites, under certain conditions. (&lt;a href=&#34;https://gist.github.com/tyage/87abb8a92bb4652eeb3f806eaa3d022e&#34;&gt;PoC&lt;/a&gt;)&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>実践 Webペネトレーションテストを出版しました！</title>
 				<link>https://blog.tyage.net/post/2025/2025-12-05-practical-web-pentest/</link>

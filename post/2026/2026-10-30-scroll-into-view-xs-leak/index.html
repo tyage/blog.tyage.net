@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Leaking cross-origin text through scroll-into-view</title>
+    <meta name="description" content="Introduction A few weeks ago, I created a challenge for IERAE CTF 2026 - FINAL for Humans Round 1. The challenge asked how to extract text embedded in an iframe …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Leaking cross-origin text through scroll-into-view">
+    <meta property="og:description" content="Introduction A few weeks ago, I created a challenge for IERAE CTF 2026 - FINAL for Humans Round 1. The challenge asked how to extract text embedded in an iframe …">
+    <meta property="og:image" content="https://blog.tyage.net/icon/icon.jpg">
+    <meta property="og:image:secure_url" content="https://blog.tyage.net/icon/icon.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Leaking cross-origin text through scroll-into-view">
+    <meta name="twitter:description" content="Introduction A few weeks ago, I created a challenge for IERAE CTF 2026 - FINAL for Humans Round 1. The challenge asked how to extract text embedded in an iframe …">
+    <meta property="twitter:domain" content="https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/">
+    <meta property="twitter:url" content="https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/">
+    <meta name="twitter:image" content="https://blog.tyage.net/icon/icon.jpg">
+
+    
+    <link rel="canonical" href="https://blog.tyage.net/post/2026/2026-10-30-scroll-into-view-xs-leak/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7136b4abac7b277aba8bc933917f4602d39a5c44f5590be687244bc86ef4f162.js" integrity="sha256-cTa0q6x7J3q6i8kzkX9GAtOaXET1WQvmhyRLyG708WI="></script>
+
+    
+
+    
+    
+    <link rel="webmention" href="https://webmention.io/blog.tyage.net/webmention" />
+<link rel="pingback" href="https://webmention.io/blog.tyage.net/xmlrpc" />
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C64TPJYY96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C64TPJYY96');
+</script>
+  
+    
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.tyage.net/">
+                <img src='/icon/icon.jpg' alt="avatar">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.tyage.net/">blog.tyage.net</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/post" aria-label="Posts" ><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.tyage.net/index.xml" aria-label="rss" ><span data-feather='rss'></span> RSS </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tyage.net" aria-label="About me" ><span data-feather='home'></span> About me </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/post" ><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.tyage.net/index.xml" ><span data-feather='rss'></span> RSS </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tyage.net" ><span data-feather='home'></span> About me </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container h-entry">
+    <div class="post-header-section">
+        <h1>Leaking cross-origin text through scroll-into-view</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              2026/10/30
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div class="e-content">
+            <h2 id="introduction">Introduction</h2>
+<p>A few weeks ago, I created a challenge for IERAE CTF 2026 - FINAL for Humans Round 1. The challenge asked how to extract text embedded in an iframe when you can apply some CSS to it.</p>
+<p><a href="https://github.com/tyage/dopa-secret">https://github.com/tyage/dopa-secret</a></p>
+<p>In this post, I describe an XS-Leaks technique that, to the best of my knowledge, is new. It measures the size of elements rendered inside a cross-origin iframe and, ultimately, recovers text rendered inside it, as shown below. This technique relies on behavior present in Google Chrome (version 156.0.8078.80) and may affect sites that can be embedded by other sites, under certain conditions. (<a href="https://gist.github.com/tyage/87abb8a92bb4652eeb3f806eaa3d022e">PoC</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>  #secret {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font</span>: <span style="color:#ae81ff">700</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span><span style="color:#f92672">/</span><span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span> Georgia, <span style="color:#66d9ef">serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">word-break</span>: break-all;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;secret&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://app/?code=secret&#34;</span>&gt;http://app/?code=secret&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p><img src="poc.gif" alt="Proof of concept recovering text from a cross-origin iframe"></p>
+<h2 id="1-scroll-into-view-crosses-origin-boundaries">1. scroll-into-view crosses origin boundaries</h2>
+<h3 id="how-scroll-into-view-works">How scroll-into-view works</h3>
+<p>When an off-screen element on a web page receives focus, browsers such as Google Chrome scroll the page to bring it into view (<a href="https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/scroll/scroll_into_view_util.cc;drc=3d627c11389dc4fe09c777f92377d0726dd79a2e">scroll-into-view</a>). A typical example is when the page scrolls to an off-screen form field or button as you move focus with the Tab key.</p>
+<h3 id="scroll-propagation-to-the-parent-frame">Scroll propagation to the parent frame</h3>
+<p>Consider a scenario in which an attacker-controlled parent frame (Attacker frame) embeds a cross-origin site (App iframe).</p>
+<p>Attacker frame (parent frame):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 100px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://app/&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;300px&#34;</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
+</span></span></code></pre></div><p>App iframe ( <code>http://app/</code> ):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 100px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;secret&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://app/?code=secret&#34;</span>&gt;http://app/?code=secret&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>Suppose the Attacker frame&rsquo;s window is only <code>100px</code> tall, while the App iframe is <code>300px</code> tall. The iframe is tall enough to render the link (<code>&lt;a id=&quot;secret&quot;&gt;</code>), but the parent frame shows only its top portion, so the link sits outside the viewport.</p>
+<p><img src="iframe-before-scroll.png" alt="The link inside the app iframe is outside the parent viewport"></p>
+<p><em>The link inside the App iframe is not visible</em></p>
+<p>Now, if the iframe is loaded with a fragment URL such as <code>http://app/#secret</code>, the following happens:</p>
+<ol>
+<li>The link with <code>id=&quot;secret&quot;</code> receives focus.</li>
+<li>To bring the element into view, Google Chrome <a href="https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/scroll/scroll_into_view_util.cc;l=296;drc=3d627c11389dc4fe09c777f92377d0726dd79a2e">automatically scrolls the parent frame (Attacker frame)</a>.</li>
+</ol>
+<p><img src="iframe-after-scroll.png" alt="The parent frame scrolls to reveal the link"></p>
+<p><em>The Attacker frame scrolls</em></p>
+<p>Crucially, <strong>scroll-into-view propagates across origins to the parent frame</strong>. By reading its own scroll position, the parent frame can tell where the focused element inside the child iframe is located.</p>
+<h2 id="2-measuring-element-height-and-width-from-scroll-offsets">2. Measuring element height and width from scroll offsets</h2>
+<p>In Chrome, the final scroll position depends not only on an element&rsquo;s coordinates but also on <strong>its height and width</strong>. This lets a cross-origin page infer the size of the target element.</p>
+<h3 id="a-simplified-model">A simplified model</h3>
+<ul>
+<li>Height of the parent frame&rsquo;s window: <em>V</em></li>
+<li>Scroll offset of the parent frame: <em>scrollY</em></li>
+<li>Top edge of the target element inside the child iframe, relative to the top of the parent frame: <em>Y</em></li>
+<li>Height of the target element: <em>H</em></li>
+</ul>
+<p>Assume the parent frame starts at <em>scrollY</em> = 0 and the iframe is tall enough.</p>
+<p>Depending on where the element sits before scrolling, the final <em>scrollY</em> is roughly as follows:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Case</th>
+					<th>Condition</th>
+					<th>Scroll behavior</th>
+					<th>Final <em>scrollY</em></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Element is already visible</strong></td>
+					<td><em>Y</em> + <em>H</em> ≤ <em>V</em></td>
+					<td>No scroll</td>
+					<td><em>scrollY</em> = 0</td>
+			</tr>
+			<tr>
+					<td><strong>Partially visible (too tall to fit)</strong></td>
+					<td><em>Y</em> &lt; <em>V</em> &lt; <em>Y</em> + <em>H</em> and <em>V</em> ≤ <em>H</em></td>
+					<td>Aligns the element&rsquo;s top edge with the top of the viewport</td>
+					<td><em>scrollY</em> = <em>Y</em></td>
+			</tr>
+			<tr>
+					<td><strong>Partially visible (fits on screen)</strong></td>
+					<td><em>Y</em> &lt; <em>V</em> &lt; <em>Y</em> + <em>H</em> and <em>V</em> &gt; <em>H</em></td>
+					<td>Aligns the element&rsquo;s bottom edge with the bottom of the viewport</td>
+					<td><em>scrollY</em> = <em>Y</em> + <em>H</em> − <em>V</em></td>
+			</tr>
+			<tr>
+					<td><strong>Element is off-screen</strong></td>
+					<td><em>V</em> ≤ <em>Y</em></td>
+					<td>Centers the element in the viewport</td>
+					<td><em>scrollY</em> = <em>Y</em> + (<em>H</em> − <em>V</em>) / 2</td>
+			</tr>
+	</tbody>
+</table>
+<p><img src="scroll-offset.png" alt="The scroll offset depends on the height of the focused element"></p>
+<p><em>When the element is off-screen, the scroll offset depends on the height of the focused element</em></p>
+<h3 id="recovering-height-and-width">Recovering height and width</h3>
+<p>If the element&rsquo;s <em>Y</em> is known, you can make <em>V</em> small enough to fall into the &ldquo;Element is off-screen&rdquo; case (where the element is centered in the viewport), and then solve for <em>H</em>:</p>
+<p><em>H</em> = 2 × <em>scrollY</em> − 2 × <em>Y</em> + <em>V</em></p>
+<p>Even if <em>Y</em> is unknown, <em>H</em> can still be estimated by varying <em>V</em> step by step and observing how <em>scrollY</em> changes.</p>
+<p>The same approach works horizontally: observing <em>scrollX</em> reveals the element&rsquo;s width.</p>
+<p>Since <em>scrollX</em> is rounded to an integer, it cannot directly capture sub-pixel widths. However, the parent frame can improve precision by scaling up the iframe&rsquo;s parent element with <code>transform: scaleX(128);</code>.</p>
+<h2 id="3-narrowing-down-text-candidates-from-element-width">3. Narrowing down text candidates from element width</h2>
+<p>Once element sizes can be measured, it is possible under certain conditions to <strong>infer the text itself</strong>.</p>
+<p>For example, suppose the following styles are applied to a link inside the App iframe:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>  #secret {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font</span>: <span style="color:#ae81ff">700</span> <span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span><span style="color:#f92672">/</span><span style="color:#ae81ff">48</span><span style="color:#66d9ef">px</span> Georgia, <span style="color:#66d9ef">serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">word-break</span>: break-all;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;secret&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/?code=secret&#34;</span>&gt;/?code=secret&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>This CSS has two important properties:</p>
+<ol>
+<li><strong><code>font: ... Georgia</code></strong>: each character (such as <code>a</code>–<code>z</code>) has a different width.</li>
+<li><strong><code>word-break: break-all</code></strong>: lines can break between any two characters (with a few exceptions).</li>
+</ol>
+<p>If the parent frame gradually narrows the iframe, at some point the last character of the <code>&lt;a&gt;</code> element wraps to the next line, changing the element&rsquo;s width.</p>
+<p>Because character widths vary in Georgia, <strong>the change in width before and after the wrap identifies the character that wrapped</strong>.</p>
+<p><img src="text-leak.png" alt="Identifying the wrapped character from the change in width"></p>
+<p><em>Identifying the wrapped character &ldquo;t&rdquo; from the change in width (conceptual illustration)</em></p>
+<p>By repeatedly narrowing the iframe to force a wrap and measuring the resulting width, an attacker can recover candidates for the whole string, one character at a time. (In practice, kerning between character pairs and browser rounding errors need to be corrected for, but the principle holds.)</p>
+<h2 id="differences-from-prior-work-2010">Differences from prior work (2010)</h2>
+<p>Observing the parent frame&rsquo;s scroll position is not a new idea: it was <a href="https://media.blackhat.com/bh-eu-10/presentations/Stone/BlackHat-EU-2010-Stone-Next-Generation-Clickjacking-slides.pdf">presented at Black Hat</a> in 2010 and reported as <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=583889">Mozilla Bug 583889</a>. Scroll propagation in Google Chrome has also been publicly tracked as <a href="https://issues.chromium.org/issues/40849420">Issue 40849420</a> since around 2022.</p>
+<p>However, those earlier reports focused on <strong>a boolean signal</strong>: loading something like <code>&lt;iframe src=&quot;https://victim/#foo&quot;&gt;</code> reveals whether an element with <code>id=&quot;foo&quot;</code> exists inside the child iframe.</p>
+<p>In contrast, this technique uses changes in the scroll offset to <strong>measure element widths and heights and infer the text itself</strong>. To the best of my knowledge, the risk of using this behavior to recover sensitive data has not been widely recognized.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This post showed how focus inside a cross-origin iframe propagates scrolling to the parent frame, and how the resulting scroll offset reveals the width and height of the target element. When an element&rsquo;s size depends on the text it contains, the observed scroll offsets can even be used to infer that text one character at a time.</p>
+<p>However, this technique requires both that a site can be embedded in an iframe and that the embedded page can display sensitive information, so relatively few sites are likely to be affected. In modern browsers, cookies default to <code>SameSite=Lax</code>, which should mitigate the risk for many sites by preventing authentication cookies from being sent in cross-site iframes.</p>
+<p>Sites that intentionally use <code>SameSite=None</code> for authentication cookies, or that restrict access by IP address, may still be affected. I actually found sites where this technique could be used to leak sensitive information and reported it to them.</p>
+<p>In general, I recommend ensuring that sensitive information is not displayed when a page is embedded by another site, since other issues could potentially be exploited as well.</p>
+
+        </div>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                <nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/post/2025/2025-12-05-practical-web-pentest/">
+                &#8592;
+                :
+                実践 Webペネトレーションテストを出版しました！
+            </a>
+        </p>
+        <p class="prev-post-date">
+            2025/12/05
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+    <div id="comments">
+        <script src="/js/webmention.min.js" data-max-webmentions="60" async></script>
+<div id="webmentions"></div>
+
+    </div>
+    
+
+    <div style="display: none;">
+        <a class="u-bridgy-fed" href="https://fed.brid.gy/"></a>
+        <p class="dt-published">2026-10-30T00:00:00&#43;09:00</p>
+        <a class="p-author h-card" href="https://blog.tyage.net/">tyage</a>
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#1-scroll-into-view-crosses-origin-boundaries">1. scroll-into-view crosses origin boundaries</a>
+          <ul>
+            <li><a href="#how-scroll-into-view-works">How scroll-into-view works</a></li>
+            <li><a href="#scroll-propagation-to-the-parent-frame">Scroll propagation to the parent frame</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-measuring-element-height-and-width-from-scroll-offsets">2. Measuring element height and width from scroll offsets</a>
+          <ul>
+            <li><a href="#a-simplified-model">A simplified model</a></li>
+            <li><a href="#recovering-height-and-width">Recovering height and width</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-narrowing-down-text-candidates-from-element-width">3. Narrowing down text candidates from element width</a></li>
+        <li><a href="#differences-from-prior-work-2010">Differences from prior work (2010)</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/gokarna-theme/gokarna-hugo">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
