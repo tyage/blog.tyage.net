@@ -35,6 +35,12 @@ jobs:
         with:
           node-version: 24
       - run: git clone https://github.com/${GITHUB_REPOSITORY} --depth=2 --branch=gh-pages gh-pages
+      - name: Check for webmentions to send
+        id: check-webmentions
+        run: node ../scripts/notify-fed-bridgy.js --check >> "$GITHUB_OUTPUT"
+        working-directory: ./gh-pages
       - run: sleep 60 # Wait until Netlify will update content
+        if: steps.check-webmentions.outputs.notify == 'true'
       - run: node ../scripts/notify-fed-bridgy.js
+        if: steps.check-webmentions.outputs.notify == 'true'
         working-directory: ./gh-pages

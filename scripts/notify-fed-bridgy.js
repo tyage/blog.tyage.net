@@ -5,12 +5,23 @@ const child_process = require('child_process')
 const ABORT_THRESHOLD = 10
 
 // index.xmlのdiffから、更新のあったURLを推測
-const diff = child_process.spawnSync('git', ['diff', '-U0', 'HEAD^', 'index.xml']).stdout.toString()
+const result = child_process.spawnSync('git', ['diff', '-U0', 'HEAD^', 'index.xml'], { encoding: 'utf8' })
+if (result.error || result.status !== 0) {
+  console.error('Failed to compare RSS feed:', result.error || result.stderr)
+  process.exit(1)
+}
+const diff = result.stdout
 const links = [...diff.matchAll(/<link>([^<]+)<\/link>/g)].map(match => match[1])
 const uniqueLinks = [...new Set(links)]
 
 if (uniqueLinks.length > ABORT_THRESHOLD) {
   console.warn(`Aborting: ${uniqueLinks.length} unique URLs in diff exceeds threshold ${ABORT_THRESHOLD}. Likely a structural index.xml change.`)
+  if (process.argv.includes('--check')) console.log('notify=false')
+  process.exit(0)
+}
+
+if (process.argv.includes('--check')) {
+  console.log(`notify=${uniqueLinks.length > 0}`)
   process.exit(0)
 }
 
