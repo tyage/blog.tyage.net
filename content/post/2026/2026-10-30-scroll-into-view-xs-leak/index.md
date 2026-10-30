@@ -2,6 +2,7 @@
 title: "An XS-Leak to read cross-origin text through scroll-into-view"
 date: 2026-10-30T00:00:00+09:00
 type: post
+image: /post/2026/2026-10-30-scroll-into-view-xs-leak/poc.gif
 showTableOfContents: true
 ---
 
